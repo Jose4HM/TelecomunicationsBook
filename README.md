@@ -10,6 +10,8 @@ git clone https://github.com/Yasperterian/TelecomunicationsBook.git
 Recordando siempre la licencia que se especificará luego.
 ## Uso
 Puedes usarlo como gustes, este libro esta bajo la licencia [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/)
+## Contacto
+Puedes contactarme directamente para cualquier tipo de feedback a mi correo: jhanccoma@unsa.edu.pe
 
-## License
+## Licencia
 [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/)
