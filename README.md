@@ -1,4 +1,4 @@
-# Telecomunications steps
+# Telecomunicaciones en tu idioma
 
 Este es un libro/cuaderno donde puedes observar mis notas a lo largo de la carrera que estudio: Ingenieria en Telecomunicaciones.
 
