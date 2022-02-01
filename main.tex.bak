@@ -1278,7 +1278,6 @@ Las posiciones se detallan en el siguiente cuadro:
 \terms{5}{5}
 \terms{6}{6}
 \terms{7}{7}
-\label{MK:1}
 \end{karnaugh-map}
 \end{center}
 Las posiciones reales cambian de acuerdo al número de variables, las posiciones reales para 4 variables es:

@@ -7,10 +7,77 @@
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
+\clearpage
+\begin{center}
+    \thispagestyle{empty}
+    \vspace*{\fill}
+    \textit{Ya sabes cómo funciona esto. Coges un libro, saltas a la dedicatoria y descubres que, una vez más, el autor ha dedicado su libro a alguien que no eres tú.\\
+    Pero esta vez no será así...\\
+    Dedico este libro a mi yo del pasado, quien ha sacrificado tiempo para poder escribir este libro para quienes lo necesiten pues como cualquier carrera, no es difícil los temas que tienes que aprender, sino que te lo explican mal y sin ganas, ganas  desganadas que destruyen las tuyas.}
+    \vspace*{\fill}
+\end{center}
+\clearpage
 \section{Multiplexor y Demultiplexor}
 \subsection{Multiplexor}
 Circuito combinacional al que entran varios canales y solo sale uno de ellos.
-
+\begin{center}
+\includegraphics[scale=0.8]{SD/SD39.png}
+\end{center}
+\subsubsection{Multiplexor Simple}
+Existen dos posibles simbologías para los multiplexores:
+\begin{center}
+\includegraphics[scale=0.8]{SD/SD40.png}
+\end{center}
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+S & $I_1$ & $I_1$ & F \\ \hline
+0 & 0     & 0     & 0 \\ \hline
+0 & 0     & 1     & 1 \\ \hline
+0 & 1     & 0     & 0 \\ \hline
+0 & 1     & 1     & 1 \\ \hline
+1 & 0     & 0     & 0 \\ \hline
+1 & 0     & 1     & 0 \\ \hline
+1 & 1     & 0     & 1 \\ \hline
+1 & 1     & 1     & 1 \\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{center}
+\begin{karnaugh-map}[4][2][1][$I_1I_0$][$S$]
+\minterms{1,3,6,7}
+\maxterms{0,2,5,4}
+\end{karnaugh-map}
+\begin{displaymath}
+F=\overline{S}\cdot I_0 + S\cdot I_1
+\end{displaymath}
+\end{center}
+\end{multicols}
+\begin{remark}
+Es usual que en las tablas de verdad, la entrada que se encuentra a la izquierda es el más significativo(MSB) mientras que el que se encuentra más a la derecha es el menos significativo(LSB).
+\end{remark}
+Si analizamos la tabla: vemos que la entrada de selección S, poseerá dos estados; si analizamos cuando S=0 vemos que la salida F estará activada siempre y cuando la entrada $I_0$ tenga la entrada activa, mientras que si $I_0$ posee una entrada 0, no importa el valor que posea la entrada $I_1$(alto o bajo) la salida F siempre será 0. Esto nos quiere decir que cuando S=0, la salida F solo le importará los estados de la entrada $I_0$ pero no de $I_1$. Cuando la entrada de selección S=1, notaremos le mismo comportamiento, la salida F solo tomará en cuenta los estados de la entrada $I_1$ puesto que la entrada $I_0$ no nos importa. En conclusión, el la entrada de control S es capaz de seleccionar entre dos entradas.
+\subsubsection{Multiplexor 2 entradas selección}
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=0.6]{SD/SD41.pt}
+\end{center}
+\columnbreak
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+$S_1$ & $S_0$ & F     \\ \hline
+0     & 0     & $I_0$ \\ \hline
+0     & 1     & $I_1$ \\ \hline
+1     & 0     & $I_2$ \\ \hline
+1     & 1     & $I_3$ \\ \hline
+\end{tabular}
+\begin{displaymath}
+F=\overline{S_1}\cdot\overline{S_0}\cdot I_0+\overline{S_1}\cdot S_0\cdot I_1+S_1\cdot\overline{S_0}\cdot I_2+S_1\cdot S_0\cdot I_3
+\end{displaymath}
+\end{center}
+\end{multicols}
 %----------------------------------------------------------------------------------------
 %	END CHAPTER
 %----------------------------------------------------------------------------------------
