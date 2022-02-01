@@ -1,0 +1,18 @@
+\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\input{structure.tex} 
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
+\section{Multiplexor y Demultiplexor}
+\subsection{Multiplexor}
+Circuito combinacional al que entran varios canales y solo sale uno de ellos.
+
+%----------------------------------------------------------------------------------------
+%	END CHAPTER
+%----------------------------------------------------------------------------------------
+
+\end{document}

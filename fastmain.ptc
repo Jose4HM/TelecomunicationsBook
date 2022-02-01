@@ -1,0 +1,39 @@
+\babel@toc {spanish}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {I}{Sistemas Digitales}}{1}{part.1}%
+\ttl@starttoc {default@1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Lógica digital}{3}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Compuertas lógicas}{3}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Compuerta NOT}{3}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Compuerta AND}{4}{subsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.3}Compuerta OR}{5}{subsection.1.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.4}Compuerta NAND}{6}{subsection.1.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.5}Compuerta NOR}{7}{subsection.1.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.6}Compuerta OR exclusiva-XOR}{8}{subsection.1.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.7}Compuerta NOR exclusiva-XNOR}{9}{subsection.1.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Formas de expresar funciones booleanas}{9}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.1}Suma de productos-SOP}{9}{subsection.1.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Productos de sumas-POS}{9}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.3}Conversión de SOP a POS}{11}{subsection.1.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Axiomas}{12}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Teoremas del álgebra de conmutación}{12}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}Dualidad}{13}{subsection.1.4.1}%
+\contentsfinish 

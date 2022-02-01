@@ -1,0 +1,485 @@
+\babel@toc {spanish}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {spanish}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {I}{Métodos Matemáticos I}}{9}{part.1}%
+\ttl@starttoc {default@1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Ecuaciones Diferenciales de primer orden}{11}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Conceptos introductorios}{11}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Tipos}{11}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Ecuación diferencial Ordinaria}{11}{section*.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Ecuación diferencial Parcial}{12}{section*.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Orden y grado}{12}{subsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Orden}{12}{section*.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Grado}{12}{section*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Variables separables}{13}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Ecuaciones diferenciales lineales}{16}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Ecuaciones Diferenciales Exactas}{18}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Ecuaciones Diferenciales No Exactas}{20}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Ecuaciones por sustitución}{22}{section.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.1}Ecuaciones Homogéneas}{22}{subsection.1.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.6.2}Ecuaciones Diferenciales de Bernoulli}{24}{subsection.1.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {II}{Sistemas Digitales}}{27}{part.2}%
+\ttl@stoptoc {default@1}
+\ttl@starttoc {default@2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Lógica digital}{29}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Compuertas lógicas}{29}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Compuerta NOT}{29}{subsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Compuerta AND}{30}{subsection.2.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Compuerta OR}{31}{subsection.2.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}Compuerta NAND}{32}{subsection.2.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.5}Compuerta NOR}{33}{subsection.2.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.6}Compuerta OR exclusiva-XOR}{34}{subsection.2.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.7}Compuerta NOR exclusiva-XNOR}{35}{subsection.2.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Formas de expresar funciones booleanas}{35}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Suma de productos-SOP}{35}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Productos de sumas-POS}{35}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Conversión de SOP a POS}{37}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Forma canónica}{38}{subsection.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Forma normalizada}{38}{subsection.2.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.6}¿Cómo pasar de la forma normalizara a la canónica?}{38}{subsection.2.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Axiomas}{39}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Teoremas del álgebra de conmutación}{39}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Dualidad}{40}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Mapas de Karnaugh}{42}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.1}Mapas de Karnaugh-4 variables}{42}{subsection.2.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.2}Agrupación de términos}{44}{subsection.2.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.3}Mapas de Karnaugh-5 variables}{48}{subsection.2.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5.4}Mapas de Karnaugh-6 variables}{49}{subsection.2.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Parámetros TTL y CMOS}{49}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.1}Tensión de alimentación continua}{49}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.2}Nivel lógico CMOS +5V}{50}{subsection.2.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.3}Nivel lógico CMOS +3V}{50}{subsection.2.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.4}Nivel lógico TTL}{51}{subsection.2.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.5}Inmunidad y Margen de ruido}{51}{subsection.2.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.6}Disipación de potencia}{52}{subsection.2.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.6.7}Carga y Fan-out}{53}{subsection.2.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Circuitos Lógicos}{55}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Sumador}{55}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Semi-sumador}{55}{subsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Sumador completo}{56}{subsection.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Sumador paralelo}{57}{subsection.3.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.4}Sumador 74LS283}{57}{subsection.3.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.5}Sumador Acarreo Anticipado}{58}{subsection.3.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Codificador y Decodificador}{58}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Encoder}{58}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Procedimiento}{59}{section*.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Decoder}{60}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {III}{Smart cities}}{63}{part.3}%
+\ttl@stoptoc {default@2}
+\ttl@starttoc {default@3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Conociendo la ESP8266}{65}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}ESP8266}{65}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Instalación Windows:Materiales}{66}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Instalación}{66}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Equivalente al Hola Mundo pero en placas}{66}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Conectar a una red Wi-Fi}{67}{section.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.6}Crear una red WiFi}{69}{section.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Servicios en la red}{71}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Crear un servidor local}{71}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Lectura Analógica}{75}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Proyecto explicativo 1}{76}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}Parte 1}{77}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}Parte 2}{78}{subsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.3}Parte 3}{80}{subsection.5.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}Sensor de temperatura y humedad DHT11}{81}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Proyecto final}{85}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Software}{85}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Instalación de Node.js}{85}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Instalación de Mosquitto}{86}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conexión de Mosquitto a Node red desde ESP8266}{88}{section*.89}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Hardware}{90}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Back-end}{91}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Xammp-PHP My admin}{92}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Base de datos: GPS}{92}{section*.99}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Base de datos: Usuarios}{93}{section*.104}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Base de datos: Estados}{94}{section*.106}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Xammp-Htdocs}{94}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Node-RED}{94}{subsection.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Nodos estados del botón}{94}{section*.109}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Nodo coordenadas gps}{94}{section*.125}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Front-end}{95}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {IV}{Telecomunicaciones 2}}{105}{part.4}%
+\ttl@stoptoc {default@3}
+\ttl@starttoc {default@4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Unidad I}{107}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Theorems}{107}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.1}Several equations}{107}{subsection.7.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.1.2}Single Line}{107}{subsection.7.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Definitions}{107}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Notations}{108}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Remarks}{108}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Corollaries}{108}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.6}Propositions}{108}{section.7.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6.1}Several equations}{108}{subsection.7.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.6.2}Single Line}{108}{subsection.7.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.7}Examples}{108}{section.7.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.1}Equation and Text}{109}{subsection.7.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.7.2}Paragraph of Text}{109}{subsection.7.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.8}Exercises}{109}{section.7.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.9}Problems}{109}{section.7.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.10}Vocabulary}{109}{section.7.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.11}Table}{109}{section.7.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.12}Figure}{109}{section.7.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Unidad 2}{111}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Modulación por ancho de pulso-PWM}{111}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {V}{Campos \\electromagnéticos}}{113}{part.5}%
+\ttl@stoptoc {default@4}
+\ttl@starttoc {default@5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Introducción y memoria}{115}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.0.1}Repaso análisis vectorial}{115}{subsection.9.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Sistema de coordenadas cartesiano(ortogonal)}{115}{section*.144}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Coordenadas polares}{115}{section*.146}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {VI}{Sistemas de telefonía}}{117}{part.6}%
+\ttl@stoptoc {default@5}
+\ttl@starttoc {default@6}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Telefonía}{119}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Evolución de la telefonía}{119}{section.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Conmutadores}{120}{section.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}Repaso:Señales analógicas y digitales}{120}{section.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.1}Ventajas y desventajas de las señales analógicas}{120}{subsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.2}Ventajas y desventajas de las señales digitales}{121}{subsection.10.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}Multiplexación}{121}{section.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.1}¿Para que sirve?}{121}{subsection.10.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.2}Multiplexación por división de tiempo o TDM \textit {(time-division multiplexing)}}{122}{subsection.10.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.3}Multiplexación por división de frecuencia o FDM \textit {(frequency-division multiplexing)}}{122}{subsection.10.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.4}Multiplexación por división de longitud de onda o WDM \textit {(wavelength-division multiplexing)}}{123}{subsection.10.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.5}Multiplexación por Estadística por División de Tiempo o STDM(\textit {Statistical time-division multiplexing})}{123}{subsection.10.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.5}Técnicas de conmutación}{124}{section.10.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5.1}Conmutación por circuitos}{124}{subsection.10.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.5.2}Conmutador por paquetes}{125}{subsection.10.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.6}Red de telefonía publica}{126}{section.10.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.6.1}Red de telefonía publica conmutada-PSTN}{126}{subsection.10.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.6.2}Características}{127}{subsection.10.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.6.3}Componentes}{127}{subsection.10.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Equipos Terminales}{127}{section*.168}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Central telefónica}{128}{section*.170}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Red de enlace}{128}{section*.173}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Troncales}{128}{section*.174}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Lazo de abonado o local}{129}{section*.176}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{SLIC y BORSCHT}{130}{section*.180}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.7}Señalización telefónica}{131}{section.10.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.8}Planta interna y externa}{132}{section.10.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.8.1}Planta Interna}{132}{subsection.10.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.8.2}Planta externa}{133}{subsection.10.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {11}Herramientas para el análisis telefónico}{137}{chapter.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.1}Tráfico Telefónico}{137}{section.11.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.1.1}Variaciones}{137}{subsection.11.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Variaciones Diarias}{137}{section*.191}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Variación Semanal}{137}{section*.193}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Variación anual}{137}{section*.195}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Variación accidental}{138}{section*.197}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.2}Medidas de tráfico telefónico}{139}{section.11.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Volumen del tráfico($V_t$)}{139}{section*.198}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tiempo de observación($T_o$)}{140}{section*.199}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Intensidad de tráfico($I_t$)}{140}{section*.200}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Erlang}{140}{section*.201}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Hora cargada}{141}{section*.202}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.3}Tipos de tráfico}{142}{section.11.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.4}Accesibilidad}{143}{section.11.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Accesibilidad completa}{143}{section*.205}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Accesibilidad Limitada}{144}{section*.207}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Sistemas de pérdida}{144}{section*.209}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Sistema a Espera}{144}{section*.210}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.5}\textit {Grade of service}(GoS)}{145}{section.11.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.6}Diseño de redes}{145}{section.11.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.7}Encaminamiento de tráfico}{149}{section.11.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11.8}Erlang-B}{151}{section.11.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.8.1}Erlang-B para un enlace}{153}{subsection.11.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Formula Erlang-B para un enlace}{153}{section*.222}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {11.8.2}Erlang-B para N enlaces}{154}{subsection.11.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Distribución de Poisson}{155}{section*.225}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {12}Telefonía IP}{157}{chapter.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.0.1}Redes de computadoras}{157}{subsection.12.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.0.2}PDU}{157}{subsection.12.0.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.0.3}Arquitectura de red}{158}{subsection.12.0.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.0.4}Tipos de servicios}{161}{subsection.12.0.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Orientado a la conexión}{161}{section*.235}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{No orientado a la conexión}{162}{section*.237}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.1}Repaso: TCP/IP}{163}{section.12.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.1.1}Capa de transporte}{163}{subsection.12.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.1.2}Capa de internet}{164}{subsection.12.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Direccionamiento}{165}{section*.243}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Enrutamiento}{165}{section*.244}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{IPv4}{165}{section*.245}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.2}VoIP}{167}{section.12.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.3}Digitización de la voz}{167}{section.12.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3.1}¿Como se digitaliza de la voz?}{167}{subsection.12.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Muestreo}{168}{section*.248}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Cuantificación}{168}{section*.250}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Codificación}{169}{section*.252}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{CODECs}{169}{section*.253}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.3.2}Transporte de Voz}{169}{subsection.12.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.4}Componentes de VoIP}{170}{section.12.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.4.1}Terminal IP}{170}{subsection.12.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.4.2}Centralita IP}{171}{subsection.12.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.4.3}Gateway}{171}{subsection.12.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Gateway FXS}{172}{section*.256}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Gateway FXO}{172}{section*.257}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.4.4}Adaptador FXS}{172}{subsection.12.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.4.5}Unidad de control MCU}{172}{subsection.12.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.5}Tecnología IP}{172}{section.12.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.1}DSL}{172}{subsection.12.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.2}RDSI}{173}{subsection.12.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.3}LMDS}{173}{subsection.12.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {12.5.4}GSM}{173}{subsection.12.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12.6}Vocabulary}{175}{section.12.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {VII}{Instrumentación 1}}{177}{part.7}%
+\ttl@stoptoc {default@6}
+\ttl@starttoc {default@7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {13}Unidad I}{179}{chapter.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {VIII}{Anexos}}{181}{part.8}%
+\ttl@stoptoc {default@7}
+\ttl@starttoc {default@8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.1}Ejercicios resueltos U2-Sistemas de telefonía}{183}{section.13.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.2}Ejercicios resueltos U2-Sistemas de telefonía}{184}{section.13.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.3}Ejercicios resueltos U2-Sistemas de telefonía}{185}{section.13.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.4}Ejercicios resueltos U2-Sistemas de telefonía 2 }{186}{section.13.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.5}Ejercicios resueltos U2-Sistemas de telefonía 2 }{187}{section.13.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.6}Ejercicios resueltos U2-Sistemas de telefonía 2 }{188}{section.13.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.7}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{189}{section.13.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.8}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{190}{section.13.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.9}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{191}{section.13.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.10}Ejercicios resueltos U2-Erlang B}{192}{section.13.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.11}Ejercicios resueltos U2-Erlang B}{193}{section.13.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13.12}Ejercicios resueltos U2-Erlang B}{194}{section.13.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{\@mypartnumtocformat {IX}{Extras}}{195}{part.9}%
+\ttl@stoptoc {default@8}
+\ttl@starttoc {default@9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {14}Artificios matemáticos}{197}{chapter.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{199}{chapter*.260}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Articles}{199}{section*.261}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{Books}{199}{section*.262}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{201}{section*.263}%
+\contentsfinish 
