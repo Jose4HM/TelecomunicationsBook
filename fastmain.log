@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.12)  1 FEB 2022 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.10.12)  5 FEB 2022 11:56
 entering extended mode
 **./fastmain.tex
 (fastmain.tex
@@ -1416,10 +1416,10 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotelevel=\count491
 \@quotereset=\count492
 (fastmain.aux
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
-LaTeX Info: Redefining \. on input line 32.
-LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \. on input line 30.
+LaTeX Info: Redefining \% on input line 30.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
 )
 \openout1 = `fastmain.aux'.
 
@@ -1632,51 +1632,222 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+LaTeX Info: Redefining \. on input line 55.
+LaTeX Info: Redefining \% on input line 55.
  [1{C:/Users/User/AppData/Local/MiKTeX/pdftex/config/pdftex.map}
 
  <./Pictures/SD/SD39.png> <./Pictures/SD/SD40.png>]
 <Pictures/SD/SD41.png, id=25, 200.75pt x 162.6075pt>
 File: Pictures/SD/SD41.png Graphic file (type png)
 <use Pictures/SD/SD41.png>
-Package pdftex.def Info: Pictures/SD/SD41.png  used on input line 55.
+Package pdftex.def Info: Pictures/SD/SD41.png  used on input line 56.
 (pdftex.def)             Requested size: 120.45091pt x 97.56525pt.
- [2 <./Pictures/SD/SD41.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 76.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 76.
+<Pictures/SD/SD42.png, id=26, 224.84pt x 162.6075pt>
+File: Pictures/SD/SD42.png Graphic file (type png)
+<use Pictures/SD/SD42.png>
+Package pdftex.def Info: Pictures/SD/SD42.png  used on input line 77.
+(pdftex.def)             Requested size: 112.41972pt x 81.30354pt.
+<Pictures/SD/SD43.png, id=27, 232.87pt x 112.42pt>
+File: Pictures/SD/SD43.png Graphic file (type png)
+<use Pictures/SD/SD43.png>
+Package pdftex.def Info: Pictures/SD/SD43.png  used on input line 82.
+(pdftex.def)             Requested size: 139.72307pt x 67.45251pt.
+<Pictures/SD/SD44.png, id=28, 126.4725pt x 112.42pt>
+File: Pictures/SD/SD44.png Graphic file (type png)
+<use Pictures/SD/SD44.png>
+Package pdftex.def Info: Pictures/SD/SD44.png  used on input line 102.
+(pdftex.def)             Requested size: 75.88408pt x 67.45251pt.
+Package mdframed Info: mdframed works in twoside mode on input line 123.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 123.
+<Pictures/SD/SD45.png, id=29, 519.44063pt x 433.62pt>
+File: Pictures/SD/SD45.png Graphic file (type png)
+<use Pictures/SD/SD45.png>
+Package pdftex.def Info: Pictures/SD/SD45.png  used on input line 131.
+(pdftex.def)             Requested size: 207.77257pt x 173.44492pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 134.
+ [2 <./Pictures/SD/SD41.png> <./Pictures/SD/SD42.png> <./Pictures/SD/SD43.png> 
+<./Pictures/SD/SD44.png>]
+<Pictures/SD/SD46.png, id=42, 235.88126pt x 161.60374pt>
+File: Pictures/SD/SD46.png Graphic file (type png)
+<use Pictures/SD/SD46.png>
+Package pdftex.def Info: Pictures/SD/SD46.png  used on input line 141.
+(pdftex.def)             Requested size: 117.94034pt x 80.80167pt.
+<Pictures/SD/SD47.png, id=43, 207.77625pt x 161.60374pt>
+File: Pictures/SD/SD47.png Graphic file (type png)
+<use Pictures/SD/SD47.png>
+Package pdftex.def Info: Pictures/SD/SD47.png  used on input line 147.
+(pdftex.def)             Requested size: 103.88786pt x 80.80167pt.
+<Pictures/SD/SD48.png, id=44, 312.16624pt x 161.60374pt>
+File: Pictures/SD/SD48.png Graphic file (type png)
+<use Pictures/SD/SD48.png>
+Package pdftex.def Info: Pictures/SD/SD48.png  used on input line 155.
+(pdftex.def)             Requested size: 156.08273pt x 80.80167pt.
+<Pictures/SD/SD49.png, id=45, 343.2825pt x 171.64125pt>
+File: Pictures/SD/SD49.png Graphic file (type png)
+<use Pictures/SD/SD49.png>
+Package pdftex.def Info: Pictures/SD/SD49.png  used on input line 161.
+(pdftex.def)             Requested size: 171.64082pt x 85.8204pt.
+<Pictures/SD/SD50.png, id=46, 312.16624pt x 161.60374pt>
+File: Pictures/SD/SD50.png Graphic file (type png)
+<use Pictures/SD/SD50.png>
+Package pdftex.def Info: Pictures/SD/SD50.png  used on input line 167.
+(pdftex.def)             Requested size: 156.08273pt x 80.80167pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: Pictures/SD/SD50.png Graphic file (type png)
+<use Pictures/SD/SD50.png>
+Package pdftex.def Info: Pictures/SD/SD50.png  used on input line 174.
+(pdftex.def)             Requested size: 156.08273pt x 80.80167pt.
+<Pictures/SD/SD51.png, id=47, 276.03125pt x 161.60374pt>
+File: Pictures/SD/SD51.png Graphic file (type png)
+<use Pictures/SD/SD51.png>
+Package pdftex.def Info: Pictures/SD/SD51.png  used on input line 179.
+(pdftex.def)             Requested size: 138.01527pt x 80.80167pt.
+LaTeX Info: Redefining \. on input line 182.
+LaTeX Info: Redefining \% on input line 182.
+[3 <./Pictures/SD/SD45.png> <./Pictures/SD/SD46.png> <./Pictures/SD/SD47.png>]
+<Pictures/SD/SD52.png, id=61, 179.4705pt x 145.14224pt>
+File: Pictures/SD/SD52.png Graphic file (type png)
+<use Pictures/SD/SD52.png>
+Package pdftex.def Info: Pictures/SD/SD52.png  used on input line 186.
+(pdftex.def)             Requested size: 105.54709pt x 85.35826pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
+<Pictures/SD/SD53.png, id=62, 321.2pt x 246.9225pt>
+File: Pictures/SD/SD53.png Graphic file (type png)
+<use Pictures/SD/SD53.png>
+Package pdftex.def Info: Pictures/SD/SD53.png  used on input line 188.
+(pdftex.def)             Requested size: 111.03467pt x 85.35826pt.
+<Pictures/SD/SD54.png, id=63, 1077.02374pt x 545.03625pt>
+File: Pictures/SD/SD54.png Graphic file (type png)
+<use Pictures/SD/SD54.png>
+Package pdftex.def Info: Pictures/SD/SD54.png  used on input line 210.
+(pdftex.def)             Requested size: 323.10962pt x 163.51213pt.
+
+[4 <./Pictures/SD/SD48.png> <./Pictures/SD/SD49.png> <./Pictures/SD/SD50.png> <
+./Pictures/SD/SD51.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 214--215
+
+ []
+
+<Pictures/SD/SD55.png, id=78, 447.6725pt x 266.9975pt>
+File: Pictures/SD/SD55.png Graphic file (type png)
+<use Pictures/SD/SD55.png>
+Package pdftex.def Info: Pictures/SD/SD55.png  used on input line 216.
+(pdftex.def)             Requested size: 223.8357pt x 133.49841pt.
+
+Underfull \vbox (badness 4582) has occurred while \output is active []
+
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+ [5 <./Pictures/SD/SD52.png> <./Pictures/SD/SD53.png> <./Pictures/SD/SD54.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
+
+ []
+
+<Pictures/SD/SD56.png, id=91, 504.88625pt x 277.035pt>
+File: Pictures/SD/SD56.png Graphic file (type png)
+<use Pictures/SD/SD56.png>
+Package pdftex.def Info: Pictures/SD/SD56.png  used on input line 220.
+(pdftex.def)             Requested size: 252.44249pt x 138.51715pt.
+<Pictures/SD/SD57.png, id=92, 374.39874pt x 191.71625pt>
+File: Pictures/SD/SD57.png Graphic file (type png)
+<use Pictures/SD/SD57.png>
+Package pdftex.def Info: Pictures/SD/SD57.png  used on input line 226.
+(pdftex.def)             Requested size: 166.69547pt x 85.35826pt.
+<Pictures/SD/SD58.png, id=93, 102.3825pt x 81.30376pt>
+File: Pictures/SD/SD58.png Graphic file (type png)
+<use Pictures/SD/SD58.png>
+Package pdftex.def Info: Pictures/SD/SD58.png  used on input line 228.
+(pdftex.def)             Requested size: 107.49698pt x 85.35826pt.
+<Pictures/SD/SD59.png, id=94, 936.49875pt x 546.04pt>
+File: Pictures/SD/SD59.png Graphic file (type png)
+<use Pictures/SD/SD59.png>
+Package pdftex.def Info: Pictures/SD/SD59.png  used on input line 234.
+(pdftex.def)             Requested size: 280.95178pt x 163.81326pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Pictures/SD/SD60.png, id=95, 406.51875pt x 191.71625pt>
+File: Pictures/SD/SD60.png Graphic file (type png)
+<use Pictures/SD/SD60.png>
+Package pdftex.def Info: Pictures/SD/SD60.png  used on input line 241.
+(pdftex.def)             Requested size: 180.99641pt x 85.35826pt.
+<Pictures/SD/SD61.png, id=96, 145.29282pt x 123.46124pt>
+File: Pictures/SD/SD61.png Graphic file (type png)
+<use Pictures/SD/SD61.png>
+Package pdftex.def Info: Pictures/SD/SD61.png  used on input line 243.
+(pdftex.def)             Requested size: 100.45831pt x 85.35826pt.
+<Pictures/SD/SD62.png, id=97, 937.5025pt x 404.51125pt>
+File: Pictures/SD/SD62.png Graphic file (type png)
+<use Pictures/SD/SD62.png>
+Package pdftex.def Info: Pictures/SD/SD62.png  used on input line 248.
+(pdftex.def)             Requested size: 281.25291pt x 121.35431pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./Pictures/SD/SD55.png> <./Pictures/SD/SD56.png> <./Pictures/SD/SD57.png> <
+./Pictures/SD/SD58.png>]
+LaTeX Info: Redefining \. on input line 302.
+LaTeX Info: Redefining \% on input line 302.
+ [7 <./Pictures/SD/SD59.png> <./Pictures/SD/SD60.png> <./Pictures/SD/SD61.png> 
+<./Pictures/SD/SD62.png>] [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (fastmain.aux
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 76.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 76.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 302.
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48482 strings out of 480790
- 1058877 string characters out of 2907057
- 2122508 words of memory out of 3000000
- 63684 multiletter control sequences out of 15000+200000
- 583429 words of font info for 153 fonts, out of 3000000 for 9000
+ 48825 strings out of 480790
+ 1064210 string characters out of 2907057
+ 2122708 words of memory out of 3000000
+ 63883 multiletter control sequences out of 15000+200000
+ 608276 words of font info for 233 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,14n,73p,1155b,2012s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,14n,73p,1155b,2061s stack positions out of 5000i,500n,10000p,200000b,50000s
 {E:/Programas x86/Miltex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/Miltex
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Programas x86/Miltex/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><E:/Programas x86/Miltex/fonts/type1/urw/avantgar
-/uagd8a.pfb><E:/Programas x86/Miltex/fonts/type1/urw/avantgar/uagk8a.pfb><E:/Pr
-ogramas x86/Miltex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/Miltex/fo
-nts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (2 pages, 66738 bytes).
+public/amsfonts/cm/cmsy10.pfb><E:/Programas x86/Miltex/fonts/type1/public/amsfo
+nts/symbols/msam10.pfb><E:/Programas x86/Miltex/fonts/type1/urw/avantgar/uagd8a
+.pfb><E:/Programas x86/Miltex/fonts/type1/urw/avantgar/uagk8a.pfb><E:/Programas
+ x86/Miltex/fonts/type1/urw/times/utmb8a.pfb><E:/Programas x86/Miltex/fonts/typ
+e1/urw/times/utmr8a.pfb><E:/Programas x86/Miltex/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on fastmain.pdf (8 pages, 246419 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 53804 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 196 PDF objects out of 1000 (max. 8388607)
+ 44 named destinations out of 1000 (max. 500000)
+ 80077 words of extra memory for PDF output out of 89155 (max. 10000000)
 

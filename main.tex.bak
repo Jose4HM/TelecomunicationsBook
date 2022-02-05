@@ -72,6 +72,19 @@
 
 \noindent Si existe algún error, crees que una sección se puede mejorar o dar cualquier tipo de \textit{feedback} acerca del libro no dudes y mándame un correo a \textit{jhanccoma@unsa.edu.pe}, te responderé lo más pronto que pueda y gracias por mejorar este libro de todos y para todos.
 %----------------------------------------------------------------------------------------
+%Dedicate
+%----------------------------------------------------------------------------------------
+\clearpage
+\begin{center}
+    \thispagestyle{empty}
+    \vspace*{\fill}
+    \textit{Ya sabes cómo funciona esto. Coges un libro, saltas a la dedicatoria y descubres que, una vez más, el autor ha dedicado su libro a alguien que no eres tú.\\
+    Pero esta vez no será así...\\
+    Dedico este libro a mi yo del pasado, quien ha sacrificado tiempo para poder escribir este libro para quienes lo necesiten pues como cualquier carrera, no es difícil los temas que tienes que aprender, sino que te lo explican mal y sin ganas, ganas  desganadas que destruyen las tuyas.}
+    \vspace*{\fill}
+\end{center}
+\clearpage
+%----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
@@ -1873,7 +1886,291 @@ U_2&=P_1
 \includegraphics[scale=0.4]{SD/SD38.png}
 \end{center}
 \end{exercise}
-
+\section{Multiplexor y Demultiplexor}
+\subsection{Multiplexor}
+Circuito combinacional al que entran varios canales y solo sale uno de ellos.
+\begin{center}
+\includegraphics[scale=0.8]{SD/SD39.png}
+\end{center}
+\subsubsection{Multiplexor Simple}
+Existen dos posibles simbologías para los multiplexores:
+\begin{center}
+\includegraphics[scale=0.8]{SD/SD40.png}
+\end{center}
+\begin{multicols}{2}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{ocre!70}
+S & $I_1$ & $I_1$ & F \\ \hline
+0 & 0     & 0     & 0 \\ \hline
+0 & 0     & 1     & 1 \\ \hline
+0 & 1     & 0     & 0 \\ \hline
+0 & 1     & 1     & 1 \\ \hline
+1 & 0     & 0     & 0 \\ \hline
+1 & 0     & 1     & 0 \\ \hline
+1 & 1     & 0     & 1 \\ \hline
+1 & 1     & 1     & 1 \\ \hline
+\end{tabular}
+\end{center}
+\columnbreak
+\begin{center}
+\begin{karnaugh-map}[4][2][1][$I_1I_0$][$S$]
+\minterms{1,3,6,7}
+\maxterms{0,2,5,4}
+\end{karnaugh-map}
+\begin{displaymath}
+F=\overline{S}\cdot I_0 + S\cdot I_1
+\end{displaymath}
+\end{center}
+\end{multicols}
+\begin{remark}
+Es usual que en las tablas de verdad, la entrada que se encuentra a la izquierda es el más significativo(MSB) mientras que el que se encuentra más a la derecha es el menos significativo(LSB).
+\end{remark}
+Si analizamos la tabla: vemos que la entrada de selección S, poseerá dos estados; si analizamos cuando S=0 vemos que la salida F estará activada siempre y cuando la entrada $I_0$ tenga la entrada activa, mientras que si $I_0$ posee una entrada 0, no importa el valor que posea la entrada $I_1$(alto o bajo) la salida F siempre será 0. Esto nos quiere decir que cuando S=0, la salida F solo le importará los estados de la entrada $I_0$ pero no de $I_1$. Cuando la entrada de selección S=1, notaremos le mismo comportamiento, la salida F solo tomará en cuenta los estados de la entrada $I_1$ puesto que la entrada $I_0$ no nos importa. En conclusión, el la entrada de control S es capaz de seleccionar entre dos entradas.
+\subsubsection{Multiplexor 2 entradas selección}
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=0.6]{SD/SD41.png}
+\end{center}
+\columnbreak
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor{ocre!70}
+$S_1$ & $S_0$ & F     \\ \hline
+0     & 0     & $I_0$ \\ \hline
+0     & 1     & $I_1$ \\ \hline
+1     & 0     & $I_2$ \\ \hline
+1     & 1     & $I_3$ \\ \hline
+\end{tabular}
+\begin{displaymath}
+F=\overline{S_1}\cdot\overline{S_0}\cdot I_0+\overline{S_1}\cdot S_0\cdot I_1+S_1\cdot\overline{S_0}\cdot I_2+S_1\cdot S_0\cdot I_3
+\end{displaymath}
+\end{center}
+\end{multicols}
+\subsection{Demultiplexor}
+Al igual que el multiplexor puede poseer varias entradas, varios canales a diferentes bits.
+\begin{center}
+\includegraphics[scale=0.5]{SD/SD42.png}
+\end{center}
+La expresión booleana para el multiplexor más simple:
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=0.6]{SD/SD43.png}
+\end{center}
+\columnbreak
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor{ocre!70}
+S & I & $O_1$ & $O_0$ \\ \hline
+0 & 0 & 0     & 0     \\ \hline
+0 & 1 & 0     & 1     \\ \hline
+1 & 0 & 0     & 0     \\ \hline
+1 & 1 & 1     & 0     \\ \hline
+\end{tabular}
+\begin{displaymath}
+F=\overline{S_1}\cdot\overline{S_0}\cdot I_0+\overline{S_1}\cdot S_0\cdot I_1+S_1\cdot\overline{S_0}\cdot I_2+S_1\cdot S_0\cdot I_3
+\end{displaymath}
+\end{center}
+\end{multicols}
+\begin{multicols}{2}
+\begin{center}
+\includegraphics[scale=0.6]{SD/SD44.png}
+\end{center}
+\columnbreak
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\rowcolor{ocre!70}
+$S_1$ & $S_1$ & $O_3$ & $O_2$ & $O_1$ & $O_0$ \\ \hline
+0     & 0     & 0     & 0     & 0     & 1     \\ \hline
+0     & 1     & 0     & 0     & 1     & 0     \\ \hline
+1     & 0     & 0     & 1     & 0     & 0     \\ \hline
+1     & 1     & 1     & 0     & 0     & 0     \\ \hline
+\end{tabular}
+\begin{align*}
+&O_0=\overline{S_1}\cdot\overline{S_0}\cdot I
+&O_1=\overline{S_1}\cdot\overline{S_0}\cdot I\\
+&O_2=S_1\cdot\overline{S_0}\cdot I
+&O_3=S_1\cdot S_0\cdot I
+\end{align*}
+\end{center}
+\end{multicols}
+\begin{exercise}
+Usando el IC 74HCT4051, expresar la siguiente expresión de un demultiplexor:
+\begin{displaymath}
+F=C\overline{BA}+\overline{C}B\overline{A}+\overline{C}BA+CBA+\overline{CB}A
+\end{displaymath}
+\textbf{Solución:}\\
+Para poder implementarlo con el IC, necesitamos que la expresión este en su forma canónica. Una vez que este en su forma canónica, dependiendo si esta como SOP o POS nos indicará los valores donde será 1 y 0 respectivamente. Como estamos frente a un SOP, los valores decimales de los sumandos(pasando a binario los bits, donde MSB es C y LSB es A) nos dan los números de las entradas en las cuales deben tener entradas altas y las restantes entrada baja.
+\begin{center}
+\includegraphics[scale=0.4]{SD/SD45.png}
+\end{center}
+Cada vez que en las entradas de selección se logre colocar cualquiera de los sumandos de la función F la salida será 1.
+\end{exercise}
+\section{Latch}
+El latch(cerrojo) es un tipo de dispositivo de almacenamiento temporal de dos estados(biestable).
+\subsection{Latch S-R(Set-Reset)}
+Dispositivo lógico biestable o multivibrador. Un Latch S-R con entrada activa a un nivel ALTO, se compone de dos puerta NOR o NAND acopladas.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD46.png}
+\caption{Latch S-R con entrada activa a nivel alto.}
+\label{fig:latchsrnor}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD47.png}
+\caption{Latch $\overline{S}$-$\overline{R}$ con entrada activa a nivel bajo.}
+\label{fig:latchsrand}
+\end{figure}
+\subsubsection{Comportamiento}
+En Q, cuando S este en nivel alto y R en estado bajo, la salida Q cambia a nivel alto(Estado inicial Q=0).\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD48.png}
+\caption{Set=1, Reset=0 y Q=1.}
+\end{figure}
+Una vez que nos encontramos en este estado, sea cual sea la entrada de S, la salida Q no cambiará:\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD49.png}
+\caption{Set=1/0, Reset=0 y Q=1.}
+\end{figure}
+Cambiará solo si R cambia a estado alto.\\
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD50.png}
+\caption{Set=0, Reset=1 y Q=0.}
+\end{figure}
+\subsubsection{Condiciones especiales}
+Los latch poseen algunas restricciones que son importantes conocerlas para tener precaución al momento de implementar circuito.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD50.png}
+\caption{Si S=0 y R=0, las salidas no cambian.}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{SD/SD51.png}
+\caption{Si S=1 y R=1, las salidas presentan un estado no válido: indeterminado.}
+\end{figure}
+\subsection{Símbolo lógico}
+La simbología del latch es el siguiente:
+\begin{figure}
+    \centering
+    \subfloat[Latch $\overline{S}$-$\overline{R}$ con entrada activa BAJO.]{{\includegraphics[height=3cm]{SD/SD52.png} }}
+    \qquad
+    \subfloat[Latch S-R con entrada activa ALTA.]{{\includegraphics[height=3cm]{SD/SD53.png} }}
+    \caption{Latch simbología}
+\end{figure}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|cc|cc|c|}
+\hline
+\rowcolor{ocre!70}
+\multicolumn{2}{|c|}{Input}                           & \multicolumn{2}{c|}{Output}              &                                         \\ \hline
+\rowcolor{ocre!50}
+\multicolumn{1}{|c|}{$\overline{S}$} & $\overline{R}$ & \multicolumn{1}{c|}{Q}  & $\overline{Q}$ & Comentarios                             \\ \hline
+\multicolumn{1}{|c|}{1}              & 1              & \multicolumn{1}{c|}{NC} & NC             & No cambia, permanece en el mismo estado \\ \hline
+\multicolumn{1}{|c|}{0}              & 1              & \multicolumn{1}{c|}{1}  & 0              & Latch estado SET                        \\ \hline
+\multicolumn{1}{|c|}{1}              & 0              & \multicolumn{1}{c|}{0}  & 1              & Latch estado Reset                      \\ \hline
+\multicolumn{1}{|c|}{1}              & 1              & \multicolumn{1}{c|}{1}  & 1              & Condición NO valida                     \\ \hline
+\end{tabular}
+\caption{Tabla de verdad: Latch}
+\end{center}
+\end{table}
+El diagrama de tiempos de un Latch tiene el siguiente comportamiento ejemplificado:
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{SD/SD54.png}
+\caption{Diagrama de tiempos Latch.}
+\end{figure}
+\subsection{Latch: Eliminador de rebote}
+Se presenta un circuito con interruptor:\\
+\begin{center}
+\includegraphics[scale=0.5]{SD/SD55.png}
+\end{center}
+Vemos que la salida no es estable, esta lectura inestable puede ocasionar errores de lectura o falsos altos y bajos. Por eso se añade un latch como eliminador de rebote:\\
+\begin{center}
+\includegraphics[scale=0.5]{SD/SD56.png}
+\end{center}
+\subsection{Latch con entrada de habilitación}
+El latch no cambiará de estado hasta que la entrada EN este en nivel ALTO, mientras este en ALTO, las salidas serán controlados por las entradas S y R. Una situación invalida es cuando R y S están a nivel alto simultáneamente.
+\begin{figure}[h]
+    \centering
+    \subfloat[Circuito Latch con entrada de habilitación.]{{\includegraphics[height=3cm]{SD/SD57.png} }}
+    \qquad
+    \subfloat[Simbología Latch con entrada de habilitación.]{{\includegraphics[height=3cm]{SD/SD58.png} }}
+    \caption{Latch con entrada de habilitación.}
+\end{figure}
+Diagrama de tiempos de un Latch con entrada enable:
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{SD/SD59.png}
+\caption{Diagrama de tiempos latch S-R con entrada de habilitación.}
+\end{figure}
+\subsection{Latch D con entrada de habilitación}
+A diferencia de latch S-R con entrada de habilitación, el latch D solo tiene una entrada que recibe el nombre de entrada de datos(D) y ademas de la habilitación(EN).
+\begin{figure}[h]
+    \centering
+    \subfloat[Circuito Latch D con entrada de habilitación.]{{\includegraphics[height=3cm]{SD/SD60.png} }}
+    \qquad
+    \subfloat[Simbología Latch D con entrada de habilitación.]{{\includegraphics[height=3cm]{SD/SD61.png} }}
+    \caption{Latch D con entrada de habilitación.}
+\end{figure}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{SD/SD62.png}
+\caption{Diagrama de tiempos latch D con entrada de habilitación.}
+\end{figure}
+Mientras EN este en estado ALTO, la salida Q es una copia de D, si EN pasa a estado BAJO se mantiene el estado anterior.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFE65}}c |
+>{\columncolor[HTML]{FE996B}}c |
+>{\columncolor[HTML]{FD6864}}c |
+>{\columncolor[HTML]{EFEFEF}}c |
+>{\columncolor[HTML]{67FD9A}}c |
+>{\columncolor[HTML]{38FFF8}}c |
+>{\columncolor[HTML]{9698ED}}c |}
+\hline
+R & S & D & E & $Q_{SR}$    & $\overline{Q_{STe}}$ & $Q_{D}$ \\ \hline
+  &   &   &   & 1           & 1                    & 0       \\ \hline
+0 & 1 & 0 & 0 & 1           & 1                    & 0       \\ \hline
+0 & 1 & 1 & 0 & 1           & 1                    & 0       \\ \hline
+1 & 0 & 0 & 1 & 0           & 0                    & 0       \\ \hline
+1 & 0 & 0 & 1 & 0           & 0                    & 0       \\ \hline
+1 & 0 & 0 & 0 & 0           & 0                    & 0       \\ \hline
+0 & 1 & 1 & 1 & 1           & 1                    & 1       \\ \hline
+0 & 1 & 1 & 0 & 1           & 1                    & 1       \\ \hline
+1 & 0 & 0 & 0 & 0           & 1                    & 1       \\ \hline
+0 & 0 & 1 & 1 & 0           & No definido          & 1       \\ \hline
+1 & 0 & 1 & 1 & 0           & 0                    & 1       \\ \hline
+1 & 0 & 0 & 1 & 0           & 0                    & 0       \\ \hline
+0 & 1 & 0 & 1 & 1           & 1                    & 0       \\ \hline
+0 & 1 & 1 & 1 & 1           & 1                    & 1       \\ \hline
+1 & 0 & 1 & 1 & 0           & 0                    & 1       \\ \hline
+0 & 1 & 1 & 0 & 1           & 0                    & 1       \\ \hline
+1 & 1 & 0 & 0 & No definido & 0                    & 1       \\ \hline
+0 & 1 & 1 & 1 & 1           & 1                    & 1       \\ \hline
+1 & 1 & 0 & 1 & No definido & No definido          & 0       \\ \hline
+1 & 0 & 1 & 1 & 0           & 0                    & 1       \\ \hline
+1 & 0 & 0 & 1 & 0           & 0                    & 0       \\ \hline
+0 & 0 & 1 & 0 & 0           & 0                    & 0       \\ \hline
+0 & 0 & 1 & 0 & 0           & 0                    & 0       \\ \hline
+0 & 1 & 0 & 1 & 1           & 1                    & 0       \\ \hline
+0 & 1 & 0 & 1 & 1           & 1                    & 0       \\ \hline
+1 & 0 & 1 & 1 & 0           & 0                    & 1       \\ \hline
+1 & 0 & 0 & 0 & 0           & 0                    & 1       \\ \hline
+1 & 0 & 1 & 1 & 0           & 0                    & 1       \\ \hline
+\end{tabular}
+\end{center}
+\caption{Ejemplo de tren de bits de latch S-R, latch S-R con enable y Latch D con enable.}
+\end{table}
 %---------------------------------------------------------------
 \part{Smart cities}
 \chapterimage{chapter_head_SM.pdf} % Chapter heading image
