@@ -19,6 +19,7 @@
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 \usepackage[table]{xcolor} % Required for specifying colors by name
+\usepackage{multirow}
 \usepackage{graphicx} % Required for including pictures
 \usepackage{subfig}
 \graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
@@ -26,7 +27,7 @@
 \usepackage{lipsum} % Inserts dummy text
 
 \usepackage{tikz} % Required for drawing custom shapes
-\usepackage{circuitikz}
+\usetikzlibrary{automata,positioning,arrows} 
 \usetikzlibrary{calc}
 \usepackage[spanish]{babel} % English language/hyphenation
 \selectlanguage{spanish}
