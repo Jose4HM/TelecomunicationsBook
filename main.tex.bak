@@ -2537,11 +2537,11 @@ El problema nos dice que si la combinación de las entradas es (0,1) significa q
 \begin{center}
 \includegraphics[scale=0.6]{SD/SD92.png}
 \end{center}
-Listo, tenemos las sumas y las restas, nota que cuadno llegue al estado 000 y restamos se queda en el mismo estado; lo mismo que si sumamos al último estado (101) se quedará en el mismo estado, pero podemos mejorar este modelo. Definiremos lo siguiente: que cuando las entradas sean (1,1) nos mantengamos en el mismo estado, ademas añadiremos un estado nulo que lo definiremos como (110\footnote{Aunque este es el binario del número 7, definiremos que este estado sea neutro/apagado/off.}):\\
+Listo, tenemos las sumas y las restas, nota que cuando llegue al estado 000 y restamos se queda en el mismo estado; lo mismo que si sumamos al último estado (101) se quedará en el mismo estado, pero podemos mejorar este modelo. Definiremos lo siguiente: que cuando las entradas sean (1,1) nos mantengamos en el mismo estado, ademas añadiremos un estado nulo que lo definiremos como (110\footnote{Aunque este es el binario del número 7, definiremos que este estado sea neutro/apagado/off.}):\\
 \begin{center}
 \includegraphics[scale=0.6]{SD/SD93.png}
 \end{center}
-Ya hemos implementado el estado OFF, el estado (1,1) nos mantenemos en el mismo estado, con el estado (0,0) apagamos el circuito. Se puede mejorar los estados donde hay dos entradas que nos llevan al mismo estado y aumentamos un flecha para salir del estado OFF:\\
+Ya hemos implementado el estado OFF(estado 110), con el estado (1,1) nos mantenemos en el mismo estado, con el estado (0,0) apagamos el circuito. Se puede mejorar los estados donde hay dos entradas que nos llevan al mismo estado y aumentamos un flecha para salir del estado OFF:\\
 \begin{center}
 \includegraphics[scale=0.6]{SD/SD94.png}
 \end{center}
