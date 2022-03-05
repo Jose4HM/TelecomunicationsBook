@@ -3631,58 +3631,411 @@ DC&=20
 \end{equation}
 El 20\% hallado es el duty cycle, es el tiempo que valdrá 5V, nos pide el tiempo que estará apagada o donde valdrá 0V, el 80\% restante del periodo total.
 \end{exercise}
-
-
-
-
-
-
-
-
-
-
-
 \part{Campos \\electromagnéticos}
 \chapterimage{chapter_head_CE.pdf} % Chapter heading image
-\chapter{Introducción y memoria}
-\subsection{Repaso análisis vectorial}
-\subsubsection{Sistema de coordenadas cartesiano(ortogonal)}
-\begin{wrapfigure}{r}{0.4\linewidth}
-\centering\includegraphics[scale=0.5]{CamposMag/CM1.png}
-\caption{Sistema de coordenadas rectangulares}
-\label{fig:coordenadas rectangulares}
-\end{wrapfigure}
-Definimos un punto arbitrario, \textit{(x,y)} teniendo las respectivas consideraciones:
-\begin{itemize}
-\item \textit{x \& y} positivas para derecha y arriba respectivamente.
-\item \textit{x \& y} negativas para la izquierda y abajo respectivamente.
-\end{itemize}
-\subsubsection{Coordenadas polares}
-\begin{wrapfigure}{r}{0.4\linewidth}
-\centering\includegraphics[scale=0.5]{CamposMag/CM2.png}
-\caption{Sistema de coordenadas polares}
-\label{fig:coordenadas polares}
-\end{wrapfigure}
+\chapter{Repaso vectorial y conceptualización}
+\section{Sistemas de coordenadas y transformaciones}
+En general, las cantidades físicas que trataremos en EM son funciones del espacio y tiempo. Para describir las variaciones espaciales de las cantidades, debemos ser capaces de definir todos los puntos de forma única en el espacio de una manera adecuada. Esto requiere el uso de un adecuado sistema coordinado.
+\subsubsection{Sistema de coordenadas cartesianas en el espacio (x,y,z)}
+En geometría euclidiana el espacio tridimensional se suele representar con un sistema de coordenadas de tres ejes, todos perpendiculares entre sí. El rango de las coordenadas variables \textit{x}, \textit{y} y \textit{z} son:
+\begin{align*}
+-\infty <&x< \infty\\
+-\infty <&y< \infty\\
+-\infty <&z< \infty
+\end{align*}
+Las coordenadas de un vector cartesiano \textbf{A}(o vector rectangular) pueden ser escritas como:
+\begin{equation}
+\label{eq:vectorescartesianos}
+(A_x, A_y, A_z) \vee A_x\textbf{a}_x + A_y\textbf{a}_y + A_z\textbf{a}_z
+\end{equation}
+Donde $\textbf{a}_x$,  $\textbf{a}_y$ y $\textbf{a}_z$ son los vectores unitarios de \textbf{x}, \textbf{y}  \textbf{z} respectivamente. 
+\begin{align*}
+\textbf{a}_x\times\textbf{a}_y&=\textbf{a}_z\\
+\textbf{a}_y\times\textbf{a}_z&=\textbf{a}_x\\
+\textbf{a}_z\times\textbf{a}_x&=\textbf{a}_y
+\end{align*}
+Recordando la \textit{regla de la mano derecha}.
+\subsubsection{Coordenadas polares (r, $\theta$)}
 Un punto arbitrario se define mediante las coordenadas polares planas (r,$\theta$), donde:
 \begin{itemize}
 \item \textit{r} es la longitud de la línea que une el origen con el punto
 \item \textit{$\theta$} es el ángulo entre dicha línea y un eje fijo (normalmente el x)
 \end{itemize}
-Es común asumir que $\theta$ es medida en sentido contrario a las agujas del reloj y normalmente respecto al eje x positivo.\\
-\\
+Es común asumir que $\theta$ es medida en sentido contrario a las agujas del reloj y normalmente respecto al eje x positivo. Los rangos de las variables son:
+\begin{align*}
+-\infty <&r< \infty\\
+0 <& \theta <2\pi
+\end{align*}
+\begin{remark}
+Cuando se gráfica una coordenada polar con un radio negativo, se mueve desde el polo en la dirección opuesta al ángulo positivo dado (en la misma línea que el ángulo dado pero en la dirección opuesta al ángulo del polo). Es decir, gráficas el radio positivo solo que se invierte respecto al origen.
+\end{remark}
+\begin{proposition}[Coordenadas polares a cartesianas y viceversa.]
 \begin{align*}
 &\text{De polares a cartesianas}   &&  \text{De cartesianas a polares}  \\
-    x&=r\times cos(\theta)   &  tan(\theta)&=\frac{y}{x} \\
-    y&=r\times sin(\theta) & r&=\sqrt{x^2+y^2}
+    x&=r\cdot cos(\theta)   &  \theta&=arctan\left(\frac{y}{x}\right) \\
+    y&=r\cdot sin(\theta) & r&=\sqrt{x^2+y^2}
 \end{align*}
-\begin{example}
-Expresar el campo vectorial dado en coordenadas cartesianas:
-\begin{displaymath}
-A(x,y,z)=\frac{(2x^2+y^2)(-y\hat{a_x}+x\hat{a_y})}{(1+x^2+y^2)(x^2+y^2)}
-\end{displaymath}
+\end{proposition}
+\subsection{Coordenadas Cilíndricas (r, $\theta$, z) ó ($\rho$,$\phi$, z)}
+El sistema de coordenadas cilíndricas es muy parecido al de coordenadas polares. De hecho, es igual pero con una coordenada más: la altura. De manera que el sistema de coordenadas cilíndricas es un sistema de referencia tridimensional, es decir, con 3 coordenadas:
+\begin{itemize}
+\item \textit{r ó $\rho$} es la proyección ortogonal del punto en el plano XY, o dicho de otra forma, la distancia del punto al eje Z.
+\item $\theta$ ó $\phi$ es el ángulo que forma el semieje X positivo con la recta r.
+\item \textit{z} es la altura del punto, es la misma coordenada del sistema de coordenadas cartesiano en el espacio.
+\end{itemize}
+El rango de las variables de este sistemas son:
+\begin{align*}
+0 \leq&\rho< \infty & 0 \leq&r< \infty\\
+0 \leq& \phi <2\pi & 0 \leq& \theta <2\pi\\
+-\infty <&z< \infty & -\infty <&z< \infty
+\end{align*}
+Las coordenadas cilindricas de un vector \textbf{A} pueden ser escritas como:
+\begin{equation}
+(A_{\rho}, A_{\phi}, A_z) \vee A_{\rho}\textbf{a}_{\rho} + A_{\phi}\textbf{a}_{\phi} + A_z\textbf{a}_z
+\end{equation}
+Donde $\textbf{a}_{\rho}$, $\textbf{a}_{\phi}$ y $\textbf{a}_{z}$ son los vectores unitarios que indican sus direcciones, pero a tener en consideración que el vector unitario $\textbf{a}_{\phi}$ no esta en grados, asume las mismas unidades de medida que \textbf{A}.\\
+La magnitud de \textbf{A} es:
+\begin{equation}
+|A|=\sqrt{A_{\rho}^2+A_{\phi}^2+A_z^2}
+\end{equation}
+Al ser mutuamente perpendiculares porque el sistema es ortogonal se concluye que:
+\begin{align*}
+\textbf{a}_{\rho}\cdot\textbf{a}_{\rho}&=\textbf{a}_{\phi}\cdot\textbf{a}_{\phi}=\textbf{a}_z\cdot\textbf{a}_z=1\\
+\textbf{a}_{\rho}\cdot\textbf{a}_{\phi}&=\textbf{a}_{\phi}\cdot\textbf{a}_z=\textbf{a}_z\cdot\textbf{a}_{\rho}=0\\
+\textbf{a}_{\rho}\times\textbf{a}_{\phi}&=\textbf{a}_z\\
+\textbf{a}_{\phi}\times\textbf{a}_z&=\textbf{a}_{\rho}\\
+\textbf{a}_z\times\textbf{a}_{\rho}&=\textbf{a}_{\phi}
+\end{align*}
 
-\end{example}
-
+\begin{proposition}[Coordenadas cilíndricas a cartesianas y viceversa.]
+\begin{align*}
+&\text{De cilíndricas a cartesianas}   &&  \text{De cartesianas a cilíndricas}  \\
+    x&=\rho\cdot cos(\phi)   &  \phi&=arctan\left(\frac{y}{x}\right) \\
+    y&=\rho\cdot \sin(\phi) & \rho&=\sqrt{x^2+y^2}\\
+    z&=z & z&=z
+\end{align*}
+\end{proposition}
+Es necesario saber las relaciones entre los vectores unitarios del sistema cartesiano y el sistema cilíndrico:
+\begin{proposition}[Relaciones entre vectores unitarios]\label{prop:vecunitarioscarcil}
+\begin{align*}
+&\text{De cilíndricas a cartesianas}   &&  \text{De cartesianas a cilíndricas}  \\
+    \textbf{a}_x&=cos\phi \textbf{a}_{\rho} - \sin\phi \textbf{a}_{\phi}   &  \textbf{a}_{\rho}&=cos\phi \textbf{a}_x + \sin\phi \textbf{a}_y \\
+    \textbf{a}_y&=\sin\phi \textbf{a}_{\rho} + cos\phi \textbf{a}_{\phi} & \textbf{a}_{\phi}&=-\sin\phi \textbf{a}_x + cos\phi \textbf{a}_y\\
+    \textbf{a}_z&=\textbf{a}_z & \textbf{a}_z&=\textbf{a}_z
+\end{align*}
+\end{proposition}
+Finalmente la relación entre ($A_x$, $A_y$, $A_z$) y ($A_{\rho}$, $A_{\phi}$, $A_z$) son obtenidas sustituyendo las ecuaciones de la proposión \ref{prop:vecunitarioscarcil}(De cilindricas a cartesianas) en la ecuación \ref{eq:vectorescartesianos} y agrupar términos.\\
+Existe una forma matricial de hacer las conversiones, las matrices de equivalencia son\footnote{Si se te olvido como resolver este tipo de matrices puedes revisar la expresión \ref{art:matricesconformables}.}\\
+De cartesianas a cilíndricas:
+\begin{equation}
+\begin{bmatrix}A_{\rho}\\A_{\phi}\\A_z
+\end{bmatrix}=
+   \begin{bmatrix}
+     \cos\phi & \sin\phi & 0\\
+     -\sin\phi & \cos\phi & 0\\
+     0 & 0 & 1
+   \end{bmatrix}
+   \begin{bmatrix}A_x \\A_y\\A_z \end{bmatrix}
+\end{equation}
+De cilíndricas a cartesianas:
+\begin{equation}
+\begin{bmatrix}A_x\\A_y\\A_z
+\end{bmatrix}=
+   \begin{bmatrix}
+     \cos\phi & -\sin\phi & 0\\
+     \sin\phi & \cos\phi & 0\\
+     0 & 0 & 1
+   \end{bmatrix}
+   \begin{bmatrix}A_{\rho} \\A_{\phi}\\A_z \end{bmatrix}
+\end{equation}
+\subsection{Coordenadas esféricas (r,$\theta$,$\phi$)}
+Finalmente, tenemos el sistema de coordenadas esféricas. Este tipo de sistema de coordenadas también es bastante similar al de coordenadas polares y al de coordenadas cilíndricas, aunque, evidentemente, tiene alguna diferencia respecto a ellos.\\
+El sistema de coordenadas esféricas se trata de un sistema para describir espacios euclidianos tridimensionales, por lo tanto, tiene tres coordenadas:
+\begin{itemize}
+\item \textit{r} es la distancia (en R3) desde origen hasta el punto.
+\item $\theta$ es el ángulo que forma la parte positiva del eje X con la recta r proyectada en el plano XY.
+\item $\phi$ es el ángulo que hay entre la parte positiva del eje Z con la recta r.
+\end{itemize}
+El rango de las variables de este sistemas son:
+\begin{align*}
+0 \leq&r< \infty\\
+0 \leq& \theta \leq \pi\\
+0 \leq& \phi< 2\pi
+\end{align*}
+Las coordenadas esféricas de un vector \textbf{A} pueden ser escritas como:
+\begin{equation}
+(A_r, A_{\theta}, A_{\phi}) \vee A_r\textbf{a}_r + A_{\rho}\textbf{a}_{\rho} + A_{\phi}\textbf{a}_{\phi}
+\end{equation}
+Donde $\textbf{a}_r$, $\textbf{a}_{\theta}$ y $\textbf{a}_{\phi}$ son los vectores unitarios que indican sus direcciones.
+La magnitud de \textbf{A} es:
+\begin{equation}
+|A|=\sqrt{A_r^2+A_{\theta}^2+A_{\phi}^2}
+\end{equation}
+Los vectores unitarios son mutuamente ortogonales, por lo tanto:
+\begin{align*}
+\textbf{a}_r\cdot\textbf{a}_r&=\textbf{a}_{\theta}\cdot\textbf{a}_{\theta}=\textbf{a}_{\phi}\cdot\textbf{a}_{\phi}=1\\
+\textbf{a}_r\cdot\textbf{a}_{\theta}&=\textbf{a}_{\theta}\cdot\textbf{a}_{\phi}=\textbf{a}_{\phi}\cdot\textbf{a}_r=0\\
+\textbf{a}_r\times\textbf{a}_{\theta}&=\textbf{a}_{\phi}\\
+\textbf{a}_{\theta}\times\textbf{a}_{\phi}&=\textbf{a}_r\\
+\textbf{a}_{\phi}\times\textbf{a}_r&=\textbf{a}_{\theta}
+\end{align*}
+\begin{proposition}[Coordenadas esféricas a cartesianas y viceversa.]
+\begin{align*}
+&\text{De esféricas a cartesianas}   &&  \text{De cartesianas a esféricas}  \\
+    x&=r\cdot \sin(\theta)\cdot cos(\phi)  &  \phi&=arctan\left(\frac{y}{x}\right) \\
+    y&=r\cdot \sin(\theta)\cdot \sin(\phi) & r&=\sqrt{x^2+y^2+z^2}\\
+    z&=r\cdot cos(\theta) & \theta&=arctan\left(\frac{\sqrt{x^2+y^2}}{z}\right)
+\end{align*}
+\end{proposition}
+\begin{proposition}[Relaciones entre vectores unitarios]\label{prop:vecunitarioscaresf}
+\begin{align*}
+&\text{De esféricas a cartesianas}   &&  \text{De cartesianas a esféricas}  \\
+    \textbf{a}_x&=\sin\theta cos\phi\textbf{a}_r + cos\theta cos\phi \textbf{a}_{\theta}-\sin\phi\textbf{a}_{\phi} &  \textbf{a}_r&=\sin\theta cos\phi\textbf{a}_x + \sin\theta \sin\phi \textbf{a}_y + cos\theta\textbf{a}_z\\
+    \textbf{a}_y&=\sin\theta \sin\phi\textbf{a}_r + cos\theta \sin\phi \textbf{a}_{\theta} + cos\phi\textbf{a}_{\phi} & \textbf{a}_{\theta}&=cos\theta cos\phi\textbf{a}_x + cos\theta \sin\phi \textbf{a}_y - \sin\theta\textbf{a}_z\\
+    \textbf{a}_z&=cos\theta\textbf{a}_r - \sin\theta\textbf{a}_{\theta} & \textbf{a}_{\phi}&=-\sin\phi\textbf{a}_x + cos\phi\textbf{a}_y
+\end{align*}
+\end{proposition}
+Finalmente la relación entre ($A_x$, $A_y$, $A_z$) y ($A_r$, $A_{\theta}$, $A_{\phi}z$) son obtenidas sustituyendo las ecuaciones de la proposión \ref{prop:vecunitarioscaresf}(De cilindricas a cartesianas) en la ecuación \ref{eq:vectorescartesianos} y agrupar términos.\\
+Las formas matriciales de la transformación de vectores son:\\
+De cartesianas a esféricas:
+\begin{equation}
+\begin{bmatrix}A_r\\A_{\theta}\\A_{\phi}
+\end{bmatrix}=
+   \begin{bmatrix}
+     \sin\theta cos\phi & \sin\theta \sin\phi & cos\theta\\
+    cos\theta cos\phi & cos\theta \sin\phi & -\sin\theta\\
+     -\sin\phi & cos\phi & 0
+   \end{bmatrix}
+   \begin{bmatrix}A_x \\A_y\\A_z \end{bmatrix}
+\end{equation}
+De esféricas a cartesianas:
+\begin{equation}
+\begin{bmatrix}A_x\\A_y\\A_z
+\end{bmatrix}=
+   \begin{bmatrix}
+     \sin\theta cos\phi & cos\theta cos\phi & -\sin\phi\\
+     \sin\theta \sin\phi & \cos\theta \sin\phi & cos\phi\\
+     cos\theta & -\sin\theta & 0
+   \end{bmatrix}
+   \begin{bmatrix}A_r \\A_\theta\\A_{\phi} \end{bmatrix}
+\end{equation}
+Revisar el ejemplo 2.1 de \cite{elmagsadiku}.
+\begin{figure}[htbp]
+\centering
+\subfloat[Coordenadas cartesianas en el plano]{\label{fig:a}\includegraphics[scale=0.5]{CamposMag/CM1.png}}\qquad
+\subfloat[Coordenadas cartesianas en el espacio]{\label{fig:b}\includegraphics[scale=0.5]{CamposMag/CM2.png}}\\
+\subfloat[Coordenadas polares]{\label{fig:c}\includegraphics[scale=0.5]{CamposMag/CM3.png}}\qquad%
+\subfloat[Coordenadas cilíndricas]{\label{fig:d}\includegraphics[scale=0.5]{CamposMag/CM4.png}}%
+\subfloat[Coordenadas esféricas]{\label{fig:d}\includegraphics[scale=0.5]{CamposMag/CM5.png}}
+\caption{Distintos sistemas de coordenadas}
+\label{fig:myfig}
+\end{figure}
+\subsection{Planos}
+Los planos en los sistemas de coordenadas son fácilmente generados solo manteniendo una coordenadas constante y las demás variables.
+\section{Cálculo vectorial}
+\subsection{Diferencial de distancia, área y volumen}
+\subsubsection{Sistema de coordenadas cartesianas}
+El desplazamiento diferencial esta dado por:
+\begin{equation}
+\boxed{d\textbf{l}=dx\textbf{a}_x+dy\textbf{a}_y+dz\textbf{a}_z}
+\end{equation}
+Diferencial de la superficie normal esta dado por:
+\begin{equation}
+\boxed{\begin{split}
+d\textbf{S}&=dy dz\textbf{a}_x\\
+&=dx dz\textbf{a}_y\\
+&=dx dy\textbf{a}_z
+\end{split}}
+\end{equation}
+Diferencial de volumen esta dado por:
+\begin{equation}
+\boxed{dv=dx\cdot dy\cdot dz}
+\end{equation}
+\subsubsection{Coordenadas cilíndricas}
+El desplazamiento diferencial esta dado por:
+\begin{equation}
+\boxed{d\textbf{l}=d\rho\textbf{a}_{\rho}+\rho\cdot d\phi\textbf{a}_{\phi}+dz\textbf{a}_z}
+\end{equation}
+Diferencial de la superficie normal esta dado por:
+\begin{equation}
+\boxed{\begin{split}
+d\textbf{S}&=\rho\cdot d\phi dz\textbf{a}_{\rho}\\
+&=d\rho dz\textbf{a}_{\phi}\\
+&=\rho\cdot d\rho d\phi\textbf{a}_z
+\end{split}}
+\end{equation}
+Diferencial de volumen esta dado por:
+\begin{equation}
+\boxed{dv=\rho\cdot d\rho\cdot d\phi\cdot dz}
+\end{equation}
+\subsubsection{Coordenadas esféricas}
+El desplazamiento diferencial esta dado por:
+\begin{equation}
+\boxed{d\textbf{l}=dr\textbf{a}_r+r d\theta\textbf{a}_{\theta}+r\sin\theta d\phi\textbf{a}_{\phi}}
+\end{equation}
+Diferencial de la superficie normal esta dado por:
+\begin{equation}
+\boxed{\begin{split}
+d\textbf{S}&=r^2\cdot\sin\theta d\theta d\theta d\phi \textbf{a}_r\\
+&=r\cdot\sin\theta dr d\phi\textbf{a}_{\theta}\\
+&=r\cdot dr d\theta\textbf{a}_{\phi}
+\end{split}}
+\end{equation}
+Diferencial de volumen esta dado por:
+\begin{equation}
+\boxed{dv=r^2\cdot\sin\theta dr d\theta d\phi}
+\end{equation}
+\subsection{Operador DEL($\nabla$)}
+El operador DEL, es el operador de vector diferencial. En coordenadas cartesianas:
+\begin{equation}
+\boxed{\nabla=\frac{\partial}{\partial x}\textbf{a}_x+\frac{\partial}{\partial y}\textbf{a}_y+\frac{\partial}{\partial z}\textbf{a}_z}
+\end{equation}
+En coordenadas cilíndricas:
+\begin{equation}
+\boxed{\nabla=\textbf{a}_{\rho}\frac{\partial}{\partial\rho}+\textbf{a}_{\phi}\frac{1}{\rho}\frac{\partial}{\partial\phi}+\textbf{a}_z\frac{\partial}{\partial z}}
+\end{equation}
+En coordenadas esféricas:
+\begin{equation}
+\boxed{\nabla=\textbf{a}_r\frac{\partial}{\partial r}+\textbf{a}_{\theta}\frac{1}{r}\frac{\partial}{\partial\theta}+\textbf{a}_{\phi}\frac{1}{r\sin\theta}\frac{\partial}{\partial \phi}}
+\end{equation}
+O tambien llamado operador \textbf{gradiente} no es un vector como tal, pero cuando opera sobre una función escalar, por ejemplo, resulta un vector. Este operador se usa para definir:
+\begin{itemize}
+\item El gradiente de un escalar V: $\nabla$V
+\item La divergencia de un vector A: $\nabla\cdot$A
+\item La rotacional de un vector A: $\nabla\times$A
+\item El Laplaciano de un escalar V:$\nabla^2$V
+\end{itemize}
+\subsection{Gradiente de un campo escalar: $\nabla$V}
+El gradiente de un campo escalar V es un vector que representa tanto la magnitud como
+la dirección de la tasa espacial máxima de aumento de V.
+En coordenadas cartesianas:
+\begin{equation}
+\boxed{\nabla=\frac{\partial V}{\partial x}\textbf{a}_x+\frac{\partial V}{\partial y}\textbf{a}_y+\frac{\partial V}{\partial z}\textbf{a}_z}
+\end{equation}
+En coordenadas cilíndricas:
+\begin{equation}
+\boxed{\nabla=\frac{\partial V}{\partial\rho}\textbf{a}_{\rho}+\frac{1}{\rho}\frac{\partial V}{\partial\phi}\textbf{a}_{\phi}+\frac{\partial V}{\partial z}\textbf{a}_z}
+\end{equation}
+En coordenadas esféricas:
+\begin{equation}
+\boxed{\nabla=\frac{\partial V}{\partial r}\textbf{a}_r+\frac{1}{r}\frac{\partial V}{\partial\theta}\textbf{a}_{\theta}+\frac{1}{r\sin\theta}\frac{\partial V}{\partial \phi}\textbf{a}_{\phi}}
+\end{equation}
+\begin{notation}
+De las formulas de gradiente se puede probar que:
+\begin{enumerate}
+\item $\nabla$(V + U)=$\nabla$V + $\nabla$U
+\item $\nabla$(VU)=V$\cdot\nabla$U + $\nabla$V$\cdot$U
+\item $\nabla\left[\frac{V}{U}\right]$=$\frac{U\cdot\nabla V-\nabla U\cdot V}{U^2}$
+\item $\nabla V^n$=n$V^{n-1}\nabla V$
+\end{enumerate}
+Donde U y V son escalares y \textit{n} es un entero
+\end{notation}
+\subsection{La divergencia de un vector: $\nabla\cdot$A}
+La divergencia de A en un punto dado P is el flujo hacia el exterior por unidad de volumen como el volumen se encoge sobre P.
+\begin{figure}[htbp]
+\centering
+\subfloat[Divergencia positiva]{\label{fig:divergenciapositiva}\includegraphics[scale=0.5]{CamposMag/CM6.png}}
+\subfloat[Divergencia negativa]{\label{fig:divergencianegativa}\includegraphics[scale=0.5]{CamposMag/CM7.png}}
+\subfloat[Divergencia cero]{\label{fig:zerodivergencia}\includegraphics[scale=0.5]{CamposMag/CM8.png}}
+\caption{Ilustración de la divergencia de un campo vectorial.}
+\label{fig:divergencia}
+\end{figure}
+Por eso:
+\begin{equation}
+div \textbf{A}=\nabla\cdot\textbf{A}=\lim_{\nabla\to 0}\frac{\oint_S \textbf{A}\cdot d\textbf{S}}{\nabla v}
+\end{equation}
+Para los sistemas de coordenadas se define como:\\
+Coordenadas cartesianas:
+\begin{equation}
+\boxed{\nabla\cdot\textbf{A}=\frac{\partial A_x}{\partial x}+\frac{\partial A_y}{\partial y}+\frac{\partial A_z}{\partial z}}
+\end{equation}
+Coordenadas cilíndricas:
+\begin{equation}
+\boxed{\nabla\cdot\textbf{A}=\frac{1}{\rho}\frac{\partial}{\partial\rho}\left(\rho A_{\rho}\right)+\frac{1}{\rho}\frac{\partial A_{\phi}}{\partial\phi}+\frac{\partial A_z}{\partial z}}
+\end{equation}
+Para coordenadas esféricas:
+\begin{equation}
+\boxed{\nabla\cdot\textbf{A}=\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2A_r\right)+\frac{1}{r\sin\theta}\frac{\partial}{\partial\theta}\left(A_{\theta}\sin\theta\right)+\frac{1}{r\sin\theta}\frac{\partial A_{\phi}}{\partial\phi}}
+\end{equation}
+\begin{notation}
+Se cumplen las siguientes propiedades:
+\begin{enumerate}
+\item Se produce un campo escalar porque el producto escalar esta involucrado.
+\item $\nabla\cdot\left(\textbf{A} + \textbf{B}\right)=\nabla\cdot \textbf{A} + \nabla\cdot \textbf{B}$
+\item $\nabla\cdot\left(V\textbf{A}\right)=V\nabla\cdot\textbf{A}+\textbf{A}\cdot\nabla V$
+\end{enumerate}
+\end{notation}
+De todo se induce que:
+\begin{equation}
+\boxed{\oint_S\textbf{A}\cdot d\textbf{S}=\int_v\nabla\cdot\textbf{A}dv}
+\end{equation}
+Esta es la definición del \textit{\textbf{Teorema de la divergencia}}, el teorema de la divergencia establece que el flujo total hacia afuera de un campo vectorial A a través de la superficie cerrada S es igual a la integral de volumen de la divergencia de A.
+\subsection{Rotacional de un vector: $\nabla\times$A}
+El rotacional de A es un vector axial (o rotacional) cuya magnitud es la circunferencia máxima cálculo de A por unidad de área ya que el área tiende a cero y cuya dirección es la normal dirección del área cuando el área está orientada para hacer la circulación máxima.\\
+La definición del rotacional de \textbf{A} en coordenadas cartesianas puede ser fácilmente calculado con:
+\begin{equation}
+\nabla\times\textbf{A}=\begin{vmatrix}
+\textbf{a}_x & \textbf{a}_y & \textbf{a}_z\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+A_x & A_y & A_z
+\end{vmatrix}
+\end{equation}
+O:
+\begin{equation}
+\boxed{\nabla\times\textbf{A}=\left[\frac{\partial A_z}{\partial y}-\frac{\partial A_y}{\partial z}\right]\textbf{a}_x + \left[\frac{\partial A_x}{\partial z}-\frac{\partial A_z}{\partial x}\right]\textbf{a}_y + \left[\frac{\partial A_y}{\partial x}-\frac{\partial A_x}{\partial y}\right]\textbf{a}_z}
+\end{equation}
+En coordenadas cilíndricas:
+\begin{equation}
+\nabla\times\textbf{A}=\frac{1}{\rho}\begin{vmatrix}
+\textbf{a}_{\rho} & \rho\textbf{a}_{\phi} & \textbf{a}_z\\
+\frac{\partial}{\partial \rho} & \frac{\partial}{\partial \phi} & \frac{\partial}{\partial z}\\
+A_x & \rho A_{\phi} & A_z
+\end{vmatrix}
+\end{equation}
+O:
+\begin{equation}
+\boxed{\nabla\times\textbf{A}=\left[\frac{1}{\rho}\frac{\partial A_z}{\partial\phi}-\frac{\partial A_{\phi}}{\partial z}\right]\textbf{a}_{\rho}+\left[\frac{\partial A_{\rho}}{\partial z}-\frac{\partial A_z}{\partial\rho}\right]\textbf{a}_{\phi}+\frac{1}{\rho}\left[\frac{\partial\left(\rho A_{\phi}\right)}{\partial\rho}-\frac{\partial A_{\rho}}{\partial\phi}\right]\textbf{a}_z}
+\end{equation}
+Y para las esféricas:
+\begin{equation}
+\nabla\times\textbf{A}=\frac{1}{r^2\sin\theta}\begin{vmatrix}
+\textbf{a}_r & r\textbf{a}_{\theta} & r\sin\theta\textbf{a}_{\phi}\\
+\frac{\partial}{\partial r} & \frac{\partial}{\partial \theta} & \frac{\partial}{\partial \phi}\\
+A_r & r A_{\theta} & r\sin\theta A_{\phi}
+\end{vmatrix}
+\end{equation}
+O:
+\begin{equation}
+\boxed{\nabla\times\textbf{A}=\frac{1}{r\sin\theta}\left[\frac{\partial\left(A_{\phi}\right)}{\partial\theta}\right]-\frac{\partial A_{\theta}}{\partial\phi}\textbf{a}_r + \frac{1}{r}\left[\frac{1}{\sin\theta}\frac{\partial A_r}{\partial\phi}-\frac{\partial\left(r A_{\phi}\right)}{\partial r}\right]\textbf{a}_{\theta} + \frac{1}{r}\left[\frac{\partial\left(r A_{\theta}\right)}{\partial r}-\frac{\partial A_r}{\partial\theta}\right]\textbf{a}_{\phi}}
+\end{equation}
+\begin{notation}
+Se describe las propiedades del rotacional:
+\begin{enumerate}
+\item El rotacional de un campo vectorial  es otro campo vectorial.
+\item $\nabla\times(\textbf{A}+ \textbf{B})=\nabla\times\textbf{A}+\nabla\times\textbf{B}$.
+\item $\nabla\times(\textbf{A}+ \textbf{B})=A(\nabla\cdot\textbf{B})-\textbf{B}(\nabla\cdot\textbf{A})+(\textbf{B}\cdot\nabla)\textbf{A}-(\textbf{A}\cdot\nabla)\textbf{B}$
+\item $\nabla\times(V\textbf{A})=V\nabla\times\textbf{A}+\nabla V\times\textbf{A}$
+\item La divergencia de un rotacional de un campo vectorial se desvanece: $\nabla\cdot(\nabla\times\textbf{A})=0$
+\item El rotacional del gradiente de un campo escalar se desvanece: $\nabla\times\nabla V = 0$ ó $\nabla\times\nabla = 0$
+\end{enumerate}
+\end{notation}
+\subsection{Laplaciano de un escalar: $\nabla^2$V}
+El Laplaciano de un campo escalar V, es la divergencia del gradiente de V.\\
+En coordenadas cartesianas:
+\begin{equation}
+\boxed{\nabla^2V=\frac{\partial^2V}{\partial x^2}+\frac{\partial^2V}{\partial y^2}+\frac{\partial^2V}{\partial z^2}}
+\end{equation}
+\begin{remark}
+El Laplaciano de un vector escalar es otro vector escalar.
+\end{remark}
+En coordenadas cilíndricas:
+\begin{equation}
+\boxed{\nabla^2V=\frac{1}{\rho}\frac{\partial}{\partial\rho}\left(\rho\frac{\partial V}{\partial\rho}\right)+\frac{1}{\rho^2}\frac{\partial^2V}{\partial\phi^2}+\frac{\partial^2V}{\partial z^2}}
+\end{equation}
+Y en coordenadas esféricas:
+\begin{equation}
+\boxed{\nabla^2V=\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right)+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial V}{\partial\theta}\right)+\frac{1}{r^2\sin^2\theta}\frac{\partial^2V}{\partial\phi^2}}
+\end{equation}
 \part{Sistemas de telefonía}
 \chapterimage{chapter_head_ST.pdf} % Chapter heading image
 
@@ -5132,6 +5485,7 @@ IDK
 \chapterimage{chapter_head_Artificios.pdf}
 \chapter{Artificios matemáticos}
 En esta sección se detallaran trucos, repasos, propiedades que son vitales saberlas pero, típico del ser humano, a veces se nos olvida.
+\section{Logaritmos y exponenciales}
 \begin{equation}\label{art:expaln}
 e^{ln|x|}=x
 \end{equation}
@@ -5150,22 +5504,85 @@ log(a)^b=b\cdot log(a)
 \begin{equation}\label{art:raizlog}
 log\left(\sqrt[b]{a}\right)=\frac{log(a)}{b}
 \end{equation}
+\section{Matrices}
+\subsection{Conformabilidad de matrices}
+Para que un producto de matrices este definido es necesario saber si las matrices son conformables. Dos matrices son conformables si las columnas de la matriz multiplicando es igual a las filas del multiplicador. Si son \textbf{iguales}, son matrices conformables y esta definido el producto, de lo contrario no existe el producto. Las dimensiones del producto de dos matrices coformables es igual al tamaño de las filas del multiplicando y las columnas del multiplicador:
+\begin{equation}\label{art:matricesconformables}
+   \underbrace{\begin{bmatrix}
+     a & b & c\\
+     d & e & f\\
+     g & h & i
+   \end{bmatrix}}_{[\textcolor{blue}{3}\times \textcolor{red}{3}]}
+   \underbrace{\begin{bmatrix}j \\k\\l \end{bmatrix}}_{[\textcolor{red}{3}\times \textcolor{orange}{1}]}
+   =\underbrace{\begin{bmatrix}a\cdot j+b\cdot k +c\cdot l\\d\cdot j+e\cdot k +f\cdot l\\g\cdot j+h\cdot k +i\cdot l
+\end{bmatrix}}_{[\textcolor{blue}{3}\times \textcolor{orange}{1}]}
+\end{equation}
+Recordando que el producto \textbf{no es conmutativa}, no es lo mismo \textbf{A}$\times$\textbf{B} que \textbf{B}$\times$\textbf{A}.
+\section{Integrales}
+\subsection{Integral por tabulación}
+Sean a y b dos funciones en función de \textit{x} en una integral:
+\begin{displaymath}
+\int a\cdot b dx
+\end{displaymath}
+La integral se puede desarrollar:
+\[
+    \renewcommand{\arraystretch}{1.5}
+    \begin{array}{c @{\hspace*{1.0cm}} c}\toprule
+       Derivar & Integrar \\\cmidrule{1-2}
+      a\tikzmark{Left 1} & \tikzmark{Right 1}b \\
+      \frac{da}{dx} \tikzmark{Left 2} & \tikzmark{Right 2}\int b\cdot dx \\      
+      \frac{da}{d^2x}  \tikzmark{Left 3} & \tikzmark{Right 3}\int\int b\cdot dx dx \\      
+      \vdots  \tikzmark{Left 4} & \tikzmark{Right 4}\vdots \\
+      0  \tikzmark{Left 5} & \tikzmark{Right 5}\int\ldots\int b dx\ldots dx \\
+      \bottomrule
+    \end{array}
+\]
+%-----------------------------------------
+\DrawArrow[draw=red]{Left 1}{Right 2}{$+$}%
+\DrawArrow[draw=brown]{Left 2}{Right 3}{$-$}%
+\DrawArrow[draw=blue]{Left 3}{Right 4}{$+$}%
+\DrawArrow[draw=orange]{Left 4}{Right 5}{$\pm$}%
+El mismo proceso se realiza hasta que en la columna de derivar se llegue a cero, ahora multiplica cada valor de la columna derivar por el valor de la columna integrar en el otro extremo de la flecha. El signo más o menos le indica si desea agregar o restar este término:
+\begin{equation}
+\label{art:integral pr tabulacion}
+\int a\cdot b dx=\textcolor{red}+a\cdot\int b\cdot xd \textcolor{brown}{-}\frac{da}{dx}\cdot\int\int b\cdot dx dx\textcolor{blue}{+}\frac{da}{d^2x}\ldots
+\end{equation}
+\section{Números complejos}
+Sea el número complejo:
+\begin{equation}
+\label{art:numeroscomplejos}
+A=10 + j5
+\end{equation}
+El número se puede expresar de distintas maneras:
+\begin{align*}
+A&=\Re(A) + j\Im(A)\\
+&\therefore A=10 + j5\\
+A&=C\cdot e^{j\theta}, donde:\\
+&\Rightarrow C=\sqrt{\Re(A)^2 + \Im(A)^2}\hspace{10pt}\theta=\tg^{-1}\left(\frac{\Im(A)}{\Re(A)}\right)\\
+&\therefore C=\sqrt{10^2+5^2}=11.18\hspace{10pt}\theta=tg^{-1}\left(\frac{5}{10}\right)=26.56^{\circ}\\
+&\Rightarrow A=11.18\cdot e^{j 26.56}\\
+A&=C\cdot\cos\theta+jC\sin\theta=C(\cos\theta+j\sin\theta)\\
+&\therefore A=11.18(\cos 26.56+j\sin 26.56)\\
+A&=C\phase{\theta^{\circ}}\\
+&\therefore A=11.18\phase{26.56^{\circ}}
+\end{align*}
 
 
-\chapterimage{chapter_head_EX.pdf}
-\chapter*{Bibliography}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}} % Add a Bibliography heading to the table of contents
+
+%\chapterimage{chapter_head_EX.pdf}
+%\chapter*{Bibliography}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}} % Add a Bibliography heading to the table of contents
 
 %------------------------------------------------
-\section*{Articles}
-\addcontentsline{toc}{section}{Articles}
-\printbibliography[heading=bibempty,type=article]
-
-%------------------------------------------------
-
-\section*{Books}
-\addcontentsline{toc}{section}{Books}
-\printbibliography[heading=bibempty,type=book]
+%\section*{Articles}
+%\addcontentsline{toc}{section}{Articles}
+%\printbibliography[heading=bibempty,type=article]
+%
+%%------------------------------------------------
+%
+%\section*{Books}
+%\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
 
 %----------------------------------------------------------------------------------------
 %	INDEX
