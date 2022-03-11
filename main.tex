@@ -1,10 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% LaTeX Template
+% Version 3.1 (February 18, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Vel (vel@latextemplates.com)
+% Mathias Legrand (legrand.mathias@gmail.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
 % Compiling this template:
 % This template uses biber for its bibliography and makeindex for its index.
 % When you first open the template, compile it from the command line with the 
 % commands below to make sure your LaTeX distribution is configured correctly:
 %
 % 1) pdflatex main
-% 2) makeindex main.idx -s StyleInd.ist
+% 2) makeindex main.idx -s indexstyle.ist
 % 3) biber main
 % 4) pdflatex main x 2
 %
@@ -12,26 +27,35 @@
 % command above and make sure to compile with pdflatex several times 
 % afterwards to propagate your changes to the document.
 %
-% This template also uses a number of packages which may need to be
-% updated to the newest versions for the template to compile. It is strongly
-% recommended you update your LaTeX distribution if you have any
-% compilation errors.
-%
-% Important note:
-% Chapter heading images should have a 2:1 width:height ratio,
-% e.g. 920px width and 460px height.
-%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+\documentclass[
+	11pt, % Default font size, select one of 10pt, 11pt or 12pt
+	fleqn, % Left align equations
+	a4paper, % Paper size, use either 'a4paper' for A4 size or 'letterpaper' for US letter size
+	%oneside, % Uncomment for oneside mode, this doesn't start new chapters and parts on odd pages (adding an empty page if required), this mode is more suitable if the book is to be read on a screen instead of printed
+]{LegrandOrangeBook}
 
-\input{structure.tex} % Insert the commands.tex file which contains the majority of the structure behind the template
+% Book information for PDF metadata, remove/comment this block if not required 
+\hypersetup{
+	pdftitle={Title}, % Title field
+	pdfauthor={Author}, % Author field
+	pdfsubject={Subject}, % Subject field
+	pdfkeywords={Keyword1, Keyword2, ...}, % Keywords
+	pdfcreator={LaTeX}, % Content creator field
+}
 
-\hypersetup{pdftitle={Telecomunicaciones en tu idioma},pdfauthor={Jose Antonio Hancco Mamani}} % Uncomment and fill out to include PDF metadata for the author and title of the book
+\addbibresource{sample.bib} % Bibliography file
+
+\definecolor{ocre}{RGB}{243, 102, 25} % Define the color used for highlighting throughout the book
+
+\chapterimage{orange1.jpg} % Chapter heading image
+\chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
+\chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
 %----------------------------------------------------------------------------------------
 
@@ -757,17 +781,9 @@ Devolviendo el cambio de variable $W=y^{(1-2)}$:
 \boxed{y^{-1}=\left[ln|x+2|+C\right]\cdot\frac{x+2}{x-2}}
 \end{equation}
 \end{exercise}
-
-
-
-
-
-
-
-
-%----------------------------------------------------------------------------------------
-%	CHAPTER 2
-%----------------------------------------------------------------------------------------
+%---------------------------------------------------------------
+%Chapter separation
+%---------------------------------------------------------------
 \part{Sistemas Digitales}
 \chapterimage{chapter_head_SD.pdf} % Chapter heading image
 \chapter{Lógica digital}
@@ -2679,7 +2695,7 @@ Ya solo nos queda simplificar las salidas $q^+$:\\
 \end{center}
 Ya solo nos queda expresar en la forma de funciones lógicas y podemos implementar el circuito.
 \end{exercise}
-%---------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \part{Smart cities}
 \chapterimage{chapter_head_SM.pdf} % Chapter heading image
 \chapter{Conociendo la ESP8266}
@@ -2700,9 +2716,9 @@ Todos los codigos estarán disponibles en \textbf{GitHub}, puedes acceder desde 
 
 \section{Instalación Windows:Materiales}\index{Instalación Windows:Materiales}
 \begin{enumerate}
-\item[\textbf{Software IDE arduino}] Disponible desde \url{https://www.arduino.cc/en/software}
-\item[\textbf{Cable micro usb}] Que sea capaz de transmitir datos, no solo energía.
-\item[\textbf{Driver del ESP8266}] No siempre es necesario. Si windows no lo reconoce por si solo, es necesario que instales el driver correspondiente antes de todo.\footnote{Puedes probar el driver \url{https://parzibyte.me/blog/2020/02/09/instalar-driver-esp8266-windows/} }
+\item \textbf{Software IDE arduino}: Disponible desde \url{https://www.arduino.cc/en/software}
+\item \textbf{Cable micro usb}: Que sea capaz de transmitir datos, no solo energía.
+\item \textbf{Driver del ESP8266}: No siempre es necesario. Si windows no lo reconoce por si solo, es necesario que instales el driver correspondiente antes de todo.\footnote{Puedes probar el driver \url{https://parzibyte.me/blog/2020/02/09/instalar-driver-esp8266-windows/} }
 \end{enumerate}
 \section{Instalación}\index{Instalación}
 \begin{enumerate}
@@ -3411,6 +3427,9 @@ Igual se deja un archivo JSON llamado \textit{flows.json} en la carpeta del bot�
 \newpage
 \section{Front-end}
 En cuanto al front-end, ya todo esta configurado y listo para usarse. Tan solo hay que copiar los archivos como se dijo en la carpeta htdocs y poder acceder a ellos desde localhost. Se tendrá como pagina principal \textit{http://localhost/panicbuttonserver/}. Se puede usar un editor de texto para poder cambiar textos dentro de cada archivo CSS. Hay algunos apartados que no funcionan como configuración o recuperar cuenta.
+%----------------------------------------------------------------------------------------
+%	NEW CHAPTER
+%----------------------------------------------------------------------------------------
 \part{Telecomunicaciones 2}
 \chapterimage{chapter_head_T2.pdf} % Chapter heading image
 
@@ -3522,7 +3541,6 @@ Let $G=\{x\in\mathbb{R}^2:|x|<3\}$ and denoted by: $x^0=(1,1)$; consider the fun
 f(x)=\left\{\begin{aligned} & \mathrm{e}^{|x|} & & \text{si $|x-x^0|\leq 1/2$}\\
 & 0 & & \text{si $|x-x^0|> 1/2$}\end{aligned}\right.
 \end{equation}
-The function $f$ has bounded support, we can take $A=\{x\in\mathbb{R}^2:|x-x^0|\leq 1/2+\epsilon\}$ for all $\epsilon\in\intoo{0}{5/2-\sqrt{2}}$.
 \end{example}
 
 \subsection{Paragraph of Text}\index{Examples!Paragraph of Text}
@@ -3631,6 +3649,9 @@ DC&=20
 \end{equation}
 El 20\% hallado es el duty cycle, es el tiempo que valdrá 5V, nos pide el tiempo que estará apagada o donde valdrá 0V, el 80\% restante del periodo total.
 \end{exercise}
+%----------------------------------------------------------------------------------------
+%	NEW CHAPTER
+%----------------------------------------------------------------------------------------
 \part{Campos \\electromagnéticos}
 \chapterimage{chapter_head_CE.pdf} % Chapter heading image
 \chapter{Repaso vectorial y conceptualización}
@@ -4036,9 +4057,14 @@ Y en coordenadas esféricas:
 \begin{equation}
 \boxed{\nabla^2V=\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right)+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial V}{\partial\theta}\right)+\frac{1}{r^2\sin^2\theta}\frac{\partial^2V}{\partial\phi^2}}
 \end{equation}
+
+\chapter{Magnetoestática}
+\chapter{Ecuaciones de Maxwell y las ondas electromagnéticas}
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
 \part{Sistemas de telefonía}
 \chapterimage{chapter_head_ST.pdf} % Chapter heading image
-
 \chapter{Telefonía}
 \section{Evolución de la telefonía}
 La era de las telecomunicaciones se inicia en el siglo XIX con la invención del telégrafo en los años 1830’s.
@@ -5447,40 +5473,14 @@ La red RDSI dispone de su propio cableado, permitiendo no sólo la transmisión 
 LMDS (Local Multipoint Distribution System o Sistema Local de Distribución Multipunto) es un sistema que utiliza el aire como medio de transmisión para la comunicación desde una estación base a los abonados del servicio. Permite la transmisión de voz, datos, Internet y vídeo mediante la emisión de ondas radioeléctricas de alta frecuencia (28 - 40Ghz), y se suele utilizar para cubrir zonas geográficas donde es difícil el acceso mediante cable. A mayor frecuencia las velocidades son más altas (hasta 8Mbps), pero la zona de cobertura es menor.
 \subsection{GSM}
 GSM (Global System for Mobile communications o Sistema Global para las Comunicaciones Móviles) es un estándar que utiliza la conmutación de circuitos para la comunicación entre teléfonos móviles, y que realiza la transmisión de voz y señalización en formato digital. Para su funcionamiento se utiliza una red compleja de estaciones base o BS (Base Station) que dan cobertura a un área geográfica determinada, denominada celda o célula. Los terminales de usuario buscan siempre una estación base a la que conectarse utilizando una banda de frecuencia comprendido entre 900 MHz y 1800 MHz.
-
-
-
 \newpage
 \section{Vocabulary}\index{Vocabulary}
 \begin{vocabulary}[Congestión]
 Es cuando todos los circuitos capaces de cursar tráfico en una central están ocupados.
 \end{vocabulary}
-
-\part{Instrumentación 1}
-\chapterimage{chapter_head_I1.pdf} % Chapter heading image
-
-\chapter{Unidad I}
-IDK
 %----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
+%	ANEXOS y EXTRAS
 %----------------------------------------------------------------------------------------
-
-\part{Anexos}
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}]{Anexos/TraficoTelefonico.pdf}
-
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Sistemas de telefonía 2 }\label{Anexo 2}]{Anexos/TraficoTelefonico2.pdf}
-
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}\label{Anexo 3}]{Anexos/Redireccionamiento.pdf}
-
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Erlang B}\label{Anexo 4}]{Anexos/ErlangB.pdf}
-
-
-
-
 \part{Extras}
 \chapterimage{chapter_head_Artificios.pdf}
 \chapter{Artificios matemáticos}
@@ -5558,32 +5558,80 @@ El número se puede expresar de distintas maneras:
 A&=\Re(A) + j\Im(A)\\
 &\therefore A=10 + j5\\
 A&=C\cdot e^{j\theta}, donde:\\
-&\Rightarrow C=\sqrt{\Re(A)^2 + \Im(A)^2}\hspace{10pt}\theta=\tg^{-1}\left(\frac{\Im(A)}{\Re(A)}\right)\\
-&\therefore C=\sqrt{10^2+5^2}=11.18\hspace{10pt}\theta=tg^{-1}\left(\frac{5}{10}\right)=26.56^{\circ}\\
+&\Rightarrow C=\sqrt{\Re(A)^2 + \Im(A)^2}\hspace{10pt}\theta=\tan^{-1}\left(\frac{\Im(A)}{\Re(A)}\right)\\
+&\therefore C=\sqrt{10^2+5^2}=11.18\hspace{10pt}\theta=\tan^{-1}\left(\frac{5}{10}\right)=26.56^{\circ}\\
 &\Rightarrow A=11.18\cdot e^{j 26.56}\\
 A&=C\cdot\cos\theta+jC\sin\theta=C(\cos\theta+j\sin\theta)\\
 &\therefore A=11.18(\cos 26.56+j\sin 26.56)\\
 A&=C\phase{\theta^{\circ}}\\
 &\therefore A=11.18\phase{26.56^{\circ}}
 \end{align*}
+\section{Producto cruz y producto escalar}
+\subsection{Producto escalar}
+Sea el producto escalar $\vec{a}\cdot\vec{b}$, es el módulo del vector $\vec{a}$ por el modulo del $\vec{b}$ por el coseno del menor ángulo que forman:
+\begin{equation}
+\vec{a}\cdot\vec{b}=|a|\cdot |b|\cos\theta
+\end{equation}
+\begin{center}
+\includegraphics[scale=0.4]{CamposMag/CM9.png}
+\end{center}
+Si el producto escalar de dos vectores es cero, y el módulo de los dos vectores es distinto de cero, entonces los dos vectores son perpendiculares entre sí.
+\subsection{Producto cruz}
+Sean los vectores, se define el producto vectorial como $\vec{c}=\vec{a}\times\vec{b}$:
+\begin{align*}
+c_x&=a_yb_z - a_zb_y\\
+c_y&=a_zb_x - a_xb_Z\\
+c_z&=a_xb_y - a_yb_x
+\end{align*}
+\begin{equation}
+\vec{c}=\vec{a}\times\vec{b}=
+\begin{bmatrix}
+     \vec{i} & \vec{j} & \vec{k}\\
+     a_x & a_y & a_z\\
+     b_x & b_y & b_z
+   \end{bmatrix}
+=c_x\vec{i}-c_y\vec{j}+c_z\vec{k}
+\end{equation}
+Los signos de izquierda a derecha son intercalados y empiezan con +,-,+,-,...,
+El resultado de esta operación es un vector, es decir una cantidad que sí tiene dirección. 
+Cuyo módulo de $\vec{c}$:
+\begin{equation}
+|\vec{c}|=|\vec{a}||\vec{b}|\sin\theta
+\end{equation}
+El módulo del vector producto vectorial coincide con el área del paralelogramo definido por los dos vectores
+\subsection{Propiedades}
+\begin{itemize}
+\item Si $\vec{a}\times\vec{b}=0$ y el modulo de ambos vectores es diferente de cero, entonces ambos vectores son paralelos.
+\item $\vec{a}\times(\vec{b}+\vec{c})=\vec{a}\times\vec{b}+\vec{a}\times\vec{c}$
+\item $(\alpha\vec{a})\times\vec{b}=\alpha(\vec{a}\times\vec{b})$
+\item $\vec{a}\cdot(\vec{b}\times\vec{c})=(\vec{a}\times\vec{b})\cdot\vec{c}$
+\item $\vec{a}\times(\vec{b}\times\vec{c})=\vec{b}(\vec{a}\cdot\vec{b}) - \vec{c}(\vec{a}\cdot\vec{b})$
+\item $\vec{a}\times\vec{a}=0$
+\item $\vec{a}\cdot(\vec{a}\times\vec{b})=0	$
+\item $(\vec{a}\cdot\vec{b})\vec{c}\neq\vec{a}(\vec{b}\cdot\vec{c})$
+\end{itemize}
+\begin{equation}
+\vec{a}\cdot(\vec{b}\times\vec{c})=
+\begin{bmatrix}
+     a_x & a_y & a_z\\
+     b_x & b_y & b_z\\
+     c_x & c_y & c_z
+   \end{bmatrix}
+=a_x(b_yc_z-b_zc_y)-a_y(b_xc_z-b_zc_x)+a_z(b_xc_y-c_xb_y)
+\end{equation}
+Se resuelve igual que la matriz de producto cruz, con la misma distribución de signos.
+\part{Anexos}
+\includepdf[scale=0.8,pages={2-4},pagecommand=
+\section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}]{Anexos/TraficoTelefonico.pdf}
 
+\includepdf[scale=0.8,pages={2-4},pagecommand=
+\section{Ejercicios resueltos U2-Sistemas de telefonía 2 }\label{Anexo 2}]{Anexos/TraficoTelefonico2.pdf}
 
+\includepdf[scale=0.8,pages={2-4},pagecommand=
+\section{Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}\label{Anexo 3}]{Anexos/Redireccionamiento.pdf}
 
-%\chapterimage{chapter_head_EX.pdf}
-%\chapter*{Bibliography}
-%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}} % Add a Bibliography heading to the table of contents
-
-%------------------------------------------------
-%\section*{Articles}
-%\addcontentsline{toc}{section}{Articles}
-%\printbibliography[heading=bibempty,type=article]
-%
-%%------------------------------------------------
-%
-%\section*{Books}
-%\addcontentsline{toc}{section}{Books}
-%\printbibliography[heading=bibempty,type=book]
-
+\includepdf[scale=0.8,pages={2-4},pagecommand=
+\section{Ejercicios resueltos U2-Erlang B}\label{Anexo 4}]{Anexos/ErlangB.pdf}
 %----------------------------------------------------------------------------------------
 %	INDEX
 %----------------------------------------------------------------------------------------
@@ -5593,7 +5641,8 @@ A&=C\phase{\theta^{\circ}}\\
 \setlength{\columnsep}{0.75cm} % Space between the 2 columns of the index
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}} % Add an Index heading to the table of contents
 \printindex % Output the index
-
+%----------------------------------------------------------------------------------------
+%	CHAPTER
 %----------------------------------------------------------------------------------------
 
 \end{document}
