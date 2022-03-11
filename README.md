@@ -15,3 +15,6 @@ Puedes contactarme directamente para cualquier tipo de feedback a mi correo: jha
 
 ## Licencia
 [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/)
+
+![alt text](https://img1.goodfon.com/wallpaper/nbig/d/b6/noch-nebo-mnechnyy-put-zvezdy.jpg)
+Note: I don't own this picture. All rights reserved.
