@@ -324,6 +324,7 @@
 
 \contentsmargin{0cm} % Removes the default right margin
 
+\renewcommand{\contentsname}{Contenido}
 %------------------------------------------------
 
 % Styling of numbered parts in the table of contents

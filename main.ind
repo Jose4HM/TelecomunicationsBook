@@ -2,84 +2,73 @@
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{C}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Citation\dotfill \hyperpage{13}
-  \item Corollaries\dotfill \hyperpage{18}
+  \item Conectar a una red Wi-Fi\dotfill \hyperpage{95}
+  \item Corollaries\dotfill \hyperpage{136}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{D}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Definitions\dotfill \hyperpage{17}
+  \item Definitions\dotfill \hyperpage{135}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{E}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Examples\dotfill \hyperpage{18}
-    \subitem Equation\dotfill \hyperpage{18}
-    \subitem Text\dotfill \hyperpage{18}
-  \item Exercises\dotfill \hyperpage{18}
+  \item Equivalente al Hola Mundo pero en Placas\dotfill \hyperpage{94}
+  \item ESP8266\dotfill \hyperpage{93}
+  \item Examples\dotfill \hyperpage{136}
+    \subitem Equation and Text\dotfill \hyperpage{136}
+    \subitem Paragraph of Text\dotfill \hyperpage{136}
+  \item Exercises\dotfill \hyperpage{137}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{F}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Figure\dotfill \hyperpage{21}
+  \item Figure\dotfill \hyperpage{137}
 
   \indexspace
 \nopagebreak
-\vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{L}}};\vspace*{0.2cm}\nopagebreak
+\vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{I}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Links\dotfill \hyperpage{13}
-  \item Lists\dotfill \hyperpage{13}
-    \subitem Bullet Points\dotfill \hyperpage{13}
-    \subitem Descriptions and Definitions\dotfill \hyperpage{13}
-    \subitem Numbered List\dotfill \hyperpage{13}
+  \item Instalación\dotfill \hyperpage{94}
+  \item Instalación Windows:Materiales\dotfill \hyperpage{94}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{N}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Notations\dotfill \hyperpage{17}
+  \item Notations\dotfill \hyperpage{135}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{P}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Problems\dotfill \hyperpage{19}
-  \item Propositions\dotfill \hyperpage{18}
-    \subitem Several Equations\dotfill \hyperpage{18}
-    \subitem Single Line\dotfill \hyperpage{18}
+  \item Problems\dotfill \hyperpage{137}
+  \item Propositions\dotfill \hyperpage{136}
+    \subitem Several Equations\dotfill \hyperpage{136}
+    \subitem Single Line\dotfill \hyperpage{136}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{R}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Remarks\dotfill \hyperpage{18}
-
-  \indexspace
-\nopagebreak
-\vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{S}}};\vspace*{0.2cm}\nopagebreak
-
-  \item Sectioning\dotfill \hyperpage{11}
-    \subitem Paragraphs\dotfill \hyperpage{12}
-    \subitem Sections\dotfill \hyperpage{11}
-    \subitem Subsections\dotfill \hyperpage{11}
-    \subitem Subsubsections\dotfill \hyperpage{12}
+  \item Remarks\dotfill \hyperpage{136}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{T}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Table\dotfill \hyperpage{21}
-  \item Theorems\dotfill \hyperpage{17}
-    \subitem Several Equations\dotfill \hyperpage{17}
-    \subitem Single Line\dotfill \hyperpage{17}
+  \item Table\dotfill \hyperpage{137}
+  \item Theorems\dotfill \hyperpage{135}
+    \subitem Several Equations\dotfill \hyperpage{135}
+    \subitem Single Line\dotfill \hyperpage{135}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{V}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Vocabulary\dotfill \hyperpage{19}
+  \item Vocabulary\dotfill \hyperpage{137}, \hyperpage{214}
 
 \end{theindex}

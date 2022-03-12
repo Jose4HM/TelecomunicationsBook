@@ -78,5 +78,8 @@
     <requires type="dynamic">
       <file>fastmain.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>sample.bib</file>
+    </requires>
   </external>
 </requests>
