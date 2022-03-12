@@ -5558,7 +5558,7 @@ El número se puede expresar de distintas maneras:
 A&=\Re(A) + j\Im(A)\\
 &\therefore A=10 + j5\\
 A&=C\cdot e^{j\theta}, donde:\\
-&\Rightarrow C=\sqrt{\Re(A)^2 + \Im(A)^2}\hspace{10pt}\theta=\tg^{-1}\left(\frac{\Im(A)}{\Re(A)}\right)\\
+&\Rightarrow C=\sqrt{\Re(A)^2 + \Im(A)^2}\hspace{10pt}\theta=\tan^{-1}\left(\frac{\Im(A)}{\Re(A)}\right)\\
 &\therefore C=\sqrt{10^2+5^2}=11.18\hspace{10pt}\theta=\tan^{-1}\left(\frac{5}{10}\right)=26.56^{\circ}\\
 &\Rightarrow A=11.18\cdot e^{j 26.56}\\
 A&=C\cdot\cos\theta+jC\sin\theta=C(\cos\theta+j\sin\theta)\\

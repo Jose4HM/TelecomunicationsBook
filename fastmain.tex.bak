@@ -1,24 +1,8 @@
-\documentclass[
-	11pt, % Default font size, select one of 10pt, 11pt or 12pt
-	fleqn, % Left align equations
-	a4paper, % Paper size, use either 'a4paper' for A4 size or 'letterpaper' for US letter size
-	%oneside, % Uncomment for oneside mode, this doesn't start new chapters and parts on odd pages (adding an empty page if required), this mode is more suitable if the book is to be read on a screen instead of printed
-]{LegrandOrangeBook}
-
-% Book information for PDF metadata, remove/comment this block if not required 
-\hypersetup{
-	pdftitle={Title}, % Title field
-	pdfauthor={Author}, % Author field
-	pdfsubject={Subject}, % Subject field
-	pdfkeywords={Keyword1, Keyword2, ...}, % Keywords
-	pdfcreator={LaTeX}, % Content creator field
-}
-
-\definecolor{ocre}{RGB}{243, 102, 25} % Define the color used for highlighting throughout the book
-
-\chapterimage{orange1.jpg} % Chapter heading image
-\chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
-\chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
+\documentclass[11pt,fleqn,a4paper,]{LegrandOrangeBook}
+\definecolor{ocre}{RGB}{243, 102, 25} 
+\chapterimage{orange1.jpg} 
+\chapterspaceabove{6.5cm}
+\chapterspacebelow{6.75cm} 
 
 %----------------------------------------------------------------------------------------
 \begin{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.11)  11 MAR 2022 16:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.3.11)  11 MAR 2022 21:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -839,11 +839,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip100
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 535.
+Package hyperref Info: Option `colorlinks' set `true' on input line 536.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 535.
+(hyperref)                setting the option has no effect on input line 536.
 
 (E:\Programas x86\MikTex\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -6545,7 +6545,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 5021.
 
-Underfull \vbox (badness 3250) has occurred while \output is active []
+Underfull \vbox (badness 2932) has occurred while \output is active []
 
  [194 <./Images//SisTelefonia/st52.png>]
 Package mdframed Info: Not enough space on this page on input line 5031.
@@ -7187,11 +7187,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 46536 strings out of 478659
- 877613 string characters out of 2855780
- 1799493 words of memory out of 3000000
+ 46551 strings out of 478659
+ 877443 string characters out of 2855780
+ 1799500 words of memory out of 3000000
  61400 multiletter control sequences out of 15000+600000
- 623358 words of font info for 760 fonts, out of 8000000 for 9000
+ 624313 words of font info for 770 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  141i,21n,139p,1690b,2152s stack positions out of 5000i,500n,10000p,200000b,80000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1
@@ -7224,7 +7224,7 @@ fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/
 utmb8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/Progr
 amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (235 pages, 24512438 bytes).
+Output written on main.pdf (235 pages, 24512418 bytes).
 PDF statistics:
  5065 PDF objects out of 5155 (max. 8388607)
  1357 named destinations out of 1440 (max. 500000)
