@@ -53,7 +53,7 @@
 
 \definecolor{ocre}{RGB}{243, 102, 25} % Define the color used for highlighting throughout the book
 
-\chapterimage{orange1.jpg} % Chapter heading image
+\chapterimage{Final.jpg} % Chapter heading image
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
@@ -131,7 +131,7 @@
 \chapterimage{chapter_head_MM1.pdf}
 \chapter{Ecuaciones Diferenciales de primer orden}
 En este capítulo aprenderemos como resolver ecuaciones diferenciales. Para ello es necesario saber como siempre álgebra media-avanzada, cálculo diferencial e integral y sobre todo habilidad matemática. 
-\section{Conceptos introductorios}
+\section{Conceptos introductorios}\index{Conceptos introductorios}
 Una ecuación diferencial es una ecuación derivada de una función desconocida(variable dependiente) respecto a una o más variables independientes.
 \begin{displaymath}
 \frac{dy}{dx}+5=e
@@ -200,7 +200,7 @@ F(x,y)=t\cdot G(x,y)
 La función es homogénea de grado 1
 \end{exercise}
 
-\section{Variables separables}
+\section{Variables separables}\index{Variables separables}
 Son las más sencillas de identificar, para poder resolverlas es necesario hacer un despeje para ``acomodar" los términos e integrar a ambos lados de la expresión.
 \begin{definition}[ED de variables separables]
 La forma estándar de estas ecuaciones es:\\
@@ -319,7 +319,7 @@ En este caso, una exponencial de \textit{c} es posible solo expresarla como una 
 \end{equation}
 \end{exercise}
 %\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1}
-\section{Ecuaciones diferenciales lineales}
+\section{Ecuaciones diferenciales lineales}\index{Ecuaciones diferenciales lineales}
 \begin{definition}[E.D.L.]
 \textbf{Forma estándar:}\\
 \begin{equation}\label{eq:edl}
@@ -397,7 +397,7 @@ Separando el denominador para cada término del numerador:
 \boxed{Y(x)=1+C(1-x^2)^{\frac{1}{2}}}
 \end{equation}
 \end{exercise}
-\section{Ecuaciones Diferenciales Exactas}
+\section{Ecuaciones Diferenciales Exactas}\index{Ecuaciones Diferenciales Exactas}
 Este tipo de ecuaciones toman como referencia a las ecuaciones diferenciales de primer orden.
 \begin{definition}[Ecuaciones Diferenciales exactas]
 En base a la ecuación \ref{eq:edprimerorden}, se busca la siguiente forma estándar para poder resolver:
@@ -491,7 +491,7 @@ Ahora que tenemos todo: solo nos queda reemplazar en la ecuación \ref{eq:ejempl
 \begin{remark}
 Se puede cambiar el orden de resolver, es decir, primero hemos resuelto la expresión \ref{eq:edecondicion1} y luego la expresión \ref{eq:edecondicion2}, pero también es valido(y debería salir lo mismo) si haces primero la expresión \ref{eq:edecondicion2} y luego la expresión \ref{eq:edecondicion1}
 \end{remark}
-\section{Ecuaciones Diferenciales No Exactas}
+\section{Ecuaciones Diferenciales No Exactas}\index{Ecuaciones Diferenciales No Exactas}
 Este tipo de E.D.N.E son reducibles a E.D.E mediante un factor integrante.
 \begin{definition}[Ecuaciones Diferenciales exactas]
 En base a la ecuación \ref{eq:edprimerorden}, se busca la siguiente forma estándar para poder resolver:
@@ -588,7 +588,7 @@ Multiplicando por dos a toda la expresión, teniendo en cuenta que 2 es constant
 \boxed{y^4x^2+y^6-10y^4=C}
 \end{equation}
 \end{exercise}
-\section{Ecuaciones por sustitución}
+\section{Ecuaciones por sustitución}\index{Ecuaciones por sustitución}
 \subsection{Ecuaciones Homogéneas}
 Recordando lo aprendido en la ecuación \ref{eq:homogeneidad}, una ecuación de la forma:
 \begin{displaymath}
@@ -788,7 +788,7 @@ Devolviendo el cambio de variable $W=y^{(1-2)}$:
 \chapterimage{chapter_head_SD.pdf} % Chapter heading image
 \chapter{Lógica digital}
 Un sistema digital binario es un conjunto de dispositivos que son destinados a la generación, transmisión, manejo, procesamiento y almacenamiento de señales digitales.
-\section{Compuertas lógicas}
+\section{Compuertas lógicas}\index{Compuertas lógicas}
 \subsection{Compuerta NOT}
 \begin{figure}[h!]
 \centering
@@ -1016,7 +1016,7 @@ Solo si todas las entradas son 0, la salida será 1.
 \caption{Tabla de verdad de la compuerta XNOR}
 \label{table:xnortable}
 \end{table}
-\section{Formas de expresar funciones booleanas}
+\section{Formas de expresar funciones booleanas}\index{Formas de expresar funciones booleanas}
 Existen formas de expresar las funciones booleanas: como \textbf{suma de productos} o como \textbf{productos de sumas.}
 \subsection{Suma de productos-SOP}
 Suma(\textbf{OR}) de términos(\textbf{AND}), formados por varias variables complementadas o no. Aqui nos importan las salidas con nivel \textbf{ALTO}. Como entradas, un nivel alto será A=1 mientras que un nivel bajo es A'=0.
@@ -1151,7 +1151,7 @@ El procedimiento será el mismo para más variables, sin embargo para más varia
 \begin{remark}
 Es común que escuchemos diferentes formas de expresar un circuito lógico. Una común es expresión booleana: Esta es una forma de expresar la salida como las operaciones que se realizan. Por ejemplo, sean las entradas A y B, la salida de una compuerta AND es A$\cdot$ B, la compuerta OR se expresa como A+B, la compuerta XOR $\oplus$ y así existen otros operadores para las demás compuerta y circuitos lógicos.
 \end{remark}
-\section{Axiomas}
+\section{Axiomas}\index{Axiomas}
 Los axiomas los conjuntos minimos de definiciones básicas que suponemos como verdaderas:
 \begin{enumerate}
 \item X=0 si X$\neq$1 $\lor$ X=1 si X$\neq$0
@@ -1160,7 +1160,7 @@ Los axiomas los conjuntos minimos de definiciones básicas que suponemos como ve
 \item 1$\cdot$1=1 $\land$ 0+0=0
 \item 0$\cdot$1=1$\cdot$0=0 $\land$ 1+0=0+1=1
 \end{enumerate}
-\section{Teoremas del álgebra de conmutación}
+\section{Teoremas del álgebra de conmutación}\index{Teoremas del álgebra de conmutación}
 Los teoremas siguientes son la base de la simplificación de circuitos complejos:
 \begin{theorem}[Identidad]
 \begin{align}
@@ -1285,7 +1285,7 @@ Antes de pasar a los Mapas de Karnaugh, hacer las tablas de verdad son fáciles 
 Para la columna 2, los ceros y unos se intercalan cada $2^1$ posiciones; en otras palabras escribiremos 0-0-1-1-0-0-1-1....Para la columna 3, $2^2$;  0-0-0-0-1-1-1-1-0-0-0-0....\\
 El proceso funciona para n variables independiente de el número de variables.
 \end{corollary}
-\section{Mapas de Karnaugh}
+\section{Mapas de Karnaugh}\index{Mapas de Karnaugh}
 \begin{remark}
 \textbf{Importante:} En todo el desarrollo de este capitulo el bit más significativo será A y el menos significativo será D,E,F dependiendo del número de variables.
 \end{remark}
@@ -1504,7 +1504,7 @@ Mientras más variables se tengan, los mapas de karnaugh dejan de ser útiles de
 \begin{remark}
 El MSB es A y el LSB es F, y las casillas como se dijo es la representación decimal de los bits en binario, por ejemplo: la casilla 56 ocupa la casilla 111000(ABCDEF) que si lo pasas a decimal es 56.
 \end{remark}
-\section{Parámetros TTL y CMOS}
+\section{Parámetros TTL y CMOS}\index{Parámetros TTL y CMOS}
 \subsection{Tensión de alimentación continua}
 \begin{itemize}
 \item[TTL] En continua(DC), para los \textit{Transistor-Transistor Logic} la alimentación es de +5V.
@@ -1607,7 +1607,7 @@ Existen dos tipos de circuitos lógicos:
 \item[Combinacional] Donde la salida solo depende de la entrada actual.
 \item[Secuencial] Donde la salida depende de la entrada actual y la secuencia anterior.
 \end{enumerate}
-\section{Sumador}
+\section{Sumador}\index{Sumador}
 \subsection{Semi-sumador}
 \begin{figure}[h!]
 \centering
@@ -1735,7 +1735,7 @@ C_g = A\cdot B
 \caption{Sumador anticipado.}
 \label{fig:sumadoranticipado}
 \end{figure}
-\section{Codificador y Decodificador}
+\section{Codificador y Decodificador}\index{Codificador y Decodificador}
 Es el proceso de asignar a cada entrada una combinación única de bits.
 \subsection{Encoder}
 Son circuitos combinacionales con $2^n$ entradas máximas y \textit{n} salidas, en donde las filas de las entradas van a tener \textbf{solo un dato que cambia} y en la salida aparece un código asignado a esas entradas.
@@ -1902,7 +1902,7 @@ U_2&=P_1
 \includegraphics[scale=0.4]{SD/SD38.png}
 \end{center}
 \end{exercise}
-\section{Multiplexor y Demultiplexor}
+\section{Multiplexor y Demultiplexor}\index{Multiplexor y Demultiplexor}
 \subsection{Multiplexor}
 Circuito combinacional al que entran varios canales y solo sale uno de ellos.
 \begin{center}
@@ -2026,7 +2026,7 @@ Para poder implementarlo con el IC, necesitamos que la expresión este en su for
 \end{center}
 Cada vez que en las entradas de selección se logre colocar cualquiera de los sumandos de la función F la salida será 1.
 \end{exercise}
-\section{Latch}
+\section{Latch}\index{Latch}
 El latch(cerrojo) es un tipo de dispositivo de almacenamiento temporal de dos estados(biestable).
 \subsection{Latch S-R(Set-Reset)}
 Dispositivo lógico biestable o multivibrador. Un Latch S-R con entrada activa a un nivel ALTO, se compone de dos puerta NOR o NAND acopladas.\\
@@ -2187,7 +2187,7 @@ R & S & D & E & $Q_{SR}$    & $\overline{Q_{STe}}$ & $Q_{D}$ \\ \hline
 \end{center}
 \caption{Ejemplo de tren de bits de latch S-R, latch S-R con enable y Latch D con enable.}
 \end{table}
-\section{Flip-Flops}
+\section{Flip-Flops}\index{Flip-Flops}
 Son dispositivos síncronos de dos estados, multivibradores biestables. La salida cambia de estado únicamente en un instante especifico de una entrada reloj(CLK). Los cambios se producen sincronizadamente con el reloj. Normalmente son \textbf{disparados por flanco}.\\
 Una identificación es por si símbolo lógico lo da un triangulo que se encuentra en la entrada clock. El triangulo de denomina indicador entrada dinámica.
 \begin{figure}[h!]
@@ -2319,14 +2319,14 @@ La mayoría de los circuitos integrados tienen también otras entradas asíncron
 \caption{Diagrama de tiempos de las entradas PRE y CLR.}
 \end{figure}
 \newpage
-\section{División de frecuencia}
+\section{División de frecuencia}\index{División de frecuencia}
 Usando Flip-Flops J-K se consigue dividir la frecuencia de reloj por 4.
 \begin{center}
 \includegraphics[scale=0.5]{SD/SD78.png}
 \includegraphics[scale=0.5]{SD/SD79.png}
 \end{center}
 \newpage
-\section{Monoestables}
+\section{Monoestables}\index{Monoestables}
 Dispositivos multivibradores que solo tienen un único estado estable. Normalmente, un monoestable se encuentra en su estado estable, cambiando a su estado inestable solo cuando se dispara. Una ve que se ha disparado, el monoestable permanece en su estado inestable durante un determinado intervalo de tiempo, volviendo a continuación a su estado estable.\\
 El tiempo que este dispositivo permanece en el estado inestable determina la anchura del impulso de salida. Nótese que los monoestables tienen que esperar hasta que se termine el tiempo definido, mientras que los monoestabes disparables al ser activado antes que termine el tiempo definido se vuelve a inicializar el tiempo.
 \begin{figure}[htp]
@@ -2357,7 +2357,7 @@ Circuito Lógico Combinacional cuya salida depende de los valores actuales y pas
 \begin{center}
 \includegraphics[scale=0.5]{SD/SD84.png}
 \end{center}
-\section{Máquina de estados}
+\section{Máquina de estados}\index{Máquina de estados}
 Solo hablaremos de los Circuitos Secuenciales Síncronos.\\
 Red de combinacionales y biestables conectados entre si. Puede haber caminos cíclicos, pero tienen que atravesar al menos un biestable. Todos los biestables usan la misma señal reloj. Las señales de entrada se sincronizan con el mismo reloj.\\
 Tiempo del reloj debe ser mayor o igual al tiempo de propagación del flip flop más el tiempo de propagación del CLC\footnote{Abreviatura de Circuito Lógico Combinacional}(ecuación \ref{eq:tiemporeloj}).
@@ -2464,7 +2464,7 @@ $q_1^+$ &   & 0 & 0   & 0   & 1   & 0   & 0   \\ \hline
 \end{tabular}
 \end{center}
 \end{exercise}
-\section{Grafos de estados}
+\section{Grafos de estados}\index{Grafos de estados}
 Grafos de estados o diagramas de estado son una forma de expresar las tablas de transición, el formato es el siguiente:
 \begin{center}
 \includegraphics[scale=0.8]{SD/SD87.png}
@@ -2822,7 +2822,7 @@ Las lineas de \textbf{byte}(\textit{Lineas 6-7}) son dos variables que van conta
 \label{fig:Monitor serie}
 \end{figure}
 \newpage
-\section{Crear una red WiFi}
+\section{Crear una red WiFi}\index{Crear una red Wi-Fi}
 \begin{wrapfigure}{r}{0.1\linewidth}
 \centering\includegraphics[scale=0.1]{SmartCities/qr/qr3.png}
 \caption{QR program: 3.CreateWiFi}
@@ -2847,7 +2847,7 @@ void loop() {
 \end{lstlisting}
 
 \chapter{Servicios en la red}
-\section{Crear un servidor local}
+\section{Crear un servidor local}\index{Crear un servidor local}
 \begin{wrapfigure}{r}{0.1\linewidth}
 \centering\includegraphics[scale=0.1]{SmartCities/qr/qr4.png}
 \caption{QR program: 4.Server local On Off led}
@@ -2932,7 +2932,7 @@ Nos dará nuestra IP y lo copiamos en nuestro navegador, por ejemplo: nuestra IP
 \label{fig:espleds2}
 \end{figure}
 \newpage
-\section{Lectura Analógica}
+\section{Lectura Analógica}\index{Lectura Analógica}
 \begin{wrapfigure}{r}{0.1\linewidth}
 \centering\includegraphics[scale=0.1]{SmartCities/qr/qr5.png}
 \caption{QR program: 5.GraphAnalog}
@@ -2975,7 +2975,7 @@ Los pines de entrada analógica permiten leer valores analógicos que se convert
 \label{fig:SerialPlotter}
 \end{figure}
 \newpage
-\section{Proyecto explicativo 1}
+\section{Proyecto explicativo 1}\index{Proyecto explicativo 1}
 Ahora analizaremos un proyecto acerca de bases de dato, IoT y servidores locales. Antes de todo necesitamos tener instalado en nuestro computador \textbf{Xammp}, para ello no vamos a su pagina oficial y los descargamos. Una vez instalado, lo abrimos y nos aparecerá una ventana como esta(figura \ref{fig:xammpmain}).\\
 \begin{figure}[h!]
 \centering\includegraphics[scale=0.6]{SmartCities/SM11.png}
@@ -3070,7 +3070,7 @@ Nos fijamos bien en la conexión de los puertos del sensor de temperatura y hume
 \caption{Datos en la nube local}
 \label{fig:localhostdata}
 \end{figure}
-\section{Sensor de temperatura y humedad DHT11}
+\section{Sensor de temperatura y humedad DHT11}\index{Sensor de temperatura y humedad DHT11}
 Instalamos las librerias desde la IDE de arduino, para eso vamos a \textbf{\textit{Programa>Incluir Libreria>Administrar bibliotecas}} y buscamos DHT11(figura \ref{fig:dht11lib}), uno hecho por Adafruit.\\
 \begin{figure}[h!]
 \centering\includegraphics[scale=0.6]{SmartCities/SM25.png}
@@ -3096,7 +3096,7 @@ Si da error de lectura, asegúrate que este bien conectado el DHT11, a veces no 
 \label{fig:dhtfirst}
 \end{figure}
 \chapter{Proyecto final}
-\section{Software}
+\section{Software}\index{Software}
 Para este proyecto necesitaremos instalar algunas cosas, por ahora tenemos que instalar \textbf{node.js} y \textbf{Mosquitto}. No te explicaré a profundo sobre que van o que hacen cada tecnología, eso ya depende de ti. 
 \subsection{Instalación de Node.js}
 Descargamos el paquete de instalación de \url{https://nodejs.org/en/}, la que tu quieras pero preferible la más estable, en mi caso yo trabajaré con la 16.13.0 LTS. Abriremos el archivo \textit{.msi} y lo ejecutamos, aceptamos todo e instalamos. Una vez finalizada abrimos nuestra ventana de comandos\footnote{windows+R, escribimos cmd y presioamos enter}, dentro del CMD\footnote{para powershell escribes: node --version; npm --version} escribimos: \textbf{node --version \&\& npm --version} y presionas enter, esperas y te debe dar las versiones que actualmente tienes en tu PC(figura \ref{fig:noderedversion}).\\
@@ -3171,7 +3171,7 @@ Ahora, al nodo de \textit{mqtt in} le añadimos los siguientes nodos(ver figura 
 \newpage
 El proyecto esta disponible en GITHUB. Así que vamos a dividir la explicación del proyecto en \textbf{Back-end} y \textbf{Front-end}.
 \pagebreak
-\section{Hardware}
+\section{Hardware}\index{Hardware}
 Los componentes requeridos son:
 \begin{enumerate}
 \item 1 ESP-8266 MCU
@@ -3202,7 +3202,7 @@ Se tiene que deplegar el circuito de la figura \ref{fig:circuitopb}
 \centering\includegraphics[scale=0.1]{SmartCities/SM79.jpg}
 \caption{Circuito terminado-Vista frontal}
 \end{figure}
-\section{Back-end}
+\section{Back-end}\index{Back-end}
 En la parte del back-end, descargaremos el archivo \textit{7.PanicButton.ino}. El codigo esta comentado para comprender que hace el programa. En cuanto a nuestra computadora, donde ya tenemos el Node-red, Xammp y Mosquitto instalado, prepararemos el entorno para que la ESP-8266 pueda enviar datos. Ojo: respeta las mayúsculas y todos los parámetros que se establecen.
 \subsection{Xammp-PHP My admin}
 Entramos en \textit{localhost:/phpmyadmin}, y crearemos 3 bases de datos: para el GPS, para los usuarios y para los estados del botón.
@@ -3425,7 +3425,7 @@ Antes de desplegar los nodos, tenemos que tener instalados los siguientes paquet
 \end{figure}
 Igual se deja un archivo JSON llamado \textit{flows.json} en la carpeta del botón de pánico para que lo puedas importar a node-red.
 \newpage
-\section{Front-end}
+\section{Front-end}\index{Front-end}
 En cuanto al front-end, ya todo esta configurado y listo para usarse. Tan solo hay que copiar los archivos como se dijo en la carpeta htdocs y poder acceder a ellos desde localhost. Se tendrá como pagina principal \textit{http://localhost/panicbuttonserver/}. Se puede usar un editor de texto para poder cambiar textos dentro de cada archivo CSS. Hay algunos apartados que no funcionan como configuración o recuperar cuenta.
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
@@ -3655,7 +3655,7 @@ El 20\% hallado es el duty cycle, es el tiempo que valdrá 5V, nos pide el tiemp
 \part{Campos \\electromagnéticos}
 \chapterimage{chapter_head_CE.pdf} % Chapter heading image
 \chapter{Repaso vectorial y conceptualización}
-\section{Sistemas de coordenadas y transformaciones}
+\section{Sistemas de coordenadas y transformaciones}\index{Sistemas de coordenadas y transformaciones}
 En general, las cantidades físicas que trataremos en EM son funciones del espacio y tiempo. Para describir las variaciones espaciales de las cantidades, debemos ser capaces de definir todos los puntos de forma única en el espacio de una manera adecuada. Esto requiere el uso de un adecuado sistema coordinado.
 \subsubsection{Sistema de coordenadas cartesianas en el espacio (x,y,z)}
 En geometría euclidiana el espacio tridimensional se suele representar con un sistema de coordenadas de tres ejes, todos perpendiculares entre sí. El rango de las coordenadas variables \textit{x}, \textit{y} y \textit{z} son:
@@ -3853,7 +3853,7 @@ Revisar el ejemplo 2.1 de \cite{elmagsadiku}.
 \end{figure}
 \subsection{Planos}
 Los planos en los sistemas de coordenadas son fácilmente generados solo manteniendo una coordenadas constante y las demás variables.
-\section{Cálculo vectorial}
+\section{Cálculo vectorial}\index{Cálculo vectorial}
 \subsection{Diferencial de distancia, área y volumen}
 \subsubsection{Sistema de coordenadas cartesianas}
 El desplazamiento diferencial esta dado por:
@@ -4066,7 +4066,7 @@ Y en coordenadas esféricas:
 \part{Sistemas de telefonía}
 \chapterimage{chapter_head_ST.pdf} % Chapter heading image
 \chapter{Telefonía}
-\section{Evolución de la telefonía}
+\section{Evolución de la telefonía}\index{Evolución de la telefonía}
 La era de las telecomunicaciones se inicia en el siglo XIX con la invención del telégrafo en los años 1830’s.
 
 El teléfono se patentó en 1876 por Graham Bell, y con ello fue posible transportar la voz humana de un lugar a otro.
@@ -4089,7 +4089,7 @@ Sea N el número de dispositivos a conectar, se crearán E enlaces para que todo
 & E=\frac{N\times(N-1)}{2}
 \end{align}
 \end{theorem}
-\section{Conmutadores}
+\section{Conmutadores}\index{Conmutadores}
 Debido a este problema es que se crean los conmutadores: “Conmutación es el proceso de crear enlaces virtuales entre los equipos para permitirles la comunicación”
 \begin{figure}[h]
 \centering\includegraphics[scale=0.5]{SisTelefonia/st3.png}
@@ -4103,7 +4103,7 @@ Debido a este problema es que se crean los conmutadores: “Conmutación es el p
 \label{fig:Principio básico de los conmutadores}
 \end{figure}
 
-\section{Repaso:Señales analógicas y digitales}
+\section{Repaso:Señales analógicas y digitales}\index{Repaso:Señales analógicas y digitales}
 \begin{table}[ht]
 \centering
 \begin{tabular}{|m{0.5\linewidth}|m{0.5\linewidth}|}
@@ -4135,7 +4135,7 @@ No se pueden regenerar & Es posible regenerarlas (por lo tanto las señales digi
 \item Se necesita una conversión analógica-digital previa y una decodificación posterior, en el momento de la recepción. 
 \item La transmisión de señales digital requiere una sincronización precisa entre los tiempos del reloj de transmisor, con respecto a los del receptor. Un desfase cambia la señal recibida con respecto a la que fue transmitida.
 \end{itemize}
-\section{Multiplexación}
+\section{Multiplexación}\index{Multiplexación}
 La multiplexación es el proceso de transmisión simultánea de dos o más señales individuales a través de un único canal de comunicación, ya sea por cable o inalámbrico.\\
 Es una técnica que permite la transmisión de señales de información y cuya idea consiste en ocupar un canal (normalmente de gran capacidad) de trasmisión a partir de distintas fuentes.
 \subsection{¿Para que sirve?}
@@ -4236,7 +4236,7 @@ Trabaja con señales digitales transmite los datos de los canales que en cada mo
 \caption{STDM ejemplificación}
 \label{fig:STDM ejemplificación}
 \end{figure}
-\section{Técnicas de conmutación}\label{sec:tecnicasdecomnutacion}
+\section{Técnicas de conmutación}\index{Técnicas de conmutación}\label{sec:tecnicasdecomnutacion}
 \subsection{Conmutación por circuitos}
 Esta multiplexaxion implica un camino dedicado entre el transmisor y el receptor de datos mediante una TDM.\\
 Esta conmutacipon posee 3 fases:
@@ -4268,7 +4268,7 @@ y destino se envían con el paquete.
 \item Retardo de la información considerable
 \end{itemize}
 \newpage
-\section*{Resumen comparativo}
+\section*{Resumen comparativo}\index{Resumen comparativo}
 \begin{table}[ht!]
 \begin{center}
 \begin{tabular}{|m{0.3\linewidth}|m{0.3\linewidth}|m{0.3\linewidth}|}
@@ -4334,13 +4334,15 @@ Los símbolos utilizados para representar diferentes tipos de aparatos y termina
 \end{figure}
 \subsubsection{Central telefónica}
 Es el nodo que establece, mantiene y termina las conexiones (llamadas) entre 2 o más usuarios. También se le conoce como equipo o central de conmutación.Se encarga de la señalización así como de facilitar la información sobre su progreso.
-\begin{figure}[ht]
-\centering\includegraphics[scale=0.5]{SisTelefonia/st16.png}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{SisTelefonia/st16.png}
 \caption{Diagrama del accionar de una central telefónica}
 \label{fig:Diagrama del accionar de una central telefónica}
 \end{figure}
-\begin{figure}[ht]
-\centering\includegraphics[scale=0.5]{SisTelefonia/st17.png}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{SisTelefonia/st17.png}
 \caption{Simbología de una central telefónica(conmutador)}
 \label{fig:Simbología de una central telefónica(conmutador)}
 \end{figure}
@@ -4397,7 +4399,7 @@ Las funciones del BORSCHT son:
 \item[\textbf{H}ybrid] Circuito hibrido que convierte el ingreso de 2 hilos a 4 hilos.
 \item[\textbf{T}est] Debe ser posible conectar el lazo local y el terminal al equipo de prueba en la oficina central. 
 \end{itemize}
-\section{Señalización telefónica}
+\section{Señalización telefónica}\index{Señalización telefónica}
 A manera de recordar,tenemos el conocimiento acerca de los hilos necesarios para las troncales analógicas:
 \begin{itemize}
 \item 2 hilos para transmitir($T_x$)
@@ -4437,7 +4439,7 @@ T_s=\frac{258}{3}=86
 \end{center}
 Son 86 pares de cobre dedicados a la señalización.
 \end{exercise}
-\section{Planta interna y externa}
+\section{Planta interna y externa}\index{Planta interna y externa}
 Se forma de los siguientes componentes:
 \subsection{Planta Interna}
 \begin{figure}[ht]
@@ -4517,7 +4519,7 @@ Características:
 \end{enumerate}
 \end{itemize}
 \chapter{Herramientas para el análisis telefónico}
-\section{Tráfico Telefónico}
+\section{Tráfico Telefónico}\index{Tráfico Telefónico}
 En el diseño de sistemas telefónicos un factor muy importante es la ingeniería de tráfico ya que juega un papel muy importante en buscar la solución optima en función del costo y la eficiencia del diseño de la red. El tráfico telefónico esta ligado al concepto de ocupación, por lo que decimos que un circuito esta cursando tráfico cuando esta ocupado. El tráfico telefónico es medible, en términos de tiempo, que se entiende en tiempo de ocupación.Este depende del número de llamadas y de la duración de las mismas. Esta de más decir que el trafico es aleatorio, por lo que naturaleza estadística.
 \subsection{Variaciones}
 Existen variaciones que depende del tiempo en el que se muestrea, por ejemplo tenemos las variaciones diarias, semanales, anuales y accidentales
@@ -4544,7 +4546,7 @@ La anual se caracteriza o se ve afectada por épocas o estaciones; por ejemplo v
 \end{figure}
 \subsubsection{Variación accidental}
 Los eventos aleatorios son eventos que afectarán nuestra variación, hay unos que pueden llamarse aleatorios que se pueden preveer pero no del todo(elecciones políticas, conciertos, festivales, etc) y otros totalmente impensables(crisis políticas en un país, guerras, pandémias, etc)
-\section{Medidas de tráfico telefónico}
+\section{Medidas de tráfico telefónico}\index{Medidas de tráfico telefónico}
 \subsubsection{Volumen del tráfico($V_t$)}
 El trafico telefónico está ligado al concepto de ocupación y puede medirse en términos de tiempo. Por lo que se puede concluir que se refiere al tiempo de ocupación de un circuito telefónico. Es decir, si un teléfono está ocupado durante una hora al día, el volumen de tráfico cursado durante dicho día por el teléfono es de una hora, y si un teléfono está ocupado durante una hora a la semana, el volumen de tráfico cursado durante la semana por el teléfono es también de una hora. Este concepto se puede expandir a un conjunto de circuitos y no solo restringido a un solo sistema.
 \begin{definition}[Volumen del tráfico]
@@ -4696,7 +4698,7 @@ Continuando con la hora cargada, como su nombre lo dice: Es la hora en el que el
 Se elige la hora de mayor tráfico, lo que asegura un suficiente número de elementos para poder cursar todas las llamadas que se presenten en los restantes períodos de menor carga.No obstante, se toma la intensidad de tráfico media a lo largo de dicha hora carga. Esto quiere decir que habrá en este período momentos de intensidad mayor, durante los cuales se rechazarán las llamadas que no puedan ser atendidas a causa de la saturación. En general, cada día del año tiene su HC y pueden presentarse variaciones de unos días a otros, tanto en la situación de dicha HC cómo en la intensidad de tráfico que se curse en ella.\\
 Para fines de dimensionamiento de grupos de circuitos, conviene tomar una hora cargada de referencia, de forma que la intensidad de tráfico durante ésta sea el promedio de la que generalmente se cursa en las horas cargadas de la época de mayor carga. Mas no deben considerarse HC anormales(eventos aleatorios únicos) como una crisis, un evento único, etc.\\
 En la práctica, se simplificará la determinación si se consideran períodos completos de 15 minutos y se hace una lectura global de cada período; la HC que se determine de esta forma será la correspondiente a los cuatro períodos consecutivos de 15 minutos que dan una suma mayor.
-\section{Tipos de tráfico}
+\section{Tipos de tráfico}\index{Tipos de tráfico}
 \begin{figure}[ht]
 \centering\includegraphics[scale=0.5]{SisTelefonia/st36.png}
 \caption{Diagrama de tipos de tráfico}
@@ -4714,7 +4716,7 @@ Tr\acute{a}fico\thinspace Ofrecido-Tr\acute{a}fico\thinspace Perdido=Tr\acute{a}
 \end{enumerate}
 El tráfico ofrecido es un concepto teórico y se utiliza sólo para propósitos de planificación teórica. Sólo el tráfico cursado es medida en la práctica y por supuesto depende de la capacidad de la red o sistema.\\
 Desde el punto de vista económico, la capacidad de la red siempre será menor que el tráfico ofrecido, esto se debe al carácter aleatorio de las comunicaciones lo que produce que en condiciones normales de funcionamiento sólo un porcentaje de los usuarios de la red solicitan recursos a la misma.
-\section{Accesibilidad}
+\section{Accesibilidad}\index{Accesibilidad}
 El rendimiento de un grupo de circuitos de salida, queda determinado esencialmente por la cantidad de líneas de salida del grupo que pueda alcanzarse.\\
 Es decir cuantas líneas de salida pueden alcanzarse desde una línea de entrada. Esa cantidad se llama \textbf{accesibilidad}.
 \subsubsection{Accesibilidad completa}
@@ -4744,7 +4746,7 @@ N=Salidas(accesibildad) total.
 En los sistemas de pérdidas el abonado que solicita una comunicación y encuentra congestión recibe el tono de ocupado que lo obliga a cancelar o "perder" su comunicación para repetir posteriormente.
 \subsubsection{Sistema a Espera}
 En el sistema de espera, si el abonado trata de establecer una comunicación no existiendo enlaces libres, no recibe el tono de ocupado en forma inmediata sino que se le permite esperar hasta que surjan las disponibilidades necesarias, vale decir que el intento se almacena sin necesidad de repetir la llamada.
-\section{\textit{Grade of service}(GoS)}
+\section{\textit{Grade of service}(GoS)}\index{Grade of service}
 Nos da una idea de la ''calidad'' que reciben nuestros usuarios.\\
 En sistemas con pérdida, se define como la probabilidad de pérdida (o probabilidad de congestión). Coincide con la probabilidad de que un usuario, al realizar una llamada, se encuentre con el sistema sin recursos.\\
 En sistemas de demora se suele relacionar con la probabilidad de esperar para disponer de un recurso.\\
@@ -4772,7 +4774,7 @@ El GoS se aplica a una conexión de terminal a terminal. Pero normalmente un cen
 \item Una llamada de terminación (central de conmutación a abonado).
 \end{itemize}
 Ver ejericios:\footnote{Ver ejercicios resueltos \ref{Anexo 1} y \ref{Anexo 2}}
-\section{Diseño de redes}
+\section{Diseño de redes}\index{Diseño de redes}
 Para el encaminamiento de redes se tiene dos posible escenarios: linea directa o linea alternativa.
 \begin{figure}[ht]
 \centering\includegraphics[scale=0.5]{SisTelefonia/st39.png}
@@ -4831,7 +4833,7 @@ Si quieres practicar, puedes hacerlo con las otras centrales(B, C y T)
 \subfloat[De T>A]{\includegraphics[width = 2in]{SisTelefonia/st46.png}}
 \caption{Gráficos de practica resueltos}
 \end{figure}
-\section{Encaminamiento de tráfico}
+\section{Encaminamiento de tráfico}\index{Encaminamiento de tráfico}
 Cuando nuestro tráfico telefónico va hacia una troncal y  luego hacia nuestro destino es probable que no exista una ruta directa, ya sea por varios factores: que la troncal directa este saturada, que no tenga mucha capacidad, que haya habido un problema, etc. Entonces, no podemos utilizar esta "vía directa", por ende pasamos de ser tráfico ofrecido a trafico de desbordamiento, y ¿Cómo se desborda un rió?: el agua buscará una ruta alternativa para que pueda volver a su cauce, igualmente en nuestro caso: nuestro tráfico de desbordamiento tendrá que buscar más rutas para poder llegar y tratar en lo posible de no perder esta llamada.\\
 Pero no podemos redirigir el trafico como sea, existen ciertos criterios que se definen para poder lograr un encaminamiento optimo, puede ser un poco difícil de entender pero trataré de explicarlo detalladamente:\\
 \textbf{Criterios de encaminamiento}:\\
@@ -4919,7 +4921,7 @@ Como siempre, tendrás algunos ejercicios resueltos en el anexo \ref{Anexo 3}
 \caption{Encaminamiento de P a N}
 \label{fig:solu6.5}
 \end{figure}
-\section{Erlang-B}
+\section{Erlang-B}\index{Erlang-B}
 Analizamos el tráfico no por que sí, sino porque tenemos que diseñar centrales capaces de poder soportar todas(o al menos la mayoría) las llamadas y hacer que la probabilidad de pérdida sera la mínima.\\
 Es así que Erlang(matemático danés) estudió el comportamiento del tráfico telefónico. En 1917 publicó su trabajo. Realizó las siguientes hipótesis:
 \begin{itemize}
@@ -5211,7 +5213,7 @@ Sin conexión & Datagrama no confiable. & Correo electrónico basura.\\
 \label{tab:servicionConexion}
 \end{center}
 \end{table}
-\section{Repaso: TCP/IP}
+\section{Repaso: TCP/IP}\index{Repaso: TCP/IP}
 A manera de recordar las capas vista en el capitulo de Infraestructura vamos a repasar las capas del modelo TCP/IP.
 \subsection{Capa de transporte}
 Un solo dispositivo puede utilizar varios servicios como e-mail, web, mensajería instantánea, etc. La información de cada aplicación debe ser empaquetada, transportada y entregada a la aplicación apropiada en el dispositivo destino. Para conseguir entregar los flujos de datos a las aplicaciones correctas, la capa de transporte debe identificar la aplicación destino. Para esto se utiliza un identificador el numero de puerto. Además, cada flujo de datos debe ser enviado en piezas que sean manejables a través de la red, la capa de transporte agrega a cada pieza la información necesaria para ser enviada hasta el otro extremo y ser desensamblada.
@@ -5282,7 +5284,7 @@ Según el RFC 3330 describe las direcciones ipv4 especiales asignadas por la IAN
 -172.16.0.0 – 172.31.255.255      (172.16.0.0 /12)\\
 -192.168.0.0 – 192.168.255.255   (172.16.0.0 /24)\\
 \end{itemize}
-\section{VoIP}
+\section{VoIP}\index{VoIP}
 Voz sobre el Protocolo de Internet o VoIP se refiere a la transmisión del tráfico de voz sobre redes de datos utilizando el protocolo IP. Es decir utilizaremos la pila de protocolos TCP/IP y sus funcionalidades para que la voz pueda ir de un extremo a otro de la red. \\
 A priori esta idea nos permite obtener conclusiones inmediatas, y de la misma forma apreciar las ventajas de esta tecnología, entre otras:
 \begin{itemize}
@@ -5293,7 +5295,7 @@ A priori esta idea nos permite obtener conclusiones inmediatas, y de la misma fo
 \item Al basarse en la arquitectura TCP/IP, no sólo se puede utilizar para la transmisión de voz, permitiendo también el envío de imágenes, vídeo o texto, tal y como lo hacemos a través de una red o Internet.
 \item Hace más eficiente el ancho de banda, utilizando técnicas de compresión y evitando el envío de información durante los espacios de silencio que se producen durante las conversaciones, ya que carece de sentido.
 \end{itemize}
-\section{Digitización de la voz}
+\section{Digitización de la voz}\index{Digitización de la voz}
 Las desventajas sobre las señales analógicas usadas en la telefonía convencional. Estas desventajas son:
 \begin{itemize}
 \item La voz análoga no se propaga bien a largas distancias.
@@ -5396,7 +5398,7 @@ La combinación de protocolos que permiten la transmisión de paquetes de voz en
 \textbf{NTP (Network time protocol o Protocolo de tiempo de red)}: este protocolo se encarga de controlar que los fragmentos de voz digitalizada llegan a su destinatario en el intervalo de tiempo requerido.\\
 \textbf{RTP (Real-time transport protocol o Protocolo de transporte en tiempo real)}: proporciona funciones de transporte de red extremo a extremo, encapsulando la voz digitalizada en paquetes. Se transporta generalmente sobre otros protocolos y NO se usa un puerto definido\textit{well-know port}, teniendo al 5004 como puerto por defecto, además que debe ser par y el puerto de control debe ser el siguiente valor(impar).\\
 \textbf{RTCP (Real-time transport control protocol o Protocolo de control de transporte en tiempo real)}: este protocolo se complementa con RTP, realizando un seguimiento del reparto de paquetes de voz digitalizada mediante el envío periódico de paquetes de control, permitiendo gestionar la calidad del servicio (QoS).
-\section{Componentes de VoIP}
+\section{Componentes de VoIP}\index{Componentes de VoIP}
 Las redes VoIP se basan en elementos de hardware y software que podemos encontrar en la implantación de un sistema.
 Las redes VoIP se basan principalmente en los siguientes elementos:
 \begin{itemize}
@@ -5461,7 +5463,7 @@ Un MCU esta formado por el Multipoint Controller y por el Multipoint procesor.
 \subfloat[Multipunto de conferencia descentralizado(Multicast)]{\includegraphics[width = 2in]{SisTelefonia/st78.png}}
 \caption{Tráfico multimedia}
 \end{figure}
-\section{Tecnología IP}
+\section{Tecnología IP}\index{Tecnología IP}
 \subsection{DSL}
 DSL (línea de suscriptor digital) es tecnología de banda ancha que proporciona transmisión de información a alta velocidad (hasta 7.1 Mbps) a través de una línea telefónica existente. Las velocidades son hasta 50 veces más rápidas que las de un módem por dial-up estándar de 28.8 Kbps. Además, el servicio DSL es instantáneo - con sólo un clic tendrás una conexión a Internet superrápida. Está basada en utilizar la RTB para la transmisión de información a alta velocidad.\\
 Una variante de estas redes es ADSL (Asymetric Digital Subscriber Line o Línea Digital Asimétrica de Abonado) y se llama asimétrica porque la velocidad de transmisión en un sentido es menor que en otro.\\
@@ -5485,7 +5487,7 @@ Es cuando todos los circuitos capaces de cursar tráfico en una central están o
 \chapterimage{chapter_head_Artificios.pdf}
 \chapter{Artificios matemáticos}
 En esta sección se detallaran trucos, repasos, propiedades que son vitales saberlas pero, típico del ser humano, a veces se nos olvida.
-\section{Logaritmos y exponenciales}
+\section{Logaritmos y exponenciales}\index{Logaritmos y exponenciales}
 \begin{equation}\label{art:expaln}
 e^{ln|x|}=x
 \end{equation}
@@ -5504,7 +5506,7 @@ log(a)^b=b\cdot log(a)
 \begin{equation}\label{art:raizlog}
 log\left(\sqrt[b]{a}\right)=\frac{log(a)}{b}
 \end{equation}
-\section{Matrices}
+\section{Matrices}\index{Matrices}
 \subsection{Conformabilidad de matrices}
 Para que un producto de matrices este definido es necesario saber si las matrices son conformables. Dos matrices son conformables si las columnas de la matriz multiplicando es igual a las filas del multiplicador. Si son \textbf{iguales}, son matrices conformables y esta definido el producto, de lo contrario no existe el producto. Las dimensiones del producto de dos matrices coformables es igual al tamaño de las filas del multiplicando y las columnas del multiplicador:
 \begin{equation}\label{art:matricesconformables}
@@ -5518,7 +5520,7 @@ Para que un producto de matrices este definido es necesario saber si las matrice
 \end{bmatrix}}_{[\textcolor{blue}{3}\times \textcolor{orange}{1}]}
 \end{equation}
 Recordando que el producto \textbf{no es conmutativa}, no es lo mismo \textbf{A}$\times$\textbf{B} que \textbf{B}$\times$\textbf{A}.
-\section{Integrales}
+\section{Integrales}\index{Integrales}
 \subsection{Integral por tabulación}
 Sean a y b dos funciones en función de \textit{x} en una integral:
 \begin{displaymath}
@@ -5547,7 +5549,7 @@ El mismo proceso se realiza hasta que en la columna de derivar se llegue a cero,
 \label{art:integral pr tabulacion}
 \int a\cdot b dx=\textcolor{red}+a\cdot\int b\cdot xd \textcolor{brown}{-}\frac{da}{dx}\cdot\int\int b\cdot dx dx\textcolor{blue}{+}\frac{da}{d^2x}\ldots
 \end{equation}
-\section{Números complejos}
+\section{Números complejos}\index{Números complejos}
 Sea el número complejo:
 \begin{equation}
 \label{art:numeroscomplejos}
@@ -5566,7 +5568,7 @@ A&=C\cdot\cos\theta+jC\sin\theta=C(\cos\theta+j\sin\theta)\\
 A&=C\phase{\theta^{\circ}}\\
 &\therefore A=11.18\phase{26.56^{\circ}}
 \end{align*}
-\section{Producto cruz y producto escalar}
+\section{Producto cruz y producto escalar}\index{Producto cruz y producto escalar}
 \subsection{Producto escalar}
 Sea el producto escalar $\vec{a}\cdot\vec{b}$, es el módulo del vector $\vec{a}$ por el modulo del $\vec{b}$ por el coseno del menor ángulo que forman:
 \begin{equation}
@@ -5641,9 +5643,9 @@ Se resuelve igual que la matriz de producto cruz, con la misma distribución de 
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\chapterimage{} % Chapter heading image
-\chapterspaceabove{2.5cm} % Whitespace from the top of the page to the chapter title on chapter pages
-\chapterspacebelow{2cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
+\chapterimage{Final.jpg} % Chapter heading image
+\chapterspaceabove{6.75cm} % Whitespace from the top of the page to the chapter title on chapter pages
+\chapterspacebelow{7.25cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
 %------------------------------------------------
 \nocite{*}
@@ -5663,34 +5665,34 @@ Se resuelve igual que la matriz de producto cruz, con la misma distribución de 
 %----------------------------------------------------------------------------------------
 %	APPENDICES
 %----------------------------------------------------------------------------------------
-
-\chapterimage{orange2.jpg} % Chapter heading image
-\chapterspaceabove{6.75cm} % Whitespace from the top of the page to the chapter title on chapter pages
-\chapterspacebelow{7.25cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
-
-\begin{appendices}
-
-\renewcommand{\chaptername}{Appendix} % Change the chapter name to Appendix, i.e. "Appendix A: Title", instead of "Chapter A: Title" in the headers
-
-%------------------------------------------------
-
-\chapter{Appendix Chapter Title}
-
-\section{Appendix Section Title}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget est euismod pretium.
-
-%------------------------------------------------
-
-\chapter{Appendix Chapter Title}
-
-\section{Appendix Section Title}
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget est euismod pretium.
-
-%------------------------------------------------
-
-\end{appendices}
+%
+%\chapterimage{Final.jpg} % Chapter heading image
+%\chapterspaceabove{6.75cm} % Whitespace from the top of the page to the chapter title on chapter pages
+%\chapterspacebelow{7.25cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
+%
+%\begin{appendices}
+%
+%\renewcommand{\chaptername}{Appendix} % Change the chapter name to Appendix, i.e. "Appendix A: Title", instead of "Chapter A: Title" in the headers
+%
+%%------------------------------------------------
+%
+%\chapter{Appendix Chapter Title}
+%
+%\section{Appendix Section Title}
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget est euismod pretium.
+%
+%%------------------------------------------------
+%
+%\chapter{Appendix Chapter Title}
+%
+%\section{Appendix Section Title}
+%
+%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget est euismod pretium.
+%
+%%------------------------------------------------
+%
+%\end{appendices}
 %----------------------------------------------------------------------------------------
 %	INDEX
 %----------------------------------------------------------------------------------------

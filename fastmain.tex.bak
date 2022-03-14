@@ -7,8 +7,7 @@
 
 %----------------------------------------------------------------------------------------
 \begin{document}
-Leer \cite{sadiku2018elements}
-\section{Ley de Coulomb}
+\section{Ley de Coulomb}\index{Ley de Coulomb}
 La ley de Coulomb establece de la fuerza \textit{F} entre dos cargas \textit{$Q_1$} y \textit{$Q_2$} son:
 \begin{itemize}
 \item A lo largo de la linea que los une.
@@ -47,10 +46,10 @@ o:
 \end{equation}
 \columnbreak
   \begin{center}
-    \includegraphics[scale=0.4,natwidth=508,natheight=271]{CamposMag/CM10.png}
+    \includegraphics[scale=0.4]{CamposMag/CM10.png}
   \end{center}
 \end{multicols}
-\section{Intensidad de campo eléctrico}
+\section{Intensidad de campo eléctrico}\index{Intensidad de campo eléctrico}
 La intensidad de campo eléctrico E es la fuerza que una unidad de carga positiva experimenta cuando se coloca en un campo eléctrico.
 \begin{theorem}[Intensidad de campo eléctrico]
 \begin{equation}
@@ -72,7 +71,7 @@ Y bajo el mismo principio de superposición, la intensidad de campo eléctrico e
 \begin{equation}
 \boxed{E=\frac{1}{4\pi\epsilon_0}\sum^N_{k=1}\frac{Q_k(r-r_k)}{|r-r_k|^3}}
 \end{equation}
-\section{Campo eléctrico creado por una distribución continua de carga en un punto}
+\section{Campo eléctrico creado por una distribución continua de carga en un punto}\index{Campo eléctrico creado por una distribución continua de carga en un punto}
 Las cargas puntuales ocupan un muy pequeño espacio físico. Es posible tener distribuciones continuas: Es costumbre denotar la densidad de carga lineal $\rho_L$(C/m), la densidad de carga superficial $\rho_S$(C/$m^2$) y la carga volumétrica $\rho_V$(C/$m^3$).\footnote{No confundir este $\rho$ con subíndice con $\rho$ sin subíndice usado en coordenadas cilíndricas.}
 \begin{align}
 dQ=\rho_Ldl=\lambda dl &\rightarrow Q=\int_L\rho_Ldl\\
@@ -85,7 +84,7 @@ El campo eléctrico debido a cada distribución de carga puede ser tomado como u
 \vec{E}&=\int_Sk\sigma\frac{ds}{r^2}\vec{u}_r\\
 \vec{E}&=\int_Vk\rho\frac{dv}{r^2}\vec{u}_r
 \end{align}
-\section{Densidad de campo eléctrico}
+\section{Densidad de campo eléctrico}\index{Densidad de campo eléctrico}
 \begin{definition}[Flujo Eléctrico]
 Se dice que la \textbf{densidad de flujo eléctrico} es el número de líneas de fuerza por metro cuadrado de superficie, para una esfera de radio \textit{r}, esta dada por:
 \begin{equation}
@@ -105,6 +104,44 @@ Se define \textbf{flujo eléctrico} en términos de la densidad de flujo eléctr
 \Psi=\int_S\textbf{D}\cdot d\textbf{S}
 \end{equation}
 \end{definition}
+\section{Ley de Gauss-Ecuaciones de Maxwell}\index{Ley de Gauss-Ecuaciones de Maxwell}
+La ley de Gauss establece que el flujo a través de una superficie que no encierra carga es nulo, en este caso el número neto de líneas de campo que atraviesa la superficie es cero (entran el mismo número de líneas que salen). Por otro lado, el flujo eléctrico total $\Psi$ a traves de la \textbf{superficie cerrada} es igual a la carga total encerrada por la superficie.\\
+Por lo tanto:
+\begin{displaymath}
+\Psi=Q_{enc}
+\end{displaymath}
+que es:
+\begin{displaymath}
+\Psi=\oint_s d\Psi = \oint_s D\cdot dS
+\end{displaymath}
+La carga total encerrada:
+\begin{equation}
+\label{eq:cargaintegral}
+Q=\oint D\cdot dS=\int_v\rho_vdv
+\end{equation}
+Aplicando el teorema de la divergencia al término medio.
+\begin{equation}
+\label{eq:cargaintegral1}
+\oint D\cdot dS = \int_v\nabla\cdot D dv
+\end{equation}
+
+\begin{definition}[Ley de Gauss]
+Comparando los volúmenes de las dos integrales(ecuación \ref{eq:cargaintegral} y \ref{eq:cargaintegral1}):\\
+\textbf{Forma diferencial:}
+\begin{equation}
+\label{eq:leydemaxwell1der}
+\boxed{\nabla\cdot D=\rho_v}
+\end{equation}
+\textbf{Forma integral:}
+\begin{equation}
+\label{eq:leydemaxwell1int}
+\boxed{\Psi=\oint_s\vec{E}\cdot d\vec{A}=\frac{Q_{enc}}{\epsilon_0}}
+\end{equation}
+La ecuación \ref{eq:leydemaxwell1} es la primera de la 4 ecuaciones de Maxwell establece:\\
+\textit{Que el volumen de densidad de carga es la misma que la divergencia de la densidad de flujo eléctrico. Es equivalente a la ley de Coulomb de fuerza entre dos cargas}.
+\end{definition}
+\printbibliography[heading=bibempty,type=book]
+
 %----------------------------------------------------------------------------------------
 
 
