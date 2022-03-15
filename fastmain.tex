@@ -4,7 +4,15 @@
 \chapterimage{orange1.jpg} 
 \chapterspaceabove{6.5cm}
 \chapterspacebelow{6.75cm} 
-
+%\begin{theorem}[Name of the theorem]
+%\begin{exercise}
+%\begin{example}[Example name]
+%\begin{definition}[Definition name]
+%\begin{corollary}[Corollary name]
+%\begin{remark}
+%\begin{proposition}[Proposition name]
+%\begin{problem}
+%\begin{vocabulary}[Word]
 %----------------------------------------------------------------------------------------
 \begin{document}
 \section{Ley de Coulomb}\index{Ley de Coulomb}
@@ -73,19 +81,23 @@ Y bajo el mismo principio de superposición, la intensidad de campo eléctrico e
 \end{equation}
 \section{Campo eléctrico creado por una distribución continua de carga en un punto}\index{Campo eléctrico creado por una distribución continua de carga en un punto}
 Las cargas puntuales ocupan un muy pequeño espacio físico. Es posible tener distribuciones continuas: Es costumbre denotar la densidad de carga lineal $\rho_L$(C/m), la densidad de carga superficial $\rho_S$(C/$m^2$) y la carga volumétrica $\rho_V$(C/$m^3$).\footnote{No confundir este $\rho$ con subíndice con $\rho$ sin subíndice usado en coordenadas cilíndricas.}
+\begin{subequations}
 \begin{align}
+\label{eq:diferenciales de carga}
 dQ=\rho_Ldl=\lambda dl &\rightarrow Q=\int_L\rho_Ldl\\
 dQ=\rho_Sds=\sigma ds &\rightarrow Q=\int_S\rho_Sds\\
 dQ=\rho_vdv=\rho dv &\rightarrow Q=\int_v\rho_vdv
 \end{align}
+\end{subequations}
 El campo eléctrico debido a cada distribución de carga puede ser tomado como una sumatoria de los campos contribuidos por numerosas cargas:
+\begin{subequations}
 \begin{align}
 \vec{E}&=\int_Lk\lambda\frac{dl}{r^2}\vec{u}_r\\
 \vec{E}&=\int_Sk\sigma\frac{ds}{r^2}\vec{u}_r\\
 \vec{E}&=\int_Vk\rho\frac{dv}{r^2}\vec{u}_r
 \end{align}
+\end{subequations}
 \section{Densidad de campo eléctrico}\index{Densidad de campo eléctrico}
-\begin{definition}[Flujo Eléctrico]
 Se dice que la \textbf{densidad de flujo eléctrico} es el número de líneas de fuerza por metro cuadrado de superficie, para una esfera de radio \textit{r}, esta dada por:
 \begin{equation}
 \vec{D}=\frac{q}{4\pi r^2}\vec{r}
@@ -101,18 +113,35 @@ Donde:\\
 \end{itemize}
 Se define \textbf{flujo eléctrico} en términos de la densidad de flujo eléctrico, es decir:
 \begin{equation}
-\Psi=\int_S\textbf{D}\cdot d\textbf{S}
+\Phi_{E}=\int_S\textbf{D}\cdot d\textbf{S}
 \end{equation}
-\end{definition}
+Otra forma de ver el flujo eléctrico(figura \ref{fig:flujo electrico en la superficie}), solo si las lineas de campo eléctrico uniforme atraviesan una superficie de área \textit{S} es:
+\begin{equation}
+\label{eq:flujo coseno}
+\Phi=ES\cos\theta
+\end{equation}
+Donde:\\
+\begin{itemize}
+\item E: Campo eléctrico.
+\item S: Área de la superficie.
+\item $\theta$: Angulo que forman los vectores de campo eléctrico y la normal de la superficie
+\end{itemize}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{CamposMag/CM11.png}
+\caption{Flujo eléctrico}
+\label{fig:flujo electrico en la superficie}
+\end{figure}
 \section{Ley de Gauss-Ecuaciones de Maxwell}\index{Ley de Gauss-Ecuaciones de Maxwell}
-La ley de Gauss establece que el flujo a través de una superficie que no encierra carga es nulo, en este caso el número neto de líneas de campo que atraviesa la superficie es cero (entran el mismo número de líneas que salen). Por otro lado, el flujo eléctrico total $\Psi$ a traves de la \textbf{superficie cerrada} es igual a la carga total encerrada por la superficie.\\
+La ley de Gauss establece que el flujo a través de una superficie que no encierra carga es nulo, en este caso el número neto de líneas de campo que atraviesa la superficie es cero (entran el mismo número de líneas que salen). Por otro lado, el flujo eléctrico total $\Phi_{E}$ a traves de la \textbf{superficie cerrada} es igual a la carga total encerrada por la superficie.\\
+
 Por lo tanto:
 \begin{displaymath}
-\Psi=Q_{enc}
+\Phi_{E}=Q_{enc}
 \end{displaymath}
 que es:
 \begin{displaymath}
-\Psi=\oint_s d\Psi = \oint_s D\cdot dS
+\Phi_{E}=\oint_s d\Phi_{E} = \oint_s D\cdot dS
 \end{displaymath}
 La carga total encerrada:
 \begin{equation}
@@ -124,24 +153,36 @@ Aplicando el teorema de la divergencia al término medio.
 \label{eq:cargaintegral1}
 \oint D\cdot dS = \int_v\nabla\cdot D dv
 \end{equation}
-
-\begin{definition}[Ley de Gauss]
-Comparando los volúmenes de las dos integrales(ecuación \ref{eq:cargaintegral} y \ref{eq:cargaintegral1}):\\
+¿Qué pasa si $\vec{E}$ no es uniforme o si \textit{S} es una superficie general?\\
+Si queremos calcular el flujo eléctrico se calcula dividendo el área en diferenciales de área, y usando la ecuación \ref{eq:flujo coseno} se suma todas las pequeñas partes:
+\begin{displaymath}
+\Phi_E=\sum^{\infty}_{i=1}\vec{E_i}\Delta\vec{A_i}
+\end{displaymath}
+Que puede ser expresada como una integral de superficie(ecuación \ref{eq:leydemaxwell1int})
+\begin{theorem}[Ley de Gauss]
+El flujo eléctrico que pasa a través de cada superficie gaussiana\footnote{Se llama superficie gaussiana a la superficie \textbf{imaginaria} que encierra las cargas a analizar, no siempre tiene que coincidir necesariamente con la distribución de carga.} es igual a la carga neta encerrada(suma de las cargas encerradas) entre la \textit{permisividad en el vacío} Comparando los volúmenes de las dos integrales(ecuación \ref{eq:cargaintegral} y \ref{eq:cargaintegral1}):\\
 \textbf{Forma diferencial:}
 \begin{equation}
 \label{eq:leydemaxwell1der}
-\boxed{\nabla\cdot D=\rho_v}
+\boxed{\nabla\cdot\vec{D}=\rho_v}
+\end{equation}
+\begin{equation}
+\label{eq:leydemaxwell1}
+\boxed{\vec{\nabla}\cdot\vec{E}=\frac{\rho}{\epsilon_0}}
 \end{equation}
 \textbf{Forma integral:}
 \begin{equation}
 \label{eq:leydemaxwell1int}
-\boxed{\Psi=\oint_s\vec{E}\cdot d\vec{A}=\frac{Q_{enc}}{\epsilon_0}}
+\boxed{\Phi_{E}=\oint_s\vec{E}\cdot d\vec{A}=\frac{Q_{enc}}{\epsilon_0}}
 \end{equation}
-La ecuación \ref{eq:leydemaxwell1} es la primera de la 4 ecuaciones de Maxwell establece:\\
+Las ecuaciones \ref{eq:leydemaxwell1}, \ref{eq:leydemaxwell1der} y \ref{eq:leydemaxwell1int} son la primera de la 4 ecuaciones de Maxwell establece:\\
 \textit{Que el volumen de densidad de carga es la misma que la divergencia de la densidad de flujo eléctrico. Es equivalente a la ley de Coulomb de fuerza entre dos cargas}.
-\end{definition}
-
+\end{theorem}
+\begin{itemize}
+\item La ley de Gauss es útil cuando se demuestra por simetría el valor de campo eléctrico es constante sobre nuestra superficie gaussiana.
+\item Ademas el vector normal $d\vec{A}$ siempre apunta hacia afuera del volumen encerrado por la superficie cerrada, es necesario decir que no siempre el campo eléctrico no apuntara a una dirección, depende de la carga, si es positiva será hacia afuera del volumen y si es negativa será hacia adentro de la superficie.
+\item Si $\vec{E}$ es \textbf{tangente} a la superficie gaussiana en cada punto, entonces la integral sobre la superficie es cero.
+\end{itemize}
+La ley de Gauss tambien puede ser usada para distribuciones de carga no uniforme es necesario una densidad de carga del cuerpo en estudio varíe según una coordenada espacial y para calcular el campo eléctrico primero se debe calcular la carga encerrada por la superficie gaussiana(ecuaciones \ref{eq:diferenciales de carga}).
 %----------------------------------------------------------------------------------------
-
-
 \end{document}
