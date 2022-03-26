@@ -4057,7 +4057,458 @@ Y en coordenadas esféricas:
 \begin{equation}
 \boxed{\nabla^2V=\frac{1}{r^2}\frac{\partial}{\partial r}\left(r^2\frac{\partial V}{\partial r}\right)+\frac{1}{r^2\sin\theta}\frac{\partial}{\partial\theta}\left(\sin\theta\frac{\partial V}{\partial\theta}\right)+\frac{1}{r^2\sin^2\theta}\frac{\partial^2V}{\partial\phi^2}}
 \end{equation}
+\section{Ley de Coulomb}\index{Ley de Coulomb}
+La ley de Coulomb establece de la fuerza \textit{F} entre dos cargas \textit{$Q_1$} y \textit{$Q_2$} son:
+\begin{itemize}
+\item A lo largo de la linea que los une.
+\item Directamemte proporcional al producto \textit{$Q_1Q_2$} de las cargas.
+\item Inversamente proporcional a la distancia \textit{R} que los separa
+\end{itemize}
+\begin{theorem}[Ley de Coulomb]
+\begin{equation}
+\label{eq:eqCoulomb}
+F=\frac{kQ_1Q_2}{R^2}
+\end{equation}
+Donde:\\
+\begin{itemize}
+\item \textit{Q}: Cargas en Coulombs(C).
+\item R: Distancia en metros(m).
+\item F: Fuerza Newtons(N).
+\end{itemize}
+Constantes:
+\begin{align*}
+&\epsilon_0=8.854 \times 10^{-12}\simeq \frac{10^{-9}}{36\pi}F/m
+&k=\frac{1}{4\pi\epsilon_0}\simeq 9\times 10^9 m/F
+\end{align*}
+\end{theorem}
+Si las cargas $\textit{Q}_1$ y $\textit{Q}_2$ están localizadas en puntos cuyas posiciones están de forma vectorial $\textit{r}_1$ y $\textit{r}_2$(figura ), así la fuerza de $\textbf{F}_{12}$\footnote{Se lee: La fuerza de la carga 1 a la carga 2} sobre la carga 2 debido a la carga 1 esta dado por:
+\begin{multicols}{2}
+\begin{equation}
+\boxed{F_{12}=\frac{Q_1Q_2}{4\pi\epsilon_0R^2}\textbf{a}_{R_{12}}}
+\end{equation}
+Sean n cargas y se desea hallar la fuerza resultante en una carga Q, se usa el \textit{principio de superposición}. Este principio establece: Si existen N cargas $Q_1, Q_2,...,Q_N$ y seas sus vectores posición $r_1, r_2,.., r_N$ la fuerza resultante en la carga Q es la sumatoria de las fuerzas de cada una de las cargas:
+\begin{displaymath}
+F_Q=F_1+F_2+F_3+\ldots +F_N
+\end{displaymath}
+o:
+\begin{equation}
+\label{eq:fuerza para N cargas}
+\boxed{F=\frac{Q}{4\pi\epsilon_0}\sum^N_{k=1}\frac{Q_k(r-r_k)}{|r-r_k|^3}}
+\end{equation}
+\columnbreak
+  \begin{center}
+    \includegraphics[scale=0.4]{CamposMag/CM10.png}
+  \end{center}
+\begin{remark}
+De la ecuación \ref{eq:fuerza para N cargas}, Q y r son la carga a analizar y el punto de dicha carga, $r_k y Q_k$ son las cargas que actuarán sobre la carga a analizar. En preciso recordar que r se trabajarán de forma cartesiana: (x,y,z)-(x',y',z') y la resta se hará coordenada a coordenada, para luego hallar el módulo mediante una raíz cuadrada a la suma de los cuadrados de las mismas. Ver ejercicio 4.1 \cite{sadiku2018elements}.
+\end{remark}
+\end{multicols}
+\begin{notation}[Ejercicios]
+Ejercicios 4.1, 4.2 y 4.3 del libro \cite{sadiku2018elements}.
+\end{notation}
+\section{Intensidad de campo eléctrico}\index{Intensidad de campo eléctrico}
+\begin{definition}[Intensidad de campo eléctrico]
+La intensidad de campo eléctrico E es la fuerza que una unidad de carga positiva experimenta cuando se coloca en un campo eléctrico.
+\end{definition}
+\begin{theorem}[Intensidad de campo eléctrico]
+\begin{equation}
+\label{eq:Intensidadcampoelectrico}
+E=\frac{F}{Q}
+\end{equation}
+Donde:
+\begin{itemize}
+\item E: Intensidad de campo eléctrico(N/C) o Volts por metro(V/m).
+\item F: Fuerza(N)
+\item Q: Carga(Coulombs).
+\end{itemize}
+\end{theorem}
+Para Q>0, el E esta en la misma dirección de la fuerza F. La intensidad de campo eléctrico en el punto \textbf{r} debido a una carga localizada en \textbf{r'} es obtenido:
+\begin{equation}
+E=\frac{Q(r-r')}{4\pi\epsilon_0|r-r'|^3}=\frac{Q}{4\pi\epsilon_0r^2}a_r
+\end{equation}
+Y bajo el mismo principio de superposición, la intensidad de campo eléctrico en el punto \textbf{r}:
+\begin{equation}
+\boxed{E=\frac{1}{4\pi\epsilon_0}\sum^N_{k=1}\frac{Q_k(r-r_k)}{|r-r_k|^3}}
+\end{equation}
+\section{Campo eléctrico creado por una distribución continua de carga en un punto}\index{Campo eléctrico creado por una distribución continua de carga en un punto}
+Las cargas puntuales ocupan un muy pequeño espacio físico. Es posible tener distribuciones continuas: Es costumbre denotar la densidad de carga lineal $\rho_L$(C/m), la densidad de carga superficial $\rho_S$(C/$m^2$) y la carga volumétrica $\rho_V$(C/$m^3$).\footnote{No confundir este $\rho$ con subíndice con $\rho$ sin subíndice usado en coordenadas cilíndricas.}
+\begin{subequations}
+\begin{align}
+dQ=\rho_Ldl=\lambda dl &\rightarrow Q=\int_L\rho_Ldl\label{eq:diferencial de linea}\\
+dQ=\rho_Sds=\sigma ds &\rightarrow Q=\int_S\rho_Sds\label{eq:diferencial de superficie}\\
+dQ=\rho_vdv=\rho dv &\rightarrow Q=\int_v\rho_vdv\label{eq:diferencial de volumen}
+\end{align}
+\end{subequations}
+El campo eléctrico debido a cada distribución de carga puede ser tomado como una sumatoria de los campos contribuidos por numerosas cargas:
+\begin{subequations}
+\begin{align}
+\vec{E}&=\int_Lk\lambda\frac{dl}{r^2}\vec{u}_r \\
+\vec{E}&=\int_Sk\sigma\frac{ds}{r^2}\vec{u}_r\\
+\vec{E}&=\int_Vk\rho\frac{dv}{r^2}\vec{u}_r
+\end{align}
+\end{subequations}
+\begin{notation}[Ejercicios]
+Revisar los ejercicios 4.4, 4.5, y 4.6 del libro \cite{sadiku2018elements}.
+\end{notation}
+\section{Densidad de campo eléctrico}\index{Densidad de campo eléctrico}
+\begin{definition}[Densidad de campo eléctrico]
+Se dice que la \textbf{densidad de flujo eléctrico} es el número de líneas de fuerza por metro cuadrado de superficie.
+\end{definition}
+Para una esfera de radio \textit{r}, esta dada por:
+\begin{equation}
+\vec{D}=\frac{q}{4\pi r^2}\vec{r}
+\end{equation}
+Así para el espacio libre:
+\begin{equation}
+\vec{D}=\vec{E}\epsilon_0
+\end{equation}
+Donde:\\
+\begin{itemize}
+\item E: Campo eléctrico(N/C ó V/m).
+\item D: Densidad de flujo eléctrico(C/$m^2$).
+\end{itemize}
+Se define \textbf{flujo eléctrico} en términos de la densidad de flujo eléctrico, es decir:
+\begin{equation}
+\Phi_{E}=\int_S\textbf{D}\cdot d\textbf{S}
+\end{equation}
+Otra forma de ver el flujo eléctrico(figura \ref{fig:flujo electrico en la superficie}), solo si las lineas de campo eléctrico uniforme atraviesan una superficie de área \textit{S} es:
+\begin{equation}
+\label{eq:flujo coseno}
+\Phi=ES\cos\theta
+\end{equation}
+Donde:\\
+\begin{itemize}
+\item E: Campo eléctrico.
+\item S: Área de la superficie.
+\item $\theta$: Angulo que forman los vectores de campo eléctrico y la normal de la superficie
+\end{itemize}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{CamposMag/CM11.png}
+\caption{Flujo eléctrico}
+\label{fig:flujo electrico en la superficie}
+\end{figure}
+\begin{notation}[Ejercicios]
+Ver ejercicio 4.7 del libro \cite{sadiku2018elements}.
+\end{notation}
+\section{Ley de Gauss-Ecuaciones de Maxwell}\index{Ley de Gauss-Ecuaciones de Maxwell}
+\begin{definition}[Ley de Gauss]
+La ley de Gauss establece que el flujo a través de una superficie que no encierra carga es nulo, en este caso el número neto de líneas de campo que atraviesa la superficie es cero (entran el mismo número de líneas que salen). Por otro lado, el flujo eléctrico total $\Phi_{E}$ a traves de la \textbf{superficie cerrada} es igual a la carga total encerrada por la superficie.
+\end{definition}
+Por lo tanto:
+\begin{displaymath}
+\Phi_{E}=Q_{enc}
+\end{displaymath}
+que es:
+\begin{displaymath}
+\Phi_{E}=\oint_s d\Phi_{E} = \oint_s D\cdot dS
+\end{displaymath}
+La carga total encerrada:
+\begin{equation}
+\label{eq:cargaintegral}
+Q=\oint D\cdot dS=\int_v\rho_vdv
+\end{equation}
+Aplicando el teorema de la divergencia al término medio.
+\begin{equation}
+\label{eq:cargaintegral1}
+\oint D\cdot dS = \int_v\nabla\cdot D dv
+\end{equation}
+¿Qué pasa si $\vec{E}$ no es uniforme o si \textit{S} es una superficie general?\\
+Si queremos calcular el flujo eléctrico se calcula dividendo el área en diferenciales de área, y usando la ecuación \ref{eq:flujo coseno} se suma todas las pequeñas partes:
+\begin{displaymath}
+\Phi_E=\sum^{\infty}_{i=1}\vec{E_i}\Delta\vec{A_i}
+\end{displaymath}
+Que puede ser expresada como una integral de superficie(ecuación \ref{eq:leydemaxwell1int})
+\begin{theorem}[Ley de Gauss]
+El flujo eléctrico que pasa a través de cada superficie gaussiana\footnote{Se llama superficie gaussiana a la superficie \textbf{imaginaria} que encierra las cargas a analizar, no siempre tiene que coincidir necesariamente con la distribución de carga.} es igual a la carga neta encerrada(suma de las cargas encerradas) entre la \textit{permisividad en el vacío} Comparando los volúmenes de las dos integrales(ecuación \ref{eq:cargaintegral} y \ref{eq:cargaintegral1}):\\
+\textbf{Forma diferencial:}
+\begin{equation}
+\label{eq:leydemaxwell1der}
+\boxed{\nabla\cdot\vec{D}=\rho_v}
+\end{equation}
+\begin{equation}
+\label{eq:leydemaxwell1}
+\boxed{\vec{\nabla}\cdot\vec{E}=\frac{\rho}{\epsilon_0}}
+\end{equation}
+\textbf{Forma integral:}
+\begin{equation}
+\label{eq:leydemaxwell1int}
+\boxed{\Phi_{E}=\oint_s\vec{E}\cdot d\vec{A}=\frac{Q_{enc}}{\epsilon_0}}
+\end{equation}
+Las ecuaciones \ref{eq:leydemaxwell1}, \ref{eq:leydemaxwell1der} y \ref{eq:leydemaxwell1int} son la primera de la 4 ecuaciones de Maxwell establece:\\
+\textit{Que el volumen de densidad de carga es la misma que la divergencia de la densidad de flujo eléctrico. Es equivalente a la ley de Coulomb de fuerza entre dos cargas}.
+\end{theorem}
+\begin{itemize}
+\item La ley de Gauss es útil cuando se demuestra por simetría el valor de campo eléctrico es constante sobre nuestra superficie gaussiana.
+\item Ademas el vector normal $d\vec{A}$ siempre apunta hacia afuera del volumen encerrado por la superficie cerrada, es necesario decir que no siempre el campo eléctrico no apuntara a una dirección, depende de la carga, si es positiva será hacia afuera del volumen y si es negativa será hacia adentro de la superficie.
+\item Si $\vec{E}$ es \textbf{tangente} a la superficie gaussiana en cada punto, entonces la integral sobre la superficie es cero.
+\end{itemize}
+La ley de Gauss tambien puede ser usada para distribuciones de carga no uniforme es necesario una densidad de carga del cuerpo en estudio varíe según una coordenada espacial y para calcular el campo eléctrico primero se debe calcular la carga encerrada por la superficie gaussiana.
+\begin{example}
+¿Cuál es el módulo de una carga puntual capaz de crear un campo eléctrico de 1N/C en un punto igual a 1m de
+distancia?\\
+Los datos que tenemos son: Campo Eléctrico y el radio de la superficie gaussiana, lo que tenemos que encontrar es cuanto es la carga encerrada, para ellos tenemos que usar la ecuación \ref{eq:leydemaxwell1int}:
+\begin{displaymath}
+\oint\vec{E}\cdot dA=\frac{Q_{enc}}{\epsilon_0}
+\end{displaymath}
+Como el campo eléctrico es constante, este sale de la integral:
+\begin{displaymath}
+\vec{E}\oint\cdot dA=\frac{Q_{enc}}{\epsilon_0}
+\end{displaymath}
+Tenemos una integral de superficie, sabemos que se trata de una esfera; y sabemos cual es el área de una esfera, ademas sabemos cuanto sabe nuestro campo eléctrico y el radio:
+\begin{displaymath}
+1\cdot\left(4\pi(1)^2\right)=\frac{Q_{enc}}{\epsilon_0}
+\end{displaymath}
+Despejando la carga encerrada:
+\begin{equation*}
+\boxed{Q_{enc}=0.111 nC}
+\end{equation*}
+\end{example}
+\begin{example}
+En la figura se muestra una cáscara esférica con una densidad volumétrica de cargas uniforme $\rho=1,84 nC/m^3$, radio interno a=10cm y radio externo b=2a. Determinar el módulo del campo eléctrico:
+\begin{itemize}
+\item En r=0 cm
+\item En r=a/2
+\item En r=a
+\item En r=1,5.a
+\item En r=b
+\item En r=3.b
+\end{itemize}
+Para explicarlo vamos a dibujar la situación en la nos encontramos, el contorno rojo es donde se encuentra la carga:
+\begin{center}
+\includegraphics[scale=0.7]{CamposMag/CM13.png}
+\end{center}
+Tenemos varios radios en los cuales tenemos que evaluar el campo, si analizamos la imagen vemos que tenemos 3 espacios: la parte hueca, la parte donde se encuentran las cargas y afuera de la esfera. Haremos para cada uno de los casos. Para poder analizar los casos tenemos que ubicar superficies gaussianas:\\
+\textbf{Caso 1:}\\
+La primera superficie gaussiana estará en la parte hueca
+\begin{center}
+\includegraphics[scale=0.7]{CamposMag/CM14.png}
+\end{center}
+Nos ponemos a analizar la primera situación: ¿Existe una carga encerrada bajo la superficie gaussiana que acabamos de crear? No, no existe ni una carga encerrada desde r=0 hasta r=a. Por lo tanto el campo eléctrico E es \textbf{cero}. En conclusión
+\begin{itemize}
+\item En r=0 cm $\rightarrow$ E=0
+\item En r=a/2 $\rightarrow$ E=0
+\item En r=a $\rightarrow$ E=0
+\end{itemize}
+\textbf{Caso 2:}\\
+\begin{center}
+\includegraphics[scale=0.7]{CamposMag/CM15.png}
+\end{center}
+Ahora crearemos una superficie gaussiana desde r=a hasta r=b, en este caso a medida que crezca el radio r, si habrá una carga encerrada, por ello no será cero. Usando la ley de Gauss y sabiendo que se trata de un campo eléctrico constante:
+\begin{displaymath}
+E\oint dS = \frac{Q_{enc}}{\epsilon_0}
+\end{displaymath}
+A diferencia del ejemplo anterior, aquí tenemos una densidad de carga volumétrica dada por el problema. \textbf{Dejaremos en pausa esta ecuación y haremos unos pasos parelelos}. Para resolver este tipo de problemas es necesario usar las expresiones de diferenciales de carga, más específicamente, la de volumen(ecuación \ref{eq:diferencial de volumen}):
+\begin{displaymath}
+dQ=1.84 nC/m^3 dv
+\end{displaymath}
+Nosotros necesitamos saber la carga encerrada, no la diferencial de carga; para ello solo integramos a ambos lados:
+\begin{displaymath}
+Q=\int \rho_v dv
+\end{displaymath}
+No tenemos la diferencial de volumen, si nos ponemos a pensar: tenemos una esfera y necesitamos halla la diferencial pero sabemos la expresión del volumen de una esfera:
+\begin{displaymath}
+V=\frac{4}{3}\pi r^3
+\end{displaymath}
+Derivamos a ambos lados para obtener la diferencial de volumen:
+\begin{displaymath}
+dV=4\pi r^3 dr
+\end{displaymath}
+Ahora que tenemos la diferencial de volumen podemos reemplazarla en la integral:
+\begin{displaymath}
+Q=\int \rho_v \cdot 4\pi r^3 dr
+\end{displaymath}
+Antes de proceder con la integral definamos los límites: como lo dijimos para este caso estamos tomando desde un radio igual a \textbf{a} hasta radio igual a \textbf{b}, pero estamos \textbf{analizando la superficie gaussiana}, es debido a este análisis que los límites de la integral van desde radio mínimo igual a \textit{a} hasta un radio de valor r que será le radio que queramos siempre y cuando se cumpla que a<r<b. Con esto dicho tenemos:
+\begin{displaymath}
+Q=\int^{r=r}_{r=a} \rho_v \cdot 4\pi r^3 dr
+\end{displaymath}
+Si desarrollamos la integral obtendremos nuestra carga encerrada:
+\begin{displaymath}
+Q_{enc}=\frac{4\pi\cdot\rho_v}{3}\left(r^3-a^3\right)
+\end{displaymath}
+Ahora que sabemos la carga encerrada volvemos a la ley de Gauss que estábamos resolviendo:
+\begin{displaymath}
+E\oint dS = \frac{4\pi\cdot\rho_v\left(r^3-a^3\right)}{3\epsilon_0}
+\end{displaymath}
+Y nuevamente nos enfrentamos ante un diferencial de volumen, sabemos que es una esfera, por lo tanto:
+\begin{displaymath}
+E\cdot(4\pi r^2) = \frac{4\pi\cdot\rho_v\left(r^3-a^3\right)}{3\epsilon_0}
+\end{displaymath}
+Aplicamos un poco y álgebra y ordenamos:
+\begin{displaymath}
+E=\frac{\rho_v\left(r^3-a^3\right)}{3\epsilon_0 r^2}
+\end{displaymath}
+Reemplazamos los datos, R será los radios que nosotros queramos, siempre y cuando se cumpla que a<r<B; los radios que cumplen esta condición son r=1.5a y r=b:
+\begin{itemize}
+\item En r=1.5a $\rightarrow$ E=7.32 N/C
+\item En r=b $\rightarrow$ E=12.13 N/C\\
+\end{itemize}
+\textbf{Caso 3:}
+\begin{center}
+\includegraphics[scale=0.7]{CamposMag/CM16.png}
+\end{center}
+En este caso ahora nuestra superficie gaussiana será desde un radio igual a b hasta un radio r, el que queramos. En este caso es el mismo caso que le caso 2, la única diferencia aquí son los límites de los radio. El caso dos, a medida que el radio cambiaba también lo hacia el campo eléctrico por que a más radio encerrábamos más carga. En este caso, el radio de nuestra superficie gaussiana va desde b, es decir, el campo eléctrico ya ha sido encerrado en su totalidad y aunque nuestra \textit{r} sea muy grande o muy pequeña, la carga no cambiará. Recordemos que para la integral pusimos límites desde radio igual a \textit{a} y variaba hasta radio igual a  \textit{r}, eso cambia aquí donde nuestros limites de integración en función de radio será desde \textit{a} hasta \textit{b}, en decir una superficie cerrada, ahora lo plasmamos en una ecuación:
+\begin{displaymath}
+E=\frac{\rho_v\left(b^3-a^3\right)}{3\epsilon_0 r^2}
+\end{displaymath}
+Ya tenemos todos los datos, y el último radio que no falta probar es \textit{r=3.b}, reemplazando y resolviendo:
+\begin{itemize}
+\item En r=3.b $\rightarrow$ E=1.35 N/C
+\end{itemize}
 
+\end{example}
+\begin{remark}
+Es necesario que trabajes en las unidades del SI, de lo contrario no saldrán las respuestas correctas. Las unidades son errores que se suele cometer comúnmente.
+\end{remark}
+\textbf{Se dejan algunos ejercicios en la seccción de Anexos.}\\
+\section{Potencial eléctrico}\index{Potencial eléctrico}
+Supongamos que deseamos mover una carga puntual Q del punto A al punto B en un campo eléctrico
+E. De la ley de Coulomb, la fuerza sobre Q es F=QE de modo que el trabajo hecho al desplazar la carga por dl es:
+\begin{displaymath}
+dW=-F\cdot dl=-QE\cdot dl
+\end{displaymath}
+El signo negativo indica que el trabajo esta siendo hecho por un agente externo, por lo tanto el trabajo total hecho o la energía potencial en el movimiento Q de A a B es:
+\begin{equation}
+\boxed{W=-Q\int^B_AE\cdot dl}
+\end{equation}
+Dividendo entre Q a ambos lados da la energía potencia por unidad de carga, esta cantidad,
+denotada por $V_{AB}$, se conoce como la diferencia de potencial entre los puntos A y B. Así
+\begin{equation}
+\label{eq:diferencial de voltaje}
+V_{AB}=\frac{W}{Q}=-\int^B_AE\cdot dl
+\end{equation}
+Note que:
+\begin{enumerate}
+\item Al determinar $V_{AB}$, A es el punto inicial mientras que B es el punto final.
+\item Si $V_{AB}$ es negativo, hay una pérdida de energía potencial al mover Q de A a B; esta
+implica que el trabajo lo está haciendo el campo. Sin embargo, si $V_{AB}$ es positivo, hay
+una ganancia de energía potencial en el movimiento; un agente externo realiza el trabajo.
+\item $V_{AB}$ es independiente del camino tomado (se mostrará un poco más adelante).
+\item $V_{AB}$ se mide en julios por coulomb, comúnmente denominados voltios (V).
+\end{enumerate}
+\begin{notation}[Ejercicios]
+Ejercicios relacionados:
+\begin{enumerate}
+\item Ejercicio 4.10
+\item Ejercicio 4.11
+\end{enumerate}
+Ambos del libro \cite{sadiku2018elements}.
+\end{notation}
+\section{Relación entre E y V-Ecuación de Maxwell}\index{Relación entre E y V-Ecuación de Maxwell}
+Como se muestra en la sección anterior, la diferencia de potencial entre los puntos A y B es independiente del camino tomado. Por eso:
+\begin{displaymath}
+V_{BA}=-V_{AB}
+\end{displaymath}
+que es, $V_{BA}+V_{AB}=\oint_LE\cdot dl=0$ ó:
+\begin{equation}
+\label{eq:integral maxwell 2}
+\oint_LE\cdot dl=0
+\end{equation}
+Esto muestra que la integral de línea de E a lo largo de un camino cerrado como se muestra en la figura \ref{fig:Naturaleza consevadors} debe ser cero. Físicamente, esto implica que no se realiza ningún trabajo neto al mover una carga a lo largo de un circuito cerrado. La trayectoria en un campo electrostático. Aplicando el teorema de Stokes a la ecuación \ref{eq:integral maxwell 2} da:
+\begin{displaymath}
+\oint_LE\cdot dl=\int_S\left(\nabla\times E\right)\cdot dS = 0
+\end{displaymath}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.5]{CamposMag/CM17.png}
+\caption{La naturaleza conservadora de un
+campo electrostático.}
+\label{fig:Naturaleza consevadors}
+\end{figure}
+\begin{theorem}[Ley de Gauss para campos magnéticos]
+Esta ley expresa la inexistencia de cargas magnéticas o, como se conocen habitualmente, monopolos magnéticos. Las distribuciones de fuentes magnéticas son siempre neutras en el sentido de que posee un polo norte y un polo sur, por lo que su flujo a través de cualquier superficie cerrada es nulo.\\
+\textbf{Forma diferencial:}
+\begin{equation}
+\label{eq:ecuacionmaxwell2derivada}
+\nabla\cdot\vec{B}=0
+\end{equation}
+\textbf{Forma integral:}
+\begin{equation}
+\label{eq:ecuaciponmaxwell2integral}
+\oint_S\vec{S}\cdot d\vec{A}=0
+\end{equation}
+\end{theorem}
+De la expresión \ref{eq:diferencial de voltaje}, se dice que:
+\begin{displaymath}
+dV=-E\cdot dl=-E_xdx-E_ydy-E_zdz
+\end{displaymath}
+Después de un calculo multivariable, una cambio total en V(x,y,z) es la suma de cambios parciales con respecto a las variables \textit{x}, \textit{y} y \textit{z}.
+\begin{displaymath}
+dV=\frac{\partial V}{\partial x}dx+\frac{\partial V}{\partial y}dy+\frac{\partial V}{\partial z}dz
+\end{displaymath}
+Comparando ambas expresiones de dV:
+\begin{displaymath}
+E_x=-\frac{\partial V}{\partial x}, E_y=-\frac{\partial V}{\partial y}, E_z=-\frac{\partial V}{\partial z}
+\end{displaymath}
+Por lo tanto:
+\begin{equation}
+\label{eq:campo electrico gradiente}
+\boxed{\textbf{E}=-\nabla V}
+\end{equation}
+es decir, la intensidad del campo eléctrico es el gradiente de V. El signo negativo muestra que la dirección de E es opuesta a la dirección en la que aumenta V; E está dirigido desde arriba a niveles más bajos de V.
+\begin{notation}[Ejercicios]
+Se recomienda analizar el ejercicio 4.12 del libro \cite{sadiku2018elements}.
+\end{notation}
+\section{Dipolo eléctrico}\index{Dipolo eléctrico}
+\begin{definition}[Dipolo eléctrico]
+Un dipolo eléctrico se forma cuando dos cargas puntuales de igual magnitud pero opuestas el letrero del sitio están separados por una pequeña distancia.
+\end{definition}
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{CamposMag/CM18.png}
+\caption{Dipolo eléctrico}
+\label{fig:dipolo electrico}
+\end{figure}
+El potencial \textit{P}($r,\theta,\phi$) de la figura \ref{fig:dipolo electrico} esta dado por:
+\begin{equation}
+\label{eq:potencial de un dipolo}
+V=\frac{Q}{4\pi\epsilon_0}\left[\frac{1}{r_1}-\frac{1}{r_2}\right]=\frac{Q}{4\pi\epsilon_0}\left[\frac{r_2-r_1}{r_1r_2}\right]
+\end{equation}
+donde $r_1$ y $r_2$ son las distancias entre P y +Q y -Q respectivamente. Si r>>d, $r_2-r_1\simeq d\cos\theta$ y $r_2r_1\simeq r^2$:
+\begin{equation}
+V=\frac{Q}{4\pi\epsilon_0}\frac{d\cos\theta}{r^2}
+\end{equation}
+Ya que d$\cos\theta=\textbf{d}\cdot a_r$, donde \textbf{d}=\textit{d}$a_z$, si nosotros lo definimos como el \textit{momento de dipolo}:
+\begin{equation}
+p=Qd
+\end{equation}
+La ecuación \ref{eq:potencial de un dipolo} puede ser escrita como:
+\begin{equation}
+\label{eq:potencial de un dipolo con momento}
+V=\frac{p\cdot a_r}{4\pi\epsilon_0r^2}
+\end{equation}
+Tenga en cuenta que el momento dipolar p está dirigido de -Q a +Q. Si el centro del dipolo no está en el origen pero están en r', eq. \ref{eq:potencial de un dipolo con momento} se convierte en:
+\begin{equation}
+\boxed{V(r)=\frac{p\cdot\left(r-r'\right)}{4\pi\epsilon_0|r-r'|^3}}
+\end{equation}
+El campo eléctrico debido al dipolo con centro en el origen, que se muestra en la Figura \ref{fig:dipolo electrico} puede
+obtenerse fácilmente a partir de las ecs. \ref{eq:campo electrico gradiente} y \ref{eq:potencial de un dipolo} como:
+\begin{equation}
+\boxed{E=\frac{p}{4\pi\epsilon_0r^3}\left(2\cos\theta a_r+\sin\theta a_\theta\right)}
+\end{equation}
+donde \textit{p}=|\textbf{p}|=Qd.
+\begin{definition}[Lineas de flujo eléctrico]
+Una línea de flujo eléctrico es un camino o línea imaginaria trazada de tal manera que su dirección en cualquier punto es la dirección del campo eléctrico en ese punto.
+\end{definition}
+En otras palabras, son las líneas a las que la densidad de flujo eléctrico D es tangencial en
+cada punto. Cualquier superficie en la que el potencial es el mismo en todas partes se conoce como superficie equipotencial de prueba. La intersección de una superficie equipotencial y un plano da como resultado una trayectoria o línea conocida como línea equipotencial. No se realiza trabajo al mover una carga de un punto a
+otro a lo largo de una línea equipotencial o superficie ($V_A-V_B=0$) y por lo tanto
+\begin{equation}
+\int_LE\cdot dl=0
+\label{eq:integral de linea de campo}
+\end{equation}
+en la línea o superficie. De la ec. \ref{eq:integral de linea de campo}, podemos concluir que las líneas de fuerza o flujo.
+Las líneas (o la dirección de E) son siempre normales a las superficies equipotenciales  Ejemplos de las superficies equipotenciales para una carga puntual y un dipolo se muestran en la figura \ref{fig:Superficies equipotenciales}.
+\begin{figure}[htbp]
+\centering
+\subfloat[Carga puntual]{\includegraphics[scale=0.5]{CamposMag/CM19.png}}
+\subfloat[Dipolo eléctrico]{\includegraphics[scale=0.4]{CamposMag/CM20.png}}
+\caption{Ilustración de la divergencia de un campo vectorial.}
+\label{fig:Superficies equipotenciales}
+\end{figure}
+\begin{notation}[Ejericios]
+Revisar el ejericio 4.13 de libro \cite{sadiku2018elements}.
+\end{notation}
 \chapter{Magnetoestática}
 \chapter{Ecuaciones de Maxwell y las ondas electromagnéticas}
 %----------------------------------------------------------------------------------------
@@ -5634,6 +6085,13 @@ Se resuelve igual que la matriz de producto cruz, con la misma distribución de 
 
 \includepdf[scale=0.8,pages={2-4},pagecommand=
 \section{Ejercicios resueltos U2-Erlang B}\label{Anexo 4}]{Anexos/ErlangB.pdf}
+
+\includepdf[scale=0.8,pages={1},pagecommand=
+\section{Ejericios de la ley de Gauss}\label{Anexo 5}]{Anexos/GAUSS3.pdf}
+
+\includepdf[scale=0.8,pages={1}]{Anexos/GAUSS4.pdf}
+
+\includepdf[scale=0.8,pages={1}]{Anexos/GAUSS5.pdf}
 %---------------------------------------------------------------
 % 		ENDING
 %---------------------------------------------------------------

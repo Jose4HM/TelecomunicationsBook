@@ -446,7 +446,6 @@
       \field{series}{The Oxford series in electrical and computer engineering}
       \field{title}{Elements of Electromagnetics}
       \field{year}{2018}
-      \true{nocite}
       \verb{urlraw}
       \verb https://books.google.com.pe/books?id=dYYDtAEACAAJ
       \endverb
