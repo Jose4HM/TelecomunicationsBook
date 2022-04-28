@@ -1,15 +1,17 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
 [1] Config.pm:310> INFO - Logfile is 'main.blg'
-[1311] biber-MSWIN64:340> INFO - === 
-[1949] Biber.pm:418> INFO - Reading 'main.bcf'
-[2706] Biber.pm:969> INFO - Using all citekeys in bib section 0
-[2832] Biber.pm:4383> INFO - Processing section 0
-[3163] Biber.pm:4574> INFO - Looking for bibtex file 'sample.bib' for section 0
-[3512] bibtex.pm:1713> INFO - LaTeX decoding ...
-[3780] bibtex.pm:1518> INFO - Found BibTeX data source 'sample.bib'
-[5304] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[5305] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[5305] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[5306] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[5608] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[5644] bbl.pm:757> INFO - Output to main.bbl
+[1620] biber-MSWIN64:340> INFO - === 
+[2089] Biber.pm:418> INFO - Reading 'main.bcf'
+[2662] Biber.pm:972> INFO - Found 2 citekeys in bib section 0
+[2771] Biber.pm:4383> INFO - Processing section 0
+[3069] Biber.pm:4574> INFO - Looking for bibtex file 'sample.bib' for section 0
+[3348] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3530] bibtex.pm:1518> INFO - Found BibTeX data source 'sample.bib'
+[4788] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4789] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4790] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[4791] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[4935] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[4938] bbl.pm:757> INFO - Output to main.bbl
+[4950] Biber.pm:130> WARN - I didn't find a database entry for 'elmagsadiku' (section 0)
+[4951] Biber.pm:132> INFO - WARNINGS: 1

@@ -77,7 +77,7 @@
 \contentsline {subsection}{\numberline {3.5.3}Flip Flop J-K disparado por flanco}{75}{subsection.3.5.3}%
 \contentsline {subsection}{\numberline {3.5.4}Entradas asíncronas de inicialización y borrado}{77}{subsection.3.5.4}%
 \contentsline {section}{\numberline {3.6}División de frecuencia}{78}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Monoestables}{79}{section.3.7}%
+\contentsline {section}{\numberline {3.7}Monoestables}{78}{section.3.7}%
 \contentsline {chapter}{\numberline {4}Circuitos Lógicos Secuenciales}{81}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Máquina de estados}{81}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Modelo de Mealy}{82}{subsection.4.1.1}%
@@ -164,139 +164,171 @@
 \contentsline {section}{\numberline {11.7}Relación entre E y V-Ecuación de Maxwell}{169}{section.11.7}%
 \contentsline {section}{\numberline {11.8}Dipolo eléctrico}{170}{section.11.8}%
 \contentsline {chapter}{\numberline {12}Campos eléctricos en el espacio material}{173}{chapter.12}%
-\contentsline {chapter}{\numberline {13}Campos magnéticos estáticos}{175}{chapter.13}%
-\contentsline {chapter}{\numberline {14}Fuerza, materiales y dispositivos magnéticos}{177}{chapter.14}%
-\contentsline {part}{\numberline {VI}Sistemas de telefonía}{179}{part.6}%
-\contentsline {chapter}{\numberline {15}Telefonía}{181}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Evolución de la telefonía}{181}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Conmutadores}{182}{section.15.2}%
-\contentsline {section}{\numberline {15.3}Repaso:Señales analógicas y digitales}{182}{section.15.3}%
-\contentsline {subsection}{\numberline {15.3.1}Ventajas y desventajas de las señales analógicas}{182}{subsection.15.3.1}%
-\contentsline {subsection}{\numberline {15.3.2}Ventajas y desventajas de las señales digitales}{183}{subsection.15.3.2}%
-\contentsline {section}{\numberline {15.4}Multiplexación}{183}{section.15.4}%
-\contentsline {subsection}{\numberline {15.4.1}¿Para que sirve?}{183}{subsection.15.4.1}%
-\contentsline {subsection}{\numberline {15.4.2}Multiplexación por división de tiempo o TDM \textit {(time-division multiplexing)}}{183}{subsection.15.4.2}%
-\contentsline {subsection}{\numberline {15.4.3}Multiplexación por división de frecuencia o FDM \textit {(frequency-division multiplexing)}}{184}{subsection.15.4.3}%
-\contentsline {subsection}{\numberline {15.4.4}Multiplexación por división de longitud de onda o WDM \textit {(wavelength-division multiplexing)}}{185}{subsection.15.4.4}%
-\contentsline {subsection}{\numberline {15.4.5}Multiplexación por Estadística por División de Tiempo o STDM(\textit {Statistical time-division multiplexing})}{185}{subsection.15.4.5}%
-\contentsline {section}{\numberline {15.5}Técnicas de conmutación}{185}{section.15.5}%
-\contentsline {subsection}{\numberline {15.5.1}Conmutación por circuitos}{185}{subsection.15.5.1}%
-\contentsline {subsection}{\numberline {15.5.2}Conmutador por paquetes}{186}{subsection.15.5.2}%
-\contentsline {section}{\numberline {15.6}Red de telefonía publica}{187}{section.15.6}%
-\contentsline {subsection}{\numberline {15.6.1}Red de telefonía publica conmutada-PSTN}{187}{subsection.15.6.1}%
-\contentsline {subsection}{\numberline {15.6.2}Características}{188}{subsection.15.6.2}%
-\contentsline {subsection}{\numberline {15.6.3}Componentes}{189}{subsection.15.6.3}%
-\contentsline {subsubsection}{\numberline {15.6.3.1}Equipos Terminales}{189}{subsubsection.15.6.3.1}%
-\contentsline {subsubsection}{\numberline {15.6.3.2}Central telefónica}{189}{subsubsection.15.6.3.2}%
-\contentsline {subsubsection}{\numberline {15.6.3.3}Red de enlace}{190}{subsubsection.15.6.3.3}%
-\contentsline {subsubsection}{\numberline {15.6.3.4}Troncales}{190}{subsubsection.15.6.3.4}%
-\contentsline {subsubsection}{\numberline {15.6.3.5}Lazo de abonado o local}{190}{subsubsection.15.6.3.5}%
-\contentsline {subsubsection}{\numberline {15.6.3.6}SLIC y BORSCHT}{190}{subsubsection.15.6.3.6}%
-\contentsline {section}{\numberline {15.7}Señalización telefónica}{191}{section.15.7}%
-\contentsline {section}{\numberline {15.8}Planta interna y externa}{192}{section.15.8}%
-\contentsline {subsection}{\numberline {15.8.1}Planta Interna}{192}{subsection.15.8.1}%
-\contentsline {subsection}{\numberline {15.8.2}Planta externa}{193}{subsection.15.8.2}%
-\contentsline {chapter}{\numberline {16}Herramientas para el análisis telefónico}{199}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Tráfico Telefónico}{199}{section.16.1}%
-\contentsline {subsection}{\numberline {16.1.1}Variaciones}{199}{subsection.16.1.1}%
-\contentsline {subsubsection}{\numberline {16.1.1.1}Variaciones Diarias}{199}{subsubsection.16.1.1.1}%
-\contentsline {subsubsection}{\numberline {16.1.1.2}Variación Semanal}{200}{subsubsection.16.1.1.2}%
-\contentsline {subsubsection}{\numberline {16.1.1.3}Variación anual}{200}{subsubsection.16.1.1.3}%
-\contentsline {subsubsection}{\numberline {16.1.1.4}Variación accidental}{200}{subsubsection.16.1.1.4}%
-\contentsline {section}{\numberline {16.2}Medidas de tráfico telefónico}{200}{section.16.2}%
-\contentsline {subsubsection}{\numberline {16.2.0.1}Volumen del tráfico($V_t$)}{200}{subsubsection.16.2.0.1}%
-\contentsline {subsubsection}{\numberline {16.2.0.2}Tiempo de observación($T_o$)}{202}{subsubsection.16.2.0.2}%
-\contentsline {subsubsection}{\numberline {16.2.0.3}Intensidad de tráfico($I_t$)}{202}{subsubsection.16.2.0.3}%
-\contentsline {subsubsection}{\numberline {16.2.0.4}Erlang}{202}{subsubsection.16.2.0.4}%
-\contentsline {subsubsection}{\numberline {16.2.0.5}Hora cargada}{203}{subsubsection.16.2.0.5}%
-\contentsline {section}{\numberline {16.3}Tipos de tráfico}{204}{section.16.3}%
-\contentsline {section}{\numberline {16.4}Accesibilidad}{205}{section.16.4}%
-\contentsline {subsubsection}{\numberline {16.4.0.1}Accesibilidad completa}{205}{subsubsection.16.4.0.1}%
-\contentsline {subsubsection}{\numberline {16.4.0.2}Accesibilidad Limitada}{205}{subsubsection.16.4.0.2}%
-\contentsline {subsubsection}{\numberline {16.4.0.3}Sistemas de pérdida}{206}{subsubsection.16.4.0.3}%
-\contentsline {subsubsection}{\numberline {16.4.0.4}Sistema a Espera}{206}{subsubsection.16.4.0.4}%
-\contentsline {section}{\numberline {16.5}\textit {Grade of service}(GoS)}{206}{section.16.5}%
-\contentsline {section}{\numberline {16.6}Diseño de redes}{207}{section.16.6}%
-\contentsline {section}{\numberline {16.7}Encaminamiento de tráfico}{210}{section.16.7}%
-\contentsline {section}{\numberline {16.8}Erlang-B}{214}{section.16.8}%
-\contentsline {subsection}{\numberline {16.8.1}Erlang-B para un enlace}{215}{subsection.16.8.1}%
-\contentsline {subsubsection}{\numberline {16.8.1.1}Formula Erlang-B para un enlace}{215}{subsubsection.16.8.1.1}%
-\contentsline {subsection}{\numberline {16.8.2}Erlang-B para N enlaces}{216}{subsection.16.8.2}%
-\contentsline {subsubsection}{\numberline {16.8.2.1}Distribución de Poisson}{217}{subsubsection.16.8.2.1}%
-\contentsline {chapter}{\numberline {17}Telefonía IP}{219}{chapter.17}%
-\contentsline {subsection}{\numberline {17.0.1}Redes de computadoras}{219}{subsection.17.0.1}%
-\contentsline {subsection}{\numberline {17.0.2}PDU}{220}{subsection.17.0.2}%
-\contentsline {subsection}{\numberline {17.0.3}Arquitectura de red}{221}{subsection.17.0.3}%
-\contentsline {subsection}{\numberline {17.0.4}Tipos de servicios}{223}{subsection.17.0.4}%
-\contentsline {subsubsection}{\numberline {17.0.4.1}Orientado a la conexión}{223}{subsubsection.17.0.4.1}%
-\contentsline {subsubsection}{\numberline {17.0.4.2}No orientado a la conexión}{224}{subsubsection.17.0.4.2}%
-\contentsline {section}{\numberline {17.1}Repaso: TCP/IP}{225}{section.17.1}%
-\contentsline {subsection}{\numberline {17.1.1}Capa de transporte}{225}{subsection.17.1.1}%
-\contentsline {subsection}{\numberline {17.1.2}Capa de internet}{227}{subsection.17.1.2}%
-\contentsline {subsubsection}{\numberline {17.1.2.1}Direccionamiento}{227}{subsubsection.17.1.2.1}%
-\contentsline {subsubsection}{\numberline {17.1.2.2}Enrutamiento}{227}{subsubsection.17.1.2.2}%
-\contentsline {subsubsection}{\numberline {17.1.2.3}IPv4}{227}{subsubsection.17.1.2.3}%
-\contentsline {section}{\numberline {17.2}VoIP}{229}{section.17.2}%
-\contentsline {section}{\numberline {17.3}Digitización de la voz}{229}{section.17.3}%
-\contentsline {subsection}{\numberline {17.3.1}¿Como se digitaliza de la voz?}{229}{subsection.17.3.1}%
-\contentsline {subsubsection}{\numberline {17.3.1.1}Muestreo}{230}{subsubsection.17.3.1.1}%
-\contentsline {subsubsection}{\numberline {17.3.1.2}Cuantificación}{230}{subsubsection.17.3.1.2}%
-\contentsline {subsubsection}{\numberline {17.3.1.3}Codificación}{231}{subsubsection.17.3.1.3}%
-\contentsline {subsubsection}{\numberline {17.3.1.4}CODECs}{231}{subsubsection.17.3.1.4}%
-\contentsline {subsection}{\numberline {17.3.2}Transporte de Voz}{232}{subsection.17.3.2}%
-\contentsline {section}{\numberline {17.4}Componentes de VoIP}{232}{section.17.4}%
-\contentsline {subsection}{\numberline {17.4.1}Terminal IP}{233}{subsection.17.4.1}%
-\contentsline {subsection}{\numberline {17.4.2}Centralita IP}{233}{subsection.17.4.2}%
-\contentsline {subsection}{\numberline {17.4.3}Gateway}{234}{subsection.17.4.3}%
-\contentsline {subsubsection}{\numberline {17.4.3.1}Gateway FXS}{234}{subsubsection.17.4.3.1}%
-\contentsline {subsubsection}{\numberline {17.4.3.2}Gateway FXO}{234}{subsubsection.17.4.3.2}%
-\contentsline {subsection}{\numberline {17.4.4}Adaptador FXS}{234}{subsection.17.4.4}%
-\contentsline {subsection}{\numberline {17.4.5}Unidad de control MCU}{234}{subsection.17.4.5}%
-\contentsline {section}{\numberline {17.5}Tecnología IP}{235}{section.17.5}%
-\contentsline {subsection}{\numberline {17.5.1}DSL}{235}{subsection.17.5.1}%
-\contentsline {subsection}{\numberline {17.5.2}RDSI}{235}{subsection.17.5.2}%
-\contentsline {subsection}{\numberline {17.5.3}LMDS}{235}{subsection.17.5.3}%
-\contentsline {subsection}{\numberline {17.5.4}GSM}{236}{subsection.17.5.4}%
-\contentsline {section}{\numberline {17.6}Vocabulary}{237}{section.17.6}%
-\contentsline {part}{\numberline {VII}Extras}{239}{part.7}%
-\contentsline {chapter}{\numberline {18}Artificios matemáticos}{241}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Logaritmos y exponenciales}{241}{section.18.1}%
-\contentsline {section}{\numberline {18.2}Matrices}{241}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Conformabilidad de matrices}{241}{subsection.18.2.1}%
-\contentsline {section}{\numberline {18.3}Integrales}{242}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}Integral por tabulación}{242}{subsection.18.3.1}%
-\contentsline {section}{\numberline {18.4}Números complejos}{242}{section.18.4}%
-\contentsline {section}{\numberline {18.5}Producto cruz y producto escalar}{243}{section.18.5}%
-\contentsline {subsection}{\numberline {18.5.1}Producto escalar}{243}{subsection.18.5.1}%
-\contentsline {subsection}{\numberline {18.5.2}Producto cruz}{243}{subsection.18.5.2}%
-\contentsline {subsection}{\numberline {18.5.3}Propiedades}{244}{subsection.18.5.3}%
-\contentsline {section}{\numberline {18.6}Decibelios}{244}{section.18.6}%
-\contentsline {subsection}{\numberline {18.6.1}Definición de dB}{244}{subsection.18.6.1}%
-\contentsline {subsection}{\numberline {18.6.2}Definición de dBm}{244}{subsection.18.6.2}%
-\contentsline {subsection}{\numberline {18.6.3}Diferencia entre decibelios de tensión y decibelios de potencia}{244}{subsection.18.6.3}%
-\contentsline {subsection}{\numberline {18.6.4}¿Qué es un nivel?}{245}{subsection.18.6.4}%
-\contentsline {subsection}{\numberline {18.6.5}Atenuación y ganancia}{245}{subsection.18.6.5}%
-\contentsline {subsection}{\numberline {18.6.6}Decibelios a porcentaje y viceversa}{246}{subsection.18.6.6}%
-\contentsline {subsubsection}{\numberline {18.6.6.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{246}{subsubsection.18.6.6.1}%
-\contentsline {subsubsection}{\numberline {18.6.6.2}Conversión de la energía: porcentaje a decibelios y viceversa}{246}{subsubsection.18.6.6.2}%
-\contentsline {subsubsection}{\numberline {18.6.6.3}Conversión de voltaje: porcentaje más o menos a decibelios}{246}{subsubsection.18.6.6.3}%
-\contentsline {subsubsection}{\numberline {18.6.6.4}Conversión de potencia: porcentaje más o menos a decibelios}{247}{subsubsection.18.6.6.4}%
-\contentsline {part}{\numberline {VIII}Anexos}{249}{part.8}%
-\contentsline {section}{\numberline {18.7}Ejercicios resueltos U2-Sistemas de telefonía}{251}{section.18.7}%
-\contentsline {section}{\numberline {18.8}Ejercicios resueltos U2-Sistemas de telefonía}{252}{section.18.8}%
-\contentsline {section}{\numberline {18.9}Ejercicios resueltos U2-Sistemas de telefonía}{253}{section.18.9}%
-\contentsline {section}{\numberline {18.10}Ejercicios resueltos U2-Sistemas de telefonía 2 }{254}{section.18.10}%
-\contentsline {section}{\numberline {18.11}Ejercicios resueltos U2-Sistemas de telefonía 2 }{255}{section.18.11}%
-\contentsline {section}{\numberline {18.12}Ejercicios resueltos U2-Sistemas de telefonía 2 }{256}{section.18.12}%
-\contentsline {section}{\numberline {18.13}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{257}{section.18.13}%
-\contentsline {section}{\numberline {18.14}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{258}{section.18.14}%
-\contentsline {section}{\numberline {18.15}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{259}{section.18.15}%
-\contentsline {section}{\numberline {18.16}Ejercicios resueltos U2-Erlang B}{260}{section.18.16}%
-\contentsline {section}{\numberline {18.17}Ejercicios resueltos U2-Erlang B}{261}{section.18.17}%
-\contentsline {section}{\numberline {18.18}Ejercicios resueltos U2-Erlang B}{262}{section.18.18}%
-\contentsline {section}{\numberline {18.19}Ejericios de la ley de Gauss}{263}{section.18.19}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{267}{chapter*.251}%
-\contentsline {section}{Articles}{267}{chapter*.251}%
-\contentsline {section}{Books}{267}{chapter*.251}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{269}{section*.252}%
+\contentsline {section}{\numberline {12.1}CORRIENTES DE CONVECCIÓN Y CONDUCCIÓN}{173}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Conductores}{174}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}Conductor Isolado}{174}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}Conductor mantenido a potencial}{174}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}Polarización de un dipolo}{175}{subsection.12.2.3}%
+\contentsline {part}{\numberline {VI}Sistemas de telefonía}{177}{part.6}%
+\contentsline {chapter}{\numberline {13}Telefonía}{179}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Evolución de la telefonía}{179}{section.13.1}%
+\contentsline {section}{\numberline {13.2}Conmutadores}{180}{section.13.2}%
+\contentsline {section}{\numberline {13.3}Repaso:Señales analógicas y digitales}{180}{section.13.3}%
+\contentsline {subsection}{\numberline {13.3.1}Ventajas y desventajas de las señales analógicas}{180}{subsection.13.3.1}%
+\contentsline {subsection}{\numberline {13.3.2}Ventajas y desventajas de las señales digitales}{181}{subsection.13.3.2}%
+\contentsline {section}{\numberline {13.4}Multiplexación}{181}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}¿Para que sirve?}{181}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}Multiplexación por división de tiempo o TDM \textit {(time-division multiplexing)}}{181}{subsection.13.4.2}%
+\contentsline {subsection}{\numberline {13.4.3}Multiplexación por división de frecuencia o FDM \textit {(frequency-division multiplexing)}}{182}{subsection.13.4.3}%
+\contentsline {subsection}{\numberline {13.4.4}Multiplexación por división de longitud de onda o WDM \textit {(wavelength-division multiplexing)}}{183}{subsection.13.4.4}%
+\contentsline {subsection}{\numberline {13.4.5}Multiplexación por Estadística por División de Tiempo o STDM(\textit {Statistical time-division multiplexing})}{183}{subsection.13.4.5}%
+\contentsline {section}{\numberline {13.5}Técnicas de conmutación}{183}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}Conmutación por circuitos}{183}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}Conmutador por paquetes}{184}{subsection.13.5.2}%
+\contentsline {section}{\numberline {13.6}Red de telefonía publica}{185}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}Red de telefonía publica conmutada-PSTN}{185}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {13.6.2}Características}{186}{subsection.13.6.2}%
+\contentsline {subsection}{\numberline {13.6.3}Componentes}{187}{subsection.13.6.3}%
+\contentsline {subsubsection}{\numberline {13.6.3.1}Equipos Terminales}{187}{subsubsection.13.6.3.1}%
+\contentsline {subsubsection}{\numberline {13.6.3.2}Central telefónica}{187}{subsubsection.13.6.3.2}%
+\contentsline {subsubsection}{\numberline {13.6.3.3}Red de enlace}{188}{subsubsection.13.6.3.3}%
+\contentsline {subsubsection}{\numberline {13.6.3.4}Troncales}{188}{subsubsection.13.6.3.4}%
+\contentsline {subsubsection}{\numberline {13.6.3.5}Lazo de abonado o local}{188}{subsubsection.13.6.3.5}%
+\contentsline {subsubsection}{\numberline {13.6.3.6}SLIC y BORSCHT}{188}{subsubsection.13.6.3.6}%
+\contentsline {section}{\numberline {13.7}Señalización telefónica}{189}{section.13.7}%
+\contentsline {section}{\numberline {13.8}Planta interna y externa}{190}{section.13.8}%
+\contentsline {subsection}{\numberline {13.8.1}Planta Interna}{190}{subsection.13.8.1}%
+\contentsline {subsection}{\numberline {13.8.2}Planta externa}{191}{subsection.13.8.2}%
+\contentsline {chapter}{\numberline {14}Herramientas para el análisis telefónico}{197}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Tráfico Telefónico}{197}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}Variaciones}{197}{subsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.1.1}Variaciones Diarias}{197}{subsubsection.14.1.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.1.2}Variación Semanal}{198}{subsubsection.14.1.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.1.3}Variación anual}{198}{subsubsection.14.1.1.3}%
+\contentsline {subsubsection}{\numberline {14.1.1.4}Variación accidental}{198}{subsubsection.14.1.1.4}%
+\contentsline {section}{\numberline {14.2}Medidas de tráfico telefónico}{198}{section.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.0.1}Volumen del tráfico($V_t$)}{198}{subsubsection.14.2.0.1}%
+\contentsline {subsubsection}{\numberline {14.2.0.2}Tiempo de observación($T_o$)}{200}{subsubsection.14.2.0.2}%
+\contentsline {subsubsection}{\numberline {14.2.0.3}Intensidad de tráfico($I_t$)}{200}{subsubsection.14.2.0.3}%
+\contentsline {subsubsection}{\numberline {14.2.0.4}Erlang}{200}{subsubsection.14.2.0.4}%
+\contentsline {subsubsection}{\numberline {14.2.0.5}Hora cargada}{201}{subsubsection.14.2.0.5}%
+\contentsline {section}{\numberline {14.3}Tipos de tráfico}{202}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Accesibilidad}{203}{section.14.4}%
+\contentsline {subsubsection}{\numberline {14.4.0.1}Accesibilidad completa}{203}{subsubsection.14.4.0.1}%
+\contentsline {subsubsection}{\numberline {14.4.0.2}Accesibilidad Limitada}{203}{subsubsection.14.4.0.2}%
+\contentsline {subsubsection}{\numberline {14.4.0.3}Sistemas de pérdida}{204}{subsubsection.14.4.0.3}%
+\contentsline {subsubsection}{\numberline {14.4.0.4}Sistema a Espera}{204}{subsubsection.14.4.0.4}%
+\contentsline {section}{\numberline {14.5}\textit {Grade of service}(GoS)}{204}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Diseño de redes}{205}{section.14.6}%
+\contentsline {section}{\numberline {14.7}Encaminamiento de tráfico}{208}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Erlang-B}{212}{section.14.8}%
+\contentsline {subsection}{\numberline {14.8.1}Erlang-B para un enlace}{213}{subsection.14.8.1}%
+\contentsline {subsubsection}{\numberline {14.8.1.1}Formula Erlang-B para un enlace}{213}{subsubsection.14.8.1.1}%
+\contentsline {subsection}{\numberline {14.8.2}Erlang-B para N enlaces}{214}{subsection.14.8.2}%
+\contentsline {subsubsection}{\numberline {14.8.2.1}Distribución de Poisson}{215}{subsubsection.14.8.2.1}%
+\contentsline {chapter}{\numberline {15}Telefonía IP}{217}{chapter.15}%
+\contentsline {subsection}{\numberline {15.0.1}Redes de computadoras}{217}{subsection.15.0.1}%
+\contentsline {subsection}{\numberline {15.0.2}PDU}{218}{subsection.15.0.2}%
+\contentsline {subsection}{\numberline {15.0.3}Arquitectura de red}{219}{subsection.15.0.3}%
+\contentsline {subsection}{\numberline {15.0.4}Tipos de servicios}{221}{subsection.15.0.4}%
+\contentsline {subsubsection}{\numberline {15.0.4.1}Orientado a la conexión}{221}{subsubsection.15.0.4.1}%
+\contentsline {subsubsection}{\numberline {15.0.4.2}No orientado a la conexión}{222}{subsubsection.15.0.4.2}%
+\contentsline {section}{\numberline {15.1}Repaso: TCP/IP}{223}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}Capa de transporte}{223}{subsection.15.1.1}%
+\contentsline {subsection}{\numberline {15.1.2}Capa de internet}{225}{subsection.15.1.2}%
+\contentsline {subsubsection}{\numberline {15.1.2.1}Direccionamiento}{225}{subsubsection.15.1.2.1}%
+\contentsline {subsubsection}{\numberline {15.1.2.2}Enrutamiento}{225}{subsubsection.15.1.2.2}%
+\contentsline {subsubsection}{\numberline {15.1.2.3}IPv4}{225}{subsubsection.15.1.2.3}%
+\contentsline {section}{\numberline {15.2}VoIP}{227}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Digitización de la voz}{227}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}¿Como se digitaliza de la voz?}{227}{subsection.15.3.1}%
+\contentsline {subsubsection}{\numberline {15.3.1.1}Muestreo}{228}{subsubsection.15.3.1.1}%
+\contentsline {subsubsection}{\numberline {15.3.1.2}Cuantificación}{228}{subsubsection.15.3.1.2}%
+\contentsline {subsubsection}{\numberline {15.3.1.3}Codificación}{229}{subsubsection.15.3.1.3}%
+\contentsline {subsubsection}{\numberline {15.3.1.4}CODECs}{229}{subsubsection.15.3.1.4}%
+\contentsline {subsection}{\numberline {15.3.2}Transporte de Voz}{230}{subsection.15.3.2}%
+\contentsline {section}{\numberline {15.4}Componentes de VoIP}{230}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}Terminal IP}{231}{subsection.15.4.1}%
+\contentsline {subsection}{\numberline {15.4.2}Centralita IP}{231}{subsection.15.4.2}%
+\contentsline {subsection}{\numberline {15.4.3}Gateway}{232}{subsection.15.4.3}%
+\contentsline {subsubsection}{\numberline {15.4.3.1}Gateway FXS}{232}{subsubsection.15.4.3.1}%
+\contentsline {subsubsection}{\numberline {15.4.3.2}Gateway FXO}{232}{subsubsection.15.4.3.2}%
+\contentsline {subsection}{\numberline {15.4.4}Adaptador FXS}{232}{subsection.15.4.4}%
+\contentsline {subsection}{\numberline {15.4.5}Unidad de control MCU}{232}{subsection.15.4.5}%
+\contentsline {section}{\numberline {15.5}Tecnología IP}{233}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}DSL}{233}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.2}RDSI}{233}{subsection.15.5.2}%
+\contentsline {subsection}{\numberline {15.5.3}LMDS}{233}{subsection.15.5.3}%
+\contentsline {subsection}{\numberline {15.5.4}GSM}{234}{subsection.15.5.4}%
+\contentsline {part}{\numberline {VII}Internetworking 1}{237}{part.7}%
+\contentsline {chapter}{\numberline {16}Introducción y conceptualización}{239}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Introducción}{239}{section.16.1}%
+\contentsline {subsection}{\numberline {16.1.1}Hardware de redes}{239}{subsection.16.1.1}%
+\contentsline {subsubsection}{\numberline {16.1.1.1}Redes de área personal}{240}{subsubsection.16.1.1.1}%
+\contentsline {subsubsection}{\numberline {16.1.1.2}Redes de área local}{240}{subsubsection.16.1.1.2}%
+\contentsline {subsubsection}{\numberline {16.1.1.3}Redes de área metropolitana}{240}{subsubsection.16.1.1.3}%
+\contentsline {subsubsection}{\numberline {16.1.1.4}Redes de área amplia}{240}{subsubsection.16.1.1.4}%
+\contentsline {subsection}{\numberline {16.1.2}Servicio orientado a la conexión y servicio sin conexión}{240}{subsection.16.1.2}%
+\contentsline {section}{\numberline {16.2}Modelo OSI}{241}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}Capa 7: Aplicación}{241}{subsection.16.2.1}%
+\contentsline {subsection}{\numberline {16.2.2}Capa 6: Presentación}{241}{subsection.16.2.2}%
+\contentsline {subsection}{\numberline {16.2.3}Capa 5: Sesión}{242}{subsection.16.2.3}%
+\contentsline {subsection}{\numberline {16.2.4}Capa 4: Transporte}{242}{subsection.16.2.4}%
+\contentsline {subsection}{\numberline {16.2.5}Capa 3: Red}{242}{subsection.16.2.5}%
+\contentsline {subsection}{\numberline {16.2.6}Capa 2: Enlace de datos}{242}{subsection.16.2.6}%
+\contentsline {subsection}{\numberline {16.2.7}Capa 1: Física}{243}{subsection.16.2.7}%
+\contentsline {part}{\numberline {VIII}Líneas de transmión}{245}{part.8}%
+\contentsline {part}{\numberline {IX}Microcontrolador y microprocesador}{247}{part.9}%
+\contentsline {part}{\numberline {X}Ingeniería en mantenimiento}{249}{part.10}%
+\contentsline {part}{\numberline {XI}Inglés}{251}{part.11}%
+\contentsline {chapter}{\numberline {17}English notes}{253}{chapter.17}%
+\contentsline {section}{\numberline {17.1}When use \textit {the}?}{253}{section.17.1}%
+\contentsline {section}{\numberline {17.2}\textit {a/an}, \textit {the} and no-article}{254}{section.17.2}%
+\contentsline {section}{\numberline {17.3}Use of \textit {Would}}{254}{section.17.3}%
+\contentsline {section}{\numberline {17.4}How to use \textit {rather}?}{254}{section.17.4}%
+\contentsline {section}{\numberline {17.5}Future form}{255}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}Present continuous}{255}{subsection.17.5.1}%
+\contentsline {subsection}{\numberline {17.5.2}be going to + infinitive}{255}{subsection.17.5.2}%
+\contentsline {subsection}{\numberline {17.5.3}will + infinitive}{255}{subsection.17.5.3}%
+\contentsline {part}{\numberline {XII}Extras}{257}{part.12}%
+\contentsline {chapter}{\numberline {18}Artificios matemáticos}{259}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Logaritmos y exponenciales}{259}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Matrices}{259}{section.18.2}%
+\contentsline {subsection}{\numberline {18.2.1}Conformabilidad de matrices}{259}{subsection.18.2.1}%
+\contentsline {section}{\numberline {18.3}Integrales}{260}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Integral por tabulación}{260}{subsection.18.3.1}%
+\contentsline {section}{\numberline {18.4}Números complejos}{260}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Producto cruz y producto escalar}{261}{section.18.5}%
+\contentsline {subsection}{\numberline {18.5.1}Producto escalar}{261}{subsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.5.2}Producto cruz}{261}{subsection.18.5.2}%
+\contentsline {subsection}{\numberline {18.5.3}Propiedades}{262}{subsection.18.5.3}%
+\contentsline {section}{\numberline {18.6}Decibelios}{262}{section.18.6}%
+\contentsline {subsection}{\numberline {18.6.1}Definición de dB}{262}{subsection.18.6.1}%
+\contentsline {subsection}{\numberline {18.6.2}Definición de dBm}{262}{subsection.18.6.2}%
+\contentsline {subsection}{\numberline {18.6.3}Diferencia entre decibelios de tensión y decibelios de potencia}{262}{subsection.18.6.3}%
+\contentsline {subsection}{\numberline {18.6.4}¿Qué es un nivel?}{263}{subsection.18.6.4}%
+\contentsline {subsection}{\numberline {18.6.5}Atenuación y ganancia}{263}{subsection.18.6.5}%
+\contentsline {subsection}{\numberline {18.6.6}Decibelios a porcentaje y viceversa}{264}{subsection.18.6.6}%
+\contentsline {subsubsection}{\numberline {18.6.6.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{264}{subsubsection.18.6.6.1}%
+\contentsline {subsubsection}{\numberline {18.6.6.2}Conversión de la energía: porcentaje a decibelios y viceversa}{264}{subsubsection.18.6.6.2}%
+\contentsline {subsubsection}{\numberline {18.6.6.3}Conversión de voltaje: porcentaje más o menos a decibelios}{264}{subsubsection.18.6.6.3}%
+\contentsline {subsubsection}{\numberline {18.6.6.4}Conversión de potencia: porcentaje más o menos a decibelios}{265}{subsubsection.18.6.6.4}%
+\contentsline {part}{\numberline {XIII}Anexos}{267}{part.13}%
+\contentsline {section}{\numberline {18.7}Ejercicios resueltos U2-Sistemas de telefonía}{269}{section.18.7}%
+\contentsline {section}{\numberline {18.8}Ejercicios resueltos U2-Sistemas de telefonía}{270}{section.18.8}%
+\contentsline {section}{\numberline {18.9}Ejercicios resueltos U2-Sistemas de telefonía}{271}{section.18.9}%
+\contentsline {section}{\numberline {18.10}Ejercicios resueltos U2-Sistemas de telefonía 2 }{272}{section.18.10}%
+\contentsline {section}{\numberline {18.11}Ejercicios resueltos U2-Sistemas de telefonía 2 }{273}{section.18.11}%
+\contentsline {section}{\numberline {18.12}Ejercicios resueltos U2-Sistemas de telefonía 2 }{274}{section.18.12}%
+\contentsline {section}{\numberline {18.13}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{275}{section.18.13}%
+\contentsline {section}{\numberline {18.14}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{276}{section.18.14}%
+\contentsline {section}{\numberline {18.15}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{277}{section.18.15}%
+\contentsline {section}{\numberline {18.16}Ejercicios resueltos U2-Erlang B}{278}{section.18.16}%
+\contentsline {section}{\numberline {18.17}Ejercicios resueltos U2-Erlang B}{279}{section.18.17}%
+\contentsline {section}{\numberline {18.18}Ejercicios resueltos U2-Erlang B}{280}{section.18.18}%
+\contentsline {section}{\numberline {18.19}Ejericios de la ley de Gauss}{281}{section.18.19}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{285}{chapter*.258}%
+\contentsline {section}{Articles}{285}{chapter*.258}%
+\contentsline {section}{Books}{285}{chapter*.258}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{287}{section*.259}%
 \contentsfinish 

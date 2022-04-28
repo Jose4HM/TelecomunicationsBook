@@ -2,17 +2,6 @@
 % The Legrand Orange Book
 % LaTeX Template
 % Version 3.1 (February 18, 2022)
-%
-% This template originates from:
-% https://www.LaTeXTemplates.com
-%
-% Authors:
-% Vel (vel@latextemplates.com)
-% Mathias Legrand (legrand.mathias@gmail.com)
-%
-% License:
-% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
-%
 % Compiling this template:
 % This template uses biber for its bibliography and makeindex for its index.
 % When you first open the template, compile it from the command line with the 
@@ -2325,7 +2314,6 @@ Usando Flip-Flops J-K se consigue dividir la frecuencia de reloj por 4.
 \includegraphics[scale=0.5]{SD/SD78.png}
 \includegraphics[scale=0.5]{SD/SD79.png}
 \end{center}
-\newpage
 \section{Monoestables}\index{Monoestables}
 Dispositivos multivibradores que solo tienen un único estado estable. Normalmente, un monoestable se encuentra en su estado estable, cambiando a su estado inestable solo cuando se dispara. Una ve que se ha disparado, el monoestable permanece en su estado inestable durante un determinado intervalo de tiempo, volviendo a continuación a su estado estable.\\
 El tiempo que este dispositivo permanece en el estado inestable determina la anchura del impulso de salida. Nótese que los monoestables tienen que esperar hasta que se termine el tiempo definido, mientras que los monoestabes disparables al ser activado antes que termine el tiempo definido se vuelve a inicializar el tiempo.
@@ -4511,9 +4499,131 @@ Las líneas (o la dirección de E) son siempre normales a las superficies equipo
 Revisar el ejericio 4.13 de libro \cite{sadiku2018elements}.
 \end{notation}
 \chapter{Campos eléctricos en el espacio material}
+\section{CORRIENTES DE CONVECCIÓN Y CONDUCCIÓN}
+\begin{definition}[Corriente]
+La corriente (en amperios) a través de un área dada es la carga eléctrica que pasa por el área por unidad de tiempo.\\
+\begin{equation}
+\label{eq:corriente}
+I=\frac{dQ}{dt}
+\end{equation}
+Donde\\
+\begin{itemize}
+\item Q:Carga(Coulomb)
+\item t: Tiempo(Segundos)
+\end{itemize}
+Así, en una corriente de un amperio, la carga se transfiere a razón de un culombio por segundo.
+\end{definition}
+\begin{definition}[Densidad de corriente eléctrica]
+Ahora presentamos el concepto de densidad de corriente J. Si la corriente $\delta$I fluye a través de un plano superficie $\delta$S, la densidad de corriente es:
+\begin{equation}
+\label{eq: densidad de corriente}
+J=\frac{\delta I}{\delta S}
+\end{equation}
+Donde:
+\begin{itemize}
+\item I: Intensidad de corriente(Coulomb).
+\item S: Superficie($m^2$).
+\end{itemize}
+\end{definition}
+Se puede deducir la Intensidad de corriente en términos de la Densidad de corriente como:
+\begin{equation}
+\label{eq:intensidad y densidad de corriente}
+I=\int_SJ\cdot dS
+\end{equation}
+Se presenta una ecuación más representativas de la corriente de conducción\footnote{Existen formas alternativas, estas pueden ser encontradas en el libro \cite{sadiku2018elements}}.
+\begin{equation}\label{eq:JsigmaE}
+J=\sigma E
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\sigma$: Conductividad del conductor
+\end{itemize}
+\section{Conductores}
+Un conductor tiene una gran cantidad de carga que puede moverse libremente. Consideraremos dos casos involucrando a un conductor.
+\subsection{Conductor Isolado}
+Un conductor perfecto($\sigma=\infty$) no puede un campo electrostático en el, por lo tanto dentro del conductor:
+\begin{displaymath}
+E=0, \rho_v=0, V_{ab}=0
+\end{displaymath}
+Donde:
+\begin{itemize}
+\item E: Campo eléctrico.
+\item $\rho$: Densidad de carga volumétrica.
+\item $V_{ab}$: Diferencia de potencial entre los puntos a y b del conductor.
+\end{itemize}
+Esto implica que un conductor es medio equipotencial ya que el potencial eléctrico es el mismo en todos los puntos.
+\subsection{Conductor mantenido a potencial}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{CamposMag/CM21.png}
+\caption{Un conductor de sección uniforme de cruce bajo un campo E aplicado.}
+\label{fig:conducor bajo campo uniforme}
+\end{figure}
+El campo eléctrico aplicado es uniforme y su magnitud esta dado por:
+\begin{equation}\label{eq:conductor campo}
+E=\frac{V}{\textit{l}}
+\end{equation}
+Dado que el conductor tiene una sección transversal uniforme:
+\begin{equation}\label{eq:conductor flujo}
+J=\frac{I}{S}
+\end{equation}
+Usando las ecuaciones \ref{eq:JsigmaE}, \ref{eq:conductor campo} y \ref{eq:conductor flujo}:
+\begin{equation}
+\frac{I}{S}=\sigma E=\frac{\sigma V}{\textit{l}}
+\end{equation}
+Acomodando las ecuaciones:
+\begin{equation}\label{eq:resistencia}
+R=\frac{V}{I}=\frac{\textit{l}}{\sigma S}=\frac{\rho_c\textit{l}}{S}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\rho_c=1\sigma$: es la resistividad del material.
+\end{itemize}
+\begin{remark}
+La ecuación \ref{eq:resistencia} es útil para determinar la resistencia de cualquier conductor de sección transversal uniforme. Si la sección transversal del conductor no es uniforme la ec. \ref{eq:resistencia} no es aplicable.
+\end{remark}
+Para la resistencia de un conductor no uniforme se sección de cruce:
+\begin{equation}
+R=\frac{V}{I}=\frac{\int_LE\cdot dl}{\int_S\sigma E\cdot dS}
+\end{equation}
+La potencia(en \textbf{watts}) se define como la tasa de cambio de energía W (en julios) o fuerza
+veces la velocidad.
+\begin{equation}
+\label{eq:potencia}
+P=\int_vE\cdot Jdv
+\end{equation}
+que es conocida como la ley de Joule. La \textbf{Densidad de potencia} \textit{$w_p$}(W/$m^3$) esta dado por el integrando de la ecuación \ref{eq:potencia}:
+\begin{equation}
+w_p=\frac{dP}{dv}=E\cdot J=\sigma|E|^2
+\end{equation}
+Para un conductor con sección transversal uniforme, dv=dS dl, por lo que la ec. \ref{eq:potencia} se convierte en:
+\begin{equation}
+P=\int_LEdl\int_SJdS=VI=I^2R
+\end{equation}
+\subsection{Polarización de un dipolo}
+Para comprender el efecto macroscópico de un campo eléctrico sobre un dieléctrico, considere un átomo del dieléctrico que consta de una carga negativa -Q (nube de electrones) y una carga positiva +Q (núcleo) como en la Figura \ref{fig: dipolos nubes}. Se puede adoptar una imagen similar para un molécula dieléctrica; podemos tratar los núcleos de las moléculas como cargas puntuales y la estructura electrónica como una sola nube de carga negativa. Como tenemos cantidades iguales de valores positivos y negativos, todo el átomo o molécula es eléctricamente neutro. Cuando un campo eléctrico \textbf{E} se aplica, la carga positiva se desplaza de su posición de equilibrio en la dirección de \textbf{E} por la fuerza $F_+$=Q\textbf{E}, mientras que la carga negativa se desplaza en la dirección opuesta por la fuerza $F_-$=Q\textbf{E}. Un dipolo resulta del desplazamiento de las cargas, y se dice que el dieléctrico está polarizado. En el estado polarizado, la nube de electrones está distorsionada por el campo eléctrico aplicado \textbf{E}. Esta distribución de carga distorsionada es equivalente, por el principio de superposición, a la distribución original más un dipolo cuyo momento es:
+\begin{equation}
+\label{eq:momento dipolo}
+\textbf{p}=Q\textbf{d}
+\end{equation}
+Donde \textbf{d} es la distancia vectorial desde -Q y +Q como se muestra en la figura \ref{fig:dipolos nubes}. Si existen N dipolos en un volumen $\delta$\textit{v} de un dieléctrico, el momento total de un dipolo debido a un campo eléctrico es:
+\begin{equation}
+\label{eq:momento N dipolo}
+Q_1d_1+Q_2d_2+\ldots +Q_Nd_N = \sum_{k=1}^NQ_kd_k
+\end{equation}
+Como medida de la intensidad de la polarización, definimos la polarización P (en coulombios por
+metro cuadrado) como el momento dipolar por unidad de volumen del dieléctrico; es decir:
+\begin{equation}
+\label{eq:momento dipolar}
+\textbf{P}=\lim_{\delta v\to 0}\frac{\sum_{k=1}^NQ_kd_k}{\delta v}
+\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{CamposMag/CM22.png}
+\caption{Polarización de un átomo o molécula no polarizada.}
+\label{fig:dipolos nubes}
+\end{figure}
 
-\chapter{Campos magnéticos estáticos}
-\chapter{Fuerza, materiales y dispositivos magnéticos}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -4845,13 +4955,13 @@ La SLIC proporciona siete funciones básicas llamadas BORSCHT (acrónimo de las 
 \end{figure}
 Las funciones del BORSCHT son:
 \begin{itemize}
-\item[\textbf{B}attery] Hace referencia al voltaje de alimentación de -48V DC entre los dos conductores que llegan al terminal, para transmitir la  voz y generar la corriente de señalización.
-\item[\textbf{O}vervoltage Protection] La planta externa aérea se expone a sobrecorrientes por lo que esta función hace referencia a la protección 
-\item[\textbf{R}inging] Generación de la corriente de timbrado. 
-\item[\textbf{S}ignaling] También conocido como supervisión, esta función hace referencia a la detección de la corriente de colgado y descolgado
-\item[\textbf{C}oding] Hace referencia a la codificación y decodificación. Incluye funciones de conversión A/D y D/A. 
-\item[\textbf{H}ybrid] Circuito hibrido que convierte el ingreso de 2 hilos a 4 hilos.
-\item[\textbf{T}est] Debe ser posible conectar el lazo local y el terminal al equipo de prueba en la oficina central. 
+\item \textbf{B}attery: Hace referencia al voltaje de alimentación de -48V DC entre los dos conductores que llegan al terminal, para transmitir la  voz y generar la corriente de señalización.
+\item \textbf{O}vervoltage Protection: La planta externa aérea se expone a sobrecorrientes por lo que esta función hace referencia a la protección 
+\item \textbf{R}inging: Generación de la corriente de timbrado. 
+\item \textbf{S}ignaling: También conocido como supervisión, esta función hace referencia a la detección de la corriente de colgado y descolgado
+\item \textbf{C}oding: Hace referencia a la codificación y decodificación. Incluye funciones de conversión A/D y D/A. 
+\item \textbf{H}ybrid: Circuito hibrido que convierte el ingreso de 2 hilos a 4 hilos.
+\item \textbf{T}est: Debe ser posible conectar el lazo local y el terminal al equipo de prueba en la oficina central. 
 \end{itemize}
 \section{Señalización telefónica}\index{Señalización telefónica}
 A manera de recordar,tenemos el conocimiento acerca de los hilos necesarios para las troncales analógicas:
@@ -4946,13 +5056,13 @@ La planta externa está constituida por la canalización de red principal y red 
 \end{itemize}
 \textit{Tipos de planta externa:}
 \begin{itemize}
-\item[\textbf{Rígidas}] Son aquellas en las que todos los conductores se prolongan eléctricamente desde el repartidor principal hasta el punto de distribución ( caja terminal) mediante empalmes cerrados. Las redes de este tipo son económicas a condición de que la densidad telefónica sea reducida o de que las líneas de abonado sean muy cortas, pues, de lo contrario, los gastos de instalación y explotación de los puntos de sub repartición ( cualquier punto entre la central y el punto de distribución) serían superiores a las economías de pares que se conseguirán con una red flexible. Son adecuadas para las zonas rurales y para las zonas urbanas inmediatamente próximas a la central (zona de servicio directo). 
-\item[\textbf{Flexibles}] Cuando se intercalan entre el repartidor principal y los elementos de distribución puntos de subrepartición (armarios) se obtiene una estructura denominada red flexible, de esta  manera la red de línea de abonado queda dividida en dos secciones distintas: Sección de cables principales y Sección de cable de distribución.\\
+\item \textbf{Rígidas}: Son aquellas en las que todos los conductores se prolongan eléctricamente desde el repartidor principal hasta el punto de distribución ( caja terminal) mediante empalmes cerrados. Las redes de este tipo son económicas a condición de que la densidad telefónica sea reducida o de que las líneas de abonado sean muy cortas, pues, de lo contrario, los gastos de instalación y explotación de los puntos de sub repartición ( cualquier punto entre la central y el punto de distribución) serían superiores a las economías de pares que se conseguirán con una red flexible. Son adecuadas para las zonas rurales y para las zonas urbanas inmediatamente próximas a la central (zona de servicio directo). 
+\item \textbf{Flexibles}: Cuando se intercalan entre el repartidor principal y los elementos de distribución puntos de subrepartición (armarios) se obtiene una estructura denominada red flexible, de esta  manera la red de línea de abonado queda dividida en dos secciones distintas: Sección de cables principales y Sección de cable de distribución.\\
 Son adecuadas para las zonas de demanda no definida, zonas urbanas, zonas de largo alcance.
-\item[\textbf{Las redes semirigidas}] Combinan el uso de empalmes y el uso de armarios para la distribución del cableado de red hacia los abonados.
+\item \textbf{Las redes semirigidas}: Combinan el uso de empalmes y el uso de armarios para la distribución del cableado de red hacia los abonados.
 \end{itemize}
 Es asi como la planta externa forma el conjunto de elementos e instalaciones que sirven de vínculo entre el abonado y su correspondiente central, como así también el vínculo entre dos centrales.
-\begin{figure}[ht]
+\begin{figure}[H]
 \centering\includegraphics[scale=0.5]{SisTelefonia/st31.png}
 \caption{Planta externa diagrama}
 \label{fig:Planta externa diagrama}
@@ -5929,10 +6039,229 @@ LMDS (Local Multipoint Distribution System o Sistema Local de Distribución Mult
 \subsection{GSM}
 GSM (Global System for Mobile communications o Sistema Global para las Comunicaciones Móviles) es un estándar que utiliza la conmutación de circuitos para la comunicación entre teléfonos móviles, y que realiza la transmisión de voz y señalización en formato digital. Para su funcionamiento se utiliza una red compleja de estaciones base o BS (Base Station) que dan cobertura a un área geográfica determinada, denominada celda o célula. Los terminales de usuario buscan siempre una estación base a la que conectarse utilizando una banda de frecuencia comprendido entre 900 MHz y 1800 MHz.
 \newpage
-\section{Vocabulary}\index{Vocabulary}
+\section*{Vocabulario-Sistemas de telefonía}\index{Vocabulario-Sistemas de telefonía}
 \begin{vocabulary}[Congestión]
 Es cuando todos los circuitos capaces de cursar tráfico en una central están ocupados.
 \end{vocabulary}
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
+\part{Internetworking 1}
+\chapterimage{chapter_head_IN1.pdf} % Chapter heading image
+\chapter{Introducción y conceptualización}
+\section{Introducción}
+Se explicarán algunos conceptos previos necesarios y recordar conocimientos del curso de \textbf{Redes e infraestructura}.
+\subsection{Hardware de redes}
+Existe dos tipos de tecnología de transmisión: enlaces de \textbf{difución}(\textit{broadcasting}) y enlaces \textbf{punto a punto}(\textit{p2p-peer to peer}). Para el enlace punto a punto se conectan dos pares individuales de maquinas, aunque para esta conexión es necesaria muchas veces el pasar entre otras máquinas intermedias. A la transmisión entre solo un emisor y un receptor es llamado \textbf{unidifusión}(\textit{unicasting}).\\
+Aunque el mensaje puede llegar a todas las maquinas de una red, no todas vas a responder a ese llamado pues el mensaje\footnote{En algunos contextos es llamado \textit{paquete}} no son para ellas así que simplemente la ignoran. En el caso que todas las máquinas donde llegué el paquete la procesen, ya estamos hablando de \textbf{difusión}(\textit{broadcasting}). Algunos sistemas de difusión también soportan la transmisión a
+un subconjunto de máquinas, lo cual se conoce como \textbf{multidifusión}(\textit{multicasting}).\\
+Existe también un criterio de clasificación por escala, es donde la distancia es importante pues su escala depende de ellas:
+\begin{table}[H]
+\begin{tabular}{|m{0.3\linewidth}|m{0.3\linewidth}|m{0.3\linewidth}|}
+\hline
+\rowcolor[HTML]{9698ED} 
+Distancia entre procesadores & Procesadores ubicados en el(la) mismo(a) & Ejemplo                              \\ \hline
+1 m                          & Metro cuadrado                           & Red de área personal                 \\ \hline
+10 m                         & Cuarto                                   &                                      \\ \cline{1-2}
+100 m                        & Edificio                                 &                                      \\ \cline{1-2}
+1 km                         & Campus                                   & \multirow{-3}{*}{Red de área local}  \\ \hline
+10 km                        & Ciudad                                   & Red de área metropolitana            \\ \hline
+100 km                       & País                                     &                                      \\ \cline{1-2}
+1000 km                      & Continente                               & \multirow{-2}{*}{Red de área amplia} \\ \hline
+10 000 km                    & Planeta                                  & Internet                             \\ \hline
+\end{tabular}
+\caption{Escala de redes.}
+\end{table}
+Al crear una conexión entre redes se le conoce como \textbf{interred}(\textit{internetwok}). El Internet es un buen ejemplo pero no es el único.
+\subsubsection{Redes de área personal}
+Llamadas también \textbf{PAN}(\textit{Personal Area Network}) son redes a muy poca escala dentro de el rango de una persona, un ejemplo claro seria una computadora donde el teclado, ratón, parlantes y demás componentes están conectados muy cerca por cables, o en todo caso, los dispositivos inalámbricos conectados por bluetooth forman también un red PAN, recordando que una red bluetooth trabaja sobre el paradigma maestro-esclavo, en nuestro ejemplo el maestro sería la computadora mientras los esclavos los periféricos. Incluso es posible que otro ejemplo de una red PAN sea las tarjetas \textbf{RFID}\footnote{Radio Frequency IDtification.}
+\subsubsection{Redes de área local}
+Llamadas también \textbf{LAN}(\textit{Local Area Networks}), son redes que operan dentro de una propiedad para conectar varias computadoras, recursos e información. Es llamado \textbf{redes empresariales} al ser usada por una empresa.\\
+En la actualidad son muy populares, un \textbf{punto de acceso}(\textit{AP-acces point}) es el punto donde todos los dispositivos se van a conectar inalámbricamente, puede ser mediante el estándar de redes inalámbricas llamado \textbf{IEEE 802.11}, mejor conocido como \textbf{WiFi} que opera desde 11 Mbps hasta cientos de Mbps. O también se puede usar el estándar \textbf{Ethernet} o estándar \textbf{IEEE 802.3} que al igual que un AP, esta se conecta a un switch a través de sus puertos. Las redes LAN alámbricas por lo general operan a velocidades de 100 Mbps hasta 10 Gbps con una latencia baja. La red LAN puede dividirse en sub-redes llamadas \textbf{LAN virtual-VLAN}, si lo ejemplificamos, podemos decir que en una empresa se tiene una red LAN general pero esa misma red se divide en una VLAN para el área de ingeniería y otra VLAN para el área de contabilidad pero ambos pertenecen a la misma LAN.
+\subsubsection{Redes de área metropolitana}
+Llamada también \textbf{MAN}, redes que se extienden sobre una ciudad como la TV por cable o la red de telefonia/internet de una empresa. Cabe mencionar que la televisión por cable no es la única MAN. Los recientes desarrollos en
+el acceso inalámbrico a Internet de alta velocidad han originado otra, la cual se estandarizó como IEEE 802.16 y se conoce comúnmente como WiMAX.
+\subsubsection{Redes de área amplia}
+Llamada también \textbf{WAN} abarca grandes áreas geográficas(generalmente países y continentes). Cada maquina(también llamada \textbf{host}), el resto de la red que conecta estos hosts son llamados \textbf{subredes de comunicaión} o solo \textbf{subredes}. Las \textbf{líneas de transmisión}, echas de cobre, fibra optica o enlaces de radio, mueven bits entre maquinas. Los \textbf{elementos de conmutación} o \textbf{switches} son computadoras especializadas en conectar dos o más lineas de transmisión. Tambien se puede hacer el uso de \textbf{VPN}(\textit{Virtual Private Networks}) que son enlaces virtuales que permite flexibilidad pero no se tiene control de los recursos.
+\subsection{Servicio orientado a la conexión y servicio sin conexión}
+El \textbf{orientado a la conexión} es una conexión en el cual se ocupa una linea mediante una negociación entre los usuarios para ser ocupada, se una para la transmisión de datos y luego terminada la conexión se libera el canal, por otro lado el \textbf{servicio sin conexión} es un servicio parecido al almacenamiento, el paquete se envía, se almacena y cuando el otro usuario lo requiera, este podrá recibir el archivo.
+\begin{table}[H]
+\begin{tabular}{|c|c|c|}
+\hline
+                                                                                & Servicio                             & Ejemplo                        \\ \hline
+\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Orientado\\ a conexión\end{tabular}} & Flujo de mensajes confiable.         & Secuencia de páginas.          \\ \cline{2-3} 
+                                                                                & Flujo de bytes confiable.            & Descarga de películas.         \\ \cline{2-3} 
+                                                                                & Conexión no confiable.               & Voz sobre IP.                  \\ \hline
+\multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}Sin\\ Conexión\end{tabular}}         & Datagrama no confiable.              & Correo electrónico basura.     \\ \cline{2-3} 
+                                                                                & Datagrama confirmación de recepción. & Mensajería de texto.           \\ \cline{2-3} 
+                                                                                & Solicitud-respuesta.                 & Consulta en una base de datos. \\ \hline
+\end{tabular}
+\caption{Seis tipos distintos de servicios}
+\end{table}
+\section{Modelo OSI}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{IN1/IN1.png}
+\caption{Modelo OSI.}
+\label{fig:modelo OSI}
+\end{figure}
+\subsection{Capa 7: Aplicación}
+Esta es la capa que está ''más cercana al usuario final". Recibe información directamente de los usuarios y le \textbf{muestra} los datos entrantes al usuario. Curiosamente, las aplicaciones en sí mismas no residen en la capa de aplicación. En cambio, la capa \textbf{facilita} la comunicación con las capas inferiores para establecer conexiones con aplicaciones en el otro extremo. Los navegadores web (Google Chrome, Firefox, Safari, etcétera), TelNet y FTP son ejemplos de comunicaciones que se basan en la Capa 7.
+\subsection{Capa 6: Presentación}
+Como su propio nombre intuye, esta capa se encarga de la \textbf{representación} de la información transmitida. Asegurará que los datos que nos llegan a los usuarios sean \textbf{entendibles} a pesar de los distintos protocolos utilizados tanto en un receptor como en un transmisor. Traducen una cadena de caracteres en algo entendible, por así decirlo. En esta capa no se trabaja con direccionamiento de mensajes ni enlaces, sino que es la encargada de trabajar con el contenido útil que nosotros queremos ver.
+\subsection{Capa 5: Sesión}
+Cuando dos dispositivos, computadoras o servidores necesitan ''\textbf{hablar}" entre sí, es necesario crear una sesión, controlar y mantener activo el enlace entre las máquinas, y esto se hace en la Capa de Sesión. Las funciones en esta capa implican la \textbf{configuración}, la \textbf{coordinación} (cuánto tiempo debe esperar un sistema una respuesta, por ejemplo) y la terminación entre las aplicaciones en cada extremo de la sesión.
+\subsection{Capa 4: Transporte}
+La Capa de Transporte se ocupa de la \textbf{coordinación} de la transferencia de datos entre los sistemas finales y los \textit{hosts}. \textbf{Aceptar} datos de la capa superior, dividirlos en unidades
+más pequeñas si es necesario, cuántos datos enviar, a qué velocidad, a dónde van, pasar estos datos a la capa de red y asegurar que todas las piezas lleguen. La capa de transporte es una verdadera capa de extremo a extremo; lleva los datos por toda la ruta desde el origen hasta el destino. En otras palabras, un programa en la máquina de origen lleva a cabo una conversación con un programa similar en la máquina de destino mediante el uso de los encabeza-
+dos en los mensajes y los mensajes de control.
+\subsection{Capa 3: Red}
+Esta capa se encarga de la \textbf{identificación} del enrutamiento entre dos o más redes conectadas. Este nivel hará que los datos puedan llegar desde el transmisor al receptor siendo capaz de hacer las conmutaciones y encaminamientos necesarios para que el mensaje llegue. Debido a esto es necesario que esta capa conozca la \textbf{topología} de la red en la que opera. Es posible que sepa que su computadora de Boston quiere conectarse a un servidor en California, pero existen millones de caminos diferentes para tomar. Los routers en esta capa ayudan a hacer esto de manera eficiente. Si hay demasiados paquetes en la subred al mismo tiempo, se interpondrán en el camino unos con otros y formarán cuellos de botella. El manejo de la \textbf{congestión} también es responsabilidad de la capa de red, en conjunto con las capas superiores que adaptan la carga que colocan en la red. Otra cuestión más general de la capa de red es la \textbf{calidad del servicio} proporcionado (retardo, tiempo de tránsito, variaciones, etcétera).\\
+Cuando un paquete tiene que viajar de una red a otra para llegar a su destino, pueden surgir muchos problemas. El direccionamiento utilizado por la segunda red puede ser distinto del que utiliza la primera. La segunda red tal vez no acepte el paquete debido a que es demasiado grande. Los protocolos pueden ser diferentes, etc. Es responsabilidad de la capa de red \textbf{solucionar} todos estos problemas para permitir la interconexión de redes \textbf{heterogéneas}.
+\subsection{Capa 2: Enlace de datos}
+Este nivel se encarga de proporcionar los \textbf{medios funcionales} para establecer la comunicación de los elementos físicos. Se ocupa del direccionamiento físico de los datos, el acceso al medio y especialmente de la detección de errores en la transmisión.\\
+Esta capa construye las \textbf{tramas} de bits(por lo general, de algunos cientos o miles de bytes) con la información y además otros elementos para controlar que la transmisión se haga de forma correcta. Si el servicio es confiable, para confirmar la recepción correcta de cada trama, el receptor devuelve una trama de confirmación de recepción. El elemento típico que realiza las funciones de esta capa es el \textbf{switch} o también el router, que se encarga de recibir y enviar datos desde un transmisor a un receptor.\\
+Los protocolos más conocidos de este enlace son los IEEE 802 para las conexiones LAN y IEEE 802.11 para las conexiones WiFi.\\
+Otra cuestión que surge en la capa de enlace de datos (y en la mayoría de las capas superiores) es cómo evitar que un transmisor rápido \textbf{inunde} de datos a un receptor lento. Tal vez sea necesario algún mecanismo de \textbf{regulación} de tráfico para notificar al transmisor cuando el receptor puede aceptar más datos.\\
+Las redes de difusión tienen una consideración adicional en la capa de enlace de datos: cómo controlar el acceso al canal compartido. Una subcapa especial de la capa de enlace de datos, conocida como subcapa de \textbf{control de acceso} al medio, es la que se encarga de este problema.
+\subsection{Capa 1: Física}
+Este nivel se encarga directamente de los \textbf{elementos físicos} de la conexión. Gestiona los procedimientos a nivel electrónico para que la cadena de bits de información viaje desde el transmisor al receptor sin alteración alguna.\\
+Define el medio físico de transmisión: cables de pares trenzados, cable coaxial, ondas y fibra óptica. Maneja las señales eléctricas y transmite el flujo de bits. Define las características de los materiales, como conectores y niveles de tensión.\\
+La Capa Física, que representa la representación \textbf{eléctrica} y física del sistema. Esto puede incluir todo, desde el tipo de cable, el enlace de radiofrecuencia (como en un sistema inalámbrico 802.11), así como la disposición de los pines, los voltajes y otros requisitos físicos. Cuando ocurre un problema de red, muchos profesionales de redes van directamente a la Capa Física para verificar que todos los cables estén conectados correctamente y que el enchufe no se haya desconectado del router, interruptor o computadora, por ejemplo.
+Algunas normas relativas a este nivel son: ISO 2110, EIA-232, V.35, X.24, V24, V.28
+\section*{Vocabulario-Sistemas de telefonía}\index{Vocabulario-Internetworking 1}
+\begin{vocabulary}[Topologias de red]
+un mapa físico o lógico de una red para intercambiar datos. En otras palabras, es la forma en que está diseñada la red, sea en el plano físico o lógico. El concepto de red puede definirse como ''conjunto de nodos interconectados". Un nodo es el punto en el que una curva se intercepta a sí misma. Lo que un nodo es concretamente depende del tipo de red en cuestión. Tipos de topologías son: punto a punto (p2p), bus, estrella, anillo, malla, árbol, híbrida y cadena margarita.
+\includegraphics[scale=0.5]{IN1/IN2.png}
+\end{vocabulary}
+\begin{vocabulary}[RTC]
+Red Telefónica Conmutada, es un conjunto ordenado de medios de transmisión y conmutación que facilitan, fundamentalmente, el intercambio de la palabra entre dos abonados mediante el empleo de aparatos telefónicos. El objetivo fundamental de la Red telefónica conmutada es conseguir la conexión entre todos los usuarios de la red, a nivel geográfico local, nacional e internacional.
+\end{vocabulary}
+\begin{vocabulary}[RDSI]
+Red integral de servicios integrados, proporciona una conectividad digital conmutada de extremo a extremo. RDSI puede transportar voz y datos a través de una misma conexión.
+\end{vocabulary}
+\begin{vocabulary}[ADSL]
+Línea de Abonado Digital Asimétrica, es un tipo de tecnología de transmisión de datos digitales y acceso a Internet, que consiste en la transmisión mediante pares simétricos de cobre de línea telefónica. Esto es, un método de acceso a Internet a través de la línea del teléfono (Red Telefónica Conmutada, PSTN) que no impide el uso regular de la línea para llamadas.
+\end{vocabulary}
+\begin{vocabulary}[PLC]
+Power Line Communication, se trata de una serie de tecnologías que permiten usar los cables de la instalación eléctrica de nuestra casa para llevar Internet de un punto a otro punto. Por ello es realmente sencilla de usar ya que la instalación lleva años hecha: solo hay que conectar dos dispositivos a sendos enchufes.
+\end{vocabulary}
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
+\part{Líneas de transmión}
+%----------------------------------------------------------------------------------------
+\chapterimage{chapter_head_LT.pdf} % Chapter heading image
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
+\part{Microcontrolador y microprocesador}
+\chapterimage{chapter_head_MM.pdf} % Chapter heading image
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
+\part{Ingeniería en mantenimiento}
+\chapterimage{chapter_head_IM.pdf} % Chapter heading image
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER
+%----------------------------------------------------------------------------------------
+\part{Inglés}
+\chapterimage{chapter_head_Ingles.pdf} % Chapter heading image
+\chapter{English notes}
+\section{When use \textit{the}?}\index{When use \textit{the}?}
+\noindent Some examples are detailed below:\\
+\begin{multicols}{2}
+\textbf{Names without \textit{the}:}\\
+You don't use normally use \textit{the} with names of...
+\begin{itemize}
+\item people: Ferdinand Magellan, Christofer Columbus.
+\item towns: Washington, New York.
+\item countries: New Zealand, Australia, South Africa.
+\item continents: Asia, Africa, Europe, Antarctica.
+\item lakes and mountains: Lake Geneva, Lake Titicaca, Mount Everest, Mount Whitney.
+\item months and days of the week: January, February, Monday, Tuesday.
+\item languages: English, French, Japanese.
+\item school subjects: geography, history, art.
+\end{itemize}
+\vfill\null
+\columnbreak
+\textbf{Names with \textit{the}:}\\
+You use \textit{the} with names of:
+\begin{itemize}
+\item deserts: the Gobi, the Kalahari.
+\item rivers: the Amazon, the, Nile.
+\item mountain ranges: the Alps, the Himalayas, the Andes.
+\item oceans and seas: the Pacific, the Mediterranean.
+\item groups of countries or states: the USA, the European Union.
+\item countries whose names are plural: the Philippines, the Maldives.
+\item countries whose names include a political label: the Republic of Ireland, the United Kingdom.
+\item some buildings: the White House, the Eiffel Tower, the Sheraton Hotel.
+\item periods of time: the nineties, the 21st century, the holidays, the weekend.
+\item geographical regions: the Middle East, the north, the coast, the mountains, the countryside, the Antarctic.
+\end{itemize}
+\end{multicols}
+\section{\textit{a/an}, \textit{the} and no-article}\index{\textit{a/an}, \textit{the} and no-article}
+\begin{table}[H]
+\begin{tabular}{|m{0.3\linewidth}|m{0.3\linewidth}|m{0.3\linewidth}|}
+\hline
+a/an                                                                                                                                                                                 & the                                                                                                                                                                                                                                                       & no-article                                                                                                                                                          \\ \hline
+\begin{tabular}{m{0.8\linewidth}}
+To talk about something that isn't specific:\\ -I'd like \textbf{a glass of water}.\\ The first time we mention something:\\-I'm here for \textbf{an interview}
+\end{tabular} & 
+\begin{tabular}{m{0.8\linewidth}}
+To talk about something specific or unique:\\ -It's for \textbf{the sales assistant job}.\\ The second time we mention something:\\-This gentleman is here for \textbf{the interview}.\\ With superlatives: \textbf{the best} person
+\end{tabular} & 
+\begin{tabular}{m{0.8\linewidth}}
+To talk about plural and uncountable nouns in general:\\-I like working with \textbf{(-) people} and I like working in \textbf{(-) sales}.
+\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
+\section{Use of \textit{Would}}\index{Use of \textit{Would}}
+When do I use would? yeah, it's a little bit confuse, I found a guide for this problem:
+\begin{enumerate}
+\item \textbf{Cuando le estamos contando a alguien qué pensábamos del futuro desde el tiempo pasado o cuando hacemos referencia a viejos hábitos:}
+\begin{itemize}
+\item When I was a child, I thought we \textbf{would} have flying cars in the future.(\textit{Cuando era niño, pensé que tendríamos autos voladores en el futuro.})
+\item Many times, I \textbf{would} be the first on stage.(\textit{uchas veces, sería el primero en el escenario.})
+\end{itemize}
+\item \textbf{Para hablar de un deseo o una voluntad en el pasado.}
+\begin{itemize}
+\item I talked with him, but he \textbf{wouldn't} hear me.(\textit{Hablaba con él, pero él no me escuchaba.})
+\end{itemize}
+\item \textbf{Cuando nos referimos a lo que otra persona dijo. Para que lo recuerdes mejor, podemos llamarlo el "verbo chismoso":}
+\begin{itemize}
+\item He said he \textbf{would} be here at 7 p.m.(\textit{Él dijo que estaría aquí a las 7 p.m.})
+\item Kate said to me that she \textbf{would} not come until she finished her paper.(\textit{Kate me dijo que no vendría hasta que terminara su papeleo.})
+\end{itemize}
+\item \textbf{Para pedirle algo a alguien o hacer una solicitud de manera amable y formal:}
+\begin{itemize}
+\item \textbf{Would} you help me with those boxes? They are very heavy.(¿Podrías ayudarme con estas cajas? Están muy pesadas.)
+\item \textbf{Would} you be here at 8 p.m., please?(¿Podrías estar aquí a las 8 p.m.? ¿Por favor?)
+\end{itemize}
+\end{enumerate}
+\section{How to use \textit{rather}?}\index{How to use \textit{rather}?}
+El uso del \textit{rather} es acompañado con el verbo modal \textit{would}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{Ingles/Ing1.png}
+\caption{Uso del \textit{rather}.}
+\end{figure}
+\section{Future form}
+For express future we have three ways to express:
+\subsection{Present continuous}
+We use the present continuous to talk about \textbf{a fixed arrangement} in the future: for example, A girl and I have a date, we fixed a date and time, so the only thing left to do is meet. In this case we use \textbf{present continuous}:\\
+A girl and I \textbf{are meeting} on Monday at 3:00 PM\\
+Usually you have to mention date and/or time.
+\subsection{be going to + infinitive}
+To express plans or intention you have to use \textit{be going to}, Think it as the probability of do it, it's over 80\%: I need to get my driving license for August, so I need to planned or make some classes to get it. I've planned so:\\
+I\textbf{'m going} to get my driving license.
+\subsection{will + infinitive}
+Think it as the probability of do it is 50\%. It could be or not. Also we use \textbf{will} while we're speaking. It's used to make something in future but the opportunity appear suddenly: My phone is ringing, so for a near future I can say:\\
+I \textbf{will answer} the phone.
 %----------------------------------------------------------------------------------------
 %	ANEXOS y EXTRAS
 %----------------------------------------------------------------------------------------
@@ -6231,7 +6560,6 @@ No se olvide usar un factor de 20 para cantidades de voltaje y un factor de 10 p
 \chapterspacebelow{7.25cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
 %------------------------------------------------
-\nocite{*}
 \chapter*{Bibliography}
 \markboth{\sffamily\normalsize\bfseries Bibliography}{\sffamily\normalsize\bfseries Bibliography} % Set the page headers to display a Bibliography chapter name
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}} % Add a Bibliography heading to the table of contents

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  30 MAR 2022 17:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  26 APR 2022 13:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1515,15 +1515,10 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'fastmain.bbl' found.
  (fastmain.bbl)
-
-Package biblatex Warning: citation 'sadiku2018elements'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
 Package biblatex Info: Reference section=0 on input line 17.
 Package biblatex Info: Reference segment=0 on input line 17.
 Package hyperref Info: Link coloring ON on input line 17.
+
 (E:\Programas x86\MikTex\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1552,14 +1547,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 19.
-Package mdframed Info: mdframed works in twoside mode on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 20.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 21.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 22.
+ 23.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1569,35 +1560,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 22.
+ 23.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 22.
+ 23.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 22.
+ 23.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-2.
+3.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 
 (E:\Programas x86\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1605,99 +1596,61 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (E:\Programas x86\MikTex\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
-8.
-(E:\Programas x86\MikTex\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Package mdframed Info: mdframed works in twoside mode on input line 33.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 33.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
 
-
-LaTeX Warning: Citation 'sadiku2018elements' on page 1 undefined on input line 
-50.
-
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 60.
-<Images//CamposMag/CM21.png, id=7, 490.83376pt x 289.83281pt>
-File: Images//CamposMag/CM21.png Graphic file (type png)
-<use Images//CamposMag/CM21.png>
-Package pdftex.def Info: Images//CamposMag/CM21.png  used on input line 75.
-(pdftex.def)             Requested size: 245.41628pt x 144.91605pt.
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.57007pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.57007pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.3437pt}.
+Underfull \hbox (badness 6758) in paragraph at lines 30--30
+[]|\T1/ptm/m/n/10.95 (+20) Procesadores ubi-ca-dos en
+ []
 
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
+<Images//IN1/IN1.png, id=25, 301.125pt x 354.32375pt>
+File: Images//IN1/IN1.png Graphic file (type png)
+<use Images//IN1/IN1.png>
+Package pdftex.def Info: Images//IN1/IN1.png  used on input line 71.
+(pdftex.def)             Requested size: 150.56212pt x 177.16144pt.
 
-LaTeX Warning: Reference `fig: dipolos nubes' on page 2 undefined on input line
- 121.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[2 <./Images//CamposMag/CM21.png>]
-<Images//CamposMag/CM22.png, id=58, 574.39594pt x 170.13562pt>
-File: Images//CamposMag/CM22.png Graphic file (type png)
-<use Images//CamposMag/CM22.png>
-Package pdftex.def Info: Images//CamposMag/CM22.png  used on input line 139.
-(pdftex.def)             Requested size: 287.19725pt x 85.0676pt.
- [3 <./Images//CamposMag/CM22.png>] [4]
-<Images//CamposMag/CM23.png, id=83, 282.05376pt x 81.30376pt>
-File: Images//CamposMag/CM23.png Graphic file (type png)
-<use Images//CamposMag/CM23.png>
-Package pdftex.def Info: Images//CamposMag/CM23.png  used on input line 195.
-(pdftex.def)             Requested size: 141.02652pt x 40.65176pt.
-
-[5 <./Images//CamposMag/CM23.png>] [6] (fastmain.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                fastmain
-(biblatex)                and rerun LaTeX afterwards.
-
+ [2]
+[3 <./Images//IN1/IN1.png>] [4]
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 100.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 100.
+<Images//IN1/IN2.png, id=51, 301.125pt x 147.55125pt>
+File: Images//IN1/IN2.png Graphic file (type png)
+<use Images//IN1/IN2.png>
+Package pdftex.def Info: Images//IN1/IN2.png  used on input line 102.
+(pdftex.def)             Requested size: 150.56212pt x 73.77544pt.
+ [5 <./Images//IN1/IN2.png>] (fastmain.aux)
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38360 strings out of 478582
- 709758 string characters out of 2854162
- 1540656 words of memory out of 3000000
- 55540 multiletter control sequences out of 15000+600000
- 559739 words of font info for 290 fonts, out of 8000000 for 9000
+ 38059 strings out of 478582
+ 703327 string characters out of 2854162
+ 1544458 words of memory out of 3000000
+ 55234 multiletter control sequences out of 15000+600000
+ 544159 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,108p,1265b,1323s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,19n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
-/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Programas x86/MikTex/fonts/type1
-/public/amsfonts/cm/cmmi10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><E:/Programas x86/MikTex/fonts/type1/urw/avantgar/uagd8a.pfb><E:/Programa
-s x86/MikTex/fonts/type1/urw/avantgar/uagk8a.pfb><E:/Programas x86/MikTex/fonts
-/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/symbol/usyr
-.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/Programas x8
-6/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (6 pages, 206578 bytes).
+/fonts/type1/public/amsfonts/symbols/msam10.pfb><E:/Programas x86/MikTex/fonts/
+type1/urw/avantgar/uagd8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/avantgar
+/uagk8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/Progr
+amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on fastmain.pdf (5 pages, 150850 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 61 named destinations out of 1000 (max. 500000)
- 99452 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 132 PDF objects out of 1000 (max. 8388607)
+ 31 named destinations out of 1000 (max. 500000)
+ 83055 words of extra memory for PDF output out of 89155 (max. 10000000)
 

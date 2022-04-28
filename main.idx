@@ -16,7 +16,7 @@
 \indexentry{Latch|hyperpage}{66}
 \indexentry{Flip-Flops|hyperpage}{72}
 \indexentry{División de frecuencia|hyperpage}{78}
-\indexentry{Monoestables|hyperpage}{79}
+\indexentry{Monoestables|hyperpage}{78}
 \indexentry{Máquina de estados|hyperpage}{81}
 \indexentry{Grafos de estados|hyperpage}{84}
 \indexentry{ESP8266|hyperpage}{95}
@@ -61,30 +61,35 @@
 \indexentry{Potencial eléctrico|hyperpage}{168}
 \indexentry{Relación entre E y V-Ecuación de Maxwell|hyperpage}{169}
 \indexentry{Dipolo eléctrico|hyperpage}{170}
-\indexentry{Evolución de la telefonía|hyperpage}{181}
-\indexentry{Conmutadores|hyperpage}{182}
-\indexentry{Repaso:Señales analógicas y digitales|hyperpage}{182}
-\indexentry{Multiplexación|hyperpage}{183}
-\indexentry{Técnicas de conmutación|hyperpage}{185}
-\indexentry{Resumen comparativo|hyperpage}{187}
-\indexentry{Señalización telefónica|hyperpage}{191}
-\indexentry{Planta interna y externa|hyperpage}{192}
-\indexentry{Tráfico Telefónico|hyperpage}{199}
-\indexentry{Medidas de tráfico telefónico|hyperpage}{200}
-\indexentry{Tipos de tráfico|hyperpage}{204}
-\indexentry{Accesibilidad|hyperpage}{205}
-\indexentry{Grade of service|hyperpage}{206}
-\indexentry{Diseño de redes|hyperpage}{207}
-\indexentry{Encaminamiento de tráfico|hyperpage}{210}
-\indexentry{Erlang-B|hyperpage}{214}
-\indexentry{Repaso: TCP/IP|hyperpage}{225}
-\indexentry{VoIP|hyperpage}{229}
-\indexentry{Digitización de la voz|hyperpage}{229}
-\indexentry{Componentes de VoIP|hyperpage}{232}
-\indexentry{Tecnología IP|hyperpage}{235}
-\indexentry{Vocabulary|hyperpage}{237}
-\indexentry{Logaritmos y exponenciales|hyperpage}{241}
-\indexentry{Matrices|hyperpage}{241}
-\indexentry{Integrales|hyperpage}{242}
-\indexentry{Números complejos|hyperpage}{242}
-\indexentry{Producto cruz y producto escalar|hyperpage}{243}
+\indexentry{Evolución de la telefonía|hyperpage}{179}
+\indexentry{Conmutadores|hyperpage}{180}
+\indexentry{Repaso:Señales analógicas y digitales|hyperpage}{180}
+\indexentry{Multiplexación|hyperpage}{181}
+\indexentry{Técnicas de conmutación|hyperpage}{183}
+\indexentry{Resumen comparativo|hyperpage}{185}
+\indexentry{Señalización telefónica|hyperpage}{189}
+\indexentry{Planta interna y externa|hyperpage}{190}
+\indexentry{Tráfico Telefónico|hyperpage}{197}
+\indexentry{Medidas de tráfico telefónico|hyperpage}{198}
+\indexentry{Tipos de tráfico|hyperpage}{202}
+\indexentry{Accesibilidad|hyperpage}{203}
+\indexentry{Grade of service|hyperpage}{204}
+\indexentry{Diseño de redes|hyperpage}{205}
+\indexentry{Encaminamiento de tráfico|hyperpage}{208}
+\indexentry{Erlang-B|hyperpage}{212}
+\indexentry{Repaso: TCP/IP|hyperpage}{223}
+\indexentry{VoIP|hyperpage}{227}
+\indexentry{Digitización de la voz|hyperpage}{227}
+\indexentry{Componentes de VoIP|hyperpage}{230}
+\indexentry{Tecnología IP|hyperpage}{233}
+\indexentry{Vocabulario-Sistemas de telefonía|hyperpage}{235}
+\indexentry{Vocabulario-Internetworking 1|hyperpage}{244}
+\indexentry{When use \textit{the}?|hyperpage}{253}
+\indexentry{\textit{a/an}, \textit{the} and no-article|hyperpage}{254}
+\indexentry{Use of \textit{Would}|hyperpage}{254}
+\indexentry{How to use \textit{rather}?|hyperpage}{254}
+\indexentry{Logaritmos y exponenciales|hyperpage}{259}
+\indexentry{Matrices|hyperpage}{259}
+\indexentry{Integrales|hyperpage}{260}
+\indexentry{Números complejos|hyperpage}{260}
+\indexentry{Producto cruz y producto escalar|hyperpage}{261}
