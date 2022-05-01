@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  26 APR 2022 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  30 APR 2022 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1548,9 +1548,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 19.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 21.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 23.
+ 26.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1560,35 +1560,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 23.
+ 26.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 23.
+ 26.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 23.
+ 26.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-3.
+6.
 
 (E:\Programas x86\MikTex\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
 
 (E:\Programas x86\MikTex\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1596,61 +1596,156 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (E:\Programas x86\MikTex\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 23.
-
-Underfull \hbox (badness 6758) in paragraph at lines 30--30
-[]|\T1/ptm/m/n/10.95 (+20) Procesadores ubi-ca-dos en
+Overfull \hbox (57.08653pt too wide) in paragraph at lines 48--48
+[]|[]| 
  []
 
-[1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
-<Images//IN1/IN1.png, id=25, 301.125pt x 354.32375pt>
-File: Images//IN1/IN1.png Graphic file (type png)
-<use Images//IN1/IN1.png>
-Package pdftex.def Info: Images//IN1/IN1.png  used on input line 71.
-(pdftex.def)             Requested size: 150.56212pt x 177.16144pt.
+Overfull \hbox (28.42288pt too wide) in paragraph at lines 51--51
+[]|[][]| 
+ []
+
+
+Overfull \hbox (0.75252pt too wide) in paragraph at lines 52--52
+[]|[]| 
+ []
+
+
+Overfull \hbox (49.99341pt too wide) in paragraph at lines 43--54
+[][] 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2]
-[3 <./Images//IN1/IN1.png>] [4]
+ [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+]
+Package mdframed Info: mdframed works in twoside mode on input line 55.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 55.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 100.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 55.
+<Images//IM/IM1.png, id=18, 383.4325pt x 186.6975pt>
+File: Images//IM/IM1.png Graphic file (type png)
+<use Images//IM/IM1.png>
+Package pdftex.def Info: Images//IM/IM1.png  used on input line 58.
+(pdftex.def)             Requested size: 191.71577pt x 93.34851pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
+
+ []
+
+
+LaTeX Warning: Reference `art:dbm' on page 2 undefined on input line 68.
+
+
+LaTeX Warning: Reference `eq:potencia' on page 2 undefined on input line 76.
+
+<Images//IM/IM2.png, id=20, 383.4325pt x 219.82124pt>
+File: Images//IM/IM2.png Graphic file (type png)
+<use Images//IM/IM2.png>
+Package pdftex.def Info: Images//IM/IM2.png  used on input line 87.
+(pdftex.def)             Requested size: 191.71577pt x 109.91034pt.
+<Images//IM/IM3.png, id=21, 383.4325pt x 219.82124pt>
+File: Images//IM/IM3.png Graphic file (type png)
+<use Images//IM/IM3.png>
+Package pdftex.def Info: Images//IM/IM3.png  used on input line 96.
+(pdftex.def)             Requested size: 191.71577pt x 109.91034pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 115.
+[2 <./Images//IM/IM1.png>] [3 <./Images//IM/IM2.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 116.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 116.
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--125
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+25.
+(E:\Programas x86\MikTex\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Package mdframed Info: mdframed works in twoside mode on input line 130.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 130.
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+<Images//IM/IM4.png, id=44, 631.60968pt x 357.58594pt>
+File: Images//IM/IM4.png Graphic file (type png)
+<use Images//IM/IM4.png>
+Package pdftex.def Info: Images//IM/IM4.png  used on input line 133.
+(pdftex.def)             Requested size: 315.80406pt x 178.79253pt.
+[4 <./Images//IM/IM3.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 157.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 157.
+
+Underfull \hbox (badness 10000) in paragraph at lines 158--160
+
+ []
+
+<Images//IM/IM5.png, id=56, 499.8675pt x 243.15843pt>
+File: Images//IM/IM5.png Graphic file (type png)
+<use Images//IM/IM5.png>
+Package pdftex.def Info: Images//IM/IM5.png  used on input line 161.
+(pdftex.def)             Requested size: 249.93314pt x 121.57892pt.
+<Images//IM/IM6.png, id=57, 687.31781pt x 124.96687pt>
+File: Images//IM/IM6.png Graphic file (type png)
+<use Images//IM/IM6.png>
+Package pdftex.def Info: Images//IM/IM6.png  used on input line 164.
+(pdftex.def)             Requested size: 343.65807pt x 62.48328pt.
+<Images//IM/IM7.png, id=58, 666.99188pt x 381.67593pt>
+File: Images//IM/IM7.png Graphic file (type png)
+<use Images//IM/IM7.png>
+Package pdftex.def Info: Images//IM/IM7.png  used on input line 169.
+(pdftex.def)             Requested size: 233.45065pt x 133.58858pt.
+[5 <./Images//IM/IM4.png>]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 182.
+ [6 <./Images//IM/IM5.png> <./Images//IM/IM6.png> <./Images//IM/IM7.png>]
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 100.
-<Images//IN1/IN2.png, id=51, 301.125pt x 147.55125pt>
-File: Images//IN1/IN2.png Graphic file (type png)
-<use Images//IN1/IN2.png>
-Package pdftex.def Info: Images//IN1/IN2.png  used on input line 102.
-(pdftex.def)             Requested size: 150.56212pt x 73.77544pt.
- [5 <./Images//IN1/IN2.png>] (fastmain.aux)
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 184.
+ [7] (fastmain.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38059 strings out of 478582
- 703327 string characters out of 2854162
- 1544458 words of memory out of 3000000
- 55234 multiletter control sequences out of 15000+600000
- 544159 words of font info for 308 fonts, out of 8000000 for 9000
+ 37926 strings out of 478582
+ 702458 string characters out of 2854162
+ 1554682 words of memory out of 3000000
+ 55266 multiletter control sequences out of 15000+600000
+ 526524 words of font info for 192 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,19n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,20n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
-/fonts/type1/public/amsfonts/symbols/msam10.pfb><E:/Programas x86/MikTex/fonts/
-type1/urw/avantgar/uagd8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/avantgar
-/uagk8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/Progr
-amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
-/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (5 pages, 150850 bytes).
+/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Programas x86/MikTex/fonts/type1
+/public/amsfonts/cm/cmmi10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfonts/symbols/msam10.pfb><
+E:/Programas x86/MikTex/fonts/type1/urw/avantgar/uagd8a.pfb><E:/Programas x86/M
+ikTex/fonts/type1/urw/avantgar/uagk8a.pfb><E:/Programas x86/MikTex/fonts/type1/
+urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/symbol/usyr.pfb><E
+:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/Programas x86/MikTe
+x/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on fastmain.pdf (7 pages, 278743 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 83055 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 145 PDF objects out of 1000 (max. 8388607)
+ 21 named destinations out of 1000 (max. 500000)
+ 59464 words of extra memory for PDF output out of 61914 (max. 10000000)
 

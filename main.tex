@@ -4598,7 +4598,8 @@ w_p=\frac{dP}{dv}=E\cdot J=\sigma|E|^2
 \end{equation}
 Para un conductor con sección transversal uniforme, dv=dS dl, por lo que la ec. \ref{eq:potencia} se convierte en:
 \begin{equation}
-P=\int_LEdl\int_SJdS=VI=I^2R
+\label{eq:potencia}
+P=\int_LEdl\int_SJdS=VI=I^2R=\frac{V^2}{R}
 \end{equation}
 \subsection{Polarización de un dipolo}
 Para comprender el efecto macroscópico de un campo eléctrico sobre un dieléctrico, considere un átomo del dieléctrico que consta de una carga negativa -Q (nube de electrones) y una carga positiva +Q (núcleo) como en la Figura \ref{fig: dipolos nubes}. Se puede adoptar una imagen similar para un molécula dieléctrica; podemos tratar los núcleos de las moléculas como cargas puntuales y la estructura electrónica como una sola nube de carga negativa. Como tenemos cantidades iguales de valores positivos y negativos, todo el átomo o molécula es eléctricamente neutro. Cuando un campo eléctrico \textbf{E} se aplica, la carga positiva se desplaza de su posición de equilibrio en la dirección de \textbf{E} por la fuerza $F_+$=Q\textbf{E}, mientras que la carga negativa se desplaza en la dirección opuesta por la fuerza $F_-$=Q\textbf{E}. Un dipolo resulta del desplazamiento de las cargas, y se dice que el dieléctrico está polarizado. En el estado polarizado, la nube de electrones está distorsionada por el campo eléctrico aplicado \textbf{E}. Esta distribución de carga distorsionada es equivalente, por el principio de superposición, a la distribución original más un dipolo cuyo momento es:
@@ -6129,6 +6130,29 @@ Este nivel se encarga directamente de los \textbf{elementos físicos} de la cone
 Define el medio físico de transmisión: cables de pares trenzados, cable coaxial, ondas y fibra óptica. Maneja las señales eléctricas y transmite el flujo de bits. Define las características de los materiales, como conectores y niveles de tensión.\\
 La Capa Física, que representa la representación \textbf{eléctrica} y física del sistema. Esto puede incluir todo, desde el tipo de cable, el enlace de radiofrecuencia (como en un sistema inalámbrico 802.11), así como la disposición de los pines, los voltajes y otros requisitos físicos. Cuando ocurre un problema de red, muchos profesionales de redes van directamente a la Capa Física para verificar que todos los cables estén conectados correctamente y que el enchufe no se haya desconectado del router, interruptor o computadora, por ejemplo.
 Algunas normas relativas a este nivel son: ISO 2110, EIA-232, V.35, X.24, V24, V.28
+\section{Modelo TCP/IP}
+TCP/IP fue desarrollado por el Departamento de Defensa de EE. UU. para especificar el modo en que los equipos transfieren datos de un dispositivo a otro. TCP/IP incide mucho en la precisión y dispone de varios pasos para garantizar la correcta transmisión de los datos entre ambos equipos. El propósito de las capas es crear un sistema estandarizado, sin que los distintos fabricantes de hardware y software tengan que gestionar la comunicación por su cuenta. Es como conducir un coche: todos los fabricantes convienen en la posición de los pedales, así que no tenemos que tener eso en cuenta al cambiar de coche. También significa que es posible actualizar determinadas capas, por ejemplo, para mejorar el rendimiento o la seguridad, sin tener que actualizar todo el sistema.
+\subsection{Capa de enlace de datos}
+También denominada capa de enlace, capa de interfaz de red o capa física. Es la primera capa del modelo y ofrece la posibilidad de \textbf{acceso físico} a la red manejando las partes físicas del envío y \textbf{recepción} de datos mediante el cable Ethernet, la red inalámbrica, la tarjeta de interfaz de red, el controlador del dispositivo en el equipo, etcétera. (que bien puede ser en anillo, ethernet, etc.), especificando el modo en que los datos deben \textbf{enrutarse} independientemente del tipo de red utilizado.
+\subsection{Capa de interred}
+Esta capa es el eje que mantiene unida a toda la arquitectura. Su trabajo es permitir que los hosts \textbf{inyecten} paquetes en cualquier red y que viajen de manera independiente hacia el destino (que puede estar en una red distinta). Incluso pueden llegar en un orden totalmente \textbf{diferente} al orden en que se enviaron, en cuyo caso es responsabilidad de las capas más altas volver a \textbf{ordenarlos}, si se desea una entrega en orden. Tenga en cuenta que aquí utilizamos ''\textbf{interred}'' en un sentido genérico, aunque esta capa esté presente en la \textbf{Internet}. La capa de interred define un formato de paquete y un protocolo oficial llamado \textbf{IP} (Protocolo de Internet, del inglés Internet Protocol), además de un protocolo complementario llamado \textbf{ICMP} (Protocolo de Mensajes de Control de Internet, del inglés Internet Control Message Protocol) que le ayuda a funcionar. La tarea de la capa de interred es \textbf{entregar} los paquetes IP a donde se supone que deben ir. Aquí el \textbf{ruteo} de los paquetes es sin duda el principal aspecto al igual que la \textbf{congestión} (aunque el IP no ha demostrado ser \textbf{efectivo} para evitar la congestión).
+\subsection{Transporte}
+Está diseñada para permitir que las entidades pares, en los nodos de origen y de destino, lleven a cabo una \textbf{conversación}, al igual que en la capa de transporte de OSI. Existen dos protocolos de transporte extremo-a-extremo: El primero, \textbf{TCP} (\textit{Protocolo de Control de la Transmisión, del inglés Transmission Control Protocol}), es un protocolo confiable \textbf{orientado a la conexión} que permite que un flujo de bytes originado en una máquina se entregue sin \textbf{errores} a cualquier otra máquina en la interred. Este protocolo segmenta el flujo de bytes entrante en mensajes discretos y pasa cada uno a la capa de interred. En el destino, el proceso TCP receptor vuelve a \textbf{ensamblar} los mensajes recibidos para formar el flujo de salida. El TCP también maneja el \textbf{control de flujo} para asegurar que un emisor rápido no pueda inundar a un receptor lento con más mensajes de los que pueda manejar.\\
+El segundo protocolo en esta capa, \textbf{UDP} (\textit{Protocolo de Datagrama de Usuario, del inglés User Datagram Protocol}), es un protocolo sin conexión, no confiable para aplicaciones que no desean la asignación de secuencia o el control de flujo de TCP y prefieren proveerlos por su cuenta. También se utiliza mucho en las consultas de \textbf{petición-respuesta} de una sola ocasión del tipo cliente-servidor, y en las aplicaciones en las que es más importante una \textbf{entrega oportuna} que una entrega precisa, como en la transmisión de voz o vídeo.
+\subsection{Capa de aplicación}
+Se omiten capas del modelo OSI como la sesión o presentación pues no son muy usadas y se asume que las aplicaciones poseen ya estas funciones. Ésta contiene todos los protocolos de alto nivel. Entre los primeros protocolos están el de terminal virtual (TELNET), transferencia de archivos (FTP) y correo electrónico (SMTP). A través de los años se han agregado muchos otros protocolos. En la imagen \ref{fig:protocolos tcp ip} se muestran los más importantes de cada capa. La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{IN1/IN3.png}
+\caption{Algunos protocolos usados en TCP/IP}
+\label{fig:protocolos tcp ip}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{IN1/IN4.png}
+\caption{Comparación de modelo OSI versus TCP/IP}
+\label{fig:comparacion osi vs tcp}
+\end{figure}
 \newpage
 \section*{Vocabulario-Sistemas de telefonía}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -6166,7 +6190,7 @@ Power Line Communication, se trata de una serie de tecnologías que permiten usa
 %----------------------------------------------------------------------------------------
 \part{Ingeniería en mantenimiento}
 \chapterimage{chapter_head_IM.pdf} % Chapter heading image
-
+\chapter{Aspectos introductorios}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -6264,7 +6288,7 @@ I\textbf{'m going} to get my driving license.
 Think it as the probability of do it is 50\%. It could be or not. Also we use \textbf{will} while we're speaking. It's used to make something in future but the opportunity appear suddenly: My phone is ringing, so for a near future I can say:\\
 I \textbf{will answer} the phone.
 %----------------------------------------------------------------------------------------
-%	ANEXOS y EXTRAS
+%	EXTRAS
 %----------------------------------------------------------------------------------------
 \part{Extras}
 \chapterimage{chapter_head_Artificios.pdf}
@@ -6408,24 +6432,34 @@ El módulo del vector producto vectorial coincide con el área del paralelogramo
 =a_x(b_yc_z-b_zc_y)-a_y(b_xc_z-b_zc_x)+a_z(b_xc_y-c_xb_y)
 \end{equation}
 Se resuelve igual que la matriz de producto cruz, con la misma distribución de signos.
-\section{Decibelios}
-\subsection{Definición de dB}
+\chapterimage{chapter_head_Artificios.pdf}
+\chapter{Decibelios}
+\section{Definición de dB}
 Aunque el logaritmo en base 10 de la relación de dos valores de potencia es una cantidad sin dimensiones, tiene unidades de "Bel" en honor del inventor del teléfono (Alexander Graham Bell). Con el fin de obtener números más manejables, se usan los dB (decibelios, donde "deci" significa un décimo) en lugar del Bel  para los  para los propósitos de propósitos de cálculo. Tenemos que cálculo. Tenemos que multipli multiplicar los car los valores Bel valores Bel por 10 (al igual (al igual que necesitamos que necesitamos multiplicar una distancia de 1000 si queremos usar milímetros en lugar de metros).
 \begin{equation}
 \label{art:decibel}
 a=10\cdot \log_{10}\left(\frac{P_1}{P_2}\right)dB
 \end{equation}
-\subsection{Definición de dBm}
-Si nos referimos Si nos referimos un valor de potencia arbitraria a un valor de potencia arbitraria a una cantidad de r una cantidad de referencia fijo, la relación logarítmica de eferencia fijo, la relación logarítmica de los dos valores se obtiene una nueva cantidad absoluta. Esta cantidad se define como un nivel. La cantidad de referencia más utilizado en la ingeniería de las telecomunicaciones y de radio frecuencia es de una potencia de 1 mW (una milésima de un vatio) en 50 Ohm. La relación de potencia general de P1 a P2 se convierte ahora en una relación de P1 a 1 mW. La relación logarítmica proporciona el nivel L. De acuerdo con IEC 27, el valor de referencia tuvo que figurará en el índice de nivel:
+\section{Definición de dBm}
+Si nos referimos Si nos referimos un valor de potencia arbitraria a un valor de potencia arbitraria a una cantidad de r una cantidad de referencia fijo, la relación logarítmica de referencia fijo, la relación logarítmica de los dos valores se obtiene una nueva cantidad absoluta. Esta cantidad se define como un nivel. La cantidad de referencia más utilizado en la ingeniería de las telecomunicaciones y de radio frecuencia es de una potencia de 1 mW (una milésima de un vatio) en 50 Ohm. La relación de potencia general de P1($P_out$) a P2($P_in$) se convierte ahora en una relación de P1 a 1 mW. La relación logarítmica proporciona el nivel L. De acuerdo con IEC 27, el valor de referencia tuvo que figurará en el índice de nivel:
 \begin{equation}
 \label{art:dbm}
-L_{P/1mW}=10\cdot \log_{10}\left(\frac{P_1}{1mW}\right)dB
+L_{P/1mW}=10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm
 \end{equation}
 Por ejemplo, 5mW corresponde a un nivel:
 \begin{displaymath}
 L_{p/1mW}=10\cdot \log_{10}\left(\frac{5mW}{1mW}\right)=6.99dB
 \end{displaymath}
-\subsection{Diferencia entre decibelios de tensión y decibelios de potencia}
+\section{Definición dB$\mu$V}
+Es similar a dBm, la diferencia es la unidad de comparación, aquí usamos una referencia de 1$\mu$V, la forma de expresar el índice de nivel es:
+\begin{equation}
+\label{art:decibel micro voltios}
+L_{p/1\mu V}=20\cdot\log\left(\frac{V_{sal}\mu V}{1\mu V}\right)
+\end{equation}
+\begin{remark}
+Ten cuidado que en las ecuaciones \ref{art:dBm} y \ref{art:decibel micro voltios}, la \textbf{potencia} o \textbf{voltaje} de entrada tiene que estar en mW o $\mu$V, así que tienes que cambiar las unidades. En esos casos se compara la potencia o voltaje de \textbf{salida} respecto a la entrada la fijada, pudiendo ser 1mW o 1$\mu$V.
+\end{remark}
+\section{Diferencia entre decibelios de tensión y decibelios de potencia}
 No es sólo un tipo de decibelios, y representa representa una proporción proporción de dos niveles niveles de potencia P1 potencia P1 y P2. Por supuesto, cualquier nivel de potencia puede expresarse como una tensión si se conoce la resistencia, se sabe que la potencia es:
 \begin{displaymath}
 P_1=\frac{V^2_1}{R_1} \land P_2=\frac{V^2_2}{R_2}
@@ -6447,7 +6481,7 @@ a=10\cdot\log\left(\frac{P_1}{P_2}\right)dB=20\cdot\log\left(\frac{V_1}{V_2}\rig
 \begin{remark}
 Esta fórmula es válida sólo si R1 = R2. Si, como a veces ocurre en la ingeniería de la televisión, tenemos que tomar en cuenta una conversión de 75 Ohm ión de 75 Ohm y 50 Ohm, y 50 Ohm, se debe tener en cuenta se debe tener en  cuenta la relación de las resistencias
 \end{remark}
-\subsection{¿Qué es un nivel?}
+\section{¿Qué es un nivel?}
 A partir de los valores relativos para el nivel de potencia $P_1$ (tensión $V_1$) se refiere nivel de potencia $P_2$ (tensión $V_2$), se obtienen valores absolutos utilizando los valores de referencia anteriormente. Estos valores absolutos también se conocen como niveles. Un nivel de 10 dBm significa un valor que es 10 dB por encima de 1 mW, y un nivel de -17 dB (mV) significa un valor que es 17 dB por debajo de 1 mV. Al calcular estas cantidades, es importante tener en cuenta si son cantidades de energía o las cantidades de voltaje. Algunos ejemplos de cantidades de energía incluyen la energía, la resistencia, la figura de ruido y la densidad de flujo de potencia. Cantidades de voltaje (también conocidos como magnitudes de campo) incluyen voltaje, corriente, intensidad de campo eléctrico, intensidad de campo magnético y coeficiente de reflexión. La conversión de los niveles a valores lineales requiere las siguientes fórmulas:
 \begin{equation}
 P=10^{\frac{a dB}{10}}\cdot P_{ref}
@@ -6456,7 +6490,7 @@ o:
 \begin{equation}
 V=10^{\frac{a dB}{20}}\cdot V_{ref}
 \end{equation}
-\subsection{Atenuación y ganancia}
+\section{Atenuación y ganancia}
 La función de transferencia lineal $a_{lin}$ de un circuito de dos puertos representa la relación de la potencia de salida a la potencia de entrada:
 \begin{figure}[H]
 \centering
@@ -6485,9 +6519,9 @@ Para circuitos de dos puertos en serie o cascada, podemos calcular fácilmente l
 \begin{equation}
 a=a_1 + a_2 + \ldots +a_n
 \end{equation}
-\subsection{Decibelios a porcentaje y viceversa}
+\section{Decibelios a porcentaje y viceversa}
 Hay dos formas que tenemos a aclarar: Sabemos que tenemos decibelios de voltaje y potencia, aparte de eso, tenemos que saber si vamos a calcular el x\% de una cantidad o un x\% más o menos de una cantidad:
-\subsubsection{Conversión de voltaje: porcentaje a decibelios y viceversa}
+\subsection{Conversión de voltaje: porcentaje a decibelios y viceversa}
 x\% de una cantidad de tensión se convierte en decibelios de la siguiente manera:
 \begin{equation}
 a=20\cdot\log\left(\frac{x}{100}\right)dB
@@ -6496,7 +6530,7 @@ Convertir un valor en dB a porcentaje de la siguiente manera:
 \begin{equation}
 x=100\%\cdot 10^{\frac{a dB}{20}}
 \end{equation}
-\subsubsection{Conversión de la energía: porcentaje a decibelios y viceversa}
+\subsection{Conversión de la energía: porcentaje a decibelios y viceversa}
 x\% de una cantidad de energía se convierte en decibelios de la siguiente manera:
 \begin{equation}
 a=10\cdot\log\left(\frac{x}{100}\right)dB
@@ -6505,7 +6539,7 @@ Convertir un valor en dB a porcentaje de la siguiente manera:
 \begin{equation}
 x=100\%\cdot 10^{\frac{a dB}{10}}
 \end{equation}
-\subsubsection{Conversión de voltaje: porcentaje más o menos a decibelios}
+\subsection{Conversión de voltaje: porcentaje más o menos a decibelios}
 x\% más (o menos) de un valor significa que sumamos (o restar) el porcentaje dado a (o desde) el valor de partida. Por ejemplo, si la tensión tensión de salida $V_2$ de un amplifica amplificador se supone que es x\% mayor que la
 tensión de entrada $V_1$, se calcula como sigue:
 \begin{equation}
@@ -6516,7 +6550,7 @@ La conversión a un valor de decibelios requiere la siguiente fórmula:
 \begin{equation}
 a=20\cdot\log\left(1+\frac{x}{100}\right)dB
 \end{equation}
-\subsubsection{Conversión de potencia: porcentaje más o menos a decibelios}
+\subsection{Conversión de potencia: porcentaje más o menos a decibelios}
 Análoga a la fórmula de tensión, tenemos lo siguiente:
 \begin{equation}
 P_2=P_1+x\%\cdot P_1= P_1\left(1+\frac{x}{100}\right)
@@ -6528,6 +6562,9 @@ a=10\cdot\log\left(1+\frac{x}{100}\right)dB
 \begin{remark}
 No se olvide usar un factor de 20 para cantidades de voltaje y un factor de 10 para cantidades de energía.
 \end{remark}
+%----------------------------------------------------------------------------------------
+%	ANEXOS
+%----------------------------------------------------------------------------------------
 \part{Anexos}
 \includepdf[scale=0.8,pages={2-4},pagecommand=
 \section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}]{Anexos/TraficoTelefonico.pdf}
