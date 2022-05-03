@@ -3635,7 +3635,7 @@ El 20\% hallado es el duty cycle, es el tiempo que valdrá 5V, nos pide el tiemp
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
-\part{Campos \\electromagnéticos}
+\part{Campos electromagnéticos}
 \chapterimage{chapter_head_CE.pdf} % Chapter heading image
 \chapter{Repaso vectorial y fundamentos del electromagnetismo}
 \section{Sistemas de coordenadas y transformaciones}\index{Sistemas de coordenadas y transformaciones}
@@ -6196,7 +6196,7 @@ Fenómeno ondulatorio que ocurre cuando una onda se reproduce al atravesar una a
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
-\part{Microcontrolador\\y microprocesador}
+\part{Microcontrolador y microprocesador}
 \chapterimage{chapter_head_MM.pdf} % Chapter heading image
 
 %----------------------------------------------------------------------------------------

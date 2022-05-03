@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  3 MAY 2022 10:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  3 MAY 2022 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1547,65 +1547,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 21.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 21.
-
-(E:\Programas x86\MikTex\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 21.
-
-(E:\Programas x86\MikTex\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 21.
-
-(E:\Programas x86\MikTex\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 21.
-
-(E:\Programas x86\MikTex\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-1.
-
-(E:\Programas x86\MikTex\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
-
-(E:\Programas x86\MikTex\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(E:\Programas x86\MikTex\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-1.
-
-(E:\Programas x86\MikTex\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+ [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ] (fastmain.aux)
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
@@ -1613,23 +1555,19 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37777 strings out of 478582
- 700333 string characters out of 2854162
- 1529016 words of memory out of 3000000
- 55187 multiletter control sequences out of 15000+600000
- 518817 words of font info for 157 fonts, out of 8000000 for 9000
+ 37442 strings out of 478582
+ 695187 string characters out of 2854162
+ 1524416 words of memory out of 3000000
+ 55000 multiletter control sequences out of 15000+600000
+ 482908 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,11n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
-/fonts/type1/public/amsfonts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/
-public/amsfonts/symbols/msam10.pfb><E:/Programas x86/MikTex/fonts/type1/urw/ava
-ntgar/uagd8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/avantgar/uagk8a.pfb><
-E:/Programas x86/MikTex/fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTe
-x/fonts/type1/urw/times/utmb8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/tim
-es/utmr8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (1 page, 67868 bytes).
+/fonts/type1/urw/avantgar/uagd8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/a
+vantgar/uagk8a.pfb>
+Output written on fastmain.pdf (1 page, 22176 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 57357 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 38 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 14373 words of extra memory for PDF output out of 14400 (max. 10000000)
 

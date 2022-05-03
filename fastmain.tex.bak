@@ -16,8 +16,11 @@
 %----------------------------------------------------------------------------------------
 \begin{document}
 %----------------------------------------------------------------------------------------
-
-%\section{Capa física en redes de datos}
+%Internetworking
+\section{Capa física en redes de datos}
+%Lineas de transmisión
+\section{Leyes de maxwell}
+\section{Modelo electromagnético y las leyes de Maxwell}
 %\section{Protocolos estándares y propietarios}
 %\section{Capa de enlace y la evolución de las telecomunicaciones}
 %----------------------------------------------------------------------------------------
