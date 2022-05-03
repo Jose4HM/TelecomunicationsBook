@@ -169,7 +169,7 @@ G(tx,ty)=t^n\cdot G(x,y)\footnote{Se usará letras mayúsculas para representar 
 \end{equation}
 Una función es homogénea si al multiplicarla por t nos devuelve la misma función multiplicada t a la n veces, donde n es el grado de homogeneidad.
 \end{definition}
-\begin{exercise}
+\begin{example}
 Comprobar si la función F(x) es homogénea y si lo es, indicar su grado.
 \begin{displaymath}
 F(x,y)=\sqrt{x^2+y^2}
@@ -187,7 +187,7 @@ F(x,y)=t\overbrace{\sqrt{x^2+y^2}}^{G(x,y)}
 F(x,y)=t\cdot G(x,y)
 \end{displaymath}
 La función es homogénea de grado 1
-\end{exercise}
+\end{example}
 
 \section{Variables separables}\index{Variables separables}
 Son las más sencillas de identificar, para poder resolverlas es necesario hacer un despeje para ``acomodar" los términos e integrar a ambos lados de la expresión.
@@ -212,7 +212,7 @@ G(x,y)dx+H(x,y)dy=0
 \end{equation}
 Ambas soluciones se presentan normalmente de la manera implícita.
 \end{definition}
-\begin{exercise}
+\begin{example}
 \begin{equation}
 \begin{split}
 y\cdot ln(x)\frac{dx}{dy}&=\left(\frac{y+1}{x}\right)^2\\
@@ -239,9 +239,9 @@ Juntando los resultados de 1 y 2:\\
 \begin{equation}
 \boxed{\frac{x^3ln(x)}{3}-\frac{x^3}{9}=\frac{y^2}{2}+2y+ln(y)+C}
 \end{equation}
-\end{exercise}
+\end{example}
 %-----------------------------------------------------
-\begin{exercise}
+\begin{example}
 Ejercicio ED de primer orden con Condiciones Iniciales\footnote{Desde ahora se abreviará como C.I.}.
 \begin{center}
 \begin{equation}\label{eq:sinCI1}
@@ -269,8 +269,8 @@ Una vez despejada la ecuación de \ref{eq:CI1} podemos reemplazarla en la ecuaci
 \begin{equation}
 \boxed{ln(y)=t-\frac{t^2}{2}+ln(3)-\frac{1}{2}}
 \end{equation}
-\end{exercise}
-\begin{exercise}
+\end{example}
+\begin{example}
 Resolver la siguiente E.D.:\\
 \begin{equation}\label{eq:exe3}
 \frac{dy}{dx}=\frac{xy+3x-y-3}{xy-2x+4y-8}
@@ -306,7 +306,7 @@ En este caso, una exponencial de \textit{c} es posible solo expresarla como una 
 \begin{equation}
 \boxed{\left(\frac{x+4}{y+3}\right)^5=e^{x-y}\cdot e}
 \end{equation}
-\end{exercise}
+\end{example}
 %\polylongdiv[style=D]{6x^3-2x^2+x+3}{x^2-x+1}
 \section{Ecuaciones diferenciales lineales}\index{Ecuaciones diferenciales lineales}
 \begin{definition}[E.D.L.]
@@ -350,7 +350,7 @@ Haciendo el cambio de variable de la ecuación \ref{eq:cambiovariableu} en el re
 \boxed{U(x)Y(x)=\int Q(x)U(x)dx+C}
 \end{equation}
 En conclusión, para resolver una ecuación diferencial, se usa la ecuación \ref{eq:formageneraledl}, teniendo en cuenta el cambio de variable de la ecuación \ref{eq:uedl}.
-\begin{exercise}
+\begin{example}
 Resolver la siguiente E.D.L.:\\
 \begin{displaymath}
 \left(1-x^2\right)\frac{dy}{dx}-x=-xy
@@ -385,7 +385,7 @@ Separando el denominador para cada término del numerador:
 \begin{equation}
 \boxed{Y(x)=1+C(1-x^2)^{\frac{1}{2}}}
 \end{equation}
-\end{exercise}
+\end{example}
 \section{Ecuaciones Diferenciales Exactas}\index{Ecuaciones Diferenciales Exactas}
 Este tipo de ecuaciones toman como referencia a las ecuaciones diferenciales de primer orden.
 \begin{definition}[Ecuaciones Diferenciales exactas]
@@ -427,7 +427,7 @@ Ahora integraremos la ecuación \ref{eq:despejeg} respecto a \textit{y} y reempl
 \begin{displaymath}
 F(x,y)=C
 \end{displaymath}
-\begin{exercise}
+\begin{example}
 Resolver:
 \begin{displaymath}
 2y^2x-3dx+2yx^2+4dy=0
@@ -476,7 +476,7 @@ Ahora que tenemos todo: solo nos queda reemplazar en la ecuación \ref{eq:ejempl
 \begin{equation}
 \boxed{F(x,y)=y^2x^2-3x+4y=C}
 \end{equation}
-\end{exercise}
+\end{example}
 \begin{remark}
 Se puede cambiar el orden de resolver, es decir, primero hemos resuelto la expresión \ref{eq:edecondicion1} y luego la expresión \ref{eq:edecondicion2}, pero también es valido(y debería salir lo mismo) si haces primero la expresión \ref{eq:edecondicion2} y luego la expresión \ref{eq:edecondicion1}
 \end{remark}
@@ -514,7 +514,7 @@ U(y)=e^{\int \frac{1}{M(x,y)}\left(\frac{\partial N(x,y)}{\partial x}-\frac{\par
 \label{eq:fiy}
 \end{equation}
 Cuando se hallada multiplicamos a toda la E.D.N.E por F.I.; haciendo esto la E.D pasará a ser una E.D.E. y se procede a resolver como tal.
-\begin{exercise}
+\begin{example}
 Resolver:
 \begin{displaymath}
 xydx+\left(2x^2+3y^2-20\right)dy=0
@@ -576,7 +576,7 @@ Multiplicando por dos a toda la expresión, teniendo en cuenta que 2 es constant
 \begin{equation}
 \boxed{y^4x^2+y^6-10y^4=C}
 \end{equation}
-\end{exercise}
+\end{example}
 \section{Ecuaciones por sustitución}\index{Ecuaciones por sustitución}
 \subsection{Ecuaciones Homogéneas}
 Recordando lo aprendido en la ecuación \ref{eq:homogeneidad}, una ecuación de la forma:
@@ -589,24 +589,19 @@ M(xt,yt)=t^nM(x,y) \hspace{20pt} N(xt,yt)=t^nN(x,y)\\
 \end{align*}
 o:
 \begin{align*}
-M(x,y)=x^nM(1,u) \hspace{20pt} N(x,y)=x^nN(1,u)\\
-u=\frac{y}{x}
+M(x,y)=x^nM(1,u) \hspace{20pt} N(x,y)=x^nN(1,u), \text{donde:}u=\frac{y}{x}
 \end{align*}
 Al final, tenemos que devolver el cambio de variable \textit{u}. Una ecuación diferencial homogénea siempre puede reducirse a una ecuación de variable separable por medio de una sustitución algebraica.\\
 \textbf{¿Cómo se hace?}\\
-Sea la ecuación diferencial de la forma \ref{eq:edexacta} y sea homogénea. Se reduce a una E.D de variable separable usando cualquiera de las sustituciones:
+Sea la ecuación diferencial de la forma \ref{eq:edexacta} y sea homogénea. Se reduce a una E.D de variable separable usando cualquiera de las sustituciones, recordando que \textit{u} y \textit{v} son las nuevas variables dependientes.:
 \begin{subequations}
 \begin{align}
 y=u\cdot x
 \label{eq:edhsustituciony} \\
-x=v\cdot x
-\label{eq:edhsustitucionx} \\
+x=v\cdot y
+\label{eq:edhsustitucionx}
 \end{align}
 \end{subequations}
-\textit{u} y \textit{v} son las nuevas variables dependientes.
-\begin{remark}
-\textit{x=v$\cdot$ y} se elije cuando M(x,y) es de estructura más simple que la de N(x,y).
-\end{remark}
 Si elegimos \textbf{y=u$\cdot$ x} con su derivada:
 \begin{equation}\label{eq:yux}
 y=u\cdot x\longrightarrow dy=udx+xdu
@@ -641,7 +636,7 @@ La sustitución por \textbf{x=v$\cdot$y} se realiza de manera similar.\\
 , se puede usar cualquiera de los dos sustituciones.
 \item Si al resolver la que escogimos vemos que se torna complicada(algebraicamente) usamos la otra sustitución.
 \end{enumerate}
-\begin{exercise}\label{eq:edhejemplo1}
+\begin{example}\label{eq:edhejemplo1}
 Resolver:
 \begin{equation}
 (x-y)dx+xdy=0
@@ -650,7 +645,7 @@ Si hacemos las propiedades de la homogeneidad, notaremos que son homogéneas en 
 \begin{equation}\label{eq:edhejemplo2}
 \textbf{y=u$\cdot$x} \longrightarrow dy=udx+xdu
 \end{equation}
-Reemplazando \ref{eq:edhejemplo1} en \ref{eq:edhejemplo1}:
+Reemplazando \ref{eq:edhejemplo2} en \ref{eq:edhejemplo1}:
 \begin{displaymath}
 (x-ux)dx+x(udx+xdu)=0
 \end{displaymath}
@@ -677,7 +672,7 @@ Devolviendo la variable \textit{u}:
 \begin{equation*}
 \boxed{ln|x|+\frac{y}{x}=C}
 \end{equation*}
-\end{exercise}
+\end{example}
 \subsection{Ecuaciones Diferenciales de Bernoulli}
 Otro tipo de ecuación que se resuelven por sustitución son las ecuaciones diferenciales de Bernoulli.
 \begin{definition}
@@ -724,7 +719,7 @@ Multiplicando toda la expresión por (1-n):
 \frac{dw}{dx}+\underbrace{(1-n)P(x)}_{M}W=\underbrace{(1-n)Q(x)}_{N}
 \end{displaymath}
 Ahora es una E.D.L. y se procede con su procedimiento aprendido.
-\begin{exercise}
+\begin{example}
 Resolver:
 \begin{displaymath}
 \left(4-x^2\right)\frac{dy}{dx}+4y=(2+x)y^2
@@ -769,7 +764,7 @@ Devolviendo el cambio de variable $W=y^{(1-2)}$:
 \begin{equation}
 \boxed{y^{-1}=\left[ln|x+2|+C\right]\cdot\frac{x+2}{x-2}}
 \end{equation}
-\end{exercise}
+\end{example}
 %---------------------------------------------------------------
 %Chapter separation
 %---------------------------------------------------------------
@@ -1038,7 +1033,7 @@ F & A & B & C & Min término & Notación minterm & Max término & Notación maxt
 \caption{Notación de \textit{minterm} y \textit{maxterm}.}
 \label{tab:maxmin}
 \end{table}
-\begin{exercise}
+\begin{example}
 Se presenta la tabla \ref{tab:ejemplo1}, expresar la misma tabla como SOP y como POS.\\
 \textbf{SOP:}\\
 En SOP, solo nos fijamos en las salidas de nivel ALTO(1). Una vez que las hayamos ubicado escribimos las filas tal y como están expresando las entradas como un producto. Por ejemplo, el primer ALTO se encuentra en la posición de $F_1$, donde A y B son nivel BAJO y C es nivel ALTO. Escribimos, según la teoría, donde ALTO es A y BAJO es A', el primer sumando como: A'B'C. Repetimos el mismo paso para $F_3$, $F_4$, $F_5$, $F_6$ y $F_7$ puesto que tienen un nivel ALTO como salida. Si seguimos la bajo la lógica que se vio y sumando cada sumando obtendremos:
@@ -1058,7 +1053,7 @@ Según la tabla \ref{tab:maxmin} también puede ser simplificado:
 \begin{displaymath}
 F(A,B,C)=M_0M_2M_5
 \end{displaymath}
-\end{exercise}
+\end{example}
 \begin{table}[h]
 \centering
 \begin{tabular}{c|ccc|c}
@@ -1225,7 +1220,7 @@ Los teoremas siguientes son la base de la simplificación de circuitos complejos
 \end{theorem}
 \subsection{Dualidad}
 Cualquier teorema o identidad en el álgebra de conmutación continua siendo verdadero si tanto \textcolor{red}{0} y \textcolor{red}{1} como \textcolor{red}{$\cdot$} y \textcolor{red}{+} son intercambiados en todas partes.
-\begin{exercise}
+\begin{example}
 Dada la tabla \ref{tab:ejemplo2}, encuentre las formas canónicas de la forma POS y SOP:\\
 \textbf{Solución}\\
 \textbf{\textit{Salida R}}\\
@@ -1250,7 +1245,7 @@ R&=\prod M(0,3,5,6)
 R&=\underbrace{X'Y'Z}_{m_1}+\underbrace{X'YZ'}_{m_2}+\underbrace{XY'Z'}_{m_4}+\underbrace{XYZ}_{m_7}\\
 R&=\sum m(1,2,4,7)
 \end{align*}
-\end{exercise}
+\end{example}
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{c|ccc|c|l}
@@ -1316,7 +1311,7 @@ Recordemos que cuando trabajamos con SOP solo nos importa los 1 y para POS solo 
 \begin{remark}
 En los mapas de Karnaugh sí y solo sí se agrupan en grupos de base 2(1, 2, 4, 8...).  Siempre se prioriza agrupar la mayor parte de, se pueden compartir bits entre grupos pero siempre agrupando la mayor cantidad de bits.
 \end{remark}
-\begin{exercise}
+\begin{example}
 Expresar la siguiente expresión en un mapa de Karnaugh:
 \begin{displaymath}
 Z=\overline{A}\overline{B}CD+\overline{A}B\overline{C}\overline{D}+AB\overline{C}D+ABCD+AB\overline{C}\overline{D}+\overline{A}\overline{B}\overline{C}D+A\overline{B}C\overline{D}
@@ -1338,7 +1333,7 @@ Ya tenemos los números de casillas donde tenemos que colocar unos. Dibujamos nu
 %\indeterminants{2,5}
 \end{karnaugh-map}
 \end{center}
-\end{exercise}
+\end{example}
 \subsection{Agrupación de términos}
 Algo importante con los mapas de Karnaugh es la agrupación de términos que se mencionó anteriormente. La agrupación se hace una vez terminada la realización de los mapas de Karnaugh, se explicará con un ejemplo:\\
 Dada la función lógica:
@@ -1389,7 +1384,7 @@ Como resultado final, la expresión de 4 sumando puede ser expresada como 3 suma
 \boxed{Z=A+\overline{C}D+BC\overline{D}}
 \end{equation*}
 \end{center}
-\begin{exercise}
+\begin{example}
 Expresar la siguiente función lógica en mapa de Karnaugh:
 \begin{displaymath}
 Z=\overline{C}D+A\overline{B}C\overline{D}+A\overline{BCD}+AB\overline{CD}+BCD
@@ -1436,7 +1431,7 @@ La expresión en SOP es:
 Z=(A+D)\cdot (B+\overline{C}+\overline{D})\cdot (\overline{B}+\overline{C}+D)
 \end{displaymath}
 Nota que ahora A=0 y $\overline{A}$=1, el desarrollo es el mismo que SOP, solo ahora cada factor contiene sumas y se unen todos los factores mediante un producto.
-\end{exercise}
+\end{example}
 \begin{remark}
 En necesario no olvidar lo que caracteriza a SOP y POS:\\SOP es una \textbf{SUMA} donde cada sumando esta compuesto por \textbf{FACTORES}, aquí A=1 y $\overline{A}$=0.\\
 Por el otro lado POS es un \textbf{PRODUCTO} donde cada factor esta compuesto por \textbf{SUMAS}, aquí A=0 y $\overline{A}$=1.
@@ -1548,7 +1543,7 @@ Cuando el estado de salida de la puerta es n nivel alto, circula la corriente $I
 \begin{equation}\label{eq:disipaciondepotencia}
 I_{CC}=\frac{I_{CCH}+I_{ICCL}}{2}
 \end{equation}
-\begin{exercise}
+\begin{example}
 Por una determinada puerta circulan 2$\mu$ A cuando su salida esta a nivel Alto y 3.6$\mu$ A cuando esta a nivel bajo. ¿Cual es la disipación de potencia media si:
 \begin{itemize}
 \item La puerta esta en un estado de salida estático alto?
@@ -1581,7 +1576,7 @@ P_m=\frac{10\mu W + 18\mu W}{2}=14\mu W
 &P=16W
 \end{align*}\\
 \end{enumerate}
-\end{exercise}
+\end{example}
 La disposición en un circuito TTL es escencialmente constante denstro de su rango de frecuencias de operación. Para los CMOS depende de la frecuencia.
 \begin{figure}[H]
 \centering
@@ -1839,7 +1834,7 @@ Un ejemplo con prioridad es el IC74147, donde todas las entradas se activan con 
 \subsection{Decoder}
 Al contrario del encoder, el decoder es lo contrario: de \textit{n} entradas se puede manipular $2^n$ entradas. El número en binario se escribe empezando por el A1 (que es más significativo). Los decodificadores tienen su propia tabla de la verdad que representa los estado posibles de entrada y los respectivos valores de las salidas para cada uno de esos estados.\\
 De esta tabla de la verdad podemos sacar el circuito lógico combinacional con puertas lógicas, circuito lógico para construir nuestro decodificador.
-\begin{exercise}
+\begin{example}
 Diseñe 2 circuitos que al activarse cada uno de los pulsadores en la salida se visualicen los siguientes números en binario:
 \begin{enumerate}
 \item Pulsador 1: 14
@@ -1890,7 +1885,7 @@ U_2&=P_1
 \begin{center}
 \includegraphics[scale=0.4]{SD/SD38.png}
 \end{center}
-\end{exercise}
+\end{example}
 \section{Multiplexor y Demultiplexor}\index{Multiplexor y Demultiplexor}
 \subsection{Multiplexor}
 Circuito combinacional al que entran varios canales y solo sale uno de ellos.
@@ -2003,7 +1998,7 @@ $S_1$ & $S_1$ & $O_3$ & $O_2$ & $O_1$ & $O_0$ \\ \hline
 \end{align*}
 \end{center}
 \end{multicols}
-\begin{exercise}
+\begin{example}
 Usando el IC 74HCT4051, expresar la siguiente expresión de un demultiplexor:
 \begin{displaymath}
 F=C\overline{BA}+\overline{C}B\overline{A}+\overline{C}BA+CBA+\overline{CB}A
@@ -2014,7 +2009,7 @@ Para poder implementarlo con el IC, necesitamos que la expresión este en su for
 \includegraphics[scale=0.4]{SD/SD45.png}
 \end{center}
 Cada vez que en las entradas de selección se logre colocar cualquiera de los sumandos de la función F la salida será 1.
-\end{exercise}
+\end{example}
 \section{Latch}\index{Latch}
 El latch(cerrojo) es un tipo de dispositivo de almacenamiento temporal de dos estados(biestable).
 \subsection{Latch S-R(Set-Reset)}
@@ -2376,7 +2371,7 @@ Por eso necesitamos caracterizar:
 \item Estado inicial de Q
 \end{itemize}
 Puede ser un poco complicado de entender, vamos a hacer un ejercicio para entender mejor.
-\begin{exercise}
+\begin{example}
 Con:
 \begin{itemize}
 \item X=($X_0$)
@@ -2451,7 +2446,7 @@ $q_0^+$ &   & 0 & 1   & 1   & 0   & 1   & 1   \\ \hline
 $q_1^+$ &   & 0 & 0   & 0   & 1   & 0   & 0   \\ \hline
 \end{tabular}
 \end{center}
-\end{exercise}
+\end{example}
 \section{Grafos de estados}\index{Grafos de estados}
 Grafos de estados o diagramas de estado son una forma de expresar las tablas de transición, el formato es el siguiente:
 \begin{center}
@@ -2478,7 +2473,7 @@ Su grafo correspondiente es:
 \includegraphics[scale=0.8]{SD/SD88.png}
 \end{center}
 El \textbf{estado inicial} es representado con el dobe circulo.
-\begin{exercise}
+\begin{example}
 Dada la tabla de transición de un CLS, dibuja su grafo de estados:\\
 \begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
@@ -2528,9 +2523,9 @@ Nota que algunas flechas tiene dos estados, por ejemplo: 01/11 o 11/10. Cuando t
 \begin{center}
 \includegraphics[scale=0.8]{SD/SD90.png}
 \end{center}
-\end{exercise}
+\end{example}
 Aplicando la teoría a un ejemplo más real:
-\begin{exercise}
+\begin{example}
 Tenemos un contador desde 0 al 5, con entradas $x_1$ y $x_0$. Hacer el grafos teniendo en cuenta que $x_1$=+1 y $x_0$=-1 con estado inicial en 0,0.\\
 \textbf{Solución:}\\
 Desde el 0 al 5 tenemos 6 números, por lo tanto haremos que cada número en binario sea un estado teniendo un total de 6, así que necesitaremos $2^3$=8 estados(como solo necesitamos 6 dos estados no serán usados):\\
@@ -2682,7 +2677,7 @@ Ya solo nos queda simplificar las salidas $q^+$:\\
 \end{karnaugh-map}
 \end{center}
 Ya solo nos queda expresar en la forma de funciones lógicas y podemos implementar el circuito.
-\end{exercise}
+\end{example}
 %----------------------------------------------------------------------------------------
 \part{Smart cities}
 \chapterimage{chapter_head_SM.pdf} % Chapter heading image
@@ -3543,9 +3538,9 @@ f(x)=\left\{\begin{aligned} & \mathrm{e}^{|x|} & & \text{si $|x-x^0|\leq 1/2$}\\
 
 This is an example of an exercise.
 
-\begin{exercise}
+\begin{example}
 This is a good place to ask a question to test learning progress or further cement ideas into students' minds.
-\end{exercise}
+\end{example}
 
 %------------------------------------------------
 
@@ -3624,7 +3619,7 @@ $V_{cc}$: La entrada de alimentación de un dispositivo.(Voltios)\\
 DC: Duty cycle.(porcentaje)\\
 $V_p$: Voltaje promedio.
 \end{definition}
-\begin{exercise}
+\begin{example}
 Se desea un voltaje promedio de 1V con voltaje de entrada de 5V, calcular el tiempo que la señal pwm estará apagada.\\
 \textbf{Solución:}\\
 Nos pide el tiempo, aunque no nos da el tiempo para calcularlo en segundos(usando la ecuación \ref{eq:dutycicle}), pero podemos hallarlo en porcentaje. Por ello, usando la ecuación \ref{eq:Vprom} reemplazamos nuestros datos, tenemos que hallar DC:
@@ -3636,7 +3631,7 @@ DC&=20
 \end{split}
 \end{equation}
 El 20\% hallado es el duty cycle, es el tiempo que valdrá 5V, nos pide el tiempo que estará apagada o donde valdrá 0V, el 80\% restante del periodo total.
-\end{exercise}
+\end{example}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -4981,7 +4976,7 @@ A manera de recordar,tenemos el conocimiento acerca de los hilos necesarios para
 \caption{Hilos en la troncal}
 \label{fig:Hilos en troncal}
 \end{figure}
-\begin{exercise}
+\begin{example}
 En el diseño de una red telefónica se ha establecido que la ruta directa entre las centrales A y B debe ser capaz de mantener en promedio unas 86 llamadas simultáneas.\\
 ¿Cuantos pares de hilos de cobre debe tener el cable  que se instale en esta ruta?\\
 ¿Cuántos de esos pares se van a dedicar a señalización?
@@ -5003,7 +4998,7 @@ T_s=\frac{258}{3}=86
 \end{equation}
 \end{center}
 Son 86 pares de cobre dedicados a la señalización.
-\end{exercise}
+\end{example}
 \section{Planta interna y externa}\index{Planta interna y externa}
 Se forma de los siguientes componentes:
 \subsection{Planta Interna}
@@ -5122,7 +5117,7 @@ V_t=n\times d
 Donde:\\n:número de llamadas.\\
 d:duración promedio de cada llamada.
 \end{definition}
-\begin{exercise}
+\begin{example}
 Una central telefónica tiene 3 troncales. 
 \begin{enumerate}
 \item Ha cursado 5 llamadas cada una con un promedio de duración de 10 min.
@@ -5162,7 +5157,7 @@ V_t=50min+40min+21min
 V_t=111min
 \end{equation*}
 \end{enumerate}
-\end{exercise}
+\end{example}
 Algunas unidades para medir el volumen han sido creadas para su mejor compresión:
 \begin{itemize}
 \item \textbf{Llamada reducida(LLR)} es un tiempo de ocupación de 2 min.
@@ -5196,7 +5191,7 @@ Para que la intensidad pueda ser medida en Erlangs es esencial que tanto el volu
 \end{definition}
 \subsubsection{Erlang}
 El Erlang es independiente del tiempo de observación , por ejemplo, si se tiene un canal de datos que cursa un tráfico de 1 hora en un periodo de 1 hora se dice que la intensidad de tráfico es 1 Erlang, ahora si se tiene otro canal que cursa un tráfico de 1 día en un periodo de 1 día también se dirá que hay una intensidad de tráfico de 1 Erlang. Por lo general se toma 1 hora de observación, por ejemplo, si una oficina tiene dos operadores de teléfonos y ambos están ocupados durante todo el tiempo, esto representa 2 Erlangs de tráfico, o si un canal de radio está ocupado durante treinta minutos en una hora se dice que soporta un tráfico de 0.5 Erlangs. De forma alternativa, un Erlang puede ser considerado como "multiplicador de utilización" por unidad de tiempo, así un uso del 100\% corresponde a 1 Erlang, una utilización de 200\% son 2 Erlangs, y así sucesivamente. Por ejemplo, si el uso total del móvil en un área por hora es de 180 minutos, esto representa 180/60 = 3 Erlangs.
-\begin{exercise}
+\begin{example}
 5 circuitos de una central de conmutación, cursan cada uno de ellos 32 llamadas de una duración media de 2 minutos cada una.
 \begin{enumerate}
 \item Calcular el volumen de tráfico en minutos.
@@ -5222,8 +5217,8 @@ Una vez que están en segundos recien podemos hacer la conversión:
 V_t=\frac{19200s}{100s}=192CCS
 \end{equation*}
 \end{enumerate}
-\end{exercise}
-\begin{exercise}
+\end{example}
+\begin{example}
 Calcular la intensidad de tráfico por un aparato telefónico, que cursa 27 llamadas de una duración media de 5 minutos, en un día.\\
 \textbf{Solución}\\
 \begin{equation*}
@@ -5237,7 +5232,7 @@ Ahora podemos calcular la intensidad de tráfico en Erlangs, es por ello que usa
 \begin{equation}
 I_t=\frac{2.25}{24}=0.09375\thinspace Erlangs
 \end{equation}
-\end{exercise}
+\end{example}
 \subsubsection{Hora cargada}
 En la práctica suele tomarse como Tiempo de Observación, la denominada hora cargada (HC); es el período de 60 minutos consecutivos durante los cuales el volumen de tráfico es máximo. Al ser una hora de uso, es común modificar las anteriores medidas(LLR y CCS)para que puedan ser usadas con esta hora.
 \begin{itemize}
@@ -5372,7 +5367,7 @@ Viendo la figura \ref{fig:Forma general} vemos que consta(generalmente) de 2 niv
 \caption{Generalidades}
 \end{figure}
 Sabiendo esto y usando el ejemplo de la figura \ref{fig:Rutas} podemos expresar todas las maneras posibles de ruteo, en otras palabras, las diferentes formas en las que A,C y T pueden llegar a B; B, T y A pueden llegar a C y B, C y T pueden llegar a A.
-\begin{exercise}
+\begin{example}
 Hallar la ruta de encaminamiento para A de la figura \ref{fig:Rutas}:\\
 \textbf{Solución}\\
 Viendo la figura tenemos 3 orígenes de tráfico: B, C y T. Por lo tanto habrá 3 "fuentes" de tráfico que irán hacia A.\\
@@ -5384,7 +5379,7 @@ Con eso tenemos dos rutas cubiertas.\\
 \textbf{Para T-A}\\
 Sabemos por la figura \ref{fig:Forma general} que nuestro tráfico va primero por la central directa A-B(C), y luego va por la central hacia B(S), es así que de la figura del ejercicio T no es una central, al contrario, es una \textbf{central de paso}, es por eso que ahora no vamos a representar el camino T-A como lo soliamos hacer usando de referencia el esquema de \ref{fig:Forma general}, sino que haremos una pequeña variación. Como esta es la central alternativa, ignoraremos totalmente  las troncales directas A-B, lo hacemos por que esta troncal ya hemos analizado debido a que en este ejemplo ya hay una ruta directa B-A. Entonces solo nos quedaría: el tráfico de desbordamiento, troncales hacia A(no confundir con troncales directas B-A) y el tráfico perdido.\\
 Tenemos 3 diagramas por separado, pero algo en común de los 3 son las troncales hacia A, podemos decir, de manera coloquial que, vamos a factorizar estas troncales para unir los 3 diagramas. El resultado final seria la figura \ref{fig:ejemploA}	
-\end{exercise}
+\end{example}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{SisTelefonia/st43.png}
@@ -5440,7 +5435,7 @@ Lo sé, es mucha teoría pero no se entiende. Primero antes de hacer un ejercici
 \caption{Encaminamiento de ejemplo}
 \label{fig:ejemenca}
 \end{figure}
-\begin{exercise}
+\begin{example}
 Dada la figura \ref{fig:ejemenca}, encaminar una llamada desde N hasta P de la red.\\
 \textbf{Solución:}\\
 \textbf{Primera opción:} Felizmente podemos usar el primer criterio, tenemos todo para ello: N es usuario, como único camino tenemos la sección final hacia H(centro primario); que nos dice el primer criterio:...\textit{entre la central donde se decide el encaminamiento y la central de destino final de la llamada existe una sección directa, se encaminara el trafico por esta como primera opción}...; nuestra central(la única) es H, la central de destino es P, ¿Existe una sección directa? Sí, entonces nos encaminamos por esa ruta, por lo tanto como primera alternativa tenemos:
@@ -5466,7 +5461,7 @@ Es asi que, por esa aclaracion tenemos como resultado final:
 N>H>D>A>B>E>I>P
 \end{displaymath}
 Esta respuesta se ve graficada en el imagen \ref{fig:solu6.5}.
-\end{exercise}
+\end{example}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{SisTelefonia/st49.png}
@@ -5926,7 +5921,7 @@ $V_{bin}$: Tasa de transmisión de bits.\\
 $f_s$: Frecuencia de muestreo.\\
 nbm: Número de bits por muestra.
 \end{definition}
-\begin{exercise}
+\begin{example}
 Con un rango de frecuencia de voz de 4kHz, y una resolución de 8 bits por muestra, se puede calcular, la transmición binaria, primero, usando la ecuación \ref{eq:Nyquist} obtenemos:
 \begin{equation}
 \begin{split}
@@ -5942,7 +5937,7 @@ V_{bin}&=8000m/s \times 8bits/m\\
 V_{bin}&=64kbps
 \end{split}
 \end{equation}
-\end{exercise}
+\end{example}
 \subsubsection{CODECs}
 Los CODECS nos dan la posibilidad de utilizar menos ancho de banda por canal de voz. Permitiéndonos pasar más canales de voz (llamadas) por la red.
 \begin{itemize}
@@ -6050,7 +6045,7 @@ Es cuando todos los circuitos capaces de cursar tráfico en una central están o
 \part{Internetworking 1}
 \chapterimage{chapter_head_IN1.pdf} % Chapter heading image
 \chapter{Introducción y conceptualización}
-\section{Introducción}
+\section{Introducción}\index{Introducción}
 Se explicarán algunos conceptos previos necesarios y recordar conocimientos del curso de \textbf{Tecnologías e infraestructura}.
 \subsection{Hardware de redes}
 Existe dos tipos de tecnología de transmisión: enlaces de \textbf{difución}(\textit{broadcasting}) y enlaces \textbf{punto a punto}(\textit{p2p-peer to peer}). Para el enlace punto a punto se conectan dos pares individuales de maquinas, aunque para esta conexión es necesaria muchas veces el pasar entre otras máquinas intermedias. A la transmisión entre solo un emisor y un receptor es llamado \textbf{unidifusión}(\textit{unicasting}).\\
@@ -6099,7 +6094,7 @@ El \textbf{orientado a la conexión} es una conexión en el cual se ocupa una li
 \end{tabular}
 \caption{Seis tipos distintos de servicios}
 \end{table}
-\section{Modelo OSI}
+\section{Modelo OSI}\index{Modelo OSI}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.8]{IN1/IN1.png}
@@ -6130,7 +6125,7 @@ Este nivel se encarga directamente de los \textbf{elementos físicos} de la cone
 Define el medio físico de transmisión: cables de pares trenzados, cable coaxial, ondas y fibra óptica. Maneja las señales eléctricas y transmite el flujo de bits. Define las características de los materiales, como conectores y niveles de tensión.\\
 La Capa Física, que representa la representación \textbf{eléctrica} y física del sistema. Esto puede incluir todo, desde el tipo de cable, el enlace de radiofrecuencia (como en un sistema inalámbrico 802.11), así como la disposición de los pines, los voltajes y otros requisitos físicos. Cuando ocurre un problema de red, muchos profesionales de redes van directamente a la Capa Física para verificar que todos los cables estén conectados correctamente y que el enchufe no se haya desconectado del router, interruptor o computadora, por ejemplo.
 Algunas normas relativas a este nivel son: ISO 2110, EIA-232, V.35, X.24, V24, V.28
-\section{Modelo TCP/IP}
+\section{Modelo TCP/IP}\index{Modelo TCP/IP}
 TCP/IP fue desarrollado por el Departamento de Defensa de EE. UU. para especificar el modo en que los equipos transfieren datos de un dispositivo a otro. TCP/IP incide mucho en la precisión y dispone de varios pasos para garantizar la correcta transmisión de los datos entre ambos equipos. El propósito de las capas es crear un sistema estandarizado, sin que los distintos fabricantes de hardware y software tengan que gestionar la comunicación por su cuenta. Es como conducir un coche: todos los fabricantes convienen en la posición de los pedales, así que no tenemos que tener eso en cuenta al cambiar de coche. También significa que es posible actualizar determinadas capas, por ejemplo, para mejorar el rendimiento o la seguridad, sin tener que actualizar todo el sistema.
 \subsection{Capa de enlace de datos}
 También denominada capa de enlace, capa de interfaz de red o capa física. Es la primera capa del modelo y ofrece la posibilidad de \textbf{acceso físico} a la red manejando las partes físicas del envío y \textbf{recepción} de datos mediante el cable Ethernet, la red inalámbrica, la tarjeta de interfaz de red, el controlador del dispositivo en el equipo, etcétera. (que bien puede ser en anillo, ethernet, etc.), especificando el modo en que los datos deben \textbf{enrutarse} independientemente del tipo de red utilizado.
@@ -6174,15 +6169,34 @@ Power Line Communication, se trata de una serie de tecnologías que permiten usa
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
-\part{Líneas de transmión}
+\part{Líneas de transmisión}
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_LT.pdf} % Chapter heading image
 
-
+\newpage
+\section*{Vocabulario}
+\begin{vocabulary}[Refracción]
+Es el cambio de dirección de una onda tras pasar de un medio a otro en el que se propaga con distinta velocidad. Es regida por dos leyes: El rayo incidente, el refractado y la normal a la superficie en el punto de incidencia están en el mismo plano. La ley de Snell de la refracción, que marca la relación entre el ángulo de incidencia ($\alpha$) y el de refracción($\beta$) , y las velocidades de las ondas en los medios 1 y 2, $v_1$ y $v_2$, según:
+\begin{displaymath}
+\frac{\sin(\alpha)}{\sin(\beta)}=\frac{V_1}{V_2}=n
+\end{displaymath}
+Donde \textit{n} es el indice de refracción del segundo medio respecto al primero. La refracción se vale de la ley de \textbf{Snell}.
+\end{vocabulary}
+\begin{vocabulary}[Reflexión]
+La reflexión es el cambio de dirección de una onda que experimenta una onda cuando choca a una superficie de un medio distinto. Se establecen dos leyes:
+\begin{itemize}
+\item El rayo incidente, el reflejado y la normal a la superficie en el punto de incidencia están en el mismo plano.
+\item El ángulo del rayo incidente es igual al ángulo de reflexión.
+\end{itemize}
+Esta se vale del principio de \textbf{Huygens}.
+\end{vocabulary}
+\begin{vocabulary}[Difracción]
+Fenómeno ondulatorio que ocurre cuando una onda se reproduce al atravesar una abertura u orificio. El fenómeno es causado cuando el tamaño del orificio es del mismo orden que la longitud de onda del movimiento ondulatorio.
+\end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
-\part{Microcontrolador y microprocesador}
+\part{Microcontrolador\\y microprocesador}
 \chapterimage{chapter_head_MM.pdf} % Chapter heading image
 
 %----------------------------------------------------------------------------------------
@@ -6191,6 +6205,311 @@ Power Line Communication, se trata de una serie de tecnologías que permiten usa
 \part{Ingeniería en mantenimiento}
 \chapterimage{chapter_head_IM.pdf} % Chapter heading image
 \chapter{Aspectos introductorios}
+\section{Mediciones de radiofrecuencia}\index{Mediciones de radiofrecuencia}
+\subsection{¿Qué es radio enlace?}
+El Radio Enlace o radioenlace punto a punto, es un sistema de conexiones entre dos o más terminales (antenas) que utilizan ondas electromagnéticas para transmitir datos, ya sea para dar servicios de operador VoIP, servicios de telefonía móvil para empresas, Internet, etc.\\
+El equipo terminal esta compuesto por: antena, alimentador, radio y multiplexor. Los sistemas de radio de basan en el envío de ondas electromagnéticas a través del espacio libre para poder unir un equipo terminal con otro equipo terminal.\\
+El radio digital convierte el tren de pulsos en una señal modulada en PSK en alta frecuencia:
+El radio esta compuesto de modulador ,transmisor, receptor y demodulador. Dos radio digitales con antenas que se miran forman un radioenlace.
+\begin{table}[H]
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\rowcolor[HTML]{68CBD0} 
+Banda & Mux & Velocidad de bits & Modulación & Alimentador  & Antenna         \\ \hline
+VHF   & 2   & 64-128 kbit/s     & PSK        & Coaxial      & Yagui           \\ \hline
+UHF   & 30  & 2 MBit/s          & 4-PSK      & Coaxial      & Semi-parabolica \\ \hline
+SHF   & PDH & 8, 34, 140 Mbit/s & 16-QAM     & Guía de onda & Parabólica      \\ \hline
+SHF   & SDH & 565 Mbit/s        & 128-QAM    & Guía de onda & Parabólica      \\ \hline
+\end{tabular}
+\caption{Bandas de radio enlace digital}
+\end{table}
+\subsection{Bandas de frecuencia}
+Las señales eléctricas que contienen información se transmiten a través de una determinada distancia empleando una diversidad de medios de transmisión tales como par de alambres, cable multipar, cable coaxial, cable UTP, Sistemas de Radio y Fibras ópticas. Una señal eléctrica es una forma de onda electromagnética caracterizada por una determinada frecuencia y longitud de onda que se encuentra dentro de una banda frecuencia del espectro electromagnético y para cada banda se necesita utilizar un medio de transmisión adecuado.
+% Please add the following required packages to your document preamble:
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+\begin{table}[H]
+\begin{tabular}{|m{0.15\linewidth}|m{0.15\linewidth}|m{0.3\linewidth}|m{0.4\linewidth}|}
+\hline
+\rowcolor[HTML]{F8FF00} 
+\begin{tabular}[c]{@{}l@{}}Medio de\\ transmisión\end{tabular}                                                                                & \begin{tabular}[c]{@{}l@{}}Longitud\\ de Onda\end{tabular} & \begin{tabular}[c]{@{}l@{}}Banda de\\ frecuencia\end{tabular}                                           & Aplicaciones                                                                                                                                                                                                                                                          \\ \hline
+Fibras ópticas                                                                                                                                & 3-0.3$\mu$m                                                & \begin{tabular}[c]{@{}l@{}}Ultravioleta\\ Luz visible\\ Infrarojo\\ $10^2-10^3$ THz\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Telefonia de muy alta capacidad.\\ Servicios de banda ancha\\(SONET, SDH y ATM),\\Video conferencia, CATV por F. O.\end{tabular}                                                                                                            \\ \hline
+\begin{tabular}[c]{@{}l@{}}Guías de onda\\de línea visual\end{tabular}                                                                     & 1-0.1 cm                                                   & \begin{tabular}[c]{@{}l@{}}30-300 GHz\\ Extremadamente\\ Alta frecuencia (EHF)\end{tabular}             & \begin{tabular}[c]{@{}l@{}}Comuniaciones militar por satelite,\\radioastronomia\\sistemas de aterrizaje\\por radar.\end{tabular}                                                                                                                                      \\ \hline
+{\color[HTML]{34FF34} \begin{tabular}[c]{@{}l@{}}Guías de onda\\de línea visual\end{tabular}}                                              & {\color[HTML]{34FF34} 10-1 cm}                             & {\color[HTML]{34FF34} \begin{tabular}[c]{@{}l@{}}3-30 GHz\\ Super alta frec.\\ (SHF)\end{tabular}}      & {\color[HTML]{34FF34} \begin{tabular}[c]{@{}l@{}}Comunicaciones vía satelite,\\radio microonda análogico,\\radio microonda digital\\y sistema de operación\\aérea por radar.\end{tabular}}                                                                              \\ \hline
+{\color[HTML]{3531FF} Onda directa}                                                                                                           & {\color[HTML]{3531FF} 100-10 cm}                           & {\color[HTML]{3531FF} \begin{tabular}[c]{@{}l@{}}0.3-3 GHz\\ Ultra alta frec.\\ (UHF)\end{tabular}}     & {\color[HTML]{3531FF} \begin{tabular}[c]{@{}l@{}}Video Difusión (UHF),\\telemetría por radar,\\comunicación militar por\\satélite, multiacceso radial\\UHF, radio PCM,  multiacceso\\digital, telefonía celular,\\radio digital de espectro\\ensanchado\end{tabular}} \\ \hline
+{\color[HTML]{FE0000} \begin{tabular}[c]{@{}l@{}}Cable coaxial\\ cable UTP\\(CAT5) Onda directa\end{tabular}}                                & {\color[HTML]{FE0000} 10-1 m}                              & {\color[HTML]{FE0000} \begin{tabular}[c]{@{}l@{}}30-300 MHz\\ Muy alta frecuencia\\ (VHF)\end{tabular}} & {\color[HTML]{FE0000} \begin{tabular}[c]{@{}l@{}}Video difusión (VHF), radio difusión\\FM, multiacceso radial\\VHF, sistema CATV,\\radio monocanal y radio\\enlace para cursar voz-datos.\end{tabular}}                                                                 \\ \hline
+\begin{tabular}[c]{@{}l@{}}Cable coaxial,\\cable UTP\\(CAT 3), cable\\UTP (CAT 4),\\onda de cielo\\(reflexión de\\la ionosfera)\end{tabular} & 100-10 m                                                   & \begin{tabular}[c]{@{}l@{}}3-30Mhz\\ Alta frecuencia\\ (HF)\end{tabular}                                & \begin{tabular}[c]{@{}l@{}}Radio aficionados, comunicaciones\\militares,radio telefonía móvil,\\y comunicación marítima.\end{tabular}                                                                                                                                \\ \hline
+\end{tabular}
+\end{table}
+\section{Decibelios como medida}\index{Decibelios como medida}
+Esta sección es hablada en la capítulo \ref{chap:decibelios}, dale una leída y vuelve aquí para revisar ejercicios y algunas cosas que no se detallan en ese capítulo.
+\begin{example}[Generador de audio]
+\label{exa:01}
+Dado un generador de audio calibrado en 0dBm a 600$\Omega$, 1kHz.
+\begin{center}
+\includegraphics[scale=0.5]{IM/IM1.png}
+\end{center}
+Calcular:\\
+\begin{enumerate}
+\item Determinar en mV, la señal que se recibe en un medidor de nivel si la
+medida es hecha a 600 $\Omega$.
+\item Determinar en mV, la señal que se recibe en un medidor de nivel si la
+medida es hecha a 75 $\Omega$.
+\end{enumerate}
+\textbf{Solución:}\\
+Para el primer punto, nos esta ofreciendo el dato en \textbf{dBm}, usando la eq. \ref{art:dbm} pero ten en cuenta que sabemos que es 0dBm, no nos esta dando la potencia. Planteamos:
+\begin{align*}
+0dBm&=10\cdot\log_{10}\left(\frac{P_{out}}{1mW}\right)dBm\\
+0dBm&=\cdot\log_{10}\left(\frac{P_{out}}{1mW}\right)dBm\\
+0&=\log_{10}\left(\frac{P_{out}mW}{1mW}\right)\\
+10^0&=\frac{P_{out}}{1mW}\\
+P_{out}&=1mW\simeq 10^{-3}W
+\end{align*}
+Ya tenemos la potencia de salida en watts, nos pide la señal que recibe el medidor con una resistencia de 600$\Omega$, usando la ecuación de potencia \ref{eq:potencia}:
+\begin{align*}
+V=&\sqrt{P\cdot R}\\
+V=&\sqrt{10^{-3}\cdot 600\Omega}
+\end{align*}
+\begin{equation*}
+\boxed{V=0.7745V\simeq 774.5mV}
+\end{equation*}
+Este proceso resulto fácil pues la medida es hecha a 600$\Omega$, y pues nuestro circuito ya esta hecho para esa resistencia.\\
+\textbf{El punto 2} nos habla de otra carga a 75$\Omega$. Para ello usaremos el dato del inciso 1 para obtener al valor de la fuente del generador:
+\begin{center}
+\includegraphics[scale=0.5]{IM/IM2.png}
+\end{center}
+El valor hallado en el punto 1 es el valor de entrada para el medidor, usando un divisor de voltaje:
+\begin{align*}
+0.7785=&\frac{E_g\cdot 600}{600+600}\\
+E_g=&1.549V
+\end{align*}
+Bien, ya hallamos el voltaje de la fuente. Ahora tenemos lo datos para cambiar la carga de 600$\Omega$ por 75 $\Omega$ en el medidor de nivel:
+\begin{center}
+\includegraphics[scale=0.5]{IM/IM3.png}
+\end{center}
+Nuevamente, usando un dividor de voltaje:
+\begin{align*}
+E_x&=\frac{1.54\cdot 75}{600+75}
+\end{align*}
+\begin{equation*}
+\boxed{E_x=0.1721V}
+\end{equation*}
+Calculando la potencia de salida del generador para un medidor desadaptado:
+\begin{align*}
+P_x&=\frac{0.1721^2}{75}\\
+P_x&=0.394 mW
+\end{align*}
+Expresando $P_x$ en dBm:
+\begin{align*}
+L_{P/1mW}&=10\cdot \log_{10}\left(\frac{0.394mW}{1mW}\right)dBm\\
+L_{P/1mW}&=-4.04dBm
+\end{align*}
+Analizamos las respuestas como: Si tenemos un generador a 600$\Omega$ con lineas de transmisión a 600$\Omega$ y medidor a 600$\Omega$, si yo generó 0dBm en el generador, al medidor me llegará 0dBm: calibración exitosa, pero si cambiamos tan solo el receptor a 75$\Omega$, no me va llegar los 0dBm generados, sino me llegará aproximadamente los -4.04dBm, cosa que esta mal.
+\end{example}
+\begin{remark}
+En el calculo de la potencia usando la ecuación \ref{eq:potencia} y en el contexto de decibelios, el voltaje \textit{V} hallado es normalmente el voltaje eficaz $V_{rms}$\\
+\begin{equation}
+\label{eq:vrms}
+V_{rms}=\frac{V_p}{\sqrt{2}}
+\end{equation}
+\textit{El voltaje eficaz es el voltaje pico entre la raíz de 2.}\\
+No olvidando que el valor pico a pico($V_{pp}$) es dos veces el valor pico($V_p$)
+\end{remark}
+\begin{definition}[Potencia Isotrópica Radiada Equivalente]
+Cantidad de potencia que emitiría una antena isotrópica teórica para producir la densidad de potencia observada en la dirección de máxima ganancia de una antena.\\
+Definida como:
+\begin{equation}
+\label{eq:Pire}
+P_{IRE}=P_t-L_c+G_a
+\end{equation}
+Donde:\\
+\begin{itemize}
+\item $P_t$: Potencia del transmisor.(dBm)
+\item $L_c$: Perdidas de cable.(dB)
+\item $G_a$: Ganancia de la antena. (dBi, relativo a la antena de referencia isotrópica)
+\end{itemize}
+\end{definition}
+\begin{example}
+Se tiene un transmisor de 100 WATTS que opera en la banda HF, con cable coaxial de atenuación de 1,7 dB/100m y una antena de ganancia de 10 dBi. Calcular la potencia radiada efectiva.\\
+\begin{center}
+\includegraphics[scale=0.5]{IM/IM4.png}
+\end{center}
+\textbf{Solución}:
+Usando la ecuación \ref{eq:Pire}, debemos acomodar nuestros datos. Empezamos con el calculo de $P_{tx}$=100W:
+\begin{align*}
+L_{P/1mW}&=10\cdot \log_{10}\left(\frac{100\times ^3mW}{1mW}\right)dBm\\
+L_{P/1mW}&=50dBm
+\end{align*}
+El \textbf{calculo por perdida en el cable}, vemos que el total de cable es de 150m: 50 desde el transmisor a la antena y 100m de altura de la antena:
+\begin{align*}
+L_c&=150m\times\frac{1.7dB}{100m}\\
+L_c&=2.55dB
+\end{align*}
+Reemplazando los datos obtenidos en \ref{eq:Pire}:
+\begin{align*}
+P_{IRE}&=50-2.55+10\\
+P_{IRE}&=54.45 dBm
+\end{align*}
+Podemos pasar de dBm a Watts:
+\begin{align*}
+57.45dBm&=10\cdot \log_{10}\left(\frac{P_{IRE}mW}{1mW}\right)dBm\\
+P_{IRE}&=555.9 W
+\end{align*}
+\end{example}
+\begin{example}[Atenuadores]
+Se tiene un transmisor en la banda UHF con una salida de potencia RF de 27 dBm. Encontrar la configuración de atenuadores adecuada para que
+pueda ser medido con un Watímetro de rango 0 a -15dBm y no dañe el instrumento.\\
+\begin{center}
+\includegraphics[scale=0.5]{IM/IM5.png}
+\end{center}
+\begin{center}
+\includegraphics[scale=0.5]{IM/IM6.png}
+\end{center}
+\textbf{Solución:}\\
+Antes de seguir, vamos a recalcar que es un \textbf{atenuador}, vamos a calcular los niveles a través de cada atenuado para cada opción. La salida del transmisor es de 27dBm, para cada opción restamos el valor de cada atenuador:
+\begin{center}
+\includegraphics[scale=0.35]{IM/IM7.png}
+\end{center}
+Se descarta la opcion C ya que el nivel final antes de entrar al vatímetro es de 12 dBm, estando fuera del rango de 0 a -15 dBm del vatímetro y en consecuencia puede dañar el instrumento. Aún nos quedan dos opciones, ahora debemos de analizar a nivel de potencia. Analicemos la opción a nivel de \textbf{potencia}:
+\begin{align*}
+27=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
+P_{out}&=0.5W
+\end{align*}
+Ya salida en watts del transmisor es de 0.5W pero vemos que su primer atenuador solo resiste 0.2W, por lo tanto no es adecuado. Descartando así la opción a. Probamos la opción b si es correcta o incorrecta, ojo, analizamos el segundo atenuador de la opción b, pues el primer atenuador resiste 1W, así que no habrá problema:
+\begin{align*}
+17=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
+P_{out}&=0.005W
+\end{align*}
+La potencia es de 0.005W cuando el segundo atenuador puede aguantar 0.1W y no habrá problema, así que la opción correcta es la b.
+\end{example}
+\begin{exercise}
+Es un sistema de recepción TV satélite, la unidad interna tiene una impedancia de entrada de 50 W y el fabricante indica en su catalogo que
+el nivel de señal mínimo de entrada es de - 60 dBm.
+\begin{itemize}
+\item Cual es el nivel en $\mu$V. Rpta: 223.6$\mu$V
+\item Cual es el nivel en dB$\mu$V. Rpta: 46.98dB$\mu$V
+\item Cual es la Potencia mW: Rpta: 1mW
+\end{itemize}
+\end{exercise}
+\begin{exercise}
+La salida de un Tx de M.O. tiene un nivel de potencia de 27dBm. Hallar:
+\begin{itemize}
+\item Hallar el valor de la potencia en W: Rpta: 0.5W
+\item Convertir en mv en 50$\Omega$. Rpta: 5$V_{rms}$.\footnote{Revisar la teoría del decibel en la sección de artilugios matemáticos.}
+\item Encontrar el $V_m$. Rpta: 7.07mV
+\item Encontrar el $V_{pp}$. Rpta: 14.14mV
+\end{itemize}
+\end{exercise}
+\begin{example}[Factor de corrección]
+Basado en el ejemplo \ref{exa:01}:\textbf{generador de audio}, hallar el factor de corrección en caso no se trabaje con 600$\Omega$.\\
+\textbf{Solución:}\\
+Empezamos con la relación de dBm, y escribimos su equivalencia usando la forma de la potencia, en este caso asumimos que estamos trabajando a 600$\Omega$:
+\begin{displaymath}
+L_{P/1mW}=10\cdot\log\left(\frac{PmW}{1mW}\right)=10\cdot\log\left(\frac{\frac{V^2}{Z}}{\frac{0.775^2}{600}}\right)
+\end{displaymath}
+Tan solo hemos puesto sus equivalentes, como nos dice \textbf{si la impedancia en un punto es diferente de 600$\Omega$}, es por ello que arriba en la potencia lo pusimos en función de variables mientras que con 1mW, hacemos el proceso inverso usando 600$\Omega$ y la relación de potencia-resistencia y se halla que el voltaje es 0.775V.\\Agrupando términos:
+\begin{displaymath}
+L_{P/1mW}=10\cdot\log\left[\left(\frac{V}{0.775}\right)\cdot\frac{600}{R}\right]
+\end{displaymath}
+Usando propiedades de los logaritmos, ordenamos algebraicamente:
+\begin{displaymath}
+L_{P/1mW}=20\cdot\log\left(\frac{V}{0.775}\right)+10\cdot\log\left(\frac{600}{R}\right)=20\cdot\log\left(\frac{V}{0.775}\right)-10\cdot\log\left(\frac{R}{600}\right)
+\end{displaymath}
+Nos fijamos en el segundo valor, ese es nuestro factor de corrección
+\begin{equation*}
+\boxed{Fc=10\cdot\log\left(\frac{600}{R}\right)=-10\cdot\log\left(\frac{R}{600}\right)}
+\end{equation*}
+\end{example}
+\begin{definition}[Factor de corrección]
+Al pasar de dBm a dB$\mu$V se emplea un factor de correción propio del sistema, es decir, tiene que ser calculado para caso, no hay uno estándar:
+\begin{equation}
+dBm=dB\mu V + Fc
+\end{equation}
+\end{definition}
+\begin{exercise}
+Encontrar el F.C. para una impedancia de 75$\Omega$. Rpta:
+\begin{displaymath}
+-\log\left(\frac{R}{75}\right)
+\end{displaymath}
+\end{exercise}
+\begin{example}[Demostraciones]
+Demostrar que en un bloque se cumple:\\
+\includegraphics[scale=0.5]{IM/IM8.png}\\
+\textbf{Solución:}\\
+\textbf{1. Concepto de dB:}
+\begin{align}
+dB_{F.T}&=10\cdot\log\left(\frac{P_{out}}{P_{in}}\right)\\
+&=10\cdot\log\left(\frac{\frac{V_{out}^2}{R}}{\frac{V_{in}^2}{R}}\right)\\
+&=10\cdot\log\left(\frac{V_{out}^2}{V_{in}^2}\right)\\
+dB_{F.T}&=20\cdot\log\left(\frac{V_{out}}{V_in}\right)
+\end{align}
+\textbf{2. Dividiendo entre 1$\mu$V}
+\begin{align}
+dB_{F.T}&=20\cdot\log\left(\frac{\frac{V_{out}}{1\mu V}}{\frac{V_in}{1\mu V}}\right)\\
+&=20\cdot\log\left(\frac{V_{out}}{1\mu V}\right)-20\cdot\log\left(\frac{V_{in}}{1\mu V}\right)\\
+dB_{F.T}&=dB\mu V(V_{out})+dB\mu V(V_{in})
+\end{align}
+Revisar esta ultima ecuación en la definición \ref{def:db ft}.
+\end{example}
+\begin{definition}[dB de función de transferencia]\label{def:db ft}
+En un diagrama de bloque:\\
+\includegraphics[scale=0.5]{IM/IM8.png}\\
+se cumple que:
+\begin{equation}
+\label{eq:db de ft}
+dB\mu V(V_{out})=dB+dB\mu V(V_{in})
+\end{equation}
+\end{definition}
+\begin{example}[dB función de transferencia de dos bloques]
+Hallar \textit{x} del siguiente sistema trabajando en dB$\mu$V:\\
+\includegraphics[scale=0.5]{IM/IM9.png}\\
+Iremos de la salida para adelante, usando el punto \textit{y} como ayuda. Primero hallaremos la potencia en dBm:
+\begin{align*}
+dBm&=10\cdot\log\left(\frac{40mW}{1mW}\right)\\
+&=10\cdot\log\left(40\right)\\
+&=16dBm
+\end{align*}
+Usando la ecuación \ref{eq:db de ft}:
+\begin{align*}
+y+12dBm&=16dBm\\
+y&=(16-12)dBm\\
+y&=4dBm
+\end{align*}
+Nuevamente para hallar \textit{x}:
+\begin{align*}
+x+(-28dBm)&=4dBm\\
+x=32dBm
+\end{align*}
+Nos pide que lo trabajemos en micro-volts:\\
+Pasando la salida del sistema a $\mu$V
+\begin{align*}
+32dBm&=10\cdot\log\left(\frac{P_{out}}{1mW}\right)\\
+P_{out}&=1.58W
+\end{align*}
+Cambiando de potencia a V(en micro-volt)
+\begin{align*}
+V^2&=P\times R\\
+V&=30.78V\simeq 30.78\times 10^6\mu V	
+\end{align*}
+Pasando el voltaje a dB$\mu$V
+\begin{align*}
+dB\mu V&=20\cdot\log\left(\frac{30.78\times 10^6}{1\mu V}\right)\\
+dB\mu V&=149.76
+\end{align*}
+Lo mismo para el punto \textit{y}:
+\begin{align*}
+4dBm&=10\cdot\log\left(\frac{P_{out}}{1mW}\right)\\
+P_{out}&=2.511\times 10^{-3}W\\
+V&=\sqrt{2.511\times 10^{-3}\times 600}\\
+V&=1.227\times 10^6\mu V
+\end{align*}
+Y por ultimo lo pasamos a dB$\mu$V:
+\begin{align*}
+dB\mu V&=20\cdot\log\left(\frac{1.227\times 10^6V}{1\mu V}\right)\\
+dB\mu V&=121.77
+\end{align*}
+Realizamos lo mismo por el con la salida del sistema, obteniendo $P_{out}=39.81\times 10^{-3}W$, $V=4.88\times 10^6\mu V$ y en dB$\mu$V: 133.76$dB\mu V$
+\end{example}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -6275,7 +6594,7 @@ El uso del \textit{rather} es acompañado con el verbo modal \textit{would}
 \includegraphics[scale=0.5]{Ingles/Ing1.png}
 \caption{Uso del \textit{rather}.}
 \end{figure}
-\section{Future form}
+\section{Future form}\index{Future form}
 For express future we have three ways to express:
 \subsection{Present continuous}
 We use the present continuous to talk about \textbf{a fixed arrangement} in the future: for example, A girl and I have a date, we fixed a date and time, so the only thing left to do is meet. In this case we use \textbf{present continuous}:\\
@@ -6292,7 +6611,7 @@ I \textbf{will answer} the phone.
 %----------------------------------------------------------------------------------------
 \part{Extras}
 \chapterimage{chapter_head_Artificios.pdf}
-\chapter{Artificios matemáticos}
+\chapter{Artificios matemáticos-repaso}
 En esta sección se detallaran trucos, repasos, propiedades que son vitales saberlas pero, típico del ser humano, a veces se nos olvida.
 \section{Logaritmos y exponenciales}\index{Logaritmos y exponenciales}
 \begin{equation}\label{art:expaln}
@@ -6302,19 +6621,35 @@ e^{ln|x|}=x
 ln(e^x)=x\frac{ln(e)}{1}=x
 \end{equation}
 \begin{equation}\label{art:logaritmos}
-log_a(b)=b\cdot log a
+\log_a(b)=b\cdot\log a
 \end{equation}
 \begin{equation}\label{art:logdiv}
-log_c(a)-log_c(b)=log_c\left(\frac{a}{b}\right)
+\log_c(a)-\log_c(b)=\log_c\left(\frac{a}{b}\right)
+\end{equation}
+\begin{equation}
+\label{art:logmulti}
+\log_a(b\cdot c)=\log_ab+\log_ac
 \end{equation}
 \begin{equation}\label{art:logexp}
-log(a)^b=b\cdot log(a)
+\log_c(a)^b=b\cdot\log_c(a)
+\end{equation}
+\begin{equation}
+\label{art:log1}
+\log_aa=1
 \end{equation}
 \begin{equation}\label{art:raizlog}
-log\left(\sqrt[b]{a}\right)=\frac{log(a)}{b}
+\log\left(\sqrt[b]{a}\right)=\frac{log(a)}{b}
 \end{equation}
 \begin{equation}\label{art:log y expo}
-log_ab=x\leftarrow a^x=b
+\log_ab=x\leftarrow a^x=b
+\end{equation}
+\begin{equation}
+\label{art:logcambio de bse}
+\log_ba=\frac{\log_ca}{\log_cb}
+\end{equation}
+\begin{equation}
+\label{art:log cadena}
+\log_ba\cdot\log_cb\cdot\log_dc=\log_da
 \end{equation}
 \section{Matrices}\index{Matrices}
 \subsection{Conformabilidad de matrices}
@@ -6432,8 +6767,14 @@ El módulo del vector producto vectorial coincide con el área del paralelogramo
 =a_x(b_yc_z-b_zc_y)-a_y(b_xc_z-b_zc_x)+a_z(b_xc_y-c_xb_y)
 \end{equation}
 Se resuelve igual que la matriz de producto cruz, con la misma distribución de signos.
+\section{Ondas}
+\begin{equation}
+\label{art:onda y velocidad}
+v=\frac{\lambda}{f}
+\end{equation}
+Donde \textit{v} es velocidad de onda(\textit{c} para la luz en el vacío), $\lambda$ es la longitud de onda y \textit{f} es la frecuencia.
 \chapterimage{chapter_head_Artificios.pdf}
-\chapter{Decibelios}
+\chapter{Decibelios}\label{chap:decibelios}
 \section{Definición de dB}
 Aunque el logaritmo en base 10 de la relación de dos valores de potencia es una cantidad sin dimensiones, tiene unidades de "Bel" en honor del inventor del teléfono (Alexander Graham Bell). Con el fin de obtener números más manejables, se usan los dB (decibelios, donde "deci" significa un décimo) en lugar del Bel  para los  para los propósitos de propósitos de cálculo. Tenemos que cálculo. Tenemos que multipli multiplicar los car los valores Bel valores Bel por 10 (al igual (al igual que necesitamos que necesitamos multiplicar una distancia de 1000 si queremos usar milímetros en lugar de metros).
 \begin{equation}

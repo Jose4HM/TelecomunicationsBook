@@ -3,7 +3,7 @@
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{Symbols}}};\vspace*{0.2cm}\nopagebreak
 
   \item \textit{a/an}, \textit{the} and no-article\dotfill 
-		\hyperpage{254}
+		\hyperpage{268}
 
   \indexspace
 \nopagebreak
@@ -85,7 +85,7 @@
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{H}}};\vspace*{0.2cm}\nopagebreak
 
   \item Hardware\dotfill \hyperpage{122}
-  \item How to use \textit{rather}?\dotfill \hyperpage{254}
+  \item How to use \textit{rather}?\dotfill \hyperpage{268}
 
   \indexspace
 \nopagebreak
@@ -93,8 +93,9 @@
 
   \item Instalación\dotfill \hyperpage{96}
   \item Instalación Windows:Materiales\dotfill \hyperpage{96}
-  \item Integrales\dotfill \hyperpage{260}
+  \item Integrales\dotfill \hyperpage{274}
   \item Intensidad de campo eléctrico\dotfill \hyperpage{162}
+  \item Introducción\dotfill \hyperpage{239}
 
   \indexspace
 \nopagebreak
@@ -104,15 +105,17 @@
   \item Lectura Analógica\dotfill \hyperpage{105}
   \item Ley de Coulomb\dotfill \hyperpage{161}
   \item Ley de Gauss-Ecuaciones de Maxwell\dotfill \hyperpage{164}
-  \item Logaritmos y exponenciales\dotfill \hyperpage{259}
+  \item Logaritmos y exponenciales\dotfill \hyperpage{273}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{M}}};\vspace*{0.2cm}\nopagebreak
 
   \item Mapas de Karnaugh\dotfill \hyperpage{45}
-  \item Matrices\dotfill \hyperpage{259}
+  \item Matrices\dotfill \hyperpage{274}
   \item Medidas de tráfico telefónico\dotfill \hyperpage{198}
+  \item Modelo OSI\dotfill \hyperpage{241}
+  \item Modelo TCP/IP\dotfill \hyperpage{243}
   \item Monoestables\dotfill \hyperpage{78}
   \item Multiplexación\dotfill \hyperpage{181}
   \item Multiplexor y Demultiplexor\dotfill \hyperpage{64}
@@ -123,7 +126,7 @@
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{N}}};\vspace*{0.2cm}\nopagebreak
 
   \item Notations\dotfill \hyperpage{141}
-  \item Números complejos\dotfill \hyperpage{260}
+  \item Números complejos\dotfill \hyperpage{274}
 
   \indexspace
 \nopagebreak
@@ -131,9 +134,9 @@
 
   \item Parámetros TTL y CMOS\dotfill \hyperpage{52}
   \item Planta interna y externa\dotfill \hyperpage{190}
-  \item Potencial eléctrico\dotfill \hyperpage{168}
+  \item Potencial eléctrico\dotfill \hyperpage{169}
   \item Problems\dotfill \hyperpage{143}
-  \item Producto cruz y producto escalar\dotfill \hyperpage{261}
+  \item Producto cruz y producto escalar\dotfill \hyperpage{275}
   \item Propositions\dotfill \hyperpage{142}
     \subitem Several Equations\dotfill \hyperpage{142}
     \subitem Single Line\dotfill \hyperpage{142}
@@ -179,14 +182,14 @@
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{U}}};\vspace*{0.2cm}\nopagebreak
 
-  \item Use of \textit{Would}\dotfill \hyperpage{254}
+  \item Use of \textit{Would}\dotfill \hyperpage{268}
 
   \indexspace
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{V}}};\vspace*{0.2cm}\nopagebreak
 
   \item Variables separables\dotfill \hyperpage{17}
-  \item Vocabulario-Internetworking 1\dotfill \hyperpage{243}
+  \item Vocabulario-Internetworking 1\dotfill \hyperpage{247}
   \item Vocabulario-Sistemas de telefonía\dotfill \hyperpage{235}
   \item Vocabulary\dotfill \hyperpage{143}
   \item VoIP\dotfill \hyperpage{227}
@@ -195,6 +198,6 @@
 \nopagebreak
 \vspace*{0.1cm}\tikz\node at (0pt,0pt) [draw=none, fill=ocre!50, line width=1pt, inner sep=5pt]{\parbox{0.993\linewidth-2\fboxsep-2\fboxrule-2pt}{\centering\large\sffamily\bfseries\textcolor{white}{W}}};\vspace*{0.2cm}\nopagebreak
 
-  \item When use \textit{the}?\dotfill \hyperpage{253}
+  \item When use \textit{the}?\dotfill \hyperpage{267}
 
 \end{theindex}

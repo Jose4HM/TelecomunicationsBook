@@ -136,7 +136,7 @@
 \contentsline {section}{\numberline {8.12}Figure}{143}{section.8.12}%
 \contentsline {chapter}{\numberline {9}Unidad 2}{145}{chapter.9}%
 \contentsline {section}{\numberline {9.1}Modulación por ancho de pulso-PWM}{145}{section.9.1}%
-\contentsline {part}{\numberline {V}Campos \\electromagnéticos}{149}{part.5}%
+\contentsline {part}{\numberline {V}Campos electromagnéticos}{149}{part.5}%
 \contentsline {chapter}{\numberline {10}Repaso vectorial y fundamentos del electromagnetismo}{151}{chapter.10}%
 \contentsline {section}{\numberline {10.1}Sistemas de coordenadas y transformaciones}{151}{section.10.1}%
 \contentsline {subsubsection}{\numberline {10.1.0.1}Sistema de coordenadas cartesianas en el espacio (x,y,z)}{151}{subsubsection.10.1.0.1}%
@@ -160,7 +160,7 @@
 \contentsline {section}{\numberline {11.3}Campo eléctrico creado por una distribución continua de carga en un punto}{162}{section.11.3}%
 \contentsline {section}{\numberline {11.4}Densidad de campo eléctrico}{163}{section.11.4}%
 \contentsline {section}{\numberline {11.5}Ley de Gauss-Ecuaciones de Maxwell}{164}{section.11.5}%
-\contentsline {section}{\numberline {11.6}Potencial eléctrico}{168}{section.11.6}%
+\contentsline {section}{\numberline {11.6}Potencial eléctrico}{169}{section.11.6}%
 \contentsline {section}{\numberline {11.7}Relación entre E y V-Ecuación de Maxwell}{169}{section.11.7}%
 \contentsline {section}{\numberline {11.8}Dipolo eléctrico}{170}{section.11.8}%
 \contentsline {chapter}{\numberline {12}Campos eléctricos en el espacio material}{173}{chapter.12}%
@@ -282,60 +282,65 @@
 \contentsline {subsection}{\numberline {16.3.2}Capa de interred}{243}{subsection.16.3.2}%
 \contentsline {subsection}{\numberline {16.3.3}Transporte}{244}{subsection.16.3.3}%
 \contentsline {subsection}{\numberline {16.3.4}Capa de aplicación}{244}{subsection.16.3.4}%
-\contentsline {part}{\numberline {VIII}Líneas de transmión}{249}{part.8}%
-\contentsline {part}{\numberline {IX}Microcontrolador y microprocesador}{251}{part.9}%
-\contentsline {part}{\numberline {X}Ingeniería en mantenimiento}{253}{part.10}%
-\contentsline {chapter}{\numberline {17}Aspectos introductorios}{255}{chapter.17}%
-\contentsline {part}{\numberline {XI}Inglés}{257}{part.11}%
-\contentsline {chapter}{\numberline {18}English notes}{259}{chapter.18}%
-\contentsline {section}{\numberline {18.1}When use \textit {the}?}{259}{section.18.1}%
-\contentsline {section}{\numberline {18.2}\textit {a/an}, \textit {the} and no-article}{260}{section.18.2}%
-\contentsline {section}{\numberline {18.3}Use of \textit {Would}}{260}{section.18.3}%
-\contentsline {section}{\numberline {18.4}How to use \textit {rather}?}{260}{section.18.4}%
-\contentsline {section}{\numberline {18.5}Future form}{261}{section.18.5}%
-\contentsline {subsection}{\numberline {18.5.1}Present continuous}{261}{subsection.18.5.1}%
-\contentsline {subsection}{\numberline {18.5.2}be going to + infinitive}{261}{subsection.18.5.2}%
-\contentsline {subsection}{\numberline {18.5.3}will + infinitive}{261}{subsection.18.5.3}%
-\contentsline {part}{\numberline {XII}Extras}{263}{part.12}%
-\contentsline {chapter}{\numberline {19}Artificios matemáticos}{265}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Logaritmos y exponenciales}{265}{section.19.1}%
-\contentsline {section}{\numberline {19.2}Matrices}{265}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}Conformabilidad de matrices}{265}{subsection.19.2.1}%
-\contentsline {section}{\numberline {19.3}Integrales}{266}{section.19.3}%
-\contentsline {subsection}{\numberline {19.3.1}Integral por tabulación}{266}{subsection.19.3.1}%
-\contentsline {section}{\numberline {19.4}Números complejos}{266}{section.19.4}%
-\contentsline {section}{\numberline {19.5}Producto cruz y producto escalar}{267}{section.19.5}%
-\contentsline {subsection}{\numberline {19.5.1}Producto escalar}{267}{subsection.19.5.1}%
-\contentsline {subsection}{\numberline {19.5.2}Producto cruz}{267}{subsection.19.5.2}%
-\contentsline {subsection}{\numberline {19.5.3}Propiedades}{268}{subsection.19.5.3}%
-\contentsline {chapter}{\numberline {20}Decibelios}{269}{chapter.20}%
-\contentsline {section}{\numberline {20.1}Definición de dB}{269}{section.20.1}%
-\contentsline {section}{\numberline {20.2}Definición de dBm}{269}{section.20.2}%
-\contentsline {section}{\numberline {20.3}Definición dB$\mu $V}{269}{section.20.3}%
-\contentsline {section}{\numberline {20.4}Diferencia entre decibelios de tensión y decibelios de potencia}{270}{section.20.4}%
-\contentsline {section}{\numberline {20.5}¿Qué es un nivel?}{270}{section.20.5}%
-\contentsline {section}{\numberline {20.6}Atenuación y ganancia}{271}{section.20.6}%
-\contentsline {section}{\numberline {20.7}Decibelios a porcentaje y viceversa}{271}{section.20.7}%
-\contentsline {subsection}{\numberline {20.7.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{271}{subsection.20.7.1}%
-\contentsline {subsection}{\numberline {20.7.2}Conversión de la energía: porcentaje a decibelios y viceversa}{272}{subsection.20.7.2}%
-\contentsline {subsection}{\numberline {20.7.3}Conversión de voltaje: porcentaje más o menos a decibelios}{272}{subsection.20.7.3}%
-\contentsline {subsection}{\numberline {20.7.4}Conversión de potencia: porcentaje más o menos a decibelios}{272}{subsection.20.7.4}%
-\contentsline {part}{\numberline {XIII}Anexos}{273}{part.13}%
-\contentsline {section}{\numberline {20.8}Ejercicios resueltos U2-Sistemas de telefonía}{275}{section.20.8}%
-\contentsline {section}{\numberline {20.9}Ejercicios resueltos U2-Sistemas de telefonía}{276}{section.20.9}%
-\contentsline {section}{\numberline {20.10}Ejercicios resueltos U2-Sistemas de telefonía}{277}{section.20.10}%
-\contentsline {section}{\numberline {20.11}Ejercicios resueltos U2-Sistemas de telefonía 2 }{278}{section.20.11}%
-\contentsline {section}{\numberline {20.12}Ejercicios resueltos U2-Sistemas de telefonía 2 }{279}{section.20.12}%
-\contentsline {section}{\numberline {20.13}Ejercicios resueltos U2-Sistemas de telefonía 2 }{280}{section.20.13}%
-\contentsline {section}{\numberline {20.14}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{281}{section.20.14}%
-\contentsline {section}{\numberline {20.15}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{282}{section.20.15}%
-\contentsline {section}{\numberline {20.16}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{283}{section.20.16}%
-\contentsline {section}{\numberline {20.17}Ejercicios resueltos U2-Erlang B}{284}{section.20.17}%
-\contentsline {section}{\numberline {20.18}Ejercicios resueltos U2-Erlang B}{285}{section.20.18}%
-\contentsline {section}{\numberline {20.19}Ejercicios resueltos U2-Erlang B}{286}{section.20.19}%
-\contentsline {section}{\numberline {20.20}Ejericios de la ley de Gauss}{287}{section.20.20}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{291}{chapter*.260}%
-\contentsline {section}{Articles}{291}{chapter*.260}%
-\contentsline {section}{Books}{291}{chapter*.260}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{293}{section*.261}%
+\contentsline {part}{\numberline {VIII}Líneas de transmisión}{249}{part.8}%
+\contentsline {part}{\numberline {IX}Microcontrolador y microprocesador}{253}{part.9}%
+\contentsline {part}{\numberline {X}Ingeniería en mantenimiento}{255}{part.10}%
+\contentsline {chapter}{\numberline {17}Aspectos introductorios}{257}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Mediciones de radiofrecuencia}{257}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}¿Qué es radio enlace?}{257}{subsection.17.1.1}%
+\contentsline {subsection}{\numberline {17.1.2}Bandas de frecuencia}{257}{subsection.17.1.2}%
+\contentsline {section}{\numberline {17.2}Decibelios como medida}{258}{section.17.2}%
+\contentsline {part}{\numberline {XI}Inglés}{267}{part.11}%
+\contentsline {chapter}{\numberline {18}English notes}{269}{chapter.18}%
+\contentsline {section}{\numberline {18.1}When use \textit {the}?}{269}{section.18.1}%
+\contentsline {section}{\numberline {18.2}\textit {a/an}, \textit {the} and no-article}{270}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Use of \textit {Would}}{270}{section.18.3}%
+\contentsline {section}{\numberline {18.4}How to use \textit {rather}?}{270}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Future form}{271}{section.18.5}%
+\contentsline {subsection}{\numberline {18.5.1}Present continuous}{271}{subsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.5.2}be going to + infinitive}{271}{subsection.18.5.2}%
+\contentsline {subsection}{\numberline {18.5.3}will + infinitive}{271}{subsection.18.5.3}%
+\contentsline {part}{\numberline {XII}Extras}{273}{part.12}%
+\contentsline {chapter}{\numberline {19}Artificios matemáticos-repaso}{275}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Logaritmos y exponenciales}{275}{section.19.1}%
+\contentsline {section}{\numberline {19.2}Matrices}{276}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Conformabilidad de matrices}{276}{subsection.19.2.1}%
+\contentsline {section}{\numberline {19.3}Integrales}{276}{section.19.3}%
+\contentsline {subsection}{\numberline {19.3.1}Integral por tabulación}{276}{subsection.19.3.1}%
+\contentsline {section}{\numberline {19.4}Números complejos}{276}{section.19.4}%
+\contentsline {section}{\numberline {19.5}Producto cruz y producto escalar}{277}{section.19.5}%
+\contentsline {subsection}{\numberline {19.5.1}Producto escalar}{277}{subsection.19.5.1}%
+\contentsline {subsection}{\numberline {19.5.2}Producto cruz}{277}{subsection.19.5.2}%
+\contentsline {subsection}{\numberline {19.5.3}Propiedades}{278}{subsection.19.5.3}%
+\contentsline {section}{\numberline {19.6}Ondas}{278}{section.19.6}%
+\contentsline {chapter}{\numberline {20}Decibelios}{279}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Definición de dB}{279}{section.20.1}%
+\contentsline {section}{\numberline {20.2}Definición de dBm}{279}{section.20.2}%
+\contentsline {section}{\numberline {20.3}Definición dB$\mu $V}{279}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Diferencia entre decibelios de tensión y decibelios de potencia}{280}{section.20.4}%
+\contentsline {section}{\numberline {20.5}¿Qué es un nivel?}{280}{section.20.5}%
+\contentsline {section}{\numberline {20.6}Atenuación y ganancia}{281}{section.20.6}%
+\contentsline {section}{\numberline {20.7}Decibelios a porcentaje y viceversa}{281}{section.20.7}%
+\contentsline {subsection}{\numberline {20.7.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{281}{subsection.20.7.1}%
+\contentsline {subsection}{\numberline {20.7.2}Conversión de la energía: porcentaje a decibelios y viceversa}{282}{subsection.20.7.2}%
+\contentsline {subsection}{\numberline {20.7.3}Conversión de voltaje: porcentaje más o menos a decibelios}{282}{subsection.20.7.3}%
+\contentsline {subsection}{\numberline {20.7.4}Conversión de potencia: porcentaje más o menos a decibelios}{282}{subsection.20.7.4}%
+\contentsline {part}{\numberline {XIII}Anexos}{283}{part.13}%
+\contentsline {section}{\numberline {20.8}Ejercicios resueltos U2-Sistemas de telefonía}{285}{section.20.8}%
+\contentsline {section}{\numberline {20.9}Ejercicios resueltos U2-Sistemas de telefonía}{286}{section.20.9}%
+\contentsline {section}{\numberline {20.10}Ejercicios resueltos U2-Sistemas de telefonía}{287}{section.20.10}%
+\contentsline {section}{\numberline {20.11}Ejercicios resueltos U2-Sistemas de telefonía 2 }{288}{section.20.11}%
+\contentsline {section}{\numberline {20.12}Ejercicios resueltos U2-Sistemas de telefonía 2 }{289}{section.20.12}%
+\contentsline {section}{\numberline {20.13}Ejercicios resueltos U2-Sistemas de telefonía 2 }{290}{section.20.13}%
+\contentsline {section}{\numberline {20.14}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{291}{section.20.14}%
+\contentsline {section}{\numberline {20.15}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{292}{section.20.15}%
+\contentsline {section}{\numberline {20.16}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{293}{section.20.16}%
+\contentsline {section}{\numberline {20.17}Ejercicios resueltos U2-Erlang B}{294}{section.20.17}%
+\contentsline {section}{\numberline {20.18}Ejercicios resueltos U2-Erlang B}{295}{section.20.18}%
+\contentsline {section}{\numberline {20.19}Ejercicios resueltos U2-Erlang B}{296}{section.20.19}%
+\contentsline {section}{\numberline {20.20}Ejericios de la ley de Gauss}{297}{section.20.20}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{301}{chapter*.262}%
+\contentsline {section}{Articles}{301}{chapter*.262}%
+\contentsline {section}{Books}{301}{chapter*.262}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{303}{section*.263}%
 \contentsfinish 
