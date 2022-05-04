@@ -6135,21 +6135,138 @@ Esta capa es el eje que mantiene unida a toda la arquitectura. Su trabajo es per
 Está diseñada para permitir que las entidades pares, en los nodos de origen y de destino, lleven a cabo una \textbf{conversación}, al igual que en la capa de transporte de OSI. Existen dos protocolos de transporte extremo-a-extremo: El primero, \textbf{TCP} (\textit{Protocolo de Control de la Transmisión, del inglés Transmission Control Protocol}), es un protocolo confiable \textbf{orientado a la conexión} que permite que un flujo de bytes originado en una máquina se entregue sin \textbf{errores} a cualquier otra máquina en la interred. Este protocolo segmenta el flujo de bytes entrante en mensajes discretos y pasa cada uno a la capa de interred. En el destino, el proceso TCP receptor vuelve a \textbf{ensamblar} los mensajes recibidos para formar el flujo de salida. El TCP también maneja el \textbf{control de flujo} para asegurar que un emisor rápido no pueda inundar a un receptor lento con más mensajes de los que pueda manejar.\\
 El segundo protocolo en esta capa, \textbf{UDP} (\textit{Protocolo de Datagrama de Usuario, del inglés User Datagram Protocol}), es un protocolo sin conexión, no confiable para aplicaciones que no desean la asignación de secuencia o el control de flujo de TCP y prefieren proveerlos por su cuenta. También se utiliza mucho en las consultas de \textbf{petición-respuesta} de una sola ocasión del tipo cliente-servidor, y en las aplicaciones en las que es más importante una \textbf{entrega oportuna} que una entrega precisa, como en la transmisión de voz o vídeo.
 \subsection{Capa de aplicación}
-Se omiten capas del modelo OSI como la sesión o presentación pues no son muy usadas y se asume que las aplicaciones poseen ya estas funciones. Ésta contiene todos los protocolos de alto nivel. Entre los primeros protocolos están el de terminal virtual (TELNET), transferencia de archivos (FTP) y correo electrónico (SMTP). A través de los años se han agregado muchos otros protocolos. En la imagen \ref{fig:protocolos tcp ip} se muestran los más importantes de cada capa. La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
-\begin{figure}[H]
+Se omiten capas del modelo OSI como la sesión o presentación pues no son muy usadas y se asume que las aplicaciones poseen ya estas funciones. Ésta contiene todos los protocolos de alto nivel. Entre los primeros protocolos están el de terminal virtual (TELNET), transferencia de archivos (FTP) y correo electrónico (SMTP). A través de los años se han agregado muchos otros protocolos. En la figura \ref{fig:protocolos tcp ip} se muestran los más importantes de cada capa. La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
+\begin{figure}[]
 \centering
 \includegraphics[scale=0.5]{IN1/IN3.png}
 \caption{Algunos protocolos usados en TCP/IP}
 \label{fig:protocolos tcp ip}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=\textwidth]{IN1/IN4.png}
 \caption{Comparación de modelo OSI versus TCP/IP}
 \label{fig:comparacion osi vs tcp}
 \end{figure}
+\section{Múltiplos y sub-múltiplos}\index{Múltiplos y sub-múltiplos}
+Para evitar errores y confusiones en las unidades de medida, al igual que en todo sistema de medida aquí también se una los múltiplos:
+\begin{table}[]
+\begin{tabular}{|l|l|
+>{\columncolor[HTML]{C0C0C0}}l |l|r|
+>{\columncolor[HTML]{C0C0C0}}l |}
+\hline
+\cellcolor[HTML]{FFCB2F}Exp. & \cellcolor[HTML]{FFCB2F}Explícito & \cellcolor[HTML]{FFCB2F}Prefijo & \cellcolor[HTML]{FFCB2F}Exp. & \multicolumn{1}{l|}{\cellcolor[HTML]{FFCB2F}Explícito} & \cellcolor[HTML]{FFCB2F}Prefijo \\ \hline
+$10^{-3}$                      & 0.001                             & mili                            & $10^{3}$                       & 1000                                                  & Kilo                            \\ \hline
+$10^{-6}$                      & 0.000001                          & micro                           & $10^{6}$                       & 1000000                                               & Mega                            \\ \hline
+$10^{-9}$                      & 0.000001                          & nano                            & $10^{9}$                       & 1000000000                                            & Giga                            \\ \hline
+$10^{-12}$                     & 0.000000000001                    & pico                            & $10^{12}$                      & 1000000000000                                         & Tera                            \\ \hline
+$10^{-15}$                     & 0.000000000000001                 & femto                           & $10^{15}$                      & 1000000000000000                                      & Peta                            \\ \hline
+$10^{-18}$                     & 0.0000000000000000001             & atto                            & $10^{18}$                      & 1000000000000000000                                   & Exa                             \\ \hline
+$10^{-21}$                     & 0.0000000000000000000001          & zepto                           & $10^{21}$                      & 1000000000000000000000                                & Zetta                           \\ \hline
+$10^{-24}$                     & 0.0000000000000000000000001       & yocto                           & $10^{24}$                      & 1000000000000000000000000                             & Yotta                          \\ \hline
+\end{tabular}
+\caption{Principales prefijos métricos.}
+\end{table}
+También vale la pena señalar que para medir los tamaños de memoria, disco, archivos y bases de
+datos, en la práctica común de la industria las unidades tienen significados ligeramente distintos. Así, kilo significa $2^{10}$ (1 024) en vez de $10^3$ (1 000), ya que las memorias son siempre una potencia de dos. Por ende, una memoria de 1 KB contiene 1024 bytes, no 1 000 bytes. Observe también que se utiliza una letra ``B'' mayúscula que significa ``bytes'' (unidades de ocho bits), en vez de una ``b'' minúscula que significa ``bits''. De manera similar, una memoria de 1 MB contiene $2^20$ (1048576) bytes, una memoria de 1 GB contiene $2^30$ (1073741824) bytes y una base de datos de 1 TB contiene $2^40$ (1099511627776) bytes. Sin embargo, una línea de comunicación de 1 kbps transmite 1000 bits por segundo y una red LAN de 10 Mbps opera a 10000000 bits/segundo, ya que estas velocidades no son potencias de dos. Por desgracia, muchas personas tienden a mezclar estos dos sistemas, en especial con los tamaños de los discos. Para evitar ambigüedades, en este libro utilizaremos los símbolos KB, MB, GB y TB para 210, 220, 230 y 240 bytes, respectivamente, y los símbolos kbps, Mbps, Gbps y Tbps para 103, 106, 109 y 1012 bits/segundo, respectivamente.
+\chapterimage{chapter_head_IN1.pdf}
+\chapter{La capa física en redes de datos}
+Las propiedades de distintos canales físicos determinan el \textbf{desempeño}, como rendimiento, latencia y tasa de error. Existen 3 tipos de medios:
+\begin{itemize}
+\item Guiados: cables de cobre y fibra óptica.
+\item Inalámbricos: radio terrestre.
+\item Satélite
+\end{itemize}
+\section{Bases teóricas}\index{Bases teóricas}
+Las bases teóricas que necesitamos saber son: \subsection{Análisis de Fourier}
+\begin{definition}[Series de Fourier]
+Fourier demostró que cualquier función periódica de comportamiento razonable, g(t) con un periodo T, se puede construir como la suma de un número (posiblemente infinito) de senos y cosenos:
+\begin{equation}
+y(t)=\frac{c}{2} + \sum_{n=1}^\infty a_n\sin\left(2\pi nft\right) + \sum_{n=1}^\infty a_n\cos\left(2\pi nft\right)
+\label{eq:series de fourier}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $f=\frac{1}{T}$:es la frecuencia fundamental.
+\item $a_n y b_n$: son las amplitudes de seno y coseno del $n$-ésimo \textbf{armónico}(término)
+\end{itemize}
+Además:
+\begin{align*}
+&a_n=\frac{2}{T}\int_0^Tg(t)\sin\left(2\pi nft\right)dt &b_n=\frac{2}{T}\int_0^Tg(t)\cos\left(2\pi nft\right)dt\\
+&c=\frac{2}{T}\int^T_0g(t)dt
+\end{align*}
+\end{definition}
+\subsection{Señales de ancho de banda limitado}
+\begin{notation}
+Revisar la primera parte del inciso 2.1.2 del libro \cite{tanenbaum2012computer}.
+\end{notation}
+El ancho de banda es una propiedad física del medio de transmisión que depende; por ejemplo, de la construcción, el grosor y la longitud de un cable o fibra óptica. A menudo se utilizan filtros para limitar el ancho de banda de una señal. El ancho de banda sigue siendo el rango de la banda de frecuencias que se transmiten, y la información que se puede transportar depende sólo de este ancho de banda, no de su frecuencia inicial ni final.\\
+Tener cuidado y no confundir entre \textbf{señales de banda base}: señales que van desde cero hasta una frecuencia máxima y \textbf{señales pasa-banda}: Las que se desplazan para ocupar un rango de frecuencias más altas. Para la \textbf{transmisión digital} es objetivo es con la suficiente fidelidad como para poder \textbf{reconstruir} la secuencia de bits original. Sería un desperdicio usar demasiados armónicos para recibir la misma señal que se puede obtener con los mínimos posibles.
+\begin{definition}[tasa de bits y armónicos]
+Si tenemos una tasa de bits de \textit{b} bits/seg, el tiempo requerido para enviar los 8 bits por ejemplo, usando 1 bit a la vez, es de 8/b segundos, por lo que la frecuencia del primer armónico de esta señal es b/8 Hz. Una línea telefónica común, a menudo llamada \textbf{línea con calidad de voz}, tiene una frecuencia de corte introducida en forma artificial ligeramente mayor a 3000 Hz. Esta restricción significa que el número de armónicos más altos que puede pasar es de aproximadamente 3 000/(b/8), o 24 000/b (el corte no es muy abrupto).
+\end{definition}
+\begin{remark}
+Puedes experimental dos tipos de medida de anchos de banda: Para los ingenieros eléctricos, el ancho de banda (analógico) es (como lo describimos antes) una cantidad que se mide en Hz. Para los científicos de computadora, el ancho de banda (digital) es la tasa de datos máxima de un canal, una cantidad que se mide en bits/segundo. Esa tasa de datos es el resultado final de usar el ancho de banda analógico de un canal físico para transmisión digital.
+\end{remark}
+\subsection{Tasa de datos máxima}
+\begin{definition}[Teorema de Shannon-Nyquist]
+Nyquist demostró que si se pasa una señal cualquiera a través de un filtro pasa-bajas con un ancho de banda B, la señal filtrada se puede reconstruir por completo tomando sólo 2B muestras (exactas) por segundo. No tiene caso muestrear la línea más de 2B veces por segundo, ya que los componentes de mayor frecuencia que dicho muestreo pudiera recuperar ya se han filtrado.
+\begin{equation}
+\label{eq:teorema de nyquist}
+f_{s}\geq 2f_{max}
+\end{equation}
+Se lee: \textit{La frecuencia de muestreo tiene que ser por lo menos dos veces la frecuencia máxima de la señal a muestrear.}
+Además se tiene que para V niveles discretos, el teorema de Nyquist establece que:
+\begin{equation}
+\label{nyquist niveles}
+\text{Tasa de datos máxima}=2B\log_2Vbits/seg
+\end{equation}
+Por ejemplo, un canal sin ruido de 3kHz no puede transmitir señales binarias (de dos niveles) a una velocidad mayor de 6000 bps.
+\end{definition}
+Los canales no son perfectos, por lo que suele tenerse en cuenta el ruido aleatorio que deteriora los análisis. Siempre habrá ruido térmico, así que este se mide con base a la relación:
+\begin{definition}[Relación señal a ruido-SNR]
+Es la relación en decibelios entre la potencia de la señal(S) y la potencia del ruido(N):
+\begin{equation}
+\label{eq:snr}
+SNR=10\log_{10}\left(\frac{S}{N}\right)
+\end{equation}
+\end{definition}
+El principal resultado de Shannon es que la tasa de datos máxima (o capacidad) de un canal ruidoso, cuyo ancho de banda es \textit{B} Hz y cuya relación señal a ruido es S/N, está dada por:
+\begin{equation}
+\text{Número máximo de bits/seg}=B\log_2(1+S/N)
+\end{equation}
+\section{Medios de transmisión guiados}\index{Medios de transmisión guiados}
+El propósito de la capa física es transportar los bits de una maquina a otra. Se agrupan, a grandes rasgos en \textbf{guiados}:cable de cobre y fibra óptica y \textbf{no guiados}:la transmisión inalámbrica terrestre, los satélites y los láseres a través del aire.
+\subsection{Medios magnéticos}
+El almacenamiento en cintas magnéticas\textbf{•} o \textbf{medio removibles}, transportarlos físicamente a la otra maquina y leerlos. Es el más antiguo servicio y de una forma sigue vigente. Es rentable en situaciones donde el ancho de banda o \textbf{costo por bit} transportado es clave. Tengamos 1 disco duro de 1Tb. En una caja grande pueden caber unas 100 unidades: por caja se pueden transportar 1000Tb. Transportar la caja de un lugar a otro depende del lugar, asumiendo que el transporte dura un día: nuestro ancho de banda efectivo sería de:
+\begin{displaymath}
+\frac{1000Tb}{86400seg}=11.57\times 10^9\sim Gbp 11.6Gbps
+\end{displaymath}
+Mientras el tiempo es mejor, el ancho de banda crece. Esas velocidades aún no están disponibles y es un gran beneficio de esta forma pero a costa del volumen de discos duros. No estamos contando transporte que si se cotiza por mayoreo resulta económico: Cada disco duro cuesta \$200, en total gastaríamos \$200$\times$100=\$20000. Costo por envío que sea de \$200. Haciendo que el costo de envio de cada caja en total sea de \$20200. Cada Gygabyte costaría \$0.0202.
+\subsection{Par trenzado}
+Dos cables de cobre aislados de, por lo general, 1mm de grosor que estan entrelazados de forma helicoidal. Este entrelazamiento constituyen una antena simple, haciendo que las ondas de distintos trenzados se cancelen y el cable irradia con menos efectividad.\\
+Se usa mayormente en sistemas telefónicos, se puede tender sobre varios kilómetros sin necesidad de amplificación pero se requerirá repetidores.\footnote{Tener en cuenta las diferencias entre un repetidor y un amplificador.}\\
+Sirven tanto para la información \textbf{digital como analógica}, su ancho de banda depende del grosor del cable y la distancia que recorre. EL tipo más usado es el \textbf{categoría 5}. Un par trenzado de cat5 consta de dos cables aislados trenzados. Por lo general se agrupan 4 de estos pares como en la fig. \ref{fig:utp cat 5}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.2]{IN1/IN5.png}
+\caption{Cable UTP cat5 con 4 pares trenzados.}
+\label{fig:utp cat 5}
+\end{figure}
+Hasta la categoría 6 son conocidos como \textbf{UTP}(par trenzado sin blindaje). Por el contrario los categoría 7 tiene blindaje para cada par trenzado, este reduce la susceptibilidad a interferencias externas y la \textbf{diafonía} con otros cables cercanos.
+\subsection{Cable coaxial}
+Poseen mejor blindaje y más ancho de banda que los pares trenzados sin blindaje, permite mayores distancias a velocidades más altas. Existen 2 tipos populares:\\
+El de 50$\Omega$ usado generalmente para transmisión digital desde el inicio. Y esta el de 75$\Omega$ que es(generalmente) para transmisión analógica y tv por cable.\\
+Un cable coaxial consiste en alambre de cobre rígido como núcleo, rodeado por un material aislante. El aislante está forrado de un conductor cilíndrico, que por lo general es una malla de tejido fuertemente trenzado. El conductor externo está cubierto con una funda protectora de plástico.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.35]{IN1/IN6.png}
+\caption{Cable coaxial}
+\label{fig:utp cat 5}
+\end{figure}
+Las ventajas son un equilibrio entre alto ancho de banda(hasta GHz) e inmunidad al ruido. Se usan aún para la tv por cable y MAN.
 \newpage
-\section*{Vocabulario-Sistemas de telefonía}\index{Vocabulario-Internetworking 1}
+\section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
 un mapa físico o lógico de una red para intercambiar datos. En otras palabras, es la forma en que está diseñada la red, sea en el plano físico o lógico. El concepto de red puede definirse como ''conjunto de nodos interconectados". Un nodo es el punto en el que una curva se intercepta a sí misma. Lo que un nodo es concretamente depende del tipo de red en cuestión. Tipos de topologías son: punto a punto (p2p), bus, estrella, anillo, malla, árbol, híbrida y cadena margarita.
 \includegraphics[scale=0.5]{IN1/IN2.png}
@@ -6165,6 +6282,18 @@ Línea de Abonado Digital Asimétrica, es un tipo de tecnología de transmisión
 \end{vocabulary}
 \begin{vocabulary}[PLC]
 Power Line Communication, se trata de una serie de tecnologías que permiten usar los cables de la instalación eléctrica de nuestra casa para llevar Internet de un punto a otro punto. Por ello es realmente sencilla de usar ya que la instalación lleva años hecha: solo hay que conectar dos dispositivos a sendos enchufes.
+\end{vocabulary}
+\begin{vocabulary}[Full-duplex]
+Enlace que permite la comunicación en ambos sentidos a la vez.
+\end{vocabulary}
+\begin{vocabulary}[Half-duplex]
+Enlace que se puede usar en cualquier dirección pero solo una a la vez.
+\end{vocabulary}
+\begin{vocabulary}[Simplex]
+Enlace que permite solo la comunicación en un solo sentido.
+\end{vocabulary}
+\begin{vocabulary}[Diafonía]
+Perturbación electromagnética producida en un canal de comunicación por el acoplamiento de este con otro u otros vecinos.
 \end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	CHAPTER

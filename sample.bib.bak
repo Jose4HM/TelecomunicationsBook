@@ -145,3 +145,19 @@
   year={2017},
   publisher={National Geographic Learning}
 }
+@book{tanenbaum2012computer,
+  title={Computer Networks},
+  author={Tanenbaum, A.S. and Wetherall, D.J.},
+  isbn={9780133072624},
+  url={https://books.google.com.pe/books?id=IRUvAAAAQBAJ},
+  year={2012},
+  publisher={Pearson Education}
+}
+@book{vela1999líneas,
+  title={L{\'\i}neas de transmisi{\'o}n},
+  author={Vela, R.N.},
+  isbn={9789701025468},
+  url={https://books.google.com.pe/books?id=f9TKAAAACAAJ},
+  year={1999},
+  publisher={McGraw-Hill}
+}

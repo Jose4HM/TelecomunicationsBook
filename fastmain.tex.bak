@@ -13,11 +13,12 @@
 %\begin{proposition}[Proposition name]
 %\begin{problem}
 %\begin{vocabulary}[Word]
+%\begin{notation}
 %----------------------------------------------------------------------------------------
 \begin{document}
 %----------------------------------------------------------------------------------------
 %Internetworking
-\section{Capa física en redes de datos}
+
 %Lineas de transmisión
 \section{Leyes de maxwell}
 \section{Modelo electromagnético y las leyes de Maxwell}
