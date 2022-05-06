@@ -51,6 +51,42 @@
       \verb https://books.google.com.pe/books?id=dYYDtAEACAAJ
       \endverb
     \endentry
+    \entry{tanenbaum2012computer}{book}{}
+      \name{author}{2}{}{%
+        {{hash=92bc8f2b5a926e6cc80dfae03d2751e5}{%
+           family={Tanenbaum},
+           familyi={T\bibinitperiod},
+           given={A.S.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=5709f6045144551d060b504016902033}{%
+           family={Wetherall},
+           familyi={W\bibinitperiod},
+           given={D.J.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Pearson Education}%
+      }
+      \strng{namehash}{46f15c26e46eac1162c33c01b51c2559}
+      \strng{fullhash}{46f15c26e46eac1162c33c01b51c2559}
+      \strng{bibnamehash}{46f15c26e46eac1162c33c01b51c2559}
+      \strng{authorbibnamehash}{46f15c26e46eac1162c33c01b51c2559}
+      \strng{authornamehash}{46f15c26e46eac1162c33c01b51c2559}
+      \strng{authorfullhash}{46f15c26e46eac1162c33c01b51c2559}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780133072624}
+      \field{title}{Computer Networks}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://books.google.com.pe/books?id=IRUvAAAAQBAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.pe/books?id=IRUvAAAAQBAJ
+      \endverb
+    \endentry
   \enddatalist
   \missing{elmagsadiku}
 \endrefsection

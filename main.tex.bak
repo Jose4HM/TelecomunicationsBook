@@ -6135,14 +6135,14 @@ Esta capa es el eje que mantiene unida a toda la arquitectura. Su trabajo es per
 Está diseñada para permitir que las entidades pares, en los nodos de origen y de destino, lleven a cabo una \textbf{conversación}, al igual que en la capa de transporte de OSI. Existen dos protocolos de transporte extremo-a-extremo: El primero, \textbf{TCP} (\textit{Protocolo de Control de la Transmisión, del inglés Transmission Control Protocol}), es un protocolo confiable \textbf{orientado a la conexión} que permite que un flujo de bytes originado en una máquina se entregue sin \textbf{errores} a cualquier otra máquina en la interred. Este protocolo segmenta el flujo de bytes entrante en mensajes discretos y pasa cada uno a la capa de interred. En el destino, el proceso TCP receptor vuelve a \textbf{ensamblar} los mensajes recibidos para formar el flujo de salida. El TCP también maneja el \textbf{control de flujo} para asegurar que un emisor rápido no pueda inundar a un receptor lento con más mensajes de los que pueda manejar.\\
 El segundo protocolo en esta capa, \textbf{UDP} (\textit{Protocolo de Datagrama de Usuario, del inglés User Datagram Protocol}), es un protocolo sin conexión, no confiable para aplicaciones que no desean la asignación de secuencia o el control de flujo de TCP y prefieren proveerlos por su cuenta. También se utiliza mucho en las consultas de \textbf{petición-respuesta} de una sola ocasión del tipo cliente-servidor, y en las aplicaciones en las que es más importante una \textbf{entrega oportuna} que una entrega precisa, como en la transmisión de voz o vídeo.
 \subsection{Capa de aplicación}
-Se omiten capas del modelo OSI como la sesión o presentación pues no son muy usadas y se asume que las aplicaciones poseen ya estas funciones. Ésta contiene todos los protocolos de alto nivel. Entre los primeros protocolos están el de terminal virtual (TELNET), transferencia de archivos (FTP) y correo electrónico (SMTP). A través de los años se han agregado muchos otros protocolos. En la imagen \ref{fig:protocolos tcp ip} se muestran los más importantes de cada capa. La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
-\begin{figure}[H]
+Se omiten capas del modelo OSI como la sesión o presentación pues no son muy usadas y se asume que las aplicaciones poseen ya estas funciones. Ésta contiene todos los protocolos de alto nivel. Entre los primeros protocolos están el de terminal virtual (TELNET), transferencia de archivos (FTP) y correo electrónico (SMTP). A través de los años se han agregado muchos otros protocolos. En la figura \ref{fig:protocolos tcp ip} se muestran los más importantes de cada capa. La importancia del protocolo TCP/IP es muy elevada ya que permite que los datos enviados lleguen a su destino sin errores y bajo la misma forma en la que fueron enviados.
+\begin{figure}[]
 \centering
 \includegraphics[scale=0.5]{IN1/IN3.png}
 \caption{Algunos protocolos usados en TCP/IP}
 \label{fig:protocolos tcp ip}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=\textwidth]{IN1/IN4.png}
 \caption{Comparación de modelo OSI versus TCP/IP}
@@ -6501,15 +6501,15 @@ Antes de seguir, vamos a recalcar que es un \textbf{atenuador}, vamos a calcular
 \end{center}
 Se descarta la opcion C ya que el nivel final antes de entrar al vatímetro es de 12 dBm, estando fuera del rango de 0 a -15 dBm del vatímetro y en consecuencia puede dañar el instrumento. Aún nos quedan dos opciones, ahora debemos de analizar a nivel de potencia. Analicemos la opción a nivel de \textbf{potencia}:
 \begin{align*}
-27=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
+27dBm=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
 P_{out}&=0.5W
 \end{align*}
-Ya salida en watts del transmisor es de 0.5W pero vemos que su primer atenuador solo resiste 0.2W, por lo tanto no es adecuado. Descartando así la opción a. Probamos la opción b si es correcta o incorrecta, ojo, analizamos el segundo atenuador de la opción b, pues el primer atenuador resiste 1W, así que no habrá problema:
+Ya salida en watts del transmisor es de 0.5W(27dBm) pero vemos que su primer atenuador solo resiste 0.2W, por lo tanto no es adecuado. Descartando así la opción a. Probamos la opción b si es correcta o incorrecta, ojo, analizamos el segundo atenuador de la opción b, pues el primer atenuador resiste 1W, así que no habrá problema:
 \begin{align*}
 17=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
-P_{out}&=0.005W
+P_{out}&=0.05W
 \end{align*}
-La potencia es de 0.005W cuando el segundo atenuador puede aguantar 0.1W y no habrá problema, así que la opción correcta es la b.
+La potencia es de 0.05W cuando el segundo atenuador puede aguantar 0.1W y no habrá problema, así que la opción correcta es la b.
 \end{example}
 \begin{exercise}
 Es un sistema de recepción TV satélite, la unidad interna tiene una impedancia de entrada de 50 W y el fabricante indica en su catalogo que
@@ -6639,6 +6639,10 @@ dB\mu V&=121.77
 \end{align*}
 Realizamos lo mismo por el con la salida del sistema, obteniendo $P_{out}=39.81\times 10^{-3}W$, $V=4.88\times 10^6\mu V$ y en dB$\mu$V: 133.76$dB\mu V$
 \end{example}
+\section*{Vocabulario}
+\begin{vocabulary}[Duplexer]
+Un duplexor es un dispositivo electrónico que permite la comunicación bidireccional sobre una misma línea de transmisión. En sistemas de radar y de comunicaciones de RF, sirve para aislar el receptor del transmisor permitiendo compartir la misma antena
+\end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -6911,7 +6915,7 @@ Aunque el logaritmo en base 10 de la relación de dos valores de potencia es una
 a=10\cdot \log_{10}\left(\frac{P_1}{P_2}\right)dB
 \end{equation}
 \section{Definición de dBm}
-Si nos referimos Si nos referimos un valor de potencia arbitraria a un valor de potencia arbitraria a una cantidad de r una cantidad de referencia fijo, la relación logarítmica de referencia fijo, la relación logarítmica de los dos valores se obtiene una nueva cantidad absoluta. Esta cantidad se define como un nivel. La cantidad de referencia más utilizado en la ingeniería de las telecomunicaciones y de radio frecuencia es de una potencia de 1 mW (una milésima de un vatio) en 50 Ohm. La relación de potencia general de P1($P_out$) a P2($P_in$) se convierte ahora en una relación de P1 a 1 mW. La relación logarítmica proporciona el nivel L. De acuerdo con IEC 27, el valor de referencia tuvo que figurará en el índice de nivel:
+Si nos referimos un valor de potencia arbitraria a un valor de potencia arbitraria a una cantidad de r una cantidad de referencia fijo, la relación logarítmica de referencia fijo, la relación logarítmica de los dos valores se obtiene una nueva cantidad absoluta. Esta cantidad se define como un nivel. La cantidad de referencia más utilizado en la ingeniería de las telecomunicaciones y de radio frecuencia es de una potencia de 1 mW (una milésima de un vatio) en 50 Ohm. La relación de potencia general de P1($P_out$) a P2($P_in$) se convierte ahora en una relación de P1 a 1 mW. La relación logarítmica proporciona el nivel L. De acuerdo con IEC 27, el valor de referencia tuvo que figurará en el índice de nivel:
 \begin{equation}
 \label{art:dbm}
 L_{P/1mW}=10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm
