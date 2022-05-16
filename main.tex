@@ -181,10 +181,10 @@ F(tx,ty)=\sqrt{t^2x^2+t^2y^2}
 \end{displaymath}
 Factorizamos t de la expresión:
 \begin{displaymath}
-F(x,y)=t\overbrace{\sqrt{x^2+y^2}}^{G(x,y)}
+F(x,y)=t\overbrace{\sqrt{x^2+y^2}}^{F(x,y)}
 \end{displaymath}
 \begin{displaymath}
-F(x,y)=t\cdot G(x,y)
+F(x,y)=t\cdot F(x,y)
 \end{displaymath}
 La función es homogénea de grado 1
 \end{example}
@@ -204,7 +204,7 @@ h(y)dy=g(x)dx \rightarrow \int h(y)dy=\int g(x)dx + C
 \end{displaymath}
 Después de la integración llegamos a:
 \begin{displaymath}
-H(y)=G(X)+C
+H(y)=G(x)+C
 \end{displaymath}
 También pueden verse de la forma diferencial:\\
 \begin{equation}\label{eq:edprimerorden}
@@ -2722,12 +2722,12 @@ Como en la programación de computadoras es un clásico que nuestro primer progr
 \item Le damos click en la flecha que apunta a la derecha en la parte superior(subir) y esperamos que compile.
 \item Esperamos que termine de descargar y compilar, en consecuencia, tenemos que ver nuestro LED parpadear con una frecuencia de 1 segundo.
 \end{enumerate}
-\begin{wrapfigure}{r}{0.1\linewidth}
+\begin{figure}[H]
 \centering\includegraphics[scale=0.1]{SmartCities/qr/qr1.png}
 \caption{QR program: 1.Blink}
 \label{fig:qr1}
-\end{wrapfigure}
-\begin{lstlisting}[caption={Blink Program},captionpos=b]
+\end{figure}
+\begin{lstlisting}[caption={Blink Program},captionpos=b,frame=single]
 // the setup function runs once when you press reset or power the board
 #define LED_BUILTIN 2
 void setup() {
@@ -2750,7 +2750,7 @@ void loop() {
 \end{wrapfigure}
 Una de las funciones más elementales e importantes del ESP8266 es la posibilidad de conectarse a internet para realizar proyectos de IoT(\textit{Internet of things}). Asi que, como primer paso vamos a conectarnos a nuestra red Wifi:
 
-\begin{lstlisting}[caption={Conectarse a una red WiFi},captionpos=b]
+\begin{lstlisting}[caption={Conectarse a una red WiFi},captionpos=b,frame=single]
 #include <ESP8266WiFi.h>
 
 String ssid     = "FIWI";
@@ -2812,7 +2812,7 @@ Las lineas de \textbf{byte}(\textit{Lineas 6-7}) son dos variables que van conta
 \label{fig:qr3}
 \end{wrapfigure}
 Nuestra ESP8266, como hemos visto, se puede conectar a una red wifi pero también puede crear su propia red wifi para que dispositivos se conecten a ella. En este apartado veremos como podemos crear una red wifi:
-\begin{lstlisting}[caption={Conectarse a una red WiFi},captionpos=b]
+\begin{lstlisting}[caption={Conectarse a una red WiFi},captionpos=b,frame=single]
 #include <ESP8266WiFi.h>
 const char* ssid="WIFI ESP8266";//Name of your red
 const char* password="12345678";//Your password, remember, at least 8 characters
@@ -2837,7 +2837,7 @@ void loop() {
 \label{fig:qr4}
 \end{wrapfigure}
 Para crear esto utilizaremos el lenguaje HTML, hay varias formas pero esta es la básica para empezar.\footnote{Si da error, puedes ponerle una tilde en la i de titulo en línea 33}. Puedes hacerlo en \textbf{Sublime text}\footnote{\url{https://www.sublimetext.com/}} o en \textbf{VScode}\footnote{\url{https://code.visualstudio.com/}}, en nuestro caso usaremos VScode, luego copiamos el código en nuestro editor. \textbf{OJO: Hacemos este código solo para ver como funcionan las etiquetas en el "lenguaje" HTML}.
-\begin{lstlisting}[language=html, caption={Conectarse a una red WiFi},captionpos=b]
+\begin{lstlisting}[language=html, caption={Conectarse a una red WiFi},captionpos=b,frame=single]
 <!DOCTYPE html>
 <html>
 
@@ -2923,7 +2923,7 @@ Nos dará nuestra IP y lo copiamos en nuestro navegador, por ejemplo: nuestra IP
 \end{wrapfigure}
 También podemos usar nuestra ESP8266 para medir dispositivos analógicos como por ejemplo, medir la resistencia de un potenciómetro:  ver gráficamente como cambia este valor.\\
 En nuevo documento copiamos el siguiente programa:
-\begin{lstlisting}[caption={Medir la resistencia de un potenciómetro},captionpos=b]
+\begin{lstlisting}[caption={Medir la resistencia de un potenciómetro},captionpos=b,frame=single]
 const int analogInPin=A0;
 int SensorValue=0;
 
@@ -3823,7 +3823,7 @@ De esféricas a cartesianas:
    \end{bmatrix}
    \begin{bmatrix}A_r \\A_\theta\\A_{\phi} \end{bmatrix}
 \end{equation}
-Revisar el ejemplo 2.1 de \cite{elmagsadiku}.
+Revisar el ejemplo 2.1 de \cite{sadiku2018elements}.
 \begin{figure}[htbp]
 \centering
 \subfloat[Coordenadas cartesianas en el plano]{\label{fig:a}\includegraphics[scale=0.5]{CamposMag/CM1.png}}\qquad
@@ -3889,7 +3889,7 @@ Diferencial de volumen esta dado por:
 \begin{equation}
 \boxed{dv=r^2\cdot\sin\theta dr d\theta d\phi}
 \end{equation}
-\subsection{Operador DEL($\nabla$)}
+\subsection{Operador DEL($\nabla$)}\label{subsec:DEL}
 El operador DEL, es el operador de vector diferencial. En coordenadas cartesianas:
 \begin{equation}
 \boxed{\nabla=\frac{\partial}{\partial x}\textbf{a}_x+\frac{\partial}{\partial y}\textbf{a}_y+\frac{\partial}{\partial z}\textbf{a}_z}
@@ -6265,6 +6265,91 @@ Un cable coaxial consiste en alambre de cobre rígido como núcleo, rodeado por 
 \label{fig:utp cat 5}
 \end{figure}
 Las ventajas son un equilibrio entre alto ancho de banda(hasta GHz) e inmunidad al ruido. Se usan aún para la tv por cable y MAN.
+\subsection{Líneas eléctricas}
+Una idea que es más antigua de lo que crees es usar las redes eléctricas como una red de transmisión de datos. Se puede lograr como por ejemplo, mandar una señal de TV a través del toma-corrientes y que la televisión, a la vez que se alimenta recibe los datos de TV por cable. La dificultad es que la instalación eléctrica esta normalmente diseñada para \textbf{frecuencias} bajas (50-60 Hz) y para que el \textbf{atenúa} frecuencias altas, de la cantidad de los MHz, pero estas frecuencias altas son las que se usan para la transmisión de datos. Ademas no todas las instalaciones están diseñadas igual e inclusive el encender y apagar otros electrodomésticos genera ruido eléctrico.
+\subsection{Fibra óptica}
+Por lo general, una fibra óptica esta constituida por: la fuente de luz, medio de transmisión y detector. Por convención, un pulso de luz indica un bit 1 y la ausencia de luz indica un bit 0. Un sistema unidireccional esta formado por los componentes ya mencionados, la fuente de luz \textbf{genera} los haces de luz, viajan a través del medio, el detector los acepta y genera señales  de electricidad. En envió de datos por fibra óptica no sería capaz sin el principio de \textbf{refracción} y reflexión, como se ve en la imagen \ref{fig:fibra optica funcionamiento}, existe refracción hasta cierto ángulo donde es critico y el haz de luz total \textbf{rebotará} a lo largo del la fibra.
+\begin{figure}[H]
+\centering
+\subfloat[Ángulo con refracción y reflexión.]{\includegraphics[width=0.4\linewidth]{IN1/IN7.png}}
+\subfloat[Ángulo solo con reflexión.]{\includegraphics[width=0.4\linewidth]{IN1/IN8.png}}
+\caption{Principio de funcionamiento de la fibra óptica.}
+\label{fig:fibra optica funcionamiento}
+\end{figure}
+Es debido a ese ángulo que el haz de luz va poder rebotar a lo largo de la fibra. \begin{figure}[]
+\centering
+\includegraphics[scale=0.5]{IN1/IN9.png}
+\caption{Luz en la fibra óptica.}
+\label{fig:modos en la fibra}
+\end{figure}
+Existen dos propiedades de la fibra:\textbf{multimodo} cuando distintos haces de luz rebotando con distintos ángulos y \textbf{monomodo} cuando el diámetro de la fibra se reduce a unas cuantas longitudes de onda, así la fibra actuara solo como guía y la luz irá en linea recta, sin rebotes. (Fig. \ref{fig:modos en la fibra}) Las más costosas son las fibras monomodo pero son usadas para distancias largas, llegando a transferir hasta 100 Gbps por 100km sin necesidad de amplificación.\footnote{Ver la página 88 del libro \cite{tanenbaum2012computer} acerca de longitud de onda.}. Una fibra óptica esta compuesta por núcleo, revestimiento y cubierta (Fig.\ref{fig:partes fibra} ).
+\begin{figure}[]
+\centering
+\includegraphics[scale=0.5]{IN1/IN10.png}
+\caption{Partes de un cable de fibra óptica.}
+\label{fig:partes fibra}
+\end{figure}
+El núcleo está rodeado de un revestimiento de vidrio con un índice de refracción más bajo que el del núcleo, con el fin de mantener toda la luz en el núcleo. Después viene una cubierta delgada de plástico para proteger el revestimiento. Por lo general las fibras se agrupan en haces, protegidas por una funda exterior. Para unir fibras ópticas se tienen 3 formas:
+\begin{enumerate}
+\item \textbf{Conectores}: Pueden terminar en conectores e insertarse en clavijas de fibra. Los conectores pierden entre un 10 y 20\% de la luz, pero facilitan la re-configuración de los sistemas.
+\item \textbf{Empalme mecánico}: simplemente acomodan
+los dos extremos cortados con cuidado, uno junto a otro en una manga especial y los sujetan en su lugar. Para mejorar la alineación se puede pasar luz a través de la unión para después realizar pequeños ajustes de modo que se maximice la señal. El personal capacitado tarda cerca de cinco minutos en crear empalmes mecánicos y se produce una pérdida de luz de 10\%.
+\item \textbf{Fusión o fundir}: Un empalme por fusión es casi tan bueno como una sola fibra, pero incluso en este caso se produce una pequeña cantidad de atenuación.
+\end{enumerate}
+Como fuentes de luz se usan LEDs y láseres semiconductores (tabla \ref{tab:led vs laser}).
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{CBCEFB} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{CBCEFB}Característica} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}LED} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Láser semiconductor} \\ \hline
+Tasa de datos                                                & Baja                                             & Alta                                                             \\ \hline
+Tipo de fibra                                                & Multimodo                                        & Multimodo o monomodo                                             \\ \hline
+Distancia                                                    & Corta                                            & Larga                                                            \\ \hline
+Tiempo de vida                                               & Vida larga                                       & Vida corta                                                       \\ \hline
+Sensibilidad a la temperatura                                & Poca                                             & Considerable                                                     \\ \hline
+Costo                                                        & Bajo                                             & Elevado                                                          \\ \hline
+\end{tabular}
+\caption{Comparación de los diodos semiconductores y los LED como fuentes de luz.}
+\label{tab:led vs laser}
+\end{table}
+\begin{figure}[]
+\centering
+\includegraphics[scale=0.5]{IN1/IN11.png}
+\caption{Haz de luz de LED y láser.}
+\end{figure}
+\\El extremo receptor de una fibra óptica consiste en un \textbf{fotodiodo}, el cual emite un pulso eléctrico cuando lo golpea la luz. El tiempo de respuesta de los fotodiodos, que \textbf{convierten} la señal óptica en eléctrica, limita la tasa de datos a cerca de 100 Gbps. El ruido térmico es otro inconveniente, por lo que un pulso de luz debe llevar suficiente potencia para detectarlo. Cuando los pulsos tienen la potencia suficiente, la tasa de error se puede reducir de manera considerable.
+\section{Transmisión inalámbrica}\index{Transmisión inalámbrica}
+Para seguir tienes que recordar la ecuación \ref{art:onda y velocidad}. En el vacio todas las ondas sin importar su frecuencia viajan a la velocidad de la luz, aproximadamente \textbf{$3\times 10^8m/seg$}. En el cobre o la fibra, la velocidad baja casi al 2/3 de la velocidad de la luz y se vuelve ligeramente independiente de la frecuencia.\\
+Ademas es necesario repasar el espectro electromagnético (fig: \ref{fig:espectro electro}):
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN12.png}
+\caption{Espectro electromagnético.}
+\label{fig:espectro electro}
+\end{figure}
+\begin{enumerate}
+\item Las porciones de radio, microondas, infrarrojo y luz visible del espectro se pueden utilizar para transmitir información mediante la modulación de la amplitud, frecuencia o fase de las ondas.
+\item La luz ultravioleta, los rayos X y los rayos gamma serían todavía mejores, debido a sus frecuencias más altas, pero son difíciles de producir y de modular, no se propagan bien entre edificios y son peligrosos para los seres vivos.
+\item Los nombres de la parte inferior de la fig. \ref{fig:espectro electro} son oficiales por la ITU:
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IN1/IN13.png}
+\end{center}
+\item En ese entonces no se sabia que se podia llegar a mucha más frecuencia, es por eso que despues de esas frecuencias mencionadas, tal vez escuches términos como: \textit{incredible high frecuency} (IHF), \textit{amazing high frecuency} (AHF) y \textit{prodigious high frecuency} (PHF).
+\end{enumerate}
+La mayoría de transmisores se centran solo en una banda de frecuencia \textbf{estrecha} para usar el espectro con eficiencia y tasa de datos razonable. Aunque también se puede usar \textbf{anchos de banda} con 3 variaciones: Primero esta el \textbf{espectro disperso por salto de frecuencia} el transmisor salta de frecuencia en frecuencia cientos de veces por segundo; segundo tenemos el \textbf{espectro disperso de secuencia directa} la cual utiliza una secuencia de códigos para dispersar los datos sobre una banda de frecuencia ancha. Su uso comercial es muy popular como una forma \textbf{espectralmente} eficiente de permitir que múltiples señales \textbf{compartan} la misma banda de frecuencia. Estas señales pueden recibir distintos códigos, un método conocido como CDMA (Acceso Múltiple por División de Código). CDMA forma las bases del GPS y comunicación 3G. Y por último tenemos la comunicación \textbf{UWB} (Banda Ultra-Ancha), el cual envía una serie de pulsos rápidos, los cuales varían sus posiciones para comunicar la información. Las transiciones rápidas conducen a una señal que se dispersa finamente sobre una banda de frecuencia muy amplia. UWB se define como señales que tienen un ancho de banda de por lo menos 500 MHz o de al menos 20\% de la frecuencia central de su banda de frecuencia (fig.\ref{fig: uwb}). Teniendo potencial para tasa altas pero poca energía en cada frecuencia, usadas para redes PAN y no provocando interferencia en frecuencias a señales de radio de banda estrecha.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.5\linewidth]{IN1/IN14.png}
+\caption{Comunicaciones de espectro disperso y Banda Ultra-Ancha (UWB).}
+\label{fig:anchos de banda variaciones}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN15.png}
+\caption{UWB en el dominio de la frecuencia.}
+\label{fig: uwb}
+\end{figure}
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -6327,7 +6412,62 @@ Fenómeno ondulatorio que ocurre cuando una onda se reproduce al atravesar una a
 %----------------------------------------------------------------------------------------
 \part{Microcontrolador y microprocesador}
 \chapterimage{chapter_head_MM.pdf} % Chapter heading image
-
+\section{Código Assembler}\index{Código Assembler}
+\textbf{OJO} que quede claro que no vamos a \textbf{profundizar} todos los códigos, iremos a medida que aprendamos un nuevo código, solo \textbf{describiré} lo que hace la función en un par de líneas, tienes que estar acompañado del \textit{datasheeet} de los procesadores \textit{AVR} porque en cada comando existe restricciones y límites.
+\subsection*{Lista de comandos}
+\begin{enumerate}
+\item \textbf{LDI} Rd,k: Carga una constante \textit{k} de 8-bit al registro Rd.
+\item \textbf{STS} k,Rr: Mueve el valor del registro Rr al la memoria de datos k.
+\item \textbf{ST} X, Rr/\textbf{ST} X+,Rr/\textbf{ST} -X,Rr: Usa el valor del registro automático X\footnote{Puede funcionar con cualquier registro indirecto.} para ubicarla en la \textit{Data memory} y almacena el valor del registro Rr. Las variantes con el símbolo + y - nos ayudarán a movernos un espacio a la derecha o izquierda: Si X:0220, con la función \textbf{sin} signo la almacena directo, con la función con el signo + se almacenará en la memoria 0221 y con el signo - se almacenará en la memoria 0219. Al hacer el uso de X+/X-, el valor de X se \textbf{actualizará}, siendo X:0219, usamos el X+, X ahora será 0220, ya no es 0219.
+\item \textbf{ADD Rd,Rr}: Suma el registro Rr más el registro Rd, y el resultado lo coloca en el registro Rd. La suma es \textbf{sin acarreo}. Solo soporta hasta 255(FF), a partir de ahí el bit rebalsa. Este estado se puede ver en \textbf{ITHSVNZC} o \textbf{registros de estado}.
+\item \textbf{INC} Rd: Incrementa el registro Rd en una unidad en su misma posición.
+\end{enumerate}
+\begin{definition}[Registros indirectos]
+\textbf{X, Y, Z} son direcciones de registro indirectas: X=R27:R26, Y=R29:R28, y
+Z=R31:R30)\\
+Esto quiere decir que no controlamos estas memorias y almacena registros automáticos; estos registros son compuestos, si tenemos el valor de \textcolor{red}{0x20} en el R27 y el valor de \textcolor{blue}{0x22} en el registro R26, X será: X:\textcolor{blue}{22}\textcolor{red}{20}. 
+\end{definition}
+\begin{remark}
+Los sistemas numéricos son los siguientes: los binarios son escritos: \textcolor{red}{0b}xxxx xxxx, los hexadecimales son: \textcolor{red}{0x}xx y los decimales son: \textcolor{red}{\$}xx. El AVR trabaja en \textbf{hexadecimal} pero se pueden ingresar datos en otros sistemas, pero los cálculos internos son en hexadecimal.
+\end{remark}
+\begin{enumerate}
+\item Escriba un programa para cargar el valor 0x75 en el registro R16. Luego desde el registro R16 mover los datos a los registros R0 y R10. Use el simulador para verificar los registros. Analice cómo evoluciona el PC (contador de Programa) y el ``Cycle Count'':
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Crear y mover registros},captionpos=b,numbers=none]
+Start:
+Loop:
+	LDI R16, 0x75; Registra el valor de 0x75 en el registro 16 (El comando LDI solo funciona con valores del registro 31)
+    MOV R0, R16; Copia el valor del registro 16 al registro 0
+    MOV R10, R16; Copia el valor del registro 16 al registro 10
+fin:   
+    rjmp  fin
+\end{lstlisting}
+\item Escriba un programa para cargar el valor 5 en hexadecimal en la posición 0x0100 de la memoria de datos (data Memory), añadir líneas de código para cargar el valor 0b0000 1001\footnote{Para los valores binarios tiene que ir la cabezera \textbf{0b}} en la posición 0x0101. 
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Acceso a la mejora SRAM},captionpos=b,numbers=none]
+Start:
+Loop:
+	LDI R16, 0x05; Registra el valor de 0x05 en el registro 16
+	STS 0x0100, R16; Guarda el valor del registro 16 en la memoria 0x0100
+	LDI R17, 0b00001001; Registra el valor de 0b00001001en el registro 17
+	STS 0x0101, R17; Guarda el valor del registro 17 en la memoria 0x0101
+fin:
+	rjmp fin
+\end{lstlisting}
+Seguidamente agregue líneas para que realice la suma de los datos almacenados de las posiciones 0x0100 y 0x0101 y guardar el resultado en la posición 0x0103.
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Movimiento de datos en la SRAM},captionpos=b,numbers=none]
+Start:
+Loop:
+	LDI R16, 0x05; Registra el valor de 0x05 en el registro 16
+	STS 0x0100, R16; Guarda el valor del registro 16 en la memoria 0x0100
+	LDI R17, 0b00001001; Registra el valor de 0b00001001en el registro 17
+	STS 0x0101, R17; Guarda el valor del registro 17 en la memoria 0x010
+	LDS R1, 0x100; Recuperas un dato de la memoria 0x100 y se carga al registro R1
+	LDS R2, 0x0101; Recuperas un dato de la memoria 0x1001 y se carga al registro R2
+	ADD R1, R2; Sumas los registros de R1 y R2 y se guarda en R1
+	STS 0x0103, R1; Guardas el valor del registro 3 en la memoria 0x0103
+fin:
+	rjmp fin
+\end{lstlisting}
+\end{enumerate}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -6444,6 +6584,7 @@ V_{rms}=\frac{V_p}{\sqrt{2}}
 \textit{El voltaje eficaz es el voltaje pico entre la raíz de 2.}\\
 No olvidando que el valor pico a pico($V_{pp}$) es dos veces el valor pico($V_p$)
 \end{remark}
+El present perfect se utiliza para referirse a acciones que empezaron en el pasado y que continúan en el presente. En español equivale en la mayoría de sus usos al pretérito perfecto en español: yo he comido, tú has comido, él ha comido, etc.
 \begin{definition}[Potencia Isotrópica Radiada Equivalente]
 Cantidad de potencia que emitiría una antena isotrópica teórica para producir la densidad de potencia observada en la dirección de máxima ganancia de una antena.\\
 Definida como:
@@ -6561,6 +6702,20 @@ Encontrar el F.C. para una impedancia de 75$\Omega$. Rpta:
 -\log\left(\frac{R}{75}\right)
 \end{displaymath}
 \end{exercise}
+\begin{definition}[Compensaciones comunes]
+Basado en lo que vimos, existen unas compensaciones en el caso que el receptor y generador tengan diferentes impedancia:\\Instrumento a 600$\Omega$ y punto de medición diferente a 600$\Omega$(baja frecuencia):
+\begin{equation}
+L_{P/1mW}=20\cdot\log\left(\frac{E}{0.775}\right)-10\cdot\log\left(\frac{Z}{600}\right)
+\end{equation}
+Instrumento a 75$\Omega$ y punto de medición diferente a 75$\Omega$(frecuencia media):
+\begin{equation}
+L_{P/1mW}=20\cdot\log\left(\frac{E}{0.275}\right)-10\cdot\log\left(\frac{Z}{75}\right)
+\end{equation}
+Instrumento a 50$\Omega$ y punto de medición diferente a 50$\Omega$(Frecuencia RF):
+\begin{equation}
+L_{P/1mW}=20\cdot\log\left(\frac{E}{0.224}\right)-10\cdot\log\left(\frac{Z}{50}\right)
+\end{equation}
+\end{definition}
 \begin{example}[Demostraciones]
 Demostrar que en un bloque se cumple:\\
 \includegraphics[scale=0.5]{IM/IM8.png}\\
@@ -6642,16 +6797,86 @@ dB\mu V&=121.77
 \end{align*}
 Realizamos lo mismo por el con la salida del sistema, obteniendo $P_{out}=39.81\times 10^{-3}W$, $V=4.88\times 10^6\mu V$ y en dB$\mu$V: 133.76$dB\mu V$
 \end{example}
+\section{Radio digital y sus partes}\index{Radio digital y sus partes}
+Lo que entra y sale del demodulador es la banda base, la banda base del transmisor que entra viene del multiplexor, pasando por el modulador por la modulación PSK, los modula a una frecuencia intermedia, pasa al radio donde hay un  mezclador y un oscilador local que lo lleva a 150MHz. Existen dos frecuencias: del transmisor y del receptor, logrando ser un sistema full-duplex.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IM/IM10.png}
+\caption{Radio digital VHF}
+\end{figure}
+El mismo esquema es usado para UHF, teniendo como diferencia el alimentador que aunque cable coaxial tiene que ser especial para VHF. Para VHF se usa una modulación 4PSK en alta frecuencia.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{IM/IM11.png}
+\caption{Radio digital VHF}
+\end{figure}
+Para el caso de M.O. el tren de pulso es modulada en 8PSK en alta frecuencia, aquí en \ref{fig:mo} no se usan los duplexer, sino se usan circuladores que son prácticamente lo mismo pero para M.O. Con alta capacidad de canales, al caer el transmisor, todo el servicio se pierde, por eso se añade M.O. tiene equipo de conmutación radiocanal a través de un micro controlador, haciendo el caso al sistema redundante asegurando su correcto funcionamiento.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{IM/IM12.png}
+\caption{Radio digital VHF}
+\label{fig:mo}
+\end{figure}
+Se usa el \textbf{BER} para medir el error, siendo BER=1e-9, mientras el equipo se deteriora el BER cae, siendo hasta un BER=1e-5 para que tengamos que hacer el correspondientemente mantenimiento. No siempre significa error, puede que se deba al desvanecimiento (agentes externos entre el radio enlace como lluvia, rayos de interferencia, etc). El BER es medido a la salida del demodulador; el equipo de conmutación no da directo al modulador/demodulador, sino que hay un repartidor,  (fig. \ref{fig:repartidor}), es ahí en donde se hace la medición del BER
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{IM/IM17.png}
+\caption{Repartidor}
+\label{fig:repartidor}
+\end{figure}
+\section{Repetidores}
+Existen dos tipos de repetidor: activo y pasivo (fig \ref{fig:tipos de repetidor})
+\begin{figure}[H]
+\centering
+\subfloat[Repetidor activo.]{\includegraphics[width=\linewidth]{IM/IM13.png}}\\
+\subfloat[Repetidot pasivo.]{\includegraphics[width=\linewidth]{IM/IM14.png}}
+\caption{Repetidores}
+\label{fig:tipos de repetidor}
+\end{figure}
+\subsection{Repetidor activo}\label{Repetidor activo}
+Los repetidores activos tienen un receptor, luego pasa con un par formado por un demodulador y un modulador para finalmente pasar por un transmisor, es decir repite la señal modulando y demodulando para que se vuelva a enviar la señal. Existe una variante llamada \textbf{repetidor activo con DROP-INSERT} (fig: \ref{fig:repetidor dropinsert}), es usado para que el repetidor pueda funciona como un punto medio, es decir, puedes subir bajar señales del repetidor, para ello se utiliza un MUX de la misma jerarquía de los dos
+\begin{figure}[]
+\centering
+\includegraphics[scale=0.5]{IM/IM15.png}
+\caption{Repetidor activo con DROP-INSERT.}
+\label{fig:repetidor dropinsert}
+\end{figure}
+\subsection{Repetidor pasivo}\index{Repetidor pasivo}
+Usados cuando el enlace es corto y no existe linea de vista(osea el enlace de radio tiene un obstáculo), cuya variante es una repetidor de tipo espejo (fig: \ref{fig:repetidor pasivo espejo})
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IM/IM16.png}
+\caption{Repetidor pasivo tipo espejo.}
+\label{fig:repetidor pasivo espejo}
+\end{figure}
+Usado también en zonas montañosas donde la linea de vista es obstaculizada. Esta fabricado en aluminio concentrado y su función se basa en el principio de reflexión.
 \section*{Vocabulario}
 \begin{vocabulary}[Duplexer]
 Un duplexor es un dispositivo electrónico que permite la comunicación bidireccional sobre una misma línea de transmisión. En sistemas de radar y de comunicaciones de RF, sirve para aislar el receptor del transmisor permitiendo compartir la misma antena
 \end{vocabulary}
+
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
 \part{Inglés}
 \chapterimage{chapter_head_Ingles.pdf} % Chapter heading image
 \chapter{English notes}
+\section{\textit{a/an}, \textit{the} and no-article}\index{a/an, the and no-article}
+\begin{table}[H]
+\begin{tabular}{|m{0.3\linewidth}|m{0.3\linewidth}|m{0.3\linewidth}|}
+\hline
+a/an                                                                                                                                                                                 & the                                                                                                                                                                                                                                                       & no-article                                                                                                                                                          \\ \hline
+\begin{tabular}{m{0.8\linewidth}}
+To talk about something that isn't specific:\\ -I'd like \textbf{a glass of water}.\\ The first time we mention something:\\-I'm here for \textbf{an interview}
+\end{tabular} & 
+\begin{tabular}{m{0.8\linewidth}}
+To talk about something specific or unique:\\ -It's for \textbf{the sales assistant job}.\\ The second time we mention something:\\-This gentleman is here for \textbf{the interview}.\\ With superlatives: \textbf{the best} person
+\end{tabular} & 
+\begin{tabular}{m{0.8\linewidth}}
+To talk about plural and uncountable nouns in general:\\-I like working with \textbf{(-) people} and I like working in \textbf{(-) sales}.
+\end{tabular} \\ \hline
+\end{tabular}
+\end{table}
 \section{When use \textit{the}?}\index{When use \textit{the}?}
 \noindent Some examples are detailed below:\\
 \begin{multicols}{2}
@@ -6684,29 +6909,13 @@ You use \textit{the} with names of:
 \item geographical regions: the Middle East, the north, the coast, the mountains, the countryside, the Antarctic.
 \end{itemize}
 \end{multicols}
-\section{\textit{a/an}, \textit{the} and no-article}\index{\textit{a/an}, \textit{the} and no-article}
-\begin{table}[H]
-\begin{tabular}{|m{0.3\linewidth}|m{0.3\linewidth}|m{0.3\linewidth}|}
-\hline
-a/an                                                                                                                                                                                 & the                                                                                                                                                                                                                                                       & no-article                                                                                                                                                          \\ \hline
-\begin{tabular}{m{0.8\linewidth}}
-To talk about something that isn't specific:\\ -I'd like \textbf{a glass of water}.\\ The first time we mention something:\\-I'm here for \textbf{an interview}
-\end{tabular} & 
-\begin{tabular}{m{0.8\linewidth}}
-To talk about something specific or unique:\\ -It's for \textbf{the sales assistant job}.\\ The second time we mention something:\\-This gentleman is here for \textbf{the interview}.\\ With superlatives: \textbf{the best} person
-\end{tabular} & 
-\begin{tabular}{m{0.8\linewidth}}
-To talk about plural and uncountable nouns in general:\\-I like working with \textbf{(-) people} and I like working in \textbf{(-) sales}.
-\end{tabular} \\ \hline
-\end{tabular}
-\end{table}
 \section{Use of \textit{Would}}\index{Use of \textit{Would}}
 When do I use would? yeah, it's a little bit confuse, I found a guide for this problem:
 \begin{enumerate}
 \item \textbf{Cuando le estamos contando a alguien qué pensábamos del futuro desde el tiempo pasado o cuando hacemos referencia a viejos hábitos:}
 \begin{itemize}
 \item When I was a child, I thought we \textbf{would} have flying cars in the future.(\textit{Cuando era niño, pensé que tendríamos autos voladores en el futuro.})
-\item Many times, I \textbf{would} be the first on stage.(\textit{uchas veces, sería el primero en el escenario.})
+\item Many times, I \textbf{would} be the first on stage.(\textit{Muchas veces, sería el primero en el escenario.})
 \end{itemize}
 \item \textbf{Para hablar de un deseo o una voluntad en el pasado.}
 \begin{itemize}
@@ -6719,8 +6928,8 @@ When do I use would? yeah, it's a little bit confuse, I found a guide for this p
 \end{itemize}
 \item \textbf{Para pedirle algo a alguien o hacer una solicitud de manera amable y formal:}
 \begin{itemize}
-\item \textbf{Would} you help me with those boxes? They are very heavy.(¿Podrías ayudarme con estas cajas? Están muy pesadas.)
-\item \textbf{Would} you be here at 8 p.m., please?(¿Podrías estar aquí a las 8 p.m.? ¿Por favor?)
+\item \textbf{Would} you help me with those boxes? They are very heavy.(\textit{¿Podrías ayudarme con estas cajas? Están muy pesadas.})
+\item \textbf{Would} you be here at 8 p.m., please?(\textit{¿Podrías estar aquí a las 8 p.m.? ¿Por favor?})
 \end{itemize}
 \end{enumerate}
 \section{How to use \textit{rather}?}\index{How to use \textit{rather}?}
@@ -6742,6 +6951,45 @@ I\textbf{'m going} to get my driving license.
 \subsection{will + infinitive}
 Think it as the probability of do it is 50\%. It could be or not. Also we use \textbf{will} while we're speaking. It's used to make something in future but the opportunity appear suddenly: My phone is ringing, so for a near future I can say:\\
 I \textbf{will answer} the phone.
+\section{Preset Perfect}
+It is used to indicate that an action, memories or event \textbf{took place} in the past but is relevant or \textbf{continues} in the present. Its functions are:
+\begin{itemize}
+\item La acción se inició en el pasado y continúa en el presente.\\
+I have lived in Veracruz since 1990 (\textit{He vivido en Veracruz desde 1990})
+\item El tiempo de la realización de la acción no ha concluido.\\
+They have gone to swim twice a week (\textit{Ellos han ido a nadar dos veces a la semana})
+\item La acción se repite constantemente en un tiempo indeterminado entre el pasado y el presente.\\
+She has visited that museum several times (\textit{Ella ha visitado ese museo varias veces})
+\item La acción concluyó recientemente. Para este uso de usa \textbf{just}.\\
+He has just finished his homework (\textit{Él apenas terminó su tarea})
+\item El momento en que se realizó la acción no es relevante.\\
+We haven’t watched Titanic (\textit{Nosotros no hemos visto Titanic})
+\end{itemize}
+It has the following structure:
+\begin{center}
+{\large\textbf{Affirmative}\\\textcolor{red}{Subject} + \textcolor{blue}{Aux verb (have/has)} + \textcolor{green}{Particle verb} + \textcolor{orange}{complement}}
+\end{center}
+Examples:
+\begin{itemize}
+\item They have painted their bedroom.(\textit{Ellos han pintado su habitación}). Here the action just finished, but it took time and maybe it's import for them.
+\item She has written several novels.(\textit{Ella ha escríto varías novelas.}). Here the action of writing began in the past but she's not retired, she continues with her career.
+\end{itemize}
+It can be used also in questions and negative:
+\begin{center}
+{\large\textbf{Negative}\\\textcolor{red}{Subject} + \textcolor{blue}{Aux verb (have/has)} + \textcolor{violet}{not} + \textcolor{green}{Particle verb} + \textcolor{orange}{complement}\\
+\textbf{Question}\\\textcolor{blue}{Aux verb (have/has)} + \textcolor{red}{Subject} + \textcolor{green}{Particle verb} + \textcolor{orange}{complement}?}
+\end{center}
+Also is common see \textit{\textbf{adverbs}} as:
+\begin{enumerate}
+\item Just (apenas): I have \textbf{just} finished my exam.
+\item Already (ya): He has \textbf{already} washed the dishes.
+\item Yet (todavía, ya): The teacher has not corrected the homework \textbf{yet}.
+\item For (desde hace/hace: They have been in a relationship \textbf{for} 12 years.
+\item Since (desde): We have worked in this shop \textbf{since} January.
+\item Ever (alguna vez): Have you \textbf{ever} had Indian food?\footnote{For questions}
+\item How long (cuánto tiempo, cuánto tiempo hace que)\footnote{For questions}: \textbf{How long
+} have you been in this gym?
+\end{enumerate}
 %----------------------------------------------------------------------------------------
 %	EXTRAS
 %----------------------------------------------------------------------------------------
@@ -6906,7 +7154,7 @@ Se resuelve igual que la matriz de producto cruz, con la misma distribución de 
 \section{Ondas}
 \begin{equation}
 \label{art:onda y velocidad}
-v=\frac{\lambda}{f}
+v=\lambda\cdot f
 \end{equation}
 Donde \textit{v} es velocidad de onda(\textit{c} para la luz en el vacío), $\lambda$ es la longitud de onda y \textit{f} es la frecuencia.
 \chapterimage{chapter_head_Artificios.pdf}

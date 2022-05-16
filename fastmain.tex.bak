@@ -17,13 +17,58 @@
 %----------------------------------------------------------------------------------------
 \begin{document}
 %----------------------------------------------------------------------------------------
-%Internetworking
-
-%Lineas de transmisión
+%----------------------------------------------------------------------------------------
+%Lineas
+%----------------------------------------------------------------------------------------
 \section{Leyes de maxwell}
-\section{Modelo electromagnético y las leyes de Maxwell}
+Se presentan las ecuaciones de Maxwell en la tabla \ref{tab:maxwell}.
+\begin{table}[]
+\begin{tabular}{|l|m{0.3\linewidth}|l|}
+\hline
+\rowcolor[HTML]{FFFC9E} 
+Forma diferencial                                  & Forma integral                                                                 & Remark                     \\ \hline
+$\nabla\cdot \textbf{D}=\rho_v$                             & \begin{displaymath}
+\oint_S\textbf{D}\cdot d\textbf{S}=\int_v\rho_vdv                                 \end{displaymath} & Ley de Gauss               \\ \hline
+$\nabla\cdot \textbf{B}=0$                                  & \begin{displaymath}
+\oint_S\textbf{B}\cdot d\textbf{S}=0
+\end{displaymath}                                                           & No existencia de monopolos \\ \hline
+$\nabla\times \textbf{E}=-\frac{\partial \textbf{B}}{\partial t}$    & \begin{displaymath}
+\oint_L\textbf{E}\cdot dl=-\frac{\partial}{\partial t}\int_S\textbf{B}\cdot dS
+\end{displaymath}                  & Ley de Faraday             \\ \hline
+$\nabla\times \textbf{H}=\textbf{J} + \frac{\partial \textbf{D}}{\partial t}$ & \begin{displaymath}
+\oint_L\textbf{H}\cdot dl=\int_S\left(\textbf{J} + \frac{\partial \textbf{D}}{\partial t}\right)\cdot d\textbf{S}
+\end{displaymath} & Ley de circuitos de Ampere \\ \hline
+\end{tabular}
+\caption{Leyes de Maxwell}
+\label{tab:maxwell}
+\end{table}
+Donde es necesario recordar el operador DEL (\ref{subsec:DEL})
+\begin{itemize}
+\item El gradiente de un escalar V: $\nabla$V
+\item La divergencia de un vector A: $\nabla\cdot$A
+\item La rotacional de un vector A: $\nabla\times$A
+\item El Laplaciano de un escalar V:$\nabla^2$V
+\end{itemize}
+Además se tienen ecuaciones auxiliares:
+\begin{subequations}
+\begin{align}
+\textbf{D}&=\epsilon \textbf{E}\\
+\textbf{B}&=\mu \textbf{H}\\
+\textbf{J}&=\sigma \textbf{E}\\
+\textbf{J}&=\rho_v \textbf{v}
+\end{align}
+\end{subequations}
+%\section{Modelo electromagnético y las leyes de Maxwell}
+%----------------------------------------------------------------------------------------
+%Internetworking
+%----------------------------------------------------------------------------------------
+
 %\section{Protocolos estándares y propietarios}
 %\section{Capa de enlace y la evolución de las telecomunicaciones}
+%----------------------------------------------------------------------------------------
+%Microprocesadores
+%----------------------------------------------------------------------------------------
+
 %----------------------------------------------------------------------------------------
 \end{document}
 %----------------------------------------------------------------------------------------

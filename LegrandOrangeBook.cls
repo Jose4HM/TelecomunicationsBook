@@ -113,6 +113,7 @@
 \usepackage{emptypage} % This package removes headers and footers on empty pages between chapters
 
 \usepackage{listings}%Personal
+\renewcommand{\lstlistingname}{Código}% Listing -> Algorithm
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}

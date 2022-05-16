@@ -2344,7 +2344,7 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">sample.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">elmagsadiku</bcf:citekey>
+    <bcf:citekey order="1">sadiku2018elements</bcf:citekey>
     <bcf:citekey order="2">sadiku2018elements</bcf:citekey>
     <bcf:citekey order="3">sadiku2018elements</bcf:citekey>
     <bcf:citekey order="4">sadiku2018elements</bcf:citekey>
@@ -2354,7 +2354,7 @@
     <bcf:citekey order="8">sadiku2018elements</bcf:citekey>
     <bcf:citekey order="9">sadiku2018elements</bcf:citekey>
     <bcf:citekey order="10">tanenbaum2012computer</bcf:citekey>
-    <bcf:citekey order="11">elmagsadiku</bcf:citekey>
+    <bcf:citekey order="11">tanenbaum2012computer</bcf:citekey>
     <bcf:citekey order="12">sadiku2018elements</bcf:citekey>
     <bcf:citekey order="13">tanenbaum2012computer</bcf:citekey>
   </bcf:section>
