@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  15 MAY 2022 19:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  21 MAY 2022 20:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1431,6 +1431,9 @@ LaTeX Warning: Label `fig:OSIlayers' multiply defined.
 LaTeX Warning: Label `fig:utp cat 5' multiply defined.
 
 
+LaTeX Warning: Label `fig:tipos de repetidor' multiply defined.
+
+
 LaTeX Warning: Label `Anexo 1' multiply defined.
 
 
@@ -1784,32 +1787,32 @@ Overfull \hbox (390.95769pt too wide) detected at line 263
  []
 
 [10]
-Overfull \hbox (390.95769pt too wide) detected at line 298
+Overfull \hbox (390.95769pt too wide) detected at line 303
 [][][][][][] [][][][][][] 
  []
 
 
-Overfull \hbox (390.95769pt too wide) detected at line 299
+Overfull \hbox (390.95769pt too wide) detected at line 304
 [][][][][][] [][][][][][] 
  []
 
 
-Overfull \hbox (390.95769pt too wide) detected at line 301
-[][][][][][] [][][][][][] 
- []
-
-
-Overfull \hbox (390.95769pt too wide) detected at line 311
-[][][][][][] [][][][][][] 
- []
-
-
-Overfull \hbox (390.95769pt too wide) detected at line 322
+Overfull \hbox (390.95769pt too wide) detected at line 316
 [][][][][][] [][][][][][] 
  []
 
 [11]
-Overfull \hbox (390.95769pt too wide) detected at line 347
+Overfull \hbox (390.95769pt too wide) detected at line 328
+[][][][][][] [][][][][][] 
+ []
+
+
+Overfull \hbox (390.95769pt too wide) detected at line 339
+[][][][][][] [][][][][][] 
+ []
+
+
+Overfull \hbox (390.95769pt too wide) detected at line 364
 [][][][][][] [][][][][][] 
  []
 
@@ -1833,7 +1836,7 @@ Chapter 1.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_MM1.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_MM1.pdf, id=1335, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_MM1.pdf, id=1399, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_MM1.pdf Graphic file (type pdf)
 <use Images//chapter_head_MM1.pdf>
 Package pdftex.def Info: Images//chapter_head_MM1.pdf  used on input line 121.
@@ -2009,22 +2012,22 @@ Chapter 2.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_SD.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_SD.pdf, id=1675, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_SD.pdf, id=1739, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_SD.pdf Graphic file (type pdf)
 <use Images//chapter_head_SD.pdf>
 Package pdftex.def Info: Images//chapter_head_SD.pdf  used on input line 773.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-<Images//SD/SD1.png, id=1676, 232.2276pt x 70.3428pt>
+<Images//SD/SD1.png, id=1740, 232.2276pt x 70.3428pt>
 File: Images//SD/SD1.png Graphic file (type png)
 <use Images//SD/SD1.png>
 Package pdftex.def Info: Images//SD/SD1.png  used on input line 779.
 (pdftex.def)             Requested size: 185.78232pt x 56.2743pt.
-<Images//SD/SD2.png, id=1678, 1027.84pt x 594.22pt>
+<Images//SD/SD2.png, id=1742, 1027.84pt x 594.22pt>
 File: Images//SD/SD2.png Graphic file (type png)
 <use Images//SD/SD2.png>
 Package pdftex.def Info: Images//SD/SD2.png  used on input line 780.
 (pdftex.def)             Requested size: 102.79001pt x 59.42548pt.
-<Images//SD/SD3.png, id=1679, 803.0pt x 850.17625pt>
+<Images//SD/SD3.png, id=1743, 803.0pt x 850.17625pt>
 File: Images//SD/SD3.png Graphic file (type png)
 <use Images//SD/SD3.png>
 Package pdftex.def Info: Images//SD/SD3.png  used on input line 785.
@@ -2036,32 +2039,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  <./Images//chapter_head_SD.pdf> <./Images//SD/SD1.png> <./Images//SD/SD2.png> 
 <./Images//SD/SD3.png>]
-<Images//SD/SD4.png, id=1694, 1284.8pt x 534.99875pt>
+<Images//SD/SD4.png, id=1758, 1284.8pt x 534.99875pt>
 File: Images//SD/SD4.png Graphic file (type png)
 <use Images//SD/SD4.png>
 Package pdftex.def Info: Images//SD/SD4.png  used on input line 805.
 (pdftex.def)             Requested size: 128.48752pt x 53.503pt.
-<Images//SD/SD5.png, id=1695, 1284.8pt x 642.4pt>
+<Images//SD/SD5.png, id=1759, 1284.8pt x 642.4pt>
 File: Images//SD/SD5.png Graphic file (type png)
 <use Images//SD/SD5.png>
 Package pdftex.def Info: Images//SD/SD5.png  used on input line 806.
 (pdftex.def)             Requested size: 128.48752pt x 64.24376pt.
-<Images//SD/SD6.png, id=1696, 274.77657pt x 399.74344pt>
+<Images//SD/SD6.png, id=1760, 274.77657pt x 399.74344pt>
 File: Images//SD/SD6.png Graphic file (type png)
 <use Images//SD/SD6.png>
 Package pdftex.def Info: Images//SD/SD6.png  used on input line 811.
 (pdftex.def)             Requested size: 137.38794pt x 199.87122pt.
-<Images//SD/SD7.png, id=1697, 1284.8pt x 534.99875pt>
+<Images//SD/SD7.png, id=1761, 1284.8pt x 534.99875pt>
 File: Images//SD/SD7.png Graphic file (type png)
 <use Images//SD/SD7.png>
 Package pdftex.def Info: Images//SD/SD7.png  used on input line 839.
 (pdftex.def)             Requested size: 128.48752pt x 53.503pt.
-<Images//SD/SD8.png, id=1698, 1284.8pt x 642.4pt>
+<Images//SD/SD8.png, id=1762, 1284.8pt x 642.4pt>
 File: Images//SD/SD8.png Graphic file (type png)
 <use Images//SD/SD8.png>
 Package pdftex.def Info: Images//SD/SD8.png  used on input line 840.
 (pdftex.def)             Requested size: 128.48752pt x 64.24376pt.
-<Images//SD/SD9.png, id=1699, 286.06876pt x 408.77719pt>
+<Images//SD/SD9.png, id=1763, 286.06876pt x 408.77719pt>
 File: Images//SD/SD9.png Graphic file (type png)
 <use Images//SD/SD9.png>
 Package pdftex.def Info: Images//SD/SD9.png  used on input line 845.
@@ -2070,17 +2073,17 @@ Package pdftex.def Info: Images//SD/SD9.png  used on input line 845.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37 <./Images//SD/SD7.png> <./Images//SD/SD8.png> <./Images//SD/SD9.png>]
-<Images//SD/SD10.png, id=1726, 1284.8pt x 534.99875pt>
+<Images//SD/SD10.png, id=1790, 1284.8pt x 534.99875pt>
 File: Images//SD/SD10.png Graphic file (type png)
 <use Images//SD/SD10.png>
 Package pdftex.def Info: Images//SD/SD10.png  used on input line 874.
 (pdftex.def)             Requested size: 128.48752pt x 53.503pt.
-<Images//SD/SD11.png, id=1727, 1284.8pt x 642.4pt>
+<Images//SD/SD11.png, id=1791, 1284.8pt x 642.4pt>
 File: Images//SD/SD11.png Graphic file (type png)
 <use Images//SD/SD11.png>
 Package pdftex.def Info: Images//SD/SD11.png  used on input line 875.
 (pdftex.def)             Requested size: 128.48752pt x 64.24376pt.
-<Images//SD/SD12.png, id=1728, 803.0pt x 658.46pt>
+<Images//SD/SD12.png, id=1792, 803.0pt x 658.46pt>
 File: Images//SD/SD12.png Graphic file (type png)
 <use Images//SD/SD12.png>
 Package pdftex.def Info: Images//SD/SD12.png  used on input line 880.
@@ -2089,17 +2092,17 @@ Package pdftex.def Info: Images//SD/SD12.png  used on input line 880.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [38 <./Images//SD/SD10.png> <./Images//SD/SD11.png> <./Images//SD/SD12.png>]
-<Images//SD/SD13.png, id=1741, 1284.8pt x 534.99875pt>
+<Images//SD/SD13.png, id=1805, 1284.8pt x 534.99875pt>
 File: Images//SD/SD13.png Graphic file (type png)
 <use Images//SD/SD13.png>
 Package pdftex.def Info: Images//SD/SD13.png  used on input line 916.
 (pdftex.def)             Requested size: 128.48752pt x 53.503pt.
-<Images//SD/SD14.png, id=1742, 1284.8pt x 642.4pt>
+<Images//SD/SD14.png, id=1806, 1284.8pt x 642.4pt>
 File: Images//SD/SD14.png Graphic file (type png)
 <use Images//SD/SD14.png>
 Package pdftex.def Info: Images//SD/SD14.png  used on input line 917.
 (pdftex.def)             Requested size: 128.48752pt x 64.24376pt.
-<Images//SD/SD15.png, id=1743, 532.99126pt x 401.5pt>
+<Images//SD/SD15.png, id=1807, 532.99126pt x 401.5pt>
 File: Images//SD/SD15.png Graphic file (type png)
 <use Images//SD/SD15.png>
 Package pdftex.def Info: Images//SD/SD15.png  used on input line 922.
@@ -2108,17 +2111,17 @@ Package pdftex.def Info: Images//SD/SD15.png  used on input line 922.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [39 <./Images//SD/SD13.png> <./Images//SD/SD14.png> <./Images//SD/SD15.png>]
-<Images//SD/SD16.png, id=1755, 1284.8pt x 642.4pt>
+<Images//SD/SD16.png, id=1819, 1284.8pt x 642.4pt>
 File: Images//SD/SD16.png Graphic file (type png)
 <use Images//SD/SD16.png>
 Package pdftex.def Info: Images//SD/SD16.png  used on input line 947.
 (pdftex.def)             Requested size: 128.48752pt x 64.24376pt.
-<Images//SD/SD17.png, id=1756, 1284.8pt x 642.4pt>
+<Images//SD/SD17.png, id=1820, 1284.8pt x 642.4pt>
 File: Images//SD/SD17.png Graphic file (type png)
 <use Images//SD/SD17.png>
 Package pdftex.def Info: Images//SD/SD17.png  used on input line 948.
 (pdftex.def)             Requested size: 128.48752pt x 64.24376pt.
-<Images//SD/SD18.png, id=1757, 531.9875pt x 463.7325pt>
+<Images//SD/SD18.png, id=1821, 531.9875pt x 463.7325pt>
 File: Images//SD/SD18.png Graphic file (type png)
 <use Images//SD/SD18.png>
 Package pdftex.def Info: Images//SD/SD18.png  used on input line 953.
@@ -2127,17 +2130,17 @@ Package pdftex.def Info: Images//SD/SD18.png  used on input line 953.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40 <./Images//SD/SD16.png> <./Images//SD/SD17.png> <./Images//SD/SD18.png>]
-<Images//SD/SD19.png, id=1769, 1927.2pt x 693.59125pt>
+<Images//SD/SD19.png, id=1833, 1927.2pt x 693.59125pt>
 File: Images//SD/SD19.png Graphic file (type png)
 <use Images//SD/SD19.png>
 Package pdftex.def Info: Images//SD/SD19.png  used on input line 977.
 (pdftex.def)             Requested size: 192.7313pt x 69.36317pt.
-<Images//SD/SD20.png, id=1770, 1027.84pt x 594.22pt>
+<Images//SD/SD20.png, id=1834, 1027.84pt x 594.22pt>
 File: Images//SD/SD20.png Graphic file (type png)
 <use Images//SD/SD20.png>
 Package pdftex.def Info: Images//SD/SD20.png  used on input line 978.
 (pdftex.def)             Requested size: 102.79001pt x 59.42548pt.
-<Images//SD/SD21.png, id=1771, 204.765pt x 162.3666pt>
+<Images//SD/SD21.png, id=1835, 204.765pt x 162.3666pt>
 File: Images//SD/SD21.png Graphic file (type png)
 <use Images//SD/SD21.png>
 Package pdftex.def Info: Images//SD/SD21.png  used on input line 983.
@@ -2398,7 +2401,7 @@ label is specified separately. See the documentation for more details. Backward
  compatibility may disappear in a future release. on input line 1485.
 
 \@karnaughmap@local@cellcount@=\count568
-<Images//SD/SD22.png, id=1898, 101.37875pt x 189.70876pt>
+<Images//SD/SD22.png, id=1962, 101.37875pt x 189.70876pt>
 File: Images//SD/SD22.png Graphic file (type png)
 <use Images//SD/SD22.png>
 Package pdftex.def Info: Images//SD/SD22.png  used on input line 1499.
@@ -2407,22 +2410,22 @@ Package pdftex.def Info: Images//SD/SD22.png  used on input line 1499.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [55 <./Images//SD/SD22.png>]
-<Images//SD/SD23.png, id=1910, 353.6412pt x 416.757pt>
+<Images//SD/SD23.png, id=1974, 353.6412pt x 416.757pt>
 File: Images//SD/SD23.png Graphic file (type png)
 <use Images//SD/SD23.png>
 Package pdftex.def Info: Images//SD/SD23.png  used on input line 1506.
 (pdftex.def)             Requested size: 176.82016pt x 208.37799pt.
-<Images//SD/SD24.png, id=1911, 378.6948pt x 414.8298pt>
+<Images//SD/SD24.png, id=1975, 378.6948pt x 414.8298pt>
 File: Images//SD/SD24.png Graphic file (type png)
 <use Images//SD/SD24.png>
 Package pdftex.def Info: Images//SD/SD24.png  used on input line 1507.
 (pdftex.def)             Requested size: 189.34692pt x 207.41438pt.
-<Images//SD/SD25.png, id=1912, 353.6412pt x 416.757pt>
+<Images//SD/SD25.png, id=1976, 353.6412pt x 416.757pt>
 File: Images//SD/SD25.png Graphic file (type png)
 <use Images//SD/SD25.png>
 Package pdftex.def Info: Images//SD/SD25.png  used on input line 1514.
 (pdftex.def)             Requested size: 176.82016pt x 208.37799pt.
-<Images//SD/SD26.png, id=1913, 378.6948pt x 414.8298pt>
+<Images//SD/SD26.png, id=1977, 378.6948pt x 414.8298pt>
 File: Images//SD/SD26.png Graphic file (type png)
 <use Images//SD/SD26.png>
 Package pdftex.def Info: Images//SD/SD26.png  used on input line 1515.
@@ -2432,12 +2435,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [56 <./Images//SD/SD23.png> <./Images//SD/SD24.png> <./Images//SD/SD25.png> <.
 /Images//SD/SD26.png>]
-<Images//SD/SD27.png, id=1928, 353.6412pt x 416.757pt>
+<Images//SD/SD27.png, id=1992, 353.6412pt x 416.757pt>
 File: Images//SD/SD27.png Graphic file (type png)
 <use Images//SD/SD27.png>
 Package pdftex.def Info: Images//SD/SD27.png  used on input line 1522.
 (pdftex.def)             Requested size: 176.82016pt x 208.37799pt.
-<Images//SD/SD28.png, id=1929, 378.6948pt x 414.8298pt>
+<Images//SD/SD28.png, id=1993, 378.6948pt x 414.8298pt>
 File: Images//SD/SD28.png Graphic file (type png)
 <use Images//SD/SD28.png>
 Package pdftex.def Info: Images//SD/SD28.png  used on input line 1523.
@@ -2468,7 +2471,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1553--1555
 
  []
 
-<Images//SD/SD29.png, id=1930, 249.0906pt x 100.2144pt>
+<Images//SD/SD29.png, id=1994, 249.0906pt x 100.2144pt>
 File: Images//SD/SD29.png Graphic file (type png)
 <use Images//SD/SD29.png>
 Package pdftex.def Info: Images//SD/SD29.png  used on input line 1572.
@@ -2479,7 +2482,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1577--1578
  []
 
 [57 <./Images//SD/SD27.png> <./Images//SD/SD28.png>]
-<Images//SD/SD30.png, id=1945, 205.76875pt x 130.98938pt>
+<Images//SD/SD30.png, id=2009, 205.76875pt x 130.98938pt>
 File: Images//SD/SD30.png Graphic file (type png)
 <use Images//SD/SD30.png>
 Package pdftex.def Info: Images//SD/SD30.png  used on input line 1583.
@@ -2490,7 +2493,7 @@ File: Images//chapter_head_SD.pdf Graphic file (type pdf)
 <use Images//chapter_head_SD.pdf>
 Package pdftex.def Info: Images//chapter_head_SD.pdf  used on input line 1588.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-<Images//SD/SD31.png, id=1956, 226.8475pt x 105.39375pt>
+<Images//SD/SD31.png, id=2020, 226.8475pt x 105.39375pt>
 File: Images//SD/SD31.png Graphic file (type png)
 <use Images//SD/SD31.png>
 Package pdftex.def Info: Images//SD/SD31.png  used on input line 1598.
@@ -2500,7 +2503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1607--1622
 
  []
 
-<Images//SD/SD32.png, id=1958, 297.11pt x 151.56625pt>
+<Images//SD/SD32.png, id=2022, 297.11pt x 151.56625pt>
 File: Images//SD/SD32.png Graphic file (type png)
 <use Images//SD/SD32.png>
 Package pdftex.def Info: Images//SD/SD32.png  used on input line 1626.
@@ -2508,7 +2511,7 @@ Package pdftex.def Info: Images//SD/SD32.png  used on input line 1626.
 [59
 
  <./Images//SD/SD31.png>]
-<Images//SD/SD33.png, id=1967, 226.8475pt x 142.5325pt>
+<Images//SD/SD33.png, id=2031, 226.8475pt x 142.5325pt>
 File: Images//SD/SD33.png Graphic file (type png)
 <use Images//SD/SD33.png>
 Package pdftex.def Info: Images//SD/SD33.png  used on input line 1633.
@@ -2518,7 +2521,7 @@ Package pdftex.def Info: Images//SD/SD33.png  used on input line 1633.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 1645.
 
-<Images//SD/SD34.png, id=1968, 524.96124pt x 266.9975pt>
+<Images//SD/SD34.png, id=2032, 524.96124pt x 266.9975pt>
 File: Images//SD/SD34.png Graphic file (type png)
 <use Images//SD/SD34.png>
 Package pdftex.def Info: Images//SD/SD34.png  used on input line 1667.
@@ -2527,18 +2530,18 @@ Package pdftex.def Info: Images//SD/SD34.png  used on input line 1667.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60 <./Images//SD/SD32.png> <./Images//SD/SD33.png>]
-<Images//SD/SD35.png, id=1978, 431.6125pt x 238.8925pt>
+<Images//SD/SD35.png, id=2042, 431.6125pt x 238.8925pt>
 File: Images//SD/SD35.png Graphic file (type png)
 <use Images//SD/SD35.png>
 Package pdftex.def Info: Images//SD/SD35.png  used on input line 1675.
 (pdftex.def)             Requested size: 215.80571pt x 119.44595pt.
  [61 <./Images//SD/SD34.png> <./Images//SD/SD35.png>]
-<Images//SD/SD36.png, id=1991, 340.27126pt x 379.4175pt>
+<Images//SD/SD36.png, id=2055, 340.27126pt x 379.4175pt>
 File: Images//SD/SD36.png Graphic file (type png)
 <use Images//SD/SD36.png>
 Package pdftex.def Info: Images//SD/SD36.png  used on input line 1704.
 (pdftex.def)             Requested size: 170.13521pt x 189.70828pt.
-<Images//SD/SD37.png, id=1992, 559.08875pt x 311.1625pt>
+<Images//SD/SD37.png, id=2056, 559.08875pt x 311.1625pt>
 File: Images//SD/SD37.png Graphic file (type png)
 <use Images//SD/SD37.png>
 Package pdftex.def Info: Images//SD/SD37.png  used on input line 1718.
@@ -2563,18 +2566,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 1884--1885
 
  []
 
-<Images//SD/SD38.png, id=2010, 730.73pt x 374.39874pt>
+<Images//SD/SD38.png, id=2074, 730.73pt x 374.39874pt>
 File: Images//SD/SD38.png Graphic file (type png)
 <use Images//SD/SD38.png>
 Package pdftex.def Info: Images//SD/SD38.png  used on input line 1886.
 (pdftex.def)             Requested size: 292.28682pt x 149.75684pt.
 [64] [65]
-<Images//SD/SD39.png, id=2026, 297.11pt x 146.5475pt>
+<Images//SD/SD39.png, id=2090, 297.11pt x 146.5475pt>
 File: Images//SD/SD39.png Graphic file (type png)
 <use Images//SD/SD39.png>
 Package pdftex.def Info: Images//SD/SD39.png  used on input line 1893.
 (pdftex.def)             Requested size: 237.68831pt x 117.23813pt.
-<Images//SD/SD40.png, id=2027, 397.485pt x 146.5475pt>
+<Images//SD/SD40.png, id=2091, 397.485pt x 146.5475pt>
 File: Images//SD/SD40.png Graphic file (type png)
 <use Images//SD/SD40.png>
 Package pdftex.def Info: Images//SD/SD40.png  used on input line 1898.
@@ -2591,7 +2594,7 @@ Overfull \vbox (9.2369pt too high) has occurred while \output is active []
 
 
 [66 <./Images//SD/SD38.png> <./Images//SD/SD39.png> <./Images//SD/SD40.png>]
-<Images//SD/SD41.png, id=2036, 200.75pt x 162.6075pt>
+<Images//SD/SD41.png, id=2100, 200.75pt x 162.6075pt>
 File: Images//SD/SD41.png Graphic file (type png)
 <use Images//SD/SD41.png>
 Package pdftex.def Info: Images//SD/SD41.png  used on input line 1934.
@@ -2607,12 +2610,12 @@ OMS/ztmcm/m/n/10.95 ^^A \OML/ztmcm/m/it/10.95 S[] \OMS/ztmcm/m/n/10.95 ^^A \OML
 /ztmcm/m/it/10.95 I[]$ 
  []
 
-<Images//SD/SD42.png, id=2037, 224.84pt x 162.6075pt>
+<Images//SD/SD42.png, id=2101, 224.84pt x 162.6075pt>
 File: Images//SD/SD42.png Graphic file (type png)
 <use Images//SD/SD42.png>
 Package pdftex.def Info: Images//SD/SD42.png  used on input line 1955.
 (pdftex.def)             Requested size: 112.41972pt x 81.30354pt.
-<Images//SD/SD43.png, id=2038, 232.87pt x 112.42pt>
+<Images//SD/SD43.png, id=2102, 232.87pt x 112.42pt>
 File: Images//SD/SD43.png Graphic file (type png)
 <use Images//SD/SD43.png>
 Package pdftex.def Info: Images//SD/SD43.png  used on input line 1960.
@@ -2628,7 +2631,7 @@ OMS/ztmcm/m/n/10.95 ^^A \OML/ztmcm/m/it/10.95 S[] \OMS/ztmcm/m/n/10.95 ^^A \OML
 /ztmcm/m/it/10.95 I[]$ 
  []
 
-<Images//SD/SD44.png, id=2039, 126.4725pt x 112.42pt>
+<Images//SD/SD44.png, id=2103, 126.4725pt x 112.42pt>
 File: Images//SD/SD44.png Graphic file (type png)
 <use Images//SD/SD44.png>
 Package pdftex.def Info: Images//SD/SD44.png  used on input line 1980.
@@ -2639,13 +2642,13 @@ Package mdframed Info: mdframed works in twoside mode on input line 2001.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 2001.
-<Images//SD/SD45.png, id=2050, 519.44063pt x 433.62pt>
+<Images//SD/SD45.png, id=2114, 519.44063pt x 433.62pt>
 File: Images//SD/SD45.png Graphic file (type png)
 <use Images//SD/SD45.png>
 Package pdftex.def Info: Images//SD/SD45.png  used on input line 2009.
 (pdftex.def)             Requested size: 207.77257pt x 173.44492pt.
 Package mdframed Info: Not enough space on this page on input line 2012.
-<Images//SD/SD46.png, id=2051, 235.88126pt x 161.60374pt>
+<Images//SD/SD46.png, id=2115, 235.88126pt x 161.60374pt>
 File: Images//SD/SD46.png Graphic file (type png)
 <use Images//SD/SD46.png>
 Package pdftex.def Info: Images//SD/SD46.png  used on input line 2019.
@@ -2655,7 +2658,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2016--2022
 
  []
 
-<Images//SD/SD47.png, id=2052, 207.77625pt x 161.60374pt>
+<Images//SD/SD47.png, id=2116, 207.77625pt x 161.60374pt>
 File: Images//SD/SD47.png Graphic file (type png)
 <use Images//SD/SD47.png>
 Package pdftex.def Info: Images//SD/SD47.png  used on input line 2025.
@@ -2664,7 +2667,7 @@ Package pdftex.def Info: Images//SD/SD47.png  used on input line 2025.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [68 <./Images//SD/SD45.png> <./Images//SD/SD46.png>]
-<Images//SD/SD48.png, id=2061, 312.16624pt x 161.60374pt>
+<Images//SD/SD48.png, id=2125, 312.16624pt x 161.60374pt>
 File: Images//SD/SD48.png Graphic file (type png)
 <use Images//SD/SD48.png>
 Package pdftex.def Info: Images//SD/SD48.png  used on input line 2033.
@@ -2674,7 +2677,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2030--2035
 
  []
 
-<Images//SD/SD49.png, id=2062, 343.2825pt x 171.64125pt>
+<Images//SD/SD49.png, id=2126, 343.2825pt x 171.64125pt>
 File: Images//SD/SD49.png Graphic file (type png)
 <use Images//SD/SD49.png>
 Package pdftex.def Info: Images//SD/SD49.png  used on input line 2039.
@@ -2684,7 +2687,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2036--2041
 
  []
 
-<Images//SD/SD50.png, id=2063, 312.16624pt x 161.60374pt>
+<Images//SD/SD50.png, id=2127, 312.16624pt x 161.60374pt>
 File: Images//SD/SD50.png Graphic file (type png)
 <use Images//SD/SD50.png>
 Package pdftex.def Info: Images//SD/SD50.png  used on input line 2045.
@@ -2698,24 +2701,24 @@ File: Images//SD/SD50.png Graphic file (type png)
 <use Images//SD/SD50.png>
 Package pdftex.def Info: Images//SD/SD50.png  used on input line 2052.
 (pdftex.def)             Requested size: 156.08273pt x 80.80167pt.
-<Images//SD/SD51.png, id=2064, 276.03125pt x 161.60374pt>
+<Images//SD/SD51.png, id=2128, 276.03125pt x 161.60374pt>
 File: Images//SD/SD51.png Graphic file (type png)
 <use Images//SD/SD51.png>
 Package pdftex.def Info: Images//SD/SD51.png  used on input line 2057.
 (pdftex.def)             Requested size: 138.01527pt x 80.80167pt.
 [69 <./Images//SD/SD47.png> <./Images//SD/SD48.png> <./Images//SD/SD49.png> <./
 Images//SD/SD50.png>]
-<Images//SD/SD52.png, id=2079, 179.4705pt x 145.14224pt>
+<Images//SD/SD52.png, id=2143, 179.4705pt x 145.14224pt>
 File: Images//SD/SD52.png Graphic file (type png)
 <use Images//SD/SD52.png>
 Package pdftex.def Info: Images//SD/SD52.png  used on input line 2064.
 (pdftex.def)             Requested size: 105.54709pt x 85.35826pt.
-<Images//SD/SD53.png, id=2080, 321.2pt x 246.9225pt>
+<Images//SD/SD53.png, id=2144, 321.2pt x 246.9225pt>
 File: Images//SD/SD53.png Graphic file (type png)
 <use Images//SD/SD53.png>
 Package pdftex.def Info: Images//SD/SD53.png  used on input line 2066.
 (pdftex.def)             Requested size: 111.03467pt x 85.35826pt.
-<Images//SD/SD54.png, id=2081, 1077.02374pt x 545.03625pt>
+<Images//SD/SD54.png, id=2145, 1077.02374pt x 545.03625pt>
 File: Images//SD/SD54.png Graphic file (type png)
 <use Images//SD/SD54.png>
 Package pdftex.def Info: Images//SD/SD54.png  used on input line 2088.
@@ -2728,7 +2731,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2092--2093
 
  []
 
-<Images//SD/SD55.png, id=2093, 447.6725pt x 266.9975pt>
+<Images//SD/SD55.png, id=2157, 447.6725pt x 266.9975pt>
 File: Images//SD/SD55.png Graphic file (type png)
 <use Images//SD/SD55.png>
 Package pdftex.def Info: Images//SD/SD55.png  used on input line 2094.
@@ -2738,22 +2741,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 2096--2097
 
  []
 
-<Images//SD/SD56.png, id=2094, 504.88625pt x 277.035pt>
+<Images//SD/SD56.png, id=2158, 504.88625pt x 277.035pt>
 File: Images//SD/SD56.png Graphic file (type png)
 <use Images//SD/SD56.png>
 Package pdftex.def Info: Images//SD/SD56.png  used on input line 2098.
 (pdftex.def)             Requested size: 252.44249pt x 138.51715pt.
-<Images//SD/SD57.png, id=2095, 374.39874pt x 191.71625pt>
+<Images//SD/SD57.png, id=2159, 374.39874pt x 191.71625pt>
 File: Images//SD/SD57.png Graphic file (type png)
 <use Images//SD/SD57.png>
 Package pdftex.def Info: Images//SD/SD57.png  used on input line 2104.
 (pdftex.def)             Requested size: 166.69547pt x 85.35826pt.
-<Images//SD/SD58.png, id=2096, 102.3825pt x 81.30376pt>
+<Images//SD/SD58.png, id=2160, 102.3825pt x 81.30376pt>
 File: Images//SD/SD58.png Graphic file (type png)
 <use Images//SD/SD58.png>
 Package pdftex.def Info: Images//SD/SD58.png  used on input line 2106.
 (pdftex.def)             Requested size: 107.49698pt x 85.35826pt.
-<Images//SD/SD59.png, id=2097, 936.49875pt x 546.04pt>
+<Images//SD/SD59.png, id=2161, 936.49875pt x 546.04pt>
 File: Images//SD/SD59.png Graphic file (type png)
 <use Images//SD/SD59.png>
 Package pdftex.def Info: Images//SD/SD59.png  used on input line 2112.
@@ -2762,17 +2765,17 @@ Package pdftex.def Info: Images//SD/SD59.png  used on input line 2112.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [71 <./Images//SD/SD54.png> <./Images//SD/SD55.png> <./Images//SD/SD56.png>]
-<Images//SD/SD60.png, id=2106, 406.51875pt x 191.71625pt>
+<Images//SD/SD60.png, id=2170, 406.51875pt x 191.71625pt>
 File: Images//SD/SD60.png Graphic file (type png)
 <use Images//SD/SD60.png>
 Package pdftex.def Info: Images//SD/SD60.png  used on input line 2119.
 (pdftex.def)             Requested size: 180.99641pt x 85.35826pt.
-<Images//SD/SD61.png, id=2107, 145.29282pt x 123.46124pt>
+<Images//SD/SD61.png, id=2171, 145.29282pt x 123.46124pt>
 File: Images//SD/SD61.png Graphic file (type png)
 <use Images//SD/SD61.png>
 Package pdftex.def Info: Images//SD/SD61.png  used on input line 2121.
 (pdftex.def)             Requested size: 100.45831pt x 85.35826pt.
-<Images//SD/SD62.png, id=2108, 937.5025pt x 404.51125pt>
+<Images//SD/SD62.png, id=2172, 937.5025pt x 404.51125pt>
 File: Images//SD/SD62.png Graphic file (type png)
 <use Images//SD/SD62.png>
 Package pdftex.def Info: Images//SD/SD62.png  used on input line 2126.
@@ -2782,17 +2785,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [72 <./Images//SD/SD57.png> <./Images//SD/SD58.png> <./Images//SD/SD59.png> <.
 /Images//SD/SD60.png> <./Images//SD/SD61.png>]
-<Images//SD/SD63.png, id=2124, 191.71625pt x 141.52875pt>
+<Images//SD/SD63.png, id=2188, 191.71625pt x 141.52875pt>
 File: Images//SD/SD63.png Graphic file (type png)
 <use Images//SD/SD63.png>
 Package pdftex.def Info: Images//SD/SD63.png  used on input line 2179.
 (pdftex.def)             Requested size: 115.03062pt x 84.9179pt.
-<Images//SD/SD64.png, id=2125, 191.71625pt x 141.52875pt>
+<Images//SD/SD64.png, id=2189, 191.71625pt x 141.52875pt>
 File: Images//SD/SD64.png Graphic file (type png)
 <use Images//SD/SD64.png>
 Package pdftex.def Info: Images//SD/SD64.png  used on input line 2181.
 (pdftex.def)             Requested size: 115.03062pt x 84.9179pt.
-<Images//SD/SD65.png, id=2126, 191.71625pt x 141.52875pt>
+<Images//SD/SD65.png, id=2190, 191.71625pt x 141.52875pt>
 File: Images//SD/SD65.png Graphic file (type png)
 <use Images//SD/SD65.png>
 Package pdftex.def Info: Images//SD/SD65.png  used on input line 2182.
@@ -2801,12 +2804,12 @@ Package pdftex.def Info: Images//SD/SD65.png  used on input line 2182.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73 <./Images//SD/SD62.png>]
-<Images//SD/SD66.png, id=2135, 297.11pt x 141.52875pt>
+<Images//SD/SD66.png, id=2199, 297.11pt x 141.52875pt>
 File: Images//SD/SD66.png Graphic file (type png)
 <use Images//SD/SD66.png>
 Package pdftex.def Info: Images//SD/SD66.png  used on input line 2189.
 (pdftex.def)             Requested size: 178.26736pt x 84.9179pt.
-<Images//SD/SD67.png, id=2136, 297.11pt x 141.52875pt>
+<Images//SD/SD67.png, id=2200, 297.11pt x 141.52875pt>
 File: Images//SD/SD67.png Graphic file (type png)
 <use Images//SD/SD67.png>
 Package pdftex.def Info: Images//SD/SD67.png  used on input line 2191.
@@ -2815,24 +2818,24 @@ File: Images//SD/SD63.png Graphic file (type png)
 <use Images//SD/SD63.png>
 Package pdftex.def Info: Images//SD/SD63.png  used on input line 2195.
 (pdftex.def)             Requested size: 95.85788pt x 70.76419pt.
-<Images//SD/SD68.png, id=2137, 556.0775pt x 308.15125pt>
+<Images//SD/SD68.png, id=2201, 556.0775pt x 308.15125pt>
 File: Images//SD/SD68.png Graphic file (type png)
 <use Images//SD/SD68.png>
 Package pdftex.def Info: Images//SD/SD68.png  used on input line 2218.
 (pdftex.def)             Requested size: 278.03807pt x 154.07524pt.
-<Images//SD/SD69.png, id=2138, 426.59375pt x 264.99pt>
+<Images//SD/SD69.png, id=2202, 426.59375pt x 264.99pt>
 File: Images//SD/SD69.png Graphic file (type png)
 <use Images//SD/SD69.png>
 Package pdftex.def Info: Images//SD/SD69.png  used on input line 2223.
 (pdftex.def)             Requested size: 213.29634pt x 132.49467pt.
  [74 <./Images//SD/SD63.png> <./Images//SD/SD64.png> <./Images//SD/SD65.png> <.
 /Images//SD/SD66.png> <./Images//SD/SD67.png>]
-<Images//SD/SD70.png, id=2155, 316.18124pt x 141.52875pt>
+<Images//SD/SD70.png, id=2219, 316.18124pt x 141.52875pt>
 File: Images//SD/SD70.png Graphic file (type png)
 <use Images//SD/SD70.png>
 Package pdftex.def Info: Images//SD/SD70.png  used on input line 2230.
 (pdftex.def)             Requested size: 158.09023pt x 70.76419pt.
-<Images//SD/SD71.png, id=2156, 558.085pt x 231.86626pt>
+<Images//SD/SD71.png, id=2220, 558.085pt x 231.86626pt>
 File: Images//SD/SD71.png Graphic file (type png)
 <use Images//SD/SD71.png>
 Package pdftex.def Info: Images//SD/SD71.png  used on input line 2249.
@@ -2842,7 +2845,7 @@ Underfull \vbox (badness 8019) has occurred while \output is active []
 
  [75 <./Images//SD/SD68.png> <./Images//SD/SD69.png> <./Images//SD/SD70.png>] [
 76 <./Images//SD/SD71.png>]
-<Images//SD/SD72.png, id=2174, 436.63126pt x 284.06125pt>
+<Images//SD/SD72.png, id=2238, 436.63126pt x 284.06125pt>
 File: Images//SD/SD72.png Graphic file (type png)
 <use Images//SD/SD72.png>
 Package pdftex.def Info: Images//SD/SD72.png  used on input line 2256.
@@ -2852,12 +2855,12 @@ Package pdftex.def Info: Images//SD/SD72.png  used on input line 2256.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 2259.
 
-<Images//SD/SD73.png, id=2175, 676.5275pt x 339.2675pt>
+<Images//SD/SD73.png, id=2239, 676.5275pt x 339.2675pt>
 File: Images//SD/SD73.png Graphic file (type png)
 <use Images//SD/SD73.png>
 Package pdftex.def Info: Images//SD/SD73.png  used on input line 2279.
 (pdftex.def)             Requested size: 338.26291pt x 169.63333pt.
-<Images//SD/SD74.png, id=2176, 816.04875pt x 339.2675pt>
+<Images//SD/SD74.png, id=2240, 816.04875pt x 339.2675pt>
 File: Images//SD/SD74.png Graphic file (type png)
 <use Images//SD/SD74.png>
 Package pdftex.def Info: Images//SD/SD74.png  used on input line 2284.
@@ -2867,49 +2870,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [77 <./Images//SD/SD72.png> <./Images//SD/SD73.png>] [78 <./Images//SD/SD74.pn
 g>]
-<Images//SD/SD75.png, id=2192, 436.63126pt x 289.08pt>
+<Images//SD/SD75.png, id=2256, 436.63126pt x 289.08pt>
 File: Images//SD/SD75.png Graphic file (type png)
 <use Images//SD/SD75.png>
 Package pdftex.def Info: Images//SD/SD75.png  used on input line 2292.
 (pdftex.def)             Requested size: 218.3151pt x 144.53964pt.
-<Images//SD/SD76.png, id=2193, 192.72pt x 252.945pt>
+<Images//SD/SD76.png, id=2257, 192.72pt x 252.945pt>
 File: Images//SD/SD76.png Graphic file (type png)
 <use Images//SD/SD76.png>
 Package pdftex.def Info: Images//SD/SD76.png  used on input line 2297.
 (pdftex.def)             Requested size: 96.35976pt x 126.47218pt.
-<Images//SD/SD77.png, id=2194, 694.595pt x 340.27126pt>
+<Images//SD/SD77.png, id=2258, 694.595pt x 340.27126pt>
 File: Images//SD/SD77.png Graphic file (type png)
 <use Images//SD/SD77.png>
 Package pdftex.def Info: Images//SD/SD77.png  used on input line 2302.
 (pdftex.def)             Requested size: 347.29665pt x 170.13521pt.
 
 [79 <./Images//SD/SD75.png> <./Images//SD/SD76.png> <./Images//SD/SD77.png>]
-<Images//SD/SD78.png, id=2206, 536.0025pt x 191.71625pt>
+<Images//SD/SD78.png, id=2270, 536.0025pt x 191.71625pt>
 File: Images//SD/SD78.png Graphic file (type png)
 <use Images//SD/SD78.png>
 Package pdftex.def Info: Images//SD/SD78.png  used on input line 2309.
 (pdftex.def)             Requested size: 268.0006pt x 95.85788pt.
-<Images//SD/SD79.png, id=2207, 597.23125pt x 248.93pt>
+<Images//SD/SD79.png, id=2271, 597.23125pt x 248.93pt>
 File: Images//SD/SD79.png Graphic file (type png)
 <use Images//SD/SD79.png>
 Package pdftex.def Info: Images//SD/SD79.png  used on input line 2310.
 (pdftex.def)             Requested size: 298.61488pt x 124.46469pt.
-<Images//SD/SD80.png, id=2208, 608.2725pt x 166.6225pt>
+<Images//SD/SD80.png, id=2272, 608.2725pt x 166.6225pt>
 File: Images//SD/SD80.png Graphic file (type png)
 <use Images//SD/SD80.png>
 Package pdftex.def Info: Images//SD/SD80.png  used on input line 2318.
 (pdftex.def)             Requested size: 426.79135pt x 116.91206pt.
-<Images//SD/SD81.png, id=2210, 608.2725pt x 211.79124pt>
+<Images//SD/SD81.png, id=2274, 608.2725pt x 211.79124pt>
 File: Images//SD/SD81.png Graphic file (type png)
 <use Images//SD/SD81.png>
 Package pdftex.def Info: Images//SD/SD81.png  used on input line 2321.
 (pdftex.def)             Requested size: 426.79135pt x 148.6051pt.
-<Images//SD/SD82.png, id=2212, 608.2725pt x 166.6225pt>
+<Images//SD/SD82.png, id=2276, 608.2725pt x 166.6225pt>
 File: Images//SD/SD82.png Graphic file (type png)
 <use Images//SD/SD82.png>
 Package pdftex.def Info: Images//SD/SD82.png  used on input line 2325.
 (pdftex.def)             Requested size: 426.79135pt x 116.91206pt.
-<Images//SD/SD83.png, id=2214, 614.295pt x 185.69376pt>
+<Images//SD/SD83.png, id=2278, 614.295pt x 185.69376pt>
 File: Images//SD/SD83.png Graphic file (type png)
 <use Images//SD/SD83.png>
 Package pdftex.def Info: Images//SD/SD83.png  used on input line 2328.
@@ -2926,12 +2929,12 @@ File: Images//chapter_head_SD.pdf Graphic file (type pdf)
 <use Images//chapter_head_SD.pdf>
 Package pdftex.def Info: Images//chapter_head_SD.pdf  used on input line 2331.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-<Images//SD/SD84.png, id=2244, 469.755pt x 222.8325pt>
+<Images//SD/SD84.png, id=2308, 469.755pt x 222.8325pt>
 File: Images//SD/SD84.png Graphic file (type png)
 <use Images//SD/SD84.png>
 Package pdftex.def Info: Images//SD/SD84.png  used on input line 2341.
 (pdftex.def)             Requested size: 234.87692pt x 111.41597pt.
-<Images//SD/SD85.png, id=2247, 576.2328pt x 288.5982pt>
+<Images//SD/SD85.png, id=2311, 576.2328pt x 288.5982pt>
 File: Images//SD/SD85.png Graphic file (type png)
 <use Images//SD/SD85.png>
 Package pdftex.def Info: Images//SD/SD85.png  used on input line 2354.
@@ -2950,13 +2953,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 2401--2406
 
  []
 
-<Images//SD/SD86.png, id=2260, 613.5723pt x 248.6088pt>
+<Images//SD/SD86.png, id=2324, 613.5723pt x 248.6088pt>
 File: Images//SD/SD86.png Graphic file (type png)
 <use Images//SD/SD86.png>
 Package pdftex.def Info: Images//SD/SD86.png  used on input line 2425.
 (pdftex.def)             Requested size: 306.78539pt x 124.30408pt.
 [84 <./Images//SD/SD85.png>] [85]
-<Images//SD/SD87.png, id=2274, 402.50375pt x 161.60374pt>
+<Images//SD/SD87.png, id=2338, 402.50375pt x 161.60374pt>
 File: Images//SD/SD87.png Graphic file (type png)
 <use Images//SD/SD87.png>
 Package pdftex.def Info: Images//SD/SD87.png  used on input line 2453.
@@ -2970,7 +2973,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2455--2456
 Underfull \vbox (badness 4181) has occurred while \output is active []
 
  [86 <./Images//SD/SD86.png> <./Images//SD/SD87.png>]
-<Images//SD/SD88.png, id=2281, 305.14pt x 288.07625pt>
+<Images//SD/SD88.png, id=2345, 305.14pt x 288.07625pt>
 File: Images//SD/SD88.png Graphic file (type png)
 <use Images//SD/SD88.png>
 Package pdftex.def Info: Images//SD/SD88.png  used on input line 2473.
@@ -2989,7 +2992,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2517--2519
 
  []
 
-<Images//SD/SD89.png, id=2282, 368.37625pt x 264.99pt>
+<Images//SD/SD89.png, id=2346, 368.37625pt x 264.99pt>
 File: Images//SD/SD89.png Graphic file (type png)
 <use Images//SD/SD89.png>
 Package pdftex.def Info: Images//SD/SD89.png  used on input line 2520.
@@ -2999,7 +3002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2522--2523
 
  []
 
-<Images//SD/SD90.png, id=2283, 353.32pt x 264.99pt>
+<Images//SD/SD90.png, id=2347, 353.32pt x 264.99pt>
 File: Images//SD/SD90.png Graphic file (type png)
 <use Images//SD/SD90.png>
 Package pdftex.def Info: Images//SD/SD90.png  used on input line 2524.
@@ -3017,7 +3020,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2529--2532
 
  []
 
-<Images//SD/SD91.png, id=2295, 382.42876pt x 382.42876pt>
+<Images//SD/SD91.png, id=2359, 382.42876pt x 382.42876pt>
 File: Images//SD/SD91.png Graphic file (type png)
 <use Images//SD/SD91.png>
 Package pdftex.def Info: Images//SD/SD91.png  used on input line 2533.
@@ -3027,7 +3030,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2535--2536
 
  []
 
-<Images//SD/SD92.png, id=2296, 414.54875pt x 405.515pt>
+<Images//SD/SD92.png, id=2360, 414.54875pt x 405.515pt>
 File: Images//SD/SD92.png Graphic file (type png)
 <use Images//SD/SD92.png>
 Package pdftex.def Info: Images//SD/SD92.png  used on input line 2537.
@@ -3037,7 +3040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2539--2540
 
  []
 
-<Images//SD/SD93.png, id=2298, 427.5975pt x 452.69125pt>
+<Images//SD/SD93.png, id=2362, 427.5975pt x 452.69125pt>
 File: Images//SD/SD93.png Graphic file (type png)
 <use Images//SD/SD93.png>
 Package pdftex.def Info: Images//SD/SD93.png  used on input line 2541.
@@ -3047,7 +3050,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2543--2544
 
  []
 
-<Images//SD/SD94.png, id=2299, 427.5975pt x 431.6125pt>
+<Images//SD/SD94.png, id=2363, 427.5975pt x 431.6125pt>
 File: Images//SD/SD94.png Graphic file (type png)
 <use Images//SD/SD94.png>
 Package pdftex.def Info: Images//SD/SD94.png  used on input line 2545.
@@ -3129,12 +3132,12 @@ Chapter 5.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_SM.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_SM.pdf, id=2391, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_SM.pdf, id=2455, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_SM.pdf Graphic file (type pdf)
 <use Images//chapter_head_SM.pdf>
 Package pdftex.def Info: Images//chapter_head_SM.pdf  used on input line 2684.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-<Images//SmartCities/qr/qr6.png, id=2393, 1152.305pt x 1152.305pt>
+<Images//SmartCities/qr/qr6.png, id=2457, 1152.305pt x 1152.305pt>
 File: Images//SmartCities/qr/qr6.png Graphic file (type png)
 <use Images//SmartCities/qr/qr6.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr6.png  used on input line 268
@@ -3145,7 +3148,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2685--2691
 
  []
 
-<Images//SmartCities/SM1.png, id=2394, 670.00313pt x 669.2503pt>
+<Images//SmartCities/SM1.png, id=2458, 670.00313pt x 669.2503pt>
 File: Images//SmartCities/SM1.png Graphic file (type png)
 <use Images//SmartCities/SM1.png>
 Package pdftex.def Info: Images//SmartCities/SM1.png  used on input line 2694.
@@ -3160,7 +3163,7 @@ e-mente)seleccionamos \T1/ptm/b/n/10.95 (-20) 115200\T1/ptm/m/n/10.95 (-20) (\T
 1/ptm/m/it/10.95 (-20) También
  []
 
-<Images//SmartCities/qr/qr1.png, id=2415, 1131.22626pt x 1131.22626pt>
+<Images//SmartCities/qr/qr1.png, id=2479, 1131.22626pt x 1131.22626pt>
 File: Images//SmartCities/qr/qr1.png Graphic file (type png)
 <use Images//SmartCities/qr/qr1.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr1.png  used on input line 272
@@ -3172,7 +3175,7 @@ Underfull \vbox (badness 5064) has occurred while \output is active []
  [98]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 2730.
-<Images//SmartCities/qr/qr2.png, id=2441, 1117.17375pt x 1117.17375pt>
+<Images//SmartCities/qr/qr2.png, id=2505, 1117.17375pt x 1117.17375pt>
 File: Images//SmartCities/qr/qr2.png Graphic file (type png)
 <use Images//SmartCities/qr/qr2.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr2.png  used on input line 274
@@ -3710,13 +3713,13 @@ put line 2795.
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
 put line 2795.
 
-<Images//SmartCities/sm2.png, id=2486, 469.00218pt x 173.14688pt>
+<Images//SmartCities/sm2.png, id=2550, 469.00218pt x 173.14688pt>
 File: Images//SmartCities/sm2.png Graphic file (type png)
 <use Images//SmartCities/sm2.png>
 Package pdftex.def Info: Images//SmartCities/sm2.png  used on input line 2803.
 (pdftex.def)             Requested size: 234.50052pt x 86.57323pt.
 [100 <./Images//SmartCities/sm2.png>]
-<Images//SmartCities/qr/qr3.png, id=2514, 1131.22626pt x 1131.22626pt>
+<Images//SmartCities/qr/qr3.png, id=2578, 1131.22626pt x 1131.22626pt>
 File: Images//SmartCities/qr/qr3.png Graphic file (type png)
 <use Images//SmartCities/qr/qr3.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr3.png  used on input line 281
@@ -4035,7 +4038,7 @@ File: Images//chapter_head_SM.pdf Graphic file (type pdf)
 <use Images//chapter_head_SM.pdf>
 Package pdftex.def Info: Images//chapter_head_SM.pdf  used on input line 2832.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-<Images//SmartCities/qr/qr4.png, id=2539, 1117.17375pt x 1117.17375pt>
+<Images//SmartCities/qr/qr4.png, id=2603, 1117.17375pt x 1117.17375pt>
 File: Images//SmartCities/qr/qr4.png Graphic file (type png)
 <use Images//SmartCities/qr/qr4.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr4.png  used on input line 283
@@ -4446,22 +4449,22 @@ put line 2881.
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
 put line 2881.
 
-<Images//SmartCities/SM3.png, id=2583, 459.96844pt x 364.36125pt>
+<Images//SmartCities/SM3.png, id=2647, 459.96844pt x 364.36125pt>
 File: Images//SmartCities/SM3.png Graphic file (type png)
 <use Images//SmartCities/SM3.png>
 Package pdftex.def Info: Images//SmartCities/SM3.png  used on input line 2884.
 (pdftex.def)             Requested size: 275.98318pt x 218.61842pt.
-<Images//SmartCities/SM4.png, id=2590, 170.3163pt x 112.0185pt>
+<Images//SmartCities/SM4.png, id=2654, 170.3163pt x 112.0185pt>
 File: Images//SmartCities/SM4.png Graphic file (type png)
 <use Images//SmartCities/SM4.png>
 Package pdftex.def Info: Images//SmartCities/SM4.png  used on input line 2894.
 (pdftex.def)             Requested size: 255.4738pt x 168.0273pt.
-<Images//SmartCities/SM8.png, id=2591, 329.0694pt x 167.1846pt>
+<Images//SmartCities/SM8.png, id=2655, 329.0694pt x 167.1846pt>
 File: Images//SmartCities/SM8.png Graphic file (type png)
 <use Images//SmartCities/SM8.png>
 Package pdftex.def Info: Images//SmartCities/SM8.png  used on input line 2901.
 (pdftex.def)             Requested size: 296.1597pt x 150.46472pt.
-<Images//SmartCities/SM6.png, id=2592, 325.215pt x 442.65375pt>
+<Images//SmartCities/SM6.png, id=2656, 325.215pt x 442.65375pt>
 File: Images//SmartCities/SM6.png Graphic file (type png)
 <use Images//SmartCities/SM6.png>
 Package pdftex.def Info: Images//SmartCities/SM6.png  used on input line 2907.
@@ -4472,7 +4475,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images//SmartCities/SM5.png, id=2593, 664.73344pt x 269.50688pt>
+<Images//SmartCities/SM5.png, id=2657, 664.73344pt x 269.50688pt>
 File: Images//SmartCities/SM5.png Graphic file (type png)
 <use Images//SmartCities/SM5.png>
 Package pdftex.def Info: Images//SmartCities/SM5.png  used on input line 2913.
@@ -4485,7 +4488,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [105 <./Images//SmartCities/SM4.png> <./Images//SmartCities/SM8.png> <./Images
 //SmartCities/SM6.png>] [106 <./Images//SmartCities/SM5.png>]
-<Images//SmartCities/qr/qr5.png, id=2629, 1117.17375pt x 1117.17375pt>
+<Images//SmartCities/qr/qr5.png, id=2693, 1117.17375pt x 1117.17375pt>
 File: Images//SmartCities/qr/qr5.png Graphic file (type png)
 <use Images//SmartCities/qr/qr5.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr5.png  used on input line 292
@@ -4680,13 +4683,13 @@ put line 2940.
 Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
 put line 2940.
 
-<Images//SmartCities/SM28.png, id=2631, 453.94594pt x 289.83281pt>
+<Images//SmartCities/SM28.png, id=2695, 453.94594pt x 289.83281pt>
 File: Images//SmartCities/SM28.png Graphic file (type png)
 <use Images//SmartCities/SM28.png>
 Package pdftex.def Info: Images//SmartCities/SM28.png  used on input line 2943.
 
 (pdftex.def)             Requested size: 226.97241pt x 144.91605pt.
-<Images//SmartCities/SM9.png, id=2633, 377.15906pt x 181.42781pt>
+<Images//SmartCities/SM9.png, id=2697, 377.15906pt x 181.42781pt>
 File: Images//SmartCities/SM9.png Graphic file (type png)
 <use Images//SmartCities/SM9.png>
 Package pdftex.def Info: Images//SmartCities/SM9.png  used on input line 2950.
@@ -4696,7 +4699,7 @@ Overfull \hbox (25.79726pt too wide) in paragraph at lines 2950--2951
  [][] 
  []
 
-<Images//SmartCities/SM10.png, id=2635, 535.2497pt x 377.15906pt>
+<Images//SmartCities/SM10.png, id=2699, 535.2497pt x 377.15906pt>
 File: Images//SmartCities/SM10.png Graphic file (type png)
 <use Images//SmartCities/SM10.png>
 Package pdftex.def Info: Images//SmartCities/SM10.png  used on input line 2956.
@@ -4710,7 +4713,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [107 <./Images//SmartCities/qr/qr5.png> <./Images//SmartCities/SM28.png>] [108
  <./Images//SmartCities/SM9.png> <./Images//SmartCities/SM10.png>]
-<Images//SmartCities/SM11.png, id=2665, 504.38437pt x 324.46219pt>
+<Images//SmartCities/SM11.png, id=2729, 504.38437pt x 324.46219pt>
 File: Images//SmartCities/SM11.png Graphic file (type png)
 <use Images//SmartCities/SM11.png>
 Package pdftex.def Info: Images//SmartCities/SM11.png  used on input line 2964.
@@ -4721,7 +4724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2962--2967
 
  []
 
-<Images//SmartCities/SM12.png, id=2668, 1371.1225pt x 770.88pt>
+<Images//SmartCities/SM12.png, id=2732, 1371.1225pt x 770.88pt>
 File: Images//SmartCities/SM12.png Graphic file (type png)
 <use Images//SmartCities/SM12.png>
 Package pdftex.def Info: Images//SmartCities/SM12.png  used on input line 2970.
@@ -4731,19 +4734,19 @@ Package pdftex.def Info: Images//SmartCities/SM12.png  used on input line 2970.
 Underfull \vbox (badness 1661) has occurred while \output is active []
 
  [109 <./Images//SmartCities/SM11.png> <./Images//SmartCities/SM12.png>]
-<Images//SmartCities/qr/qr8.png, id=2680, 1117.17375pt x 1117.17375pt>
+<Images//SmartCities/qr/qr8.png, id=2744, 1117.17375pt x 1117.17375pt>
 File: Images//SmartCities/qr/qr8.png Graphic file (type png)
 <use Images//SmartCities/qr/qr8.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr8.png  used on input line 297
 7.
 (pdftex.def)             Requested size: 111.7239pt x 111.7239pt.
-<Images//SmartCities/SM13.png, id=2683, 502.12593pt x 252.945pt>
+<Images//SmartCities/SM13.png, id=2747, 502.12593pt x 252.945pt>
 File: Images//SmartCities/SM13.png Graphic file (type png)
 <use Images//SmartCities/SM13.png>
 Package pdftex.def Info: Images//SmartCities/SM13.png  used on input line 2983.
 
 (pdftex.def)             Requested size: 251.06235pt x 126.47218pt.
-<Images//SmartCities/SM14.png, id=2686, 986.18437pt x 261.22594pt>
+<Images//SmartCities/SM14.png, id=2750, 986.18437pt x 261.22594pt>
 File: Images//SmartCities/SM14.png Graphic file (type png)
 <use Images//SmartCities/SM14.png>
 Package pdftex.def Info: Images//SmartCities/SM14.png  used on input line 2991.
@@ -4758,25 +4761,25 @@ Overfull \hbox (66.29962pt too wide) in paragraph at lines 2991--2992
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [110 <./Images//SmartCities/qr/qr8.png> <./Images//SmartCities/SM13.png>]
-<Images//SmartCities/SM17.png, id=2698, 470.50781pt x 141.52875pt>
+<Images//SmartCities/SM17.png, id=2762, 470.50781pt x 141.52875pt>
 File: Images//SmartCities/SM17.png Graphic file (type png)
 <use Images//SmartCities/SM17.png>
 Package pdftex.def Info: Images//SmartCities/SM17.png  used on input line 2997.
 
 (pdftex.def)             Requested size: 235.25333pt x 70.76419pt.
-<Images//SmartCities/SM16.png, id=2699, 510.40688pt x 95.6072pt>
+<Images//SmartCities/SM16.png, id=2763, 510.40688pt x 95.6072pt>
 File: Images//SmartCities/SM16.png Graphic file (type png)
 <use Images//SmartCities/SM16.png>
 Package pdftex.def Info: Images//SmartCities/SM16.png  used on input line 3002.
 
 (pdftex.def)             Requested size: 306.24648pt x 57.36475pt.
-<Images//SmartCities/SM15.png, id=2701, 468.24937pt x 117.43875pt>
+<Images//SmartCities/SM15.png, id=2765, 468.24937pt x 117.43875pt>
 File: Images//SmartCities/SM15.png Graphic file (type png)
 <use Images//SmartCities/SM15.png>
 Package pdftex.def Info: Images//SmartCities/SM15.png  used on input line 3010.
 
 (pdftex.def)             Requested size: 280.95178pt x 70.46378pt.
-<Images//SmartCities/SM18.png, id=2702, 537.50812pt x 374.14781pt>
+<Images//SmartCities/SM18.png, id=2766, 537.50812pt x 374.14781pt>
 File: Images//SmartCities/SM18.png Graphic file (type png)
 <use Images//SmartCities/SM18.png>
 Package pdftex.def Info: Images//SmartCities/SM18.png  used on input line 3015.
@@ -4787,19 +4790,19 @@ Underfull \vbox (badness 1107) has occurred while \output is active []
 
  [111 <./Images//SmartCities/SM14.png> <./Images//SmartCities/SM17.png> <./Imag
 es//SmartCities/SM16.png> <./Images//SmartCities/SM15.png>]
-<Images//SmartCities/SM19.png, id=2715, 505.89pt x 320.69812pt>
+<Images//SmartCities/SM19.png, id=2779, 505.89pt x 320.69812pt>
 File: Images//SmartCities/SM19.png Graphic file (type png)
 <use Images//SmartCities/SM19.png>
 Package pdftex.def Info: Images//SmartCities/SM19.png  used on input line 3023.
 
 (pdftex.def)             Requested size: 303.53633pt x 192.42035pt.
-<Images//SmartCities/SM20.png, id=2719, 652.68843pt x 293.59688pt>
+<Images//SmartCities/SM20.png, id=2783, 652.68843pt x 293.59688pt>
 File: Images//SmartCities/SM20.png Graphic file (type png)
 <use Images//SmartCities/SM20.png>
 Package pdftex.def Info: Images//SmartCities/SM20.png  used on input line 3029.
 
 (pdftex.def)             Requested size: 391.61609pt x 176.15947pt.
-<Images//SmartCities/SM21.png, id=2720, 420.82219pt x 302.63063pt>
+<Images//SmartCities/SM21.png, id=2784, 420.82219pt x 302.63063pt>
 File: Images//SmartCities/SM21.png Graphic file (type png)
 <use Images//SmartCities/SM21.png>
 Package pdftex.def Info: Images//SmartCities/SM21.png  used on input line 3034.
@@ -4809,13 +4812,13 @@ Package pdftex.def Info: Images//SmartCities/SM21.png  used on input line 3034.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [112 <./Images//SmartCities/SM18.png> <./Images//SmartCities/SM19.png>]
-<Images//SmartCities/SM22.png, id=2732, 577.40718pt x 95.6072pt>
+<Images//SmartCities/SM22.png, id=2796, 577.40718pt x 95.6072pt>
 File: Images//SmartCities/SM22.png Graphic file (type png)
 <use Images//SmartCities/SM22.png>
 Package pdftex.def Info: Images//SmartCities/SM22.png  used on input line 3039.
 
 (pdftex.def)             Requested size: 346.44698pt x 57.36475pt.
-<Images//SmartCities/SM23.png, id=2734, 373.395pt x 152.06813pt>
+<Images//SmartCities/SM23.png, id=2798, 373.395pt x 152.06813pt>
 File: Images//SmartCities/SM23.png Graphic file (type png)
 <use Images//SmartCities/SM23.png>
 Package pdftex.def Info: Images//SmartCities/SM23.png  used on input line 3045.
@@ -4831,13 +4834,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [113 <./Images//SmartCities/SM20.png> <./Images//SmartCities/SM21.png> <./Imag
 es//SmartCities/SM22.png>]
-<Images//SmartCities/SM24.png, id=2745, 603.75563pt x 417.81094pt>
+<Images//SmartCities/SM24.png, id=2809, 603.75563pt x 417.81094pt>
 File: Images//SmartCities/SM24.png Graphic file (type png)
 <use Images//SmartCities/SM24.png>
 Package pdftex.def Info: Images//SmartCities/SM24.png  used on input line 3052.
 
 (pdftex.def)             Requested size: 362.25616pt x 250.68849pt.
-<Images//SmartCities/SM25.png, id=2747, 598.48593pt x 335.00156pt>
+<Images//SmartCities/SM25.png, id=2811, 598.48593pt x 335.00156pt>
 File: Images//SmartCities/SM25.png Graphic file (type png)
 <use Images//SmartCities/SM25.png>
 Package pdftex.def Info: Images//SmartCities/SM25.png  used on input line 3059.
@@ -4852,7 +4855,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3057--3062
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [114 <./Images//SmartCities/SM23.png> <./Images//SmartCities/SM24.png>]
-<Images//SmartCities/qr/qr7.png, id=2758, 1117.17375pt x 1117.17375pt>
+<Images//SmartCities/qr/qr7.png, id=2822, 1117.17375pt x 1117.17375pt>
 File: Images//SmartCities/qr/qr7.png Graphic file (type png)
 <use Images//SmartCities/qr/qr7.png>
 Package pdftex.def Info: Images//SmartCities/qr/qr7.png  used on input line 306
@@ -4878,13 +4881,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3063--3068
 
  []
 
-<Images//SmartCities/SM26.png, id=2761, 501.875pt x 456.70625pt>
+<Images//SmartCities/SM26.png, id=2825, 501.875pt x 456.70625pt>
 File: Images//SmartCities/SM26.png Graphic file (type png)
 <use Images//SmartCities/SM26.png>
 Package pdftex.def Info: Images//SmartCities/SM26.png  used on input line 3072.
 
 (pdftex.def)             Requested size: 250.93687pt x 228.35255pt.
-<Images//SmartCities/SM27.png, id=2762, 552.56438pt x 297.36093pt>
+<Images//SmartCities/SM27.png, id=2826, 552.56438pt x 297.36093pt>
 File: Images//SmartCities/SM27.png Graphic file (type png)
 <use Images//SmartCities/SM27.png>
 Package pdftex.def Info: Images//SmartCities/SM27.png  used on input line 3077.
@@ -4900,13 +4903,13 @@ File: Images//chapter_head_SM.pdf Graphic file (type pdf)
 <use Images//chapter_head_SM.pdf>
 Package pdftex.def Info: Images//chapter_head_SM.pdf  used on input line 3081.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-<Images//SmartCities/SM29.png, id=2780, 503.63156pt x 253.69781pt>
+<Images//SmartCities/SM29.png, id=2844, 503.63156pt x 253.69781pt>
 File: Images//SmartCities/SM29.png Graphic file (type png)
 <use Images//SmartCities/SM29.png>
 Package pdftex.def Info: Images//SmartCities/SM29.png  used on input line 3088.
 
 (pdftex.def)             Requested size: 251.81516pt x 126.84859pt.
-<Images//SmartCities/SM30.png, id=2783, 496.85625pt x 245.41687pt>
+<Images//SmartCities/SM30.png, id=2847, 496.85625pt x 245.41687pt>
 File: Images//SmartCities/SM30.png Graphic file (type png)
 <use Images//SmartCities/SM30.png>
 Package pdftex.def Info: Images//SmartCities/SM30.png  used on input line 3095.
@@ -4915,26 +4918,26 @@ Package pdftex.def Info: Images//SmartCities/SM30.png  used on input line 3095.
 [117
 
  <./Images//SmartCities/SM29.png>]
-<Images//SmartCities/SM31.png, id=2795, 526.96875pt x 405.01312pt>
+<Images//SmartCities/SM31.png, id=2859, 526.96875pt x 405.01312pt>
 File: Images//SmartCities/SM31.png Graphic file (type png)
 <use Images//SmartCities/SM31.png>
 Package pdftex.def Info: Images//SmartCities/SM31.png  used on input line 3101.
 
 (pdftex.def)             Requested size: 263.48372pt x 202.50606pt.
-<Images//SmartCities/SM32.png, id=2799, 487.06969pt x 252.19218pt>
+<Images//SmartCities/SM32.png, id=2863, 487.06969pt x 252.19218pt>
 File: Images//SmartCities/SM32.png Graphic file (type png)
 <use Images//SmartCities/SM32.png>
 Package pdftex.def Info: Images//SmartCities/SM32.png  used on input line 3111.
 
 (pdftex.def)             Requested size: 243.53424pt x 126.09578pt.
  [118 <./Images//SmartCities/SM30.png> <./Images//SmartCities/SM31.png>]
-<Images//SmartCities/SM33.png, id=2810, 408.02437pt x 173.89969pt>
+<Images//SmartCities/SM33.png, id=2874, 408.02437pt x 173.89969pt>
 File: Images//SmartCities/SM33.png Graphic file (type png)
 <use Images//SmartCities/SM33.png>
 Package pdftex.def Info: Images//SmartCities/SM33.png  used on input line 3118.
 
 (pdftex.def)             Requested size: 204.01169pt x 86.94962pt.
-<Images//SmartCities/SM34.png, id=2813, 499.11469pt x 255.20343pt>
+<Images//SmartCities/SM34.png, id=2877, 499.11469pt x 255.20343pt>
 File: Images//SmartCities/SM34.png Graphic file (type png)
 <use Images//SmartCities/SM34.png>
 Package pdftex.def Info: Images//SmartCities/SM34.png  used on input line 3128.
@@ -4944,13 +4947,13 @@ Package pdftex.def Info: Images//SmartCities/SM34.png  used on input line 3128.
 Underfull \vbox (badness 2884) has occurred while \output is active []
 
  [119 <./Images//SmartCities/SM32.png> <./Images//SmartCities/SM33.png>]
-<Images//SmartCities/SM35.png, id=2826, 789.70032pt x 465.99094pt>
+<Images//SmartCities/SM35.png, id=2890, 789.70032pt x 465.99094pt>
 File: Images//SmartCities/SM35.png Graphic file (type png)
 <use Images//SmartCities/SM35.png>
 Package pdftex.def Info: Images//SmartCities/SM35.png  used on input line 3134.
 
 (pdftex.def)             Requested size: 394.8492pt x 232.99489pt.
-<Images//SmartCities/SM36.png, id=2827, 790.45313pt x 465.23813pt>
+<Images//SmartCities/SM36.png, id=2891, 790.45313pt x 465.23813pt>
 File: Images//SmartCities/SM36.png Graphic file (type png)
 <use Images//SmartCities/SM36.png>
 Package pdftex.def Info: Images//SmartCities/SM36.png  used on input line 3139.
@@ -4960,13 +4963,13 @@ Package pdftex.def Info: Images//SmartCities/SM36.png  used on input line 3139.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [120 <./Images//SmartCities/SM34.png> <./Images//SmartCities/SM35.png>]
-<Images//SmartCities/SM37.png, id=2842, 767.11594pt x 430.60875pt>
+<Images//SmartCities/SM37.png, id=2906, 767.11594pt x 430.60875pt>
 File: Images//SmartCities/SM37.png Graphic file (type png)
 <use Images//SmartCities/SM37.png>
 Package pdftex.def Info: Images//SmartCities/SM37.png  used on input line 3145.
 
 (pdftex.def)             Requested size: 383.55702pt x 215.30383pt.
-<Images//SmartCities/SM38.png, id=2843, 770.12718pt x 417.81094pt>
+<Images//SmartCities/SM38.png, id=2907, 770.12718pt x 417.81094pt>
 File: Images//SmartCities/SM38.png Graphic file (type png)
 <use Images//SmartCities/SM38.png>
 Package pdftex.def Info: Images//SmartCities/SM38.png  used on input line 3150.
@@ -4980,25 +4983,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [123]
-<Images//SmartCities/SM76.png, id=2863, 496.254pt x 370.986pt>
+<Images//SmartCities/SM76.png, id=2927, 496.254pt x 370.986pt>
 File: Images//SmartCities/SM76.png Graphic file (type png)
 <use Images//SmartCities/SM76.png>
 Package pdftex.def Info: Images//SmartCities/SM76.png  used on input line 3172.
 
 (pdftex.def)             Requested size: 248.12639pt x 185.49254pt.
-<Images//SmartCities/SM77.jpg, id=2864, 3791.16376pt x 2072.74374pt>
+<Images//SmartCities/SM77.jpg, id=2928, 3791.16376pt x 2072.74374pt>
 File: Images//SmartCities/SM77.jpg Graphic file (type jpg)
 <use Images//SmartCities/SM77.jpg>
 Package pdftex.def Info: Images//SmartCities/SM77.jpg  used on input line 3177.
 
 (pdftex.def)             Requested size: 379.13858pt x 207.28651pt.
-<Images//SmartCities/SM78.jpg, id=2865, 3130.69624pt x 2702.095pt>
+<Images//SmartCities/SM78.jpg, id=2929, 3130.69624pt x 2702.095pt>
 File: Images//SmartCities/SM78.jpg Graphic file (type jpg)
 <use Images//SmartCities/SM78.jpg>
 Package pdftex.def Info: Images//SmartCities/SM78.jpg  used on input line 3181.
 
 (pdftex.def)             Requested size: 313.08797pt x 270.22533pt.
-<Images//SmartCities/SM79.jpg, id=2866, 4111.36pt x 2173.11874pt>
+<Images//SmartCities/SM79.jpg, id=2930, 4111.36pt x 2173.11874pt>
 File: Images//SmartCities/SM79.jpg Graphic file (type jpg)
 <use Images//SmartCities/SM79.jpg>
 Package pdftex.def Info: Images//SmartCities/SM79.jpg  used on input line 3185.
@@ -5011,7 +5014,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [125 <./Images//SmartCities/SM78.jpg> <./Images//SmartCities/SM79.jpg>]
-<Images//SmartCities/SM39.png, id=2889, 368.1253pt x 307.1475pt>
+<Images//SmartCities/SM39.png, id=2953, 368.1253pt x 307.1475pt>
 File: Images//SmartCities/SM39.png Graphic file (type png)
 <use Images//SmartCities/SM39.png>
 Package pdftex.def Info: Images//SmartCities/SM39.png  used on input line 3195.
@@ -5022,13 +5025,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 3193--3198
 
  []
 
-<Images//SmartCities/SM40.png, id=2890, 434.37282pt x 158.09062pt>
+<Images//SmartCities/SM40.png, id=2954, 434.37282pt x 158.09062pt>
 File: Images//SmartCities/SM40.png Graphic file (type png)
 <use Images//SmartCities/SM40.png>
 Package pdftex.def Info: Images//SmartCities/SM40.png  used on input line 3200.
 
 (pdftex.def)             Requested size: 217.18587pt x 79.0451pt.
-<Images//SmartCities/SM41.png, id=2891, 849.1725pt x 372.64218pt>
+<Images//SmartCities/SM41.png, id=2955, 849.1725pt x 372.64218pt>
 File: Images//SmartCities/SM41.png Graphic file (type png)
 <use Images//SmartCities/SM41.png>
 Package pdftex.def Info: Images//SmartCities/SM41.png  used on input line 3205.
@@ -5036,25 +5039,25 @@ Package pdftex.def Info: Images//SmartCities/SM41.png  used on input line 3205.
 (pdftex.def)             Requested size: 424.5852pt x 186.32063pt.
 [126 <./Images//SmartCities/SM39.png> <./Images//SmartCities/SM40.png> <./Image
 s//SmartCities/SM41.png>]
-<Images//SmartCities/SM42.png, id=2909, 742.27313pt x 157.33781pt>
+<Images//SmartCities/SM42.png, id=2973, 742.27313pt x 157.33781pt>
 File: Images//SmartCities/SM42.png Graphic file (type png)
 <use Images//SmartCities/SM42.png>
 Package pdftex.def Info: Images//SmartCities/SM42.png  used on input line 3217.
 
 (pdftex.def)             Requested size: 371.13567pt x 78.6687pt.
-<Images//SmartCities/SM43.png, id=2911, 650.43pt x 140.77594pt>
+<Images//SmartCities/SM43.png, id=2975, 650.43pt x 140.77594pt>
 File: Images//SmartCities/SM43.png Graphic file (type png)
 <use Images//SmartCities/SM43.png>
 Package pdftex.def Info: Images//SmartCities/SM43.png  used on input line 3224.
 
 (pdftex.def)             Requested size: 325.2142pt x 70.38779pt.
-<Images//SmartCities/SM44.png, id=2913, 631.60968pt x 156.585pt>
+<Images//SmartCities/SM44.png, id=2977, 631.60968pt x 156.585pt>
 File: Images//SmartCities/SM44.png Graphic file (type png)
 <use Images//SmartCities/SM44.png>
 Package pdftex.def Info: Images//SmartCities/SM44.png  used on input line 3231.
 
 (pdftex.def)             Requested size: 315.80406pt x 78.2923pt.
-<Images//SmartCities/SM45.png, id=2917, 451.6875pt x 199.49532pt>
+<Images//SmartCities/SM45.png, id=2981, 451.6875pt x 199.49532pt>
 File: Images//SmartCities/SM45.png Graphic file (type png)
 <use Images//SmartCities/SM45.png>
 Package pdftex.def Info: Images//SmartCities/SM45.png  used on input line 3238.
@@ -5062,7 +5065,7 @@ Package pdftex.def Info: Images//SmartCities/SM45.png  used on input line 3238.
 (pdftex.def)             Requested size: 225.84319pt x 99.7474pt.
  [127 <./Images//SmartCities/SM42.png> <./Images//SmartCities/SM43.png> <./Imag
 es//SmartCities/SM44.png>]
-<Images//SmartCities/SM46.png, id=2938, 928.21782pt x 270.25969pt>
+<Images//SmartCities/SM46.png, id=3002, 928.21782pt x 270.25969pt>
 File: Images//SmartCities/SM46.png Graphic file (type png)
 <use Images//SmartCities/SM46.png>
 Package pdftex.def Info: Images//SmartCities/SM46.png  used on input line 3259.
@@ -5073,19 +5076,19 @@ Overfull \hbox (37.31642pt too wide) in paragraph at lines 3259--3260
  [][] 
  []
 
-<Images//SmartCities/SM47.png, id=2939, 1028.34187pt x 355.3275pt>
+<Images//SmartCities/SM47.png, id=3003, 1028.34187pt x 355.3275pt>
 File: Images//SmartCities/SM47.png Graphic file (type png)
 <use Images//SmartCities/SM47.png>
 Package pdftex.def Info: Images//SmartCities/SM47.png  used on input line 3264.
 
 (pdftex.def)             Requested size: 411.32947pt x 142.12846pt.
-<Images//SmartCities/SM48.png, id=2940, 989.94844pt x 382.42876pt>
+<Images//SmartCities/SM48.png, id=3004, 989.94844pt x 382.42876pt>
 File: Images//SmartCities/SM48.png Graphic file (type png)
 <use Images//SmartCities/SM48.png>
 Package pdftex.def Info: Images//SmartCities/SM48.png  used on input line 3269.
 
 (pdftex.def)             Requested size: 395.97237pt x 152.96878pt.
-<Images//SmartCities/SM49.png, id=2941, 988.44281pt x 353.06906pt>
+<Images//SmartCities/SM49.png, id=3005, 988.44281pt x 353.06906pt>
 File: Images//SmartCities/SM49.png Graphic file (type png)
 <use Images//SmartCities/SM49.png>
 Package pdftex.def Info: Images//SmartCities/SM49.png  used on input line 3274.
@@ -5093,19 +5096,19 @@ Package pdftex.def Info: Images//SmartCities/SM49.png  used on input line 3274.
 (pdftex.def)             Requested size: 395.37012pt x 141.22511pt.
 [128 <./Images//SmartCities/SM45.png> <./Images//SmartCities/SM46.png> <./Image
 s//SmartCities/SM47.png>]
-<Images//SmartCities/SM50.png, id=2954, 979.40906pt x 353.06906pt>
+<Images//SmartCities/SM50.png, id=3018, 979.40906pt x 353.06906pt>
 File: Images//SmartCities/SM50.png Graphic file (type png)
 <use Images//SmartCities/SM50.png>
 Package pdftex.def Info: Images//SmartCities/SM50.png  used on input line 3279.
 
 (pdftex.def)             Requested size: 391.75668pt x 141.22511pt.
-<Images//SmartCities/SM51.png, id=2955, 954.56625pt x 365.11406pt>
+<Images//SmartCities/SM51.png, id=3019, 954.56625pt x 365.11406pt>
 File: Images//SmartCities/SM51.png Graphic file (type png)
 <use Images//SmartCities/SM51.png>
 Package pdftex.def Info: Images//SmartCities/SM51.png  used on input line 3284.
 
 (pdftex.def)             Requested size: 381.81973pt x 146.04303pt.
-<Images//SmartCities/SM52.png, id=2956, 998.9822pt x 357.58594pt>
+<Images//SmartCities/SM52.png, id=3020, 998.9822pt x 357.58594pt>
 File: Images//SmartCities/SM52.png Graphic file (type png)
 <use Images//SmartCities/SM52.png>
 Package pdftex.def Info: Images//SmartCities/SM52.png  used on input line 3289.
@@ -5116,19 +5119,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [129 <./Images//SmartCities/SM48.png> <./Images//SmartCities/SM49.png> <./Imag
 es//SmartCities/SM50.png>]
-<Images//SmartCities/SM53.png, id=2967, 973.38657pt x 411.78844pt>
+<Images//SmartCities/SM53.png, id=3031, 973.38657pt x 411.78844pt>
 File: Images//SmartCities/SM53.png Graphic file (type png)
 <use Images//SmartCities/SM53.png>
 Package pdftex.def Info: Images//SmartCities/SM53.png  used on input line 3294.
 
 (pdftex.def)             Requested size: 389.34773pt x 164.71245pt.
-<Images//SmartCities/SM54.png, id=2968, 988.44281pt x 356.0803pt>
+<Images//SmartCities/SM54.png, id=3032, 988.44281pt x 356.0803pt>
 File: Images//SmartCities/SM54.png Graphic file (type png)
 <use Images//SmartCities/SM54.png>
 Package pdftex.def Info: Images//SmartCities/SM54.png  used on input line 3299.
 
 (pdftex.def)             Requested size: 395.37012pt x 142.4296pt.
-<Images//SmartCities/SM55.png, id=2969, 386.19281pt x 440.39531pt>
+<Images//SmartCities/SM55.png, id=3033, 386.19281pt x 440.39531pt>
 File: Images//SmartCities/SM55.png Graphic file (type png)
 <use Images//SmartCities/SM55.png>
 Package pdftex.def Info: Images//SmartCities/SM55.png  used on input line 3304.
@@ -5139,19 +5142,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [130 <./Images//SmartCities/SM51.png> <./Images//SmartCities/SM52.png> <./Imag
 es//SmartCities/SM53.png>]
-<Images//SmartCities/SM56.png, id=2980, 940.26282pt x 370.38374pt>
+<Images//SmartCities/SM56.png, id=3044, 940.26282pt x 370.38374pt>
 File: Images//SmartCities/SM56.png Graphic file (type png)
 <use Images//SmartCities/SM56.png>
 Package pdftex.def Info: Images//SmartCities/SM56.png  used on input line 3309.
 
 (pdftex.def)             Requested size: 376.09846pt x 148.15086pt.
-<Images//SmartCities/SM57.png, id=2981, 952.30782pt x 381.67593pt>
+<Images//SmartCities/SM57.png, id=3045, 952.30782pt x 381.67593pt>
 File: Images//SmartCities/SM57.png Graphic file (type png)
 <use Images//SmartCities/SM57.png>
 Package pdftex.def Info: Images//SmartCities/SM57.png  used on input line 3314.
 
 (pdftex.def)             Requested size: 380.91638pt x 152.66766pt.
-<Images//SmartCities/SM58.png, id=2982, 877.02657pt x 368.1253pt>
+<Images//SmartCities/SM58.png, id=3046, 877.02657pt x 368.1253pt>
 File: Images//SmartCities/SM58.png Graphic file (type png)
 <use Images//SmartCities/SM58.png>
 Package pdftex.def Info: Images//SmartCities/SM58.png  used on input line 3319.
@@ -5162,13 +5165,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [131 <./Images//SmartCities/SM54.png> <./Images//SmartCities/SM55.png> <./Imag
 es//SmartCities/SM56.png>]
-<Images//SmartCities/SM59.png, id=2993, 840.13875pt x 371.88937pt>
+<Images//SmartCities/SM59.png, id=3057, 840.13875pt x 371.88937pt>
 File: Images//SmartCities/SM59.png Graphic file (type png)
 <use Images//SmartCities/SM59.png>
 Package pdftex.def Info: Images//SmartCities/SM59.png  used on input line 3324.
 
 (pdftex.def)             Requested size: 420.06834pt x 185.94423pt.
-<Images//SmartCities/SM60.png, id=2994, 773.13844pt x 378.66469pt>
+<Images//SmartCities/SM60.png, id=3058, 773.13844pt x 378.66469pt>
 File: Images//SmartCities/SM60.png Graphic file (type png)
 <use Images//SmartCities/SM60.png>
 Package pdftex.def Info: Images//SmartCities/SM60.png  used on input line 3329.
@@ -5179,25 +5182,25 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [132 <./Images//SmartCities/SM57.png> <./Images//SmartCities/SM58.png> <./Imag
 es//SmartCities/SM59.png>]
-<Images//SmartCities/SM61.png, id=3005, 729.47531pt x 228.855pt>
+<Images//SmartCities/SM61.png, id=3069, 729.47531pt x 228.855pt>
 File: Images//SmartCities/SM61.png Graphic file (type png)
 <use Images//SmartCities/SM61.png>
 Package pdftex.def Info: Images//SmartCities/SM61.png  used on input line 3335.
 
 (pdftex.def)             Requested size: 364.73676pt x 114.42722pt.
-<Images//SmartCities/SM62.png, id=3006, 959.08313pt x 319.94531pt>
+<Images//SmartCities/SM62.png, id=3070, 959.08313pt x 319.94531pt>
 File: Images//SmartCities/SM62.png Graphic file (type png)
 <use Images//SmartCities/SM62.png>
 Package pdftex.def Info: Images//SmartCities/SM62.png  used on input line 3340.
 
 (pdftex.def)             Requested size: 383.62645pt x 127.97585pt.
-<Images//SmartCities/SM63.png, id=3007, 491.58656pt x 426.09187pt>
+<Images//SmartCities/SM63.png, id=3071, 491.58656pt x 426.09187pt>
 File: Images//SmartCities/SM63.png Graphic file (type png)
 <use Images//SmartCities/SM63.png>
 Package pdftex.def Info: Images//SmartCities/SM63.png  used on input line 3345.
 
 (pdftex.def)             Requested size: 245.79268pt x 213.04541pt.
-<Images//SmartCities/SM64.png, id=3010, 929.72343pt x 387.69844pt>
+<Images//SmartCities/SM64.png, id=3074, 929.72343pt x 387.69844pt>
 File: Images//SmartCities/SM64.png Graphic file (type png)
 <use Images//SmartCities/SM64.png>
 Package pdftex.def Info: Images//SmartCities/SM64.png  used on input line 3350.
@@ -5208,19 +5211,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [133 <./Images//SmartCities/SM60.png> <./Images//SmartCities/SM61.png> <./Imag
 es//SmartCities/SM62.png>]
-<Images//SmartCities/SM65.png, id=3023, 938.75719pt x 369.63094pt>
+<Images//SmartCities/SM65.png, id=3087, 938.75719pt x 369.63094pt>
 File: Images//SmartCities/SM65.png Graphic file (type png)
 <use Images//SmartCities/SM65.png>
 Package pdftex.def Info: Images//SmartCities/SM65.png  used on input line 3355.
 
 (pdftex.def)             Requested size: 375.49622pt x 147.84975pt.
-<Images//SmartCities/SM66.png, id=3024, 916.92563pt x 407.27156pt>
+<Images//SmartCities/SM66.png, id=3088, 916.92563pt x 407.27156pt>
 File: Images//SmartCities/SM66.png Graphic file (type png)
 <use Images//SmartCities/SM66.png>
 Package pdftex.def Info: Images//SmartCities/SM66.png  used on input line 3360.
 
 (pdftex.def)             Requested size: 366.76376pt x 162.90573pt.
-<Images//SmartCities/SM67.png, id=3025, 901.86937pt x 408.77719pt>
+<Images//SmartCities/SM67.png, id=3089, 901.86937pt x 408.77719pt>
 File: Images//SmartCities/SM67.png Graphic file (type png)
 <use Images//SmartCities/SM67.png>
 Package pdftex.def Info: Images//SmartCities/SM67.png  used on input line 3365.
@@ -5236,19 +5239,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [134 <./Images//SmartCities/SM63.png> <./Images//SmartCities/SM64.png> <./Imag
 es//SmartCities/SM65.png>]
-<Images//SmartCities/SM68.png, id=3036, 415.5525pt x 301.125pt>
+<Images//SmartCities/SM68.png, id=3100, 415.5525pt x 301.125pt>
 File: Images//SmartCities/SM68.png Graphic file (type png)
 <use Images//SmartCities/SM68.png>
 Package pdftex.def Info: Images//SmartCities/SM68.png  used on input line 3370.
 
 (pdftex.def)             Requested size: 186.99689pt x 135.50499pt.
-<Images//SmartCities/SM69.png, id=3039, 370.38374pt x 368.87813pt>
+<Images//SmartCities/SM69.png, id=3103, 370.38374pt x 368.87813pt>
 File: Images//SmartCities/SM69.png Graphic file (type png)
 <use Images//SmartCities/SM69.png>
 Package pdftex.def Info: Images//SmartCities/SM69.png  used on input line 3375.
 
 (pdftex.def)             Requested size: 185.1914pt x 184.4386pt.
-<Images//SmartCities/SM70.png, id=3042, 727.21687pt x 399.74344pt>
+<Images//SmartCities/SM70.png, id=3106, 727.21687pt x 399.74344pt>
 File: Images//SmartCities/SM70.png Graphic file (type png)
 <use Images//SmartCities/SM70.png>
 Package pdftex.def Info: Images//SmartCities/SM70.png  used on input line 3380.
@@ -5259,19 +5262,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [135 <./Images//SmartCities/SM66.png> <./Images//SmartCities/SM67.png> <./Imag
 es//SmartCities/SM68.png>]
-<Images//SmartCities/SM71.png, id=3053, 717.43031pt x 297.36093pt>
+<Images//SmartCities/SM71.png, id=3117, 717.43031pt x 297.36093pt>
 File: Images//SmartCities/SM71.png Graphic file (type png)
 <use Images//SmartCities/SM71.png>
 Package pdftex.def Info: Images//SmartCities/SM71.png  used on input line 3385.
 
 (pdftex.def)             Requested size: 358.71428pt x 148.6801pt.
-<Images//SmartCities/SM72.png, id=3054, 380.17032pt x 418.56375pt>
+<Images//SmartCities/SM72.png, id=3118, 380.17032pt x 418.56375pt>
 File: Images//SmartCities/SM72.png Graphic file (type png)
 <use Images//SmartCities/SM72.png>
 Package pdftex.def Info: Images//SmartCities/SM72.png  used on input line 3390.
 
 (pdftex.def)             Requested size: 190.08469pt x 209.28136pt.
-<Images//SmartCities/SM73.png, id=3055, 836.3747pt x 418.56375pt>
+<Images//SmartCities/SM73.png, id=3119, 836.3747pt x 418.56375pt>
 File: Images//SmartCities/SM73.png Graphic file (type png)
 <use Images//SmartCities/SM73.png>
 Package pdftex.def Info: Images//SmartCities/SM73.png  used on input line 3395.
@@ -5282,13 +5285,13 @@ Underfull \vbox (badness 8189) has occurred while \output is active []
 
  [136 <./Images//SmartCities/SM69.png> <./Images//SmartCities/SM70.png> <./Imag
 es//SmartCities/SM71.png>]
-<Images//SmartCities/SM74.png, id=3066, 375.65344pt x 408.77719pt>
+<Images//SmartCities/SM74.png, id=3130, 375.65344pt x 408.77719pt>
 File: Images//SmartCities/SM74.png Graphic file (type png)
 <use Images//SmartCities/SM74.png>
 Package pdftex.def Info: Images//SmartCities/SM74.png  used on input line 3400.
 
 (pdftex.def)             Requested size: 187.82625pt x 204.38809pt.
-<Images//SmartCities/SM75.png, id=3067, 250.68657pt x 283.81032pt>
+<Images//SmartCities/SM75.png, id=3131, 250.68657pt x 283.81032pt>
 File: Images//SmartCities/SM75.png Graphic file (type png)
 <use Images//SmartCities/SM75.png>
 Package pdftex.def Info: Images//SmartCities/SM75.png  used on input line 3405.
@@ -5307,7 +5310,7 @@ Chapter 8.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_T2.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_T2.pdf, id=3146, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_T2.pdf, id=3210, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_T2.pdf Graphic file (type pdf)
 <use Images//chapter_head_T2.pdf>
 Package pdftex.def Info: Images//chapter_head_T2.pdf  used on input line 3419.
@@ -5346,7 +5349,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 3541.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3541.
-<Images//placeholder.jpg, id=3180, 351.3125pt x 193.72375pt>
+<Images//placeholder.jpg, id=3244, 351.3125pt x 193.72375pt>
 File: Images//placeholder.jpg Graphic file (type jpg)
 <use Images//placeholder.jpg>
 Package pdftex.def Info: Images//placeholder.jpg  used on input line 3586.
@@ -5364,7 +5367,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 3596.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 3596.
-<Images//Telecomunicaciones2/tele1.png, id=3196, 654.94687pt x 632.3625pt>
+<Images//Telecomunicaciones2/tele1.png, id=3260, 654.94687pt x 632.3625pt>
 File: Images//Telecomunicaciones2/tele1.png Graphic file (type png)
 <use Images//Telecomunicaciones2/tele1.png>
 Package pdftex.def Info: Images//Telecomunicaciones2/tele1.png  used on input l
@@ -5396,7 +5399,7 @@ Chapter 10.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_CE.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_CE.pdf, id=3279, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_CE.pdf, id=3343, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_CE.pdf Graphic file (type pdf)
 <use Images//chapter_head_CE.pdf>
 Package pdftex.def Info: Images//chapter_head_CE.pdf  used on input line 3640.
@@ -5404,27 +5407,27 @@ Package pdftex.def Info: Images//chapter_head_CE.pdf  used on input line 3640.
 [153
 
  <./Images//chapter_head_CE.pdf>] [154] [155]
-<Images//CamposMag/CM1.png, id=3315, 335.2525pt x 303.1325pt>
+<Images//CamposMag/CM1.png, id=3379, 335.2525pt x 303.1325pt>
 File: Images//CamposMag/CM1.png Graphic file (type png)
 <use Images//CamposMag/CM1.png>
 Package pdftex.def Info: Images//CamposMag/CM1.png  used on input line 3829.
 (pdftex.def)             Requested size: 167.62584pt x 151.56587pt.
-<Images//CamposMag/CM2.png, id=3316, 366.36874pt x 388.45125pt>
+<Images//CamposMag/CM2.png, id=3380, 366.36874pt x 388.45125pt>
 File: Images//CamposMag/CM2.png Graphic file (type png)
 <use Images//CamposMag/CM2.png>
 Package pdftex.def Info: Images//CamposMag/CM2.png  used on input line 3830.
 (pdftex.def)             Requested size: 183.18391pt x 194.22514pt.
-<Images//CamposMag/CM3.png, id=3317, 216.81pt x 225.84375pt>
+<Images//CamposMag/CM3.png, id=3381, 216.81pt x 225.84375pt>
 File: Images//CamposMag/CM3.png Graphic file (type png)
 <use Images//CamposMag/CM3.png>
 Package pdftex.def Info: Images//CamposMag/CM3.png  used on input line 3831.
 (pdftex.def)             Requested size: 108.40472pt x 112.92159pt.
-<Images//CamposMag/CM4.png, id=3318, 229.85875pt x 238.8925pt>
+<Images//CamposMag/CM4.png, id=3382, 229.85875pt x 238.8925pt>
 File: Images//CamposMag/CM4.png Graphic file (type png)
 <use Images//CamposMag/CM4.png>
 Package pdftex.def Info: Images//CamposMag/CM4.png  used on input line 3832.
 (pdftex.def)             Requested size: 114.92908pt x 119.44595pt.
-<Images//CamposMag/CM5.png, id=3319, 236.885pt x 228.855pt>
+<Images//CamposMag/CM5.png, id=3383, 236.885pt x 228.855pt>
 File: Images//CamposMag/CM5.png Graphic file (type png)
 <use Images//CamposMag/CM5.png>
 Package pdftex.def Info: Images//CamposMag/CM5.png  used on input line 3833.
@@ -5432,17 +5435,17 @@ Package pdftex.def Info: Images//CamposMag/CM5.png  used on input line 3833.
  [156] [157 <./Images//CamposMag/CM1.png> <./Images//CamposMag/CM2.png> <./Imag
 es//CamposMag/CM3.png> <./Images//CamposMag/CM4.png> <./Images//CamposMag/CM5.p
 ng>] [158]
-<Images//CamposMag/CM6.png, id=3364, 248.42813pt x 248.42813pt>
+<Images//CamposMag/CM6.png, id=3428, 248.42813pt x 248.42813pt>
 File: Images//CamposMag/CM6.png Graphic file (type png)
 <use Images//CamposMag/CM6.png>
 Package pdftex.def Info: Images//CamposMag/CM6.png  used on input line 3941.
 (pdftex.def)             Requested size: 124.21376pt x 124.21376pt.
-<Images//CamposMag/CM7.png, id=3365, 253.69781pt x 252.945pt>
+<Images//CamposMag/CM7.png, id=3429, 253.69781pt x 252.945pt>
 File: Images//CamposMag/CM7.png Graphic file (type png)
 <use Images//CamposMag/CM7.png>
 Package pdftex.def Info: Images//CamposMag/CM7.png  used on input line 3942.
 (pdftex.def)             Requested size: 126.84859pt x 126.47218pt.
-<Images//CamposMag/CM8.png, id=3366, 248.42813pt x 249.18094pt>
+<Images//CamposMag/CM8.png, id=3430, 248.42813pt x 249.18094pt>
 File: Images//CamposMag/CM8.png Graphic file (type png)
 <use Images//CamposMag/CM8.png>
 Package pdftex.def Info: Images//CamposMag/CM8.png  used on input line 3943.
@@ -5466,7 +5469,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4055--4058
 
  []
 
-<Images//CamposMag/CM10.png, id=3424, 382.42876pt x 204.01219pt>
+<Images//CamposMag/CM10.png, id=3488, 382.42876pt x 204.01219pt>
 File: Images//CamposMag/CM10.png Graphic file (type png)
 <use Images//CamposMag/CM10.png>
 Package pdftex.def Info: Images//CamposMag/CM10.png  used on input line 4084.
@@ -5495,7 +5498,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4162--4165
 
  []
 
-<Images//CamposMag/CM11.png, id=3457, 243.91125pt x 208.78pt>
+<Images//CamposMag/CM11.png, id=3521, 243.91125pt x 208.78pt>
 File: Images//CamposMag/CM11.png Graphic file (type png)
 <use Images//CamposMag/CM11.png>
 Package pdftex.def Info: Images//CamposMag/CM11.png  used on input line 4171.
@@ -5547,12 +5550,12 @@ Package mdframed Info: mdframed works in twoside mode on input line 4251.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4251.
-<Images//CamposMag/CM13.png, id=3494, 199.74625pt x 191.71625pt>
+<Images//CamposMag/CM13.png, id=3558, 199.74625pt x 191.71625pt>
 File: Images//CamposMag/CM13.png Graphic file (type png)
 <use Images//CamposMag/CM13.png>
 Package pdftex.def Info: Images//CamposMag/CM13.png  used on input line 4263.
 (pdftex.def)             Requested size: 139.82141pt x 134.20045pt.
-<Images//CamposMag/CM14.png, id=3495, 199.74625pt x 191.71625pt>
+<Images//CamposMag/CM14.png, id=3559, 199.74625pt x 191.71625pt>
 File: Images//CamposMag/CM14.png Graphic file (type png)
 <use Images//CamposMag/CM14.png>
 Package pdftex.def Info: Images//CamposMag/CM14.png  used on input line 4269.
@@ -5562,7 +5565,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4277--4278
 
  []
 
-<Images//CamposMag/CM15.png, id=3496, 199.74625pt x 191.71625pt>
+<Images//CamposMag/CM15.png, id=3560, 199.74625pt x 191.71625pt>
 File: Images//CamposMag/CM15.png Graphic file (type png)
 <use Images//CamposMag/CM15.png>
 Package pdftex.def Info: Images//CamposMag/CM15.png  used on input line 4279.
@@ -5572,7 +5575,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4328--4329
 
  []
 
-<Images//CamposMag/CM16.png, id=3498, 231.86626pt x 231.86626pt>
+<Images//CamposMag/CM16.png, id=3562, 231.86626pt x 231.86626pt>
 File: Images//CamposMag/CM16.png Graphic file (type png)
 <use Images//CamposMag/CM16.png>
 Package pdftex.def Info: Images//CamposMag/CM16.png  used on input line 4332.
@@ -5588,7 +5591,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4347--4348
  []
 
 [170 <./Images//CamposMag/CM16.png>]
-<Images//CamposMag/CM17.png, id=3525, 292.84406pt x 177.66376pt>
+<Images//CamposMag/CM17.png, id=3589, 292.84406pt x 177.66376pt>
 File: Images//CamposMag/CM17.png Graphic file (type png)
 <use Images//CamposMag/CM17.png>
 Package pdftex.def Info: Images//CamposMag/CM17.png  used on input line 4397.
@@ -5608,7 +5611,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 4437.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4437.
-<Images//CamposMag/CM18.png, id=3543, 516.42938pt x 352.31625pt>
+<Images//CamposMag/CM18.png, id=3607, 516.42938pt x 352.31625pt>
 File: Images//CamposMag/CM18.png Graphic file (type png)
 <use Images//CamposMag/CM18.png>
 Package pdftex.def Info: Images//CamposMag/CM18.png  used on input line 4442.
@@ -5619,12 +5622,12 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 4474.
  [173 <./Images//CamposMag/CM18.png>]
-<Images//CamposMag/CM19.png, id=3576, 342.5297pt x 320.69812pt>
+<Images//CamposMag/CM19.png, id=3640, 342.5297pt x 320.69812pt>
 File: Images//CamposMag/CM19.png Graphic file (type png)
 <use Images//CamposMag/CM19.png>
 Package pdftex.def Info: Images//CamposMag/CM19.png  used on input line 4488.
 (pdftex.def)             Requested size: 171.26442pt x 160.34866pt.
-<Images//CamposMag/CM20.png, id=3577, 460.72125pt x 380.17032pt>
+<Images//CamposMag/CM20.png, id=3641, 460.72125pt x 380.17032pt>
 File: Images//CamposMag/CM20.png Graphic file (type png)
 <use Images//CamposMag/CM20.png>
 Package pdftex.def Info: Images//CamposMag/CM20.png  used on input line 4489.
@@ -5651,7 +5654,7 @@ Package mdframed Info: mdframed detected package amsthm
 [175
 
 ]
-<Images//CamposMag/CM21.png, id=3604, 490.83376pt x 289.83281pt>
+<Images//CamposMag/CM21.png, id=3668, 490.83376pt x 289.83281pt>
 File: Images//CamposMag/CM21.png Graphic file (type png)
 <use Images//CamposMag/CM21.png>
 Package pdftex.def Info: Images//CamposMag/CM21.png  used on input line 4553.
@@ -5661,7 +5664,7 @@ Package pdftex.def Info: Images//CamposMag/CM21.png  used on input line 4553.
 LaTeX Warning: Reference `fig: dipolos nubes' on page 177 undefined on input li
 ne 4600.
 
-<Images//CamposMag/CM22.png, id=3623, 574.39594pt x 170.13562pt>
+<Images//CamposMag/CM22.png, id=3687, 574.39594pt x 170.13562pt>
 File: Images//CamposMag/CM22.png Graphic file (type png)
 <use Images//CamposMag/CM22.png>
 Package pdftex.def Info: Images//CamposMag/CM22.png  used on input line 4618.
@@ -5674,18 +5677,18 @@ Chapter 13.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_ST.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_ST.pdf, id=3721, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_ST.pdf, id=3785, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_ST.pdf Graphic file (type pdf)
 <use Images//chapter_head_ST.pdf>
 Package pdftex.def Info: Images//chapter_head_ST.pdf  used on input line 4628.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-<Images//SisTelefonia/st1.png, id=3722, 507.8172pt x 78.0516pt>
+<Images//SisTelefonia/st1.png, id=3786, 507.8172pt x 78.0516pt>
 File: Images//SisTelefonia/st1.png Graphic file (type png)
 <use Images//SisTelefonia/st1.png>
 Package pdftex.def Info: Images//SisTelefonia/st1.png  used on input line 4635.
 
 (pdftex.def)             Requested size: 253.90797pt x 39.0257pt.
-<Images//SisTelefonia/st2.png, id=3723, 216.81pt x 189.8292pt>
+<Images//SisTelefonia/st2.png, id=3787, 216.81pt x 189.8292pt>
 File: Images//SisTelefonia/st2.png Graphic file (type png)
 <use Images//SisTelefonia/st2.png>
 Package pdftex.def Info: Images//SisTelefonia/st2.png  used on input line 4641.
@@ -5695,13 +5698,13 @@ Package mdframed Info: mdframed works in twoside mode on input line 4646.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 4646.
-<Images//SisTelefonia/st3.png, id=3724, 383.5128pt x 176.8206pt>
+<Images//SisTelefonia/st3.png, id=3788, 383.5128pt x 176.8206pt>
 File: Images//SisTelefonia/st3.png Graphic file (type png)
 <use Images//SisTelefonia/st3.png>
 Package pdftex.def Info: Images//SisTelefonia/st3.png  used on input line 4655.
 
 (pdftex.def)             Requested size: 191.75592pt x 88.41006pt.
-<Images//SisTelefonia/st4.png, id=3725, 633.567pt x 415.3116pt>
+<Images//SisTelefonia/st4.png, id=3789, 633.567pt x 415.3116pt>
 File: Images//SisTelefonia/st4.png Graphic file (type png)
 <use Images//SisTelefonia/st4.png>
 Package pdftex.def Info: Images//SisTelefonia/st4.png  used on input line 4661.
@@ -5722,7 +5725,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 4669--4680
 Underfull \vbox (badness 1394) has occurred while \output is active []
 
  [182 <./Images//SisTelefonia/st3.png> <./Images//SisTelefonia/st4.png>]
-<Images//SisTelefonia/st5.png, id=3748, 565.48105pt x 133.12895pt>
+<Images//SisTelefonia/st5.png, id=3812, 565.48105pt x 133.12895pt>
 File: Images//SisTelefonia/st5.png Graphic file (type png)
 <use Images//SisTelefonia/st5.png>
 Package pdftex.def Info: Images//SisTelefonia/st5.png  used on input line 4708.
@@ -5739,7 +5742,7 @@ LaTeX Font Info:    Font shape `T1/pag/b/it' in size <12> not available
 LaTeX Font Info:    Font shape `T1/pag/db/it' in size <12> not available
 (Font)              Font shape `T1/pag/db/sl' tried instead on input line 4728.
 
-<Images//SisTelefonia/st6.png, id=3749, 589.402pt x 221.628pt>
+<Images//SisTelefonia/st6.png, id=3813, 589.402pt x 221.628pt>
 File: Images//SisTelefonia/st6.png Graphic file (type png)
 <use Images//SisTelefonia/st6.png>
 Package pdftex.def Info: Images//SisTelefonia/st6.png  used on input line 4731.
@@ -5751,7 +5754,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 4737--4749
  []
 
 [183]
-<Images//SisTelefonia/st7.png, id=3755, 618.44164pt x 289.08pt>
+<Images//SisTelefonia/st7.png, id=3819, 618.44164pt x 289.08pt>
 File: Images//SisTelefonia/st7.png Graphic file (type png)
 <use Images//SisTelefonia/st7.png>
 Package pdftex.def Info: Images//SisTelefonia/st7.png  used on input line 4764.
@@ -5766,7 +5769,7 @@ Overfull \hbox (25.19998pt too wide) in paragraph at lines 4770--4779
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [184 <./Images//SisTelefonia/st5.png>]
-<Images//SisTelefonia/st8.png, id=3763, 656.06143pt x 267.49286pt>
+<Images//SisTelefonia/st8.png, id=3827, 656.06143pt x 267.49286pt>
 File: Images//SisTelefonia/st8.png Graphic file (type png)
 <use Images//SisTelefonia/st8.png>
 Package pdftex.def Info: Images//SisTelefonia/st8.png  used on input line 4787.
@@ -5780,20 +5783,20 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `!tbp') on input line 4794.
 
-<Images//SisTelefonia/st10.png, id=3764, 604.6811pt x 302.34055pt>
+<Images//SisTelefonia/st10.png, id=3828, 604.6811pt x 302.34055pt>
 File: Images//SisTelefonia/st10.png Graphic file (type png)
 <use Images//SisTelefonia/st10.png>
 Package pdftex.def Info: Images//SisTelefonia/st10.png  used on input line 4795
 .
 (pdftex.def)             Requested size: 302.33981pt x 151.16989pt.
-<Images//SisTelefonia/st9.png, id=3765, 642.7212pt x 303.0522pt>
+<Images//SisTelefonia/st9.png, id=3829, 642.7212pt x 303.0522pt>
 File: Images//SisTelefonia/st9.png Graphic file (type png)
 <use Images//SisTelefonia/st9.png>
 Package pdftex.def Info: Images//SisTelefonia/st9.png  used on input line 4810.
 
 (pdftex.def)             Requested size: 321.35982pt x 151.52573pt.
 [185 <./Images//SisTelefonia/st6.png>]
-<Images//SisTelefonia/st11.png, id=3776, 644.1666pt x 426.393pt>
+<Images//SisTelefonia/st11.png, id=3840, 644.1666pt x 426.393pt>
 File: Images//SisTelefonia/st11.png Graphic file (type png)
 <use Images//SisTelefonia/st11.png>
 Package pdftex.def Info: Images//SisTelefonia/st11.png  used on input line 4819
@@ -5809,20 +5812,20 @@ Underfull \hbox (badness 2875) in paragraph at lines 4837--4837
 []|\T1/ptm/m/n/10.95 (+20) Según la señal-ización uti-
  []
 
-<Images//SisTelefonia/st12.png, id=3784, 665.8476pt x 402.303pt>
+<Images//SisTelefonia/st12.png, id=3848, 665.8476pt x 402.303pt>
 File: Images//SisTelefonia/st12.png Graphic file (type png)
 <use Images//SisTelefonia/st12.png>
 Package pdftex.def Info: Images//SisTelefonia/st12.png  used on input line 4851
 .
 (pdftex.def)             Requested size: 332.92297pt x 201.151pt.
 [187 <./Images//SisTelefonia/st8.png> <./Images//SisTelefonia/st10.png>]
-<Images//SisTelefonia/st13.png, id=3796, 643.203pt x 211.0284pt>
+<Images//SisTelefonia/st13.png, id=3860, 643.203pt x 211.0284pt>
 File: Images//SisTelefonia/st13.png Graphic file (type png)
 <use Images//SisTelefonia/st13.png>
 Package pdftex.def Info: Images//SisTelefonia/st13.png  used on input line 4867
 .
 (pdftex.def)             Requested size: 321.60071pt x 105.51393pt.
-<Images//SisTelefonia/st14.png, id=3797, 648.5028pt x 276.0714pt>
+<Images//SisTelefonia/st14.png, id=3861, 648.5028pt x 276.0714pt>
 File: Images//SisTelefonia/st14.png Graphic file (type png)
 <use Images//SisTelefonia/st14.png>
 Package pdftex.def Info: Images//SisTelefonia/st14.png  used on input line 4872
@@ -5830,19 +5833,19 @@ Package pdftex.def Info: Images//SisTelefonia/st14.png  used on input line 4872
 (pdftex.def)             Requested size: 324.25061pt x 138.03535pt.
 
 [188 <./Images//SisTelefonia/st9.png> <./Images//SisTelefonia/st11.png>]
-<Images//SisTelefonia/st15.png, id=3807, 569.12625pt x 251.43938pt>
+<Images//SisTelefonia/st15.png, id=3871, 569.12625pt x 251.43938pt>
 File: Images//SisTelefonia/st15.png Graphic file (type png)
 <use Images//SisTelefonia/st15.png>
 Package pdftex.def Info: Images//SisTelefonia/st15.png  used on input line 4891
 .
 (pdftex.def)             Requested size: 284.56242pt x 125.71938pt.
-<Images//SisTelefonia/st16.png, id=3808, 382.17355pt x 199.6612pt>
+<Images//SisTelefonia/st16.png, id=3872, 382.17355pt x 199.6612pt>
 File: Images//SisTelefonia/st16.png Graphic file (type png)
 <use Images//SisTelefonia/st16.png>
 Package pdftex.def Info: Images//SisTelefonia/st16.png  used on input line 4899
 .
 (pdftex.def)             Requested size: 191.0863pt x 99.83035pt.
-<Images//SisTelefonia/st17.png, id=3809, 551.05875pt x 250.68657pt>
+<Images//SisTelefonia/st17.png, id=3873, 551.05875pt x 250.68657pt>
 File: Images//SisTelefonia/st17.png Graphic file (type png)
 <use Images//SisTelefonia/st17.png>
 Package pdftex.def Info: Images//SisTelefonia/st17.png  used on input line 4905
@@ -5859,38 +5862,38 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [189 <./Images//SisTelefonia/st12.png> <./Images//SisTelefonia/st13.png>]
-<Images//SisTelefonia/st18.png, id=3820, 588.7596pt x 165.7392pt>
+<Images//SisTelefonia/st18.png, id=3884, 588.7596pt x 165.7392pt>
 File: Images//SisTelefonia/st18.png Graphic file (type png)
 <use Images//SisTelefonia/st18.png>
 Package pdftex.def Info: Images//SisTelefonia/st18.png  used on input line 4914
 .
 (pdftex.def)             Requested size: 294.37907pt x 82.86938pt.
-<Images//SisTelefonia/st19.png, id=3821, 532.389pt x 299.6796pt>
+<Images//SisTelefonia/st19.png, id=3885, 532.389pt x 299.6796pt>
 File: Images//SisTelefonia/st19.png Graphic file (type png)
 <use Images//SisTelefonia/st19.png>
 Package pdftex.def Info: Images//SisTelefonia/st19.png  used on input line 4929
 .
 (pdftex.def)             Requested size: 266.19385pt x 149.83942pt.
-<Images//SisTelefonia/st20.png, id=3822, 506.8536pt x 280.4076pt>
+<Images//SisTelefonia/st20.png, id=3886, 506.8536pt x 280.4076pt>
 File: Images//SisTelefonia/st20.png Graphic file (type png)
 <use Images//SisTelefonia/st20.png>
 Package pdftex.def Info: Images//SisTelefonia/st20.png  used on input line 4935
 .
 (pdftex.def)             Requested size: 253.42618pt x 140.20345pt.
-<Images//SisTelefonia/st21.png, id=3823, 645.612pt x 334.851pt>
+<Images//SisTelefonia/st21.png, id=3887, 645.612pt x 334.851pt>
 File: Images//SisTelefonia/st21.png Graphic file (type png)
 <use Images//SisTelefonia/st21.png>
 Package pdftex.def Info: Images//SisTelefonia/st21.png  used on input line 4940
 .
 (pdftex.def)             Requested size: 322.8052pt x 167.42508pt.
-<Images//SisTelefonia/st22.png, id=3824, 705.3552pt x 425.4294pt>
+<Images//SisTelefonia/st22.png, id=3888, 705.3552pt x 425.4294pt>
 File: Images//SisTelefonia/st22.png Graphic file (type png)
 <use Images//SisTelefonia/st22.png>
 Package pdftex.def Info: Images//SisTelefonia/st22.png  used on input line 4948
 .
 (pdftex.def)             Requested size: 352.67673pt x 212.71417pt.
  [190 <./Images//SisTelefonia/st14.png> <./Images//SisTelefonia/st15.png>]
-<Images//SisTelefonia/st23.png, id=3837, 472.6458pt x 185.0112pt>
+<Images//SisTelefonia/st23.png, id=3901, 472.6458pt x 185.0112pt>
 File: Images//SisTelefonia/st23.png Graphic file (type png)
 <use Images//SisTelefonia/st23.png>
 Package pdftex.def Info: Images//SisTelefonia/st23.png  used on input line 4970
@@ -5900,7 +5903,7 @@ Package pdftex.def Info: Images//SisTelefonia/st23.png  used on input line 4970
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Images//SisTelefonia/st24.png, id=3838, 573.342pt x 336.7782pt>
+<Images//SisTelefonia/st24.png, id=3902, 573.342pt x 336.7782pt>
 File: Images//SisTelefonia/st24.png Graphic file (type png)
 <use Images//SisTelefonia/st24.png>
 Package pdftex.def Info: Images//SisTelefonia/st24.png  used on input line 4975
@@ -5921,25 +5924,25 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 4987.
 
 Missing character: There is no ° in font zptmcm7t!
 [191 <./Images//SisTelefonia/st16.png> <./Images//SisTelefonia/st17.png>]
-<Images//SisTelefonia/st25.png, id=3848, 691.383pt x 307.8702pt>
+<Images//SisTelefonia/st25.png, id=3912, 691.383pt x 307.8702pt>
 File: Images//SisTelefonia/st25.png Graphic file (type png)
 <use Images//SisTelefonia/st25.png>
 Package pdftex.def Info: Images//SisTelefonia/st25.png  used on input line 5006
 .
 (pdftex.def)             Requested size: 345.69066pt x 153.93471pt.
-<Images//SisTelefonia/st26.png, id=3849, 240.4182pt x 278.4804pt>
+<Images//SisTelefonia/st26.png, id=3913, 240.4182pt x 278.4804pt>
 File: Images//SisTelefonia/st26.png Graphic file (type png)
 <use Images//SisTelefonia/st26.png>
 Package pdftex.def Info: Images//SisTelefonia/st26.png  used on input line 5013
 .
 (pdftex.def)             Requested size: 120.2088pt x 139.23985pt.
-<Images//SisTelefonia/st27.png, id=3850, 249.5724pt x 239.9364pt>
+<Images//SisTelefonia/st27.png, id=3914, 249.5724pt x 239.9364pt>
 File: Images//SisTelefonia/st27.png Graphic file (type png)
 <use Images//SisTelefonia/st27.png>
 Package pdftex.def Info: Images//SisTelefonia/st27.png  used on input line 5018
 .
 (pdftex.def)             Requested size: 124.78589pt x 119.9679pt.
-<Images//SisTelefonia/st28.png, id=3851, 243.78401pt x 308.352pt>
+<Images//SisTelefonia/st28.png, id=3915, 243.78401pt x 308.352pt>
 File: Images//SisTelefonia/st28.png Graphic file (type png)
 <use Images//SisTelefonia/st28.png>
 Package pdftex.def Info: Images//SisTelefonia/st28.png  used on input line 5024
@@ -5949,13 +5952,13 @@ Package pdftex.def Info: Images//SisTelefonia/st28.png  used on input line 5024
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [192 <./Images//SisTelefonia/st18.png> <./Images//SisTelefonia/st19.png>]
-<Images//SisTelefonia/st29.png, id=3862, 338.7054pt x 254.3904pt>
+<Images//SisTelefonia/st29.png, id=3926, 338.7054pt x 254.3904pt>
 File: Images//SisTelefonia/st29.png Graphic file (type png)
 <use Images//SisTelefonia/st29.png>
 Package pdftex.def Info: Images//SisTelefonia/st29.png  used on input line 5031
 .
 (pdftex.def)             Requested size: 169.35228pt x 127.19489pt.
-<Images//SisTelefonia/st30.png, id=3863, 979.20761pt x 400.02972pt>
+<Images//SisTelefonia/st30.png, id=3927, 979.20761pt x 400.02972pt>
 File: Images//SisTelefonia/st30.png Graphic file (type png)
 <use Images//SisTelefonia/st30.png>
 Package pdftex.def Info: Images//SisTelefonia/st30.png  used on input line 5039
@@ -5967,7 +5970,7 @@ Overfull \hbox (62.81126pt too wide) in paragraph at lines 5039--5040
  []
 
 [193 <./Images//SisTelefonia/st20.png> <./Images//SisTelefonia/st21.png>]
-<Images//SisTelefonia/st31.png, id=3873, 690.4194pt x 333.4056pt>
+<Images//SisTelefonia/st31.png, id=3937, 690.4194pt x 333.4056pt>
 File: Images//SisTelefonia/st31.png Graphic file (type png)
 <use Images//SisTelefonia/st31.png>
 Package pdftex.def Info: Images//SisTelefonia/st31.png  used on input line 5062
@@ -5988,20 +5991,20 @@ File: Images//chapter_head_ST.pdf Graphic file (type pdf)
 <use Images//chapter_head_ST.pdf>
 Package pdftex.def Info: Images//chapter_head_ST.pdf  used on input line 5081.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-<Images//SisTelefonia/st32.png, id=3917, 373.395pt x 344.9688pt>
+<Images//SisTelefonia/st32.png, id=3981, 373.395pt x 344.9688pt>
 File: Images//SisTelefonia/st32.png Graphic file (type png)
 <use Images//SisTelefonia/st32.png>
 Package pdftex.def Info: Images//SisTelefonia/st32.png  used on input line 5089
 .
 (pdftex.def)             Requested size: 186.69704pt x 172.48396pt.
-<Images//SisTelefonia/st33.png, id=3918, 385.60846pt x 319.90846pt>
+<Images//SisTelefonia/st33.png, id=3982, 385.60846pt x 319.90846pt>
 File: Images//SisTelefonia/st33.png Graphic file (type png)
 <use Images//SisTelefonia/st33.png>
 Package pdftex.def Info: Images//SisTelefonia/st33.png  used on input line 5096
 .
 (pdftex.def)             Requested size: 192.80374pt x 159.95383pt.
 [199 <./Images//SisTelefonia/st32.png>]
-<Images//SisTelefonia/st34.png, id=3927, 369.57585pt x 239.13731pt>
+<Images//SisTelefonia/st34.png, id=3991, 369.57585pt x 239.13731pt>
 File: Images//SisTelefonia/st34.png Graphic file (type png)
 <use Images//SisTelefonia/st34.png>
 Package pdftex.def Info: Images//SisTelefonia/st34.png  used on input line 5103
@@ -6041,27 +6044,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 5222--5224
 
  []
 
-<Images//SisTelefonia/st35.png, id=3970, 373.8768pt x 344.9688pt>
+<Images//SisTelefonia/st35.png, id=4034, 373.8768pt x 344.9688pt>
 File: Images//SisTelefonia/st35.png Graphic file (type png)
 <use Images//SisTelefonia/st35.png>
 Package pdftex.def Info: Images//SisTelefonia/st35.png  used on input line 5254
 .
 (pdftex.def)             Requested size: 186.93794pt x 172.48396pt.
 [203]
-<Images//SisTelefonia/st36.png, id=3979, 593.0958pt x 353.6412pt>
+<Images//SisTelefonia/st36.png, id=4043, 593.0958pt x 353.6412pt>
 File: Images//SisTelefonia/st36.png Graphic file (type png)
 <use Images//SisTelefonia/st36.png>
 Package pdftex.def Info: Images//SisTelefonia/st36.png  used on input line 5263
 .
 (pdftex.def)             Requested size: 296.54716pt x 176.82016pt.
  [204 <./Images//SisTelefonia/st35.png> <./Images//SisTelefonia/st36.png>]
-<Images//SisTelefonia/st37.png, id=3990, 410.9754pt x 190.7928pt>
+<Images//SisTelefonia/st37.png, id=4054, 410.9754pt x 190.7928pt>
 File: Images//SisTelefonia/st37.png Graphic file (type png)
 <use Images//SisTelefonia/st37.png>
 Package pdftex.def Info: Images//SisTelefonia/st37.png  used on input line 5285
 .
 (pdftex.def)             Requested size: 205.4872pt x 95.39615pt.
-<Images//SisTelefonia/st38.png, id=3992, 326.6604pt x 320.397pt>
+<Images//SisTelefonia/st38.png, id=4056, 326.6604pt x 320.397pt>
 File: Images//SisTelefonia/st38.png Graphic file (type png)
 <use Images//SisTelefonia/st38.png>
 Package pdftex.def Info: Images//SisTelefonia/st38.png  used on input line 5292
@@ -6089,13 +6092,13 @@ Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 5322.
  [206 <./Images//SisTelefonia/st38.png>]
-<Images//SisTelefonia/st39.png, id=4021, 767.9892pt x 448.074pt>
+<Images//SisTelefonia/st39.png, id=4085, 767.9892pt x 448.074pt>
 File: Images//SisTelefonia/st39.png Graphic file (type png)
 <use Images//SisTelefonia/st39.png>
 Package pdftex.def Info: Images//SisTelefonia/st39.png  used on input line 5340
 .
 (pdftex.def)             Requested size: 383.99365pt x 224.03644pt.
-<Images//SisTelefonia/st41.png, id=4027, 1154.3125pt x 770.88pt>
+<Images//SisTelefonia/st41.png, id=4091, 1154.3125pt x 770.88pt>
 File: Images//SisTelefonia/st41.png Graphic file (type png)
 <use Images//SisTelefonia/st41.png>
 Package pdftex.def Info: Images//SisTelefonia/st41.png  used on input line 5348
@@ -6113,7 +6116,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5338--5351
  []
 
 [207 <./Images//SisTelefonia/st39.png>]
-<Images//SisTelefonia/st40.png, id=4038, 322.806pt x 151.767pt>
+<Images//SisTelefonia/st40.png, id=4102, 322.806pt x 151.767pt>
 File: Images//SisTelefonia/st40.png Graphic file (type png)
 <use Images//SisTelefonia/st40.png>
 Package pdftex.def Info: Images//SisTelefonia/st40.png  used on input line 5364
@@ -6124,7 +6127,7 @@ Underfull \hbox (badness 4832) in paragraph at lines 5364--5364
 []\T1/ptm/m/n/9 (+20) (a) |Leyenda del grá-fico
  []
 
-<Images//SisTelefonia/st42.png, id=4039, 163.812pt x 380.1402pt>
+<Images//SisTelefonia/st42.png, id=4103, 163.812pt x 380.1402pt>
 File: Images//SisTelefonia/st42.png Graphic file (type png)
 <use Images//SisTelefonia/st42.png>
 Package pdftex.def Info: Images//SisTelefonia/st42.png  used on input line 5366
@@ -6148,7 +6151,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 5370.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 5370.
-<Images//SisTelefonia/st43.png, id=4053, 253.4268pt x 340.1508pt>
+<Images//SisTelefonia/st43.png, id=4117, 253.4268pt x 340.1508pt>
 File: Images//SisTelefonia/st43.png Graphic file (type png)
 <use Images//SisTelefonia/st43.png>
 Package pdftex.def Info: Images//SisTelefonia/st43.png  used on input line 5385
@@ -6158,19 +6161,19 @@ Package pdftex.def Info: Images//SisTelefonia/st43.png  used on input line 5385
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [209 <./Images//SisTelefonia/st40.png> <./Images//SisTelefonia/st42.png>]
-<Images//SisTelefonia/st44.png, id=4063, 266.4354pt x 337.7418pt>
+<Images//SisTelefonia/st44.png, id=4127, 266.4354pt x 337.7418pt>
 File: Images//SisTelefonia/st44.png Graphic file (type png)
 <use Images//SisTelefonia/st44.png>
 Package pdftex.def Info: Images//SisTelefonia/st44.png  used on input line 5391
 .
 (pdftex.def)             Requested size: 144.54pt x 183.22818pt.
-<Images//SisTelefonia/st45.png, id=4064, 269.3262pt x 353.1594pt>
+<Images//SisTelefonia/st45.png, id=4128, 269.3262pt x 353.1594pt>
 File: Images//SisTelefonia/st45.png Graphic file (type png)
 <use Images//SisTelefonia/st45.png>
 Package pdftex.def Info: Images//SisTelefonia/st45.png  used on input line 5392
 .
 (pdftex.def)             Requested size: 144.54pt x 189.53925pt.
-<Images//SisTelefonia/st46.png, id=4065, 270.7716pt x 345.9324pt>
+<Images//SisTelefonia/st46.png, id=4129, 270.7716pt x 345.9324pt>
 File: Images//SisTelefonia/st46.png Graphic file (type png)
 <use Images//SisTelefonia/st46.png>
 Package pdftex.def Info: Images//SisTelefonia/st46.png  used on input line 5393
@@ -6187,13 +6190,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5409--5411
 
  []
 
-<Images//SisTelefonia/st47.png, id=4079, 534.16957pt x 368.68173pt>
+<Images//SisTelefonia/st47.png, id=4143, 534.16957pt x 368.68173pt>
 File: Images//SisTelefonia/st47.png Graphic file (type png)
 <use Images//SisTelefonia/st47.png>
 Package pdftex.def Info: Images//SisTelefonia/st47.png  used on input line 5428
 .
 (pdftex.def)             Requested size: 320.50421pt x 221.21074pt.
-<Images//SisTelefonia/st48.png, id=4080, 351.64209pt x 235.63031pt>
+<Images//SisTelefonia/st48.png, id=4144, 351.64209pt x 235.63031pt>
 File: Images//SisTelefonia/st48.png Graphic file (type png)
 <use Images//SisTelefonia/st48.png>
 Package pdftex.def Info: Images//SisTelefonia/st48.png  used on input line 5434
@@ -6209,19 +6212,19 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 5438.
 
 [212 <./Images//SisTelefonia/st47.png> <./Images//SisTelefonia/st48.png>]
-<Images//SisTelefonia/st49.png, id=4108, 237.13594pt x 128.73094pt>
+<Images//SisTelefonia/st49.png, id=4172, 237.13594pt x 128.73094pt>
 File: Images//SisTelefonia/st49.png Graphic file (type png)
 <use Images//SisTelefonia/st49.png>
 Package pdftex.def Info: Images//SisTelefonia/st49.png  used on input line 5467
 .
 (pdftex.def)             Requested size: 142.28265pt x 77.23914pt.
-<Images//SisTelefonia/st79.png, id=4110, 347.8596pt x 285.7074pt>
+<Images//SisTelefonia/st79.png, id=4174, 347.8596pt x 285.7074pt>
 File: Images//SisTelefonia/st79.png Graphic file (type png)
 <use Images//SisTelefonia/st79.png>
 Package pdftex.def Info: Images//SisTelefonia/st79.png  used on input line 5474
 .
 (pdftex.def)             Requested size: 208.71736pt x 171.42575pt.
-<Images//SisTelefonia/st80.png, id=4111, 358.941pt x 369.5406pt>
+<Images//SisTelefonia/st80.png, id=4175, 358.941pt x 369.5406pt>
 File: Images//SisTelefonia/st80.png Graphic file (type png)
 <use Images//SisTelefonia/st80.png>
 Package pdftex.def Info: Images//SisTelefonia/st80.png  used on input line 5480
@@ -6237,7 +6240,7 @@ Package mdframed Info: mdframed detected package amsthm
 (mdframed)              on input line 5494.
  [214 <./Images//SisTelefonia/st79.png> <./Images//SisTelefonia/st80.png>]
 Package mdframed Info: Not enough space on this page on input line 5508.
-<Images//SisTelefonia/st50.png, id=4130, 475.0548pt x 126.2316pt>
+<Images//SisTelefonia/st50.png, id=4194, 475.0548pt x 126.2316pt>
 File: Images//SisTelefonia/st50.png Graphic file (type png)
 <use Images//SisTelefonia/st50.png>
 Package pdftex.def Info: Images//SisTelefonia/st50.png  used on input line 5527
@@ -6248,7 +6251,7 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 5532.
  [215 <./Images//SisTelefonia/st50.png>]
-<Images//SisTelefonia/st51.png, id=4146, 594.5412pt x 394.5942pt>
+<Images//SisTelefonia/st51.png, id=4210, 594.5412pt x 394.5942pt>
 File: Images//SisTelefonia/st51.png Graphic file (type png)
 <use Images//SisTelefonia/st51.png>
 Package pdftex.def Info: Images//SisTelefonia/st51.png  used on input line 5543
@@ -6262,7 +6265,7 @@ Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 5573.
  [216 <./Images//SisTelefonia/st51.png>]
-<Images//SisTelefonia/st52.png, id=4158, 548.2884pt x 301.125pt>
+<Images//SisTelefonia/st52.png, id=4222, 548.2884pt x 301.125pt>
 File: Images//SisTelefonia/st52.png Graphic file (type png)
 <use Images//SisTelefonia/st52.png>
 Package pdftex.def Info: Images//SisTelefonia/st52.png  used on input line 5577
@@ -6280,7 +6283,7 @@ Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 5611.
  [217 <./Images//SisTelefonia/st52.png>]
-<Images//SisTelefonia/st53.png, id=4175, 470.65837pt x 313.47113pt>
+<Images//SisTelefonia/st53.png, id=4239, 470.65837pt x 313.47113pt>
 File: Images//SisTelefonia/st53.png Graphic file (type png)
 <use Images//SisTelefonia/st53.png>
 Package pdftex.def Info: Images//SisTelefonia/st53.png  used on input line 5617
@@ -6300,25 +6303,25 @@ File: Images//chapter_head_ST.pdf Graphic file (type pdf)
 <use Images//chapter_head_ST.pdf>
 Package pdftex.def Info: Images//chapter_head_ST.pdf  used on input line 5635.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-<Images//SisTelefonia/st54.png, id=4188, 485.6544pt x 306.4248pt>
+<Images//SisTelefonia/st54.png, id=4252, 485.6544pt x 306.4248pt>
 File: Images//SisTelefonia/st54.png Graphic file (type png)
 <use Images//SisTelefonia/st54.png>
 Package pdftex.def Info: Images//SisTelefonia/st54.png  used on input line 5642
 .
 (pdftex.def)             Requested size: 122.85876pt x 77.51776pt.
-<Images//SisTelefonia/st55.png, id=4189, 485.6544pt x 298.2342pt>
+<Images//SisTelefonia/st55.png, id=4253, 485.6544pt x 298.2342pt>
 File: Images//SisTelefonia/st55.png Graphic file (type png)
 <use Images//SisTelefonia/st55.png>
 Package pdftex.def Info: Images//SisTelefonia/st55.png  used on input line 5643
 .
 (pdftex.def)             Requested size: 122.85876pt x 75.44574pt.
-<Images//SisTelefonia/st56.png, id=4190, 485.6544pt x 298.2342pt>
+<Images//SisTelefonia/st56.png, id=4254, 485.6544pt x 298.2342pt>
 File: Images//SisTelefonia/st56.png Graphic file (type png)
 <use Images//SisTelefonia/st56.png>
 Package pdftex.def Info: Images//SisTelefonia/st56.png  used on input line 5644
 .
 (pdftex.def)             Requested size: 122.85876pt x 75.44574pt.
-<Images//SisTelefonia/st57.png, id=4191, 631.6398pt x 298.716pt>
+<Images//SisTelefonia/st57.png, id=4255, 631.6398pt x 298.716pt>
 File: Images//SisTelefonia/st57.png Graphic file (type png)
 <use Images//SisTelefonia/st57.png>
 Package pdftex.def Info: Images//SisTelefonia/st57.png  used on input line 5645
@@ -6329,19 +6332,19 @@ Overfull \hbox (64.6437pt too wide) in paragraph at lines 5642--5646
  [][][][][][][][] 
  []
 
-<Images//SisTelefonia/st58.png, id=4192, 535.7616pt x 165.7392pt>
+<Images//SisTelefonia/st58.png, id=4256, 535.7616pt x 165.7392pt>
 File: Images//SisTelefonia/st58.png Graphic file (type png)
 <use Images//SisTelefonia/st58.png>
 Package pdftex.def Info: Images//SisTelefonia/st58.png  used on input line 5655
 .
 (pdftex.def)             Requested size: 144.54pt x 44.71223pt.
-<Images//SisTelefonia/st59.png, id=4193, 592.614pt x 251.9814pt>
+<Images//SisTelefonia/st59.png, id=4257, 592.614pt x 251.9814pt>
 File: Images//SisTelefonia/st59.png Graphic file (type png)
 <use Images//SisTelefonia/st59.png>
 Package pdftex.def Info: Images//SisTelefonia/st59.png  used on input line 5656
 .
 (pdftex.def)             Requested size: 144.54pt x 61.45721pt.
-<Images//SisTelefonia/st60.png, id=4194, 548.0475pt x 332.24126pt>
+<Images//SisTelefonia/st60.png, id=4258, 548.0475pt x 332.24126pt>
 File: Images//SisTelefonia/st60.png Graphic file (type png)
 <use Images//SisTelefonia/st60.png>
 Package pdftex.def Info: Images//SisTelefonia/st60.png  used on input line 5664
@@ -6352,13 +6355,13 @@ Package pdftex.def Info: Images//SisTelefonia/st60.png  used on input line 5664
  <./Images//SisTelefonia/st54.png> <./Images//SisTelefonia/st55.png> <./Images/
 /SisTelefonia/st56.png> <./Images//SisTelefonia/st57.png> <./Images//SisTelefon
 ia/st58.png> <./Images//SisTelefonia/st59.png>]
-<Images//SisTelefonia/st61.png, id=4213, 626.8218pt x 327.1422pt>
+<Images//SisTelefonia/st61.png, id=4277, 626.8218pt x 327.1422pt>
 File: Images//SisTelefonia/st61.png Graphic file (type png)
 <use Images//SisTelefonia/st61.png>
 Package pdftex.def Info: Images//SisTelefonia/st61.png  used on input line 5671
 .
 (pdftex.def)             Requested size: 376.09596pt x 196.28682pt.
-<Images//SisTelefonia/st62.png, id=4214, 475.5366pt x 434.1018pt>
+<Images//SisTelefonia/st62.png, id=4278, 475.5366pt x 434.1018pt>
 File: Images//SisTelefonia/st62.png Graphic file (type png)
 <use Images//SisTelefonia/st62.png>
 Package pdftex.def Info: Images//SisTelefonia/st62.png  used on input line 5683
@@ -6383,19 +6386,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 5687--5695
  []
 
 [221 <./Images//SisTelefonia/st62.png>]
-<Images//SisTelefonia/st63.png, id=4229, 524.6802pt x 390.258pt>
+<Images//SisTelefonia/st63.png, id=4293, 524.6802pt x 390.258pt>
 File: Images//SisTelefonia/st63.png Graphic file (type png)
 <use Images//SisTelefonia/st63.png>
 Package pdftex.def Info: Images//SisTelefonia/st63.png  used on input line 5702
 .
 (pdftex.def)             Requested size: 314.81055pt x 234.1566pt.
-<Images//SisTelefonia/st64.png, id=4230, 592.1322pt x 304.4976pt>
+<Images//SisTelefonia/st64.png, id=4294, 592.1322pt x 304.4976pt>
 File: Images//SisTelefonia/st64.png Graphic file (type png)
 <use Images//SisTelefonia/st64.png>
 Package pdftex.def Info: Images//SisTelefonia/st64.png  used on input line 5709
 .
 (pdftex.def)             Requested size: 355.28206pt x 182.69997pt.
-<Images//SisTelefonia/st65.png, id=4231, 529.98pt x 365.93857pt>
+<Images//SisTelefonia/st65.png, id=4295, 529.98pt x 365.93857pt>
 File: Images//SisTelefonia/st65.png Graphic file (type png)
 <use Images//SisTelefonia/st65.png>
 Package pdftex.def Info: Images//SisTelefonia/st65.png  used on input line 5715
@@ -6410,13 +6413,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 5721--5725
  []
 
 [223 <./Images//SisTelefonia/st64.png> <./Images//SisTelefonia/st65.png>]
-<Images//SisTelefonia/st66.png, id=4248, 584.9052pt x 395.5578pt>
+<Images//SisTelefonia/st66.png, id=4312, 584.9052pt x 395.5578pt>
 File: Images//SisTelefonia/st66.png Graphic file (type png)
 <use Images//SisTelefonia/st66.png>
 Package pdftex.def Info: Images//SisTelefonia/st66.png  used on input line 5736
 .
 (pdftex.def)             Requested size: 350.94582pt x 237.3365pt.
-<Images//SisTelefonia/st67.png, id=4249, 570.4512pt x 404.712pt>
+<Images//SisTelefonia/st67.png, id=4313, 570.4512pt x 404.712pt>
 File: Images//SisTelefonia/st67.png Graphic file (type png)
 <use Images//SisTelefonia/st67.png>
 Package pdftex.def Info: Images//SisTelefonia/st67.png  used on input line 5754
@@ -6440,14 +6443,14 @@ Underfull \hbox (badness 1478) in paragraph at lines 5788--5789
 []|\T1/ptm/m/n/10.95 (+20) Entrega de la in-for-ma-ción
  []
 
-<Images//SisTelefonia/st68.png, id=4259, 594.0594pt x 358.4592pt>
+<Images//SisTelefonia/st68.png, id=4323, 594.0594pt x 358.4592pt>
 File: Images//SisTelefonia/st68.png Graphic file (type png)
 <use Images//SisTelefonia/st68.png>
 Package pdftex.def Info: Images//SisTelefonia/st68.png  used on input line 5800
 .
 (pdftex.def)             Requested size: 356.43839pt x 215.07716pt.
 [225 <./Images//SisTelefonia/st67.png>]
-<Images//SisTelefonia/st69.png, id=4267, 489.5088pt x 356.0502pt>
+<Images//SisTelefonia/st69.png, id=4331, 489.5088pt x 356.0502pt>
 File: Images//SisTelefonia/st69.png Graphic file (type png)
 <use Images//SisTelefonia/st69.png>
 Package pdftex.def Info: Images//SisTelefonia/st69.png  used on input line 5806
@@ -6457,14 +6460,14 @@ Package pdftex.def Info: Images//SisTelefonia/st69.png  used on input line 5806
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [226 <./Images//SisTelefonia/st68.png>]
-<Images//SisTelefonia/st70.png, id=4275, 576.2328pt x 402.7848pt>
+<Images//SisTelefonia/st70.png, id=4339, 576.2328pt x 402.7848pt>
 File: Images//SisTelefonia/st70.png Graphic file (type png)
 <use Images//SisTelefonia/st70.png>
 Package pdftex.def Info: Images//SisTelefonia/st70.png  used on input line 5824
 .
 (pdftex.def)             Requested size: 345.74234pt x 241.67274pt.
  [227 <./Images//SisTelefonia/st69.png>]
-<Images//SisTelefonia/st71.png, id=4285, 903.375pt x 314.17375pt>
+<Images//SisTelefonia/st71.png, id=4349, 903.375pt x 314.17375pt>
 File: Images//SisTelefonia/st71.png Graphic file (type png)
 <use Images//SisTelefonia/st71.png>
 Package pdftex.def Info: Images//SisTelefonia/st71.png  used on input line 5829
@@ -6487,13 +6490,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 5869.
 [229]
-<Images//SisTelefonia/st72.png, id=4303, 525.162pt x 228.855pt>
+<Images//SisTelefonia/st72.png, id=4367, 525.162pt x 228.855pt>
 File: Images//SisTelefonia/st72.png Graphic file (type png)
 <use Images//SisTelefonia/st72.png>
 Package pdftex.def Info: Images//SisTelefonia/st72.png  used on input line 5882
 .
 (pdftex.def)             Requested size: 315.09962pt x 137.31404pt.
-<Images//SisTelefonia/st73.png, id=4304, 535.7616pt x 319.15208pt>
+<Images//SisTelefonia/st73.png, id=4368, 535.7616pt x 319.15208pt>
 File: Images//SisTelefonia/st73.png Graphic file (type png)
 <use Images//SisTelefonia/st73.png>
 Package pdftex.def Info: Images//SisTelefonia/st73.png  used on input line 5891
@@ -6509,13 +6512,13 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 5924.
 [231]
-<Images//SisTelefonia/st74.png, id=4338, 598.8774pt x 232.7094pt>
+<Images//SisTelefonia/st74.png, id=4402, 598.8774pt x 232.7094pt>
 File: Images//SisTelefonia/st74.png Graphic file (type png)
 <use Images//SisTelefonia/st74.png>
 Package pdftex.def Info: Images//SisTelefonia/st74.png  used on input line 5951
 .
 (pdftex.def)             Requested size: 359.32921pt x 139.62671pt.
-<Images//SisTelefonia/st75.png, id=4339, 444.91219pt x 346.29375pt>
+<Images//SisTelefonia/st75.png, id=4403, 444.91219pt x 346.29375pt>
 File: Images//SisTelefonia/st75.png Graphic file (type png)
 <use Images//SisTelefonia/st75.png>
 Package pdftex.def Info: Images//SisTelefonia/st75.png  used on input line 5972
@@ -6528,19 +6531,19 @@ Underfull \vbox (badness 7344) has occurred while \output is active []
 Underfull \vbox (badness 1173) has occurred while \output is active []
 
  [233 <./Images//SisTelefonia/st75.png>]
-<Images//SisTelefonia/st76.png, id=4352, 435.0654pt x 199.4652pt>
+<Images//SisTelefonia/st76.png, id=4416, 435.0654pt x 199.4652pt>
 File: Images//SisTelefonia/st76.png Graphic file (type png)
 <use Images//SisTelefonia/st76.png>
 Package pdftex.def Info: Images//SisTelefonia/st76.png  used on input line 6008
 .
 (pdftex.def)             Requested size: 261.04124pt x 119.68004pt.
-<Images//SisTelefonia/st77.png, id=4353, 325.215pt x 209.28188pt>
+<Images//SisTelefonia/st77.png, id=4417, 325.215pt x 209.28188pt>
 File: Images//SisTelefonia/st77.png Graphic file (type png)
 <use Images//SisTelefonia/st77.png>
 Package pdftex.def Info: Images//SisTelefonia/st77.png  used on input line 6021
 .
 (pdftex.def)             Requested size: 144.54pt x 93.01675pt.
-<Images//SisTelefonia/st78.png, id=4354, 282.30469pt x 209.28188pt>
+<Images//SisTelefonia/st78.png, id=4418, 282.30469pt x 209.28188pt>
 File: Images//SisTelefonia/st78.png Graphic file (type png)
 <use Images//SisTelefonia/st78.png>
 Package pdftex.def Info: Images//SisTelefonia/st78.png  used on input line 6022
@@ -6559,7 +6562,7 @@ Chapter 16.
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_IN1.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_IN1.pdf, id=4423, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_IN1.pdf, id=4487, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_IN1.pdf Graphic file (type pdf)
 <use Images//chapter_head_IN1.pdf>
 Package pdftex.def Info: Images//chapter_head_IN1.pdf  used on input line 6047.
@@ -6576,7 +6579,7 @@ Underfull \hbox (badness 6758) in paragraph at lines 6059--6059
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [242]
-<Images//IN1/IN1.png, id=4445, 301.125pt x 354.32375pt>
+<Images//IN1/IN1.png, id=4509, 301.125pt x 354.32375pt>
 File: Images//IN1/IN1.png Graphic file (type png)
 <use Images//IN1/IN1.png>
 Package pdftex.def Info: Images//IN1/IN1.png  used on input line 6100.
@@ -6587,7 +6590,7 @@ Package pdftex.def Info: Images//IN1/IN1.png  used on input line 6100.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 6139.
 
-<Images//IN1/IN3.png, id=4461, 863.225pt x 709.65125pt>
+<Images//IN1/IN3.png, id=4525, 863.225pt x 709.65125pt>
 File: Images//IN1/IN3.png Graphic file (type png)
 <use Images//IN1/IN3.png>
 Package pdftex.def Info: Images//IN1/IN3.png  used on input line 6141.
@@ -6601,7 +6604,7 @@ Overfull \hbox (4.8201pt too wide) in paragraph at lines 6141--6142
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 6145.
 
-<Images//IN1/IN4.png, id=4462, 120.45pt x 85.0377pt>
+<Images//IN1/IN4.png, id=4526, 120.45pt x 85.0377pt>
 File: Images//IN1/IN4.png Graphic file (type png)
 <use Images//IN1/IN4.png>
 Package pdftex.def Info: Images//IN1/IN4.png  used on input line 6147.
@@ -6645,24 +6648,24 @@ Package mdframed Info: mdframed detected package amsthm
 Underfull \vbox (badness 5607) has occurred while \output is active []
 
  [250]
-<Images//IN1/IN5.png, id=4503, 752.8125pt x 752.8125pt>
+<Images//IN1/IN5.png, id=4567, 752.8125pt x 752.8125pt>
 File: Images//IN1/IN5.png Graphic file (type png)
 <use Images//IN1/IN5.png>
 Package pdftex.def Info: Images//IN1/IN5.png  used on input line 6252.
 (pdftex.def)             Requested size: 150.55983pt x 150.55983pt.
-<Images//IN1/IN6.png, id=4504, 722.7pt x 417.56pt>
+<Images//IN1/IN6.png, id=4568, 722.7pt x 417.56pt>
 File: Images//IN1/IN6.png Graphic file (type png)
 <use Images//IN1/IN6.png>
 Package pdftex.def Info: Images//IN1/IN6.png  used on input line 6263.
 (pdftex.def)             Requested size: 252.94878pt x 146.14818pt.
 
 [251 <./Images//IN1/IN5.png>]
-<Images//IN1/IN7.png, id=4513, 383.93437pt x 383.93437pt>
+<Images//IN1/IN7.png, id=4577, 383.93437pt x 383.93437pt>
 File: Images//IN1/IN7.png Graphic file (type png)
 <use Images//IN1/IN7.png>
 Package pdftex.def Info: Images//IN1/IN7.png  used on input line 6274.
 (pdftex.def)             Requested size: 170.71393pt x 170.71843pt.
-<Images//IN1/IN8.png, id=4514, 405.01312pt x 405.01312pt>
+<Images//IN1/IN8.png, id=4578, 405.01312pt x 405.01312pt>
 File: Images//IN1/IN8.png Graphic file (type png)
 <use Images//IN1/IN8.png>
 Package pdftex.def Info: Images//IN1/IN8.png  used on input line 6275.
@@ -6675,7 +6678,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 6279.
 
-<Images//IN1/IN9.png, id=4520, 401.5pt x 250.9375pt>
+<Images//IN1/IN9.png, id=4584, 401.5pt x 250.9375pt>
 File: Images//IN1/IN9.png Graphic file (type png)
 <use Images//IN1/IN9.png>
 Package pdftex.def Info: Images//IN1/IN9.png  used on input line 6281.
@@ -6684,7 +6687,7 @@ Package pdftex.def Info: Images//IN1/IN9.png  used on input line 6281.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 6286.
 
-<Images//IN1/IN10.png, id=4525, 406.51875pt x 215.80624pt>
+<Images//IN1/IN10.png, id=4589, 406.51875pt x 215.80624pt>
 File: Images//IN1/IN10.png Graphic file (type png)
 <use Images//IN1/IN10.png>
 Package pdftex.def Info: Images//IN1/IN10.png  used on input line 6288.
@@ -6699,58 +6702,214 @@ LaTeX Warning: No positions in optional float specifier.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 6316.
 
-<Images//IN1/IN11.png, id=4539, 596.2275pt x 349.305pt>
+<Images//IN1/IN11.png, id=4603, 596.2275pt x 349.305pt>
 File: Images//IN1/IN11.png Graphic file (type png)
 <use Images//IN1/IN11.png>
 Package pdftex.def Info: Images//IN1/IN11.png  used on input line 6318.
 (pdftex.def)             Requested size: 298.11302pt x 174.65207pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6325.
+               Default added (so using `tbp') on input line 6326.
 
-<Images//IN1/IN12.png, id=4542, 600.74437pt x 331.2375pt>
+<Images//IN1/IN12.png, id=4606, 600.74437pt x 331.2375pt>
 File: Images//IN1/IN12.png Graphic file (type png)
 <use Images//IN1/IN12.png>
-Package pdftex.def Info: Images//IN1/IN12.png  used on input line 6327.
+Package pdftex.def Info: Images//IN1/IN12.png  used on input line 6328.
 (pdftex.def)             Requested size: 426.79135pt x 235.3319pt.
 [254 <./Images//IN1/IN11.png>]
-<Images//IN1/IN13.png, id=4556, 576.65437pt x 426.84468pt>
+<Images//IN1/IN13.png, id=4619, 576.65437pt x 426.84468pt>
 File: Images//IN1/IN13.png Graphic file (type png)
 <use Images//IN1/IN13.png>
-Package pdftex.def Info: Images//IN1/IN13.png  used on input line 6336.
+Package pdftex.def Info: Images//IN1/IN13.png  used on input line 6337.
 (pdftex.def)             Requested size: 199.70815pt x 147.82822pt.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6341.
+               Default added (so using `tbp') on input line 6342.
 
-<Images//IN1/IN14.png, id=4558, 522.45187pt x 164.86594pt>
+<Images//IN1/IN14.png, id=4621, 522.45187pt x 164.86594pt>
 File: Images//IN1/IN14.png Graphic file (type png)
 <use Images//IN1/IN14.png>
-Package pdftex.def Info: Images//IN1/IN14.png  used on input line 6343.
+Package pdftex.def Info: Images//IN1/IN14.png  used on input line 6344.
 (pdftex.def)             Requested size: 213.39568pt x 67.33885pt.
-<Images//IN1/IN15.png, id=4559, 225.84375pt x 121.45375pt>
+<Images//IN1/IN15.png, id=4622, 225.84375pt x 121.45375pt>
 File: Images//IN1/IN15.png Graphic file (type png)
 <use Images//IN1/IN15.png>
-Package pdftex.def Info: Images//IN1/IN15.png  used on input line 6349.
+Package pdftex.def Info: Images//IN1/IN15.png  used on input line 6350.
 (pdftex.def)             Requested size: 426.79135pt x 229.54875pt.
-[255 <./Images//IN1/IN12.png> <./Images//IN1/IN13.png>] [256 <./Images//IN1/IN1
-4.png> <./Images//IN1/IN15.png>]
-<Images//IN1/IN2.png, id=4576, 301.125pt x 147.55125pt>
+[255 <./Images//IN1/IN12.png> <./Images//IN1/IN13.png>]
+<Images//IN1/IN16.png, id=4633, 347.2975pt x 252.945pt>
+File: Images//IN1/IN16.png Graphic file (type png)
+<use Images//IN1/IN16.png>
+Package pdftex.def Info: Images//IN1/IN16.png  used on input line 6360.
+(pdftex.def)             Requested size: 213.39568pt x 155.4271pt.
+<Images//IN1/IN17.png, id=4634, 1204.5pt x 717.68124pt>
+File: Images//IN1/IN17.png Graphic file (type png)
+<use Images//IN1/IN17.png>
+Package pdftex.def Info: Images//IN1/IN17.png  used on input line 6361.
+(pdftex.def)             Requested size: 213.39568pt x 127.14017pt.
+ [256 <./Images//IN1/IN14.png> <./Images//IN1/IN15.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [257 <./Images//IN1/IN16.png> <./Images//IN1/IN17.png>]
+<Images//IN1/IN18.png, id=4652, 476.67447pt x 352.12404pt>
+File: Images//IN1/IN18.png Graphic file (type png)
+<use Images//IN1/IN18.png>
+Package pdftex.def Info: Images//IN1/IN18.png  used on input line 6375.
+(pdftex.def)             Requested size: 256.07741pt x 189.17163pt.
+ [258 <./Images//IN1/IN18.png>]
+<Images//IN1/IN2.png, id=4659, 301.125pt x 147.55125pt>
 File: Images//IN1/IN2.png Graphic file (type png)
 <use Images//IN1/IN2.png>
-Package pdftex.def Info: Images//IN1/IN2.png  used on input line 6357.
+Package pdftex.def Info: Images//IN1/IN2.png  used on input line 6383.
 (pdftex.def)             Requested size: 150.56212pt x 73.77544pt.
- [257 <./Images//IN1/IN2.png>] [258
 
-] (main.ptc) [259] [260] [261] [262
+[259 <./Images//IN1/IN2.png>] [260
 
-] (main.ptc) [263] [264]
-Package mdframed Info: mdframed works in twoside mode on input line 6425.
+] (main.ptc) [261] [262] [263] [264
+
+]
+(main.ptc) [265] [266]
+Chapter 18.
+
+
+pdfTeX warning: pdflatex (file ./Images//chapter_head_MM.pdf): PDF inclusion: f
+ound PDF version <1.6>, but at most version <1.5> allowed
+<Images//chapter_head_MM.pdf, id=4717, 3595.4325pt x 1798.43892pt>
+File: Images//chapter_head_MM.pdf Graphic file (type pdf)
+<use Images//chapter_head_MM.pdf>
+Package pdftex.def Info: Images//chapter_head_MM.pdf  used on input line 6441.
+(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
+[267
+
+ <./Images//chapter_head_MM.pdf>]
+<Images//MM/MM1.png, id=4734, 172.39406pt x 234.8775pt>
+File: Images//MM/MM1.png Graphic file (type png)
+<use Images//MM/MM1.png>
+Package pdftex.def Info: Images//MM/MM1.png  used on input line 6475.
+(pdftex.def)             Requested size: 213.39568pt x 290.74333pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [268]
+<Images//MM/MM2.png, id=4741, 316.18124pt x 203.25937pt>
+File: Images//MM/MM2.png Graphic file (type png)
+<use Images//MM/MM2.png>
+Package pdftex.def Info: Images//MM/MM2.png  used on input line 6491.
+(pdftex.def)             Requested size: 213.39568pt x 137.18484pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6488--6493
+
+ []
+
+<Images//MM/MM3.png, id=4743, 417.81094pt x 197.23688pt>
+File: Images//MM/MM3.png Graphic file (type png)
+<use Images//MM/MM3.png>
+Package pdftex.def Info: Images//MM/MM3.png  used on input line 6498.
+(pdftex.def)             Requested size: 298.75264pt x 141.04134pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6494--6501
+
+ []
+
+[269 <./Images//MM/MM1.png> <./Images//MM/MM2.png>]
+<Images//MM/MM4.png, id=4758, 511.9125pt x 273.02pt>
+File: Images//MM/MM4.png Graphic file (type png)
+<use Images//MM/MM4.png>
+Package pdftex.def Info: Images//MM/MM4.png  used on input line 6505.
+(pdftex.def)             Requested size: 298.75264pt x 159.33487pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 6510.
+
+<Images//MM/MM5.png, id=4760, 721.94719pt x 473.51906pt>
+File: Images//MM/MM5.png Graphic file (type png)
+<use Images//MM/MM5.png>
+Package pdftex.def Info: Images//MM/MM5.png  used on input line 6512.
+(pdftex.def)             Requested size: 298.75264pt x 195.95038pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 6518.
+
+<Images//MM/MM6.png, id=4764, 693.34032pt x 456.95718pt>
+File: Images//MM/MM6.png Graphic file (type png)
+<use Images//MM/MM6.png>
+Package pdftex.def Info: Images//MM/MM6.png  used on input line 6520.
+(pdftex.def)             Requested size: 213.39568pt x 140.63725pt.
+<Images//MM/MM7.png, id=4765, 688.82344pt x 453.19313pt>
+File: Images//MM/MM7.png Graphic file (type png)
+<use Images//MM/MM7.png>
+Package pdftex.def Info: Images//MM/MM7.png  used on input line 6521.
+(pdftex.def)             Requested size: 213.39568pt x 140.39851pt.
+<Images//MM/MM8.png, id=4766, 691.08188pt x 456.95718pt>
+File: Images//MM/MM8.png Graphic file (type png)
+<use Images//MM/MM8.png>
+Package pdftex.def Info: Images//MM/MM8.png  used on input line 6522.
+(pdftex.def)             Requested size: 213.39568pt x 141.09744pt.
+[270 <./Images//MM/MM3.png> <./Images//MM/MM4.png>]
+<Images//MM/MM9.png, id=4777, 300.3722pt x 71.51718pt>
+File: Images//MM/MM9.png Graphic file (type png)
+<use Images//MM/MM9.png>
+Package pdftex.def Info: Images//MM/MM9.png  used on input line 6535.
+(pdftex.def)             Requested size: 119.8261pt x 28.52997pt.
+<Images//MM/MM10.png, id=4778, 156.585pt x 60.97781pt>
+File: Images//MM/MM10.png Graphic file (type png)
+<use Images//MM/MM10.png>
+Package pdftex.def Info: Images//MM/MM10.png  used on input line 6539.
+(pdftex.def)             Requested size: 119.8261pt x 46.6646pt.
+Package mdframed Info: mdframed works in twoside mode on input line 6543.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6425.
+(mdframed)              on input line 6543.
 
+Underfull \hbox (badness 10000) in paragraph at lines 6544--6546
+
+ []
+
+<Images//MM/MM11.png, id=4779, 164.86594pt x 64.74188pt>
+File: Images//MM/MM11.png Graphic file (type png)
+<use Images//MM/MM11.png>
+Package pdftex.def Info: Images//MM/MM11.png  used on input line 6553.
+(pdftex.def)             Requested size: 206.39568pt x 81.0526pt.
+<Images//MM/MM12.png, id=4780, 82.05656pt x 112.16907pt>
+File: Images//MM/MM12.png Graphic file (type png)
+<use Images//MM/MM12.png>
+Package pdftex.def Info: Images//MM/MM12.png  used on input line 6558.
+(pdftex.def)             Requested size: 70.55719pt x 96.45152pt.
+[271 <./Images//MM/MM5.png> <./Images//MM/MM9.png> <./Images//MM/MM10.png>]
+[272 <./Images//MM/MM6.png> <./Images//MM/MM7.png> <./Images//MM/MM8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 6566--6567
+
+ []
+
+<Images//MM/MM13.png, id=4803, 350.05782pt x 140.77594pt>
+File: Images//MM/MM13.png Graphic file (type png)
+<use Images//MM/MM13.png>
+Package pdftex.def Info: Images//MM/MM13.png  used on input line 6568.
+(pdftex.def)             Requested size: 199.70815pt x 80.31398pt.
+[273 <./Images//MM/MM11.png> <./Images//MM/MM12.png> <./Images//MM/MM13.png>]
+<Images//MM/MM15.png, id=4815, 626.34pt x 73.02281pt>
+File: Images//MM/MM15.png Graphic file (type png)
+<use Images//MM/MM15.png>
+Package pdftex.def Info: Images//MM/MM15.png  used on input line 6581.
+(pdftex.def)             Requested size: 319.53424pt x 37.2545pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 6599.
+
+<Images//MM/MM14.png, id=4817, 672.26157pt x 447.92343pt>
+File: Images//MM/MM14.png Graphic file (type png)
+<use Images//MM/MM14.png>
+Package pdftex.def Info: Images//MM/MM14.png  used on input line 6601.
+(pdftex.def)             Requested size: 341.43437pt x 227.49472pt.
+[274 <./Images//MM/MM15.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6615.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 6615.
+ [275 <./Images//MM/MM14.png>]
 (E:\Programas x86\MikTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -6759,720 +6918,730 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 )
 (E:\Programas x86\MikTex\tex/latex/listings\lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
-) [265] [266] (main.ptc) [267
+) [276] [277] [278
 
-] [268]
-Chapter 18.
+]
+(main.ptc) [279] [280]
+Chapter 19.
 
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_IM.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_IM.pdf, id=4700, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_IM.pdf, id=4929, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_IM.pdf Graphic file (type pdf)
 <use Images//chapter_head_IM.pdf>
-Package pdftex.def Info: Images//chapter_head_IM.pdf  used on input line 6476.
+Package pdftex.def Info: Images//chapter_head_IM.pdf  used on input line 6687.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
 
-Overfull \hbox (28.42288pt too wide) in paragraph at lines 6509--6509
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 6692.
+
+<Images//IM/IM18.png, id=4931, 1003.75pt x 408.52625pt>
+File: Images//IM/IM18.png Graphic file (type png)
+<use Images//IM/IM18.png>
+Package pdftex.def Info: Images//IM/IM18.png  used on input line 6694.
+(pdftex.def)             Requested size: 426.79135pt x 173.7055pt.
+[281
+
+ <./Images//chapter_head_IM.pdf>]
+Overfull \hbox (28.42288pt too wide) in paragraph at lines 6733--6733
 []|[][]| 
  []
 
 
-Overfull \hbox (0.75252pt too wide) in paragraph at lines 6510--6510
+Overfull \hbox (0.75252pt too wide) in paragraph at lines 6734--6734
 []|[]| 
  []
 
 
-Overfull \hbox (49.99341pt too wide) in paragraph at lines 6501--6512
+Overfull \hbox (49.99341pt too wide) in paragraph at lines 6725--6736
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [269
-
- <./Images//chapter_head_IM.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 6515.
+ [282 <./Images//IM/IM18.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6739.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6515.
-<Images//IM/IM1.png, id=4710, 383.4325pt x 186.6975pt>
+(mdframed)              on input line 6739.
+<Images//IM/IM1.png, id=4947, 383.4325pt x 186.6975pt>
 File: Images//IM/IM1.png Graphic file (type png)
 <use Images//IM/IM1.png>
-Package pdftex.def Info: Images//IM/IM1.png  used on input line 6519.
+Package pdftex.def Info: Images//IM/IM1.png  used on input line 6743.
 (pdftex.def)             Requested size: 191.71577pt x 93.34851pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6521--6523
+Underfull \hbox (badness 10000) in paragraph at lines 6745--6747
 
  []
 
-<Images//IM/IM2.png, id=4713, 383.4325pt x 219.82124pt>
+<Images//IM/IM2.png, id=4950, 383.4325pt x 219.82124pt>
 File: Images//IM/IM2.png Graphic file (type png)
 <use Images//IM/IM2.png>
-Package pdftex.def Info: Images//IM/IM2.png  used on input line 6548.
+Package pdftex.def Info: Images//IM/IM2.png  used on input line 6772.
 (pdftex.def)             Requested size: 191.71577pt x 109.91034pt.
-<Images//IM/IM3.png, id=4714, 383.4325pt x 219.82124pt>
+<Images//IM/IM3.png, id=4951, 383.4325pt x 219.82124pt>
 File: Images//IM/IM3.png Graphic file (type png)
 <use Images//IM/IM3.png>
-Package pdftex.def Info: Images//IM/IM3.png  used on input line 6557.
+Package pdftex.def Info: Images//IM/IM3.png  used on input line 6781.
 (pdftex.def)             Requested size: 191.71577pt x 109.91034pt.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 6577.
-[270] [271 <./Images//IM/IM1.png> <./Images//IM/IM2.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6588.
+(mdframed)              on input line 6801.
+[283] [284 <./Images//IM/IM1.png> <./Images//IM/IM2.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6812.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6588.
+(mdframed)              on input line 6812.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6594--6597
+Underfull \hbox (badness 10000) in paragraph at lines 6818--6821
 
  []
 
-[272 <./Images//IM/IM3.png>]
-Package mdframed Info: Not enough space on this page on input line 6601.
-Package mdframed Info: mdframed works in twoside mode on input line 6602.
+[285 <./Images//IM/IM3.png>]
+Package mdframed Info: Not enough space on this page on input line 6825.
+Package mdframed Info: mdframed works in twoside mode on input line 6826.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6602.
+(mdframed)              on input line 6826.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6603--6604
+Underfull \hbox (badness 10000) in paragraph at lines 6827--6828
 
  []
 
-<Images//IM/IM4.png, id=4738, 631.60968pt x 357.58594pt>
+<Images//IM/IM4.png, id=4975, 631.60968pt x 357.58594pt>
 File: Images//IM/IM4.png Graphic file (type png)
 <use Images//IM/IM4.png>
-Package pdftex.def Info: Images//IM/IM4.png  used on input line 6605.
+Package pdftex.def Info: Images//IM/IM4.png  used on input line 6829.
 (pdftex.def)             Requested size: 315.80406pt x 178.79253pt.
-[273 <./Images//IM/IM4.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6629.
+[286 <./Images//IM/IM4.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6853.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6629.
+(mdframed)              on input line 6853.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6630--6632
+Underfull \hbox (badness 10000) in paragraph at lines 6854--6856
 
  []
 
-<Images//IM/IM5.png, id=4749, 499.8675pt x 243.15843pt>
+<Images//IM/IM5.png, id=4986, 499.8675pt x 243.15843pt>
 File: Images//IM/IM5.png Graphic file (type png)
 <use Images//IM/IM5.png>
-Package pdftex.def Info: Images//IM/IM5.png  used on input line 6633.
+Package pdftex.def Info: Images//IM/IM5.png  used on input line 6857.
 (pdftex.def)             Requested size: 249.93314pt x 121.57892pt.
-<Images//IM/IM6.png, id=4750, 687.31781pt x 124.96687pt>
+<Images//IM/IM6.png, id=4987, 687.31781pt x 124.96687pt>
 File: Images//IM/IM6.png Graphic file (type png)
 <use Images//IM/IM6.png>
-Package pdftex.def Info: Images//IM/IM6.png  used on input line 6636.
+Package pdftex.def Info: Images//IM/IM6.png  used on input line 6860.
 (pdftex.def)             Requested size: 343.65807pt x 62.48328pt.
-<Images//IM/IM7.png, id=4751, 666.99188pt x 381.67593pt>
+<Images//IM/IM7.png, id=4988, 666.99188pt x 381.67593pt>
 File: Images//IM/IM7.png Graphic file (type png)
 <use Images//IM/IM7.png>
-Package pdftex.def Info: Images//IM/IM7.png  used on input line 6641.
+Package pdftex.def Info: Images//IM/IM7.png  used on input line 6865.
 (pdftex.def)             Requested size: 233.45065pt x 133.58858pt.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 6654.
-[274 <./Images//IM/IM5.png> <./Images//IM/IM6.png> <./Images//IM/IM7.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6673.
+(mdframed)              on input line 6878.
+[287 <./Images//IM/IM5.png> <./Images//IM/IM6.png> <./Images//IM/IM7.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6897.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6673.
+(mdframed)              on input line 6897.
 
-[275]
-Package mdframed Info: mdframed works in twoside mode on input line 6693.
+[288]
+Package mdframed Info: mdframed works in twoside mode on input line 6917.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6693.
-Package mdframed Info: mdframed works in twoside mode on input line 6705.
+(mdframed)              on input line 6917.
+Package mdframed Info: mdframed works in twoside mode on input line 6929.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6705.
-Package mdframed Info: mdframed works in twoside mode on input line 6719.
+(mdframed)              on input line 6929.
+Package mdframed Info: mdframed works in twoside mode on input line 6943.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6719.
-<Images//IM/IM8.png, id=4770, 578.16pt x 141.52875pt>
+(mdframed)              on input line 6943.
+<Images//IM/IM8.png, id=5007, 578.16pt x 141.52875pt>
 File: Images//IM/IM8.png Graphic file (type png)
 <use Images//IM/IM8.png>
-Package pdftex.def Info: Images//IM/IM8.png  used on input line 6721.
+Package pdftex.def Info: Images//IM/IM8.png  used on input line 6945.
 (pdftex.def)             Requested size: 289.07928pt x 70.76419pt.
- [276 <./Images//IM/IM8.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6738.
+ [289 <./Images//IM/IM8.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6962.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6738.
+(mdframed)              on input line 6962.
 File: Images//IM/IM8.png Graphic file (type png)
 <use Images//IM/IM8.png>
-Package pdftex.def Info: Images//IM/IM8.png  used on input line 6740.
+Package pdftex.def Info: Images//IM/IM8.png  used on input line 6964.
 (pdftex.def)             Requested size: 289.07928pt x 70.76419pt.
-Package mdframed Info: mdframed works in twoside mode on input line 6750.
+Package mdframed Info: mdframed works in twoside mode on input line 6974.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6750.
-<Images//IM/IM9.png, id=4785, 850.17625pt x 121.45375pt>
+(mdframed)              on input line 6974.
+<Images//IM/IM9.png, id=5023, 850.17625pt x 121.45375pt>
 File: Images//IM/IM9.png Graphic file (type png)
 <use Images//IM/IM9.png>
-Package pdftex.def Info: Images//IM/IM9.png  used on input line 6752.
+Package pdftex.def Info: Images//IM/IM9.png  used on input line 6976.
 (pdftex.def)             Requested size: 425.08708pt x 60.72672pt.
 
-Overfull \hbox (12.29573pt too wide) in paragraph at lines 6751--6754
+Overfull \hbox (12.29573pt too wide) in paragraph at lines 6975--6978
 [] 
  []
 
-[277 <./Images//IM/IM9.png>]
+[290 <./Images//IM/IM9.png>]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 6799.
- [278]
-<Images//IM/IM10.png, id=4807, 1003.75pt x 387.4475pt>
+(mdframed)              on input line 7023.
+ [291]
+<Images//IM/IM10.png, id=5044, 1003.75pt x 387.4475pt>
 File: Images//IM/IM10.png Graphic file (type png)
 <use Images//IM/IM10.png>
-Package pdftex.def Info: Images//IM/IM10.png  used on input line 6804.
+Package pdftex.def Info: Images//IM/IM10.png  used on input line 7028.
 (pdftex.def)             Requested size: 341.43437pt x 131.79543pt.
-<Images//IM/IM11.png, id=4808, 803.0pt x 298.11375pt>
+<Images//IM/IM11.png, id=5045, 803.0pt x 298.11375pt>
 File: Images//IM/IM11.png Graphic file (type png)
 <use Images//IM/IM11.png>
-Package pdftex.def Info: Images//IM/IM11.png  used on input line 6810.
+Package pdftex.def Info: Images//IM/IM11.png  used on input line 7034.
 (pdftex.def)             Requested size: 401.49902pt x 149.0565pt.
-<Images//IM/IM12.png, id=4810, 827.09pt x 357.335pt>
+<Images//IM/IM12.png, id=5047, 827.09pt x 357.335pt>
 File: Images//IM/IM12.png Graphic file (type png)
 <use Images//IM/IM12.png>
-Package pdftex.def Info: Images//IM/IM12.png  used on input line 6816.
+Package pdftex.def Info: Images//IM/IM12.png  used on input line 7040.
 (pdftex.def)             Requested size: 413.54398pt x 178.66705pt.
- [279 <./Images//IM/IM10.png> <./Images//IM/IM11.png>]
-<Images//IM/IM17.png, id=4821, 749.80125pt x 317.185pt>
+ [292 <./Images//IM/IM10.png> <./Images//IM/IM11.png>]
+<Images//IM/IM17.png, id=5058, 749.80125pt x 317.185pt>
 File: Images//IM/IM17.png Graphic file (type png)
 <use Images//IM/IM17.png>
-Package pdftex.def Info: Images//IM/IM17.png  used on input line 6823.
+Package pdftex.def Info: Images//IM/IM17.png  used on input line 7047.
 (pdftex.def)             Requested size: 374.8997pt x 158.5921pt.
-<Images//IM/IM13.png, id=4823, 762.85pt x 426.59375pt>
+<Images//IM/IM13.png, id=5060, 762.85pt x 426.59375pt>
 File: Images//IM/IM13.png Graphic file (type png)
 <use Images//IM/IM13.png>
-Package pdftex.def Info: Images//IM/IM13.png  used on input line 6831.
+Package pdftex.def Info: Images//IM/IM13.png  used on input line 7055.
 (pdftex.def)             Requested size: 426.79135pt x 238.66304pt.
-<Images//IM/IM14.png, id=4824, 926.46124pt x 394.47375pt>
+<Images//IM/IM14.png, id=5061, 926.46124pt x 394.47375pt>
 File: Images//IM/IM14.png Graphic file (type png)
 <use Images//IM/IM14.png>
-Package pdftex.def Info: Images//IM/IM14.png  used on input line 6832.
+Package pdftex.def Info: Images//IM/IM14.png  used on input line 7056.
 (pdftex.def)             Requested size: 426.79135pt x 181.72496pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [280 <./Images//IM/IM12.png> <./Images//IM/IM17.png>]
+ [293 <./Images//IM/IM12.png> <./Images//IM/IM17.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6838.
+               Default added (so using `tbp') on input line 7062.
 
-<Images//IM/IM15.png, id=4834, 782.925pt x 553.06625pt>
+<Images//IM/IM15.png, id=5071, 782.925pt x 553.06625pt>
 File: Images//IM/IM15.png Graphic file (type png)
 <use Images//IM/IM15.png>
-Package pdftex.def Info: Images//IM/IM15.png  used on input line 6840.
+Package pdftex.def Info: Images//IM/IM15.png  used on input line 7064.
 (pdftex.def)             Requested size: 391.46155pt x 276.53244pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6846.
+               Default added (so using `tbp') on input line 7070.
 
-<Images//IM/IM16.png, id=4836, 1003.75pt x 564.1075pt>
+<Images//IM/IM16.png, id=5073, 1003.75pt x 564.1075pt>
 File: Images//IM/IM16.png Graphic file (type png)
 <use Images//IM/IM16.png>
-Package pdftex.def Info: Images//IM/IM16.png  used on input line 6848.
+Package pdftex.def Info: Images//IM/IM16.png  used on input line 7072.
 (pdftex.def)             Requested size: 426.79135pt x 239.8587pt.
-[281 <./Images//IM/IM13.png> <./Images//IM/IM14.png>] [282 <./Images//IM/IM15.p
-ng> <./Images//IM/IM16.png>] [283] [284
+[294 <./Images//IM/IM13.png> <./Images//IM/IM14.png>] [295 <./Images//IM/IM15.p
+ng> <./Images//IM/IM16.png>] [296] (main.ptc) [297
 
-] (main.ptc) [285] [286]
-Chapter 19.
+] [298]
+Chapter 20.
 
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_Ingles.pdf): PDF inclusio
 n: found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_Ingles.pdf, id=4892, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_Ingles.pdf, id=5125, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_Ingles.pdf Graphic file (type pdf)
 <use Images//chapter_head_Ingles.pdf>
-Package pdftex.def Info: Images//chapter_head_Ingles.pdf  used on input line 68
-63.
+Package pdftex.def Info: Images//chapter_head_Ingles.pdf  used on input line 70
+87.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
 
-Underfull \hbox (badness 1810) in paragraph at lines 6873--6873
+Underfull \hbox (badness 1810) in paragraph at lines 7097--7097
 []|\T1/ptm/m/n/10.95 (+20) The sec-ond time we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6881--6883
+Underfull \hbox (badness 10000) in paragraph at lines 7105--7107
 
  []
 
-[287
+[299
 
  <./Images//chapter_head_Ingles.pdf>]
-<Images//Ingles/Ing1.png, id=4901, 752.8125pt x 590.205pt>
+<Images//Ingles/Ing1.png, id=5134, 752.8125pt x 590.205pt>
 File: Images//Ingles/Ing1.png Graphic file (type png)
 <use Images//Ingles/Ing1.png>
-Package pdftex.def Info: Images//Ingles/Ing1.png  used on input line 6939.
+Package pdftex.def Info: Images//Ingles/Ing1.png  used on input line 7163.
 (pdftex.def)             Requested size: 376.40532pt x 295.10178pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [288]
+ [300]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [289 <./Images//Ingles/Ing1.png>] [290] (main.ptc) [291
+ [301 <./Images//Ingles/Ing1.png>] [302] (main.ptc) [303
 
-] [292]
-Chapter 20.
+] [304]
+Chapter 21.
 
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_Artificios.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_Artificios.pdf, id=4986, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_Artificios.pdf, id=5219, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_Artificios.pdf Graphic file (type pdf)
 <use Images//chapter_head_Artificios.pdf>
 Package pdftex.def Info: Images//chapter_head_Artificios.pdf  used on input lin
-e 6998.
+e 7222.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-[293
+[305
 
  <./Images//chapter_head_Artificios.pdf>]
 
-Package mathptmx Warning: There are no bold math fonts on input line 7072.
+Package mathptmx Warning: There are no bold math fonts on input line 7296.
 
-[294]
-<Images//CamposMag/CM9.png, id=5019, 270.10913pt x 216.81pt>
+[306]
+<Images//CamposMag/CM9.png, id=5252, 270.10913pt x 216.81pt>
 File: Images//CamposMag/CM9.png Graphic file (type png)
 <use Images//CamposMag/CM9.png>
-Package pdftex.def Info: Images//CamposMag/CM9.png  used on input line 7107.
+Package pdftex.def Info: Images//CamposMag/CM9.png  used on input line 7331.
 (pdftex.def)             Requested size: 108.04173pt x 86.72246pt.
- [295 <./Images//CamposMag/CM9.png>] [296]
-Chapter 21.
+ [307 <./Images//CamposMag/CM9.png>] [308]
+Chapter 22.
 File: Images//chapter_head_Artificios.pdf Graphic file (type pdf)
 <use Images//chapter_head_Artificios.pdf>
 Package pdftex.def Info: Images//chapter_head_Artificios.pdf  used on input lin
-e 7161.
+e 7385.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7178.
+(hyperref)                removing `math shift' on input line 7402.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 7178.
+(hyperref)                removing `\mu' on input line 7402.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7178.
+(hyperref)                removing `math shift' on input line 7402.
 
-[297
+[309
 
 ]
 
-LaTeX Warning: Reference `art:dBm' on page 298 undefined on input line 7185.
+LaTeX Warning: Reference `art:dBm' on page 310 undefined on input line 7409.
 
-<Images//CamposMag/CM23.png, id=5042, 282.05376pt x 81.30376pt>
+<Images//CamposMag/CM23.png, id=5275, 282.05376pt x 81.30376pt>
 File: Images//CamposMag/CM23.png Graphic file (type png)
 <use Images//CamposMag/CM23.png>
-Package pdftex.def Info: Images//CamposMag/CM23.png  used on input line 7222.
+Package pdftex.def Info: Images//CamposMag/CM23.png  used on input line 7446.
 (pdftex.def)             Requested size: 141.02652pt x 40.65176pt.
-[298] [299 <./Images//CamposMag/CM23.png>] [300] (main.ptc) [301
+[310] [311 <./Images//CamposMag/CM23.png>] [312] (main.ptc) [313
 
-] [302]
-<Anexos/TraficoTelefonico.pdf, id=5123, 598.1477pt x 845.90027pt>
+] [314]
+<Anexos/TraficoTelefonico.pdf, id=5356, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7295.
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7519.
 
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7295.
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7519.
 
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/TraficoTelefonico.pdf, id=5126, page=2, 598.1477pt x 845.90027pt>
+<Anexos/TraficoTelefonico.pdf, id=5359, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 
-[303 <./Anexos/TraficoTelefonico.pdf>]
-<Anexos/TraficoTelefonico.pdf, id=5167, page=3, 598.1477pt x 845.90027pt>
+[315 <./Anexos/TraficoTelefonico.pdf>]
+<Anexos/TraficoTelefonico.pdf, id=5401, page=3, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 3>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
-e 7295.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 3>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [304 <./Anexos/TraficoTelefonico.pdf>]
-<Anexos/TraficoTelefonico.pdf, id=5172, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
+e 7519.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [316 <./Anexos/TraficoTelefonico.pdf>]
+<Anexos/TraficoTelefonico.pdf, id=5407, page=4, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 4>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 4>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 4>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
-e 7295.
+e 7519.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 
-[305 <./Anexos/TraficoTelefonico.pdf>]
-<Anexos/TraficoTelefonico2.pdf, id=5177, 598.1477pt x 845.90027pt>
+[317 <./Anexos/TraficoTelefonico.pdf>]
+<Anexos/TraficoTelefonico2.pdf, id=5413, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7298
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7522
 .
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7298
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7522
 .
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/TraficoTelefonico2.pdf, id=5180, page=2, 598.1477pt x 845.90027pt>
+<Anexos/TraficoTelefonico2.pdf, id=5416, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [306 <./Anexos/TraficoTelefonico2.pdf>]
-<Anexos/TraficoTelefonico2.pdf, id=5211, page=3, 598.1477pt x 845.90027pt>
+ [318 <./Anexos/TraficoTelefonico2.pdf>]
+<Anexos/TraficoTelefonico2.pdf, id=5447, page=3, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 3>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
-ne 7298.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 3>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
-ne 7298.
+ne 7522.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 
-[307 <./Anexos/TraficoTelefonico2.pdf>]
-<Anexos/TraficoTelefonico2.pdf, id=5217, page=4, 598.1477pt x 845.90027pt>
+[319 <./Anexos/TraficoTelefonico2.pdf>]
+<Anexos/TraficoTelefonico2.pdf, id=5453, page=4, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 4>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 4>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico2.pdf, page 4>
 Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
-ne 7298.
+ne 7522.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [308 <./Anexos/TraficoTelefonico2.pdf>]
-<Anexos/Redireccionamiento.pdf, id=5222, 598.1477pt x 845.90027pt>
+ [320 <./Anexos/TraficoTelefonico2.pdf>]
+<Anexos/Redireccionamiento.pdf, id=5458, 598.1477pt x 845.90027pt>
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7301
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7525
 .
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7301
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7525
 .
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/Redireccionamiento.pdf, id=5225, page=2, 598.1477pt x 845.90027pt>
+<Anexos/Redireccionamiento.pdf, id=5461, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-[309 <./Anexos/Redireccionamiento.pdf>]
-<Anexos/Redireccionamiento.pdf, id=5242, page=3, 598.1477pt x 845.90027pt>
+[321 <./Anexos/Redireccionamiento.pdf>]
+<Anexos/Redireccionamiento.pdf, id=5478, page=3, 598.1477pt x 845.90027pt>
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 3>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
-ne 7301.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 3>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 3>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [310 <./Anexos/Redireccionamiento.pdf>]
-<Anexos/Redireccionamiento.pdf, id=5251, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 3>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
+ne 7525.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [322 <./Anexos/Redireccionamiento.pdf>]
+<Anexos/Redireccionamiento.pdf, id=5487, page=4, 598.1477pt x 845.90027pt>
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 4>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 4>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 4>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
-ne 7301.
+ne 7525.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-[311 <./Anexos/Redireccionamiento.pdf>]
-<Anexos/ErlangB.pdf, id=5256, 598.1477pt x 845.90027pt>
+[323 <./Anexos/Redireccionamiento.pdf>]
+<Anexos/ErlangB.pdf, id=5492, 598.1477pt x 845.90027pt>
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf>
-Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7528.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf>
-Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7528.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/ErlangB.pdf, id=5259, page=2, 598.1477pt x 845.90027pt>
+<Anexos/ErlangB.pdf, id=5495, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [312 <./Anexos/ErlangB.pdf>]
-<Anexos/ErlangB.pdf, id=5310, page=3, 598.1477pt x 845.90027pt>
+ [324 <./Anexos/ErlangB.pdf>]
+<Anexos/ErlangB.pdf, id=5546, page=3, 598.1477pt x 845.90027pt>
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 3>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7304.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 3>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 3>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7304.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [313 <./Anexos/ErlangB.pdf>]
-<Anexos/ErlangB.pdf, id=5331, page=4, 598.1477pt x 845.90027pt>
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 4>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 3>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7528.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [325 <./Anexos/ErlangB.pdf>]
+<Anexos/ErlangB.pdf, id=5567, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 4>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 4>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7304.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7528.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [314 <./Anexos/ErlangB.pdf>]
-<Anexos/GAUSS3.pdf, id=5336, 614.295pt x 792.9625pt>
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 4>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7528.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [326 <./Anexos/ErlangB.pdf>]
+<Anexos/GAUSS3.pdf, id=5572, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf>
-Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7531.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf>
-Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7531.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
-<Anexos/GAUSS3.pdf, id=5339, page=1, 614.295pt x 792.9625pt>
+<Anexos/GAUSS3.pdf, id=5575, page=1, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7307.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
- [315 <./Anexos/GAUSS3.pdf>]
-<Anexos/GAUSS4.pdf, id=5399, 614.295pt x 792.9625pt>
+ [327 <./Anexos/GAUSS3.pdf>]
+<Anexos/GAUSS4.pdf, id=5635, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf>
-Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7533.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf>
-Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7533.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
-<Anexos/GAUSS4.pdf, id=5402, page=1, 614.295pt x 792.9625pt>
+<Anexos/GAUSS4.pdf, id=5638, page=1, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7309.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 
-[316 <./Anexos/GAUSS4.pdf>]
-<Anexos/GAUSS5.pdf, id=5464, 614.295pt x 792.9625pt>
+[328 <./Anexos/GAUSS4.pdf>]
+<Anexos/GAUSS5.pdf, id=5700, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf>
-Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7535.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf>
-Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7535.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
-<Anexos/GAUSS5.pdf, id=5467, page=1, 614.295pt x 792.9625pt>
+<Anexos/GAUSS5.pdf, id=5703, page=1, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7311.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
- [317 <./Anexos/GAUSS5.pdf>] [318
+ [329 <./Anexos/GAUSS5.pdf>] [330
 
 ]
-<Images//Final.jpg, id=5567, 231.264pt x 107.08005pt>
+<Images//Final.jpg, id=5803, 231.264pt x 107.08005pt>
 File: Images//Final.jpg Graphic file (type jpg)
 <use Images//Final.jpg>
-Package pdftex.def Info: Images//Final.jpg  used on input line 7326.
+Package pdftex.def Info: Images//Final.jpg  used on input line 7550.
 (pdftex.def)             Requested size: 597.50787pt x 276.67448pt.
 
 
-Package biblatex Warning: Type 'article' not found on input line 7333.
+Package biblatex Warning: Type 'article' not found on input line 7557.
 
 
-LaTeX Warning: Empty bibliography on input line 7333.
+LaTeX Warning: Empty bibliography on input line 7557.
 
-[319 <./Images//Final.jpg>] [320
+[331 <./Images//Final.jpg>] [332
 
 ] (main.ind
 File: Images//Final.jpg Graphic file (type jpg)
 <use Images//Final.jpg>
 Package pdftex.def Info: Images//Final.jpg  used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 276.67448pt.
- [321
+ [333
 
-] [322])
+] [334])
 \tf@ptc=\write7
 \openout7 = `main.ptc'.
 
@@ -7488,11 +7657,11 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48347 strings out of 478582
- 906187 string characters out of 2854162
- 1820792 words of memory out of 3000000
- 62652 multiletter control sequences out of 15000+600000
- 702984 words of font info for 852 fonts, out of 8000000 for 9000
+ 48635 strings out of 478582
+ 911276 string characters out of 2854162
+ 1821040 words of memory out of 3000000
+ 62819 multiletter control sequences out of 15000+600000
+ 703562 words of font info for 860 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  141i,21n,139p,1690b,2157s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1
@@ -7525,9 +7694,9 @@ fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/
 utmb8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/Progr
 amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (322 pages, 31200905 bytes).
+Output written on main.pdf (334 pages, 31762281 bytes).
 PDF statistics:
- 6867 PDF objects out of 7423 (max. 8388607)
- 1789 named destinations out of 2073 (max. 500000)
- 235107 words of extra memory for PDF output out of 266212 (max. 10000000)
+ 7130 PDF objects out of 7423 (max. 8388607)
+ 1875 named destinations out of 2073 (max. 500000)
+ 235231 words of extra memory for PDF output out of 266212 (max. 10000000)
 

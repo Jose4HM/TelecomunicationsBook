@@ -40,7 +40,7 @@
 
 \addbibresource{sample.bib} % Bibliography file
 
-\definecolor{ocre}{RGB}{243, 102, 25} % Define the color used for highlighting throughout the book
+\definecolor{ocre}{RGB}{0, 0, 255} % Define the color used for highlighting throughout the book
 
 \chapterimage{Final.jpg} % Chapter heading image
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
@@ -3907,7 +3907,7 @@ O tambien llamado operador \textbf{gradiente} no es un vector como tal, pero cua
 \item El gradiente de un escalar V: $\nabla$V
 \item La divergencia de un vector A: $\nabla\cdot$A
 \item La rotacional de un vector A: $\nabla\times$A
-\item El Laplaciano de un escalar V:$\nabla^2$V
+\item El Laplaciano de un escalar V: $\nabla^2$V
 \end{itemize}
 \subsection{Gradiente de un campo escalar: $\nabla$V}
 El gradiente de un campo escalar V es un vector que representa tanto la magnitud como
@@ -6320,6 +6320,7 @@ Costo                                                        & Bajo             
 \end{figure}
 \\El extremo receptor de una fibra óptica consiste en un \textbf{fotodiodo}, el cual emite un pulso eléctrico cuando lo golpea la luz. El tiempo de respuesta de los fotodiodos, que \textbf{convierten} la señal óptica en eléctrica, limita la tasa de datos a cerca de 100 Gbps. El ruido térmico es otro inconveniente, por lo que un pulso de luz debe llevar suficiente potencia para detectarlo. Cuando los pulsos tienen la potencia suficiente, la tasa de error se puede reducir de manera considerable.
 \section{Transmisión inalámbrica}\index{Transmisión inalámbrica}
+\subsection{Espectro electromagnético}
 Para seguir tienes que recordar la ecuación \ref{art:onda y velocidad}. En el vacio todas las ondas sin importar su frecuencia viajan a la velocidad de la luz, aproximadamente \textbf{$3\times 10^8m/seg$}. En el cobre o la fibra, la velocidad baja casi al 2/3 de la velocidad de la luz y se vuelve ligeramente independiente de la frecuencia.\\
 Ademas es necesario repasar el espectro electromagnético (fig: \ref{fig:espectro electro}):
 \begin{figure}[]
@@ -6350,6 +6351,31 @@ La mayoría de transmisores se centran solo en una banda de frecuencia \textbf{e
 \caption{UWB en el dominio de la frecuencia.}
 \label{fig: uwb}
 \end{figure}
+\subsection{Radiotransmisión}
+Las ondas de radio frecuencia (RF) son \textbf{fáciles} de generar, pueden recorrer distancias largas y \textbf{penetrar}
+edificios con facilidad, de modo que son muy utilizados en la comunicación, tanto en interiores como en exteriores. Las ondas de radio también son \textbf{omnidireccionales}, lo cual significa que viajan en todas direcciones desde la fuente, por lo que el transmisor y el receptor no tienen que estar \textbf{alineados} físicamente. Las propiedades de las ondas de radio dependen de la frecuencia. A \textbf{bajas frecuencias}, las ondas de radio \textbf{cruzan} bien los obstáculos, pero la potencia se \textbf{reduce} drásticamente a medida que se aleja de la
+fuente (por lo menos tan rápido como $\frac{1}{r^2}$ en el aire). A esta atenuación se le conoce como \textbf{pérdida de trayectoria}. A \textbf{frecuencias altas}, las ondas de radio tienden a viajar en línea recta y rebotan en los obstáculos. La pérdida de trayectoria reduce aún más la potencia, aunque la señal recibida también puede depender en gran parte de las \textbf{reflexiones}. Las ondas de radio de alta frecuencia también son \textbf{absorbidas} por la lluvia y otros obstáculos en mayor grado que las de baja frecuencia. En \textbf{todas} las frecuencias las ondas de radio están sujetas a \textbf{interferencia} de los motores y demás equipos eléctricos. En los medios guiados como la fibra, el cable coaxial y el par trenzado, la señal se \textbf{reduce} en la misma fracción por distancia de unidad, por ejemplo 20 dB por cada 100 m para el par trenzado. Con la radio, la señal se reduce en la misma fracción a medida que se duplica la distancia, por ejemplo 6 dB por cada vez que se duplique la distancia en el espacio libre.
+\begin{figure}[H]
+\centering
+\subfloat[VLF, LF y MF siguen la curvatura de la tierra.]{\includegraphics[width=0.5\linewidth]{IN1/IN16.png}}
+\subfloat[HF y VHF refractan en la ionosfera.]{\includegraphics[width=0.5\linewidth]{IN1/IN17.png}}
+\caption{Bandas y la ionosfera.}
+\label{fig:tipos de repetidor}
+\end{figure}
+En las bandas VLF, LF y MF se pueden detectar quizás a 1000 km en las frecuencias más \textbf{bajas}, y a menos distancia en las frecuencias más altas. La difusión de \textbf{radio AM} utiliza la banda MF. Estas pueden \textbf{atravesar} edificios fácilmente, es por la cual la radio portátil puede ser escuchada en \textbf{interiores}, lo malo es que posee un \textbf{bajo ancho de banda}. En cuanto a las HF y VHF, tienden a ser absorbidas por la tierra, sin embargo las que llegan a la ionosfera se refractan y vuelven a nuestro planeta, bajo ciertas condiciones pueden rebotar más veces. Son usadas por radio-aficionados para conversaciones a larga distancia.
+\subsection{Transmisión por microondas}
+Por encima de los 100MHz las ondas viajan en linea recta, en consecuencia estas ondas se enfocan en un haz directo por medio de una antena parabólica se obtiene una relación señal-ruido mucho más alta, pero las antenas transmisora y receptora deben estar alineadas entre sí con precisión. Además, esta direccionalidad permite que varios transmisores alineados en fila se comuniquen con varios receptores sin interferencia, siempre y cuando se sigan ciertas reglas de espacio mínimo. Al ser rectas, mientras más distancia haya entre el transmisor y receptor, la tierra se interpondrá en el enlace. Por eso se requieren repetidores, los cuales mientras más alto sean, la distancia de la amplificación es mayor. Estas ondas no pueden pasar edificios y aún cuando ambos estén bien alineados hay cierta divergencia. Algunas ondas pueden refractarse en capas inferiores de la atmósfera, y llegan desfasadas a la señal principal y causando una cancelación de la señal. A este efecto se le llama desvanecimiento por \textbf{multitrayectorias} y representa a menudo un problema grave que depende del \textbf{clima} y de la \textbf{frecuencia}. Algunos operadores mantienen el 10\% de sus canales inactivos como repuestos para activarlos cuando el desvanecimiento por \textbf{multitrayectorias} cancela en forma \textbf{temporal} alguna banda de frecuencia. Su excesivo uso (telefonía de larga distancia, los teléfonos móviles, la distribución de la televisión y otros usos) ha provocado una escasez de espectro pero es más ventajosa que la fibra óptica.
+\subsection{Transmisión infraroja}
+Usadas para comunicaciones cortas como el control remoto de artefactos. Sin direccionales y económicos pero no atraviesan objetos sólidos. En general, conforme pasamos de la radio de onda larga hacia la luz visible, las ondas se comportan cada vez más como la luz y cada vez menos como la radio. En parte esta limitación de atravesar obstáculos es buena porque no interfiere con otros sistemas (no puedes controlarla televisión del vecino con tu control remoto)y no se necesita permisos del estado.
+\subsection{Transmisión por ondas de luz}
+Una aplicación más moderna es conectar las redes LAN de dos edificios mediante láser montados en sus azoteas.La señalización óptica mediante láser es de naturaleza unidireccional, por lo que
+cada extremo necesita su propio láser y su propio fotodetector. Este esquema ofrece un ancho de banda muy alto a un costo muy bajo, además de ser relativamente seguro debido a que es difícil intervenir un haz tan estrecho. También es relativamente fácil de instalar y, a diferencia de las microondas, no requiere una licencia de la FCC\footnote{Federal Communications Commission: La Comisión Federal de Comunicaciones regula las comunicaciones interestatales e internacionales a través de cable, radio, televisión, satélite y cable. El objetivo de la Comisión es promover la conectividad y garantizar un mercado sólido y competitivo.}. Un problema considerable es la alineación de los haces de luces y los receptores por su pequeño tamaño, por eso se usan lentes para enfocarlas. Ademas se ve afectada por viento, temperatura, lluvia o niebla.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{IN1/IN18.png}
+\caption{Sistema bireccional con transmisión de luz}
+\end{figure}
+
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -6411,8 +6437,173 @@ Fenómeno ondulatorio que ocurre cuando una onda se reproduce al atravesar una a
 %	CHAPTER
 %----------------------------------------------------------------------------------------
 \part{Microcontrolador y microprocesador}
-\chapterimage{chapter_head_MM.pdf} % Chapter heading image
-\textbf{OJO} que quede claro que no vamos a \textbf{profundizar} todos los códigos, iremos a medida que aprendamos un nuevo código, solo \textbf{describiré} lo que hace la función en un par de líneas, tienes que estar acompañado del \textit{datasheeet} de los procesadores \textit{AVR} porque en cada comando existe restricciones y límites.
+\chapterimage{chapter_head_MM.pdf}
+\chapter{Arquitectura y principios del microcontrolador}
+\chapterimage{chapter_head_MM.pdf}
+\section{Arquitectura interna de una CPU}\index{Arquitectura interna de una CPU}
+La organización interna esta dada por:
+\begin{enumerate}
+\item I/O (Inputs y outputs) como teclado mouse, sensores para inputs y LCD, impresoras, microntroladores para outputs.
+\item Memoria
+\item CPU
+\end{enumerate}
+Además algunos términos relacionados con este tema son:
+\begin{itemize}
+\item \textbf{Capacidad}: el número de bits que una memoria puede almacenar: 128 Kbits, 256Mbits, etc.
+\item \textbf{Organización}: Como las locaciones están organizadas: una memoria de 128x4 tiene 128 locaciones de 4 bits cada uno.
+\item \textbf{Tiempo de acceso}: Cuanto demora obtener información de la memoria.
+\end{itemize}
+\subsection{Memoria}
+Hechas de \textbf{semiconductores} (como las memorias RAM) y \textbf{no semiconductores} (como disketes o discos de estado solido). Hablaremos primero de las memorias semiconductores: Son separadas en dos grupos: \textbf{ROM} y \textbf{RAM}
+\subsubsection{ROM}
+\begin{enumerate}
+\item \textbf{\textcolor{red}{Mask ROM}}: Mask ROM: este tipo de memoria es la que se utiliza durante el proceso de fabricación de los dispositivos, y una vez escritos los datos no pueden ser modificados.
+\item \textbf{\textcolor{red}{Programmable ROM-PROM}}: La memoria PROM utiliza alto voltaje para poder destruir o crear enlaces internos. En este sentido, una parte importante de cómo funciona la memoria PROM reside principalmente en que esta, solo permite realizar \textbf{una} programación, llamada OTP (\textit{One time programmable}).
+\item \textbf{\textcolor{red}{Erasable PROM-EPROM}}: Chip de memoria ROM \textbf{programable} y no volátil, esto es que \textbf{guarda} los datos en el caso de que la fuente de energía se \textbf{apague}, y puede ser \textbf{borrada} completamente (en 20 min aprox.) y volver a ser usada por exposición a una fuente de luz \textbf{ultravioleta}, estas son llamadas \textbf{UV-EPROM}. Cabe aclarar que esta memoria no se puede borrar de forma selectiva o parcial. Por eso cualquier modificación, por muy pequeña que sea, hace que necesariamente se deba borrar y reprogramar en su totalidad.
+\item \textbf{\textcolor{red}{Electronic Erasable PROM-EEPROM}}:  Como su nombre sugiere, una EEPROM puede ser borrada y programada con \textbf{impulsos eléctricos}. Al ser una pieza que se puede gestionar por estos impulsos eléctricos, podemos realizar todas estas operaciones de reprogramación sin tener que desconectarla de la placa a la cual va conectada. La EEPROM también se conoce como \textit{non-volatile memory} o \textbf{memoria no volátil} y es debido a que cuando se desconecta la energía, los datos almacenados en la EEPROM \textbf{no serán eliminados} quedando intactos. Cada byte puede ser borrado \textbf{independientemente}.
+\item \textbf{\textcolor{red}{Flash EPROM}}: La memoria Flash es un derivado de la memoria EEPROM. Es un dispositivo en forma de tarjeta, que se encuentra orientado a realizar el \textbf{almacenamiento de grandes cantidades} de datos en un espacio reducido, permitiendo la \textbf{lectura y escritura} de múltiples posiciones de memoria en la misma operación. Todo esto gracias a impulsos eléctricos, lo que además le otorga una velocidad de funcionamiento superior a la que presentaban las memorias del tipo EEPROM, que actuaban sobre una celda única de memoria por vez. Este tipo de memoria, se basa en el uso de semiconductores. Además, de ser \textbf{no volátil y re-escribible}, lo que le otorga casi todas las características de una memoria RAM, con la ventaja de que lo que se guarda en este tipo de memorias flash, \textbf{no se borra} al desconectar el dispositivo del PC o del aparato en donde las utilizamos a diferencia de la memoria RAM. Un gran ejemplo son las memorias flash USB.
+\end{enumerate}
+\subsection{RAM}
+\begin{itemize}
+\item \textbf{\textcolor{blue}{Static RAM-SRAM}}: Solo mantiene su contenido mientras se le está aplicando una fuente de alimentación. Es rápida y no necesita refresco pero tiene alto consumo de energía y son caros. SRAM mantiene los datos en una ``imagen'' estática como lo indica du nombre, hasta que se escribe encima y se pierde por perder la fuente de alimentación. Este tipo de memoria es más cara, rápida y más eficiente al ahorrar energía comparada con otros tipos de memoria similares.
+\item \textbf{\textcolor{blue}{Dynamic RAM-DRAM}}: La memoria (DRAM) es un componente de su ordenador que permite el acceso a datos a \textbf{corto plazo}. Puesto que las operaciones ejecutadas de forma instantánea en el sistema se basan casi siempre en acceso a datos a corto plazo, p. ej., al cargar aplicaciones, navegar por la web o editar una hoja de cálculo, la velocidad y la cantidad de memoria juegan un papel decisivo para el rendimiento del sistema. Tienen bajo consumo de energía, son baratos y de alta capacidad pero son lenta y necesitan refresco constante. Existen más categorías dentro de las DRAM.
+\item \textbf{\textcolor{blue}{Non-volatile RAM-NV-RAM}}: Una memoria de acceso aleatorio no volátil (NVRAM) es cualquier tecnología de memoria de estado sólido que conserva la información cuando se apaga. Generalmente, NVRAM no se refiere a dispositivos de almacenamiento electromecánicos como unidades del disco duro. Por el momento, la forma más prevalente de NVRAM es la memoria Flash. Este tipo de memorias son construidas actualmente mediante chips semiconductores y prácticamente están presenten en todos los dispositivos electrónicos que requieren de un firmware para su funcionamiento. Esto incluye ordenadores personales, teléfonos, routers y todos los dispositivos programables. La información que almacena la NVRAM es utilizada por el sistema operativo o firmware del dispositivo para que, durante el proceso de arranque, se pueda cargar la configuración básica de funcionamiento del dispositivo. Esto puede incluir, configuración de arranque de discos duros, dispositivos de entrada y salida, volumen, hora y fecha, y otros parámetros básicos. Son rápidas, infinitos ciclos de progrmación/borrado pero son caras.
+\end{itemize}
+El pinout de un memoria esta dado por (Fig. \ref{fig:mem pinout}):
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{MM/MM1.png}
+\caption{Pinout de una memoria.}
+\label{fig:mem pinout}
+\end{figure}
+\begin{enumerate}
+\item GND: Tierra.
+\item $V_{cc}$: Pin de alimentación.
+\item $D_0-D_7$: Pines de datos, también llamado BUS de 8 hilos, de datos o solamente BUS.
+\item $A_0-A_{n-1}$: Pines de dirección, depende de la capacidad de la memoria. Llamado también BUS de direcciones.
+\item $\overline{WE}$: Dormir
+\item $\overline{OE}$: Habilitar
+\item $\overline{CS}$: Seleccionar
+\end{enumerate}
+La memoria se conecta con la CPU de la siguiente manera:\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{MM/MM2}
+\caption{Conexión CPU-Memoria}
+\end{figure}
+\textbf{¿Cómo se comunica la memoria con el CPU?}\\
+Para ello, primero especificamos el dato en el bus de direcciones, es decir, con que parte de la memoria queremos comunicarnos, para esto usamos la linea \textbf{Address}, luego de ellos seleccionamos el dispositivo, para ello usando uno de los puertos de control: $\overline{CS}$ lo ponemos a tierra para habilitarlo. Una vez seleccionado el dispositivo, le indicamos que vamos a hacer una escritura, por lo tanto mandamos a nivel bajo el pin $\overline{WE}$. Una vez gestionado esa secuencia de control, recién enviamos los datos, estos datos dependen de $\overline{WE}$, mienrtas este en nivel bajo la memoria almacenará los datos, si vuelve a nivel alto solo leerá, mas no escribirá. Luego de todo eso se vuelve a la normalidad la memoria haciendo los pasos mencionados. Los pasos se ven en la fig. \ref{fig: escritura memoria}.\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{MM/MM3}
+\caption{Proceso de escritura.}
+\label{fig: escritura memoria}
+\end{figure}
+El proceso de lectura es muy similar, al igual que la escritura, fijamos la dirección, luego seleccionamos la memoria correspondiente mediante $\overline{CS}$, ahora habilitamos el pin de lectura $\overline{OE}$, esperamos un tiempo y la memoria nos devuelve el dato, una vez recibida se cierra los procesos mencionados, es necesario precisar que el pin de escritura $\overline{WE}$ debe estar a nivel alto para que no este activa.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{MM/MM4.png}
+\caption{Proceso de lectura.}
+\end{figure}
+\subsection{I/O}
+Para la conexión de periféricos o entradas/salidas, en teoria se necesitas muchas entradas a la CPU, es por eso que una manera de conectar varios I/O son mediante buses de datos y direcciones, haciendo uso de la multiplexación permite trabajar con varios dispositivos, además contamos con un bus de control que controla la escritura, lectura y habilitación (Fig \ref{fig:I/O cpy y memoria}).
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{MM/MM5.png}
+\caption{Conexiones de I/O y memoria al CPU.}
+\label{fig:I/O cpy y memoria}
+\end{figure}
+\subsection{¿Cómo escriben en la memoria los periféricos?}
+Si conectamos la memoria e I/O tendríamos un circuito como la Fig. \ref{fig: io1}, pero al ser \textit{n} I/O, la memoria no debe estar siempre prendida pues esta tiene espacio asignado para cada una de ellas, por eso que quitamos la conexión a tierra de la memoria y la asignamos a cada dispositivo de entrada/salida como en la Fig. \ref{fig: io2}. Ahora tenemos otro problema, $\overline{CS}$ permitirá la escritura en la memoria pero ¿cómo esta sabrá que la petición para la escritura en la memoria 3 viene de la entrada y no se la 5 por ejemplo?. Es por ello que diseñamos un circuito lógico que nos permita multiplexar las direcciones y la memoria, este circuito permitirá trabajar sobre el bus de direcciones (Fig. \ref{fig: io3}).\\
+\begin{figure}[]
+\centering
+\subfloat[¿Cómo administramos la memoria?]{\includegraphics[width=0.5\linewidth]{MM/MM6.png}\label{fig: io1}}
+\subfloat[Entradas de habilitación en la memoria para cada I/O.]{\includegraphics[width=0.5\linewidth]{MM/MM7.png}\label{fig: io2}}\\
+\subfloat[¿Cómo administramos la memoria?]{\includegraphics[width=0.5\linewidth]{MM/MM8.png}\label{fig: io3}}
+\caption{Procesos de comunicación I/O, memoria y CPU.}
+\end{figure}
+\textbf{¿Cómo hacemos ese circuito lógico?}\\
+Teniendo el ejemplo de direcciones desde 0 al 15, la solución es:
+\begin{enumerate}
+\item Escribes el rango de direcciones en binario.\\
+Desde la dirección 0 (0000 0000) hasta la dirección 15 (0000 1111), siendo de izquierda a derecha MSB hacia el LSB.
+\item Separas las partes fijas de las direcciones:\\
+Desde la dirección 0 (\textcolor{red}{0000} 0000) hasta la dirección 15 (\textcolor{red}{0000} 1111)
+\item Usando una compuerta NAND, diseñas un sistemas lógico cuya salida active cuando las direcciones fijas sean dadas.
+En la siguiente figura:
+\begin{center}
+\includegraphics[width=0.3\linewidth]{MM/MM9.png}
+\end{center}
+se muestra los bits de los limites de las direcciones, vemos que la parte fija es \textcolor{red}{0000}, esos bits lo colocamos en la entrada de la compuerta NAND
+\begin{center}
+\includegraphics[width=0.3\linewidth]{MM/MM10.png}
+\end{center}
+En las entradas de la compuerta NAND se tienen que negar las entradas individuales de tal manera que las entradas pasen de ser 0000 a 1111, si recordamos la tabla de verdad de la compuerta NAND, si son todos 1, la salida será 0.
+\end{enumerate}
+\begin{example}[Diseñar un decodificador de direcciones desde 300H hasta 3FFH]
+Como se dijo, se tienen que seguir los siguientes pasos:\\
+\textbf{Paso 1: Pasar el rango de direcciones a binario}\\
+\begin{center}
+Desde la dirección 300H$\rightarrow$ 001100000000\\
+Hasta la dirección 3FFH$\rightarrow$ 001111111111\\
+\end{center}
+Donde el MSB es el que esta más a la izquierda.\\
+Tomamos la parte fija, que sería \textcolor{red}{0011}, con eso diseñamos el circuito logico, buscamos que como salida nos de el valor cero ya que el pin $\overline{CS}$ se activa a nivel \textbf{cero}. Colocamos en la compuerta NAND las entradas fijas, recordando que para que la salida sea cero en una compuerta NAND \textbf{todas} las entradas ser uno. Por eso negamos los ceros y a los unos los dejamos como tal:
+\begin{center}
+\includegraphics[width=0.5\linewidth]{MM/MM11.png}
+\end{center}
+\begin{remark}
+Si te resulta un poco difícil, puedes aplicar este truco: orientas la compuerta NAND hacia abajo y encima de ella colocas los bits fijos, y ya tienes las compuertas; si te das cuenta los ceros formas una negación y los unos pasan desapercibidos:
+\begin{center}
+\includegraphics[width=0.2\linewidth]{MM/MM12.png}
+\end{center}
+\end{remark}
+\end{example}
+\subsection{CPU}
+La CPU es la encargada de ejecutar instrucciones secuenciales. Dentro de una CPU se encuentra normalmente con:
+\begin{enumerate}
+\item \textbf{PC}: Program counter, encarga de contar los programas ejecutados, cuando se encienda o resetee un microcontrolador siempre su PC será 0.
+\item \textbf{Decodificador de instrucciones}: Las intrucciones tienen 2 partes:\\
+\begin{center}
+\includegraphics[width=0.5\linewidth]{MM/MM13.png}
+\end{center}
+\textbf{OPCODE} siendo los MSB y \textbf{OPERANDO} siendo los LSB. Las intrucciones depende de cuantos bits posee el \textit{opcode}, si posee 3 bits, la cantidad de operaciones sería $2^3$=8 posibilidades. Depende de cada microcontrolador o microprocesador las instrucciones se sean dadas para cada uno de las variantes del \textit{opcode}. Siempre estar atento pues las posibles variante del \textit{opcode} suelen venir en decimal y los bits del \textit{operando} pueden venir en hexadecimal, es por ello que podrás ver una lista enumerada del 0 al N, y los valores de cada uno de estos son valores hexadecimales.
+\item \textbf{Registros}
+\item \textbf{ALU}: Unidad aritmética lógica: Para el caso de AVR ALU de alto rendimiento, funciones en conexión directa con los 32 registros de trabajo de uso general. Las operaciones aritméticas entre registros o registros con valores inmediatos solo necesitas un ciclo de reloj (PC=PC+1). Las operaciones dentro de las ALU se dividen el 3 categorías principales\footnote{En algunas implementaciones de la arquitectura pueden incluir multiplicador con signo, sin signo, o formato fraccionario.}
+\begin{itemize}
+\item Aritmética
+\item Lógica
+\item Bits
+\end{itemize}
+Dentro de la ALU se encuentra el\\ \textbf{Status register}\\
+El registro de estado contiene información sobre el resultado de la última instrucción aritmética ejecutada. La información se puede utilizar para alterar el flujo del programa con el fin de realizar operaciones condicionales.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{MM/MM15.png}
+\end{center}
+Tenga en cuenta que el registro estado se \textbf{actualiza} después de todas las operaciones de ALU. Esto en muchos casos elimine la necesidad de utilizar las instrucciones de comparación dedicadas, lo que se traduce en un código más rápido y compacto. El registro de estado no se almacena automáticamente cuando se ingresa a una rutina de interrupción y se restaura al regresar de una interrupción. Esto debe ser manejado por software. Los bits del SREG son:
+\begin{enumerate}
+\item[Bit 7-I] \textbf{Habilitación de Interrupción global}: Debe estar a set (uno) para que las interrupciones estén habilitadas. El control de habilitación de interrupción individual se realiza entonces en registros de control separados. Si el bit de habilitación de interrupción global es borrado (cero), ninguna de las interrupciones se habilita. El bit I es borrado por hardware (boton reset en chip) después de que haya ocurrido una interrupción y se pone a set por la instrucción RETI para habilitar interrupciones posteriores.
+\item[Bit 6-T] \textbf{Almacenamiento de Copia de bit}: Las instrucciones de copia de bit BLD (Bit LoaD) y BST (Bit STore) usan el bit T como fuente y destino para el bit operado. Un bit de un registro en el archivo de registro puede copiarse en T por la instrucción BST y un bit en T puede copiarse en un bit de un registro en el archivo de registro por la instrucción BLD
+\item[Bit 5-H] \textbf{Flag de Half-carry}: El flag de half-carry H indica un carry intermedio en algunas operaciones aritméticas.
+\item[Bit 4-S] \textbf{Bit de signo(S = N xor V)}: El bit S siempre es una OR exclusiva entre el flag negativo N y el flag V de desbordamiento de complemento a dos.
+\item[Bit 3-V] \textbf{Flag de desbordamiento de complemento a dos}: El flag V de desbordamiento de complemento a dos soporta la aritmética del complemento a dos.
+\item[Bit 2-N] \textbf{Flag Negativo}: El flag N indica un resultado negativo después de las diferentes operaciones lógicas y aritméticas.
+\item[Bit 1-Z] \textbf{Flag Cero}: El flag Z indica un resultado de cero después de las diferentes operaciones lógicas y aritméticas.
+\item[Bit 0-C] \textbf{Flag de carry}: El flag de carry C indica una llevada en una operación aritmética o
+lógica.
+\end{enumerate}
+Observe que el Registro de Estado no se guarda automáticamente al entrar en una rutina de interrupción y se restaura al volver de una rutina de interrupción. Debe ser manipulado por software
+\end{enumerate}
+\subsection{Arquitecturas}
+Con respecto a como gestionar la memoria de datos y la memoria de código se tiene dos tipos (Fig. \ref{fig: arch memoria})
+\begin{figure}[]
+\centering
+\includegraphics[width=0.8\linewidth]{MM/MM14.png}
+\caption{Arquitecturas de control de memoria.}
+\label{fig: arch memoria}
+\end{figure}
+\section{Código Assembler}\index{Código Assembler}
+\textbf{OJO} que quede claro que no vamos a \textbf{profundizar} todos los códigos, iremos a medida que aprendamos un nuevo código, solo \textbf{describiré} lo que hace la función en un par de líneas y unos cuantos ejemplos, tienes que estar acompañado del \textit{datasheeet} de los procesadores \textit{AVR} porque en cada comando existe restricciones y límites.
 \subsection*{Lista de comandos}
 \begin{enumerate}
 \item \textbf{LDI} Rd,k: Carga una constante \textit{k} de 8-bit al registro Rd.
@@ -6429,7 +6620,7 @@ Esto quiere decir que no controlamos estas memorias y almacena registros automá
 \begin{remark}
 Los sistemas numéricos son los siguientes: los binarios son escritos: \textcolor{red}{0b}xxxx xxxx, los hexadecimales son: \textcolor{red}{0x}xx y los decimales son: \textcolor{red}{\$}xx. El AVR trabaja en \textbf{hexadecimal} pero se pueden ingresar datos en otros sistemas, pero los cálculos internos son en hexadecimal.
 \end{remark}
-
+\subsection{Ejemplos del código Assembler}
 \begin{enumerate}
 \item Escriba un programa para cargar el valor 0x75 en el registro R16. Luego desde el registro R16 mover los datos a los registros R0 y R10. Use el simulador para verificar los registros. Analice cómo evoluciona el PC (contador de Programa) y el ``Cycle Count'':
 \begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Crear y mover registros},captionpos=b,numbers=none]
@@ -6474,6 +6665,19 @@ fin:
 \part{Ingeniería en mantenimiento}
 \chapterimage{chapter_head_IM.pdf} % Chapter heading image
 \chapter{Aspectos introductorios}
+\section{Definición de mantenimiento}\index{Definición de mantenimiento}
+Es la rama de la ingeniería que se encarga de que los equipos sigan \textbf{funcionando} de acuerdo a las condiciones para las cuales fueron diseñados, o en su defecto de devolverlos a sus condiciones \textbf{normales} de funcionamiento en el caso de que éstas se hayan visto alteradas. Agrupa una serie de actividades cuya ejecución permite alcanzar un mayor grado de confiabilidad en los equipos, máquinas, construcciones civiles e instalaciones. Además permite eliminar condiciones inseguras que podrían afectar a las personas. Se trata, por tanto, de una disciplina crucial para cualquier industria, que representa un gasto muy variable y que adquiere \textbf{importancia} sobre todo a medida que éstas crecen en tamaño y \textbf{sofisticación}. La cual define que un conjunto de conocimientos obtenidos a través de la observación, el estudio, la experiencia y el razonamiento, debidamente estructurados en forma sistémica, y de los cuales se pueden deducir principios, leyes generales, comportamientos y predicciones permiten construir una ciencia. Es por ello que puede ser conceptualizado como una ciencia. En la década de los 60, por ejemplo, el mantenimiento era ante el fallo de una maquinaria o también llamado mantenimiento correctivo, ahora es desarrollado hasta un mantenimiento preventivo o predictivo.
+\subsection{Evolución de mantenimiento}
+El concepto de mantenimiento ha ido evolucionando desde la función de arreglar y reparar los equipos para asegurar la producción hasta la concepción actual del mantenimiento con funciones de prevenir, corregir y revisar los equipos a fin de optimizar el coste Global. Se pueden distinguir 4 generaciones en la evolución de este concepto (Fig. \ref{fig:generacion mant}).
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IM/IM18.png }
+\caption{Cuatro generaciones del concepto del mantenimiento}
+\label{fig:generacion mant}
+\end{figure}\\
+\textbf{¿Cuál mantenimiento es el mejor?}\\
+Lo mejor es realizar un mantenimiento \textbf{predictivo}, analizar el estado de la máquina y sus averías para predecir la próxima. Esa precisión y efectividad le permite reducir drásticamente los costes de mantenimiento. Luego tenemos el mantenimiento \textbf{preventivo}, los activos tienen planes de mantenimiento programados para prevenir fallos más complejos. Y por último el mantenimiento \textbf{correctivo} analiza la avería e intenta corregirla sustituyendo una pieza lo más rápido posible. También hay que tener en cuenta los costes y el tiempo. Una solución bastante utilizada es efectuar inspecciones preventivas (basadas en el tiempo), incluyendo algunos procesos predictivos (basados en medidas).\\
+Aún así existen problemas con la ingeniera en mantenimiento: en pequeñas empresas se recurre a simples artesanos para su ``revisión'', tampoco existe una planeación ni planificación dentro de la empresa, por lo a veces el departamento de mantenimiento no existe y esa tarea es realizada por el mantenimiento de producción.
 \section{Mediciones de radiofrecuencia}\index{Mediciones de radiofrecuencia}
 \subsection{¿Qué es radio enlace?}
 El Radio Enlace o radioenlace punto a punto, es un sistema de conexiones entre dos o más terminales (antenas) que utilizan ondas electromagnéticas para transmitir datos, ya sea para dar servicios de operador VoIP, servicios de telefonía móvil para empresas, Internet, etc.\\
@@ -7291,8 +7495,8 @@ No se olvide usar un factor de 20 para cantidades de voltaje y un factor de 10 p
 %	ANEXOS
 %----------------------------------------------------------------------------------------
 \part{Anexos}
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}]{Anexos/TraficoTelefonico.pdf}
+\includepdf[scale=0.8,pages={2-4},pagecommand={
+\section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}},linktodoc=true]{Anexos/TraficoTelefonico.pdf}
 
 \includepdf[scale=0.8,pages={2-4},pagecommand=
 \section{Ejercicios resueltos U2-Sistemas de telefonía 2 }\label{Anexo 2}]{Anexos/TraficoTelefonico2.pdf}

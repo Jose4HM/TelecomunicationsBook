@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  15 MAY 2022 19:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  21 MAY 2022 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1612,8 +1612,26 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.73 \end{document}
-                   ] (fastmain.aux)
+l.75 \end{align*}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.75 \end{align*}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.75 \end{align*}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
+2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.75 \end{align*}
+                 ] [2] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1627,11 +1645,11 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37725 strings out of 478582
- 699621 string characters out of 2854162
- 1539699 words of memory out of 3000000
- 55162 multiletter control sequences out of 15000+600000
- 514342 words of font info for 133 fonts, out of 8000000 for 9000
+ 37727 strings out of 478582
+ 699583 string characters out of 2854162
+ 1544462 words of memory out of 3000000
+ 55159 multiletter control sequences out of 15000+600000
+ 514472 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,19n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
@@ -1643,9 +1661,9 @@ MikTex/fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw
 /symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/
 Programas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (1 page, 88229 bytes).
+Output written on fastmain.pdf (2 pages, 95048 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 500000)
- 48661 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 48669 words of extra memory for PDF output out of 51595 (max. 10000000)
 

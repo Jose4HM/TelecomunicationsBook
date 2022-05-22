@@ -5,7 +5,7 @@
 \chapterspaceabove{6.5cm}
 \chapterspacebelow{6.75cm} 
 %\begin{theorem}[Name of the theorem]
-%\begin{example}
+%\begin{exercise}
 %\begin{example}[Example name]
 %\begin{definition}[Definition name]
 %\begin{corollary}[Corollary name]
@@ -20,7 +20,7 @@
 %----------------------------------------------------------------------------------------
 %Lineas
 %----------------------------------------------------------------------------------------
-\section{Leyes de maxwell}
+\section{Leyes de maxwell}\index{Leyes de maxwell}
 Se presentan las ecuaciones de Maxwell en la tabla \ref{tab:maxwell}.
 \begin{table}[]
 \begin{tabular}{|l|m{0.3\linewidth}|l|}
@@ -47,28 +47,46 @@ Donde es necesario recordar el operador DEL (\ref{subsec:DEL})
 \item El gradiente de un escalar V: $\nabla$V
 \item La divergencia de un vector A: $\nabla\cdot$A
 \item La rotacional de un vector A: $\nabla\times$A
-\item El Laplaciano de un escalar V:$\nabla^2$V
+\item El Laplaciano de un escalar V: $\nabla^2$V
 \end{itemize}
 Además se tienen ecuaciones auxiliares:
 \begin{subequations}
 \begin{align}
-\textbf{D}&=\epsilon \textbf{E}\\
-\textbf{B}&=\mu \textbf{H}\\
-\textbf{J}&=\sigma \textbf{E}\\
-\textbf{J}&=\rho_v \textbf{v}
+\intertext{Relación entre la Densidad de Campo Eléctrico y la Intensidad de Campo Eléctrico.}
+\textbf{D}&= \epsilon \textbf{E}\\
+\intertext{Relación entre la Densidad de Campo Magnético y la Intensidad de Campo Magnético.}
+\textbf{B}&=\mu\textbf{H}\\
+\intertext{Densidad de Corriente de conducción.}
+\textbf{J}&=\sigma\textbf{E}\\
+\intertext{Densidad de Corriente de convección en función de la densidad de carga volumétrica.}
+\textbf{J}&=\rho_v\textbf{v}
 \end{align}
 \end{subequations}
+Hay ligeras modificaciones si son para conductores malos (aislantes):
+\begin{subequations}
+\begin{align}
+\textbf{D}&= \epsilon \textbf{E} + P\\
+\textbf{B}&=\mu(\textbf{H} + M)
+\end{align}
+\end{subequations}
+Donde P es el campo de polarización y M es el campo de magnetización, cuando el dieléctrico es lineal se tiene:
+\begin{align*}
+&P=\chi_e\epsilon_0\textbf{E} &M=\chi_m\textbf{H}
+\end{align*}
 %\section{Modelo electromagnético y las leyes de Maxwell}
 %----------------------------------------------------------------------------------------
 %Internetworking
 %----------------------------------------------------------------------------------------
-
-%\section{Protocolos estándares y propietarios}
+\section{Modulación digital y multiplexión}\index{Modulación digital y multiplexión}
 %\section{Capa de enlace y la evolución de las telecomunicaciones}
 %----------------------------------------------------------------------------------------
 %Microprocesadores
 %----------------------------------------------------------------------------------------
 
+%----------------------------------------------------------------------------------------
+%Mantenimiento
+%----------------------------------------------------------------------------------------
+%21:27 falta material
 %----------------------------------------------------------------------------------------
 \end{document}
 %----------------------------------------------------------------------------------------
