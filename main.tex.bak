@@ -6611,6 +6611,29 @@ Con respecto a como gestionar la memoria de datos y la memoria de código se tie
 \item \textbf{ST} X, Rr/\textbf{ST} X+,Rr/\textbf{ST} -X,Rr: Usa el valor del registro automático X\footnote{Puede funcionar con cualquier registro indirecto.} para ubicarla en la \textit{Data memory} y almacena el valor del registro Rr. Las variantes con el símbolo + y - nos ayudarán a movernos un espacio a la derecha o izquierda: Si X:0220, con la función \textbf{sin} signo la almacena directo, con la función con el signo + se almacenará en la memoria 0221 y con el signo - se almacenará en la memoria 0219. Al hacer el uso de X+/X-, el valor de X se \textbf{actualizará}, siendo X:0219, usamos el X+, X ahora será 0220, ya no es 0219.
 \item \textbf{ADD Rd,Rr}: Suma el registro Rr más el registro Rd, y el resultado lo coloca en el registro Rd. La suma es \textbf{sin acarreo}. Solo soporta hasta 255(FF), a partir de ahí el bit rebalsa. Este estado se puede ver en \textbf{ITHSVNZC} o \textbf{registros de estado}.
 \item \textbf{INC} Rd: Incrementa el registro Rd en una unidad en su misma posición.
+\item \textbf{rjmp}: Salto relativo a cualquier etiqueta con máximo 2k palabras(8KB).
+\item \textbf{CPSE} Rd, Rr: Compara los registros Rd y Rr, si ambos son iguales se salta la linea siguiente.
+\item \textbf{nop}: Hace un ciclo pero no hace ni una operación.
+\item \textbf{rcall} k: Llamamos a la etiqueta k, se ejecuta su código y volvemos a donde se ha llamado.
+\item \textbf{.org} \textcolor{red}{0x}xxx: Directiva que indica donde se va a almacenar en la \textit{program memory}, son 2 bytes, Si es .org 0x040, la memoria estará en la posición 2*40=80.
+\item \textbf{BREQ} k: Si la función CP anterior a este comando resulta que ambos valores son iguales, realizará la sub-rutina k.
+\item \textbf{CP} Rd, Rr: Esta instrucción realiza una comparación entre dos registros Rd y Rr. Ninguno de los registros se cambia.
+Todas las ramas condicionales se pueden utilizar después de esta instrucción.
+\item \textbf{ijmp}
+\item \textbf{MOV} Rd, Rr: Copia el valor del registro Rr al registro Rd.
+\item \textbf{MUL} Rd, Rr: Realiza una multiplicación de 8 bits x 8 bits, siendo la respuesta de 16 bits. La respuesta se almacenará en el R1 los 8 primeros MSB y en R0 los 8 LSB\footnote{De izquierda a derecha MSB-LSB}.
+\item \textbf{MULS} Rd, Rr: Multiplica dos registros conteniendo números con signo. Misma sintaxis que \textbf{MUL}.
+\item \textbf{SWAP} Rd: Intercambia los 4 MSB y 4 LSB, siendo ahora LSB-MSB.
+\item \underline{\textbf{SUBI}} Rd, K: Resta un registro Rd con una constante K (Rd=Rd-K) y el resultado lo coloca en el Rd.
+\item \textbf{OR} Rd, Rr: Realiza una operación OR entre ambos registros y coloca el resultado en el registro Rd.
+\item \underline{\textbf{EOR}} Rd, Rr: Realiza una operación XOR entre ambos registros y coloca el resultado en el registro Rd.
+\item \textbf{NEG} Rd: Reemplaza el registro Rd por su complemento a 2.
+\item \textbf{POP} Rd: Recuperas el valor del registro a STACK, solo funciona dentro de sub-rutinas, es decir lo que almacenas en el STACK de la $subrutina_1$ no estará disponible en la $subrutina_2$.
+\item \textbf{PUSH} Rd: Al igual que POP, guardas el valor del registro Rd en el STACK. Tanto POP como PUSH consideralos como crear una backup (copia de seguridad) en STACK.
+\item \textbf{SUB} Rd, Rr: Resta el registro Rd menos el registro Rr, y coloca la respuesta en el Rd.
+\item \textbf{RET}: Retorna a la sub-rutina principal. Indica que ha terminado la sub-rutina principal.
+\item \textbf{LDS} Rd, k: Carga el dato k en el registro Rd.
+\item \textbf{BRGE} k: Ejecuta la sub-rutina k solo si el registro Rd es mayor o igual al registro Rr. Funciona después de CP.
 \end{enumerate}
 \begin{definition}[Registros indirectos]
 \textbf{X, Y, Z} son direcciones de registro indirectas: X=R27:R26, Y=R29:R28, y
@@ -6657,6 +6680,110 @@ Loop:
 	STS 0x0103, R1; Guardas el valor del registro 3 en la memoria 0x0103
 fin:
 	rjmp fin
+\end{lstlisting}
+\item Crear el bucle FOR en assembler.
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Bucle for en Assembler},captionpos=b,numbers=none]
+.org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
+Start:;ubicado en la memoria 0x040
+	LDI R16,0;Inicio
+	LDI R17,10;Final
+	LDI R18, 2;Paso
+	rcall for; Saltamos a la sub-rutina for
+for:
+	CP R16, R17; Comparamos ambos registros
+	BREQ fin; Saltaremos a la sub-rutina solo si ambos registros son iguales
+	ADD R16,R18; De lo contrario, el registro de inicio se sumara con el salto
+	INC R1; A modo de vista usamos el R1 y le sumamos 1
+	rjmp for; Volvemos al sub-rutina for
+fin:
+	rjmp fin; Fin del programa
+\end{lstlisting}
+\item Creación de función IF.
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Blink Program},captionpos=b,numbers=none]
+Start:
+	 ldi r20, $3;  Registra el valor de $3 en el registro 20
+	 ldi r21, $4;  Registra el valor de $4 en el registro 21
+	 ldi r22, $7;  Registra el valor de $7 en el registro 22
+	 cp r20, r21;Compara los valores de r20 y r21
+	 brge Suma; Si es mayor al valor se efectua la subrutina suma, sino se salta a la sig accion
+	 DEC r22; Sustrae en 1 al registro 22
+             INC r17; Incrementa en 1 el registro 17
+Suma:
+            INC r22; Incrementa en 1 el registro 22
+            rjmp Start; Nos devuelve al inicio
+\end{lstlisting}
+\item Resolver la ecuación y=2x-c
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Resolución de ecuación lineal},captionpos=b,numbers=none]
+.org 0x040; directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
+start:;ubicado en la memoria 0x040
+	LDi R16, 5; Cargar Numero 1
+	LDI R17, 3; Cargar Numero 2
+	rcall Op1; Saltar a la funcion Op1
+	rjmp fin; Saltar a la sub-rutina fin
+.org 0x80; directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
+Op1:
+	ADD R16, R16; Sumar el Numero 1 dos veces, o multiplicar por 2
+	sub r16, r17; Restar 2*Numero 1 - Numero 2
+	MOV R18, r16; Mover el resultado al Registro 18
+	ret; Retornar a la sub-rutina Start
+
+fin:
+	rjmp fin; Terminar programa
+\end{lstlisting}
+\item Realizar la misma ecuación lineal usando PUSH y POP
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Ecuación lineal con PUSH y POP},captionpos=b,numbers=none]
+.org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
+start:;ubicado en la memoria 0x040
+	LDi R16, 5; Cargar numero 1
+	PUSH R16; Crear backup del R16 en STACK
+	LDi R16, 3; Dar nuevo valor al R16
+	rcall Suma1; Saltar a la sub-rutina Suma1
+	pop r16; Restaurar el valor del R16 del STACK
+	rcall Suma2; Saltar a la sub-rutina Suma2
+	rjmp fin; Terminar programa
+.org 0x80
+Suma1:
+	ADD R16, R16; Sumar R16 con el R16
+	mov r17, r16; Copiar el valor del R16 al R17
+	ret; Retornar a la sub-rutina de donde se llamo
+Suma2:
+	sub r17, r16; Restar el r17 menos el r16
+	MOV R18, r17; Mover el valor del R17 al R18
+	ret; Retornar a la sub-rutina desde la que se llamo
+fin:
+	rjmp fin; Terminar programa
+\end{lstlisting}
+\item Saltos indirecto con IJMP-Programa básico.
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Programa básico-IJMP},captionpos=b,numbers=none]
+.org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
+start:;ubicado en la memoria 0x040
+	LDI R31, 0x00; Registro z indirecto
+	LDI R30, 0x80; Registro Z indirecto
+	ijmp;salta a un registro compuesto por el registro Z, como almacenamos en el registro Z=0080, iremos a direccion en la memoria
+.org 0x080; Definos el programa en la memoria para saltar (0080)
+	ldi r20, 0x15; Cargamos un valor
+	ldi r21, 4; Cargamos un valor
+fin:
+	rjmp fin; Terminar programa
+\end{lstlisting}
+\item Realice un programa para que realice la diferencia de dos números, si el resultado es negativo que devuelva el valor absoluto del resultado.
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Desarrolo entre más de 2 sub-rutinas},captionpos=b,numbers=none]
+start:
+   LDI R16, 5
+   LDI R17, 8
+   CP R16, R17
+   BRGE RealizarSustraccion ; Si  R16 es mayor que R17 se va a la funcion asignada, caso contrario pasa a la siguiente linea.
+   SUB R16,R17
+   BRPL positive  ; Verifica si el numero es positivo.
+   NEG R16 ; Asume el resultado en el registro r16.
+   positive: NOP ; Convierte a positivo el valor negativo,
+   rjmp endBranch
+RealizarSustraccion:
+   SUB R16,R17
+endBranch:
+   nop 
+   nop
+
 \end{lstlisting}
 \end{enumerate}
 %----------------------------------------------------------------------------------------

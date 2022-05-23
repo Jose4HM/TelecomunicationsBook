@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  21 MAY 2022 20:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  23 MAY 2022 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6904,12 +6904,12 @@ File: Images//MM/MM14.png Graphic file (type png)
 <use Images//MM/MM14.png>
 Package pdftex.def Info: Images//MM/MM14.png  used on input line 6601.
 (pdftex.def)             Requested size: 341.43437pt x 227.49472pt.
-[274 <./Images//MM/MM15.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6615.
+[274 <./Images//MM/MM15.png>] [275 <./Images//MM/MM14.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6638.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6615.
- [275 <./Images//MM/MM14.png>]
+(mdframed)              on input line 6638.
+
 (E:\Programas x86\MikTex\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
@@ -6918,730 +6918,730 @@ File: lstlang2.sty 2020/03/24 1.8d listings language file
 )
 (E:\Programas x86\MikTex\tex/latex/listings\lstlang3.sty
 File: lstlang3.sty 2020/03/24 1.8d listings language file
-) [276] [277] [278
+) [276] [277] [278]
+[279] [280
 
-]
-(main.ptc) [279] [280]
+] (main.ptc) [281] [282]
 Chapter 19.
 
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_IM.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_IM.pdf, id=4929, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_IM.pdf, id=5040, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_IM.pdf Graphic file (type pdf)
 <use Images//chapter_head_IM.pdf>
-Package pdftex.def Info: Images//chapter_head_IM.pdf  used on input line 6687.
+Package pdftex.def Info: Images//chapter_head_IM.pdf  used on input line 6794.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 6692.
+               Default added (so using `tbp') on input line 6799.
 
-<Images//IM/IM18.png, id=4931, 1003.75pt x 408.52625pt>
+<Images//IM/IM18.png, id=5042, 1003.75pt x 408.52625pt>
 File: Images//IM/IM18.png Graphic file (type png)
 <use Images//IM/IM18.png>
-Package pdftex.def Info: Images//IM/IM18.png  used on input line 6694.
+Package pdftex.def Info: Images//IM/IM18.png  used on input line 6801.
 (pdftex.def)             Requested size: 426.79135pt x 173.7055pt.
-[281
+[283
 
  <./Images//chapter_head_IM.pdf>]
-Overfull \hbox (28.42288pt too wide) in paragraph at lines 6733--6733
+Overfull \hbox (28.42288pt too wide) in paragraph at lines 6840--6840
 []|[][]| 
  []
 
 
-Overfull \hbox (0.75252pt too wide) in paragraph at lines 6734--6734
+Overfull \hbox (0.75252pt too wide) in paragraph at lines 6841--6841
 []|[]| 
  []
 
 
-Overfull \hbox (49.99341pt too wide) in paragraph at lines 6725--6736
+Overfull \hbox (49.99341pt too wide) in paragraph at lines 6832--6843
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [282 <./Images//IM/IM18.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6739.
+ [284 <./Images//IM/IM18.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6846.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6739.
-<Images//IM/IM1.png, id=4947, 383.4325pt x 186.6975pt>
+(mdframed)              on input line 6846.
+<Images//IM/IM1.png, id=5059, 383.4325pt x 186.6975pt>
 File: Images//IM/IM1.png Graphic file (type png)
 <use Images//IM/IM1.png>
-Package pdftex.def Info: Images//IM/IM1.png  used on input line 6743.
+Package pdftex.def Info: Images//IM/IM1.png  used on input line 6850.
 (pdftex.def)             Requested size: 191.71577pt x 93.34851pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6745--6747
+Underfull \hbox (badness 10000) in paragraph at lines 6852--6854
 
  []
 
-<Images//IM/IM2.png, id=4950, 383.4325pt x 219.82124pt>
+<Images//IM/IM2.png, id=5062, 383.4325pt x 219.82124pt>
 File: Images//IM/IM2.png Graphic file (type png)
 <use Images//IM/IM2.png>
-Package pdftex.def Info: Images//IM/IM2.png  used on input line 6772.
+Package pdftex.def Info: Images//IM/IM2.png  used on input line 6879.
 (pdftex.def)             Requested size: 191.71577pt x 109.91034pt.
-<Images//IM/IM3.png, id=4951, 383.4325pt x 219.82124pt>
+<Images//IM/IM3.png, id=5063, 383.4325pt x 219.82124pt>
 File: Images//IM/IM3.png Graphic file (type png)
 <use Images//IM/IM3.png>
-Package pdftex.def Info: Images//IM/IM3.png  used on input line 6781.
+Package pdftex.def Info: Images//IM/IM3.png  used on input line 6888.
 (pdftex.def)             Requested size: 191.71577pt x 109.91034pt.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 6801.
-[283] [284 <./Images//IM/IM1.png> <./Images//IM/IM2.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6812.
+(mdframed)              on input line 6908.
+[285] [286 <./Images//IM/IM1.png> <./Images//IM/IM2.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6919.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6812.
+(mdframed)              on input line 6919.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6818--6821
+Underfull \hbox (badness 10000) in paragraph at lines 6925--6928
 
  []
 
-[285 <./Images//IM/IM3.png>]
-Package mdframed Info: Not enough space on this page on input line 6825.
-Package mdframed Info: mdframed works in twoside mode on input line 6826.
+[287 <./Images//IM/IM3.png>]
+Package mdframed Info: Not enough space on this page on input line 6932.
+Package mdframed Info: mdframed works in twoside mode on input line 6933.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6826.
+(mdframed)              on input line 6933.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6827--6828
+Underfull \hbox (badness 10000) in paragraph at lines 6934--6935
 
  []
 
-<Images//IM/IM4.png, id=4975, 631.60968pt x 357.58594pt>
+<Images//IM/IM4.png, id=5086, 631.60968pt x 357.58594pt>
 File: Images//IM/IM4.png Graphic file (type png)
 <use Images//IM/IM4.png>
-Package pdftex.def Info: Images//IM/IM4.png  used on input line 6829.
+Package pdftex.def Info: Images//IM/IM4.png  used on input line 6936.
 (pdftex.def)             Requested size: 315.80406pt x 178.79253pt.
-[286 <./Images//IM/IM4.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6853.
+[288 <./Images//IM/IM4.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 6960.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6853.
+(mdframed)              on input line 6960.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6854--6856
+Underfull \hbox (badness 10000) in paragraph at lines 6961--6963
 
  []
 
-<Images//IM/IM5.png, id=4986, 499.8675pt x 243.15843pt>
+<Images//IM/IM5.png, id=5097, 499.8675pt x 243.15843pt>
 File: Images//IM/IM5.png Graphic file (type png)
 <use Images//IM/IM5.png>
-Package pdftex.def Info: Images//IM/IM5.png  used on input line 6857.
+Package pdftex.def Info: Images//IM/IM5.png  used on input line 6964.
 (pdftex.def)             Requested size: 249.93314pt x 121.57892pt.
-<Images//IM/IM6.png, id=4987, 687.31781pt x 124.96687pt>
+<Images//IM/IM6.png, id=5098, 687.31781pt x 124.96687pt>
 File: Images//IM/IM6.png Graphic file (type png)
 <use Images//IM/IM6.png>
-Package pdftex.def Info: Images//IM/IM6.png  used on input line 6860.
+Package pdftex.def Info: Images//IM/IM6.png  used on input line 6967.
 (pdftex.def)             Requested size: 343.65807pt x 62.48328pt.
-<Images//IM/IM7.png, id=4988, 666.99188pt x 381.67593pt>
+<Images//IM/IM7.png, id=5099, 666.99188pt x 381.67593pt>
 File: Images//IM/IM7.png Graphic file (type png)
 <use Images//IM/IM7.png>
-Package pdftex.def Info: Images//IM/IM7.png  used on input line 6865.
+Package pdftex.def Info: Images//IM/IM7.png  used on input line 6972.
 (pdftex.def)             Requested size: 233.45065pt x 133.58858pt.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 6878.
-[287 <./Images//IM/IM5.png> <./Images//IM/IM6.png> <./Images//IM/IM7.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6897.
+(mdframed)              on input line 6985.
+[289 <./Images//IM/IM5.png> <./Images//IM/IM6.png> <./Images//IM/IM7.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 7004.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6897.
+(mdframed)              on input line 7004.
 
-[288]
-Package mdframed Info: mdframed works in twoside mode on input line 6917.
+[290]
+Package mdframed Info: mdframed works in twoside mode on input line 7024.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6917.
-Package mdframed Info: mdframed works in twoside mode on input line 6929.
+(mdframed)              on input line 7024.
+Package mdframed Info: mdframed works in twoside mode on input line 7036.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6929.
-Package mdframed Info: mdframed works in twoside mode on input line 6943.
+(mdframed)              on input line 7036.
+Package mdframed Info: mdframed works in twoside mode on input line 7050.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6943.
-<Images//IM/IM8.png, id=5007, 578.16pt x 141.52875pt>
+(mdframed)              on input line 7050.
+<Images//IM/IM8.png, id=5119, 578.16pt x 141.52875pt>
 File: Images//IM/IM8.png Graphic file (type png)
 <use Images//IM/IM8.png>
-Package pdftex.def Info: Images//IM/IM8.png  used on input line 6945.
+Package pdftex.def Info: Images//IM/IM8.png  used on input line 7052.
 (pdftex.def)             Requested size: 289.07928pt x 70.76419pt.
- [289 <./Images//IM/IM8.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 6962.
+ [291 <./Images//IM/IM8.png>]
+Package mdframed Info: mdframed works in twoside mode on input line 7069.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6962.
+(mdframed)              on input line 7069.
 File: Images//IM/IM8.png Graphic file (type png)
 <use Images//IM/IM8.png>
-Package pdftex.def Info: Images//IM/IM8.png  used on input line 6964.
+Package pdftex.def Info: Images//IM/IM8.png  used on input line 7071.
 (pdftex.def)             Requested size: 289.07928pt x 70.76419pt.
-Package mdframed Info: mdframed works in twoside mode on input line 6974.
+Package mdframed Info: mdframed works in twoside mode on input line 7081.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6974.
-<Images//IM/IM9.png, id=5023, 850.17625pt x 121.45375pt>
+(mdframed)              on input line 7081.
+<Images//IM/IM9.png, id=5134, 850.17625pt x 121.45375pt>
 File: Images//IM/IM9.png Graphic file (type png)
 <use Images//IM/IM9.png>
-Package pdftex.def Info: Images//IM/IM9.png  used on input line 6976.
+Package pdftex.def Info: Images//IM/IM9.png  used on input line 7083.
 (pdftex.def)             Requested size: 425.08708pt x 60.72672pt.
 
-Overfull \hbox (12.29573pt too wide) in paragraph at lines 6975--6978
+Overfull \hbox (12.29573pt too wide) in paragraph at lines 7082--7085
 [] 
  []
 
-[290 <./Images//IM/IM9.png>]
+[292 <./Images//IM/IM9.png>]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 7023.
- [291]
-<Images//IM/IM10.png, id=5044, 1003.75pt x 387.4475pt>
+(mdframed)              on input line 7130.
+ [293]
+<Images//IM/IM10.png, id=5155, 1003.75pt x 387.4475pt>
 File: Images//IM/IM10.png Graphic file (type png)
 <use Images//IM/IM10.png>
-Package pdftex.def Info: Images//IM/IM10.png  used on input line 7028.
+Package pdftex.def Info: Images//IM/IM10.png  used on input line 7135.
 (pdftex.def)             Requested size: 341.43437pt x 131.79543pt.
-<Images//IM/IM11.png, id=5045, 803.0pt x 298.11375pt>
+<Images//IM/IM11.png, id=5156, 803.0pt x 298.11375pt>
 File: Images//IM/IM11.png Graphic file (type png)
 <use Images//IM/IM11.png>
-Package pdftex.def Info: Images//IM/IM11.png  used on input line 7034.
+Package pdftex.def Info: Images//IM/IM11.png  used on input line 7141.
 (pdftex.def)             Requested size: 401.49902pt x 149.0565pt.
-<Images//IM/IM12.png, id=5047, 827.09pt x 357.335pt>
+<Images//IM/IM12.png, id=5158, 827.09pt x 357.335pt>
 File: Images//IM/IM12.png Graphic file (type png)
 <use Images//IM/IM12.png>
-Package pdftex.def Info: Images//IM/IM12.png  used on input line 7040.
+Package pdftex.def Info: Images//IM/IM12.png  used on input line 7147.
 (pdftex.def)             Requested size: 413.54398pt x 178.66705pt.
- [292 <./Images//IM/IM10.png> <./Images//IM/IM11.png>]
-<Images//IM/IM17.png, id=5058, 749.80125pt x 317.185pt>
+ [294 <./Images//IM/IM10.png> <./Images//IM/IM11.png>]
+<Images//IM/IM17.png, id=5169, 749.80125pt x 317.185pt>
 File: Images//IM/IM17.png Graphic file (type png)
 <use Images//IM/IM17.png>
-Package pdftex.def Info: Images//IM/IM17.png  used on input line 7047.
+Package pdftex.def Info: Images//IM/IM17.png  used on input line 7154.
 (pdftex.def)             Requested size: 374.8997pt x 158.5921pt.
-<Images//IM/IM13.png, id=5060, 762.85pt x 426.59375pt>
+<Images//IM/IM13.png, id=5171, 762.85pt x 426.59375pt>
 File: Images//IM/IM13.png Graphic file (type png)
 <use Images//IM/IM13.png>
-Package pdftex.def Info: Images//IM/IM13.png  used on input line 7055.
+Package pdftex.def Info: Images//IM/IM13.png  used on input line 7162.
 (pdftex.def)             Requested size: 426.79135pt x 238.66304pt.
-<Images//IM/IM14.png, id=5061, 926.46124pt x 394.47375pt>
+<Images//IM/IM14.png, id=5172, 926.46124pt x 394.47375pt>
 File: Images//IM/IM14.png Graphic file (type png)
 <use Images//IM/IM14.png>
-Package pdftex.def Info: Images//IM/IM14.png  used on input line 7056.
+Package pdftex.def Info: Images//IM/IM14.png  used on input line 7163.
 (pdftex.def)             Requested size: 426.79135pt x 181.72496pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [293 <./Images//IM/IM12.png> <./Images//IM/IM17.png>]
+ [295 <./Images//IM/IM12.png> <./Images//IM/IM17.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 7062.
+               Default added (so using `tbp') on input line 7169.
 
-<Images//IM/IM15.png, id=5071, 782.925pt x 553.06625pt>
+<Images//IM/IM15.png, id=5183, 782.925pt x 553.06625pt>
 File: Images//IM/IM15.png Graphic file (type png)
 <use Images//IM/IM15.png>
-Package pdftex.def Info: Images//IM/IM15.png  used on input line 7064.
+Package pdftex.def Info: Images//IM/IM15.png  used on input line 7171.
 (pdftex.def)             Requested size: 391.46155pt x 276.53244pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 7070.
+               Default added (so using `tbp') on input line 7177.
 
-<Images//IM/IM16.png, id=5073, 1003.75pt x 564.1075pt>
+<Images//IM/IM16.png, id=5185, 1003.75pt x 564.1075pt>
 File: Images//IM/IM16.png Graphic file (type png)
 <use Images//IM/IM16.png>
-Package pdftex.def Info: Images//IM/IM16.png  used on input line 7072.
+Package pdftex.def Info: Images//IM/IM16.png  used on input line 7179.
 (pdftex.def)             Requested size: 426.79135pt x 239.8587pt.
-[294 <./Images//IM/IM13.png> <./Images//IM/IM14.png>] [295 <./Images//IM/IM15.p
-ng> <./Images//IM/IM16.png>] [296] (main.ptc) [297
+[296 <./Images//IM/IM13.png> <./Images//IM/IM14.png>] [297 <./Images//IM/IM15.p
+ng> <./Images//IM/IM16.png>] [298] (main.ptc) [299
 
-] [298]
+] [300]
 Chapter 20.
 
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_Ingles.pdf): PDF inclusio
 n: found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_Ingles.pdf, id=5125, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_Ingles.pdf, id=5236, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_Ingles.pdf Graphic file (type pdf)
 <use Images//chapter_head_Ingles.pdf>
-Package pdftex.def Info: Images//chapter_head_Ingles.pdf  used on input line 70
-87.
+Package pdftex.def Info: Images//chapter_head_Ingles.pdf  used on input line 71
+94.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
 
-Underfull \hbox (badness 1810) in paragraph at lines 7097--7097
+Underfull \hbox (badness 1810) in paragraph at lines 7204--7204
 []|\T1/ptm/m/n/10.95 (+20) The sec-ond time we
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7105--7107
+Underfull \hbox (badness 10000) in paragraph at lines 7212--7214
 
  []
 
-[299
+[301
 
  <./Images//chapter_head_Ingles.pdf>]
-<Images//Ingles/Ing1.png, id=5134, 752.8125pt x 590.205pt>
+<Images//Ingles/Ing1.png, id=5246, 752.8125pt x 590.205pt>
 File: Images//Ingles/Ing1.png Graphic file (type png)
 <use Images//Ingles/Ing1.png>
-Package pdftex.def Info: Images//Ingles/Ing1.png  used on input line 7163.
+Package pdftex.def Info: Images//Ingles/Ing1.png  used on input line 7270.
 (pdftex.def)             Requested size: 376.40532pt x 295.10178pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [300]
+ [302]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [301 <./Images//Ingles/Ing1.png>] [302] (main.ptc) [303
+ [303 <./Images//Ingles/Ing1.png>] [304] (main.ptc) [305
 
-] [304]
+] [306]
 Chapter 21.
 
 
 pdfTeX warning: pdflatex (file ./Images//chapter_head_Artificios.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_Artificios.pdf, id=5219, 3581.70126pt x 1790.85063pt>
+<Images//chapter_head_Artificios.pdf, id=5330, 3581.70126pt x 1790.85063pt>
 File: Images//chapter_head_Artificios.pdf Graphic file (type pdf)
 <use Images//chapter_head_Artificios.pdf>
 Package pdftex.def Info: Images//chapter_head_Artificios.pdf  used on input lin
-e 7222.
+e 7329.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-[305
+[307
 
  <./Images//chapter_head_Artificios.pdf>]
 
-Package mathptmx Warning: There are no bold math fonts on input line 7296.
+Package mathptmx Warning: There are no bold math fonts on input line 7403.
 
-[306]
-<Images//CamposMag/CM9.png, id=5252, 270.10913pt x 216.81pt>
+[308]
+<Images//CamposMag/CM9.png, id=5364, 270.10913pt x 216.81pt>
 File: Images//CamposMag/CM9.png Graphic file (type png)
 <use Images//CamposMag/CM9.png>
-Package pdftex.def Info: Images//CamposMag/CM9.png  used on input line 7331.
+Package pdftex.def Info: Images//CamposMag/CM9.png  used on input line 7438.
 (pdftex.def)             Requested size: 108.04173pt x 86.72246pt.
- [307 <./Images//CamposMag/CM9.png>] [308]
+ [309 <./Images//CamposMag/CM9.png>] [310]
 Chapter 22.
 File: Images//chapter_head_Artificios.pdf Graphic file (type pdf)
 <use Images//chapter_head_Artificios.pdf>
 Package pdftex.def Info: Images//chapter_head_Artificios.pdf  used on input lin
-e 7385.
+e 7492.
 (pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7402.
+(hyperref)                removing `math shift' on input line 7509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mu' on input line 7402.
+(hyperref)                removing `\mu' on input line 7509.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 7402.
+(hyperref)                removing `math shift' on input line 7509.
 
-[309
+[311
 
 ]
 
-LaTeX Warning: Reference `art:dBm' on page 310 undefined on input line 7409.
+LaTeX Warning: Reference `art:dBm' on page 312 undefined on input line 7516.
 
-<Images//CamposMag/CM23.png, id=5275, 282.05376pt x 81.30376pt>
+<Images//CamposMag/CM23.png, id=5386, 282.05376pt x 81.30376pt>
 File: Images//CamposMag/CM23.png Graphic file (type png)
 <use Images//CamposMag/CM23.png>
-Package pdftex.def Info: Images//CamposMag/CM23.png  used on input line 7446.
+Package pdftex.def Info: Images//CamposMag/CM23.png  used on input line 7553.
 (pdftex.def)             Requested size: 141.02652pt x 40.65176pt.
-[310] [311 <./Images//CamposMag/CM23.png>] [312] (main.ptc) [313
+[312] [313 <./Images//CamposMag/CM23.png>] [314] (main.ptc) [315
 
-] [314]
-<Anexos/TraficoTelefonico.pdf, id=5356, 598.1477pt x 845.90027pt>
+] [316]
+<Anexos/TraficoTelefonico.pdf, id=5467, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7519.
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7626.
 
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7519.
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf  used on input line 7626.
 
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/TraficoTelefonico.pdf, id=5359, page=2, 598.1477pt x 845.90027pt>
+<Anexos/TraficoTelefonico.pdf, id=5470, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7519.
+e 7626.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7519.
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7519.
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7519.
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
 <use Anexos/TraficoTelefonico.pdf, page 2>
 Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page2 used on input lin
-e 7519.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-
-[315 <./Anexos/TraficoTelefonico.pdf>]
-<Anexos/TraficoTelefonico.pdf, id=5401, page=3, 598.1477pt x 845.90027pt>
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
-e 7519.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
-e 7519.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
-e 7519.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [316 <./Anexos/TraficoTelefonico.pdf>]
-<Anexos/TraficoTelefonico.pdf, id=5407, page=4, 598.1477pt x 845.90027pt>
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 4>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
-e 7519.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 4>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
-e 7519.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico.pdf, page 4>
-Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
-e 7519.
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 
 [317 <./Anexos/TraficoTelefonico.pdf>]
-<Anexos/TraficoTelefonico2.pdf, id=5413, 598.1477pt x 845.90027pt>
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7522
-.
-(pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7522
-.
-(pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/TraficoTelefonico2.pdf, id=5416, page=2, 598.1477pt x 845.90027pt>
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 2>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7522.
-(pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 2>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7522.
+<Anexos/TraficoTelefonico.pdf, id=5512, page=3, 598.1477pt x 845.90027pt>
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 2>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7522.
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 2>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7522.
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page3 used on input lin
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 2>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
-ne 7522.
+ [318 <./Anexos/TraficoTelefonico.pdf>]
+<Anexos/TraficoTelefonico.pdf, id=5518, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 4>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [318 <./Anexos/TraficoTelefonico2.pdf>]
-<Anexos/TraficoTelefonico2.pdf, id=5447, page=3, 598.1477pt x 845.90027pt>
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
-ne 7522.
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 4>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
-ne 7522.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 3>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
-ne 7522.
+File: Anexos/TraficoTelefonico.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico.pdf, page 4>
+Package pdftex.def Info: Anexos/TraficoTelefonico.pdf , page4 used on input lin
+e 7626.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 
-[319 <./Anexos/TraficoTelefonico2.pdf>]
-<Anexos/TraficoTelefonico2.pdf, id=5453, page=4, 598.1477pt x 845.90027pt>
+[319 <./Anexos/TraficoTelefonico.pdf>]
+<Anexos/TraficoTelefonico2.pdf, id=5525, 598.1477pt x 845.90027pt>
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 4>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
-ne 7522.
+<use Anexos/TraficoTelefonico2.pdf>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7629
+.
+(pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf  used on input line 7629
+.
+(pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
+<Anexos/TraficoTelefonico2.pdf, id=5528, page=2, 598.1477pt x 845.90027pt>
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 2>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 2>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
+ne 7629.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 4>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
-ne 7522.
+<use Anexos/TraficoTelefonico2.pdf, page 2>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
+ne 7629.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
-<use Anexos/TraficoTelefonico2.pdf, page 4>
-Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
-ne 7522.
+<use Anexos/TraficoTelefonico2.pdf, page 2>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 2>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page2 used on input li
+ne 7629.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
  [320 <./Anexos/TraficoTelefonico2.pdf>]
-<Anexos/Redireccionamiento.pdf, id=5458, 598.1477pt x 845.90027pt>
+<Anexos/TraficoTelefonico2.pdf, id=5559, page=3, 598.1477pt x 845.90027pt>
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 3>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page3 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+
+[321 <./Anexos/TraficoTelefonico2.pdf>]
+<Anexos/TraficoTelefonico2.pdf, id=5564, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 4>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 4>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/TraficoTelefonico2.pdf Graphic file (type pdf)
+<use Anexos/TraficoTelefonico2.pdf, page 4>
+Package pdftex.def Info: Anexos/TraficoTelefonico2.pdf , page4 used on input li
+ne 7629.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [322 <./Anexos/TraficoTelefonico2.pdf>]
+<Anexos/Redireccionamiento.pdf, id=5569, 598.1477pt x 845.90027pt>
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7525
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7632
 .
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7525
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf  used on input line 7632
 .
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/Redireccionamiento.pdf, id=5461, page=2, 598.1477pt x 845.90027pt>
+<Anexos/Redireccionamiento.pdf, id=5572, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7525.
+ne 7632.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7525.
+ne 7632.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7525.
+ne 7632.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7525.
+ne 7632.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
 <use Anexos/Redireccionamiento.pdf, page 2>
 Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page2 used on input li
-ne 7525.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-[321 <./Anexos/Redireccionamiento.pdf>]
-<Anexos/Redireccionamiento.pdf, id=5478, page=3, 598.1477pt x 845.90027pt>
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 3>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
-ne 7525.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 3>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
-ne 7525.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 3>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
-ne 7525.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [322 <./Anexos/Redireccionamiento.pdf>]
-<Anexos/Redireccionamiento.pdf, id=5487, page=4, 598.1477pt x 845.90027pt>
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 4>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
-ne 7525.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 4>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
-ne 7525.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
-<use Anexos/Redireccionamiento.pdf, page 4>
-Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
-ne 7525.
+ne 7632.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 [323 <./Anexos/Redireccionamiento.pdf>]
-<Anexos/ErlangB.pdf, id=5492, 598.1477pt x 845.90027pt>
+<Anexos/Redireccionamiento.pdf, id=5589, page=3, 598.1477pt x 845.90027pt>
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 3>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
+ne 7632.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 3>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
+ne 7632.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 3>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page3 used on input li
+ne 7632.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [324 <./Anexos/Redireccionamiento.pdf>]
+<Anexos/Redireccionamiento.pdf, id=5598, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 4>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
+ne 7632.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 4>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
+ne 7632.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/Redireccionamiento.pdf Graphic file (type pdf)
+<use Anexos/Redireccionamiento.pdf, page 4>
+Package pdftex.def Info: Anexos/Redireccionamiento.pdf , page4 used on input li
+ne 7632.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+[325 <./Anexos/Redireccionamiento.pdf>]
+<Anexos/ErlangB.pdf, id=5604, 598.1477pt x 845.90027pt>
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf>
-Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7635.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf>
-Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf  used on input line 7635.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
-<Anexos/ErlangB.pdf, id=5495, page=2, 598.1477pt x 845.90027pt>
+<Anexos/ErlangB.pdf, id=5607, page=2, 598.1477pt x 845.90027pt>
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7635.
 (pdftex.def)             Requested size: 598.14624pt x 845.89821pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7635.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7635.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7635.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
 File: Anexos/ErlangB.pdf Graphic file (type pdf)
 <use Anexos/ErlangB.pdf, page 2>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7528.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [324 <./Anexos/ErlangB.pdf>]
-<Anexos/ErlangB.pdf, id=5546, page=3, 598.1477pt x 845.90027pt>
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 3>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7528.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 3>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7528.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 3>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7528.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
- [325 <./Anexos/ErlangB.pdf>]
-<Anexos/ErlangB.pdf, id=5567, page=4, 598.1477pt x 845.90027pt>
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 4>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7528.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 4>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7528.
-(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
-File: Anexos/ErlangB.pdf Graphic file (type pdf)
-<use Anexos/ErlangB.pdf, page 4>
-Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7528.
+Package pdftex.def Info: Anexos/ErlangB.pdf , page2 used on input line 7635.
 (pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
  [326 <./Anexos/ErlangB.pdf>]
-<Anexos/GAUSS3.pdf, id=5572, 614.295pt x 792.9625pt>
+<Anexos/ErlangB.pdf, id=5658, page=3, 598.1477pt x 845.90027pt>
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 3>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7635.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 3>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7635.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 3>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page3 used on input line 7635.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [327 <./Anexos/ErlangB.pdf>]
+<Anexos/ErlangB.pdf, id=5678, page=4, 598.1477pt x 845.90027pt>
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 4>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7635.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 4>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7635.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+File: Anexos/ErlangB.pdf Graphic file (type pdf)
+<use Anexos/ErlangB.pdf, page 4>
+Package pdftex.def Info: Anexos/ErlangB.pdf , page4 used on input line 7635.
+(pdftex.def)             Requested size: 478.51881pt x 676.72115pt.
+ [328 <./Anexos/ErlangB.pdf>]
+<Anexos/GAUSS3.pdf, id=5683, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf>
-Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7638.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf>
-Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf  used on input line 7638.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
-<Anexos/GAUSS3.pdf, id=5575, page=1, 614.295pt x 792.9625pt>
+<Anexos/GAUSS3.pdf, id=5686, page=1, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7638.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7638.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7638.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7638.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS3.pdf Graphic file (type pdf)
 <use Anexos/GAUSS3.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7531.
+Package pdftex.def Info: Anexos/GAUSS3.pdf , page1 used on input line 7638.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
- [327 <./Anexos/GAUSS3.pdf>]
-<Anexos/GAUSS4.pdf, id=5635, 614.295pt x 792.9625pt>
+ [329 <./Anexos/GAUSS3.pdf>]
+<Anexos/GAUSS4.pdf, id=5746, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf>
-Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7640.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf>
-Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf  used on input line 7640.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
-<Anexos/GAUSS4.pdf, id=5638, page=1, 614.295pt x 792.9625pt>
+<Anexos/GAUSS4.pdf, id=5749, page=1, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7640.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7640.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7640.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7640.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS4.pdf Graphic file (type pdf)
 <use Anexos/GAUSS4.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7533.
+Package pdftex.def Info: Anexos/GAUSS4.pdf , page1 used on input line 7640.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 
-[328 <./Anexos/GAUSS4.pdf>]
-<Anexos/GAUSS5.pdf, id=5700, 614.295pt x 792.9625pt>
+[330 <./Anexos/GAUSS4.pdf>]
+<Anexos/GAUSS5.pdf, id=5811, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf>
-Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7642.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf>
-Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf  used on input line 7642.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
-<Anexos/GAUSS5.pdf, id=5703, page=1, 614.295pt x 792.9625pt>
+<Anexos/GAUSS5.pdf, id=5814, page=1, 614.295pt x 792.9625pt>
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7642.
 (pdftex.def)             Requested size: 614.29349pt x 792.96056pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7642.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7642.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7642.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
 File: Anexos/GAUSS5.pdf Graphic file (type pdf)
 <use Anexos/GAUSS5.pdf, page 1>
-Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7535.
+Package pdftex.def Info: Anexos/GAUSS5.pdf , page1 used on input line 7642.
 (pdftex.def)             Requested size: 491.43666pt x 634.37085pt.
- [329 <./Anexos/GAUSS5.pdf>] [330
+ [331 <./Anexos/GAUSS5.pdf>] [332
 
 ]
-<Images//Final.jpg, id=5803, 231.264pt x 107.08005pt>
+<Images//Final.jpg, id=5915, 231.264pt x 107.08005pt>
 File: Images//Final.jpg Graphic file (type jpg)
 <use Images//Final.jpg>
-Package pdftex.def Info: Images//Final.jpg  used on input line 7550.
+Package pdftex.def Info: Images//Final.jpg  used on input line 7657.
 (pdftex.def)             Requested size: 597.50787pt x 276.67448pt.
 
 
-Package biblatex Warning: Type 'article' not found on input line 7557.
+Package biblatex Warning: Type 'article' not found on input line 7664.
 
 
-LaTeX Warning: Empty bibliography on input line 7557.
+LaTeX Warning: Empty bibliography on input line 7664.
 
-[331 <./Images//Final.jpg>] [332
+[333 <./Images//Final.jpg>] [334
 
 ] (main.ind
 File: Images//Final.jpg Graphic file (type jpg)
 <use Images//Final.jpg>
 Package pdftex.def Info: Images//Final.jpg  used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 276.67448pt.
- [333
+ [335
 
-] [334])
+] [336])
 \tf@ptc=\write7
 \openout7 = `main.ptc'.
 
@@ -7657,13 +7657,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48635 strings out of 478582
- 911276 string characters out of 2854162
- 1821040 words of memory out of 3000000
- 62819 multiletter control sequences out of 15000+600000
+ 48804 strings out of 478582
+ 913443 string characters out of 2854162
+ 1823324 words of memory out of 3000000
+ 62883 multiletter control sequences out of 15000+600000
  703562 words of font info for 860 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 141i,21n,139p,1690b,2157s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 141i,21n,139p,1690b,2527s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1
 095.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
 ectt1000.pk> <C:\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dp
@@ -7694,9 +7694,9 @@ fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/
 utmb8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/Progr
 amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (334 pages, 31762281 bytes).
+Output written on main.pdf (336 pages, 31785052 bytes).
 PDF statistics:
- 7130 PDF objects out of 7423 (max. 8388607)
- 1875 named destinations out of 2073 (max. 500000)
+ 7266 PDF objects out of 7423 (max. 8388607)
+ 1980 named destinations out of 2073 (max. 500000)
  235231 words of extra memory for PDF output out of 266212 (max. 10000000)
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  21 MAY 2022 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  23 MAY 2022 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1631,27 +1631,137 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.75 \end{align*}
-                 ] [2] (fastmain.aux)
+                 ]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 83.
+
+<Images//IN1/IN21.png, id=29, 663.98062pt x 376.40625pt>
+File: Images//IN1/IN21.png Graphic file (type png)
+<use Images//IN1/IN21.png>
+Package pdftex.def Info: Images//IN1/IN21.png  used on input line 85.
+(pdftex.def)             Requested size: 426.79135pt x 241.94449pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 89.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 93.
+
+<Images//IN1/IN22.png, id=33, 438.13687pt x 301.125pt>
+File: Images//IN1/IN22.png Graphic file (type png)
+<use Images//IN1/IN22.png>
+Package pdftex.def Info: Images//IN1/IN22.png  used on input line 110.
+(pdftex.def)             Requested size: 213.39568pt x 146.66574pt.
+[2 <./Images//IN1/IN21.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 121.
+
+<Images//IN1/IN23.png, id=44, 265.74281pt x 192.72pt>
+File: Images//IN1/IN23.png Graphic file (type png)
+<use Images//IN1/IN23.png>
+Package pdftex.def Info: Images//IN1/IN23.png  used on input line 123.
+(pdftex.def)             Requested size: 426.79135pt x 309.54042pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 128.
+
+<Images//IN1/IN24.png, id=47, 517.935pt x 243.15843pt>
+File: Images//IN1/IN24.png Graphic file (type png)
+<use Images//IN1/IN24.png>
+Package pdftex.def Info: Images//IN1/IN24.png  used on input line 130.
+(pdftex.def)             Requested size: 426.79135pt x 200.37814pt.
+[3 <./Images//IN1/IN22.png>]
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 134.
+<Images//IN1/IN19.png, id=57, 381.67593pt x 475.7775pt>
+File: Images//IN1/IN19.png Graphic file (type png)
+<use Images//IN1/IN19.png>
+Package pdftex.def Info: Images//IN1/IN19.png  used on input line 137.
+(pdftex.def)             Requested size: 114.50366pt x 142.73434pt.
+ [4 <./Images//IN1/IN23.png>]
+<Images//IN1/IN20.png, id=66, 381.67593pt x 469.00218pt>
+File: Images//IN1/IN20.png Graphic file (type png)
+<use Images//IN1/IN20.png>
+Package pdftex.def Info: Images//IN1/IN20.png  used on input line 142.
+(pdftex.def)             Requested size: 114.50366pt x 140.70174pt.
+ [5 <./Images//IN1/IN24.png> <./Images//IN1/IN19.png> <./Images//IN1/IN20.png>]
+<Images//IN1/IN25.png, id=75, 351.56343pt x 320.69812pt>
+File: Images//IN1/IN25.png Graphic file (type png)
+<use Images//IN1/IN25.png>
+Package pdftex.def Info: Images//IN1/IN25.png  used on input line 158.
+(pdftex.def)             Requested size: 277.41176pt x 253.05511pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 164.
+
+<Images//IN1/IN26.png, id=78, 606.76688pt x 211.54031pt>
+File: Images//IN1/IN26.png Graphic file (type png)
+<use Images//IN1/IN26.png>
+Package pdftex.def Info: Images//IN1/IN26.png  used on input line 166.
+(pdftex.def)             Requested size: 426.79135pt x 148.797pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 170.
+
+<Images//IN1/IN27.png, id=79, 525.46312pt x 224.33812pt>
+File: Images//IN1/IN27.png Graphic file (type png)
+<use Images//IN1/IN27.png>
+Package pdftex.def Info: Images//IN1/IN27.png  used on input line 172.
+(pdftex.def)             Requested size: 426.79135pt x 182.2195pt.
+[6 <./Images//IN1/IN25.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 179.
+
+<Images//IN1/IN28.png, id=99, 578.16pt x 360.59718pt>
+File: Images//IN1/IN28.png Graphic file (type png)
+<use Images//IN1/IN28.png>
+Package pdftex.def Info: Images//IN1/IN28.png  used on input line 181.
+(pdftex.def)             Requested size: 298.75264pt x 186.32863pt.
+
+LaTeX Warning: Reference `fig: tdm' on page 7 undefined on input line 186.
+
+<Images//IN1/IN29.png, id=100, 517.935pt x 108.405pt>
+File: Images//IN1/IN29.png Graphic file (type png)
+<use Images//IN1/IN29.png>
+Package pdftex.def Info: Images//IN1/IN29.png  used on input line 189.
+(pdftex.def)             Requested size: 426.79135pt x 89.33266pt.
+[7 <./Images//IN1/IN26.png> <./Images//IN1/IN27.png>]
+
+LaTeX Warning: Reference `fig: t1 carrier' on page 8 undefined on input line 19
+3.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 194.
+
+<Images//IN1/IN30.png, id=112, 691.94681pt x 205.27756pt>
+File: Images//IN1/IN30.png Graphic file (type png)
+<use Images//IN1/IN30.png>
+Package pdftex.def Info: Images//IN1/IN30.png  used on input line 196.
+(pdftex.def)             Requested size: 298.75264pt x 88.62782pt.
+[8 <./Images//IN1/IN28.png> <./Images//IN1/IN30.png> <./Images//IN1/IN29.png>]
+(fastmain.aux)
 
 LaTeX Warning: There were undefined references.
 
 
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                fastmain
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37727 strings out of 478582
- 699583 string characters out of 2854162
- 1544462 words of memory out of 3000000
- 55159 multiletter control sequences out of 15000+600000
- 514472 words of font info for 135 fonts, out of 8000000 for 9000
+ 38082 strings out of 478582
+ 704434 string characters out of 2854162
+ 1545308 words of memory out of 3000000
+ 55294 multiletter control sequences out of 15000+600000
+ 533650 words of font info for 253 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,19n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,19n,108p,1156b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Programas x86/MikTex/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfo
@@ -1661,9 +1771,9 @@ MikTex/fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw
 /symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/
 Programas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (2 pages, 95048 bytes).
+Output written on fastmain.pdf (8 pages, 928918 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 48669 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 203 PDF objects out of 1000 (max. 8388607)
+ 40 named destinations out of 1000 (max. 500000)
+ 67217 words of extra memory for PDF output out of 74296 (max. 10000000)
 
