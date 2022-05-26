@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.24)  25 MAY 2022 07:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.24)  26 MAY 2022 08:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1647,6 +1647,10 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 91.
+
 [3
 
  <./Images//chapter_head_IN1.pdf>] (fastmain.aux)
@@ -1658,11 +1662,11 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37946 strings out of 478614
- 704449 string characters out of 2852940
- 1545603 words of memory out of 3000000
- 55302 multiletter control sequences out of 15000+600000
- 531899 words of font info for 183 fonts, out of 8000000 for 9000
+ 37958 strings out of 478614
+ 704594 string characters out of 2852940
+ 1545604 words of memory out of 3000000
+ 55304 multiletter control sequences out of 15000+600000
+ 534061 words of font info for 188 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,19n,108p,1155b,805s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
@@ -1674,9 +1678,9 @@ MikTex/fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw
 /symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/
 Programas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (3 pages, 236596 bytes).
+Output written on fastmain.pdf (3 pages, 238295 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 11 named destinations out of 1000 (max. 500000)
- 70690 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 95 PDF objects out of 1000 (max. 8388607)
+ 12 named destinations out of 1000 (max. 500000)
+ 74786 words of extra memory for PDF output out of 89155 (max. 10000000)
 
