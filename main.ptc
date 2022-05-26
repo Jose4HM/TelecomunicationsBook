@@ -309,100 +309,122 @@
 \contentsline {subsection}{\numberline {17.2.5}Fibra óptica}{252}{subsection.17.2.5}%
 \contentsline {section}{\numberline {17.3}Transmisión inalámbrica}{254}{section.17.3}%
 \contentsline {subsection}{\numberline {17.3.1}Espectro electromagnético}{254}{subsection.17.3.1}%
-\contentsline {subsection}{\numberline {17.3.2}Radiotransmisión}{256}{subsection.17.3.2}%
-\contentsline {subsection}{\numberline {17.3.3}Transmisión por microondas}{257}{subsection.17.3.3}%
+\contentsline {subsection}{\numberline {17.3.2}Radiotransmisión}{257}{subsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.3.3}Transmisión por microondas}{258}{subsection.17.3.3}%
 \contentsline {subsection}{\numberline {17.3.4}Transmisión infraroja}{258}{subsection.17.3.4}%
-\contentsline {subsection}{\numberline {17.3.5}Transmisión por ondas de luz}{258}{subsection.17.3.5}%
+\contentsline {subsection}{\numberline {17.3.5}Transmisión por ondas de luz}{259}{subsection.17.3.5}%
+\contentsline {section}{\numberline {17.4}Satélites}{259}{section.17.4}%
+\contentsline {subsection}{\numberline {17.4.1}Satélites geoestacionarios-GEO}{259}{subsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.4.2}Satélites de órbita media-MEO}{261}{subsection.17.4.2}%
+\contentsline {subsection}{\numberline {17.4.3}Satélites de órbita terrestre baja-LEO}{261}{subsection.17.4.3}%
+\contentsline {section}{\numberline {17.5}Modulación digital y multiplexión}{263}{section.17.5}%
+\contentsline {subsection}{\numberline {17.5.1}Transmisión Pasa-banda}{263}{subsection.17.5.1}%
+\contentsline {section}{\numberline {17.6}Multiplexión por división de frecuencia-FDM}{265}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Multiplexión por división de tiempo-TDM}{265}{section.17.7}%
+\contentsline {chapter}{\numberline {18}Capa de enlace}{267}{chapter.18}%
+\contentsline {section}{\numberline {18.1}Cuestiones de diseño de la capa de enlace de datos}{267}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Servicios proporcionados a la capa de red}{267}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Entramado}{268}{section.18.3}%
+\contentsline {subsection}{\numberline {18.3.1}Conteo de bytes}{268}{subsection.18.3.1}%
+\contentsline {subsection}{\numberline {18.3.2}Bytes bandera con relleno de bytes}{269}{subsection.18.3.2}%
+\contentsline {subsection}{\numberline {18.3.3}Bits bandera con relleno de bits}{269}{subsection.18.3.3}%
+\contentsline {section}{\numberline {18.4}Código de detección de errores: Paridad}{271}{section.18.4}%
+\contentsline {section}{\numberline {18.5}Protocolos elementales de enlace de datos}{271}{section.18.5}%
+\contentsline {subsection}{\numberline {18.5.1}Protocolo simple utópico}{271}{subsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.5.2}Protocolo simplex de parada y espera para un canal libre de errores}{272}{subsection.18.5.2}%
+\contentsline {subsection}{\numberline {18.5.3}Protocolo simplex de parada y espera para un canal ruidoso}{272}{subsection.18.5.3}%
+\contentsline {section}{\numberline {18.6}Protocolos de ventana deslizante}{272}{section.18.6}%
+\contentsline {section}{\numberline {18.7}Protocolo retroceso N}{272}{section.18.7}%
 \ttl@stoptoc {part@7}
 \ttl@starttoc {part@8}
-\contentsline {part}{\numberline {VIII}Líneas de transmisión}{261}{part.8}%
+\contentsline {part}{\numberline {VIII}Líneas de transmisión}{277}{part.8}%
 \ttl@stoptoc {part@8}
 \ttl@starttoc {part@9}
-\contentsline {part}{\numberline {IX}Microcontrolador y microprocesador}{265}{part.9}%
-\contentsline {chapter}{\numberline {18}Arquitectura y principios del microcontrolador}{267}{chapter.18}%
-\contentsline {section}{\numberline {18.1}Arquitectura interna de una CPU}{267}{section.18.1}%
-\contentsline {subsection}{\numberline {18.1.1}Memoria}{267}{subsection.18.1.1}%
-\contentsline {subsubsection}{\numberline {18.1.1.1}ROM}{267}{subsubsection.18.1.1.1}%
-\contentsline {subsection}{\numberline {18.1.2}RAM}{268}{subsection.18.1.2}%
-\contentsline {subsection}{\numberline {18.1.3}I/O}{270}{subsection.18.1.3}%
-\contentsline {subsection}{\numberline {18.1.4}¿Cómo escriben en la memoria los periféricos?}{270}{subsection.18.1.4}%
-\contentsline {subsection}{\numberline {18.1.5}CPU}{273}{subsection.18.1.5}%
-\contentsline {subsection}{\numberline {18.1.6}Arquitecturas}{275}{subsection.18.1.6}%
-\contentsline {section}{\numberline {18.2}Código Assembler}{275}{section.18.2}%
-\contentsline {subsection}{\numberline {18.2.1}Ejemplos del código Assembler}{276}{subsection.18.2.1}%
+\contentsline {part}{\numberline {IX}Microcontrolador y microprocesador}{281}{part.9}%
+\contentsline {chapter}{\numberline {19}Arquitectura y principios del microcontrolador}{283}{chapter.19}%
+\contentsline {section}{\numberline {19.1}Arquitectura interna de una CPU}{283}{section.19.1}%
+\contentsline {subsection}{\numberline {19.1.1}Memoria}{283}{subsection.19.1.1}%
+\contentsline {subsubsection}{\numberline {19.1.1.1}ROM}{283}{subsubsection.19.1.1.1}%
+\contentsline {subsection}{\numberline {19.1.2}RAM}{284}{subsection.19.1.2}%
+\contentsline {subsection}{\numberline {19.1.3}I/O}{286}{subsection.19.1.3}%
+\contentsline {subsection}{\numberline {19.1.4}¿Cómo escriben en la memoria los periféricos?}{286}{subsection.19.1.4}%
+\contentsline {subsection}{\numberline {19.1.5}CPU}{289}{subsection.19.1.5}%
+\contentsline {subsection}{\numberline {19.1.6}Arquitecturas}{291}{subsection.19.1.6}%
+\contentsline {section}{\numberline {19.2}Código Assembler}{291}{section.19.2}%
+\contentsline {subsection}{\numberline {19.2.1}Ejemplos del código Assembler}{292}{subsection.19.2.1}%
 \ttl@stoptoc {part@9}
 \ttl@starttoc {part@10}
-\contentsline {part}{\numberline {X}Ingeniería en mantenimiento}{281}{part.10}%
-\contentsline {chapter}{\numberline {19}Aspectos introductorios}{283}{chapter.19}%
-\contentsline {section}{\numberline {19.1}Definición de mantenimiento}{283}{section.19.1}%
-\contentsline {subsection}{\numberline {19.1.1}Evolución de mantenimiento}{283}{subsection.19.1.1}%
-\contentsline {section}{\numberline {19.2}Mediciones de radiofrecuencia}{284}{section.19.2}%
-\contentsline {subsection}{\numberline {19.2.1}¿Qué es radio enlace?}{284}{subsection.19.2.1}%
-\contentsline {subsection}{\numberline {19.2.2}Bandas de frecuencia}{284}{subsection.19.2.2}%
-\contentsline {section}{\numberline {19.3}Decibelios como medida}{285}{section.19.3}%
-\contentsline {section}{\numberline {19.4}Radio digital y sus partes}{294}{section.19.4}%
-\contentsline {section}{\numberline {19.5}Repetidores}{295}{section.19.5}%
-\contentsline {subsection}{\numberline {19.5.1}Repetidor activo}{296}{subsection.19.5.1}%
-\contentsline {subsection}{\numberline {19.5.2}Repetidor pasivo}{296}{subsection.19.5.2}%
+\contentsline {part}{\numberline {X}Ingeniería en mantenimiento}{297}{part.10}%
+\contentsline {chapter}{\numberline {20}Aspectos introductorios}{299}{chapter.20}%
+\contentsline {section}{\numberline {20.1}Definición de mantenimiento}{299}{section.20.1}%
+\contentsline {subsection}{\numberline {20.1.1}Evolución de mantenimiento}{299}{subsection.20.1.1}%
+\contentsline {section}{\numberline {20.2}Mediciones de radiofrecuencia}{300}{section.20.2}%
+\contentsline {subsection}{\numberline {20.2.1}¿Qué es radio enlace?}{300}{subsection.20.2.1}%
+\contentsline {subsection}{\numberline {20.2.2}Bandas de frecuencia}{300}{subsection.20.2.2}%
+\contentsline {section}{\numberline {20.3}Decibelios como medida}{301}{section.20.3}%
+\contentsline {section}{\numberline {20.4}Radio digital y sus partes}{310}{section.20.4}%
+\contentsline {section}{\numberline {20.5}Repetidores}{311}{section.20.5}%
+\contentsline {subsection}{\numberline {20.5.1}Repetidor activo}{312}{subsection.20.5.1}%
+\contentsline {subsection}{\numberline {20.5.2}Repetidor pasivo}{312}{subsection.20.5.2}%
 \ttl@stoptoc {part@10}
 \ttl@starttoc {part@11}
-\contentsline {part}{\numberline {XI}Inglés}{299}{part.11}%
-\contentsline {chapter}{\numberline {20}English notes}{301}{chapter.20}%
-\contentsline {section}{\numberline {20.1}\textit {a/an}, \textit {the} and no-article}{301}{section.20.1}%
-\contentsline {section}{\numberline {20.2}When use \textit {the}?}{301}{section.20.2}%
-\contentsline {section}{\numberline {20.3}Use of \textit {Would}}{302}{section.20.3}%
-\contentsline {section}{\numberline {20.4}How to use \textit {rather}?}{302}{section.20.4}%
-\contentsline {section}{\numberline {20.5}Future form}{303}{section.20.5}%
-\contentsline {subsection}{\numberline {20.5.1}Present continuous}{303}{subsection.20.5.1}%
-\contentsline {subsection}{\numberline {20.5.2}be going to + infinitive}{303}{subsection.20.5.2}%
-\contentsline {subsection}{\numberline {20.5.3}will + infinitive}{303}{subsection.20.5.3}%
-\contentsline {section}{\numberline {20.6}Preset Perfect}{304}{section.20.6}%
+\contentsline {part}{\numberline {XI}Inglés}{315}{part.11}%
+\contentsline {chapter}{\numberline {21}English notes}{317}{chapter.21}%
+\contentsline {section}{\numberline {21.1}\textit {a/an}, \textit {the} and no-article}{317}{section.21.1}%
+\contentsline {section}{\numberline {21.2}When use \textit {the}?}{317}{section.21.2}%
+\contentsline {section}{\numberline {21.3}Use of \textit {Would}}{318}{section.21.3}%
+\contentsline {section}{\numberline {21.4}How to use \textit {rather}?}{318}{section.21.4}%
+\contentsline {section}{\numberline {21.5}Future form}{319}{section.21.5}%
+\contentsline {subsection}{\numberline {21.5.1}Present continuous}{319}{subsection.21.5.1}%
+\contentsline {subsection}{\numberline {21.5.2}be going to + infinitive}{319}{subsection.21.5.2}%
+\contentsline {subsection}{\numberline {21.5.3}will + infinitive}{319}{subsection.21.5.3}%
+\contentsline {section}{\numberline {21.6}Preset Perfect}{320}{section.21.6}%
 \ttl@stoptoc {part@11}
 \ttl@starttoc {part@12}
-\contentsline {part}{\numberline {XII}Extras}{305}{part.12}%
-\contentsline {chapter}{\numberline {21}Artificios matemáticos-repaso}{307}{chapter.21}%
-\contentsline {section}{\numberline {21.1}Logaritmos y exponenciales}{307}{section.21.1}%
-\contentsline {section}{\numberline {21.2}Matrices}{308}{section.21.2}%
-\contentsline {subsection}{\numberline {21.2.1}Conformabilidad de matrices}{308}{subsection.21.2.1}%
-\contentsline {section}{\numberline {21.3}Integrales}{308}{section.21.3}%
-\contentsline {subsection}{\numberline {21.3.1}Integral por tabulación}{308}{subsection.21.3.1}%
-\contentsline {section}{\numberline {21.4}Números complejos}{308}{section.21.4}%
-\contentsline {section}{\numberline {21.5}Producto cruz y producto escalar}{309}{section.21.5}%
-\contentsline {subsection}{\numberline {21.5.1}Producto escalar}{309}{subsection.21.5.1}%
-\contentsline {subsection}{\numberline {21.5.2}Producto cruz}{309}{subsection.21.5.2}%
-\contentsline {subsection}{\numberline {21.5.3}Propiedades}{310}{subsection.21.5.3}%
-\contentsline {section}{\numberline {21.6}Ondas}{310}{section.21.6}%
-\contentsline {chapter}{\numberline {22}Decibelios}{311}{chapter.22}%
-\contentsline {section}{\numberline {22.1}Definición de dB}{311}{section.22.1}%
-\contentsline {section}{\numberline {22.2}Definición de dBm}{311}{section.22.2}%
-\contentsline {section}{\numberline {22.3}Definición dB$\mu $V}{311}{section.22.3}%
-\contentsline {section}{\numberline {22.4}Diferencia entre decibelios de tensión y decibelios de potencia}{312}{section.22.4}%
-\contentsline {section}{\numberline {22.5}¿Qué es un nivel?}{312}{section.22.5}%
-\contentsline {section}{\numberline {22.6}Atenuación y ganancia}{313}{section.22.6}%
-\contentsline {section}{\numberline {22.7}Decibelios a porcentaje y viceversa}{313}{section.22.7}%
-\contentsline {subsection}{\numberline {22.7.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{313}{subsection.22.7.1}%
-\contentsline {subsection}{\numberline {22.7.2}Conversión de la energía: porcentaje a decibelios y viceversa}{314}{subsection.22.7.2}%
-\contentsline {subsection}{\numberline {22.7.3}Conversión de voltaje: porcentaje más o menos a decibelios}{314}{subsection.22.7.3}%
-\contentsline {subsection}{\numberline {22.7.4}Conversión de potencia: porcentaje más o menos a decibelios}{314}{subsection.22.7.4}%
+\contentsline {part}{\numberline {XII}Extras}{321}{part.12}%
+\contentsline {chapter}{\numberline {22}Artificios matemáticos-repaso}{323}{chapter.22}%
+\contentsline {section}{\numberline {22.1}Logaritmos y exponenciales}{323}{section.22.1}%
+\contentsline {section}{\numberline {22.2}Matrices}{324}{section.22.2}%
+\contentsline {subsection}{\numberline {22.2.1}Conformabilidad de matrices}{324}{subsection.22.2.1}%
+\contentsline {section}{\numberline {22.3}Integrales}{324}{section.22.3}%
+\contentsline {subsection}{\numberline {22.3.1}Integral por tabulación}{324}{subsection.22.3.1}%
+\contentsline {section}{\numberline {22.4}Números complejos}{324}{section.22.4}%
+\contentsline {section}{\numberline {22.5}Producto cruz y producto escalar}{325}{section.22.5}%
+\contentsline {subsection}{\numberline {22.5.1}Producto escalar}{325}{subsection.22.5.1}%
+\contentsline {subsection}{\numberline {22.5.2}Producto cruz}{325}{subsection.22.5.2}%
+\contentsline {subsection}{\numberline {22.5.3}Propiedades}{326}{subsection.22.5.3}%
+\contentsline {section}{\numberline {22.6}Ondas}{326}{section.22.6}%
+\contentsline {chapter}{\numberline {23}Decibelios}{327}{chapter.23}%
+\contentsline {section}{\numberline {23.1}Definición de dB}{327}{section.23.1}%
+\contentsline {section}{\numberline {23.2}Definición de dBm}{327}{section.23.2}%
+\contentsline {section}{\numberline {23.3}Definición dB$\mu $V}{327}{section.23.3}%
+\contentsline {section}{\numberline {23.4}Diferencia entre decibelios de tensión y decibelios de potencia}{328}{section.23.4}%
+\contentsline {section}{\numberline {23.5}¿Qué es un nivel?}{328}{section.23.5}%
+\contentsline {section}{\numberline {23.6}Atenuación y ganancia}{329}{section.23.6}%
+\contentsline {section}{\numberline {23.7}Decibelios a porcentaje y viceversa}{329}{section.23.7}%
+\contentsline {subsection}{\numberline {23.7.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{329}{subsection.23.7.1}%
+\contentsline {subsection}{\numberline {23.7.2}Conversión de la energía: porcentaje a decibelios y viceversa}{330}{subsection.23.7.2}%
+\contentsline {subsection}{\numberline {23.7.3}Conversión de voltaje: porcentaje más o menos a decibelios}{330}{subsection.23.7.3}%
+\contentsline {subsection}{\numberline {23.7.4}Conversión de potencia: porcentaje más o menos a decibelios}{330}{subsection.23.7.4}%
 \ttl@stoptoc {part@12}
 \ttl@starttoc {part@13}
-\contentsline {part}{\numberline {XIII}Anexos}{315}{part.13}%
-\contentsline {section}{\numberline {22.8}Ejercicios resueltos U2-Sistemas de telefonía}{317}{section.22.8}%
-\contentsline {section}{\numberline {22.9}Ejercicios resueltos U2-Sistemas de telefonía}{318}{section.22.9}%
-\contentsline {section}{\numberline {22.10}Ejercicios resueltos U2-Sistemas de telefonía}{319}{section.22.10}%
-\contentsline {section}{\numberline {22.11}Ejercicios resueltos U2-Sistemas de telefonía 2 }{320}{section.22.11}%
-\contentsline {section}{\numberline {22.12}Ejercicios resueltos U2-Sistemas de telefonía 2 }{321}{section.22.12}%
-\contentsline {section}{\numberline {22.13}Ejercicios resueltos U2-Sistemas de telefonía 2 }{322}{section.22.13}%
-\contentsline {section}{\numberline {22.14}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{323}{section.22.14}%
-\contentsline {section}{\numberline {22.15}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{324}{section.22.15}%
-\contentsline {section}{\numberline {22.16}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{325}{section.22.16}%
-\contentsline {section}{\numberline {22.17}Ejercicios resueltos U2-Erlang B}{326}{section.22.17}%
-\contentsline {section}{\numberline {22.18}Ejercicios resueltos U2-Erlang B}{327}{section.22.18}%
-\contentsline {section}{\numberline {22.19}Ejercicios resueltos U2-Erlang B}{328}{section.22.19}%
-\contentsline {section}{\numberline {22.20}Ejericios de la ley de Gauss}{329}{section.22.20}%
+\contentsline {part}{\numberline {XIII}Anexos}{331}{part.13}%
+\contentsline {section}{\numberline {23.8}Ejercicios resueltos U2-Sistemas de telefonía}{333}{section.23.8}%
+\contentsline {section}{\numberline {23.9}Ejercicios resueltos U2-Sistemas de telefonía}{334}{section.23.9}%
+\contentsline {section}{\numberline {23.10}Ejercicios resueltos U2-Sistemas de telefonía}{335}{section.23.10}%
+\contentsline {section}{\numberline {23.11}Ejercicios resueltos U2-Sistemas de telefonía 2 }{336}{section.23.11}%
+\contentsline {section}{\numberline {23.12}Ejercicios resueltos U2-Sistemas de telefonía 2 }{337}{section.23.12}%
+\contentsline {section}{\numberline {23.13}Ejercicios resueltos U2-Sistemas de telefonía 2 }{338}{section.23.13}%
+\contentsline {section}{\numberline {23.14}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{339}{section.23.14}%
+\contentsline {section}{\numberline {23.15}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{340}{section.23.15}%
+\contentsline {section}{\numberline {23.16}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{341}{section.23.16}%
+\contentsline {section}{\numberline {23.17}Ejercicios resueltos U2-Erlang B}{342}{section.23.17}%
+\contentsline {section}{\numberline {23.18}Ejercicios resueltos U2-Erlang B}{343}{section.23.18}%
+\contentsline {section}{\numberline {23.19}Ejercicios resueltos U2-Erlang B}{344}{section.23.19}%
+\contentsline {section}{\numberline {23.20}Ejericios de la ley de Gauss}{345}{section.23.20}%
 \ttl@stoptoc {part@13}
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{333}{chapter*.290}%
-\contentsline {section}{Articles}{333}{chapter*.290}%
-\contentsline {section}{Books}{333}{chapter*.290}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{335}{section*.291}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{349}{chapter*.309}%
+\contentsline {section}{Articles}{349}{chapter*.309}%
+\contentsline {section}{Books}{349}{chapter*.309}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{351}{section*.310}%
 \contentsfinish 

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.14)  23 MAY 2022 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.24)  25 MAY 2022 07:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./fastmain.tex
 (fastmain.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24> (LegrandOrangeBook.cls
+L3 programming layer <2022-05-04> (LegrandOrangeBook.cls
 Document Class: LegrandOrangeBook 2022/01/26 The Legrand Orange Book Class v3.0
 
 (E:\Programas x86\MikTex\tex/latex/base\book.cls
@@ -64,10 +64,10 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 (E:\Programas x86\MikTex\tex/latex/caption\caption.sty
-Package: caption 2022/02/28 v3.6a Customizing captions (AR)
+Package: caption 2022/03/01 v3.6b Customizing captions (AR)
 
 (E:\Programas x86\MikTex\tex/latex/caption\caption3.sty
-Package: caption3 2022/02/28 v2.3a caption3 kernel (AR)
+Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
 \caption@tempdima=\dimen141
 \captionmargin=\dimen142
 \caption@leftmargin=\dimen143
@@ -335,32 +335,32 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Info: Redefining \hbar on input line 50.
 )
 (E:\Programas x86\MikTex\tex/latex/microtype\microtype.sty
-Package: microtype 2022/02/22 v3.0c Micro-typographical refinements (RS)
+Package: microtype 2022/03/14 v3.0d Micro-typographical refinements (RS)
 \MT@toks=\toks26
 \MT@tempbox=\box100
 \MT@count=\count296
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1027.
 LaTeX Info: Redefining \leftprotrusion on input line 1028.
 LaTeX Info: Redefining \rightprotrusion on input line 1036.
-LaTeX Info: Redefining \textls on input line 1200.
+LaTeX Info: Redefining \textls on input line 1195.
 \MT@outer@kern=\dimen179
-LaTeX Info: Redefining \textmicrotypecontext on input line 1786.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1781.
 \MT@listname@count=\count297
 
 (E:\Programas x86\MikTex\tex/latex/microtype\microtype-pdftex.def
-File: microtype-pdftex.def 2022/02/22 v3.0c Definitions specific to pdftex (RS)
+File: microtype-pdftex.def 2022/03/14 v3.0d Definitions specific to pdftex (RS)
 
-LaTeX Info: Redefining \lsstyle on input line 897.
-LaTeX Info: Redefining \lslig on input line 897.
+LaTeX Info: Redefining \lsstyle on input line 900.
+LaTeX Info: Redefining \lslig on input line 900.
 \MT@outer@space=\skip65
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
 (E:\Programas x86\MikTex\tex/latex/microtype\microtype.cfg
-File: microtype.cfg 2022/02/22 v3.0c microtype main configuration file (RS)
+File: microtype.cfg 2022/03/14 v3.0d microtype main configuration file (RS)
 ))
 (E:\Programas x86\MikTex\tex/latex/fancyhdr\fancyhdr.sty
-Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+Package: fancyhdr 2022/05/10 v4.0.2 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip66
 \f@nch@O@elh=\skip67
@@ -699,15 +699,15 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 
 (E:\Programas x86\MikTex\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-02-24 L3 programming layer (loader) 
+Package: expl3 2022-05-04 L3 programming layer (loader) 
 
 (E:\Programas x86\MikTex\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count436
 \l__pdf_internal_box=\box106
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2022-02-24 L3 programming layer (loader) 
+(biblatex)             2022-05-04 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -755,7 +755,7 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitdp@description=\count442
 )
 (E:\Programas x86\MikTex\tex/latex/hyperref\hyperref.sty
-Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
+Package: hyperref 2022-05-13 v7.00o Hypertext links for LaTeX
 
 (E:\Programas x86\MikTex\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
@@ -777,7 +777,7 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 \Hy@pagecounter=\count444
 
 (E:\Programas x86\MikTex\tex/latex/hyperref\pd1enc.def
-File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2022-05-13 v7.00o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
@@ -790,19 +790,19 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 \Hy@SavedSpaceFactor=\count445
 
 (E:\Programas x86\MikTex\tex/latex/hyperref\puenc.def
-File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2022-05-13 v7.00o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Hyper figures OFF on input line 4137.
-Package hyperref Info: Link nesting OFF on input line 4142.
-Package hyperref Info: Hyper index ON on input line 4145.
-Package hyperref Info: Plain pages OFF on input line 4152.
-Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Hyper figures OFF on input line 4142.
+Package hyperref Info: Link nesting OFF on input line 4147.
+Package hyperref Info: Hyper index ON on input line 4150.
+Package hyperref Info: Plain pages OFF on input line 4157.
+Package hyperref Info: Backreferencing OFF on input line 4162.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4390.
+Package hyperref Info: Bookmarks ON on input line 4395.
 \c@Hy@tempcnt=\count446
-LaTeX Info: Redefining \url on input line 4749.
+LaTeX Info: Redefining \url on input line 4742.
 \XeTeXLinkMargin=\dimen266
 
 (E:\Programas x86\MikTex\tex/generic/bitset\bitset.sty
@@ -815,15 +815,15 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 \Fld@menulength=\count447
 \Field@Width=\dimen267
 \Fld@charsize=\dimen268
-Package hyperref Info: Hyper figures OFF on input line 6027.
-Package hyperref Info: Link nesting OFF on input line 6032.
-Package hyperref Info: Hyper index ON on input line 6035.
-Package hyperref Info: backreferencing OFF on input line 6042.
-Package hyperref Info: Link coloring OFF on input line 6047.
-Package hyperref Info: Link coloring with OCG OFF on input line 6052.
-Package hyperref Info: PDF/A mode OFF on input line 6057.
+Package hyperref Info: Hyper figures OFF on input line 6020.
+Package hyperref Info: Link nesting OFF on input line 6025.
+Package hyperref Info: Hyper index ON on input line 6028.
+Package hyperref Info: backreferencing OFF on input line 6035.
+Package hyperref Info: Link coloring OFF on input line 6040.
+Package hyperref Info: Link coloring with OCG OFF on input line 6045.
+Package hyperref Info: PDF/A mode OFF on input line 6050.
 LaTeX Info: Redefining \ref on input line 6097.
-LaTeX Info: Redefining \pageref on input line 6101.
+LaTeX Info: Redefining \pageref on input line 6097.
 
 (E:\Programas x86\MikTex\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
@@ -836,7 +836,7 @@ package with kernel methods
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (E:\Programas x86\MikTex\tex/latex/hyperref\hpdftex.def
-File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
+File: hpdftex.def 2022-05-13 v7.00o Hyperref driver for pdfTeX
 
 (E:\Programas x86\MikTex\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
@@ -1234,16 +1234,16 @@ File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 Package: mdframed 2013/07/01 1.9b: mdframed
 
 (E:\Programas x86\MikTex\tex/latex/zref\zref-abspage.sty
-Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+Package: zref-abspage 2022-04-07 v2.34 Module abspage for zref (HO)
 
 (E:\Programas x86\MikTex\tex/latex/zref\zref-base.sty
-Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
-Package zref Info: New property list: main on input line 764.
-Package zref Info: New property: default on input line 765.
-Package zref Info: New property: page on input line 766.
+Package: zref-base 2022-04-07 v2.34 Module base for zref (HO)
+Package zref Info: New property list: main on input line 767.
+Package zref Info: New property: default on input line 768.
+Package zref Info: New property: page on input line 769.
 )
 \c@abspage=\count500
-Package zref Info: New property: abspage on input line 66.
+Package zref Info: New property: abspage on input line 65.
 )
 (E:\Programas x86\MikTex\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
@@ -1520,7 +1520,7 @@ Package biblatex Info: Reference segment=0 on input line 18.
 Package hyperref Info: Link coloring ON on input line 18.
 
 (E:\Programas x86\MikTex\tex/latex/hyperref\nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+Package: nameref 2022-05-13 v2.48 Cross-referencing by name of section
 
 (E:\Programas x86\MikTex\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -1530,9 +1530,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count519
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
 LaTeX Font Info:    Trying to load font information for T1+pag on input line 23
 .
 
@@ -1631,137 +1628,43 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.75 \end{align*}
-                 ]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 83.
-
-<Images//IN1/IN21.png, id=29, 663.98062pt x 376.40625pt>
-File: Images//IN1/IN21.png Graphic file (type png)
-<use Images//IN1/IN21.png>
-Package pdftex.def Info: Images//IN1/IN21.png  used on input line 85.
-(pdftex.def)             Requested size: 426.79135pt x 241.94449pt.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 89.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 93.
-
-<Images//IN1/IN22.png, id=33, 438.13687pt x 301.125pt>
-File: Images//IN1/IN22.png Graphic file (type png)
-<use Images//IN1/IN22.png>
-Package pdftex.def Info: Images//IN1/IN22.png  used on input line 110.
-(pdftex.def)             Requested size: 213.39568pt x 146.66574pt.
-[2 <./Images//IN1/IN21.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 121.
-
-<Images//IN1/IN23.png, id=44, 265.74281pt x 192.72pt>
-File: Images//IN1/IN23.png Graphic file (type png)
-<use Images//IN1/IN23.png>
-Package pdftex.def Info: Images//IN1/IN23.png  used on input line 123.
-(pdftex.def)             Requested size: 426.79135pt x 309.54042pt.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 128.
-
-<Images//IN1/IN24.png, id=47, 517.935pt x 243.15843pt>
-File: Images//IN1/IN24.png Graphic file (type png)
-<use Images//IN1/IN24.png>
-Package pdftex.def Info: Images//IN1/IN24.png  used on input line 130.
-(pdftex.def)             Requested size: 426.79135pt x 200.37814pt.
-[3 <./Images//IN1/IN22.png>]
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 134.
-<Images//IN1/IN19.png, id=57, 381.67593pt x 475.7775pt>
-File: Images//IN1/IN19.png Graphic file (type png)
-<use Images//IN1/IN19.png>
-Package pdftex.def Info: Images//IN1/IN19.png  used on input line 137.
-(pdftex.def)             Requested size: 114.50366pt x 142.73434pt.
- [4 <./Images//IN1/IN23.png>]
-<Images//IN1/IN20.png, id=66, 381.67593pt x 469.00218pt>
-File: Images//IN1/IN20.png Graphic file (type png)
-<use Images//IN1/IN20.png>
-Package pdftex.def Info: Images//IN1/IN20.png  used on input line 142.
-(pdftex.def)             Requested size: 114.50366pt x 140.70174pt.
- [5 <./Images//IN1/IN24.png> <./Images//IN1/IN19.png> <./Images//IN1/IN20.png>]
-<Images//IN1/IN25.png, id=75, 351.56343pt x 320.69812pt>
-File: Images//IN1/IN25.png Graphic file (type png)
-<use Images//IN1/IN25.png>
-Package pdftex.def Info: Images//IN1/IN25.png  used on input line 158.
-(pdftex.def)             Requested size: 277.41176pt x 253.05511pt.
+                 ] [2]
+Chapter 1.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 164.
+pdfTeX warning: pdflatex (file ./Images//chapter_head_IN1.pdf): PDF inclusion: 
+found PDF version <1.6>, but at most version <1.5> allowed
+<Images//chapter_head_IN1.pdf, id=32, 3595.4325pt x 1798.43892pt>
+File: Images//chapter_head_IN1.pdf Graphic file (type pdf)
+<use Images//chapter_head_IN1.pdf>
+Package pdftex.def Info: Images//chapter_head_IN1.pdf  used on input line 81.
+(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+[3
 
-<Images//IN1/IN26.png, id=78, 606.76688pt x 211.54031pt>
-File: Images//IN1/IN26.png Graphic file (type png)
-<use Images//IN1/IN26.png>
-Package pdftex.def Info: Images//IN1/IN26.png  used on input line 166.
-(pdftex.def)             Requested size: 426.79135pt x 148.797pt.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 170.
-
-<Images//IN1/IN27.png, id=79, 525.46312pt x 224.33812pt>
-File: Images//IN1/IN27.png Graphic file (type png)
-<use Images//IN1/IN27.png>
-Package pdftex.def Info: Images//IN1/IN27.png  used on input line 172.
-(pdftex.def)             Requested size: 426.79135pt x 182.2195pt.
-[6 <./Images//IN1/IN25.png>]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 179.
-
-<Images//IN1/IN28.png, id=99, 578.16pt x 360.59718pt>
-File: Images//IN1/IN28.png Graphic file (type png)
-<use Images//IN1/IN28.png>
-Package pdftex.def Info: Images//IN1/IN28.png  used on input line 181.
-(pdftex.def)             Requested size: 298.75264pt x 186.32863pt.
-
-LaTeX Warning: Reference `fig: tdm' on page 7 undefined on input line 186.
-
-<Images//IN1/IN29.png, id=100, 517.935pt x 108.405pt>
-File: Images//IN1/IN29.png Graphic file (type png)
-<use Images//IN1/IN29.png>
-Package pdftex.def Info: Images//IN1/IN29.png  used on input line 189.
-(pdftex.def)             Requested size: 426.79135pt x 89.33266pt.
-[7 <./Images//IN1/IN26.png> <./Images//IN1/IN27.png>]
-
-LaTeX Warning: Reference `fig: t1 carrier' on page 8 undefined on input line 19
-3.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 194.
-
-<Images//IN1/IN30.png, id=112, 691.94681pt x 205.27756pt>
-File: Images//IN1/IN30.png Graphic file (type png)
-<use Images//IN1/IN30.png>
-Package pdftex.def Info: Images//IN1/IN30.png  used on input line 196.
-(pdftex.def)             Requested size: 298.75264pt x 88.62782pt.
-[8 <./Images//IN1/IN28.png> <./Images//IN1/IN30.png> <./Images//IN1/IN29.png>]
-(fastmain.aux)
+ <./Images//chapter_head_IN1.pdf>] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38082 strings out of 478582
- 704434 string characters out of 2854162
- 1545308 words of memory out of 3000000
- 55294 multiletter control sequences out of 15000+600000
- 533650 words of font info for 253 fonts, out of 8000000 for 9000
+ 37946 strings out of 478614
+ 704449 string characters out of 2852940
+ 1545603 words of memory out of 3000000
+ 55302 multiletter control sequences out of 15000+600000
+ 531899 words of font info for 183 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,19n,108p,1156b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,19n,108p,1155b,805s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Programas x86/MikTex/fonts/type1
 /public/amsfonts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfo
@@ -1771,9 +1674,9 @@ MikTex/fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw
 /symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/
 Programas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (8 pages, 928918 bytes).
+Output written on fastmain.pdf (3 pages, 236596 bytes).
 PDF statistics:
- 203 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 67217 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 94 PDF objects out of 1000 (max. 8388607)
+ 11 named destinations out of 1000 (max. 500000)
+ 70690 words of extra memory for PDF output out of 74296 (max. 10000000)
 

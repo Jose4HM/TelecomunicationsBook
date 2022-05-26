@@ -6223,7 +6223,7 @@ Además se tiene que para V niveles discretos, el teorema de Nyquist establece q
 \end{equation}
 Por ejemplo, un canal sin ruido de 3kHz no puede transmitir señales binarias (de dos niveles) a una velocidad mayor de 6000 bps.
 \end{definition}
-Los canales no son perfectos, por lo que suele tenerse en cuenta el ruido aleatorio que deteriora los análisis. Siempre habrá ruido térmico, así que este se mide con base a la relación:
+Los canales \textbf{no son perfectos}, por lo que suele tenerse en cuenta el ruido aleatorio que deteriora los análisis. Siempre habrá ruido térmico, así que este se mide con base a la relación:
 \begin{definition}[Relación señal a ruido-SNR]
 Es la relación en decibelios entre la potencia de la señal(S) y la potencia del ruido(N):
 \begin{equation}
@@ -6231,10 +6231,12 @@ Es la relación en decibelios entre la potencia de la señal(S) y la potencia de
 SNR=10\log_{10}\left(\frac{S}{N}\right)
 \end{equation}
 \end{definition}
-El principal resultado de Shannon es que la tasa de datos máxima (o capacidad) de un canal ruidoso, cuyo ancho de banda es \textit{B} Hz y cuya relación señal a ruido es S/N, está dada por:
+\begin{definition}[SNR y tasa de datos máxima]
+El principal resultado de Shannon es que la \textbf{tasa de datos máxima} (o capacidad) de un canal \textbf{ruidoso}, cuyo ancho de banda es \textit{B} Hz y cuya relación señal a ruido es S/N, está dada por:
 \begin{equation}
 \text{Número máximo de bits/seg}=B\log_2(1+S/N)
 \end{equation}
+\end{definition}
 \section{Medios de transmisión guiados}\index{Medios de transmisión guiados}
 El propósito de la capa física es transportar los bits de una maquina a otra. Se agrupan, a grandes rasgos en \textbf{guiados}:cable de cobre y fibra óptica y \textbf{no guiados}:la transmisión inalámbrica terrestre, los satélites y los láseres a través del aire.
 \subsection{Medios magnéticos}
@@ -6282,7 +6284,7 @@ Es debido a ese ángulo que el haz de luz va poder rebotar a lo largo de la fibr
 \caption{Luz en la fibra óptica.}
 \label{fig:modos en la fibra}
 \end{figure}
-Existen dos propiedades de la fibra:\textbf{multimodo} cuando distintos haces de luz rebotando con distintos ángulos y \textbf{monomodo} cuando el diámetro de la fibra se reduce a unas cuantas longitudes de onda, así la fibra actuara solo como guía y la luz irá en linea recta, sin rebotes. (Fig. \ref{fig:modos en la fibra}) Las más costosas son las fibras monomodo pero son usadas para distancias largas, llegando a transferir hasta 100 Gbps por 100km sin necesidad de amplificación.\footnote{Ver la página 88 del libro \cite{tanenbaum2012computer} acerca de longitud de onda.}. Una fibra óptica esta compuesta por núcleo, revestimiento y cubierta (Fig.\ref{fig:partes fibra} ).
+Existen dos propiedades de la fibra: \textbf{multimodo} cuando distintos haces de luz rebotando con distintos ángulos y \textbf{monomodo} cuando el diámetro de la fibra se reduce a unas cuantas longitudes de onda, así la fibra actuara solo como guía y la luz irá en linea recta, sin rebotes. (Fig. \ref{fig:modos en la fibra}) Las más costosas son las fibras monomodo pero son usadas para distancias largas, llegando a transferir hasta 100 Gbps por 100km sin necesidad de amplificación.\footnote{Ver la página 88 del libro \cite{tanenbaum2012computer} acerca de longitud de onda.}. Una fibra óptica esta compuesta por núcleo, revestimiento y cubierta (Fig.\ref{fig:partes fibra} ).
 \begin{figure}[]
 \centering
 \includegraphics[scale=0.5]{IN1/IN10.png}
@@ -6322,6 +6324,25 @@ Costo                                                        & Bajo             
 \section{Transmisión inalámbrica}\index{Transmisión inalámbrica}
 \subsection{Espectro electromagnético}
 Para seguir tienes que recordar la ecuación \ref{art:onda y velocidad}. En el vacio todas las ondas sin importar su frecuencia viajan a la velocidad de la luz, aproximadamente \textbf{$3\times 10^8m/seg$}. En el cobre o la fibra, la velocidad baja casi al 2/3 de la velocidad de la luz y se vuelve ligeramente independiente de la frecuencia.\\
+\begin{definition}[Velocidad y onda]
+\begin{equation}
+\label{eq: onda y velocidad}
+v=\lambda\cdot f
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textit{v} es velocidad de onda(\textit{c} para la luz en el vacío) (m/s).
+\item $\lambda$ es la longitud de onda. (m)
+\item \textit{f} es la frecuencia (Hz).
+\end{itemize}
+\end{definition}
+\begin{definition}[Ancho de banda y longitud de onda]
+\begin{equation}
+\Delta f \frac{c\Delta\lambda}{\lambda^2}
+\label{eq: ancho de banda y onda}
+\end{equation}
+Textualmente: \textit{El ancho de banda es igual a la velocidad de la luz en el vacío (o en el medio) por el ancho de la banda entre la longitud de onda deseada al cuadrado}
+\end{definition}
 Ademas es necesario repasar el espectro electromagnético (fig: \ref{fig:espectro electro}):
 \begin{figure}[]
 \centering
@@ -6375,7 +6396,238 @@ cada extremo necesita su propio láser y su propio fotodetector. Este esquema of
 \includegraphics[width=0.6\linewidth]{IN1/IN18.png}
 \caption{Sistema bireccional con transmisión de luz}
 \end{figure}
-
+\section{Satélites}\index{Satélites}
+En su forma más simple, podemos considerar un satélite de comunicaciones como un enorme repetidor de microondas en el cielo que contiene varios transpondedores, cada uno de los cuales escucha en cierta porción del espectro, amplifica la señal entrante y después la retransmite en otra frecuencia para evitar interferencia con la señal entrante. Este modo de operación se llama \textbf{tubo doblado}. De acuerdo con la ley de Kepler, el periodo orbital de un satélite varía según el radio de la órbita a la 3/2 potencia. Entre más alto esté el satélite, mayor será el periodo. El periodo de un satélite es importante, pero no es la única razón para determinar en dónde colocarlo.\\
+Otra cuestión es la presencia de los cinturones de Van Allen: capas de partículas altamente cargadas, atrapadas por el campo magnético de la Tierra. Cualquier satélite que volara dentro de los cinturones quedaría destruido casi al instante debido a las partículas (Fig. \ref{fig: satelites prop}).
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN21.png}
+\caption{Satélites de comunicaciones y algunas de sus propiedades, incluyendo la altitud sobre la Tierra, el tiempo de retardo de viaje redondo y la cantidad de satélites necesarios para una cobertura global.}
+\label{fig: satelites prop}
+\end{figure}
+\subsection{Satélites geoestacionarios-GEO}
+Ubicados aproximadamente a los \textbf{35 800 Km } de altura. Actualmente los satélites se encuentran a no menos de 2° de distancia en el plano ecuatorial con el fin de evitar interferencias. Teniendo en cuenta el máximo de satélites es de 360°/2°=180 satélites, sin embargo cada transponedor puede usar múltiple frecuencias y polarizaciones para ampliar su ancho de banda.\\
+Los satélites suelen tener una vida de 10 años aprox., tiempo en el cual se gasta el combustible usado para que los motores puedan realizar \textbf{control de posición orbital}, proceso por el cual un satélite se tiene que auto-calibrar en su órbita debido a que la gravedad solar, lunar y planetaria los saca de su órbita. La energía suficiente para que funcione un satélite viene de sus paneles solares; cuando un de estos este fuera de servicio, su órbita se deteriora sola quedando flotando en el vacío, se debe desactivar y esperar su destrucción aunque rara vez los satélite caen la tierra, (5 toneladas) impactan en forma de pedazos.\\
+La ITU tambien a asignado bandas de frecuencias especificas a los usuarios de satélites (Tabla \ref{tab: banda sat}). Existen dos rangos de frecuencia asignadas a las bandas: enlace descendente (proveniente del satélite) y ascendente (hacia el satélite)
+\begin{table}[]
+\begin{tabular}{lllll}
+\rowcolor[HTML]{FFCE93} 
+Banda & Enlace descendente & Enlace ascendente & Ancho de Banda & Problemas                                                              \\
+L     & 1.5 GHz            & 1.6 GHz           & 15 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\
+S     & .1.9 GHz           & 2.2 GHz           & 70 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\
+C     & .4.0 GHz           & 6.0 GHz           & 500 MHz        & Interferencia terrestre                                                \\
+Ku    & 11 GHz             & 14 GHz            & 500 MHz        & Lluvia                                                                 \\
+Ka    & 20 GHz             & 30 GHz            & 3500 MHz       & Lluvia, costo alto.                                                   
+\end{tabular}
+\caption{Principales bandas de satélites.}
+\label{tab: banda sat}
+\end{table}
+Las que aún no están saturadas son las bandas K superior e inferior, a sus frecuencias más altas permite que los satélites estén a 1° de separación aunque la debilidad es el agua, ya que absorbe estas microondas cortas, aunque puede ser pronosticado para usar más estaciones terrestres a costa de usar más recursos. La K superior es usada para el tráfico comercial, militares y gubernamentales de satélites pero el equipo es costoso.\\
+Lo que se usa comunmente aqui son las ``estaciones" \textbf{VSAT}, microestaciones que no son posibles de enviar datos(al menos por si solas) a otras microestaciones debido a su velocidad de subida de 1Mbps pero siendo su bajada de varios Mbps, es por ello que necesitas un antena más grande llamada \textbf{HUB} (Fig. \ref{fig: vsat hub}), que recibe la señal, la amplifica para enviarla a su destino aunque tiene a desventaja un mayor retardo.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{IN1/IN22.png}
+\caption{VSAT usando un HUB.}
+\label{fig: vsat hub}
+\end{figure}
+\subsection{Satélites de órbita media-MEO}
+Situadas entre los cinturones de Van Allen (Fig. \ref{fig: satelites prop}), tardan 6 horas en dar la vuelta a la tierra, por lo que hay que estar rastreandolos a medida que se mueven por el cielo, al estar a menor altura que los GEO producen una huella pequeña en la tierra y no requieren poderosos transmisores, actualmente estos se usan para sistemas de navegación en vez de telecomunicaciones, por ejemplo el GPS, posee 30 satélites que giran a una distancia de 20 200Km.
+\subsection{Satélites de órbita terrestre baja-LEO}
+Aún por debajo de los MEO, se encuentran los LEO, de gran movimiento pero de gran número de unidades para tener un sistema completo, no necesitas mucha potencia y son económicos.\\
+\textbf{Iridium}\\
+Desarrollados por Motorola, paso de ser 77 satélites lanzados inicialmente a 66,  con la premisa que tan pronto como un satélite quedará fuera del campo de visión de un usuario, otro ocuparía su lugar. Ofrece servicios de voz, datos, radiolocalización, fax y navegación en tierra, aire y mar, por medio de dispositivos portátiles que se comunican de manera directa con los satélites Iridium. Tiene clientes como entidades gubernamentales, militares marítimas, aviación y personas que viajan a lugares donde no hay infraestructura de telecomunicaciones (desiertos, montañas, el Polo Sur y algunos países del Tercer Mundo).\\
+Estos satélites estan a una altura de 750 Km en orbitas polares circulares, separados a 32° de latitud cada anillo (Fig. \ref{fig: iridium}). Cada satélite tiene un máximo de 48 celdas (haces puntuales) y una capacidad de 3 840 canales, algunos de los cuales se utilizan para radiolocalización y navegación, mientras que otros se utilizan para datos y voz.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.5\linewidth]{IN1/IN23.png}
+\caption{Los satélites Iridium forman un seis collares al rededor de la Tierra.}
+\label{fig: iridium}
+\end{figure}
+La comunicación de Iridium se realiza por el espacio (Fig. \ref{fig: iridium-global}.a), los satélites transmiten la llamada a través de la rejilla y la envía de nuevo a la tierra cuando llega a su destino. Una alternativa para este diseño es \textbf{Globalstar}, 48 satélites LEO que utilizan el concepto de \textbf{tubo doblado}, con el mismo ejemplo de la llamada, la llamada sale del usuario en el polo norte, se envía a al receptor terrestre más cercano, se hace el envió por tierra y se entrega al satelite más cercano al receptor (Fig. \ref{fig: iridium-global}.b), es obvio que la complejidad es menor pues estando en la tierra la conexión se pueden solucionar errores o hacer modificaciones más rápido. Además, el uso de antenas grandes en la estación en tierra que pueden enviar una señal potente y recibir una débil significa que se pueden utilizar teléfonos de baja potencia. Después de todo, el teléfono sólo emite unos cuantos miliwatts de potencia, de modo que la señal que llega a la estación en tierra es muy débil, aún después de que el satélite la haya amplificado.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.6\linewidth]{IN1/IN24.png}
+\caption{(a) Transmisión en el espacio. (b) Transmisión en la tierra.}
+\label{fig: iridium-global}
+\end{figure}
+\begin{proposition}[DNS: Resolución de IP a traves de nombres de maquina.]
+Existe dos formas: \textbf{iterativamente}:
+\begin{center}
+\includegraphics[scale=0.3]{IN1/IN19}
+\end{center}
+Si vemos las flechas numeradas. Primero el cliente consulta a su DNS local, asumiendo que no lo tienen, el DNS local  le preguntará al root DNS server (uno a nivel mundial), si no lo sabe lo redirecciona al TLD (Top level domain) DNS server que es el que tiene ese nombre. Asi el local DNS le preguntará al TLD DNS server. De no saberlo, el TLD lo dará la dirección del Authoritative DNS server. Y cuando lo tenga este le dará el IP de la PC con el nombre.\\
+La segunda forma es \textbf{Recursiva}:
+\begin{center}
+\includegraphics[scale=0.3]{IN1/IN20.png}
+\end{center}
+Busca en cada DNS server, creando una red ``directa'' entre ambos PC, lo malo de esta manera es que sobrecarga cada nivel, es por eso que las direcciones se guardan en un archivo caché, que se actualizarán cada cierto tiempo, el problema es que si cambias un nombre no funcionará la conexión hasta que se actualicé esta caché.
+\end{proposition}
+\section{Modulación digital y multiplexión}\index{Modulación digital y multiplexión}
+\subsection{Transmisión Pasa-banda}
+Incluso para los cables, es útil colocar una señal en una banda de frecuencias \textbf{específica} para dejar que \textbf{coexistan} distintos tipos de señales en el canal. A este tipo de transmisión se le conoce como \textbf{transmisión pasa-banda}, debido a que se utiliza una banda arbitraria de frecuencias para pasar la señal. Los valores absolutos de la frecuencia \textbf{no importan} en cuanto a la capacidad. Esto significa que podemos tomar una señal de banda base que ocupe de 0 a \textit{B} Hz y desplazarla para que ocupe una banda de paso de S a \textit{S+B} Hz sin cambiar la cantidad de información que puede transportar, aun cuando la señal se vea diferente. Para procesar una señal en el receptor, la podemos desplazar de vuelta a la banda base, en donde es más conveniente detectar símbolos. Para lograr la modulación digital mediante la transmisión pasa-banda, se regula o modula una señal portadora que se sitúa en la banda de paso.	Las modulaciones son las siguientes (Fig. \ref{fig: modulacion ancho B})
+\begin{enumerate}
+\item \textbf{ASK}: Modulación por desplazamiento de amplitud.
+\item \textbf{FSK}: Modulación por desplazamiento de frecuencia.
+\item \textbf{PSK}: Modulación por desplazamiento de fase.
+\item \textbf{BSPK}: Variación de PSK para solo 2 bits.
+\item \textbf{QPSK}: Variación de PSK para solo 4 bits.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.65\linewidth]{IN1/IN25.png}
+\caption{a. Señal binaria b. ASK c. FSK d. PSK}
+\label{fig: modulacion ancho B}
+\end{figure}
+Se pueden mezclar estas modulaciones para obtener más símbolos enviados pero solo se puede modular o bien frecuencia o bien fase, nunca ambos,. ya que están relacionadas; la frecuencia es la tasa de cambio de la fase a través del tiempo. La más común es combinar amplitud con fase, en esta combinación es común representarlas como \textbf{diagramas de constelación} y suelen usar el término \textbf{QAM} (Modulación por amplitud de cuadratura) (Fig. \ref{fig: diagrama de constelación}), a más puntos en los diagramas se puede transmitir más bits por símbolo, es decir con una modulación QAM-64 se pueden transmitir 6 bits por símbolo. Las modulaciones y los bits por símbolo estas relacionados por potencias de 2.\\
+Es de vital importancia que receptor pueda ubicar correctamente el inicio del tren de símbolos: si enviamos por ejemplo 0101-1011; si el receptor lee mal (ruido) puede leer 1011-0110 y toda la información estaría errónea. Por eso se utiliza \textbf{código Gray}, donde la diferencia entre los símbolos es solo de un bit. (Fig. \ref{fig: qam gray}), el error solo es de un bit, y no es tan drástico como lo sería una codificación binaria simple.
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN26.png}
+\caption{a. QPSK b. QAM-16 c. QAM-64}
+\label{fig: diagrama de constelación}
+\end{figure}
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN27.png}
+\caption{QAM-16 con código Gray}
+\label{fig: qam gray}
+\end{figure}
+En la imagen \ref{fig: qam gray} se notan los posibles resultados de una decodificación alterada por el ruido y sus posibles lecturas donde solo difieren en un bit.
+\section{Multiplexión por división de frecuencia-FDM}\index{Multiplexión por división de frecuencia-FDM}
+Aprovecha la transmisión pasa-banda, el ejemplo más claro es la radio: donde para la modulación AM se divide el ancho de banda dedicado a la radio AM en sub-bandas, y cada sub-banda o canal lógico sería cada estación de radio. En la Fig. \ref{fig: fdm mul} se muestra en Fig. \ref{fig: fdm mul}.a 3 servicios de telefonía, cada uno entro de las frecuencias útiles del caso (para telefonía es de 3100 KHz). Luego cada una de las sub-bandas se elevan en frecuencia (Fig. \ref{fig: fdm mul}.b) en distintos factores pues no deben compartir la misma frecuencia, si existe un espacio vacío entre ambas sub-bandas, a ese espacio se le llama \textbf{banda de guarda}; una vez que estén elevadas en frecuencias se pueden transmitir en el espectro electromagnético (Fig. \ref{fig: fdm mul}.c). Notesé que en las fronteras de cada sub-banda existe un cruce porque los filtros que la controlan no son ideales, es decir no cortan en seco, sino hay un desvanecimiento.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN28.png}
+\caption{a. Anchos de banda originales b. Anchos de banda elevados en frecuencia c. Canal multiplexado}
+\label{fig: fdm mul}
+\end{figure}
+\section{Multiplexión por división de tiempo-TDM}
+Alternativa el TDM, aquí cada usuario ocupa todo el ancho de banda durante un periodo pequeño de tiempo, y pasa al siguiente usuario (Fig. \ref{fig: tdm}). Se tomán bits de cada entrada en una sola \textbf{ranura de tiempo}, este flujo opera a una velocidad de la suma de los flujos individuales. NO confundir con \textbf{STDM}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN29.png}
+\caption{Multiplexación por división de tiempo.}
+\label{fig: tdm}
+\end{figure}
+4 conexiones T1 a 1.554Mbps, multiplexadas por TDM originan una conexión T2 a 6.312 Mbps, 7 conexiones T2 por TDM originan una conexión T3 a 44.736 Mbps y por último 6 T3 en TDM generan una conexión T4 a 274.176 Mbps. (Fig. \ref{fig: t1 carrier})
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN30.png}
+\caption{Multiplexación de una portadora T1 en portadoras mayores.}
+\label{fig: t1 carrier}
+\end{figure}
+\chapterimage{chapter_head_IN1.pdf}
+\chapter{Capa de enlace}
+Ahora nos enfocamos en los algoritmos para lograr una comunicación confiable y eficiente de unidades completas de información llamadas tramas (en vez de bits individuales, como en la capa física) entre dos máquinas adyacentes (conectadas).
+\section{Cuestiones de diseño de la capa de enlace de datos}
+Esta capa usa los servicios de la capa física para enviar y recibir bits por medios físicos o canales de comunicación. Sus funciones más relevantes son:
+\begin{enumerate}
+\item Proporcionar  la capa de red una interfaz de servicio bien definida.
+\item Manejar los errores de transmisión.
+\item Regular el flujo de datos para que los emisores no saturen a los receptores lentos.
+\end{enumerate}
+Esta capa toma los paquetes de la capa de red y los ``empaqueta'' en tramas para transmitirlos: esto significa poner a cada paquete su encabezado y terminador. Al campo de carga útil donde se puede almacenar la información o la carga útil se llama \textbf{\textit{payload}} (Fig. \ref{fig: paquete y trama}).
+\begin{figure}[]
+\centering
+\includegraphics[width=0.6\linewidth]{IN1/IN31.png}
+\caption{Relación entre paquete y tramas.}
+\label{fig: paquete y trama}
+\end{figure}
+\section{Servicios proporcionados a la capa de red}
+Esta capa funciona para la capa de red, su función es la transmisión de datos entre las capas de red de dos computadoras (Fig. \ref{fig: comuncacion virtual}.a), pero como vimos desde la capa física, la comunicación virtual ocupa también las capas inferiores (Fig. \ref{fig: comuncacion virtual}.b). Para esta sección utilizaremos la Fig. \ref{fig: comuncacion virtual}.a.\\
+Tres posibles servicios son posibles para el diseño de la capa de enlace:
+\begin{enumerate}
+\item Servicio sin conexión ni confirmación de recepción: Enviar tramas independiente al destino sin confirmación de recepción, como el Ethernet, conectas cuando quieras por lo que no se necesita una coordinación previa ni el canal se libera después de usarse, no importa si se pierde datos. Es buena para servicios con tasa error baja y donde es peor retraso en los datos que errores, como las llamadas de voz.
+\item Servicio sin conexión con confirmación de recepción: No es necesario una conexión lógica pero si la confirmación de manera individual de cada trama, de esta manera el emisor siempre esta revisando la correcta llegada de las tramas, de ser erróneo, reenvía esa trama. Sistemas inalámbricos como el 802.11 (WiFi) es un buen ejemplo.
+\item Servicio orientado a conexión con conformación de recepción: Se establece una conexión antes de transferir datos, cada trama que se envía está numerada, y la capa de enlace garantiza que cada una de ellas llegue al destino. Ejemplos serían un canal de satélite o circulo telefónico de larga distancia.
+\end{enumerate}
+Cuando se utiliza un servicio orientado a conexión, las transferencias pasan por tres fases distintas. En la primera, la conexión se establece haciendo que ambos lados inicial icen las variables y los contadores necesarios para seguir la pista de las tramas que se recibieron y las que no. En la segunda fase se transmiten una o más tramas. En la tercera y última fase, la conexión se libera al igual que las variables, los búferes y otros recursos utilizados para mantener la conexión.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.5\linewidth]{IN1/IN32.png}
+\caption{a. Comunicación virtual b. Comunicación real}
+\label{fig: comuncacion virtual}
+\end{figure}
+\section{Entramado}
+Para enviar los datos de la capa de red, la capa de enlace usa a la capa física, aunque tenemos que tener el cuenta ruido y no se asegura que el flujo de bits este sin errores. La capa de enlace es la encargada de corregir estos errores.\\
+El método más común en entramar el flujo de bits en tramas discretas, calcular un token de verificación mediante un algoritmo e incluya este token en la trama; cuando llegue a su destino, el receptor hace el mismo algoritmo y deben coincidir los tokens, de ahí se puede decidir si se reenvía, se hace un informe de errores, borra la trama, etc.\\
+Entramas bits es más complicado de lo que parece, un buen diseño facilita al receptor el proceso de encontrar el inicio de las nuevas tramas al tiempo que utiliza una pequeña parte del ancho de banda del canal, veremos 4 métodos. 
+\subsection{Conteo de bytes}
+Esta trata de contar cuantos bytes hay en cada trama y colocar este número en el primer byte de la trama, así el sistema del destino sabrá cuantos bytes siguen o cuanto dura cada trama. Esta descripción se muestra en la figura \ref{fig: conteo de bytes}.a, observa que el primer byte de cada trama indica cuantos bytes tiene esa trama: 5, 5, 8 y 8 bytes de longitud. El problema es el ruido que altera la señal, en la figura \ref{fig: conteo de bytes}.b vemos que hay un error, ese error va causar que las tramas después de esa serán todas erróneas, y aunque usemos el token de verificación, el sistema no sabe desde donde esta mal el flujo de bits.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN33.png}
+\caption{Flujo de bits a. Sin errores b. Con un error}
+\label{fig: conteo de bytes}
+\end{figure}
+\subsection{Bytes bandera con relleno de bytes}
+Aquí se arreglar el problema de sincronización del anterior método por bytes especiales al inicio y final de cada trama, llamados \textbf{bytes bandera} como se observa en la figura \ref{fig: bytes bandera}.a. De esta manera si hay errores solo se busca el trama y se identifica sus banderas.\\
+Igual existe la posibilidad uno de los bytes del payload coincida con los bytes bandera, si esto ocurre habría un problema, por eso se puede poner un byte ESC antes de las coincidencias dentro del payload, así el sistema sabe que ese byte después del ESC NO es una byte bandera, ya luego se quita para darlo a la capa de red, lo mismo para si un byte de ESC es igual a un byte del payload, en ese caso se pone más bytes de ESC delante de los bytes de ESC que tienen coincidencias (Fig. \ref{fig: bytes bandera}.b). Esta técnica se llama \textbf{relleno de bytes} .
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN34.png}
+\caption{a. Una trama limitada por bytes bandera b. Cuatro ejemplos de secuencias de bytes antes y despues del relleono de bytes.}
+\label{fig: bytes bandera}
+\end{figure}
+\subsection{Bits bandera con relleno de bits}
+Este método resuelve una desventaja del anterior: el usar bytes de 8 bits. También permite el entramado a nivel de bit, siendo los bits bandera 01111110 o 0x7E, cada vez que la capa de enlace de datos del emisor encuentra cinco bits 1 consecutivos en los datos, inserta automáticamente un 0 como relleno en el flujo de bits de salida. Este relleno de bits es análogo al relleno de bytes, en el cual se inserta un byte de escape en el flujo de caracteres de salida antes de un byte bandera en los datos. Cuando el receptor ve cinco bits 1 de entrada consecutivos, seguidos de un bit 0, extrae (es decir, borra) de manera automática el bit 0 de relleno. Así como el relleno de bytes es completamente transparente para la capa de red en ambas computadoras, también lo es el relleno de bits. Si los datos de usuario contienen el patrón bandera 01111110, éste se transmite como 011111010, pero se almacena en la memoria del receptor como 01111110. En la figura 3-5 se muestra un ejemplo del relleno de bits (Fig. \ref{fig: bandera bits}).
+\begin{figure}[]
+\centering
+\includegraphics[width=0.6\linewidth]{IN1/IN35.png}
+\caption{Relleno de bits. (a) Los datos originales. (b) Los datos, según aparecen en la línea. (c) Los datos, como se almacenan en la memoria del receptor después de quitar el relleno.}
+\label{fig: bandera bits}
+\end{figure}
+Con el relleno de bits, el límite entre las dos tramas puede ser reconocido sin ambigüedades mediante el patrón bandera. De esta manera, si el receptor pierde la pista de dónde está, todo lo que tiene que hacer es explorar la entrada en busca de secuencias de banderas, pues sólo pueden ocurrir en los límites de las
+tramas y nunca dentro de los datos.
+\begin{remark}
+El problema de estos rellenos de bytes y bits es que agranda las tramas y se hacen más largas.
+\end{remark}
+\section{Código de detección de errores: Paridad}
+Este trabaja con el \textbf{bit de paridad}, este se elige contando la cantidad de bits de valor 1 en la palabra codificada: Si se envia la secuencia \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0, contamos los bits de valor 1 y tenemos 4, se dice que es un bit en \textbf{paridad par}, por lo tanto el bit de paridad que se agrega sería 0 para no alterarla: \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0\textcolor{blue}{0}. Por el otro lado si tenemos \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0 y queremos convertirlo a paridad impar, añadimos un 1 al final \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0\textcolor{red}{1}, si contamos los bits de valor 1 son 5 en total.\\
+Se utiliza una matriz rectangular de \textit{n} bits de ancho por \textit{k} bits de alto, calculando los bits de paridad sobre cada una de las \textit{n} columnas, a este proceso se le llama \textbf{intercalado}: calculamos la paridad para cada una de las \textit{n} columnas y enviamos todos los bits de datos como \textit{k} filas, para ello enviamos las filas de arriba hacia abajo y los bits en cada fila de izquierda a derecha de la manera usual. En la última fila enviamos los \textit{n} bits de paridad, por ejemplo para la palabra \textit{network} con \textit{n}=7 y \textit{k}=7:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{IN1/IN36.png}
+\caption{Intercalado de bits de paridad para detectar error de ráfaga.}
+\label{fig: intercalado}
+\end{figure}
+Resolvemos la paridad para cada columna de la palabra \textit{network}, una vez hallado lo bits de paridad se envía. Una vez en el receptor, cuando ocurre un error de ráfaga \textit{n}=7, los bits con error se esparcen a través de las distintas columnas, un error de ráfaga no implica que todos estén mal, solo implica que por lo menos el primero y el último están mal. En la Fig. \ref{fig: intercalado} notamos que se han errado 4 bits de un rango de 7 bits, por lo menos un bit en cada una de las \textit{n} columnas se verá afectado. Este metodo usa \textit{n} bits de paridad en bloque de \textit{kn} bits de datos para detectar un solo error de ráfaga de longitud \textit{n} o menor. Si haces la paridad par en el receptor de cada columna, notarás que esos bits sombreados no coinciden son los que se envió, por lo que se detecta el error.
+\section{Protocolos elementales de enlace de datos}
+\subsection{Protocolo simple utópico}
+Los datos son transmitidos en una sola dirección; las capas de red tanto del emisor como del receptor siempre están listas. Podemos ignorar el tiempo de procesamiento. Hay un espacio infinito de búfer disponible. Y lo mejor de todo, el canal de comunicación entre las capas de enlace de datos nunca daña ni pierde las tramas. Los protocolos se realizan en la capa de enlace de la maquina de origen y en el receptor, el único tipo de evento es \textit{frame\_ arrival}, es decir, la llegada de una trama \textbf{sin daños}. Este es un protocolo utópico, porque el emisor siempre esta \textbf{dispuesto a obtener un paquete} de la capa de red, construye la trama y la envía. En el receptor, siempre esta atento a que suceda algo, llega una trama, la saca del búfer, se la envía  a la capa red y limpia el camino (búfer). El protocolo utópico es irreal, ya que no maneja el control de flujo ni la corrección de errores. Su procesamiento se asemeja al de un servicio sin conexión ni confirmación de recepción que depende de las capas más altas para resolver estos problemas, aun cuando un servicio sin conexión ni confirmación de recepción realizaría cierta detección de errores.
+\subsection{Protocolo simplex de parada y espera para un canal libre de errores}
+Aquí tomamos la primera consideración: posee un búfer finito, en otras palabras, evitar que el emisor envié demasiadas tramas que pueden saturar al receptor. Como su nombre lo dice, con este protocolo, se envía la trama, se detiene el sistema hasta que llegué al receptor y envié una ``trama de confirmación'' hacia el emisor y el emisor recién envié la siguiente trama. Por lo que habrá momentos en los cuales la capa no sé usa para nada.
+\subsection{Protocolo simplex de parada y espera para un canal ruidoso}
+Para reducir la excesiva latencia del anterior método, usamos un temporizador en el emisor, que espera cada cierto tiempo la llegada de la ``trama de confirmación'', pasado ese tiempo si no recibe la confirmación, el emisor envía la misma trama y así sucesivamente. El problema es que al ser un canal ruidoso, este puede corromper a la trama de confirmación haciendo que nunca llegué, y si nunca llega el emisor mandará de nuevo la trama pues el reloj ya expiró. Puede evitarse enumerando la secuencia en el encabezado de cada trama.
+\section{Protocolos de ventana deslizante}
+Mejorando los anteriores protocolos unidireccionales o half-duplex, es necesario hacerlos full duplex. Nos vemos forzados a usar 1 mismo medio físico pues dos de ellos demandaría más recursos. En este caso, A manda a B la trama, B no envía la trama de confirmación inmediatamente a A , sino,  espera a que B tenga un mensaje para enviar A e introduce la trama de confirmación en la trama que irá de B a A. Esta técnica de retrasar la confirmación se llama \textbf{superposición}. Aún este protocolo tiene unas fallas: ¿Como sabes que tiempo esperar para que llegué la confirmación?\\
+Los siguientes protocolos pertenecen al protocolo \textbf{ventana deslizante}, que basan sus funcionamiento en ``ventanas'' (Fig. \ref{fig: Ventana deslizante}), empieza primero con una ventana de \textit{n} tramas, una vez que la trama 80 se halla mandado correctamente, la ventana avanza hacia abajo, abarcando más tramas. Esta demás que mientras la ventana sea más grande tomará más tiempo y se necesitará más espacio de buffer. Debido a que las tramas que están en la ventana del emisor se pueden perder o dañar en tránsito, el emisor debe mantener todas estas tramas en su memoria para su posible retransmisión. Por lo tanto, si el tamaño máximo de la ventana es n, el emisor necesita n búferes para contener las tramas sin confirmación de recepción. Si la ventana llega a crecer a su tamaño máximo, la capa de enlace de datos emisora deberá hacer que la capa de red se detenga hasta que se libere otro búfer. En algunos protocolos las ventanas son de tamaño fijo, pero en otros pueden aumentar o reducir su tamaño con el transcurso del tiempo, a medida que se envían y reciben
+las tramas.
+\begin{figure}[]
+\centering
+\subfloat[Ventana inicial]{\includegraphics[width=0.3\linewidth]{IN1/IN37.png}}
+\subfloat[Desplazamiento de ventana]{\includegraphics[width=0.3\linewidth]{IN1/IN38.png}}
+\caption{Ventana deslizante}
+\label{fig: Ventana deslizante}
+\end{figure}
+\section{Protocolo retroceso N}
+Hasta ahora hemos subestimado el tiempo de envio, recepción y confirmación. En estas situaciones el tiempo de viaje de ida y vuelta prolongado puede tener implicaciones importantes para la eficiencia de la utilización del ancho de banda. Por ejemplo, considere un canal de satélite de 50 kbps con un retardo de propagación de ida y vuelta de 500 mseg. Imagine que intentamos utilizar el protocolo 4 para enviar tramas de 1000 bits por medio del satélite. En t 5 0, el emisor empieza a enviar la primera trama. En \textit{t}=20 mseg la trama se ha enviado por completo. En el mejor de los casos (sin esperas en el receptor y con una trama de confirmación de recepción corta), no es sino hasta \textit{t}=270 mseg que la trama ha llegado por completo al receptor, y no es sino hasta t=520 mseg que ha llegado la confirmación de recepción de regreso al emisor. Esto implica que el emisor estuvo bloqueado durante 500/520 o 96\% del tiempo. En otras palabras, sólo se usó 4\% del ancho de banda disponible. Sin duda, la combinación de un tiempo de tránsito grande, un alto ancho de banda y una longitud de tramas corta es desastrosa en términos de eficiencia. El problema antes descrito puede considerarse como una consecuencia de la regla que requiere que el emisor espere una confirmación de recepción antes de enviar otra trama. Si relajamos esa restricción, podremos obtener una mejor eficiencia. Básicamente la solución está en permitir que el emisor envíe hasta w tramas antes de bloquearse, en lugar de que sólo envíe 1. Con una selección suficientemente grande de w, el emisor podrá transmitir tramas en forma continua, ya que las confirmaciones de recepción llegarán para las tramas anteriores antes de que la ventana se llene, lo cual evitará que el emisor se bloquee.
+\begin{definition}[Utilización del enlace]
+Para encontrar un valor apropiado para w necesitamos saber cuántas tramas pueden caber dentro del canal mientras se propagan del emisor al receptor. Esta capacidad se determina mediante el ancho de banda en bits/seg, multiplicado por el tiempo de tránsito en un sentido, mejor conocido como producto de ancho de banda-retardo del enlace. Podemos dividir esta cantidad entre el número de bits en una trama para expresar el producto como un número de tramas. Llamemos a esta cantidad BD. Entonces, \textit{w} debe ser establecido a 2BD + 1. El doble del producto ancho de banda retardo es el número de tramas que pueden quedar pendientes si el emisor envía en forma continua tramas cuando se considera el tiempo de ida y vuelta para recibir una confirmación de recepción. El ``+1'' se debe a que no se enviará una trama de confirmación de recepción sino hasta recibir una trama completa.
+\begin{equation}
+\text{utilización del enlace}\leqslant\frac{w}{1+2BD}
+\end{equation}
+\end{definition}
+Para el enlace de ejemplo con un ancho de banda de 50 kbps y un tiempo de tránsito en un sentido de 250 mseg, el producto de ancho de banda-retardo es de 12.5 kbit o 12.5 tramas de 1 000 bits cada una. Entonces, 2BD 1 1 es 26 tramas. Suponga que el emisor empieza a enviar la trama 0 como antes y que envía una nueva trama cada 20 mseg. Para cuando termine de enviar 26 tramas en t 5 520 mseg, apenas sí llegará la confirmación de recepción de la trama 0. A partir de entonces, las confirmaciones de recepción llegarán cada 20 mseg, por lo que el emisor siempre tendrá permiso de continuar justo cuando lo necesite. De aquí en adelante siempre habrá 25 o 26 tramas pendientes de confirmación de recepción. Dicho de otra manera, el tamaño máximo de la ventana del emisor es de 26.\\
+Esta técnica de mantener varias tramas en movimiento es un ejemplo de canalización (pipeling). La canalización de tramas a través de un canal de comunicación no confiable presenta problemas serios. Primero, ¿qué ocurre si una trama a la mitad de un flujo extenso se daña o pierde? Llegarán grandes cantidades de tramas sucesivas al receptor antes de que el emisor se entere de que algo anda mal. Cuando llega una trama dañada al receptor es obvio que debe descartarse pero, ¿qué debe hacer el receptor con todas las tramas correctas que le siguen? Recuerde que la capa de enlace de datos del receptor está obligada a entregar paquetes a la capa de red en secuencia.\\
+Hay dos valores para arreglar esos errores en la canalización (Fig. \ref{fig: canalización})
+\begin{figure}[]
+\centering
+\includegraphics[width=0.8\linewidth]{IN1/IN39.png}
+\caption{Canalización y recuperación de errores. Error cuando a. el tamaño de la ventana del receptor es 1 y b. el tamaño de la ventana del receptor es grande.}
+\label{fig: canalización}
+\end{figure}
+En Fig. \ref{fig: canalización}.a las tramas se envian y se confirman (Ack), vemos que la trama 2 tiene un error, en ese caso se termina de enviar las tramas correspondientes a esa ventana, una vez que se haya terminado de enviar las tramas de esa ventana, se vuelven a enviar las tramas desde donde ha ocurrido el error, y se descarta las siguientes tramas hasta donde abarca la ventana. En Fig. \ref{fig: canalización}.b la que se daña o pierde es la trama 2, el emisor sin saber de eso sigue enviando hasta que el temporizador de la ventana se termine, pero las tramas dentro de la ventana posterior no se pierden, se almacenan en un buffér y se re-ordenan en la capa de enlace.
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -6405,6 +6657,9 @@ Enlace que permite solo la comunicación en un solo sentido.
 \end{vocabulary}
 \begin{vocabulary}[Diafonía]
 Perturbación electromagnética producida en un canal de comunicación por el acoplamiento de este con otro u otros vecinos.
+\end{vocabulary}
+\begin{vocabulary}[Buffer]
+El buffer es un espacio temporal de memoria física el cual se usa para almacenar información mientras se envía de un lado a otro.
 \end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
@@ -6437,6 +6692,7 @@ Fenómeno ondulatorio que ocurre cuando una onda se reproduce al atravesar una a
 %	CHAPTER
 %----------------------------------------------------------------------------------------
 \part{Microcontrolador y microprocesador}
+%----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_MM.pdf}
 \chapter{Arquitectura y principios del microcontrolador}
 \chapterimage{chapter_head_MM.pdf}
@@ -6861,7 +7117,7 @@ Para el primer punto, nos esta ofreciendo el dato en \textbf{dBm}, usando la eq.
 \begin{align*}
 0dBm&=10\cdot\log_{10}\left(\frac{P_{out}}{1mW}\right)dBm\\
 0dBm&=\cdot\log_{10}\left(\frac{P_{out}}{1mW}\right)dBm\\
-0&=\log_{10}\left(\frac{P_{out}mW}{1mW}\right)\\
+0&=\log_{10}\left(\frac{P_{out}}{1mW}\right)\\
 10^0&=\frac{P_{out}}{1mW}\\
 P_{out}&=1mW\simeq 10^{-3}W
 \end{align*}
@@ -6931,14 +7187,14 @@ Donde:\\
 \end{itemize}
 \end{definition}
 \begin{example}
-Se tiene un transmisor de 100 WATTS que opera en la banda HF, con cable coaxial de atenuación de 1,7 dB/100m y una antena de ganancia de 10 dBi. Calcular la potencia radiada efectiva.\\
+Se tiene un transmisor de 100 Watts que opera en la banda HF, con cable coaxial de atenuación de 1,7 dB/100m y una antena de ganancia de 10 dBi. Calcular la potencia radiada efectiva.\\
 \begin{center}
 \includegraphics[scale=0.5]{IM/IM4.png}
 \end{center}
 \textbf{Solución}:
 Usando la ecuación \ref{eq:Pire}, debemos acomodar nuestros datos. Empezamos con el calculo de $P_{tx}$=100W:
 \begin{align*}
-L_{P/1mW}&=10\cdot \log_{10}\left(\frac{100\times ^3mW}{1mW}\right)dBm\\
+L_{P/1mW}&=10\cdot \log_{10}\left(\frac{100}{1mW}\right)dBm\\
 L_{P/1mW}&=50dBm
 \end{align*}
 El \textbf{calculo por perdida en el cable}, vemos que el total de cable es de 150m: 50 desde el transmisor a la antena y 100m de altura de la antena:
@@ -6953,7 +7209,7 @@ P_{IRE}&=54.45 dBm
 \end{align*}
 Podemos pasar de dBm a Watts:
 \begin{align*}
-57.45dBm&=10\cdot \log_{10}\left(\frac{P_{IRE}mW}{1mW}\right)dBm\\
+57.45dBm&=10\cdot \log_{10}\left(\frac{P_{IRE}}{1mW}\right)dBm\\
 P_{IRE}&=555.9 W
 \end{align*}
 \end{example}
@@ -6973,12 +7229,12 @@ Antes de seguir, vamos a recalcar que es un \textbf{atenuador}, vamos a calcular
 \end{center}
 Se descarta la opcion C ya que el nivel final antes de entrar al vatímetro es de 12 dBm, estando fuera del rango de 0 a -15 dBm del vatímetro y en consecuencia puede dañar el instrumento. Aún nos quedan dos opciones, ahora debemos de analizar a nivel de potencia. Analicemos la opción a nivel de \textbf{potencia}:
 \begin{align*}
-27dBm=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
+27dBm=&10\cdot \log_{10}\left(\frac{P_{out}}{1mW}\right)dBm\\
 P_{out}&=0.5W
 \end{align*}
 Ya salida en watts del transmisor es de 0.5W(27dBm) pero vemos que su primer atenuador solo resiste 0.2W, por lo tanto no es adecuado. Descartando así la opción a. Probamos la opción b si es correcta o incorrecta, ojo, analizamos el segundo atenuador de la opción b, pues el primer atenuador resiste 1W, así que no habrá problema:
 \begin{align*}
-17=&10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm\\
+17=&10\cdot \log_{10}\left(\frac{P_{out}}{1mW}\right)dBm\\
 P_{out}&=0.05W
 \end{align*}
 La potencia es de 0.05W cuando el segundo atenuador puede aguantar 0.1W y no habrá problema, así que la opción correcta es la b.
@@ -7006,7 +7262,7 @@ Basado en el ejemplo \ref{exa:01}:\textbf{generador de audio}, hallar el factor 
 \textbf{Solución:}\\
 Empezamos con la relación de dBm, y escribimos su equivalencia usando la forma de la potencia, en este caso asumimos que estamos trabajando a 600$\Omega$:
 \begin{displaymath}
-L_{P/1mW}=10\cdot\log\left(\frac{PmW}{1mW}\right)=10\cdot\log\left(\frac{\frac{V^2}{Z}}{\frac{0.775^2}{600}}\right)
+L_{P/1mW}=10\cdot\log\left(\frac{P}{1mW}\right)=10\cdot\log\left(\frac{\frac{V^2}{Z}}{\frac{0.775^2}{600}}\right)
 \end{displaymath}
 Tan solo hemos puesto sus equivalentes, como nos dice \textbf{si la impedancia en un punto es diferente de 600$\Omega$}, es por ello que arriba en la potencia lo pusimos en función de variables mientras que con 1mW, hacemos el proceso inverso usando 600$\Omega$ y la relación de potencia-resistencia y se halla que el voltaje es 0.775V.\\Agrupando términos:
 \begin{displaymath}
@@ -7034,7 +7290,7 @@ Encontrar el F.C. para una impedancia de 75$\Omega$. Rpta:
 \end{displaymath}
 \end{exercise}
 \begin{definition}[Compensaciones comunes]
-Basado en lo que vimos, existen unas compensaciones en el caso que el receptor y generador tengan diferentes impedancia:\\Instrumento a 600$\Omega$ y punto de medición diferente a 600$\Omega$(baja frecuencia):
+Basado en lo que vimos, existen unas compensaciones en el caso que el receptor y generador tengan diferentes impedancia:\\Instrumento a 600$\Omega$ y punto de medición diferente a 600$\Omega$(baja frecuencia)\footnote{\textit{E} es el voltaje de la fuente del generador.}
 \begin{equation}
 L_{P/1mW}=20\cdot\log\left(\frac{E}{0.775}\right)-10\cdot\log\left(\frac{Z}{600}\right)
 \end{equation}
@@ -7483,11 +7739,25 @@ El módulo del vector producto vectorial coincide con el área del paralelogramo
 \end{equation}
 Se resuelve igual que la matriz de producto cruz, con la misma distribución de signos.
 \section{Ondas}
+\begin{definition}[Velocidad y onda]
 \begin{equation}
 \label{art:onda y velocidad}
 v=\lambda\cdot f
 \end{equation}
-Donde \textit{v} es velocidad de onda(\textit{c} para la luz en el vacío), $\lambda$ es la longitud de onda y \textit{f} es la frecuencia.
+Donde:
+\begin{itemize}
+\item \textit{v} es velocidad de onda(\textit{c} para la luz en el vacío) (m/s).
+\item $\lambda$ es la longitud de onda. (m)
+\item \textit{f} es la frecuencia (Hz).
+\end{itemize}
+\end{definition}
+\begin{definition}[Ancho de banda y longitud de onda]
+\begin{equation}
+\Delta f \frac{c\Delta\lambda}{\lambda^2}
+\label{art: ancho de banda y onda}
+\end{equation}
+Textualmente: \textit{El ancho de banda es igual a la velocidad de la luz en el vacío (o en el medio) por el ancho de la banda entre la longitud de onda deseada al cuadrado}
+\end{definition}
 \chapterimage{chapter_head_Artificios.pdf}
 \chapter{Decibelios}\label{chap:decibelios}
 \section{Definición de dB}
@@ -7500,7 +7770,7 @@ a=10\cdot \log_{10}\left(\frac{P_1}{P_2}\right)dB
 Si nos referimos un valor de potencia arbitraria a un valor de potencia arbitraria a una cantidad de r una cantidad de referencia fijo, la relación logarítmica de referencia fijo, la relación logarítmica de los dos valores se obtiene una nueva cantidad absoluta. Esta cantidad se define como un nivel. La cantidad de referencia más utilizado en la ingeniería de las telecomunicaciones y de radio frecuencia es de una potencia de 1 mW (una milésima de un vatio) en 50 Ohm. La relación de potencia general de P1($P_out$) a P2($P_in$) se convierte ahora en una relación de P1 a 1 mW. La relación logarítmica proporciona el nivel L. De acuerdo con IEC 27, el valor de referencia tuvo que figurará en el índice de nivel:
 \begin{equation}
 \label{art:dbm}
-L_{P/1mW}=10\cdot \log_{10}\left(\frac{P_{out}mW}{1mW}\right)dBm
+L_{P/1mW}=10\cdot \log_{10}\left(\frac{P_{out}}{1mW}\right)dBm
 \end{equation}
 Por ejemplo, 5mW corresponde a un nivel:
 \begin{displaymath}
@@ -7510,10 +7780,10 @@ L_{p/1mW}=10\cdot \log_{10}\left(\frac{5mW}{1mW}\right)=6.99dB
 Es similar a dBm, la diferencia es la unidad de comparación, aquí usamos una referencia de 1$\mu$V, la forma de expresar el índice de nivel es:
 \begin{equation}
 \label{art:decibel micro voltios}
-L_{p/1\mu V}=20\cdot\log\left(\frac{V_{sal}\mu V}{1\mu V}\right)
+L_{p/1\mu V}=20\cdot\log\left(\frac{V_{sal}}{1\mu V}\right)
 \end{equation}
 \begin{remark}
-Ten cuidado que en las ecuaciones \ref{art:dBm} y \ref{art:decibel micro voltios}, la \textbf{potencia} o \textbf{voltaje} de entrada tiene que estar en mW o $\mu$V, así que tienes que cambiar las unidades. En esos casos se compara la potencia o voltaje de \textbf{salida} respecto a la entrada la fijada, pudiendo ser 1mW o 1$\mu$V.
+Ten cuidado que en las ecuaciones \ref{art:dBm} y \ref{art:decibel micro voltios}, la \textbf{potencia} o \textbf{voltaje} de entrada tiene que estar en las unidades de W o V o sus múltiplos (W, V, mW, mV, $\mu$W, $\mu$V, etc). En esos casos se compara la potencia o voltaje de \textbf{salida} respecto a la entrada la fijada, pudiendo ser 1mW o 1$\mu$V, pero pueden variar la unidades respecto a 1W, 1V y más.
 \end{remark}
 \section{Diferencia entre decibelios de tensión y decibelios de potencia}
 No es sólo un tipo de decibelios, y representa representa una proporción proporción de dos niveles niveles de potencia P1 potencia P1 y P2. Por supuesto, cualquier nivel de potencia puede expresarse como una tensión si se conoce la resistencia, se sabe que la potencia es:
