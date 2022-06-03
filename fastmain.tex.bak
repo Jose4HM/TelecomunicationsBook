@@ -77,8 +77,8 @@ Donde P es el campo de polarización y M es el campo de magnetización, cuando e
 %----------------------------------------------------------------------------------------
 %Internetworking
 %----------------------------------------------------------------------------------------
-\chapterimage{chapter_head_IN1.pdf}
-\chapter{Subcapa de control de acceso al medio}
+%\chapterimage{chapter_head_IN1.pdf}
+%\chapter{Subcapa de control de acceso al medio}
 %----------------------------------------------------------------------------------------
 %Microprocesadores
 %----------------------------------------------------------------------------------------
@@ -88,17 +88,5 @@ Donde P es el campo de polarización y M es el campo de magnetización, cuando e
 %----------------------------------------------------------------------------------------
 %21:27 falta material
 %----------------------------------------------------------------------------------------
-\begin{table}[]
-\centering
-\begin{tabular}{|c|c|c|}
-\hline
-\rowcolor[HTML]{34CDF9} 
-t                                                                                                     & d                                                                                             & ed                                                                                                \\ \hline
-\rowcolor[HTML]{DAE8FC} 
-Después de sonidos \textbf{sin} voz                                                                            & Después de sonidos \textbf{con} voz                                                                    & Después de \textit{t} o \textit{d                                                                                 } \\ \hline
-\begin{tabular}[c]{@{}c@{}}watched\\ worked\\ laughed\\ washed\\ liked\\ helped\\ walked\end{tabular} & \begin{tabular}[c]{@{}c@{}}lived\\ moved\\ tried\\ played\\ loved\\ cried\\ lied\end{tabular} & \begin{tabular}[c]{@{}c@{}}wanted\\ waited\\ needed\\ exited\\ ended\\ added\\ hated\end{tabular} \\ \hline
-\end{tabular}
-\caption{Past pronunciation.}
-\end{table}
 \end{document}
 %----------------------------------------------------------------------------------------

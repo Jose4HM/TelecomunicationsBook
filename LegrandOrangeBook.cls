@@ -54,6 +54,12 @@
 \usepackage{wrapfig}
 \usepackage{tabularx}
 \usepackage{multicol}
+\usepackage{xlop}
+\usepackage{soul}%Resaltar
+\newcommand{\iu}{{j\mkern1mu}}%Complejo
+\usepackage{pgfplots}
+\usepgfplotslibrary{smithchart}
+\pgfplotsset{compat=1.17}
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------
