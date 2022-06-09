@@ -11,7 +11,10 @@
 % 2) makeindex main.idx -s indexstyle.ist
 % 3) biber main
 % 4) pdflatex main x 2
-%
+
+
+%Atención
+%Está prohibido usar simbolos en \index{•}
 % After this, when you wish to update the bibliography/index use the appropriate
 % command above and make sure to compile with pdflatex several times 
 % afterwards to propagate your changes to the document.
@@ -42,7 +45,7 @@
 
 \definecolor{ocre}{RGB}{0, 0, 255} % Define the color used for highlighting throughout the book
 
-\chapterimage{Final.jpg} % Chapter heading image
+\chapterimage{Biblio.jpg} % Chapter heading image
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
@@ -256,6 +259,191 @@ El cual se obtiene de multiplicar al numerador y denominador por el \textbf{conj
 &=\frac{a-\iu b}{a^2+b^2}
 \end{align*}
 \end{definition}
+\chapterimage{chapter_head_Elec.pdf}
+\chapter{Dominio de la frecuencia}\index{Dominio de la frecuencia}
+\section{Fasores}\index{Fasores}
+\begin{definition}[Fasor]
+Es un número complejo que representa la amplitud y la fase de un senosoide.\\Usando la teoría de números complejos se puede escribir un número complejo Z=X+$\iu$Y en su forma fasorial:
+\begin{equation}
+Z=R\phase{\theta^{\circ}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item R=$\sqrt{X^2+Y^2}$
+\item $\theta$=$\arctan\left(\frac{Y}{X}\right)$
+\end{itemize}
+\end{definition}
+Las operaciones entre fasores se realizan igual que cualquier complejo, se añade unas operaciones puntuales:
+\begin{enumerate}
+\item \textbf{Inverso}
+\begin{displaymath}
+\frac{1}{Z}=\frac{1}{R}\phase{-\theta}
+\end{displaymath}
+\item \textbf{Raíz cuadrada}
+\begin{displaymath}
+\sqrt{Z}=\sqrt{R}\phase{(\theta/2)}
+\end{displaymath}
+\item \textbf{Complejo conjugado}
+\begin{displaymath}
+Z^*=X-\iu Y=R\phase{-\theta}=R\cdot e^{-\iu\theta}
+\end{displaymath}
+\end{enumerate}
+\subsection{Relación fasorial para R}
+En el dominio del tiempo:
+\begin{displaymath}
+v(t)=R\cdot i(t)
+\end{displaymath}
+Forma polar:
+\begin{displaymath}
+V_m\phase{\theta}=RI_m\phase{\phi}
+\end{displaymath}
+Por lo tanto:
+\begin{displaymath}
+\mathbb{V}=R\mathbb{I}
+\end{displaymath}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Electro/Electro1.png}
+\caption{Tensión y corriente están en fase}
+\end{figure}
+\begin{equation*}
+\mathbb{I}=I_me^{\iu\phi}
+\qquad
+\mathbb{V}=RI_me^{\iu\phi}
+\end{equation*}
+\subsection{Relación fasorial para L}
+Forma polar:
+\begin{displaymath}
+V_m\phase{\theta}=\iu\omega LI_m\phase{\phi}
+\end{displaymath}
+Por lo tanto:
+\begin{displaymath}
+\mathbb{V}=\iu\omega L\mathbb{I}
+\end{displaymath}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Electro/Electro2.png}
+\caption{Tensión adelantada respecto a la corriente en 90°}
+\end{figure}
+\begin{equation*}
+\mathbb{I}=I_me^{\iu\phi}
+\qquad
+\mathbb{V}=\omega LI_me^{\iu(\phi+\pi/2)}
+\end{equation*}
+\subsection{Relación fasorial para C}
+Forma polar:
+\begin{displaymath}
+I_m\phase{\phi}=\iu\omega CV_m\phase{\theta}
+\end{displaymath}
+Por lo tanto:
+\begin{displaymath}
+\mathbb{I}=\iu\omega C\mathbb{V}
+\end{displaymath}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Electro/Electro3.png}
+\caption{Tensión retrasada respecto a la corriente en 90°}
+\end{figure}
+\begin{equation*}
+\mathbb{I}=\omega CV_me^{\iu(\phi+\pi/2)}
+\qquad
+\mathbb{V}=V_me^{\iu\phi}
+\end{equation*}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{34CDF9} 
+Tiempo                     & Frecuencia                                  \\ \hline
+$v(t)=R\cdot i(t)$         & $\mathbb{V}$=R$\mathbb{I}$                  \\ \hline
+$v(t)=L\frac{di}{dt}$      & $\mathbb{V}$=$\iu\omega L\mathbb{I}$        \\ \hline
+$v(t)=\frac{1}{C}\int idt$ & $\mathbb{V}=\frac{\mathbb{I}}{\iu\omega C}$ \\ \hline
+\end{tabular}
+\end{center}
+\caption{Resumen de relaciones fasoriales}
+\end{table}
+\section{Impedancia}\label{Impedancia}
+Las relaciones de tensión-corriente para los 3 elementos pasivos en el dominio de la frecuencia son:
+\begin{equation*}
+\mathbb{V}=\mathbb{R}\mathbb{I}
+\qquad
+\mathbb{V}=\iu\omega L\mathbb{I}
+\qquad
+\mathbb{V}=\frac{\mathbb{I}}{\iu\omega C}
+\end{equation*}
+La impedancia $\mathbb{Z}$ del elemento del circuito es el cociente entre la tensión fasorial $\mathbb{V}$ y la corriente fasorial $\mathbb{I}$:
+\begin{displaymath}
+\mathbb{Z}=\frac{\mathbb{V}}{\mathbb{I}}
+\end{displaymath}
+\begin{equation*}
+\frac{\mathbb{V}}{\mathbb{I}}=\mathbb{R}\mathbb{I}
+\qquad
+\frac{\mathbb{V}}{\mathbb{I}}=\iu\omega L
+\qquad
+\frac{\mathbb{V}}{\mathbb{I}}=\frac{1}{\iu\omega C}
+\end{equation*}
+Es una cantidad compleja que tiene dimensiones de \textbf{Ohms}, no es fasor y no puede transformarse al dominio del tiempo multiplicando por $e^{\iu\omega t}$ y tomando la parte real.
+\begin{equation*}
+\mathbb{Z}_R=\mathbb{R}\mathbb{I}
+\qquad
+\mathbb{Z}_L=\iu\omega L
+\qquad
+\mathbb{Z}_C=\frac{1}{\iu\omega C}=-\iu\omega C
+\end{equation*}
+La \textbf{impedancia} es una función compleja de la frecuencia:
+\begin{displaymath}
+\mathbb{Z}=R+\iu X
+\end{displaymath}
+Donde R, X son reales.\\
+La \textbf{parte real} de la impedancia se llama \textbf{resistancia}:
+\begin{displaymath}
+R=\Re[Z]
+\end{displaymath}
+La parte imaginaria es la \textbf{reactancia}, dentro la cual se distinguen 2:
+\begin{displaymath}
+X=\Im[Z]
+\end{displaymath}
+Si X es \textbf{positivo} se llama \textbf{inductancia}, si es negativo se llama \textbf{capacitancia}.
+\begin{remark}
+En C.A. la impedancia tiene un papel análogo a la resistencia en C.C.
+\end{remark}
+\begin{definition}[Asociación de impedancias]
+Las dos asociaciones son\\
+\textbf{Serie}:
+\begin{equation}
+Z_{eq}=Z_1+Z_2+\vdots+Z_n
+\label{eq:serie impedancias}
+\end{equation}
+\textbf{Paralelo}:
+\begin{equation}
+\frac{1}{Z_{eq}}=\frac{1}{Z_1}+\frac{1}{Z_2}+\vdots+\frac{1}{Z_n}
+\end{equation}
+\end{definition}
+\section{Admitancia}\label{Admitancia}
+La admitancia es la inversa de la Impedancia, y consta al igual que ella con dos partes:
+\begin{equation*}
+\mathbb{Y}=G+\iu B=\frac{1}{\mathbb{Z}}=\frac{1}{R+\iu X}
+\end{equation*}
+La admintancia es puede ser hallada en base a la impedancia:
+\begin{equation*}
+\mathbb{G}=\frac{R}{R^2+X^2}
+\qquad
+\mathbb{B}=\frac{X}{R^2+X^2}
+\end{equation*}
+Proporción entre la corriente fasorial y la tensión fasorial medida en \textbf{Siemens}:
+\begin{equation*}
+\mathbb{Y}=\frac{\mathbb{I}}{\mathbb{V}}
+\qquad
+\mathbb{Y}=\frac{1}{\mathbb{Z}}
+\end{equation*}
+La parte real de la admitancia es la \textbf{conductancia}:
+\begin{displaymath}
+G=\Re[\mathbb{Y}]
+\end{displaymath}
+La parte imaginaria de la admitancia se llama \textbf{suceptancia}:
+\begin{displaymath}
+B=\Im[\mathbb{Y}]
+\end{displaymath}
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
@@ -6688,7 +6876,7 @@ El principal resultado de Shannon es que la \textbf{tasa de datos máxima} (o ca
 \section{Medios de transmisión guiados}\index{Medios de transmisión guiados}
 El propósito de la capa física es transportar los bits de una maquina a otra. Se agrupan, a grandes rasgos en \textbf{guiados}:cable de cobre y fibra óptica y \textbf{no guiados}:la transmisión inalámbrica terrestre, los satélites y los láseres a través del aire.
 \subsection{Medios magnéticos}
-El almacenamiento en cintas magnéticas\textbf{•} o \textbf{medio removibles}, transportarlos físicamente a la otra maquina y leerlos. Es el más antiguo servicio y de una forma sigue vigente. Es rentable en situaciones donde el ancho de banda o \textbf{costo por bit} transportado es clave. Tengamos 1 disco duro de 1Tb. En una caja grande pueden caber unas 100 unidades: por caja se pueden transportar 1000Tb. Transportar la caja de un lugar a otro depende del lugar, asumiendo que el transporte dura un día: nuestro ancho de banda efectivo sería de:
+El almacenamiento en \textbf{cintas magnéticas} o \textbf{medio removibles}, transportarlos físicamente a la otra maquina y leerlos. Es el más antiguo servicio y de una forma sigue vigente. Es rentable en situaciones donde el ancho de banda o \textbf{costo por bit} transportado es clave. Tengamos 1 disco duro de 1Tb. En una caja grande pueden caber unas 100 unidades: por caja se pueden transportar 1000Tb. Transportar la caja de un lugar a otro depende del lugar, asumiendo que el transporte dura un día: nuestro ancho de banda efectivo sería de:
 \begin{displaymath}
 \frac{1000Tb}{86400seg}=11.57\times 10^9 Gbps\sim 11.6 Gbps
 \end{displaymath}
@@ -6858,14 +7046,15 @@ Ubicados aproximadamente a los \textbf{35 800 Km } de altura. Actualmente los sa
 Los satélites suelen tener una vida de 10 años aprox., tiempo en el cual se gasta el combustible usado para que los motores puedan realizar \textbf{control de posición orbital}, proceso por el cual un satélite se tiene que auto-calibrar en su órbita debido a que la gravedad solar, lunar y planetaria los saca de su órbita. La energía suficiente para que funcione un satélite viene de sus paneles solares; cuando un de estos este fuera de servicio, su órbita se deteriora sola quedando flotando en el vacío, se debe desactivar y esperar su destrucción aunque rara vez los satélite caen la tierra, (5 toneladas) impactan en forma de pedazos.\\
 La ITU tambien a asignado bandas de frecuencias especificas a los usuarios de satélites (Tabla \ref{tab: banda sat}). Existen dos rangos de frecuencia asignadas a las bandas: enlace descendente (proveniente del satélite) y ascendente (hacia el satélite)
 \begin{table}[]
-\begin{tabular}{lllll}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
 \rowcolor[HTML]{FFCE93} 
-Banda & Enlace descendente & Enlace ascendente & Ancho de Banda & Problemas                                                              \\
-L     & 1.5 GHz            & 1.6 GHz           & 15 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\
-S     & .1.9 GHz           & 2.2 GHz           & 70 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\
-C     & .4.0 GHz           & 6.0 GHz           & 500 MHz        & Interferencia terrestre                                                \\
-Ku    & 11 GHz             & 14 GHz            & 500 MHz        & Lluvia                                                                 \\
-Ka    & 20 GHz             & 30 GHz            & 3500 MHz       & Lluvia, costo alto.                                                   
+Banda & Enlace descendente & Enlace ascendente & Ancho de Banda & Problemas                                                              \\ \hline
+L     & 1.5 GHz            & 1.6 GHz           & 15 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\ \hline
+S     & .1.9 GHz           & 2.2 GHz           & 70 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\ \hline
+C     & .4.0 GHz           & 6.0 GHz           & 500 MHz        & Interferencia terrestre                                                \\ \hline
+Ku    & 11 GHz             & 14 GHz            & 500 MHz        & Lluvia                                                                 \\ \hline
+Ka    & 20 GHz             & 30 GHz            & 3500 MHz       & Lluvia, costo alto.\\ \hline
 \end{tabular}
 \caption{Principales bandas de satélites.}
 \label{tab: banda sat}
@@ -6949,7 +7138,7 @@ Aprovecha la transmisión pasa-banda, el ejemplo más claro es la radio: donde p
 \caption{a. Anchos de banda originales b. Anchos de banda elevados en frecuencia c. Canal multiplexado}
 \label{fig: fdm mul}
 \end{figure}
-\section{Multiplexión por división de tiempo-TDM}
+\section{Multiplexión por división de tiempo-TDM}\index{Multiplexión por división de tiempo-TDM}
 Alternativa el TDM, aquí cada usuario ocupa todo el ancho de banda durante un periodo pequeño de tiempo, y pasa al siguiente usuario (Fig. \ref{fig: tdm}). Se tomán bits de cada entrada en una sola \textbf{ranura de tiempo}, este flujo opera a una velocidad de la suma de los flujos individuales. NO confundir con \textbf{STDM}.
 \begin{figure}[]
 \centering
@@ -6967,7 +7156,7 @@ Alternativa el TDM, aquí cada usuario ocupa todo el ancho de banda durante un p
 \chapterimage{chapter_head_IN1.pdf}
 \chapter{Capa de enlace}
 Ahora nos enfocamos en los algoritmos para lograr una comunicación confiable y eficiente de unidades completas de información llamadas tramas (en vez de bits individuales, como en la capa física) entre dos máquinas adyacentes (conectadas).
-\section{Cuestiones de diseño de la capa de enlace de datos}
+\section{Cuestiones de diseño de la capa de enlace de datos}\index{Cuestiones de diseño de la capa de enlace de datos}
 Esta capa usa los servicios de la capa física para enviar y recibir bits por medios físicos o canales de comunicación. Sus funciones más relevantes son:
 \begin{enumerate}
 \item Proporcionar  la capa de red una interfaz de servicio bien definida.
@@ -6981,7 +7170,7 @@ Esta capa toma los paquetes de la capa de red y los ``empaqueta'' en tramas para
 \caption{Relación entre paquete y tramas.}
 \label{fig: paquete y trama}
 \end{figure}
-\section{Servicios proporcionados a la capa de red}
+\section{Servicios proporcionados a la capa de red}\index{Servicios proporcionados a la capa de red}
 Esta capa funciona para la capa de red, su función es la transmisión de datos entre las capas de red de dos computadoras (Fig. \ref{fig: comuncacion virtual}.a), pero como vimos desde la capa física, la comunicación virtual ocupa también las capas inferiores (Fig. \ref{fig: comuncacion virtual}.b). Para esta sección utilizaremos la Fig. \ref{fig: comuncacion virtual}.a.\\
 Tres posibles servicios son posibles para el diseño de la capa de enlace:
 \begin{enumerate}
@@ -6996,7 +7185,7 @@ Cuando se utiliza un servicio orientado a conexión, las transferencias pasan po
 \caption{a. Comunicación virtual b. Comunicación real}
 \label{fig: comuncacion virtual}
 \end{figure}
-\section{Entramado}
+\section{Entramado}\index{Entramado}
 Para enviar los datos de la capa de red, la capa de enlace usa a la capa física, aunque tenemos que tener el cuenta ruido y no se asegura que el flujo de bits este sin errores. La capa de enlace es la encargada de corregir estos errores.\\
 El método más común en entramar el flujo de bits en tramas discretas, calcular un token de verificación mediante un algoritmo e incluya este token en la trama; cuando llegue a su destino, el receptor hace el mismo algoritmo y deben coincidir los tokens, de ahí se puede decidir si se reenvía, se hace un informe de errores, borra la trama, etc.\\
 Entramas bits es más complicado de lo que parece, un buen diseño facilita al receptor el proceso de encontrar el inicio de las nuevas tramas al tiempo que utiliza una pequeña parte del ancho de banda del canal, veremos 4 métodos. 
@@ -7030,7 +7219,7 @@ tramas y nunca dentro de los datos.
 \begin{remark}
 El problema de estos rellenos de bytes y bits es que agranda las tramas y se hacen más largas.
 \end{remark}
-\section{Código de detección de errores: Paridad}
+\section{Código de detección de errores: Paridad}\index{Código de detección de errores: Paridad}
 Este trabaja con el \textbf{bit de paridad}, este se elige contando la cantidad de bits de valor 1 en la palabra codificada: Si se envia la secuencia \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0, contamos los bits de valor 1 y tenemos 4, se dice que es un bit en \textbf{paridad par}, por lo tanto el bit de paridad que se agrega sería 0 para no alterarla: \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0\textcolor{blue}{0}. Por el otro lado si tenemos \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0 y queremos convertirlo a paridad impar, añadimos un 1 al final \textcolor{red}{1}0\textcolor{red}{1}\textcolor{red}{1}0\textcolor{red}{1}0\textcolor{red}{1}, si contamos los bits de valor 1 son 5 en total.\\
 Se utiliza una matriz rectangular de \textit{n} bits de ancho por \textit{k} bits de alto, calculando los bits de paridad sobre cada una de las \textit{n} columnas, a este proceso se le llama \textbf{intercalado}: calculamos la paridad para cada una de las \textit{n} columnas y enviamos todos los bits de datos como \textit{k} filas, para ello enviamos las filas de arriba hacia abajo y los bits en cada fila de izquierda a derecha de la manera usual. En la última fila enviamos los \textit{n} bits de paridad, por ejemplo para la palabra \textit{network} con \textit{n}=7 y \textit{k}=7:
 \begin{figure}[H]
@@ -7040,14 +7229,14 @@ Se utiliza una matriz rectangular de \textit{n} bits de ancho por \textit{k} bit
 \label{fig: intercalado}
 \end{figure}
 Resolvemos la paridad para cada columna de la palabra \textit{network}, una vez hallado lo bits de paridad se envía. Una vez en el receptor, cuando ocurre un error de ráfaga \textit{n}=7, los bits con error se esparcen a través de las distintas columnas, un error de ráfaga no implica que todos estén mal, solo implica que por lo menos el primero y el último están mal. En la Fig. \ref{fig: intercalado} notamos que se han errado 4 bits de un rango de 7 bits, por lo menos un bit en cada una de las \textit{n} columnas se verá afectado. Este metodo usa \textit{n} bits de paridad en bloque de \textit{kn} bits de datos para detectar un solo error de ráfaga de longitud \textit{n} o menor. Si haces la paridad par en el receptor de cada columna, notarás que esos bits sombreados no coinciden son los que se envió, por lo que se detecta el error.
-\section{Protocolos elementales de enlace de datos}
+\section{Protocolos elementales de enlace de datos}\index{Protocolos elementales de enlace de datos}
 \subsection{Protocolo simple utópico}
 Los datos son transmitidos en una sola dirección; las capas de red tanto del emisor como del receptor siempre están listas. Podemos ignorar el tiempo de procesamiento. Hay un espacio infinito de búfer disponible. Y lo mejor de todo, el canal de comunicación entre las capas de enlace de datos nunca daña ni pierde las tramas. Los protocolos se realizan en la capa de enlace de la maquina de origen y en el receptor, el único tipo de evento es \textit{frame\_ arrival}, es decir, la llegada de una trama \textbf{sin daños}. Este es un protocolo utópico, porque el emisor siempre esta \textbf{dispuesto a obtener un paquete} de la capa de red, construye la trama y la envía. En el receptor, siempre esta atento a que suceda algo, llega una trama, la saca del búfer, se la envía  a la capa red y limpia el camino (búfer). El protocolo utópico es irreal, ya que no maneja el control de flujo ni la corrección de errores. Su procesamiento se asemeja al de un servicio sin conexión ni confirmación de recepción que depende de las capas más altas para resolver estos problemas, aun cuando un servicio sin conexión ni confirmación de recepción realizaría cierta detección de errores.
 \subsection{Protocolo simplex de parada y espera para un canal libre de errores}
 Aquí tomamos la primera consideración: posee un búfer finito, en otras palabras, evitar que el emisor envié demasiadas tramas que pueden saturar al receptor. Como su nombre lo dice, con este protocolo, se envía la trama, se detiene el sistema hasta que llegué al receptor y envié una ``trama de confirmación'' hacia el emisor y el emisor recién envié la siguiente trama. Por lo que habrá momentos en los cuales la capa no sé usa para nada.
 \subsection{Protocolo simplex de parada y espera para un canal ruidoso}
 Para reducir la excesiva latencia del anterior método, usamos un temporizador en el emisor, que espera cada cierto tiempo la llegada de la ``trama de confirmación'', pasado ese tiempo si no recibe la confirmación, el emisor envía la misma trama y así sucesivamente. El problema es que al ser un canal ruidoso, este puede corromper a la trama de confirmación haciendo que nunca llegué, y si nunca llega el emisor mandará de nuevo la trama pues el reloj ya expiró. Puede evitarse enumerando la secuencia en el encabezado de cada trama.
-\section{Protocolos de ventana deslizante}
+\section{Protocolos de ventana deslizante}\index{Protocolos de ventana deslizante}
 Mejorando los anteriores protocolos unidireccionales o half-duplex, es necesario hacerlos full duplex. Nos vemos forzados a usar 1 mismo medio físico pues dos de ellos demandaría más recursos. En este caso, A manda a B la trama, B no envía la trama de confirmación inmediatamente a A , sino,  espera a que B tenga un mensaje para enviar A e introduce la trama de confirmación en la trama que irá de B a A. Esta técnica de retrasar la confirmación se llama \textbf{superposición}. Aún este protocolo tiene unas fallas: ¿Como sabes que tiempo esperar para que llegué la confirmación?\\
 Los siguientes protocolos pertenecen al protocolo \textbf{ventana deslizante}, que basan sus funcionamiento en ``ventanas'' (Fig. \ref{fig: Ventana deslizante}), empieza primero con una ventana de \textit{n} tramas, una vez que la trama 80 se halla mandado correctamente, la ventana avanza hacia abajo, abarcando más tramas. Esta demás que mientras la ventana sea más grande tomará más tiempo y se necesitará más espacio de buffer. Debido a que las tramas que están en la ventana del emisor se pueden perder o dañar en tránsito, el emisor debe mantener todas estas tramas en su memoria para su posible retransmisión. Por lo tanto, si el tamaño máximo de la ventana es n, el emisor necesita n búferes para contener las tramas sin confirmación de recepción. Si la ventana llega a crecer a su tamaño máximo, la capa de enlace de datos emisora deberá hacer que la capa de red se detenga hasta que se libere otro búfer. En algunos protocolos las ventanas son de tamaño fijo, pero en otros pueden aumentar o reducir su tamaño con el transcurso del tiempo, a medida que se envían y reciben
 las tramas.
@@ -7058,12 +7247,13 @@ las tramas.
 \caption{Ventana deslizante}
 \label{fig: Ventana deslizante}
 \end{figure}
-\section{Protocolo retroceso N}
+\section{Protocolo retroceso N}\index{Protocolo retroceso N}
 Hasta ahora hemos subestimado el tiempo de envío, recepción y confirmación. En estas situaciones el tiempo de viaje de ida y vuelta prolongado puede tener implicaciones importantes para la eficiencia de la utilización del ancho de banda. Por ejemplo, considere un canal de satélite de 50 kbps con un retardo de propagación de ida y vuelta de 500 mseg. Imagine que intentamos utilizar el protocolo 4 para enviar tramas de 1000 bits por medio del satélite. En t=0, el emisor empieza a enviar la primera trama. En \textit{t}=20 mseg la trama se ha enviado por completo. En el mejor de los casos (sin esperas en el receptor y con una trama de confirmación de recepción corta), no es sino hasta \textit{t}=270 mseg que la trama ha llegado por completo al receptor, y no es sino hasta t=520 mseg que ha llegado la confirmación de recepción de regreso al emisor. Esto implica que el emisor estuvo bloqueado durante 500/520 o 96\% del tiempo. En otras palabras, sólo se usó 4\% del ancho de banda disponible. Sin duda, la combinación de un tiempo de tránsito grande, un alto ancho de banda y una longitud de tramas corta es desastrosa en términos de eficiencia. El problema antes descrito puede considerarse como una consecuencia de la regla que requiere que el emisor espere una confirmación de recepción antes de enviar otra trama. Si relajamos esa restricción, podremos obtener una mejor eficiencia. Básicamente la solución está en permitir que el emisor envíe hasta \textit{w} tramas antes de bloquearse, en lugar de que sólo envíe 1. Con una selección suficientemente grande de \textit{w}, el emisor podrá transmitir tramas en forma continua, ya que las confirmaciones de recepción llegarán para las tramas anteriores antes de que la ventana se llene, lo cual evitará que el emisor se bloquee.
 \begin{definition}[Utilización del enlace]
 Para encontrar un valor apropiado para \textit{w} necesitamos saber cuántas tramas pueden caber dentro del canal mientras se propagan del emisor al receptor. Esta capacidad se determina mediante el ancho de banda en bits/seg, multiplicado por el tiempo de tránsito en un sentido, mejor conocido como producto de ancho de banda-retardo del enlace. Podemos dividir esta cantidad entre el número de bits en una trama para expresar el producto como un número de tramas. Llamemos a esta cantidad BD. Entonces, \textit{w} debe ser establecido a 2BD + 1. El doble del producto ancho de banda retardo es el número de tramas que pueden quedar pendientes si el emisor envía en forma continua tramas cuando se considera el tiempo de ida y vuelta para recibir una confirmación de recepción. El ``+1'' se debe a que no se enviará una trama de confirmación de recepción sino hasta recibir una trama completa.
 \begin{equation}
-\text{utilización del enlace}\leqslant\frac{w}{1+2BD}
+\text{utilización del enlace}\leqslant\frac{w}{1+2\frac{BD}{L_t}}
+\label{eq:utilizacion de enlace}
 \end{equation}
 Donde:\\
 \begin{itemize}
@@ -7071,9 +7261,32 @@ Donde:\\
 \item \textbf{\textit{w}}: Número de tramas antes de bloquearse, tamaño de la ventana.
 \item \textbf{B}: Ancho de banda (bits/seg)
 \item \textbf{D}: Tiempo de tránsito en un sentido (seg)
+\item \textbf{$L_t$}: Tamaño de trama (bits)
 \end{itemize}
+Para el protocolo \textbf{parara-espera}, $w$ es 1.
 \end{definition}
-Para el enlace de ejemplo con un ancho de banda de 50 kbps y un tiempo de tránsito en un sentido de 250 mseg, el producto de ancho de banda-retardo es de 12.5 kbit o 12.5 tramas de 1 000 bits cada una. Entonces, 2BD + 1 es 26 tramas. Suponga que el emisor empieza a enviar la trama 0 como antes y que envía una nueva trama cada 20 mseg. Para cuando termine de enviar 26 tramas en t = 520 mseg, apenas sí llegará la confirmación de recepción de la trama 0. A partir de entonces, las confirmaciones de recepción llegarán cada 20 mseg, por lo que el emisor siempre tendrá permiso de continuar justo cuando lo necesite. De aquí en adelante siempre habrá 25 o 26 tramas pendientes de confirmación de recepción. Dicho de otra manera, el tamaño máximo de la ventana del emisor es de 26.\\
+Para el enlace de ejemplo con un \underline{ancho de banda de 50 kbps} y un \underline{tiempo de tránsito en un sentido} \underline{de 250 mseg}, el producto de ancho de banda-retardo es de 12.5 kbit, dividimos ente el tamaño de cada trama: 12.5 \underline{tramas de 1 000 bits cada una}. Entonces, 2BD + 1 es 26 tramas. Suponga que el emisor empieza a enviar la trama 0 como antes y que envía una nueva trama cada 20 mseg. Para cuando termine de enviar 26 tramas en t = 520 mseg, apenas sí llegará la confirmación de recepción de la trama 0. A partir de entonces, las confirmaciones de recepción llegarán cada 20 mseg, por lo que el emisor siempre tendrá permiso de continuar justo cuando lo necesite. De aquí en adelante siempre habrá 25 o 26 tramas pendientes de confirmación de recepción. Dicho de otra manera, el tamaño máximo de la ventana del emisor es de 26.\\
+\begin{example}[Enlace geoestacionario]
+Se tiene un enlace geoestacionario para tramas Ethernet, con protocolo parada y espera. Calcule la eficiencia si el canal si este admite 100Mbps.\\
+\textbf{Solución}
+La eficiencia de un canal será el tiempo útil entre el  tiempo usado de uso general.
+Primero, habrá un retraso natural ya que los satélites estacionarios están a una altura de 35 800 km, y las ondas viajan a la velocidad de la luz:
+\begin{displaymath}
+t=\frac{35800 Km}{3\times 10^5 Km/s}=119,3\times 10^{-3}=\simeq 0.12 seg
+\end{displaymath}
+\textbf{1 trama son de 12000 bits} y la velocidad de una trama es 100Mbps:
+\begin{displaymath}
+\frac{12\times 10^3}{100\times 10^6}=1.2\times 10^{-4}seg
+\end{displaymath}
+La utilización es el cociente entre el tiempo útil y el total:
+\begin{displaymath}
+\frac{10^{-4}seg}{0.12+0.12}=5\times 10^{-4}=0.05\%
+\end{displaymath}
+Usando la formula en base al ancho de banda: el ancho de banda es de 100Mbps, el tiempo de tránsito en un sentido es 0.12 seg, aparte debemos tener el tamaño de trama que es de 12000 bits. Usando la ecuación \ref{eq:utilizacion de enlace}:
+\begin{displaymath}
+Utilización=\frac{1}{1+2(0.12s)\frac{(100Mbps)}{12000}}=4.99\times 10^{-4}\simeq 0.05\%
+\end{displaymath}
+\end{example}
 Esta técnica de mantener varias tramas en movimiento es un ejemplo de canalización (pipeling). La canalización de tramas a través de un canal de comunicación no confiable presenta problemas serios. Primero, ¿qué ocurre si una trama a la mitad de un flujo extenso se daña o pierde? Llegarán grandes cantidades de tramas sucesivas al receptor antes de que el emisor se entere de que algo anda mal. Cuando llega una trama dañada al receptor es obvio que debe descartarse pero, ¿qué debe hacer el receptor con todas las tramas correctas que le siguen? Recuerde que la capa de enlace de datos del receptor está obligada a entregar paquetes a la capa de red en secuencia.\\
 Hay dos valores para arreglar esos errores en la canalización (Fig. \ref{fig: canalización})
 \begin{figure}[]
@@ -7083,6 +7296,174 @@ Hay dos valores para arreglar esos errores en la canalización (Fig. \ref{fig: c
 \label{fig: canalización}
 \end{figure}
 En Fig. \ref{fig: canalización}.a las tramas se envian y se confirman (Ack), vemos que la trama 2 tiene un error, en ese caso se termina de enviar las tramas correspondientes a esa ventana, una vez que se haya terminado de enviar las tramas de esa ventana, se vuelven a enviar las tramas desde donde ha ocurrido el error, y se descarta las siguientes tramas hasta donde abarca la ventana. En Fig. \ref{fig: canalización}.b la que se daña o pierde es la trama 2, el emisor sin saber de eso sigue enviando hasta que el temporizador de la ventana se termine, pero las tramas dentro de la ventana posterior no se pierden, se almacenan en un buffér y se re-ordenan en la capa de enlace.
+\chapterimage{chapter_head_IN1.pdf}
+\chapter{Subcapa de control de acceso al medio}
+Cada tarjeta de red posee un número identificador único grabado en la memoria ROM de la misma por el fabricante denominada dirección física o MAC (Control de acceso al medio). La dirección es colocada también en la trama, usualmente ocupa 12 bytes (6 de origen y 6 de destino). Al usar la MAC como dirección, es necesario poder transformar la IP del destino a su dirección MAC, para ello se usa \textbf{ARP} (protocolo de resolución de direcciones). ARP una vez encontrada la MAC en un switch, la pueder guardar como caché para identificar cual dispositivo posee la MAC de la dirección IP que llego.
+\section{Asignación estática de canal}\index{Asignación estática de canal}
+El uso de \textbf{FDM} es un tanto ineficiente, esto al momento de tener \textit{N} usuarios, si son pocos, solo de divide el ancho de banda entre los \textit{N} usuarios y ya está, si el número de usuarios crece los anchos de sub-bandas para cada uno llegará a un tope donde este saturada la banda y no permita que nadie más pueda comunicarse, es desperdiciado más aún cuando hay usuarios inactivos pero cuales tienen su banda asignada.
+\begin{definition}[Retardo promedio]
+\begin{equation}
+T=\frac{1}{\mu C - \lambda}
+\label{eq: retardo promedio}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{T}: Retardo promedio
+\item \textbf{C}: Capacidad del canal (bps)
+\item \textbf{$\lambda$}: Tasa de llegada promedio (tramas/seg)
+\item \textbf{1/$\mu$}: Longitud promedio de trama (bits)
+\item \textbf{$\mu$C}: Servicio de canal (tramas/seg)
+\end{itemize}
+El resultado de la ecuación \ref{eq: retardo promedio} solo es \textbf{valido} cuando \textbf{no hay competencia} por el canal. Ahora dividimos el canalen  \textit{N} subcanales independientes, cada uno con capacidad \textit{C/N} bps, la tasa promedio ahora será $\lambda/N$, ahora \textit{T} será:
+\begin{equation}
+T_N=\frac{1}{\mu(\frac{C}{N})-\frac{\lambda}{N}}=\frac{N}{\mu C-\lambda}=NT
+\end{equation}
+\end{definition}
+\section{Protocolos de acceso múltiple}\index{Protocolos de acceso múltiple}
+\subsection{ALOHA}
+La idea principal de ALOHA (puro) es enviar las tramas de los \textit{N} usuarios tan pronto como el canal este libre, solo puede enviar si tiene información por enviar. El problema es que habrá momentos en los cuales otro usuario mande sus datos cuando había uno en el canal, esto ocasiona que las tramas se desperdicien (Fig.).
+\begin{figure}[]
+\centering
+\includegraphics[width=0.75\linewidth]{IN1/IN40}
+\caption{ALOHA puro transmite en tiempos completamente arbitrarios.}
+\label{fig:ALOHA puro}
+\end{figure}
+Existe una variante de ALOHA puro llamado \textbf{ALOHA ranurado}, consiste en no usar tiempo continuo, es decir, mandar cuando un usuario tenga que mandar; sino es cambiar a tiempo discreto, esperar hasta cierto periodo de tiempo para recién mandar, bajo este concepto existen solo trees posibles estados: existe colisión, no hay colisión o no se usó el canal.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.75\linewidth]{IN1/IN41.png}
+\caption{Velocidad real de transmisión contra tráfico ofrecido en los sistemas ALOHA.}
+\label{fig:Velocidad de alohas}
+\end{figure}
+Existe una mezcla de ALOHA ranurado con \textbf{CSMA}   (Acceso múltiple con detección de portadora), uno siendo persistente y el otro con detección de colisiones (Fig. \ref{fig:CSMA CD}), donde se esperará un tiempo llamado \textbf{periodo de contención} para ver cuantos usuarios están queriendo transmitir, pasado ese tiempo es escoge a uno y se manda. En el punto marcado como $t_0$, una estación ha terminado de transmitir su trama. Cualquier otra estación que tenga una trama por enviar puede intentar hacerlo ahora. Si dos o más estaciones deciden transmitir en forma simultánea, habrá una colisión. Si una estación detecta una colisión, aborta la transmisión, espera un tiempo aleatorio e intenta de nuevo (suponiendo que ninguna otra estación ha comenzado a transmitir durante ese lapso). Por lo tanto, nuestro modelo de CSMA/CD consistirá en periodos alternantes de contención y transmisión, con periodos de inactividad que ocurrirán cuando todas las estaciones estén en reposo (por ejemplo, por falta de trabajo).
+\begin{figure}[]
+\centering
+\includegraphics[width=0.6\linewidth]{IN1/IN42.png}
+\caption{CSMA/CD puede estar en estado de contención, de transmisión o inactivo.}
+\label{fig:CSMA CD}
+\end{figure}
+\subsection{Libre de colisiones-Mapa de bits}
+Aquí básicamente se trata de tener ranuras de contención para poder identificar quienes quieren enviar y quienes no, una vez pasado el tiempo de contención, los que indicaron que quieren mandar lo hace, termina el envió y se vuelve a solicitar quienes desean y así sucesivamente.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN43.png}
+\caption{El protocolo básico de mapa de bits.}
+\label{fig: mapa de bits}
+\end{figure}
+\subsection{Paso de token}
+Con el paso de \textbf{token}, se crea un anillo donde cada estación se pasa un testigo (como en las carreras de postas) donde el que tenga el testigo puede enviar sus datos, luego te termina el envió lo pasa en el mismo sentido y se repite el ciclo. Para evitar el mismo token-trama circule, existe una estación (generalmente la que la creo) que se encarga de cambiar el token. Sin embargo este sistema no es escalable. Imagínate tener 1000 estaciones, el tiempo para que le toque a la estación anterior es inmenso.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN44.png}
+\caption{Protocolo token ring}
+\label{fig:token ring}
+\end{figure}
+\subsection{Conteo descendente binario}
+Para evitar conflictos, es necesario aplicar una regla de arbitraje: tan pronto como una estación ve que una posición de bit de orden alto, cuya dirección es 0, ha sido sobrescrita con un 1, se da por vencida. Usando la figura \ref{fig:conteo descendente} vemos 4 estaciones que pelean por enviar, vemos el tiempo de bit que empieza en 1, usamos el MSB, las primeras dos estaciones son 0, y las otras 2 son 1; como resultado de el tiempo de bit 0, las primeras dos se rinden, y ``pasan a  la siguiente ronda'' las que tienen su bit 1. En bit time 1, hacemos lo mismo, en este caso, sus bits de ambos es cero, empate, no nos queda de otra que avanzar al bit time 2. En el bit time 2 hay diferencia, gana el que tiene 1, la estación 3 tiene un 0 pero la 4 tiene 1, por consecuencia solo pasa la cuarta y esa es la que va transmisir pues ganó sobre todas las demás. En el resultado se tiene el resultado de aplicar una compuerta OR a los números superiores. Esta tecnología aún no es usada pero es un ejemplo de un protocolo sencillo, elegante y eficiente que está esperando a ser redescubierto. Esperemos que algún día encuentre un nuevo hogar.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{IN1/IN45.png}
+\caption{El protocolo de conteo descendente binario. Un guión indica un silencio.}
+\label{fig:conteo descendente}
+\end{figure}
+Los vistos hasta ahora son solo simétricos, quiere decir que todos tiene la misma probabilidad $p$ de coger el canal y usarlo. Cada estación tiene una probabilidad $p$ de transmitir durante cada ranura. La probabilidad de que una estación adquiera con éxito el canal durante una ranura dada es la probabilidad de que cualquier otra estación transmita, con probabilidad $p$, y que las otras $k$-1 estaciones posterguen su transmisión, cada una con una probabilidad de 1-$p$. Este valor es $kp(1-p)^{k-1}$. Para encontrar el valor óptimo de $p$, diferenciamos con respecto a $p$, igualamos el resultado a cero y despejamos $p$. Al hacer esto, encontramos que el mejor valor de $p$ es $1/k$. Si sustituimos $p=1/k$, obtenemos:
+\begin{equation}
+Pr[éxitos con p óptima]=\left[\frac{k-1}{k}\right]^{k-1}
+\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IN1/IN46.png}
+\caption{Probabilidad de adquisición de un canal de contención simétrica.}
+\end{figure}
+\subsection{Protocolo de recorrido de árbol adaptable}
+Si cada estación quiere comunicarse, ya no se consulta a todas las estaciones, pues solo se analiza la ranura, mirando la figura \ref{fig: arbol adaptativo} donde en cada ranura se identifica la ``dirección'' de donde se ubica, por ejemplo, si la estación B, la ranura debe ser: 421, pues las estaciones están agrupadas en \textbf{clusters}, y no es necesario es preguntar a todas las estaciones.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.75\linewidth]{IN1/IN47.png}
+\caption{El árbol para ocho estaciones.}
+\label{fig: arbol adaptativo}
+\end{figure}
+\subsection{Protocolos de LAN inalámbrica}
+Existen dos fenómenos que pueden alterar la comunicación, asumiendo que las estaciones tiene la misma potencia y alcance (Fig. \ref{fig:wireless lan})
+\begin{figure}[]
+\centering
+\includegraphics[width=0.8\linewidth]{IN1/IN48.png}
+\caption{Una LAN inalámbrica. (a) A y C son terminales ocultas cuando transmiten a B. (b) B y C son terminales expuestas cuando transmiten a A y D.}
+\label{fig:wireless lan}
+\end{figure}
+Primero considere lo que ocurre cuando A y C transmiten hacia B, como se muestra en la figura \ref{fig:wireless lan}(a). Si A envía y C detecta el medio de inmediato, no podrá escuchar a A porque está fuera de su alcance. Por lo tanto, C concluirá falsamente que puede transmitir a B. Si C comienza a transmitir, interferirá en B, eliminando la trama de A (en este caso suponemos que no se utiliza un esquema tipo CDMA para proveer múltiples canales, por lo que las colisiones alteran la señal y destruyen ambas tramas). Queremos un protocolo MAC que evite que ocurra este tipo de colisión, debido a que desperdicia ancho de banda. El problema de que una estación no pueda detectar a un competidor potencial por el medio, debido a que dicho competidor está demasiado lejos, se denomina \textbf{problema de terminal oculta}.\\
+Ahora consideremos una situación distinta: B transmite a A al mismo tiempo que C desea transmitir a D, como se muestra en la figura \ref{fig:wireless lan}(b). Si C detecta el medio, escuchará una transmisión y concluirá equivocadamente que no puede enviar a D (lo cual se muestra con una línea punteada). De hecho, esa transmisión provocaría una mala recepción sólo en la zona entre B y C, en donde no hay ninguno de los receptores deseados. Queremos un protocolo MAC que evite que ocurra este tipo de aplazamiento, ya que desperdicia ancho de banda. A esta situación se le denomina problema de terminal expuesta.\\
+Esto se puede solucionar con el protocolo \textbf{MACA} (Acceso múltiple con prevención de colisiones), se concepto se basa en que el emisor estimula al receptor para este emita una trama corta que puede ser leída por las estaciones cercanas y da a conocer a las demás estaciones que durante el envió de tramas grande. En la Fig. \ref{fig:MACA}.a se ve a \textit{A} enviar la trama \textbf{RTS} (Solicitud de Envío) a B una trama corta (30 bytes). Luego \textit{B} contesta con una trama \textbf{CTS} (Libre para envío), cuando llegue a \textit{A} esta comienza a transmitir. En la misma figura se ven estaciones que solo escuchan RTS (\textit{C}), en tanto no interfiera con el CTS, está libre para transmitir mientras se envía la trama de datos; solo CTS (\textit{D}), al escuchar el CTS sabe que está cerca de una estación que está a punto de recibir una trama, por lo que difiere el envío de cualquier cosa hasta el momento en que se espera la terminación de esa trama; o ambos (\textit{E}) que debe permanecer el silencio al igual que B hasta que se haya completado la trama de datos, aunque puede haber colisiones si por ejemplo B y C envían su RTS al mismo tiempo, pues chocarán y se perderán. En caso de una colisión, el transmisor no recibe su CTS dentro de un intervalo, espera un tiempo aleatorio y vuelve a mandar.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN49.png}
+\caption{El protocolo MACA. (a) A envía un RTS a B. (b) B responde con un CTS a A.}
+\label{fig:MACA}
+\end{figure}
+\section{Ethernet conmutado}\index{Ethernet conmutado}
+\begin{figure}[]
+\centering
+\subfloat[a. Hub b. Switch]{\includegraphics[width=0.8\linewidth]{IN1/IN51.png}}\\
+\subfloat[Switch Ethernet]{\includegraphics[width=0.8\linewidth]{IN1/IN50.png}}
+\caption{Switch y HUb Ethernet}
+\end{figure}
+Existen \textbf{HUB}, un dispositivo concentrador, la función de este HUB no es más que unir lo cables como si estuvieran soldados, el trafico va ser la capacidad máxima entre el número de estaciones, por ello no es escalable pues es solo un ``extensor'' del cable y la distancia máxima se reduce drásticamente. Una solución a esto fue el uso de \textbf{switch} o conmutadores, el cual posee un plano posterior que se encarga que conectar dos puertos, físicamente son parecidos al HUB. De ocurrir errores se puede detectar pues solo se vería alterado un puerto. El switch sólo envía los tramas a los puertos para los cuales esta destinado la trama. Cuando el puerto del switch recibe la trama Ethernet, el switch verifica las direcciones, ubica el puerto de destino, la reenvia por ese puerto usando su plano posterior (Suele operar a Gbps). Si más de una estación o puerto desea enviar una trama al mismo tiempo, en el caso de HUB estarían en el mismo \textbf{dominio de colisión} y deben usar \textbf{CSMA/CD}, mientras que el switch cada puerto tiene su propio dominio de colisión, en caso que sea full-dúplex, el envío y recepción de tramas se realiza sin problemas, pero si fuera half-dúplex, la estación y puerto deben competir por la transmisión con CSMA/CD. En definitiva el switch mejora la capacidad pues no hay colisiones, se pueden enviar varias tramas al mismo tiempo por distintas estaciones debido a la alta velocidad del plano posterior, de haber dos tramas al mismo puerto, el switch debe contar con un búfer para alojar temporalmente las tramas. Además añade cierto tipo de confidencialidad pues lo demas puertos no pueden saber que se envió mientras que en el HUB todos saben lo que envió.\\
+La tasa de 10Mbps se quedo chica en poco tiempo, usando la Ley de Parkinson (``Ek trabajo se expande hasta llenar el tiempo disponible para su transmisión'').\\
+Es debido a eso que IEEE estableció un estándar para mejorar el Ethernet (802.3) llamado 802.3u, no es más que una mejora y es comúnmente llamada \textbf{fast ethernet}. Al ser una mejora se mantuvo todo, pero se redujo el tiempo de bits de 100nseg a 10nseg. El problema era ahora fijar el estándar de cables, se eligieron 3:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN52.png}
+\caption{Cableado original de Fast Ethernet}
+\end{figure}
+100Base-T4 y 100Base-Tx funcionan a 25MHz y a 125 MHz, en la segunda se usa la codificación \textbf{4B/5B} (4 bits de datos y el quinto como señal). \\
+Inmediatamente nació el \textbf{gigabit Ethernet} o llamado 802.3ab. Al igual que Fast Ethernet, Gigabit Ethernet posee solo 2 modos: full-dúplex y half-dúplex. Además se cambio la trama de 64 bytes(la mínima permitida) a 512 bytes permitiendo al hardware de rellenar las tramas hasta llegar a los 512 bytes, con la longitud de cable máxima a 200 metros. La desventaja es usar demasiado relleno para poca cantidad de datos de usuario (46 bytes) en la trama mínima (64 bytes) y encima rellenar hasta llegar a los 512 bytes. Esto genera un eficiencia solo del 9\%.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN53.png}
+\caption{Cableado Gigabit Ethernet}
+\end{figure}
+Para enviar bits por Gigabit Ethernet se usa la codificación \textbf{8B/10B}. El recableado de una instalación no era opción, así que para que pueda usar los cables categoría 5 se necesitan 4 pares trenzados, cada par se utiliza en ambas direcciones. En cada cable se utilizan 5 niveles de voltaje para lograr una señalización de 125M símbolos/seg.\\
+Otra tecnología de mejora salío: \textbf{10 Gigabit Ethernet}, aquí solo se tiene la opción de \textbf{full-dúplex}, se utiliza fibras multimodo con la longitud de onda de 8.85 para distancias medias, fibra monomodo a 1.3 y 1.5 para distancias largas. Usamos un versión de codificación de\textbf{64B/66B}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN54.png}
+\caption{Cableado de Ethernet de 10 gigabits}
+\end{figure}
+\subsection{Proceso de instalación de un Switch}
+Antes de configurar debemos conectarlo mediante el puerto serial (para ello debemos configurar desde el software: el puerto de comunicaciones, tasa de bits\footnote{Por lo general en el gabinete se encuentra la tasa de bits y el esquema de configuración serial}), haremos uso de un adaptador normalmente de USB a tipo serial (Fig. \ref{fig:cable usb serial}).
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN55.png}
+\caption{Adaptador de USB a puerto serial}
+\label{fig:cable usb serial}
+\end{figure}
+\begin{enumerate}
+\item Nos conectamos el cable de consola a una velocidad (típica) de 9600 baudios que se configura desde su software. Dependiendo del fabricante a veces no se puede requerir instalación inicial, o descargar un archivo de arranque, o si contamos solo con acceso fisíco no se necesita password.
+\item En la consola la configura, los básicos son:
+\begin{enumerate}
+\item Login
+\item Habilitar el modo de condiguración
+\item Asignar password
+\item Configurar ruta por defecto a la puerta de enlace de red (asignar una IP).
+\item Asignar una dirección IP al puerto de manejo
+\item Guardar la configuración.
+\end{enumerate}
+\end{enumerate}
+También hay que tener en cuenta los indicadores de los LED
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{IN1/IN56.png}
+\caption{LED indicadores adicionales}
+\end{figure}
+\textbf{Estados de los LED}\\
+\begin{itemize}
+\item \textbf{OFF}: No enlace o apagado
+\item \textbf{Verde}: Enlace presente
+\item \textbf{Verde parpadeando}: Actividad de datos
+\item \textbf{Verde y ámbar alternando}: Fallo de enlace
+\item \textbf{Ámbar}: Puerto no esta enviando datos, es común para los 30 primeros segundos de conectar o activar
+\item \textbf{Ámbar parpadeando}: El puerto está bloqueando para evitar un bucle de conmutación
+\end{itemize}
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -7150,7 +7531,6 @@ Fenómeno ondulatorio que ocurre cuando una onda se reproduce al atravesar una a
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_MM.pdf}
 \chapter{Arquitectura y principios del microcontrolador}
-\chapterimage{chapter_head_MM.pdf}
 \section{Arquitectura interna de una CPU}\index{Arquitectura interna de una CPU}
 La organización interna esta dada por:
 \begin{enumerate}
@@ -7313,9 +7693,9 @@ Con respecto a como gestionar la memoria de datos y la memoria de código se tie
 \caption{Arquitecturas de control de memoria.}
 \label{fig: arch memoria}
 \end{figure}
-\section{Código Assembler}\index{Código Assembler}
+\section{Código Assembler I}\index{Código Assembler I}
 \textbf{OJO} que quede claro que no vamos a \textbf{profundizar} todos los códigos, iremos a medida que aprendamos un nuevo código, solo \textbf{describiré} lo que hace la función en un par de líneas y unos cuantos ejemplos, tienes que estar acompañado del \textit{datasheeet} de los procesadores \textit{AVR} porque en cada comando existe restricciones y límites.
-\subsection*{Lista de comandos}
+\subsection{Lista de comandos}
 \begin{enumerate}
 \item \textbf{LDI} Rd,k: Carga una constante \textit{k} de 8-bit al registro Rd.
 \item \textbf{STS} k,Rr: Mueve el valor del registro Rr al la memoria de datos k.
@@ -7678,10 +8058,118 @@ verificacion:
 
 ContLimite:
 	dec R20; Como fue 0, restamos 1 al valor de R20, esto indicara cuantas veces tenemos que comprobar
-	brne verificacion; Si Z=1(R20=-1), volvemos a la sub-rutina verificacion
+	brne verificacion; Si Z=1(es decir R20=-1), volvemos a la sub-rutina verificacion
 
 fin:
 	rjmp fin
+\end{lstlisting}
+\end{enumerate}
+\chapterimage{chapter_head_MM.pdf}
+\chapter{Desarrollo basado en en microcontroladores}
+\section{Control de puertos}\label{Control de puertos}
+De todas las conexiones que tenemos, nos vamos a centrar solo en los puertos I/O\footnote{Al costado de los pines hay funciones separadas por /, por ahora solo los usaremos como puertos}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{MM/MM16.png}
+\caption{I/O en AVR}
+\end{figure}
+\begin{figure}[]
+\centering
+\includegraphics[width=0.6\linewidth]{MM/MM17.png}
+\label{fig:ATmega328 pinout}
+\caption{ATmega328 pinout}
+\end{figure}
+Tenemos los puertos en la figura \ref{fig:ATmega328 pinout}
+\begin{itemize}
+\item PD (8 pines)
+\item PB (8 pines, en caso de Arduino los puertos PB6 y PB7 se conectar a cristal para el control del tiempo)
+\item PC (7 pines)
+\item ADC (usados para convertir analógico a digital, no están disponible en Arduino)
+\end{itemize}
+El micro-controlador nos ofrece una resistencia interna para evitar colocar una resistencia externa para el funcionamiento de un botón, esta resistencia interna se llama \textbf{PULL-UP}. Como se ve en la figura \ref{fig:I/O estructura} se ven los como se controlan los puertos usando los registros \textcolor{green}{$DDR_x$}, \textcolor{red}{$PORT_x$} y \textcolor{blue}{$PIN_x$}. Además se puede ver como están implementados los circuito, se ven los 3 registros de manera física, además se tiene combinaciones entre \textcolor{green}{$DDR_x$} y \textcolor{red}{$PORT_x$}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{MM/MM18.png}
+\label{fig:I/O estructura}
+\caption{I/O estructura}
+\end{figure}
+\begin{remark}
+Nuestra memoria es una sola, sin embargo esta seccionada en 3: La memoria del 0 al 31 son los registros con los que hemos estado trabajando, desde el 32 al 99 es la memoria para I/0 y desde el 100 en adelante es la memoria para datos.
+\end{remark}
+%\subsection{Estructura de los I/O pins}
+\section{Código Assembler II}\label{Código Assembler II}
+\begin{itemize}
+\item \textbf{OUT} A, Rr: Coloca en la I/O A el valor del registro Rr. A es la dirección del I/O, puede ser DDRX, donde X es la letra del puerto, y el valor de Rr debe ser 00000000 si lo configuramos como puerto de \textbf{entrada}; y si Rr es 11111111 como puerto de \textbf{salida}. Lo dicho se realiza antes de leer pues con eso le configuras como se usa cada puerto. Una vez que estén declarados la función de cada uno, se puede utilizar A usando PORTX, donde X es el puerto, este comando envia el valor del Rr al puerto X.
+\item \textbf{IN} Rr, A: Carga el valor del registro Rr al I/O A. A es PINX, donde X es el puerto desde donde se va leer el dato y almacenar en el puerto Rr.
+\item \textbf{REF} k, Rr: Se definirá a la letra k el registro Rr, funciona como cambio de variable.
+\item \textbf{SBIC} A, b: Si el bit b de I/O en el registro A es 0, se salta la siguiente línea.
+\item \textbf{SBIS} A, b: Si el bit b de I/O en el registro A es 1, se salta la siguiente línea.
+\item \textbf{BRBC} s, k: Si SREG(s) es zero, realizar la sub-rutina k.
+\end{itemize}
+\begin{enumerate}
+\item Leer el valor del puerto C, sumarle 5 y enviar el valor indefinidamente por el puerto B:
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Leer el valor del puerto C y sumar},captionpos=b,numbers=none]
+.org 0x040
+Start:
+	LDI R16,0x00 ;R16 = 00000000 (binario)
+	OUT DDRC,R16 ;hacer Port C un puerto de entrada
+	LDI R16,0xFF ;R16 = 11111111 (binario)
+	OUT DDRB,R16 ;hacer Port B puerto de salida(1 para salida)
+L2: 
+	IN R16,PINC ;leer data del Port C y colocarlo en R16
+	LDI R17,5
+	ADD R16,R17 ;Sumarle 5
+	OUT PORTB,R16 ;enviar R16 al puerto B
+	RJMP L2 ;saltar L2
+\end{lstlisting}
+\item Evaluar un número del R17 y colocar en el bit 0 del registro R15 1 si es impar; en el bit 1, 1 si es multiplo de 4; en el bit 2, 1 si es mayor que 16 y en el bit 3, 1 si esta en el rango de 50-100.
+\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Set los bits desde el 0 al 3 si cumple ciertas condiciones},captionpos=b,numbers=none]
+Start:
+	LDI R16,0x01;Cargamos el valor de 1 para colocarlo en cada bit
+	LDI R17,0x0A;Cargamos el numero a comparar en el registro 17<================
+	LDI R18,0x03;Multiplicidad de 4
+	LDI R19,0x10;Para comparar con 16
+	LDI R20,0x32;Para comparar con 32
+	LDI R21,0x64;Para comparar con 100
+	rjmp CompararAmbos1;Probamos si es par
+
+CompararAmbos1:
+	BST R17,0;Llevamos a T el bit 0 para ver si es par o impar
+	BRTC Mul4;Si T==0, es par y saltamos a la sub rutina Mul4
+	BST R16,0;Mandamos el bit 0 a T
+	BLD R15,0;Colocamos el bit 1 para identificar si es par
+	rjmp CompararAmbos2;Si es par, contiuamos para ver si es divisible por 4
+
+Mul4:
+	MOV R22, R17;Copiamso el valor de R17 a R22 para no alterar el valor de R17 pues usaremos una compuerta AND
+	AND R22,R18;And entre ambos registros
+	BRBC 1,CompararAmbos2;Si Z==0 no es multiplo de 4
+	BST R16,0;Mandamos el bit 0 a T
+	BLD R15,1;Colocamos el bit 1 para identificar si es muliplo de 4
+	rjmp CompararAmbos2
+
+CompararAmbos2:
+	CP R17,R19; Si R17 es mayor a 16
+	BRGE Mayor16; Saltamos a la subrutina Mayor16
+	rjmp Mayor50;De lo contario, Saltamos para comparar con 50 y 100
+	
+Mayor16:
+	BST R16,0;Mandamos el bit 0 a T
+	BLD R15,2;Lo bajamos al registro correspondiente
+	rjmp Mayor50
+
+Mayor50:
+	CP R17,R20;Comparamos con 50
+	BRGE Menor100;Si es mayor a 50 comparamos el 100
+	rjmp Loop; De lo contrario termina todo pues no estara dentro del rango
+Menor100:
+	CP R17,R21;Comparamos con 100
+	BRGE Loop; Si R17 es mayor que 100 no hacemos nada. Termina el programa
+	BST R16,0;Mandamos el bit 0 a T
+	BLD R15,3
+	rjmp Loop
+Loop:    
+    rjmp  Loop
 \end{lstlisting}
 \end{enumerate}
 %----------------------------------------------------------------------------------------
@@ -7832,6 +8320,42 @@ El concepto de mantenimiento ha ido evolucionando desde la función de arreglar 
 \textbf{¿Cuál mantenimiento es el mejor?}\\
 Lo mejor es realizar un mantenimiento \textbf{predictivo}, analizar el estado de la máquina y sus averías para predecir la próxima. Esa precisión y efectividad le permite reducir drásticamente los costes de mantenimiento. Luego tenemos el mantenimiento \textbf{preventivo}, los activos tienen planes de mantenimiento programados para prevenir fallos más complejos. Y por último el mantenimiento \textbf{correctivo} analiza la avería e intenta corregirla sustituyendo una pieza lo más rápido posible. También hay que tener en cuenta los costes y el tiempo. Una solución bastante utilizada es efectuar inspecciones preventivas (basadas en el tiempo), incluyendo algunos procesos predictivos (basados en medidas).\\
 Aún así existen problemas con la ingeniera en mantenimiento: en pequeñas empresas se recurre a simples artesanos para su ``revisión'', tampoco existe una planeación ni planificación dentro de la empresa, por lo a veces el departamento de mantenimiento no existe y esa tarea es realizada por el mantenimiento de producción.
+\subsection{Impacto del mantenimiento}
+El mantenimiento de una organización impacta en:
+\begin{itemize}
+\item Costos de producción
+\item Calidad de producto
+\item Capacidad operacional
+\item Capacidad de respuesta ante situaciones de cambio, por ejemplo: cambios de tecnología.
+\item Seguridad industrial
+\item Calidad de vida de los trabajadores de la empresa
+\item Imagen y seguridad ambiental de la compañía
+\end{itemize}
+\subsection{Objetivos de mantenimiento}
+Entre los objetivos asignados al servicio de mantenimiento se pueden citar:
+\begin{itemize}
+\item Evitar, reducir y reparar fallos de los bienes; si un fallo no se puede evitar, disminuir sus efectos negativos.
+\item Hacer que los equipos no fallen de forma incontrolada (prevenir los fallos permite programar corte de servicio de reparación).
+\item Incrementar la seguridad
+\item Conservar los bienes en condiciones seguras y productivas.
+\item Reducir el estrés de los operarios en las líneas de producción.
+\end{itemize}
+\subsection{Confiabilidad de las actividades de mantenimiento}
+El no tener confiables los equipos de telecomunicaciones pone en riesgo parcial o total el servicio que esperan los usuarios, pudiéndose darse el caso del paro total del servicio del operador, no pudiéndose cursas tráfico de datos, voz, vídeo, etc. El hecho que los equipos de telecomunicaciones se mantengan en operación continua, no significa que los equipos de energía estén trabajando dentro de los rangos de operación correctos, pues existe un \textbf{corrimiento} de estos valores en la curva del tiempo. El no realizar su mantenimiento puede provoar daños en el equipamiento que a su vez, indice en el servicio y perdidas económicas.\\
+En cada estación de radio enlace (\ref{fig: radio enlace}) se tendrá: Multiplexores de servicio, estos no conducen los servicios principales (que trabajan con la Banda Base), estos trabajan por la sub-banda base. \\
+El \textbf{equipo de telesupvisión master} se conecta  la \textbf{part line de baja frecuencia}, mientras que en las demás estaciones se colocan un \textbf{equipo de telesupvisión slave}. Como el equipo TELESUP posee alarmas, todas las alarmas de cada estación donde haya un TELESUP slave, la comunicación con el TELESUP master es constante y bi-direccional, por lo tanto, a través del puerto de datos del equipo TELESUP master podré ver el estado de las alarmas de cada estación. Las sub-bandas bases y la banda base conmutan juntos. En la figura \ref{fig:niveles tipicos} se puede ver 2 transmisores, donde 1 es típico transmisor y el otro es el sistema de redundancia, las bandas bases (tanto sub-banda como banda) deben de conmutar juntos. Recordar que la banda base tiene una modulación digital y la sub-banda base posee una modulación en FM.
+\begin{figure}
+\centering
+\includegraphics[width=0.6\linewidth]{IM/IM19.png}
+\label{fig: radio enlace}
+\caption{Configuración de radio enlace con MUX de servicio}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{IM/IM20.png}
+\label{fig:niveles tipicos}
+\caption{Niveles típicos de un sistema de radio digital de M.O. 34 Mbit/s}
+\end{figure}
 \section{Mediciones de radiofrecuencia}\index{Mediciones de radiofrecuencia}
 \subsection{¿Qué es radio enlace?}
 El Radio Enlace o radioenlace punto a punto, es un sistema de conexiones entre dos o más terminales (antenas) que utilizan ondas electromagnéticas para transmitir datos, ya sea para dar servicios de operador VoIP, servicios de telefonía móvil para empresas, Internet, etc.\\
@@ -8208,11 +8732,161 @@ Usados cuando el enlace es corto y no existe linea de vista(osea el enlace de ra
 \label{fig:repetidor pasivo espejo}
 \end{figure}
 Usado también en zonas montañosas donde la linea de vista es obstaculizada. Esta fabricado en aluminio concentrado y su función se basa en el principio de reflexión.
+\chapterimage{chapter_head_IM.pdf} % Chapter heading image
+\chapter{Aspectos, desafíos y soluciones del mantenimiento}
+Según la Norma EN-13306 (Norma estándar europea), el mantenimiento tiene únicamente dos subdivisiones principales: mantenimiento \textbf{preventivo} y mantenimiento \textbf{correctivo}. El mantenimiento preventivo, a su vez, se subdivide en solo dos tipos: mantenimiento \textbf{predictivo} (o basado en condición) y mantenimiento \textbf{preventivo sistemático} (o predeterminado, este es periódico).\\
+Asimismo, el mantenimiento \textbf{correctivo}, como segundo aspecto a resaltar, tiene dos divisiones a un nivel inferior: mantenimiento \textbf{diferido} (o programable) y mantenimiento \textbf{inmediato} (o urgente).
+\section{¿Qué es falla?}\index{Definición de falla}
+No confundir con avería, pues avería es cuando el equipo deja de funcionar totalmente, mientas la falla es temporal, solucionable, aunque puede ser una falla definitiva, en cuyo caso puede ser considerado como una avería. A toda costa se debe evitar las fallas en cola. 
+La diferencia entre falla y avería, en términos de ingenieros de mantenimiento: \emph{una falla potencial es aquella que aún no se convierte en avería es decir una falla potencial es una falla que existe en el equipo, pero que esta en fase de desarrollo mientras que una avería es una falla que ha ocurrido en el equipo y que lo ha dejado inoperativo}.\\
+Existen clasificaciones de fallas, estás están descritas en la tabla \ref{tab: tipos de falla}.
+\begin{table}[]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\rowcolor[HTML]{DAE8FC} 
+Criterio de clasificación                       & Tipo de fallo                                                                                             \\ \hline
+Por su influencia en la capacidad de trabajo    & \begin{tabular}[c]{@{}l@{}}Falla completa o total\\ Parcial\end{tabular}                                  \\ \hline
+Por su interacción con otros fallos             & \begin{tabular}[c]{@{}l@{}}Dependiente\\ Independiente\end{tabular}                                       \\ \hline
+Por su modo de manifestación respecto al tiempo & \begin{tabular}[c]{@{}l@{}}Repentino\\ Gradual\end{tabular}                                               \\ \hline
+Por si periodo de vida del activo               & \begin{tabular}[c]{@{}l@{}}Prematuro\\ Casual\\ Desgaste/envejecimiento\end{tabular}                      \\ \hline
+Por su severidad                                & \begin{tabular}[c]{@{}l@{}}Leve\\ Marginal\\ Crítico\\ Catastrófico\end{tabular}                          \\ \hline
+Por su frecuencia de ocurrencia                 & \begin{tabular}[c]{@{}l@{}}Frecuente\\ Probable\\ Ocasional\\ Remoto\\ Extremadamente remoto\end{tabular} \\ \hline
+\end{tabular}
+\end{center}
+\caption{Tipos de falla}
+\label{tab: tipos de falla}
+\end{table}
+\section{Fiabilidad y vida de un equipo}\index{Fiabilidad y vida de un equipo}
+La fiabilidad es la \textbf{probabilidad} de que un producto ,bien u equipo o sistema funcione sin detrimento de sus niveles de fallas,con rendimiento,disponibilidad,eficiencia,seguridad esperados. La ingeniería de la fiabilidad esta muy ligada a la \textbf{mantenibilidad}, que es la probabilidad de que un producto o sistema sea examinado y mantenido, es decir,restituido en un nivel aceptable de fiabilidad y confianza. \textbf{La vida útil}; es aquella en que el equipo mantiene una fiabilidad más o menos alta y estable, situándose en la vida de prueba o vida infantil y el lapso en que el desgaste se acentúa o la fiabilidad empieza a decrecer con rapidez.
+\section{Causas del deterioro o desgaste}\index{Causas del deterioro o desgaste}
+Los equipos sufren por una gran diversidad de causas deterioro o desgaste ,los cuales se han agrupada en tres clases:
+\begin{itemize}
+\item[Normal]: Debido a causas como la presión, movimiento o velocidad de operación, corrosión, fatiga, temperatura, vibraciones, etc
+\item[Anormal]: Debido a descuido, golpes, sobrecarga de trabajo o mala operación.
+\item[Accidental]: Debido a causas incontrolables, naturales o meteorológicas u otras no programables que se conocen como accidentes.
+\end{itemize}
+\emph{Olofsson} (2016) examina en su web esta temática a través de los fallos de una UPS
+(Inglés: Uninterruptible Power Supply). En esencia, es poder identificar las puntos claves donde pueden estar los fallos, solo se deben escribir las principales más no las secundarias, aparte no todas deben tener como primera opción con/sin energía pues existe elementos pasivos y activos.
+\begin{example}[Elabore un listado con las funciones principales que desarrolla una ups (unit power
+system) cuando la energía principal está disponible y cuando ésta se interrumpe.]
+Una fuente de alimentación UPS puede tener cinco funciones bajo dos condiciones:\\
+\textbf{Cuando la energía principal está disponible: }\\
+\begin{enumerate}
+\item Permitir que la energía fluya desde la fuente principal a la máquina que está siendo protegida.
+\item Acondicionar la energía limitando los picos de energía o bajadas de tensión.
+\item Almacenar energía en una batería, hasta que la batería recupere su carga total.
+\end{enumerate}
+\textbf{Cuando la energía principal se interrumpe:}\\
+\begin{enumerate}
+\item Proveer energía en forma continua a la máquina que está siendo protegida
+\item Emitir una señal mediante una alarma, para indicar que la energía comercial está fuera de servicio.
+\end{enumerate}
+\textbf{Conclusiones}:\\
+El aparato incumple su función principal (1) si no permite el paso de la corriente hacia la máquina que está protegiendo. Los fallos debidos a las funciones 2 y 3, tal vez no sean tan obvios, porque la maquina protegida todavía está funcionando bien sea por la energía principal o por la batería. Incluso si son detectados, estos fallos puede que no provoque medidas correctivas porque la maquina
+protegida sigue operando.
+\end{example}
+\begin{example}[Elabore un listado de las funciones principales que desarrolla un rectificador-cargador cuando la energía comercial esta disponible, cuando esta se interrumpe y cuando regresa.]
+Un equipo rectificador-cargador puede tener nueve funciones bajo tres condiciones:\\
+\textbf{Cuando la energía comercial está presente}
+\begin{enumerate}
+\item El rectificador -cargador recibe el voltaje comercial estabilizado 220 voltios eficaces
+\item Permite la conversión AC/DC 220/-48Vdc para alimentar los equipos
+\item Alimenta y carga las baterías
+\item Comparte la carga con el rectificador-cargador 2 de tal manera que el rectificador 1 asume
+el 50\% y el rectificador-cargador 2 asume el otro 50\%.
+\end{enumerate}
+\textbf{Cuando la energía comercial está ausente
+}:
+\begin{enumerate}
+\item Aparece alarma en el cargador-rectificador 1 y rectificador-cargador 2
+\item Las baterías asumen la carga de los equipos con un tiempo de independencia
+\end{enumerate}
+\textbf{Cuando la energía comercial regresa}
+\begin{enumerate}
+\item Se apaga la alarma de no funcionamiento del rectificador-cargador 1 y 2
+\item Los rectificadores asumen cada uno el 50\% de la carga de los equipos
+\item Se alimenta y se recupera gradualmente la carga de las baterías
+\end{enumerate}
+\textbf{Conclusiones:}\\
+El equipo rectificador incumple sus funciones de (1) y (2) entregar energía a los equipos si no convierte la onda alterna en onda continua. El equipo rectificador-cargador incumple su función (3) en el caso de que las baterías están demasiado descargadas. Aplicar alguna de las funciones de carga del rectificador tales como: carga normal, carga ecualizada y carga rápida.
+\end{example}
+\begin{example}[Elabore un listado de las funciones principales que desarrolla un motor-generador cuando la energía comercial esta disponible, cuando esta se interrumpe y cuando regresa]
+Un equipo motor-generador puede tener ocho funciones bajo tres condiciones\\
+\textbf{Cuando la energía comercial está presente}:\\
+\begin{itemize}
+\item El equipo motor-generador está en reposo y apagado
+\end{itemize}
+\textbf{Cuando la energía comercial está ausente}:
+\begin{itemize}
+\item Recibe un pulso de activación de parte del cubículo de control.
+\item Se enciende el motor-generador con la ayuda de la batería de arranque que posee
+suficiente corriente.
+\item Los parámetros del motor-generador se estabilizan.
+\item El cubiculo de control conmuta mediante un contactor para alimentar la entrada de los
+rectificadores-cargadores.
+\end{itemize}
+\textbf{Cuando la energía comercial regresa
+}:
+\begin{enumerate}
+\item Se apaga la alarma de no funcionamiento del rectificador-cargador 1 y 2
+\item Los rectificadores asumen cada uno el 50\% de la carga de los equipos
+\item Se alimenta y se recupera gradualmente la carga de las baterías
+\end{enumerate}
+\end{example}
+\begin{example}[Elabore un listado de las funciones principales que desarrolla un cubículo de control cuando la energía comercial esta disponible, cuando esta se interrumpe y cuando regresa.]
+Un equipo cubículo de control puede tener ocho funciones bajo tres condiciones\\
+\textbf{Cuando la energía comercial está presente}:
+\begin{enumerate}
+\item El cubículo de control tiene circuitos sensores que le informa acerca de la presencia de energía comercial y se mantiene en espera cuando la energía comercial se retire.
+\end{enumerate}
+\textbf{Cuando la energía comercial está ausente}:
+\begin{enumerate}
+\item El cubículo de control envía un pulso de activación y prende el motor-generador.
+\item Después que el motor generador ha adquirido sus parámetros normales de funcionamiento Conmuta mediante contactor el voltaje 220 hacia la entrada del motor-generador.
+\end{enumerate}
+\textbf{Cuando la energía comercial regresa}:
+\begin{enumerate}
+\item Se apaga la alarma de no funcionamiento del rectificador-cargador 1 y 2 en el panel del
+cubículo de control.
+\item Los rectificadores asumen cada uno el 50\% de la carga de los equipos
+\item Se alimenta y se recupera gradualmente la carga de las baterías
+\end{enumerate}
+\end{example}
+\begin{example}[Elabore un listado de las funciones principales que desarrolla un circular de microondas de 6ghz cuando el $T_x$ esta prendido y el $R_x$ esta prendido, cuando el $T_x$ esta prendido y el $R_x$ apagado y cuando el $T_x$ esta apagado y el $R_x$ prendido.]
+Un dispositivo como el circulador puede tener siete funciones bajo tres condiciones:\\
+\textbf{Cuando el $T_x$ esta prendido y cuando el $R_x$ está prendido.}
+\begin{enumerate}
+\item La señal RF del $T_x$ f1 ingresa al port 1 del circulador y sale por el port 2 del circulador
+hacia la antena.
+\item La señal RF del Tx f'1 ingresa al port 2 del circulador y sale por el port 3 del circulador
+hacia la entrada de $R_x$.
+\item El port 3 es común a la $T_x$ y $R_x$ para que puedan compartir una misma antena.
+\end{enumerate}
+\textbf{Cuando el $T_x$ esta prendido y cuando el $R_x$ está apagado.}:
+\begin{enumerate}
+\item La señal RF del $T_x$ f1 ingresa al port 1 del circulador y sale por el port 2 del circulador
+hacia la antena.
+\item La señal RF del $T_x$ f`1 ingresa al port 2 del circulador y sale por el port 3 del circulador
+hacia la entrada de $R_x$ pero apagado
+\end{enumerate}
+\textbf{Cuando el $T_x$ esta apagado y cuando el $R_x$ está prendido}
+\begin{enumerate}
+\item No hay señal RF del $T_x$ f1 en el recorrido port1 -port 2 del circulador hacia la antena
+\item La señal RF del $T_x$ f'1 ingresa al port 2 del circulador y sale por el port 3 del circulador hacia
+la entrada de $R_x$.
+\end{enumerate}
+\end{example}
 \section*{Vocabulario}
 \begin{vocabulary}[Duplexer]
 Un duplexor es un dispositivo electrónico que permite la comunicación bidireccional sobre una misma línea de transmisión. En sistemas de radar y de comunicaciones de RF, sirve para aislar el receptor del transmisor permitiendo compartir la misma antena
 \end{vocabulary}
-
+\begin{vocabulary}[Banda Base]
+Con dominio de 144 Mbps y tiene una jerarquia digital de multiplexores para el servicio(principal) de los usuarios
+\end{vocabulary}
+\begin{vocabulary}[Sub banda base]
+Para servicio de mantenimiento y telesupervisión, van por multiplexores de servicio que son más pequeños que los de servicio principal.
+\end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -8536,7 +9210,7 @@ Se resuelve igual que la matriz de producto cruz, con la misma distribución de 
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\chapterimage{Final.jpg} % Chapter heading image
+\chapterimage{Biblio.jpg} % Chapter heading image
 \chapterspaceabove{6.75cm} % Whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{7.25cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
@@ -8548,7 +9222,7 @@ Se resuelve igual que la matriz de producto cruz, con la misma distribución de 
 \section*{Articles}
 \addcontentsline{toc}{section}{Articles} % Add the Articles subheading to the table of contents
 
-\printbibliography[heading=bibempty,type=article] % Output article bibliography entries
+%\printbibliography[heading=bibempty,type=article] % Output article bibliography entries
 
 \section*{Books}
 \addcontentsline{toc}{section}{Books} % Add the Books subheading to the table of contents

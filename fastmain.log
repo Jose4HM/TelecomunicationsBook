@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.1)  3 JUN 2022 12:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.1)  8 JUN 2022 18:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1777,37 +1777,65 @@ File: Images//LT/LT2.png Graphic file (type png)
 <use Images//LT/LT2.png>
 Package pdftex.def Info: Images//LT/LT2.png  used on input line 79.
 (pdftex.def)             Requested size: 341.43437pt x 171.55411pt.
+Package mdframed Info: mdframed works in twoside mode on input line 86.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 86.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 93.
- [2 <./Images//LT/LT1.png> <./Images//LT/LT2.png>]
-(fastmain.aux)
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 86.
+
+
+LaTeX Warning: Reference `eq:utilizacion de enlace' on page 2 undefined on inpu
+t line 102.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 104.
+
+Missing character: There is no ó in font zptmcm7t!
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+
+LaTeX Warning: Reference `mdf@pagelabel-1' on page 2 undefined on input line 10
+6.
+
+[2 <./Images//LT/LT1.png> <./Images//LT/LT2.png>]
+
+LaTeX Warning: Reference `mdf@pagelabel-2' on page 3 undefined on input line 10
+6.
+
+[3] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 48864 strings out of 478614
- 1057551 string characters out of 2852941
- 2025605 words of memory out of 3000000
- 66059 multiletter control sequences out of 15000+600000
- 529732 words of font info for 170 fonts, out of 8000000 for 9000
+ 48845 strings out of 478614
+ 1056899 string characters out of 2852941
+ 2025668 words of memory out of 3000000
+ 66043 multiletter control sequences out of 15000+600000
+ 529313 words of font info for 175 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,19n,108p,1155b,801s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {E:/Programas x86/MikTex/fonts/enc/dvips/base/8r.enc}<E:/Programas x86/MikTex
 /fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Programas x86/MikTex/fonts/type1
-/public/amsfonts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfo
-nts/cm/cmsy10.pfb><E:/Programas x86/MikTex/fonts/type1/urw/avantgar/uagd8a.pfb>
-<E:/Programas x86/MikTex/fonts/type1/urw/avantgar/uagk8a.pfb><E:/Programas x86/
-MikTex/fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw
-/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/
-Programas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (2 pages, 268103 bytes).
+/public/amsfonts/cm/cmmi10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfonts/cm/cmsy1
+0.pfb><E:/Programas x86/MikTex/fonts/type1/public/amsfonts/symbols/msam10.pfb><
+E:/Programas x86/MikTex/fonts/type1/urw/avantgar/uagd8a.pfb><E:/Programas x86/M
+ikTex/fonts/type1/urw/avantgar/uagk8a.pfb><E:/Programas x86/MikTex/fonts/type1/
+urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/symbol/usyr.pfb><E
+:/Programas x86/MikTex/fonts/type1/urw/times/utmb8a.pfb><E:/Programas x86/MikTe
+x/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on fastmain.pdf (3 pages, 295694 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 67103 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
+ 65567 words of extra memory for PDF output out of 74296 (max. 10000000)
 
