@@ -7567,7 +7567,7 @@ Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedanci
 \label{fig:capacitancias smith}
 \end{figure}
 Si seguimos observando la carta de Smith (Fig. \ref{fig:smith chart}), notamos que tenemos 4 anillos exteriores, los anillos desde el interior al exterior son: ángulos del coeficiente de transmisión en grados (0-90), ángulos del coeficiente de reflexión en grados (0-180), longitud de onda hacia la carga (0-0.5) y longitud de onda hacia el generador (0.5). Estos serán valores serán usados más adelante, solo que tener bien en cuenta que \textbf{una vuelta completa a la carta es 0.5}.\\
-Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del coeficiente de reflexión (con reglar o preferiblemente con el compás) y usando como referencia el medio de estás reglas\footnote{Menos la última que donde el origen esta a la izquierda} medimos a la derecha o izquierda. estás son, de arriba hacia abajo:
+Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del coeficiente de reflexión (con una regla o preferiblemente con el compás) y usando como referencia el medio de estás reglas\footnote{Menos la última que donde el origen esta a la izquierda} medimos a la derecha o izquierda. estás son, de arriba hacia abajo:
 \begin{itemize}
 \item \textbf{SWR} (Standing Wave Ratio)\footnote{Llamado también ROE (Relación de Onda Estacionaria)}: Relación de voltaje de onda estacionaria, va desde cero al infinito.
 \item \textbf{dBS}: Unidad de SWR en decibelios.
@@ -7583,12 +7583,12 @@ términos de potencia, proporcional a $|\Gamma|^2$. Sin potencia reflejada para 
 por ej. para un valor de $\Gamma$ de 0,5 vemos que se transmite el 75\% de la potencia incidente.
 \end{itemize}
 \newpage
-\begin{example}[Una línea de transmisión sin pérdidas tiene una $Z_0=\Omega$ y una constante de fase de 2.321 rad/m, si la longitud de línea es de 120m y opera a 90MHz con una impedancia de carga $Z_L=90+\iu 90$. Encontrar: Impedancia de entrada, coeficiente de reflexión, SWR, perdida por retorno y potencia relativa.]\label{exe:1}
-Para encontrar la \textbf{impedancia de entrada}, primero tenemos la constante de propagación ($\beta$), usando la definición de la constante de propagación, encontraremos la longitud de onda ($\lambda$):
+\begin{example}[Una línea de transmisión sin pérdidas tiene una $Z_0=50\Omega$ y una constante de fase de 2.321 rad/m, si la longitud de línea es de 120m y opera a 90MHz con una impedancia de carga $Z_L=90+\iu 90$. Encontrar: Impedancia de entrada, coeficiente de reflexión, SWR, perdida por retorno y potencia relativa.]\label{exe:1}
+Para encontrar la \textbf{impedancia de entrada}, primero tenemos la constante de propagación ($\beta$), usando la definición de la constante de propagación y despejando $\lambda$, encontraremos la longitud de onda ($\lambda$):
 \begin{displaymath}
 \lambda=\frac{2\pi}{2.321}=2.70
 \end{displaymath}
-Con $\lambda$ encontrada podemos hallar una relación entre $\lambda$ y $\lambda(120m)$:
+Con $\lambda$ encontrada podemos hallar una relación entre $\lambda$ y $\lambda(120m)$, tan solo dividimos los 120 m entre 2.70$\lambda$ hallado:
 \begin{align*}
 & \lambda -\!\!\!-\!\!\!- 2.70\\
 & \lambda(120) -\!\!\!-\!\!\!- X\simeq 44.4\lambda

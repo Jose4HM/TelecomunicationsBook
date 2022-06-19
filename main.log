@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.1)  18 JUN 2022 22:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.1)  19 JUN 2022 09:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10269,7 +10269,7 @@ File: Images//MM/MM17.png Graphic file (type png)
 Package pdftex.def Info: Images//MM/MM17.png  used on input line 8244.
 (pdftex.def)             Requested size: 256.07741pt x 131.55379pt.
 
-Package caption Warning: \label without proper reference on input line 8244.
+Package caption Warning: \label without proper reference on input line 8245.
 See the caption package documentation for explanation.
 
 
@@ -10278,7 +10278,7 @@ line 8248.
 
 [353 <./Images//MM/MM16.png> <./Images//MM/MM17.png>]
 
-Package caption Warning: \label without proper reference on input line 8258.
+Package caption Warning: \label without proper reference on input line 8259.
 See the caption package documentation for explanation.
 
 
@@ -10398,7 +10398,7 @@ Package pdftex.def Info: Images//IM/IM18.png  used on input line 8482.
 
 ]
 
-Package caption Warning: \label without proper reference on input line 8515.
+Package caption Warning: \label without proper reference on input line 8516.
 See the caption package documentation for explanation.
 
 
@@ -10406,7 +10406,7 @@ LaTeX Warning: Reference `fig: radio enlace' on page 364 undefined on input lin
 e 8511.
 
 
-Package caption Warning: \label without proper reference on input line 8521.
+Package caption Warning: \label without proper reference on input line 8522.
 See the caption package documentation for explanation.
 
 
@@ -11791,10 +11791,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 65615 strings out of 478614
- 1424789 string characters out of 2852941
- 2450404 words of memory out of 3000000
- 78658 multiletter control sequences out of 15000+600000
+ 65614 strings out of 478614
+ 1424768 string characters out of 2852941
+ 2450379 words of memory out of 3000000
+ 78657 multiletter control sequences out of 15000+600000
  714706 words of font info for 950 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  141i,21n,139p,1857b,2596s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -11828,7 +11828,7 @@ fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/
 utmb8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/Progr
 amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (439 pages, 35521284 bytes).
+Output written on main.pdf (439 pages, 35521375 bytes).
 PDF statistics:
  9088 PDF objects out of 10688 (max. 8388607)
  2607 named destinations out of 2984 (max. 500000)
