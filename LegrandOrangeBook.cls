@@ -51,6 +51,7 @@
 
 \definecolor{color1}{RGB}{23,170,41}%Personal
 \definecolor{color2}{cmyk}{0,0.87,0.68,0.32}
+%Personal packages
 \usepackage{wrapfig}
 \usepackage{tabularx}
 \usepackage{multicol}
@@ -59,7 +60,10 @@
 \newcommand{\iu}{{j\mkern1mu}}%Complejo
 \usepackage{pgfplots}
 \usepgfplotslibrary{smithchart}
-\pgfplotsset{compat=1.17}
+\pgfplotsset{compat=1.7}
+\usepgfplotslibrary{polar}   
+\usepackage{siunitx} 
+\newcommand\diff{\mathop{}\!d}
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------

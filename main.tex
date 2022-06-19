@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[
-	11pt, % Default font size, select one of 10pt, 11pt or 12pt
+	12pt, % Default font size, select one of 10pt, 11pt or 12pt
 	fleqn, % Left align equations
 	a4paper, % Paper size, use either 'a4paper' for A4 size or 'letterpaper' for US letter size
 	%oneside, % Uncomment for oneside mode, this doesn't start new chapters and parts on odd pages (adding an empty page if required), this mode is more suitable if the book is to be read on a screen instead of printed
@@ -376,7 +376,7 @@ La impedancia $\mathbb{Z}$ del elemento del circuito es el cociente entre la ten
 \mathbb{Z}=\frac{\mathbb{V}}{\mathbb{I}}
 \end{displaymath}
 \begin{equation*}
-\frac{\mathbb{V}}{\mathbb{I}}=\mathbb{R}\mathbb{I}
+\frac{\mathbb{V}}{\mathbb{I}}=R
 \qquad
 \frac{\mathbb{V}}{\mathbb{I}}=\iu\omega L
 \qquad
@@ -384,7 +384,7 @@ La impedancia $\mathbb{Z}$ del elemento del circuito es el cociente entre la ten
 \end{equation*}
 Es una cantidad compleja que tiene dimensiones de \textbf{Ohms}, no es fasor y no puede transformarse al dominio del tiempo multiplicando por $e^{\iu\omega t}$ y tomando la parte real.
 \begin{equation*}
-\mathbb{Z}_R=\mathbb{R}\mathbb{I}
+\mathbb{Z}_R=R
 \qquad
 \mathbb{Z}_L=\iu\omega L
 \qquad
@@ -2733,6 +2733,13 @@ Vemos que la salida no es estable, esta lectura inestable puede ocasionar errore
 \begin{center}
 \includegraphics[scale=0.5]{SD/SD56.png}
 \end{center}
+Usando un CI timer 555 se puede crear un sistema anti-rebote, en la figura \ref{fig:timer 555}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{SD/SD95.png}
+\caption{Timer 555 usado como sistema anti-rebote.}
+\label{fig:timer 555}
+\end{figure}
 \subsection{Latch con entrada de habilitación}
 El latch no cambiará de estado hasta que la entrada EN este en nivel ALTO, mientras este en ALTO, las salidas serán controlados por las entradas S y R. Una situación invalida es cuando R y S están a nivel alto simultáneamente.
 \begin{figure}[h]
@@ -7464,6 +7471,9 @@ También hay que tener en cuenta los indicadores de los LED
 \item \textbf{Ámbar}: Puerto no esta enviando datos, es común para los 30 primeros segundos de conectar o activar
 \item \textbf{Ámbar parpadeando}: El puerto está bloqueando para evitar un bucle de conmutación
 \end{itemize}
+\chapterimage{chapter_head_IN1.pdf}
+\chapter{Capa de red}
+
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -7503,7 +7513,163 @@ El buffer es un espacio temporal de memoria física el cual se usa para almacena
 \part{Líneas de transmisión}
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_LT.pdf} % Chapter heading image
-
+\chapterimage{chapter_head_LT.pdf} % Chapter heading image
+\chapter{Carta de Smith}
+La carta de Smith es un diagrama polar del coeficiente de reflexión complejo (también llamado Gamma $\Gamma$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
+Una carta de Smith simplificada, que muestra sus círculos de resistencia constante y arcos de reactancia constante, es un buen punto de partida para comprender su disposición. Como beneficio adicional, la carta también proporciona una forma de mostrar los parámetros de dispersión (parámetros S) y cómo sus valores se relacionan con las medidas y consideraciones reales del hardware.\\
+Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedancia de 50 $\Omega$, a diferencia de la figura \ref{fig:smith chart}; para solucionar esto solo se escalan los valores, es decir, dividimos cada valor entre 50. Además, recordando en análisis en frecuencia, sabemos que los inductores se diferencian de los capacitores solo por el signo, inductores son positivos y capacitores negativos. Es por ello que se distingue dos flechas verticales: hacia arriba están los positivos (inductancia) y abajo negativos (capacitancia). Cuando la resistencia, capacitancia y inductancia son constantes son circulos, arcos y arcos respectivamente. En las lineas de transmisión se distinguen dos formas de enlazar circuitos: paralelo y serie; estos son representados las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{LT/LT3.png}
+\caption{Carta Smith para 50$\Omega$.}
+\label{fig:partes smith}
+\end{figure}
+\begin{figure}[]
+\centering
+\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{LT/Smith.eps}}
+\caption{Carta de Smith}
+\label{fig:smith chart}
+\end{figure}
+\begin{figure}[]
+\centering
+\subfloat[Resistencia en serie]{\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+       \addplot+ [red,line width=1.2] coordinates{(1,0) (2,0)};
+	\end{smithchart}
+\end{tikzpicture}}
+\subfloat[Resistencia en paralelo]{\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+       \addplot+ [red,line width=1.2] coordinates{(1,0) (0.5,0)};
+	\end{smithchart}
+\end{tikzpicture}}
+\caption{Resistancias}
+\label{fig:resistencias smith}
+\end{figure}
+\begin{figure}[]
+\centering
+\subfloat[Inductor en serie]{\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        \addplot+[mark=*,only marks,samples at={0, .01,...,1}, mark options={solid},color={red},mark size=.2,line width=1] (1,x) ;
+	\end{smithchart}
+\end{tikzpicture}}
+\subfloat[Inductor en paralelo]{{\includegraphics[width=0.45\linewidth]{LT/LT4.png}}}
+\caption{Inductancias}
+\label{fig:inductancias smith}
+\end{figure}
+\begin{figure}[]
+\centering
+\subfloat[Capacitor en serie]{\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+\addplot+[mark=*,only marks,samples at={0, -.01,...,-.5}, mark options={solid},color={red},mark size=.2,line width=1] (1,x) ;
+	\end{smithchart}
+\end{tikzpicture}}
+\subfloat[Capacitor en paralelo]{\includegraphics[width=0.45\linewidth]{LT/LT5.png}}
+\caption{Capacitancias}
+\label{fig:capacitancias smith}
+\end{figure}
+Si seguimos observando la carta de Smith (Fig. \ref{fig:smith chart}), notamos que tenemos 4 anillos exteriores, los anillos desde el interior al exterior son: ángulos del coeficiente de transmisión en grados (0-90), ángulos del coeficiente de reflexión en grados (0-180), longitud de onda hacia la carga (0-0.5) y longitud de onda hacia el generador (0.5). Estos serán valores serán usados más adelante, solo que tener bien en cuenta que \textbf{una vuelta completa a la carta es 0.5}.\\
+Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del coeficiente de reflexión (con reglar o preferiblemente con el compás) y usando como referencia el medio de estás reglas\footnote{Menos la última que donde el origen esta a la izquierda} medimos a la derecha o izquierda. estás son, de arriba hacia abajo:
+\begin{itemize}
+\item \textbf{SWR} (Standing Wave Ratio)\footnote{Llamado también ROE (Relación de Onda Estacionaria)}: Relación de voltaje de onda estacionaria, va desde cero al infinito.
+\item \textbf{dBS}: Unidad de SWR en decibelios.
+\item \textbf{RTN LOSS}: Perdida por retorno, esto indica
+la cantidad de onda reflejada expresada en dB. Así, en el centro de la carta, nada es reflejado y la pérdida de retorno es infinita. En el límite tenemos reflexión completa, por lo tanto la pérdida por retorno es 0 dB.
+\item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en
+términos de potencia, proporcional a $|\Gamma|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
+\item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\Gamma$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno.
+\item \textbf{Coeficiente de Voltaje de transmisión}: Tenga en cuenta que el módulo del coeficiente de transmisión de voltaje (y corriente) tiene un rango de cero, es decir, cortocircuito, a +2 (abierto = 1+$\Gamma$ con $\Gamma$=1). esta regla solo es válida para $Z_L$ = real, es decir, el caso de un escalón en la impedancia característica de la línea coaxial.
+\item \textbf{ATTEN}: en dB supone que estamos midiendo una atenuador (que puede ser una línea con pérdida) que a su vez está terminado por un circuito abierto o cortocircuito (reflexión completa). Por lo tanto, la onda viaja dos veces a través del atenuador (hacia adelante y hacia atrás). hacia atrás). El valor de este atenuador puede estar entre cero y algún número muy alto correspondiente al caso emparejado. La escala inferior de la regla 1 muestra la misma situación solo en términos de VSWR.
+\item \textbf{RFL.LOSS[dB]}: esta regla se refiere a la pérdida en la onda transmitida, que no debe confundirse con la pérdida de retorno refiriéndose a la onda reflejada. Muestra la relación en dB de $P_t=1-|\Gamma|^2$.
+\item \textbf{TRANSM. COEFF. P}: Se refiere a la potencia transmitida como función de desajuste y muestra esencialmente la relación $P_t=1-|\Gamma|^2$. Así, en el centro de la carta, se transmite toda la potencia. En el límite tenemos reflexión total y
+por ej. para un valor de $\Gamma$ de 0,5 vemos que se transmite el 75\% de la potencia incidente.
+\end{itemize}
+\begin{example}[Una línea de transmisión sin pérdidas tiene una $Z_0=\Omega$ y una constante de fase de 2.321 rad/m, si la longitud de línea es de 120m y opera a 90MHz con una impedancia de carga $Z_L=90+\iu 90$. Encontrar: Impedancia de entrada, coeficiente de reflexión, SWR, perdida por retorno y potencia relativa.]\label{exe:1}
+Para encontrar la \textbf{impedancia de entrada}, primero tenemos la constante de propagación ($\beta$), usando la definición de la constante de propagación, encontraremos la longitud de onda ($\lambda$):
+\begin{displaymath}
+\lambda=\frac{2\pi}{2.321}=2.70
+\end{displaymath}
+Con $\lambda$ encontrada podemos hallar una relación entre $\lambda$ y $\lambda(120m)$:
+\begin{align*}
+& \lambda -\!\!\!-\!\!\!- 2.70\\
+& \lambda(120) -\!\!\!-\!\!\!- X\simeq 44.4\lambda
+\end{align*}
+Este valor de $\lambda$ indica la longitud de onda, en la carta eso se representa como dar vueltas a la carta en círculos ya que el valor es grande. Recordamos que la \textbf{vuelta completa} es 0.5, para llegar al valor de 44.4 damos las vueltas necesarias:
+\begin{displaymath}
+Vueltas=\frac{44.4}{0.5}=88+0.4
+\end{displaymath}
+Está no es una división común, sino que lo alteramos un poco: si la vuelta completa es 0.5, para cubrir $\lambda(120)=44$ necesitamos 88 vueltas, donde llegaremos al mismo punto, sin embargo nos falta 0.44 para completar $\lambda(120)=44.4$ es por eso que solo tomamos el valor de $\lambda(120)=0.4\lambda$, pues el 44 serán vueltas en el mismo lugar.\\
+Ahora hallamos $\beta$:
+\begin{displaymath}
+\beta_{120m}=\frac{2\pi}{\lambda}\cdot 0.4\lambda=0.8\pi
+\end{displaymath}
+Usando la ecuación de la impedancia de carga:
+\begin{displaymath}
+Z_{in}=50=\frac{(90+\iu 90)+\iu(50)\tan(0.8\pi)}{50+\iu(90+\iu 90)\tan(0.8\pi)}=19.75+\iu34.5
+\end{displaymath}
+Continuamos hallando el \textbf{Coeficiente de reflexión}, para ello solo hay que reemplazar en la ecuación respectiva:
+\begin{displaymath}
+\Gamma=\frac{(90+\iu 90)-50}{(90+\iu 90)+50}=0.592\phase{33.28^{\circ}}
+\end{displaymath}
+Lo mismo con \textbf{SWR}, usando su ecuación:
+\begin{displaymath}
+SWR=\frac{1+0.592\phase{33.28^{\circ}}}{1-0.592\phase{33.28^{\circ}}}=3.9
+\end{displaymath}
+Usando la relación logarítmica para SWR se encuentra la pérdida por retorno:
+\begin{displaymath}
+SWR=-20\log(0.592\phase{33.28^{\circ}})=4.5dB
+\end{displaymath}
+Por último la potencia relativa, ya que no específica voltaje asumimos 1V y lo expresamos en porcentaje:
+\begin{displaymath}
+P_r=(0.592\phase{33.28^{\circ}})^2\cdot 1\cdot 100\%=34.81\%
+\end{displaymath}
+\end{example}
+\begin{example}[Resolver el ejercicio \ref{exe:1} usando la carta de Smith]
+Con la ayuda de la carta de Smith esto será más fácil, primero que todo \textbf{normalizamos} la impedancia de salida:
+\begin{displaymath}
+\frac{90+\iu 90}{50}=1.8+\iu 1.8
+\end{displaymath}
+Ubicamos en punto en la carta de Smith (intersección de las rectas rojo y azul), trazamos una recta desde el origen hacia el exterior de la carta (recta naranja) y un circulo de radio donde se ubique la intersección (verde):
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Reactance plot - blue
+        \addplot[domain=0:30, samples=600, color=blue] {1.8};
+	    % Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, .01,...,1.8}, mark options={solid},mark size=.08,color={red},line width=0.5] (1.8,x) ;
+        \path[draw=green] (0pt,0pt) circle (1.68cm);
+		\addplot+ [orange,line width=1] coordinates{(1,0) (0,3.30)};        
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Ahora tenemos que observar el valor de la \textbf{longitud de onda hacia el generador} donde termina la recta naranja, notamos que el valor es $\lambda=0.203$. Con este valor de $\lambda$ hallado vamos a sumar el valor de $0.4\lambda(120)$, y luego restamos una vuelta completa (0.5), pues como excede este valor de la vuelta completa significa que daremos una vuelta completa (0.5) y un poco más:
+\begin{displaymath}
+0.4\lambda +0.230\lambda =0.603\lambda -0.5=0.103\lambda
+\end{displaymath}
+Ahora que hallamos este valor de $0.103\lambda$ ubicamos ese valor en el anillo \textbf{longitud de onda hacia el generador} y trazamos una linea al centro de la carta, anotamos el valor de la intersección entre la recta violeta y el circulo verde.
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Reactance plot - blue
+        \addplot[domain=0:30, samples=600, color=blue] {1.8};
+	    % Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, .01,...,1.8}, mark options={solid},mark size=.08,color={red},line width=0.5] (1.8,x) ;
+        \path[draw=green] (0pt,0pt) circle (1.68cm);
+		\addplot+ [orange,line width=1] coordinates{(1,0) (0,3.30)};
+		\addplot+ [violet,line width=1] coordinates{(1,0) (0,0.76)};  
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Ahora notamos los valores que finales de la carta:
+\begin{enumerate}
+\item $0.38+\iu 0.68$: Resultado del cruce del circulo verde y la recta violeta, este representa la impedancia de entrada $Z_{in}$, sin embargo esta respuesta no esta desnormalizada:
+\begin{displaymath}
+50(0.38+\iu 0.68)=19+\iu 34
+\end{displaymath}
+\item 0.59: Este valor se obtiene de las reglas inferiores, con el compás medimos el radio del circulo verde, luego ubicamos la punta del compás en el centro de cada regla y marcamos el valor hacia la izquierda.
+\item 3.9: SWR medido en las reglas inferiores
+\item 4.5: Perdida por retorno hallado en las reglas inferiores.
+\end{enumerate}
+\end{example}
 \newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Refracción]
@@ -8771,13 +8937,13 @@ Los equipos sufren por una gran diversidad de causas deterioro o desgaste ,los c
 \begin{example}[Elabore un listado con las funciones principales que desarrolla una ups (unit power
 system) cuando la energía principal está disponible y cuando ésta se interrumpe.]
 Una fuente de alimentación UPS puede tener cinco funciones bajo dos condiciones:\\
-\textbf{Cuando la energía principal está disponible: }\\
+\textbf{Cuando la energía principal está disponible: }
 \begin{enumerate}
 \item Permitir que la energía fluya desde la fuente principal a la máquina que está siendo protegida.
 \item Acondicionar la energía limitando los picos de energía o bajadas de tensión.
 \item Almacenar energía en una batería, hasta que la batería recupere su carga total.
 \end{enumerate}
-\textbf{Cuando la energía principal se interrumpe:}\\
+\textbf{Cuando la energía principal se interrumpe:}
 \begin{enumerate}
 \item Proveer energía en forma continua a la máquina que está siendo protegida
 \item Emitir una señal mediante una alarma, para indicar que la energía comercial está fuera de servicio.
@@ -8813,7 +8979,7 @@ El equipo rectificador incumple sus funciones de (1) y (2) entregar energía a l
 \end{example}
 \begin{example}[Elabore un listado de las funciones principales que desarrolla un motor-generador cuando la energía comercial esta disponible, cuando esta se interrumpe y cuando regresa]
 Un equipo motor-generador puede tener ocho funciones bajo tres condiciones\\
-\textbf{Cuando la energía comercial está presente}:\\
+\textbf{Cuando la energía comercial está presente}:
 \begin{itemize}
 \item El equipo motor-generador está en reposo y apagado
 \end{itemize}
@@ -8853,7 +9019,7 @@ cubículo de control.
 \item Se alimenta y se recupera gradualmente la carga de las baterías
 \end{enumerate}
 \end{example}
-\begin{example}[Elabore un listado de las funciones principales que desarrolla un circular de microondas de 6ghz cuando el $T_x$ esta prendido y el $R_x$ esta prendido, cuando el $T_x$ esta prendido y el $R_x$ apagado y cuando el $T_x$ esta apagado y el $R_x$ prendido.]
+\begin{example}[Elabore un listado de las funciones principales que desarrolla un circular de microondas de 6Ghz cuando el $T_x$ esta prendido y el $R_x$ esta prendido, cuando el $T_x$ esta prendido y el $R_x$ apagado y cuando el $T_x$ esta apagado y el $R_x$ prendido.]
 Un dispositivo como el circulador puede tener siete funciones bajo tres condiciones:\\
 \textbf{Cuando el $T_x$ esta prendido y cuando el $R_x$ está prendido.}
 \begin{enumerate}
@@ -8877,6 +9043,330 @@ hacia la entrada de $R_x$ pero apagado
 la entrada de $R_x$.
 \end{enumerate}
 \end{example}
+\section{La relación del mantenimiento y la organización}
+Una gran mayoría de personas aun considera que para
+obtener un buen producto o servicio es suficiente que las maquinas trabajen adecuadamente y se mantengan en
+perfectas condiciones. Es debido a esto que en nuestras Escuelas y Universidades aun se sigue
+enseñando que el mantenimiento solo tiene que ver con
+armar, desarmar y componer equipos. El problema es que no existe una definición estandar entre diferentes personas, al tener variedad de definiciones, es necesario que existan buenas relaciones humanas entre el personal de mantenimiento y producción. Un aspecto para poder realizar una buena participación entre todos es el \textbf{liderazgo}, capaz de transmitir la dirección y la inspiración necesario para mantener y potenciar le compromiso de los trabajadores. No es lo mismo ser líder, que se preocupa no solo de recursos físicos sino que también se ocupa de recursos emocionales y espirituales que ser directivo. Es en ese sentido que el liderazgo se convierte en un elemento importante en la gestión del mantenimiento, dado que permite potenciar el aporte de cada uno de los trabajadores mejorando la productividad y a su vez mejorará la ventaja competitiva.\\
+El liderazgo en la gestión del mantenimiento necesita las siguientes consideraciones:
+\begin{itemize}
+\item Respetar , considerar y sobre todo, valorar a cada trabajador, por muy bajo que sea su cargo, en la convicción de que este pueda aportar ideas importantes para el mejoramiento continuo de las actividades de mantenimiento
+\item Establecer un ambiente laboral en el cual cada trabajador realices su trabajo con orgullo y con sentido de pertenencia hacia al empresa. 
+\item Capacitar y adiestrar constantemente a los trabajadores.
+\item Romper las barreras comunicacionales de tradicionalmente han existido en las organizaciones.
+\item Lograr que cada trabajador sea consciente del impacto de la calidad de su trabajo en el futuro del área de mantenimiento y de la organización.
+\end{itemize}
+\subsection*{Mantenimiento y los paradigmas}
+La organización nace de la necesidad del ser humano por la cooperación y, gracias a ello, puede lograr fines que, por razones de sus limitaciones (físicas, biológicas,sociológicas y sociales), no puede lograr de manera aislada. Es un patrón de relaciones que, regidas por una jerarquización y ciertas leyes o normas, persiguen un fin común. Vale decir, entonces, que la organización es un conjunto de cargos cuyas reglas y normas de comportamiento, deben sujetarse a todos sus miembros para, de esta forma, valerse de los medios que permitan a la empresa alcanzar determinados objetivos. Una organización industrial, en su forma más genérica, se puede definir como el conjunto integrado de recursos humanos, materiales y tecnología, configurada en función de un conjunto de objetivos que definen la misión o razón de ser de la empresa para la cual existe.\\
+El diseño de las organizaciones ha obedecido históricamente a ciertos \textbf{paradigmas}.
+Sin embargo, las últimas dos décadas del siglo XX han signado el derrumbe de
+muchos de estos paradigmas, tanto en el mundo de la ciencia como en el mundo industrial.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IM/IM21.png}
+\caption{Factores externos e internos de la ingeniera del mantenimiento}
+\label{fig:Factores mantenimiento}
+\end{figure}
+En la figura \ref{fig:Factores mantenimiento}, un encargado de mantenimiento tendrá dos tipos de factores que lidian con el , como externos tenemos los factores de la derecha, mientras que los internos son los de la derecha. Algunos ejemplos de los factores en las telecomunicaciones son: reguladores, OSIPTEL, MTC; competencia, otros operadores; tecnología, cambio de tecnología de RF a fibra, esto ocasiona que tengamos que decidir; procesos, procesos financieros; estrategia, tenemos planes de como proceder con el cambio; organización, como esta preparada la empresa para poder migrar a una nueva tecnología, comprende licitación, plan, financiamiento, etc.
+\section{Distribución Normal}
+\begin{definition}[Distribución normal ó Gaussiana]
+Esta distribución es frecuentemente utilizada en las aplicaciones estadísticas. Su propio nombre indica su extendida utilización, justificada por la frecuencia o normalidad con la que ciertos fenómenos tienden a parecerse en su comportamiento a esta distribución.\\
+Su función densidad esta dada por:
+\begin{equation}
+f(x)=\frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}
+\label{eq:gauss}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\mu$: Media
+\item $\sigma$: Desviación estándar, desviación típica.
+\item $\sigma^2$: Varianza
+\end{itemize}
+Si la \textbf{media} y la \textbf{varianza} son 0 y 1 respectivamente se llama \textbf{Distribución Normal Estándar}. De una forma un otra, la nomenclatura general para una distribución normal es $\mathcal{N}(\mu,\sigma)$.
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(2*sqrt(2*pi))*exp(-((x-1)^2)/(2*2^2))}}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{IM/IM22.png}
+\end{center}
+\end{definition}
+Sobre la ecuación \ref{eq:gauss}, haciendo un cambio de variable de:
+\begin{equation}
+z=\frac{x-\mu}{\sigma}
+\label{eq:int gauss}
+\end{equation}
+y reemplazando el \ref{eq:gauss}, se obtiene:
+\begin{displaymath}
+f(z)=\int_{-\infty}^z\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z
+\end{displaymath}
+\begin{theorem}[Área bajo la distribución]
+Usando la ecuación \ref{eq:int gauss}, integramos desde menos infinito a cero y desde cero hasta más infinito:
+\begin{align*}
+\int_{-\infty}^z\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z&=\underbrace{\frac{1}{\sqrt{2\pi}}\int_{-\infty}^0e^{-\frac{z^2}{2}}\diff z}_{0.5}=\underbrace{\frac{1}{\sqrt{2\pi}}\int^{\infty}_0e^{-\frac{z^2}{2}}\diff z}_{0.5}\\
+\int_{-\infty}^z\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z&=0.5+0.5=1
+\end{align*}
+\end{theorem}
+\begin{proposition}[Probabilidad que sea menor a $a$]
+Para calcular la probabilidad de que Z sea menor a $a$ se dice que $P(Z\leq a)$
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($x$),
+height=6cm, width=10cm,xticklabels={,,,,0,a,,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=cyan!20, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=none, draw=black, domain=1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{proposition}
+\begin{proposition}[Probabilidad que sea mayor a $a$]
+Para saber si Z>a, se debe usar la identidad que dice: $P(Z>a)=1-P(Z\leq a)$:
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($x$),
+height=6cm, width=10cm,xticklabels={,,,,0,a,,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=black, domain=1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{proposition}
+\begin{proposition}[Probabilidad que sea menor a $-a$] Para valores negativos hacemos uso de la simetría de la distribución: $P(Z\leq -a)=1-P(Z\leq a)$
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($x$),
+height=6cm, width=10cm,xticklabels={,,,-a,0,,,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=cyan!20, draw=black, domain=-3:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=none, draw=black, domain=-1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{proposition}
+\begin{proposition}[Probabilidad entre sectores positivos y negativos]
+Si la probabilidad se encuentra entre límites positivos y negativos se dice que: $P(-a<Z\leq b)=P(Z\leq b)-\left[1-P(Z\leq a)\right]$
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($x$),
+height=6cm, width=10cm,xticklabels={,,,-a,0,b,,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=black, domain=-1:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=none, draw=black, domain=1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{proposition}
+\begin{proposition}[Sector entre sectores positivos]
+La probabilidad entre sectores positivos es escrito como $P(a<Z\leq b)=P(Z\leq b)-P(Z\leq a)$:
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($x$),
+height=6cm, width=10cm,xticklabels={,,,,0,a,b}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=black, domain=1:2] {gauss(0,1)} \closedcycle;
+\addplot [fill=none, draw=black, domain=2:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{proposition}
+\begin{proposition}[Probabilidad entre sectores negativos]
+Si los límites del área están entre límites negativos, se expresa: $P(-b<Z\leq -a)=P(a<Z\leq b)$
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($x$),
+height=6cm, width=10cm,xticklabels={,,-b,-a,0}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:-2] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=black, domain=-2:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=none, draw=black, domain=-1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\end{proposition}
+\section{Función Gamma}
+\begin{definition}[Función Gamma]
+Es una integral paramétrica que esta definida por:
+\begin{equation}
+\Gamma (n)=\int_0^{\infty}u^{n-1}e^{-u}\diff u
+\label{eq:Fgamma}
+\end{equation}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{IM/IM23.png}
+\end{center}
+Esta integral es convergente para valores positivos($n>0$) y para valores negativos ($n<0$) pero no puede ser extendida a los enteros negativos y al cero
+\end{definition}
+\begin{theorem}[Demostrar $\Gamma(n+1)=n\Gamma(n)\forall n>0$]
+\begin{align*}
+\Gamma(n+1)&=\int_0^{\infty}u^{\left[(n+1)-1\right]}e^{-u}\diff u\\
+\Gamma(n+1)&=\int_0^{\infty}u^ne^{-u}\diff u\\
+\Gamma(n+1)&=\lim_{P\to\infty}\int_0^Pu^ne^{-u}\diff u
+\end{align*}
+Integrando por partes:
+\begin{displaymath}
+\begin{alignedat}{2}
+  \omega&=u^n \quad & \diff \omega &= x\diff nu^{n-1}\diff u\\
+  \diff v &= e^{-u}\diff u \quad & v &= -e^{-u}
+\end{alignedat}
+\end{displaymath}
+\begin{align*}
+\Gamma (n+1)&=\lim_{P\to \infty}\left[-u^ne^{-u}\right]\Big|_0^P+n\int_0^Pu^{n-1}e^{-u}du\\
+&=\lim_{P\to\infty}\underbrace{\left[-P^ne^{-P}\right]}_{0}+\lim_{P\to\infty}n\int_0^Pu^{n-1}e^{-u}du\\
+\Gamma (n+1)&=n\Gamma(n)
+\end{align*}
+\end{theorem}
+\begin{theorem}[Demostrar $\Gamma(n+1)=n!\forall n\in\mathcal{Z}^+$]
+Usando la demostración anterior:
+\begin{align*}
+\Gamma(n+1)&=n\Gamma(n)=n(n-1)\Gamma(n-1)\\
+&=n(n-1)(n-2)\Gamma(n-2)\\
+&=n(n-1)(n-2)\ldots 3\cdot 2\cdot 1\Gamma(1)\\
+&=n!\Gamma(1)=n!
+\end{align*}
+Además:
+\begin{align*}
+\Gamma(1)&=\int_0^{\infty}e^{-u}\diff u=1\\
+\Gamma(1)&=1
+\end{align*}
+\end{theorem}
+\begin{theorem}[Demostrar $\int_0^{\infty}e^{-u^2}\diff u=\frac{\sqrt{\pi}}{2}$]
+Definiendo:
+\begin{displaymath}
+I_p=\int_0^Pe^{-x^2}\diff x=\int_0^Pe^{-y^2}\diff x
+\end{displaymath}
+Por lo tanto:
+\begin{displaymath}
+I_P=\lim_{P\to\infty}I_P
+\end{displaymath}
+Luego:
+\begin{align*}
+I_P^2&=\int_0^P\int_0^Pe^{-(x^2+y^2)}\diff x\diff y\\
+I_P^2&=\int_{RP}e^{-(x^2+y^2)}\diff x\diff y
+\end{align*}
+Donde $R_P$ es el cuadrado OACB
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM24.png}
+\end{center}
+$R_1$: Región en el cuadrante I comprendida por la circunferencia de radio P.\\
+$R_2$: Región comprendida en el cuadrante I comprendida por la circunferencia de radio $P\sqrt{2}$\\
+Por lo tanto:
+\begin{displaymath}
+\int_{R_1}\int e^{-(x^2+y^2)}\diff x\diff y\geq I_P^2 \geq \int_{R_2}\int e^{-(x^2+y^2)}\diff x\diff y
+\end{displaymath}
+Convirtiendo a coordenadas polares, haciendo que $r=f(\theta)$:
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM25.png}
+\end{center}
+Usando una regla de tres simple:
+\begin{align*}
+& 2\pi -\!\!\!-\!\!\!- \pi r^2\\
+& \theta -\!\!\!-\!\!\!- A
+\end{align*}
+Despejando el área (A):
+\begin{displaymath}
+A=\frac{\pi r^2\theta}{2\pi}=\frac{1}{2}r^2\theta
+\end{displaymath}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM26.png}
+\end{center}
+\begin{align*}
+\diff A&=\frac{1}{2}r^2\diff\theta\\
+A&=\frac{1}{2}\int_{\alpha}^{\beta}r^2\diff\theta\\
+A&=\frac{1}{2}\int_{\alpha}^{\beta}f(\theta)^2\diff\theta
+\end{align*}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM27.png}
+\end{center}
+Sea la región:
+\begin{displaymath}
+R=\left\langle(r,\theta)\in\mathcal{R}^2/0\leq g(\theta)\leq f(\theta),\alpha\leq\theta\leq\beta \right\langle
+\end{displaymath}
+El área de las regiones:
+\begin{displaymath}
+A_R=\frac{1}{2}\int_{\alpha}^{\beta}\left(f^2(\theta)-g^2(\theta)\right)\diff\theta
+\end{displaymath}
+Cambiando las variables:
+\begin{displaymath}
+\int_R\int f(x,y)\diff x\diff y=\int_R\int f(r\sin\theta,r\cos\theta)r\diff r\diff\theta
+\end{displaymath}
+Y usando coordenadas polares:
+\begin{align*}
+&=\int_0^{\frac{\pi}{2}}\left(\int_0^Pe^{-r^2}r\diff r\right)\diff\theta\leq I_P^2\leq \int_0^{\frac{\pi}{2}}\left(\int_0^{P\sqrt{2}}e^{-r^2}r\diff r\right)\diff\theta\\
+&=\int_0^{\frac{\pi}{2}}\frac{\left(1-e^{-P^2}\right)}{2}\diff\theta\leq I_P^2\leq \int_0^{\frac{\pi}{2}}\frac{\left(1-e^{-2P^2}\right)}{2}\diff\theta\\
+&=\frac{\pi}{4}\left(1-e^{-P^2}\right)\leq I_P^2\leq\frac{\pi}{4}\left(1-e^{-2P^2}\right)
+\end{align*}
+Tomando como límite $P\to\infty$:
+\begin{displaymath}
+\frac{\sqrt{\pi}}{2}\leq I_P\leq\frac{\sqrt{n}}{2}
+\end{displaymath}
+Entonces:
+\begin{displaymath}
+\int_0^{\infty}e^{-u^2}\diff u\frac{\sqrt{\pi}}{2}
+\end{displaymath}
+Por otro lado se tiene:
+\begin{align*}
+u=\frac{z}{\sqrt{2}}&\rightarrow\diff u=\frac{\diff z}{\sqrt{2}}\\
+\int_0^{\infty}e^{-\left(\frac{z}{\sqrt{2}}\right)^2}\frac{\diff z}{\sqrt{2}}&=\frac{\sqrt{\pi}}{2}\\
+\int_0^{\infty}e^{-\left(\frac{z^2}{2}\right)^2}\frac{\diff z}{\sqrt{2}}&=\frac{\sqrt{\pi}}{2}\\
+\int_0^{\infty}e^{-\left(\frac{z^2}{2}\right)^2}\diff z&=\frac{\sqrt{2}\times\sqrt{\pi}}{2}
+\end{align*}
+\begin{equation*}
+\boxed{\frac{1}{\sqrt{2\pi}}\int_0^{\infty}e^{-\frac{z^2}{2}}\diff z}=\frac{1}{z}=0.5
+\end{equation*}
+Entonces el área bajo la curva:
+\begin{displaymath}
+A=0.5+0.5=1
+\end{displaymath}
+Ahora considerando x=y:
+\begin{align*}
+&=\int_0^{\frac{\pi}{2}}\frac{\left(1-e^{-P^2}\right)}{2}\diff\theta\leq I_P^2\leq \int_0^{\frac{\pi}{2}}\frac{\left(1-e^{-2P^2}\right)}{2}\diff\theta\\
+&=\frac{\pi}{4}\left(1-e^{-P^2}\right)\leq I_P^2\leq\frac{\pi}{4}\left(1-e^{-P^2}\right)\\
+&\therefore I_P^2=\frac{\pi}{4}\left(1-P^2\right)\\
+&\left[\int_0^Pe^{-u^2}\diff u\right]^2=\frac{\pi}{4}\left(1-e^{-P^2}\right)\\
+&\int_0^Pe^{-u^2}\diff u=\frac{\sqrt{\pi}}{2}\times\sqrt{(1-e^{-P^2})}
+\end{align*}
+\begin{displaymath}
+u=\frac{z}{\sqrt{2}}\rightarrow\diff u=\frac{dz}{\sqrt{z}}
+\end{displaymath}
+Si:
+\begin{align*}
+&u=0\rightarrow z=0\\
+&u=P\rightarrow z=P\sqrt{2}\\
+&\int_0^{P\sqrt{2}}e^{-\frac{z^2}{2}}\frac{\diff z}{\sqrt{2}}=\frac{\sqrt{\pi}}{2}\sqrt{(1-e^{-P^2})}
+\end{align*}
+\begin{equation*}
+\boxed{\frac{1}{\sqrt{2\pi}}\int_0^{P\sqrt{2}}e^{-\frac{z^2}{2}}\diff z}=\frac{1}{2}\sqrt{1-e^{-P^2}}
+\end{equation*}
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+P                    & $P\sqrt{2}$ & F.D.N  \\ \hline
+$\frac{1}{\sqrt{2}}$ & 1           & 0.3136 \\ \hline
+$\frac{2}{\sqrt{2}}$ & 2           & 0.4649 \\ \hline
+$\frac{3}{\sqrt{2}}$ & 3           & 0.4972 \\ \hline
+\end{tabular}
+\end{center}
+\end{theorem}
+\newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Duplexer]
 Un duplexor es un dispositivo electrónico que permite la comunicación bidireccional sobre una misma línea de transmisión. En sistemas de radar y de comunicaciones de RF, sirve para aislar el receptor del transmisor permitiendo compartir la misma antena
@@ -8886,6 +9376,9 @@ Con dominio de 144 Mbps y tiene una jerarquia digital de multiplexores para el s
 \end{vocabulary}
 \begin{vocabulary}[Sub banda base]
 Para servicio de mantenimiento y telesupervisión, van por multiplexores de servicio que son más pequeños que los de servicio principal.
+\end{vocabulary}
+\begin{vocabulary}[Paradigma]
+Son premisas, supuestos o esquemas teóricos convencionalmente aceptados y de carácter determinante. Este carácter estriba en que de ellos se derivan ciertas implicaciones, comportamientos y resultados previsibles. Todo paradigma se sustenta sobre uno o más conceptos originarios, creencias o principios establecidos que constituyen su basamento filosófico.
 \end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
@@ -9179,6 +9672,26 @@ El módulo del vector producto vectorial coincide con el área del paralelogramo
 =a_x(b_yc_z-b_zc_y)-a_y(b_xc_z-b_zc_x)+a_z(b_xc_y-c_xb_y)
 \end{equation}
 Se resuelve igual que la matriz de producto cruz, con la misma distribución de signos.
+\section{Ángulo de desfase}
+\begin{definition}[Medición de desfase]
+El desfase existe siempre y cuando las señales posean la misma \textbf{frecuencia}.
+El desfase $\phi$ se calcula:
+\begin{equation}
+\phi=t_d\cdot 2\pi F=\frac{t_d}{T}\cdot 360^{\circ}
+\label{eq:desfase}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $t_d$: Tiempo de desfase (s), se puede calcular tomando como punto de referencia los valores pico o el valor en cero pero deben ser en ambos la misma medida, es decir, o bien valor pico en ambos o bien el valor en cero en ambos. Luego de ello, restamos ambos tiempos, mayor menos el menor.
+\item F: Frecuencia (Hz).
+\item T: Periodo: 1/F (seg).
+\item $\omega$: Frecuencia angular (rad/seg).
+\end{itemize}
+\begin{center}
+\includegraphics[width=0.8\linewidth]{Electro/Electro4.png}
+\end{center}
+Dependiendo de la forma que se use, las unidades angulares son distintas.
+\end{definition}
 %----------------------------------------------------------------------------------------
 %	ANEXOS
 %----------------------------------------------------------------------------------------
