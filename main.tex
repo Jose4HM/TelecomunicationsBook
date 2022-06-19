@@ -7513,12 +7513,11 @@ El buffer es un espacio temporal de memoria física el cual se usa para almacena
 \part{Líneas de transmisión}
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_LT.pdf} % Chapter heading image
-\chapterimage{chapter_head_LT.pdf} % Chapter heading image
 \chapter{Carta de Smith}
 La carta de Smith es un diagrama polar del coeficiente de reflexión complejo (también llamado Gamma $\Gamma$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
 Una carta de Smith simplificada, que muestra sus círculos de resistencia constante y arcos de reactancia constante, es un buen punto de partida para comprender su disposición. Como beneficio adicional, la carta también proporciona una forma de mostrar los parámetros de dispersión (parámetros S) y cómo sus valores se relacionan con las medidas y consideraciones reales del hardware.\\
 Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedancia de 50 $\Omega$, a diferencia de la figura \ref{fig:smith chart}; para solucionar esto solo se escalan los valores, es decir, dividimos cada valor entre 50. Además, recordando en análisis en frecuencia, sabemos que los inductores se diferencian de los capacitores solo por el signo, inductores son positivos y capacitores negativos. Es por ello que se distingue dos flechas verticales: hacia arriba están los positivos (inductancia) y abajo negativos (capacitancia). Cuando la resistencia, capacitancia y inductancia son constantes son circulos, arcos y arcos respectivamente. En las lineas de transmisión se distinguen dos formas de enlazar circuitos: paralelo y serie; estos son representados las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
-\begin{figure}[H]
+\begin{figure}[]
 \centering
 \includegraphics[width=0.4\linewidth]{LT/LT3.png}
 \caption{Carta Smith para 50$\Omega$.}
@@ -7583,6 +7582,7 @@ términos de potencia, proporcional a $|\Gamma|^2$. Sin potencia reflejada para 
 \item \textbf{TRANSM. COEFF. P}: Se refiere a la potencia transmitida como función de desajuste y muestra esencialmente la relación $P_t=1-|\Gamma|^2$. Así, en el centro de la carta, se transmite toda la potencia. En el límite tenemos reflexión total y
 por ej. para un valor de $\Gamma$ de 0,5 vemos que se transmite el 75\% de la potencia incidente.
 \end{itemize}
+\newpage
 \begin{example}[Una línea de transmisión sin pérdidas tiene una $Z_0=\Omega$ y una constante de fase de 2.321 rad/m, si la longitud de línea es de 120m y opera a 90MHz con una impedancia de carga $Z_L=90+\iu 90$. Encontrar: Impedancia de entrada, coeficiente de reflexión, SWR, perdida por retorno y potencia relativa.]\label{exe:1}
 Para encontrar la \textbf{impedancia de entrada}, primero tenemos la constante de propagación ($\beta$), usando la definición de la constante de propagación, encontraremos la longitud de onda ($\lambda$):
 \begin{displaymath}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.1)  18 JUN 2022 20:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.1)  18 JUN 2022 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9769,16 +9769,20 @@ ound PDF version <1.6>, but at most version <1.5> allowed
 <Images//chapter_head_LT.pdf, id=5600, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_LT.pdf Graphic file (type pdf)
 <use Images//chapter_head_LT.pdf>
-Package pdftex.def Info: Images//chapter_head_LT.pdf  used on input line 7517.
+Package pdftex.def Info: Images//chapter_head_LT.pdf  used on input line 7516.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 7520.
+
 <Images//LT/LT3.png, id=5606, 282.30469pt x 251.43938pt>
 File: Images//LT/LT3.png Graphic file (type png)
 <use Images//LT/LT3.png>
-Package pdftex.def Info: Images//LT/LT3.png  used on input line 7523.
+Package pdftex.def Info: Images//LT/LT3.png  used on input line 7522.
 (pdftex.def)             Requested size: 170.71393pt x 152.05031pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 7527.
+               Default added (so using `tbp') on input line 7526.
 
 Package epstopdf Info: Source file: <Images//LT/Smith.eps>
 (epstopdf)                    date: 2022-06-18 12:21:11
@@ -9788,7 +9792,7 @@ Package epstopdf Info: Source file: <Images//LT/Smith.eps>
 (epstopdf)                    size: 502981 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=Images//LT/Smith-eps
 -converted-to.pdf Images//LT/Smith.eps>
-(epstopdf)             \includegraphics on input line 7529.
+(epstopdf)             \includegraphics on input line 7528.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -9798,36 +9802,33 @@ clusion: found PDF version <1.7>, but at most version <1.5> allowed
 File: Images//LT/Smith-eps-converted-to.pdf Graphic file (type pdf)
 <use Images//LT/Smith-eps-converted-to.pdf>
 Package pdftex.def Info: Images//LT/Smith-eps-converted-to.pdf  used on input l
-ine 7529.
+ine 7528.
 (pdftex.def)             Requested size: 512.14832pt x 609.03473pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [321
-
- <./Images//chapter_head_LT.pdf>]
-
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 7533.
+               Default added (so using `tbp') on input line 7532.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 7548.
+               Default added (so using `tbp') on input line 7547.
 
-<Images//LT/LT4.png, id=5619, 445.665pt x 450.18187pt>
+<Images//LT/LT4.png, id=5608, 445.665pt x 450.18187pt>
 File: Images//LT/LT4.png Graphic file (type png)
 <use Images//LT/LT4.png>
-Package pdftex.def Info: Images//LT/LT4.png  used on input line 7555.
+Package pdftex.def Info: Images//LT/LT4.png  used on input line 7554.
 (pdftex.def)             Requested size: 192.0548pt x 194.00032pt.
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 7559.
+               Default added (so using `tbp') on input line 7558.
 
-<Images//LT/LT5.png, id=5620, 447.92343pt x 453.19313pt>
+<Images//LT/LT5.png, id=5609, 447.92343pt x 453.19313pt>
 File: Images//LT/LT5.png Graphic file (type png)
 <use Images//LT/LT5.png>
-Package pdftex.def Info: Images//LT/LT5.png  used on input line 7566.
+Package pdftex.def Info: Images//LT/LT5.png  used on input line 7565.
 (pdftex.def)             Requested size: 192.0548pt x 194.30911pt.
+[321
+
+ <./Images//chapter_head_LT.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -9859,6 +9860,7 @@ Package mdframed Info: mdframed works in twoside mode on input line 7586.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 7586.
+Package mdframed Info: Not enough space on this page on input line 7625.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 7625.
@@ -10267,7 +10269,7 @@ File: Images//MM/MM17.png Graphic file (type png)
 Package pdftex.def Info: Images//MM/MM17.png  used on input line 8244.
 (pdftex.def)             Requested size: 256.07741pt x 131.55379pt.
 
-Package caption Warning: \label without proper reference on input line 8249.
+Package caption Warning: \label without proper reference on input line 8244.
 See the caption package documentation for explanation.
 
 
@@ -10276,7 +10278,7 @@ line 8248.
 
 [353 <./Images//MM/MM16.png> <./Images//MM/MM17.png>]
 
-Package caption Warning: \label without proper reference on input line 8263.
+Package caption Warning: \label without proper reference on input line 8258.
 See the caption package documentation for explanation.
 
 
@@ -10396,7 +10398,7 @@ Package pdftex.def Info: Images//IM/IM18.png  used on input line 8482.
 
 ]
 
-Package caption Warning: \label without proper reference on input line 8520.
+Package caption Warning: \label without proper reference on input line 8515.
 See the caption package documentation for explanation.
 
 
@@ -10404,7 +10406,7 @@ LaTeX Warning: Reference `fig: radio enlace' on page 364 undefined on input lin
 e 8511.
 
 
-Package caption Warning: \label without proper reference on input line 8526.
+Package caption Warning: \label without proper reference on input line 8521.
 See the caption package documentation for explanation.
 
 
@@ -11789,10 +11791,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 65634 strings out of 478614
- 1425212 string characters out of 2852941
- 2450710 words of memory out of 3000000
- 78677 multiletter control sequences out of 15000+600000
+ 65615 strings out of 478614
+ 1424789 string characters out of 2852941
+ 2450404 words of memory out of 3000000
+ 78658 multiletter control sequences out of 15000+600000
  714706 words of font info for 950 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  141i,21n,139p,1857b,2596s stack positions out of 10000i,1000n,20000p,200000b,80000s
@@ -11826,7 +11828,7 @@ fonts/type1/urw/symbol/usyr.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/
 utmb8a.pfb><E:/Programas x86/MikTex/fonts/type1/urw/times/utmbi8a.pfb><E:/Progr
 amas x86/MikTex/fonts/type1/urw/times/utmr8a.pfb><E:/Programas x86/MikTex/fonts
 /type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (439 pages, 35521318 bytes).
+Output written on main.pdf (439 pages, 35521284 bytes).
 PDF statistics:
  9088 PDF objects out of 10688 (max. 8388607)
  2607 named destinations out of 2984 (max. 500000)
