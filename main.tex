@@ -7628,7 +7628,7 @@ Con la ayuda de la carta de Smith esto será más fácil, primero que todo \text
 \begin{displaymath}
 \frac{90+\iu 90}{50}=1.8+\iu 1.8
 \end{displaymath}
-Ubicamos en punto en la carta de Smith (intersección de las rectas rojo y azul), trazamos una recta desde el origen hacia el exterior de la carta (recta naranja) y un circulo de radio donde se ubique la intersección (verde):
+Ubicamos en punto en la carta de Smith (intersección de las curvas roja y azul), trazamos una recta (naranja) desde el origen hacia el exterior de la carta  y un circulo (verde), de tal manera que ambos pasen por el punto hallado previamente:
 \begin{center}
 \begin{tikzpicture}
 	\begin{smithchart}[show origin]
@@ -7641,7 +7641,7 @@ Ubicamos en punto en la carta de Smith (intersección de las rectas rojo y azul)
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
-Ahora tenemos que observar el valor de la \textbf{longitud de onda hacia el generador} donde termina la recta naranja, notamos que el valor es $\lambda=0.203$. Con este valor de $\lambda$ hallado vamos a sumar el valor de $0.4\lambda(120)$, y luego restamos una vuelta completa (0.5), pues como excede este valor de la vuelta completa significa que daremos una vuelta completa (0.5) y un poco más:
+Ahora tenemos que observar el valor que indica la recta (naranja) en el anillo \textbf{longitud de onda hacia el generador}, notamos que el valor es $\lambda=0.203$. Con este valor de $\lambda$ hallado vamos a sumar el valor de $0.4\lambda(120)$, y luego restamos una vuelta completa (0.5), pues como excede el valor de la vuelta completa (0.5) significa que daremos una vuelta completa y un poco más:
 \begin{displaymath}
 0.4\lambda +0.230\lambda =0.603\lambda -0.5=0.103\lambda
 \end{displaymath}
@@ -7665,11 +7665,15 @@ Ahora notamos los valores que finales de la carta:
 \begin{displaymath}
 50(0.38+\iu 0.68)=19+\iu 34
 \end{displaymath}
-\item 0.59: Este valor se obtiene de las reglas inferiores, con el compás medimos el radio del circulo verde, luego ubicamos la punta del compás en el centro de cada regla y marcamos el valor hacia la izquierda.
+\item 0.59: Este valor se obtiene de la regla inferior \textbf{RFL. COEFF, E or I}, con el compás medimos el radio del circulo verde, luego ubicamos la punta del compás en el centro de cada regla y marcamos el valor hacia la izquierda.
+\item 35\%: \textbf{RFL. COEFF, P}, expresado en porcentaje pues el valor ahí indica que es 0.35.
 \item 3.9: SWR medido en las reglas inferiores
-\item 4.5: Perdida por retorno hallado en las reglas inferiores.
+\item 4.5dB: Perdida por retorno hallado en las reglas inferiores.
 \end{enumerate}
 \end{example}
+\begin{remark}
+Si el valor de $\lambda$ excede los 0.5, somos libres de restar la cantidad necesaria de vueltas, ya que como el valor excede el valor de la vuelta completa, no sirve de nada tener valores altos pues siempre estaremos en el mismo punto. A manera de ejemplo: si tenemos el valor de 3.1, necesitaremos 0.5+0.5+0.5+0.5+0.5+0.5+0.1 vueltas q dar, fíjate que hasta el valor de 3 daremos 6 vueltas en el mismo punto, y no es hasta aquí que recién nos moveremos 0.1.
+\end{remark}
 \newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Refracción]
