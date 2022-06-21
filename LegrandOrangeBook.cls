@@ -64,6 +64,9 @@
 \usepgfplotslibrary{polar}   
 \usepackage{siunitx} 
 \newcommand\diff{\mathop{}\!d}
+\usepackage[export]{adjustbox}
+\renewcommand*\ttdefault{pcr}
+\let\ipAddress\texttt
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------

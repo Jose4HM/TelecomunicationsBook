@@ -7473,7 +7473,205 @@ También hay que tener en cuenta los indicadores de los LED
 \end{itemize}
 \chapterimage{chapter_head_IN1.pdf}
 \chapter{Capa de red}
-
+\begin{remark}
+No confundir enrutamiento con direccionamiento. El primero se trata de saltar entre redes, por ejemplo mandar datos desde la LAN propia de un empresa hacia la LAN propia de otra empresa, los datos salen de nuestra red y viajan; mientras que el direccionamiento se trata dentro de la misma red, mandar a imprimir un archivo en una impresora LAN.
+\end{remark}
+Vale la pena recordar el contexto en el que estamos para trabajar la cada de red, esta se puede ver en la figura \ref{fig:entorno red}, el host 1 es una computadora conectada directamente al ISP (Proveedor de servicio de internet) representado por la región ploma, mientras que el host tiene un conexión que pasa a través de F, pudiendo ser una oficina con un router LAN.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN57.png}
+\caption{Entorno de los protocolos de la capa de red}
+\label{fig:entorno red}
+\end{figure}
+Existen diferentes formas que un datagrama llegue de un punto a otro, estas puedes ser enviadas de diferentes maneras a través de la \textbf{red de datagramas} que solo es aplicada para las \textbf{conexiones no orientadas a la conexión} pues son enrutados de manera independiente. En la figura \ref{fig:enru datagrama} podemos ver que un flujo de datos ha sido fragmentado en 4 datagramas, además nos presentan las tablas de enrutamiento\footnote{Solo sirven a manera de ejemplo, no siempre son esos valores} que indican como van a viajar los datagramas, si vemos la tabla \textit{A} (al principio), notamos que la primera columna es el destino y la segunda la línea. La primera fila se ignora pues estamos ya en \textit{A}, la segunda fila será leída: \emph{Para enviar el datagrama a \textbf{\textit{B}}, usamos la línea hacia \textbf{\textit{B}}}. Esta misma sintaxis será usada par los demás cuadros, estos cuadros dependen de cada sistema y no son fijos, habrá caminos restringidos por alguna razón, por ejemplo en la tabla de \textit{C} notamos que para llegar a \textit{D}, no lo podemos hacer directo, sino que tenemos que pasar por \textit{E}. Los datagramas 1, 2 y 3 han sido enrutados por el mismo camino pero 4 ha sido enrutado por otro camino, esto es porque la tabla de \textit{A} ha sido cambiada por la de (más tarde), tal vez hubo tráfico por lo que se enruto por otro camino, para esto se usan \textbf{algoritmos de enrutamiento}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IN1/IN58.png}
+\caption{Enrutamiento dentro de una red de datagramas.}
+\label{fig:enru datagrama}
+\end{figure}
+Mientras que para lo \textbf{servicios orientados a la conexión}, los caminos ya están definidos como se ve en al figura \ref{fig:circ virt}, estos caminos son llamados \textbf{circuitos virtuales} y la red es llamada \textbf{red de circuitos virtuales}. En cada enrutador ya se tiene configurada la ruta, todo tráfico fluye por esa conexión y cuando se libera, también se termina el circuito virtual. Aquí cada paquete lleva un identificador que indica a cuál circuito pertenece.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IN1/IN59.png}
+\caption{Enrutamiento dentro de una red de circuitos virtuales.}
+\label{fig:circ virt}
+\end{figure}
+En la figura \ref{fig:circ virt}, la conexión entre \textit{H1} y \textit{H2} se ve plasmada en las primeras filas de cada tabla: tabla \textit{A}: si H1 con la etiqueta 1 llega a \textit{A}, está será enviada a \textit{C} con la etiqueta 1; en tabla \textit{C}, si llega de \textit{A} con la etiqueta 1, será enviada a \textit{E} con etiqueta 1 y así sucesivamente, sin embargo para H3 hay un error, pues también quiere comunicarse con H2, al llegar a \textit{A}, este si sabe cuales paquetes viene de H1 y cuales de H2, por los que lo etiqueta diferentes, pero esta información no la saben los demás pues solo se encargan de enviar y no les cambian las etiquetas. Por eso es importante asignar y reemplazar un identificador de conexión en los paquetes de salida.\\\textbf{MPLS} (conmutación mediante etiquetas) es un servicio orientado a la conexión. 
+\begin{table}[H]
+\begin{center}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|l|l|}
+\hline
+\rowcolor[HTML]{FFFFC7} 
+Asunto                         & Red de datagramas                                                                                                  & Red de circuitos virtuales                                                                                               \\ \hline
+Configuración del circuito     & No necesaria                                                                                                       & Requerida                                                                                                                \\ \hline
+Direccionamiento               & \begin{tabular}[c]{@{}l@{}}Cada paquete contiene la dirección\\ de origen y de destino completas.\end{tabular}     & \begin{tabular}[c]{@{}l@{}}Cada paquete contiene un número\\ de CV corto.\end{tabular}                                   \\ \hline
+Información de estado          & \begin{tabular}[c]{@{}l@{}}Los enrutadores no contienen información\\ de estado sobre las conexiones.\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cada CV requiere espacio de tabla del\\ enrutador por cada conexión.\end{tabular}             \\ \hline
+Enrutamiento                   & \begin{tabular}[c]{@{}l@{}}Cada paquete se enruta de manera\\ independiente\end{tabular}                           & \begin{tabular}[c]{@{}l@{}}La ruta se elije cuando se establece el\\ CV, todos lo paquetes siguen esa ruta.\end{tabular} \\ \hline
+Efecto de fallas del enrutador & \begin{tabular}[c]{@{}l@{}}Ninguno, excepto para paquetes perdidos\\ durante una caida.\end{tabular}               & \begin{tabular}[c]{@{}l@{}}Terminan todos los CVs que pasaron por\\ el enrutador defectuoso.\end{tabular}                \\ \hline
+Calidad del servicio           & Difícil                                                                                                            & \begin{tabular}[c]{@{}l@{}}Fácil si se pueden asignar suficientes\\ recursos por adelantado para cada CV.\end{tabular}   \\ \hline
+Control de congestión          & Difícil                                                                                                            & \begin{tabular}[c]{@{}l@{}}Fácil si se puede asignar sufucientes\\ recursos por adelantado para cada CV.\end{tabular}    \\ \hline
+\end{tabular}}
+\end{center}
+\caption{Comparación entre las redes de datagramas y de circuitos virtuales.}
+\end{table}
+\section{Algoritmos de enrutamiento}\index{Algoritmos de enrutamiento}
+Propiedades que debe tener cualquier algoritmo son exactitud, sencillez, robustez, estabilidad, \textbf{equidad} y \textbf{eficiencia}. Existes dos tipos algoritmos: \textbf{adaptativos} y los \textbf{no adaptativos ó estáticos}. En la figura \ref{fig:optimizacion}.a vemos una red con \textbf{principio de optimización} y establece que si el enrutador J está en la ruta óptima del enrutador I al enrutador K, entonces la ruta óptima de J a K también está en la misma ruta. Para ver esto, llamemos $r_1$ a la parte de la ruta de I a J y $r_2$ al resto de la ruta. Si existiera una ruta mejor que $r_2$ entre J y K, se podría concatenar con $r_1$ para mejorar la ruta de I a K, lo cual contradice nuestro postulado de que $r_1r_2$ es óptima.\\
+Como consecuencia directa del principio de optimización, podemos ver que el grupo de rutas óptimas de todos los orígenes a un destino dado forman un árbol con raíz en el destino. Dicho árbol se conoce como árbol sumidero (o árbol divergente) y se ilustra en la figura \ref{fig:optimizacion}.b, donde la métrica de distancia es el número de saltos. El objetivo de todos los algoritmos de enrutamiento es descubrir y usar los árboles sumidero para todos los enrutadores.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN60.png}
+\caption{a. Una red. (b) Un árbol sumidero para el enrutador B.}
+\label{fig:optimizacion}
+\end{figure}
+\subsection{Algoritmo la ruta más corta}
+El algoritmo más conocido es el de Dijkstra, se usa la metodología consiste en etiquetar cada nodo con su distancia desde el nodo y su mejor ruta (distancia,mejor ruta), la distancia no tiene una unidad fija, puede ser kilometros, ancho de banda, retardo, etc. Al empezar el algoritmo, todas las etiquetas son \textbf{tentativas} e infinitas, a medida que avanzamos estas cambian a etiquetas \textbf{permanentes}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN61.png}
+\caption{Primeros seis pasos para conectar A con D.}
+\label{fig:algo dij}
+\end{figure}
+La figura \ref{fig:algo dij}.a nos muestra la red pura, en la figura \ref{fig:algo dij}.b nos muestra que se eligió el camino AB, pues tiene un costo de 2 a comparación de AG, cuyo costo es 6. Es por ello que B se rotula como: (2,A). Continuamos en la figura \ref{fig:algo dij}.c, E se rotula de con (4,B), siguiendo el camino de B, aún así, rotulamos G con una etiqueta \textbf{tentativa} a través de A donde consume 7. En la figura \ref{fig:algo dij}.d, hay que cubrir la demanda de G por convertirla en \textbf{permanente}, si hacemos el ruteo directo AG, este tendría un costo de 6 tentativo, a comparación de tomar el camino de E(4,B), tendríamos un costo de 5 tentativo, la mejor ruta es ir por ABE, por lo tanto la etiqueta E(4,B) se vuelve en permanente. Seguimos con el punto F y C, colocando sus etiqutas tentativas de (6,E) y (9,B) respectivamente. En la figura \ref{fig:algo dij}.e definimos la etiqueta permanente la ruta de F pues es la mejor. Una vez definida esta ruta, colocamos la etiqueta tentativa a H(9,G), y luego de analizar las rutas nos damos cuenta que la etiqueta tentativa de H esta mal debido a que la mejor ruta es F(6,E), bajo estas condiciones rotulamos permanente H(8,F) como en la figura \ref{fig:algo dij}.f.
+\subsection{Algoritmo vector distancia}
+Es un encaminamiento dinámico, distribuido (no hay nodo central) y adyacente, es decir trabaja con la información de sus compañeros.\\
+Su principio de funcionamiento es que cada nodo mantiene una tabla de encaminamiento en el cual se coloca la distancia/costo entre el nodo y sus adyacentes. Cada nodo envía periódicamente a cada uno de sus nodos adyacentes una lista de sus estimaciones del costo para alcanzar todos los posibles destinos (\textbf{vector distancia}). Al empezar el enrutamiento, el vector de distancias será 0 para si mismo e infinito para los demás adyacente, esta vector será compartido con los adyacentes y se irá llenando hasta que se llegue al destino, luego de ello no sé recalculará a menos que se produzca algún cambio en los enlaces del nodo, se recibe un vector distancia conteniendo información distinta de la recibida anteriormente o un enlace ha caído.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IN1/IN62.png}
+\caption{Ejemplo vector distancia}
+\label{fig:ejemplo vec dist}
+\end{figure}
+Mirando la red en la figura \ref{fig:ejemplo vec dist}, tenemos una red de 12 nodos (A-J), nos centramos en el nodo J, al nodo J le llegan los vectores distancias de sus vecinos adyacentes (A, I, H y K), estos vectores tienen 12 posiciones para cada uno de los nodos en la red, es cero si se trata del mismo nodo (el camino del nodo A al nodo A es cero). Además se tiene el costo del nodo J al vecino adyacente. Ahora para calcular el vector distancia se crea una tabla para todas los nodos desde J, nos centramos en el nodo B pues para el nodo A, al ser directo será un costo de 8. Para B desde J calculamos:
+\begin{displaymath}
+D(J,B)=mín(d(J,A)+D(A,B);d(J,I)+D(I,B);d(J,H)+D(H,B);d(J,K)+D(K,B))
+\end{displaymath}
+\textit{d} significa el costo y D es costo del vector:
+\begin{displaymath}
+D(J,B)=mín(8+12;10+36;12+31;6+28)
+\end{displaymath}
+La mínima sería por A=20, este valor se coloca el nodo A como línea de salida y 20 como el costo. Este procedimiento se repite para todos los nodos desde J.\\
+Un problema con este sistema es el \textbf{conteo al infinito}, mirando la figura \ref{fig:cont inf}.a: se inicia el enrutamiento para los nodos en serie A, B, C, D y E. Del nodo A (referencia) hay una distancia de 1 hacia B (primer intercambio), este valor se transmite a C, por lo tanto C sabe que hay una distancia de 2 hacia A (segundo intercambio) y así sucesivamente, todos sabrán la distancia que hay entre ellos. Esta ruta no sé cambiará a menos que caiga por ejemplo, el nodo A (\ref{fig:cont inf}.b), como B ha detectado que A no responde, pero C le dice a B que tiene una ruta hacia A (B no sabe que esa ruta es por la misma B, ya que pueden haber \textit{n} nodos), B la acepta y actualiza su distancia 3 (primer intercambio), C ahora se da cuenta que B propuso una ruta de 3 hacia A, C la toma, actualizando su valor a 4 (segundo intercambio), a su vez la transmite a D y B se entera que C tiene una ruta hacia A de valor 4, B se actualiza a 5 junto con D (tercer intercambio) y así sucesivamente, este error se propagará hasta el infinito. Este puede ser solucionado con un limite de costo.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.7\linewidth]{IN1/IN63.png}
+\caption{Problema conteo al infinito}
+\label{fig:cont inf}
+\end{figure}
+\subsection{Encaminamiento por estado del enlace}
+El funcionamiento hace uso de ruta más corta e inundación\footnote{Consiste en mandar paquetes a todas las líneas, excepto por donde envió.}. Para este encaminamiento, un nodo genera un informe de sus vecinos (distancia/coste) y construye un \textbf{LSP} (\emph{Paquete de estado de enlace}) indicando quien lo envía y el informe evaluado. Luego de ello envía el LSP por inundación a todos los routers de la red. Sólo se envían cuando hay cambios, tienen un tiempo de vida limitado permitiendo que los paquetes no se pueden propagar infinitamente ya que pasado ese tiempo el paquete se destruye. Se procura que ni un nodo envié ningún LSP por donde se ha recibido y si un nodo recibe un LSP repetido, lo rechaza o no lo retrasmite.
+\begin{example}[Crear el encaminamiento optimo respecto al nodo C]
+%=====================================FAlta ejemplo=======
+\end{example}
+\section{Capa de red de Internet}
+%==================================Falta===============
+\subsection{IPv4}
+La IP es un número de 32 bits, que se agrupa en 4 bytes. Este se expresa en \textbf{notación decimal con puntos}:
+\begin{center}
+\textbf{IP:}\\
+\ipAddress{\textcolor{blue}{10000011}\textcolor{red}{01101100}\textcolor{violet}{01111010}\textcolor{orange}{11001100}}\\
+\textbf{Notación decimal con puntos:}\\
+\textcolor{blue}{131}.\textcolor{red}{108}.\textcolor{violet}{122}.\textcolor{orange}{204}
+\end{center}
+La dirección IP se divide en dos partes: identificador de \textbf{red} e identificador de \textbf{host}, no hay un número fijo como veremos más adelante. Pero ¿Cómo saber la cantidad de bits que son de red o host? Para esto es necesario saber las clases de IP. Existen 5 clases de direcciones IPv4:
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{DAE8FC} 
+Clase & Bits de Red & Bits de Host & Uso                                 & Límites primer octeto \\ \hline
+A     & 8           & 24           & Soporta redes de internet grandes   & 0-127                 \\ \hline
+B     & 16          & 16           & Soporta redes de internet moderadas & 128-191               \\ \hline
+C     & 24          & 8            & Soporta redes de internet pequeñas  & 192-223               \\ \hline
+D     & -           & -            & Multicast                           & 224-239               \\ \hline
+E     & -           & -            & Investigación                       & 240-255               \\ \hline
+\end{tabular}
+\end{center}
+\caption{Clases de IP}
+\end{table}
+Por ejemplo, la IP \ipAddress{\textcolor{red}{192}.168.100.50}, podemos saber por su primer octeto\footnote{Octeto de bits, lo mismo que el primer byte} que es de \textbf{clase C}. Algunos ejemplos de cada clase son:
+\begin{enumerate}
+\item \textbf{Clase A}: \ipAddress{10.2.2.1}/ \ipAddress{120.211.23.25}/ \ipAddress{127.1.1.1}
+\item \textbf{Clase B}: \ipAddress{130.244.53.2}/ \ipAddress{150.185.95.2}/ \ipAddress{172.16.2.5}
+\item \textbf{Clase C}: \ipAddress{192.168.50.4}/ \ipAddress{199.46.36.5}/ \ipAddress{200.100.210.200}
+\end{enumerate}
+\subsubsection{Máscaras de red}
+Recordemos que cada clase tiene sus bits de red y host ya están definidos. Es debido a esto que existe una variación en la nomenclatura de las IP. Esto es indicando con un \textit{slash} el  tamaño dedicado para el host: por ejemplo en la IP:\\
+\begin{center}
+\ipAddress{\textcolor{red}{200.100.210}.200\textcolor{red}{/24}}
+\end{center}
+notamos que esta nomenclatura nos indica explícitamente el tamaño del prefijo de red es de 24 bits o 3 octetos/byte. La variación de este sistema son las \textbf{máscaras de red}, para ello nos fijamos en el tamaño de host, usando el mismo ejemplo, interpretamos que son 24 bits de \textcolor{red}{red} y 8 bits de \textcolor{blue}{host} o:\\
+\begin{center}
+\ipAddress{\textcolor{red}{111111111111111111111111}\textcolor{blue}{00000000}}
+\end{center}
+Luego de ello, expresamos cada octeto en sistema decimal:\\
+\begin{center}
+\ipAddress{\textcolor{red}{255.255.255}.\textcolor{blue}{0}}
+\end{center}
+Bajo este mismo concepto las máscaras para \ipAddress{172.16.16.10/16} y \ipAddress{10.10.2.1/8} son respectivamente: \ipAddress{255.255.0.0} y \ipAddress{255.0.0.0}\\
+\textbf{¿Para que sirve las máscaras de capa?} Son usadas para encontrar las \textbf{direcciones de red}, para ello debemos efectuar una compuerta \textbf{AND} entre la IP y la máscara. Ejemplificando, tenemos la \ipAddress{192.168.55.44} y las máscara de capa \ipAddress{255.255.225.0}, efectuamos la compuerta AND a cada bit:\\
+\begin{align*}
+192.168.55.44&=11000000.10101000.00110111.00101100 \rightarrow\text{Dirección IP}\\
+255.255.255.0&=11111111.11111111.11111111.00000000 \rightarrow\text{Máscara de red}\\
+\cline{1-2}
+192.168.55.0&=11000000.10101000.00110111.00000000 \rightarrow\text{Dirección de red}
+\end{align*}
+Luego de efectuar \textbf{AND} a cada bit, encontramos la dirección de red. Se trabaja en binario pero se expresa de forma decimal y la porción de host siempre será cero.
+\subsubsection{Sub redes}
+Supongamos que tenemos la siguiente dirección de red:
+\begin{center}
+\ipAddress{10.0.0.0}\\
+\ipAddress{00001010.00000000.00000000.00000000}
+\end{center}
+y la máscara\\
+\begin{center}
+\ipAddress{\textcolor{red}{11111111}.00000000.00000000.00000000}\\
+\ipAddress{\textcolor{red}{255}.0.0.0}
+\end{center}
+Podemos notar que tenemos 8 bits de red y 24 de host, esto nos da la posibilidad de tener $2^24=16 777 216$, pero esto no nos sirve si solo vamos a trabajar con pocas redes pues las demás se desperdiciarán. Es por eso que creamos \textbf{subredes}, para ellos ``tomamos prestado'' bits de host y los pasamos a los bits de red, tomemos \textcolor{violet}{4 bits} a manera de ejemplo siendo ahora 12 bits de red y 20 de host, en binario y decimal tendríamos\\
+\begin{center}
+\ipAddress{\textcolor{red}{11111111}.\textcolor{violet}{1111}0000.00000000.00000000}\\
+\ipAddress{\textcolor{red}{255}.240.0.0}
+\end{center}
+Ahora nuestra máscara de red a cambiado a \ipAddress{255.240.0.0}, esta también cambia de nombre a \textbf{máscara de subred}. Como hemos tomado 4 bits prestado para darlos a los bits de red, podemos tener $2^4=16$ subredes.
+\begin{example}[Crear una subred para la dirección de red \ipAddress{192.168.168.0} para 7 subredes dada un máscara de red \ipAddress{255.255.255.0}]\label{exa:subred}
+Si nos damos cuenta en la máscara de red, tenemos 24 bits de red y 8 bits de host\\
+\begin{center}
+\ipAddress{$\underbrace{11111111.11111111.11111111}_{Red}$.$\underbrace{00000000}_{Host}$}
+\end{center}
+Con los bits de host tenemos $2^8=256$ posibles IP. Estaríamos desperdiciando 249 IP. Para ellos creamos subredes. Nos pide 7 subredes, el número más cercano y mayor $2^n$ es 8 ($2^3$), por eso vamos a tomar prestado \textcolor{violet}{3} bits de host para la subred cuya máscara ahora es:\\
+\begin{center}
+\ipAddress{11111111.11111111.11111111.\textcolor{violet}{111}00000}\\
+\ipAddress{255.255.255.224}
+\end{center}
+Usando la \textbf{dirección de red}\\
+\begin{center}
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{000}00000}
+\end{center}
+y la \textbf{máscara de subred}\\
+\begin{center}
+\ipAddress{\textcolor{red}{11111111.11111111.11111111}.\textcolor{violet}{111}00000}
+\end{center}
+\end{example}
+Usando el ejemplo \ref{exa:subred} vamos a identificar las subredes creadas dirección de red como inicio y máscara de subed como fin; lo que haremos es encontrar todas las posibles combinaciones de los \textbf{bits prestados}:\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{000}00000}$\rightarrow$ 192.168.168.0\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{001}00000}$\rightarrow$ 192.168.168.32\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{010}00000}$\rightarrow$ 192.168.168.64\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{011}00000}$\rightarrow$ 192.168.168.96\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{100}00000}$\rightarrow$ 192.168.168.128\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{101}00000}$\rightarrow$ 192.168.168.160\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{110}00000}$\rightarrow$ 192.168.168.192\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00000}$\rightarrow$ 192.168.168.224\\
+Cada una de las subredes tiene la posibilidad de direccionar hasta 5 bits de host. Usando la misma lógica y usando como referencia la última subred \ipAddress{192.168.168.224} se pueden escribir las IP de los hosts:\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00001}$\rightarrow$ 192.168.168.225\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00010}$\rightarrow$ 192.168.168.226\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00011}$\rightarrow$ 192.168.168.227\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00100}$\rightarrow$ 192.168.168.228\\
+\vdots\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}11110}$\rightarrow$ 192.168.168.254\\
+\ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}11111}$\rightarrow$ 192.168.168.255.\\
+El último es llamada \textbf{red de difusión}
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -7870,7 +8068,7 @@ Con respecto a como gestionar la memoria de datos y la memoria de código se tie
 \item \textbf{LDI} Rd,k: Carga una constante \textit{k} de 8-bit al registro Rd.
 \item \textbf{STS} k,Rr: Mueve el valor del registro Rr al la memoria de datos k.
 \item \textbf{ST} X, Rr/\textbf{ST} X+,Rr/\textbf{ST} -X,Rr: Usa el valor del registro automático X\footnote{Puede funcionar con cualquier registro indirecto.} para ubicarla en la \textit{Data memory} y almacena el valor del registro Rr. Las variantes con el símbolo + y - nos ayudarán a movernos un espacio a la derecha o izquierda: Si X:0220, con la función \textbf{sin} signo la almacena directo, con la función con el signo + se almacenará en la memoria 0221 y con el signo - se almacenará en la memoria 0219. Al hacer el uso de X+/X-, el valor de X se \textbf{actualizará}, siendo X:0219, usamos el X+, X ahora será 0220, ya no es 0219.
-\item \textbf{ADD Rd,Rr}: Suma el registro Rr más el registro Rd, y el resultado lo coloca en el registro Rd. La suma es \textbf{sin acarreo}. Solo soporta hasta 255(FF), a partir de ahí el bit rebalsa. Este estado se puede ver en \textbf{ITHSVNZC} o \textbf{registros de estado}.
+\item \textbf{ADD Rd,Rr}: Suma el registro Rr más el registro Rd, y el resultado lo coloca en el registro Rd. La suma es \textbf{sin acarreo}. Solo soporta hasta 255(FF), a partir de ahí un bit más y se desborda. Este estado se puede ver en \textbf{ITHSVNZC} o \textbf{registros de estado}.
 \item \textbf{INC} Rd: Incrementa el registro Rd en una unidad en su misma posición.
 \item \textbf{rjmp}: Salto relativo a cualquier etiqueta con máximo 2k palabras(8KB).
 \item \textbf{CPSE} Rd, Rr: Compara los registros Rd y Rr, si ambos son iguales se salta la linea siguiente.
@@ -8246,8 +8444,8 @@ De todas las conexiones que tenemos, nos vamos a centrar solo en los puertos I/O
 \begin{figure}[]
 \centering
 \includegraphics[width=0.6\linewidth]{MM/MM17.png}
-\label{fig:ATmega328 pinout}
 \caption{ATmega328 pinout}
+\label{fig:ATmega328 pinout}
 \end{figure}
 Tenemos los puertos en la figura \ref{fig:ATmega328 pinout}
 \begin{itemize}
@@ -8260,21 +8458,30 @@ El micro-controlador nos ofrece una resistencia interna para evitar colocar una 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{MM/MM18.png}
-\label{fig:I/O estructura}
 \caption{I/O estructura}
+\label{fig:I/O estructura}
 \end{figure}
 \begin{remark}
 Nuestra memoria es una sola, sin embargo esta seccionada en 3: La memoria del 0 al 31 son los registros con los que hemos estado trabajando, desde el 32 al 99 es la memoria para I/0 y desde el 100 en adelante es la memoria para datos.
 \end{remark}
 %\subsection{Estructura de los I/O pins}
+\begin{definition}[Configuración, lectura y escritura de I/O]
+Como se vio en la figura \ref{fig:ATmega328 pinout}, poseemos 3 grupos de pines de I/O: Puertos D, puertos B y puertos C. Existen 3 comandos para esenciales para los puertos:
+\begin{enumerate}
+\item DDRX: Configurar el puerto X como salida o entrada. Se configura usando un registro (o valor), los registros son de 8 bits y los puertos tienen 8 pines: el PIN 0 es controlado por el bit 0, el PIN 1 es controlado por el bit 1 y así con todos sucesivamente. Si queremos definir como \textbf{entrada usamos el valor de 0} y \textbf{salida como 1}. Ejemplificando: Si tenemos el registro R16=0b1111\_ 0000 y lo cargamos a los puertos D (DDRD), como resultado tendremos que el nible alto de los puertos será salida (escritura) y el nible bajo será de entrada (lectura).
+\item PORTX: Escribir datos en los pines del puerto X. Es usado para cargar los valores de un registro a un puerto X, usualmente es bit 0, puerto 0; bit 1, puerto 1, etc.
+\item PINX: Leer datos de los pines del puerto X y los almacenas en un registro de igual manera que PORTX, tomando el cuenta el MSB o LSB.
+\end{enumerate}
+\end{definition}
 \section{Código Assembler II}\label{Código Assembler II}
 \begin{itemize}
-\item \textbf{OUT} A, Rr: Coloca en la I/O A el valor del registro Rr. A es la dirección del I/O, puede ser DDRX, donde X es la letra del puerto, y el valor de Rr debe ser 00000000 si lo configuramos como puerto de \textbf{entrada}; y si Rr es 11111111 como puerto de \textbf{salida}. Lo dicho se realiza antes de leer pues con eso le configuras como se usa cada puerto. Una vez que estén declarados la función de cada uno, se puede utilizar A usando PORTX, donde X es el puerto, este comando envia el valor del Rr al puerto X.
-\item \textbf{IN} Rr, A: Carga el valor del registro Rr al I/O A. A es PINX, donde X es el puerto desde donde se va leer el dato y almacenar en el puerto Rr.
+\item \textbf{OUT} A, Rr: Usado cuando la I/O es configurado como salida, escribes el valor del Rr en la I/O A. A debe ser expresado como PORTX, siendo X la letra del conjunto de puertos. Como segunda función sirve para \textbf{configurar} los pines de X, para ellos se usa como valor de A: DDRX. Usando OUT, configurará los puertos de X usando los valores de cada uno de los bits de Rr para definir si son salidas o entradas.
+\item \textbf{IN} Rr, A: Cargas la lectura de la I/O A al registro Rr. A debió ser configurada como \textbf{entrada}. A debe ser expresada como PINX, donde X es la letra del conjunto de puertos.
 \item \textbf{REF} k, Rr: Se definirá a la letra k el registro Rr, funciona como cambio de variable.
 \item \textbf{SBIC} A, b: Si el bit b de I/O en el registro A es 0, se salta la siguiente línea.
 \item \textbf{SBIS} A, b: Si el bit b de I/O en el registro A es 1, se salta la siguiente línea.
 \item \textbf{BRBC} s, k: Si SREG(s) es zero, realizar la sub-rutina k.
+\item \textbf{.DEF} N=Rr:  Cambia el nombre de la variable del Rr a N, .DEF A=R12: indica que R12 (nombre) puede ser sustituido por A a los largo del código. Se usa en el preámbulo, antes de \textit{Start}.
 \end{itemize}
 \begin{enumerate}
 \item Leer el valor del puerto C, sumarle 5 y enviar el valor indefinidamente por el puerto B:
