@@ -1,6 +1,6 @@
 \documentclass[12pt,fleqn,a4paper,]{LegrandOrangeBook}
 \addbibresource{sample.bib} % Bibliography file
-\definecolor{ocre}{RGB}{243, 102, 25} 
+\definecolor{ocre}{RGB}{255, 0, 0} 
 \chapterimage{orange1.jpg} 
 \chapterspaceabove{6.5cm}
 \chapterspacebelow{6.75cm} 
@@ -23,21 +23,16 @@
 \section{Leyes de maxwell}\index{Leyes de maxwell}
 Se presentan las ecuaciones de Maxwell en la tabla \ref{tab:maxwell}.
 \begin{table}[]
-\begin{tabular}{|l|m{0.3\linewidth}|l|}
+\begin{tabular}{|l|l|l|}
 \hline
 \rowcolor[HTML]{0066cc} 
-Forma diferencial                                  & Forma integral                                                                 & Comentario                     \\ \hline
-$\nabla\cdot \textbf{D}=\rho_v$                             & \begin{displaymath}
-\oint_S\textbf{D}\cdot d\textbf{S}=\int_v\rho_vdv                                 \end{displaymath} & Ley de Gauss               \\ \hline
-$\nabla\cdot \textbf{B}=0$                                  & \begin{displaymath}
-\oint_S\textbf{B}\cdot d\textbf{S}=0
-\end{displaymath}                                                           & No existencia de monopolos \\ \hline
-$\nabla\times \textbf{E}=-\frac{\partial \textbf{B}}{\partial t}$    & \begin{displaymath}
-\oint_L\textbf{E}\cdot dl=-\frac{\partial}{\partial t}\int_S\textbf{B}\cdot dS
-\end{displaymath}                  & Ley de Faraday             \\ \hline
-$\nabla\times \textbf{H}=\textbf{J} + \frac{\partial \textbf{D}}{\partial t}$ & \begin{displaymath}
-\oint_L\textbf{H}\cdot dl=\int_S\left(\textbf{J} + \frac{\partial \textbf{D}}{\partial t}\right)\cdot d\textbf{S}
-\end{displaymath} & Ley de circuitos de Ampere \\ \hline
+Forma diferencial & Forma integral                                                                 & Comentario\\ \hline
+$\nabla\cdot \textbf{D}=\rho_v$  & $\oint_S\textbf{D}\cdot d\textbf{S}=\int_v\rho_vdv                                 $ & Ley de Gauss\\ \hline
+$\nabla\cdot \textbf{B}=0$ & $\oint_S\textbf{B}\cdot d\textbf{S}=0
+$ & No existencia de monopolos \\ \hline
+$\nabla\times \textbf{E}=-\frac{\partial \textbf{B}}{\partial t}$    & $\oint_L\textbf{E}\cdot dl=-\frac{\partial}{\partial t}\int_S\textbf{B}\cdot dS
+$ & Ley de Faraday\\ \hline
+$\nabla\times \textbf{H}=\textbf{J} + \frac{\partial \textbf{D}}{\partial t}$ & $\oint_L\textbf{H}\cdot dl=\int_S\left(\textbf{J} + \frac{\partial \textbf{D}}{\partial t}\right)\cdot d\textbf{S}$ & Ley de circuitos de Ampere \\ \hline
 \end{tabular}
 \caption{Leyes de Maxwell}
 \label{tab:maxwell}

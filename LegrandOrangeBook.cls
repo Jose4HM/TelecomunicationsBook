@@ -49,9 +49,11 @@
 
 \usepackage{etoolbox} % Required for conditional logic and easily changing commands
 
+%----------------------------------------------------------------------------------------
+%	PERSONAL PACKAGES
+%----------------------------------------------------------------------------------------
 \definecolor{color1}{RGB}{23,170,41}%Personal
 \definecolor{color2}{cmyk}{0,0.87,0.68,0.32}
-%Personal packages
 \usepackage{wrapfig}
 \usepackage{tabularx}
 \usepackage{multicol}
@@ -67,6 +69,10 @@
 \usepackage[export]{adjustbox}
 \renewcommand*\ttdefault{pcr}
 \let\ipAddress\texttt
+\newcommand{\basedec}[1]{\times 10^{#1}}
+\input{arduinoLanguage.tex}
+\input{risc-v.tex}
+\usepackage{pythonhighlight}
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------

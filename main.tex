@@ -34,7 +34,7 @@
 
 % Book information for PDF metadata, remove/comment this block if not required 
 \hypersetup{
-	pdftitle={Telecomunicaciones en tu idioma}, % Title field
+	pdftitle={Apuntes sobre las Telecomunicaciones}, % Title field
 	pdfauthor={Jose Hancco}, % Author field
 	pdfsubject={Educación}, % Subject field
 	pdfkeywords={Telecomunicaciones, UNSA, Pregrado, Señales}, % Keywords
@@ -43,9 +43,9 @@
 
 \addbibresource{sample.bib} % Bibliography file
 
-\definecolor{ocre}{RGB}{0, 0, 255} % Define the color used for highlighting throughout the book
+\definecolor{ocre}{RGB}{255, 0, 0} % Define the color used for highlighting throughout the book
 
-\chapterimage{Biblio.jpg} % Chapter heading image
+\chapterimage{Final.jpg} % Chapter heading image
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
@@ -3370,7 +3370,7 @@ Como en la programación de computadoras es un clásico que nuestro primer progr
 \caption{QR program: 1.Blink}
 \label{fig:qr1}
 \end{figure}
-\begin{lstlisting}[caption={Blink Program},captionpos=b,frame=single]
+\begin{lstlisting}[language=Arduino,caption={Blink Program}]
 // the setup function runs once when you press reset or power the board
 #define LED_BUILTIN 2
 void setup() {
@@ -3386,14 +3386,13 @@ void loop() {
 }
 \end{lstlisting}
 \section{Conectar a una red Wi-Fi}\index{Conectar a una red Wi-Fi}
-\begin{wrapfigure}{r}{0.1\linewidth}
+\begin{figure}
 \centering\includegraphics[scale=0.1]{SmartCities/qr/qr2.png}
 \caption{QR program: 2.WifiConnect}
 \label{fig:qr2}
-\end{wrapfigure}
+\end{figure}
 Una de las funciones más elementales e importantes del ESP8266 es la posibilidad de conectarse a internet para realizar proyectos de IoT(\textit{Internet of things}). Asi que, como primer paso vamos a conectarnos a nuestra red Wifi:
-
-\begin{lstlisting}[caption={Conectarse a una red WiFi},captionpos=b,frame=single]
+\begin{lstlisting}[language=Arduino,caption={Conectarse a una red WiFi}]
 #include <ESP8266WiFi.h>
 
 String ssid     = "FIWI";
@@ -3455,7 +3454,7 @@ Las lineas de \textbf{byte}(\textit{Lineas 6-7}) son dos variables que van conta
 \label{fig:qr3}
 \end{wrapfigure}
 Nuestra ESP8266, como hemos visto, se puede conectar a una red wifi pero también puede crear su propia red wifi para que dispositivos se conecten a ella. En este apartado veremos como podemos crear una red wifi:
-\begin{lstlisting}[caption={Conectarse a una red WiFi},captionpos=b,frame=single]
+\begin{lstlisting}[language=Arduino,caption={Conectarse a una red WiFi}]
 #include <ESP8266WiFi.h>
 const char* ssid="WIFI ESP8266";//Name of your red
 const char* password="12345678";//Your password, remember, at least 8 characters
@@ -3566,7 +3565,7 @@ Nos dará nuestra IP y lo copiamos en nuestro navegador, por ejemplo: nuestra IP
 \end{wrapfigure}
 También podemos usar nuestra ESP8266 para medir dispositivos analógicos como por ejemplo, medir la resistencia de un potenciómetro:  ver gráficamente como cambia este valor.\\
 En nuevo documento copiamos el siguiente programa:
-\begin{lstlisting}[caption={Medir la resistencia de un potenciómetro},captionpos=b,frame=single]
+\begin{lstlisting}[language=Arduino,caption={Medir la resistencia de un potenciómetro}]
 const int analogInPin=A0;
 int SensorValue=0;
 
@@ -7566,7 +7565,7 @@ El funcionamiento hace uso de ruta más corta e inundación\footnote{Consiste en
 \end{example}
 \section{Capa de red de Internet}
 %==================================Falta===============
-\subsection{IPv4}
+\subsection{IPv4}\index{IPv4}
 La IP es un número de 32 bits, que se agrupa en 4 bytes. Este se expresa en \textbf{notación decimal con puntos}:
 \begin{center}
 \textbf{IP:}\\
@@ -7663,6 +7662,7 @@ Usando el ejemplo \ref{exa:subred} vamos a identificar las subredes creadas dire
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{101}00000}$\rightarrow$ 192.168.168.160\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{110}00000}$\rightarrow$ 192.168.168.192\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00000}$\rightarrow$ 192.168.168.224\\
+La primera subred es capaz de almacenar desde el host \ipAddress{192.168.168.0} hasta el host \ipAddress{192.168.168.31} o \ipAddress{11000000.10101000.10101000.\textcolor{violet}{000}11111}. A veces se llaman \textbf{broadcasting subred} o \textbf{red de difusión de subred} y es cuando todos los bits de host son 1.\\
 Cada una de las subredes tiene la posibilidad de direccionar hasta 5 bits de host. Usando la misma lógica y usando como referencia la última subred \ipAddress{192.168.168.224} se pueden escribir las IP de los hosts:\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00001}$\rightarrow$ 192.168.168.225\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00010}$\rightarrow$ 192.168.168.226\\
@@ -7672,6 +7672,50 @@ Cada una de las subredes tiene la posibilidad de direccionar hasta 5 bits de hos
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}11110}$\rightarrow$ 192.168.168.254\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}11111}$\rightarrow$ 192.168.168.255.\\
 El último es llamada \textbf{red de difusión}
+\subsection{IPv6}\index{IPv6}
+Después que se agotasen las direcciones IPv4, necesitábamos una forma que sea capaz de cubrir la demanda exponencial por un buen tiempo. Es así como nació IPv6. IPv6 posee \textbf{128 bits}, que proporciona suministro ilimitado de direcciones de internet. Solo posee \textbf{7 encabezados} (a diferencia de los 13 de IPv4), ademas la forma en la que se representa permite a los router omitir partes que no le competen.\\
+El formato de una dirección IPv6 es:
+\begin{center}
+\ipAddress{x:x:x:x:x:x:x:x}
+\end{center}
+Donde \textit{x} es un segmento y representa 16 bits, a su vez, los 4 grupos de 16 bits de \textit{x} es representado en sistema \textbf{hexadecimal}:
+\begin{center}
+\ipAddress{2001:0DB8:7654:3210:FEDC:BA98:7654:3210}
+\end{center}
+Existe dos reglas para comprimir la nomenclatura de las IPv6:
+\begin{itemize}
+\item Suprimir ceros a la izquierda y bloques de ceros: Dada la siguiente IP:
+\begin{center}
+\ipAddress{2001:0D88:0000:0000:0006:0600:300D:527B}
+\end{center}
+En la IP dada, como en cualquier sistema de numeración, \textbf{ceros a la izquierda no sirven}, por lo tanto borramos los ceros a la izquierda y los bloques completos de cero solo es escriben como un solo cero, como resultado:
+\begin{center}
+\ipAddress{2001:D88:0:0:6:600:300D:527B}
+\end{center}
+\item Doble puntos: \textbf{Cuando existan ceros contiguos} se elimina los ceros y se colocan solos dos puntos. Con la IP resultante del punto anterior podemos simplificarla aún más:
+\begin{center}
+\ipAddress{2001:D88::6:600:300D:527B}
+\end{center}
+Nota como se eliminar los contiguos, si hay 3, 4 o lo segmentos cualquiera de ceros, solo de utiliza una vez los dobles puntos. La regla de los puntos \textbf{solo se usa una vez}, si tenemos una IPv6:
+\begin{center}
+\ipAddress{1801:0000:0000:0000:AC5:0000:0000:152}
+\end{center}
+Solo podemos usar la regla de tal manera que:
+\begin{center}
+\ipAddress{1801::AC5:0000:0000:152}\\
+ó\\
+\ipAddress{1801:0000:0000:0000:AC5::152}
+\end{center}
+Luego de eso se puede aplicar la primera regla:
+\begin{center}
+\ipAddress{1801:0:0:0:AC5::152}
+\end{center}
+\end{itemize}
+Al igual que en IPv4, los bits de red son denotados con un ``/'' después de la IPv6. Son dentados en sistema decimal, por ejemplo si tenemos /60, esto indica que son 60 bits de red y 68 bits de host (ahora llamado interfaces).\\
+Para finalizar, el mayor número de bits de red son 64 (rojo), dentro de los cuales esta la ID de subred (azul) y los otros 64 son ID de interfaz (verde):
+\begin{center}
+\ipAddress{\textcolor{red}{122:100:AD}:\textcolor{blue}{D2}:\textcolor{green}{120:0:0:FD}}
+\end{center}
 \newpage
 \section*{Vocabulario-Internetworking 1}\index{Vocabulario-Internetworking 1}
 \begin{vocabulary}[Topologias de red]
@@ -7771,8 +7815,7 @@ Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del c
 \item \textbf{dBS}: Unidad de SWR en decibelios.
 \item \textbf{RTN LOSS}: Perdida por retorno, esto indica
 la cantidad de onda reflejada expresada en dB. Así, en el centro de la carta, nada es reflejado y la pérdida de retorno es infinita. En el límite tenemos reflexión completa, por lo tanto la pérdida por retorno es 0 dB.
-\item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en
-términos de potencia, proporcional a $|\Gamma|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
+\item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en términos de potencia, proporcional a $|\Gamma|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
 \item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\Gamma$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno.
 \item \textbf{Coeficiente de Voltaje de transmisión}: Tenga en cuenta que el módulo del coeficiente de transmisión de voltaje (y corriente) tiene un rango de cero, es decir, cortocircuito, a +2 (abierto = 1+$\Gamma$ con $\Gamma$=1). esta regla solo es válida para $Z_L$ = real, es decir, el caso de un escalón en la impedancia característica de la línea coaxial.
 \item \textbf{ATTEN}: en dB supone que estamos midiendo una atenuador (que puede ser una línea con pérdida) que a su vez está terminado por un circuito abierto o cortocircuito (reflexión completa). Por lo tanto, la onda viaja dos veces a través del atenuador (hacia adelante y hacia atrás). hacia atrás). El valor de este atenuador puede estar entre cero y algún número muy alto correspondiente al caso emparejado. La escala inferior de la regla 1 muestra la misma situación solo en términos de VSWR.
@@ -7795,14 +7838,14 @@ Este valor de $\lambda$ indica la longitud de onda, en la carta eso se represent
 \begin{displaymath}
 Vueltas=\frac{44.4}{0.5}=88+0.4
 \end{displaymath}
-Está no es una división común, sino que lo alteramos un poco: si la vuelta completa es 0.5, para cubrir $\lambda(120)=44$ necesitamos 88 vueltas, donde llegaremos al mismo punto, sin embargo nos falta 0.44 para completar $\lambda(120)=44.4$ es por eso que solo tomamos el valor de $\lambda(120)=0.4\lambda$, pues el 44 serán vueltas en el mismo lugar.\\
+Está no es una división común, sino que lo alteramos un poco: si la vuelta completa es 0.5, para cubrir $\lambda(120)=44$ necesitamos 88 vueltas, donde llegaremos al mismo punto, sin embargo nos falta 0.4 para completar $\lambda(120)=44.4$ es por eso que solo tomamos el valor de $\lambda(120)=0.4\lambda$, pues daremos 88 vueltas para cubrir $44\lambda$ y como resultado de esas vueltas, nos mantendremos en el mismo lugar.\\
 Ahora hallamos $\beta$:
 \begin{displaymath}
 \beta_{120m}=\frac{2\pi}{\lambda}\cdot 0.4\lambda=0.8\pi
 \end{displaymath}
 Usando la ecuación de la impedancia de carga:
 \begin{displaymath}
-Z_{in}=50=\frac{(90+\iu 90)+\iu(50)\tan(0.8\pi)}{50+\iu(90+\iu 90)\tan(0.8\pi)}=19.75+\iu34.5
+Z_{in}=50\frac{(90+\iu 90)+\iu(50)\tan(0.8\pi)}{50+\iu(90+\iu 90)\tan(0.8\pi)}=19.75+\iu34.5
 \end{displaymath}
 Continuamos hallando el \textbf{Coeficiente de reflexión}, para ello solo hay que reemplazar en la ecuación respectiva:
 \begin{displaymath}
@@ -7865,8 +7908,8 @@ Ahora notamos los valores que finales de la carta:
 \end{displaymath}
 \item 0.59: Este valor se obtiene de la regla inferior \textbf{RFL. COEFF, E or I}, con el compás medimos el radio del circulo verde, luego ubicamos la punta del compás en el centro de cada regla y marcamos el valor hacia la izquierda.
 \item 35\%: \textbf{RFL. COEFF, P}, expresado en porcentaje pues el valor ahí indica que es 0.35.
-\item 3.9: SWR medido en las reglas inferiores
-\item 4.5dB: Perdida por retorno hallado en las reglas inferiores.
+\item 3.9: SWR medido en las regla inferios \textbf{SWR}.
+\item 4.5dB: Perdida por retorno hallado en las regla inferior \textbf{RTN. LOSS [dB]}.
 \end{enumerate}
 \end{example}
 \begin{remark}
@@ -8119,7 +8162,7 @@ Los sistemas numéricos son los siguientes: los binarios son escritos: \textcolo
 \subsection{Ejemplos del código Assembler}
 \begin{enumerate}
 \item Escriba un programa para cargar el valor 0x75 en el registro R16. Luego desde el registro R16 mover los datos a los registros R0 y R10. Use el simulador para verificar los registros. Analice cómo evoluciona el PC (contador de Programa) y el ``Cycle Count'':
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Crear y mover registros},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Crear y mover registros},captionpos=b,numbers=none]
 Start:
 Loop:
 	LDI R16, 0x75; Registra el valor de 0x75 en el registro 16 (El comando LDI solo funciona con valores del registro 31)
@@ -8129,7 +8172,7 @@ fin:
     rjmp  fin
 \end{lstlisting}
 \item Escriba un programa para cargar el valor 5 en hexadecimal en la posición 0x0100 de la memoria de datos (data Memory), añadir líneas de código para cargar el valor 0b0000 1001\footnote{Para los valores binarios tiene que ir la cabezera \textbf{0b}} en la posición 0x0101. 
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Acceso a la mejora SRAM},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Acceso a la memoria SRAM},captionpos=b,numbers=none]
 Start:
 Loop:
 	LDI R16, 0x05; Registra el valor de 0x05 en el registro 16
@@ -8140,7 +8183,7 @@ fin:
 	rjmp fin
 \end{lstlisting}
 Seguidamente agregue líneas para que realice la suma de los datos almacenados de las posiciones 0x0100 y 0x0101 y guardar el resultado en la posición 0x0103.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Movimiento de datos en la SRAM},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Movimiento de datos en la SRAM},captionpos=b,numbers=none]
 Start:
 Loop:
 	LDI R16, 0x05; Registra el valor de 0x05 en el registro 16
@@ -8155,7 +8198,7 @@ fin:
 	rjmp fin
 \end{lstlisting}
 \item Crear el bucle FOR en assembler.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Bucle for en Assembler},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Bucle FOR en assembler},captionpos=b,numbers=none]
 .org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 Start:;ubicado en la memoria 0x040
 	;Parametros bucle FOR
@@ -8176,7 +8219,7 @@ fin:
 	rjmp fin; Fin del programa
 \end{lstlisting}
 \item Creación de función IF.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Comparación con ``if''},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Comparación con ``if''},captionpos=b,numbers=none]
 Start:
 	 ldi r20, $3;  Registra el valor de $3 en el registro 20
 	 ldi r21, $4;  Registra el valor de $4 en el registro 21
@@ -8190,7 +8233,7 @@ Suma:
             rjmp Start; Nos devuelve al inicio
 \end{lstlisting}
 \item Resolver la ecuación y=2x-c
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Resolución de ecuación lineal},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Solución a una ecuación lineal},captionpos=b,numbers=none]
 .org 0x040; directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 start:;ubicado en la memoria 0x040
 	LDi R16, 5; Cargar Numero 1
@@ -8208,7 +8251,7 @@ fin:
 	rjmp fin; Terminar programa
 \end{lstlisting}
 \item Realizar la misma ecuación lineal usando PUSH y POP
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Ecuación lineal con PUSH y POP},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Ecuación lineal usando PUSH y POP},captionpos=b,numbers=none]
 .org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 start:;ubicado en la memoria 0x040
 	LDi R16, 5; Cargar numero 1
@@ -8231,7 +8274,7 @@ fin:
 	rjmp fin; Terminar programa
 \end{lstlisting}
 \item Saltos indirecto con IJMP-Programa básico.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Programa básico-IJMP},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Programa básico-IJMP},captionpos=b,numbers=none]
 .org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 start:;ubicado en la memoria 0x040
 	LDI R31, 0x00; Registro z indirecto
@@ -8243,8 +8286,8 @@ start:;ubicado en la memoria 0x040
 fin:
 	rjmp fin; Terminar programa
 \end{lstlisting}
-\item Realice un programa para que realice la diferencia de dos números, si el resultado es negativo que devuelva el valor absoluto del resultado.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Desarrolo entre más de 2 sub-rutinas},captionpos=b,numbers=none]
+\item Hacer un programa para que realice la diferencia de dos números, si el resultado es negativo que devuelva el valor absoluto del resultado.
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Desarrollo entre 2 o más sub-rutinas},captionpos=b,numbers=none]
 start:
    LDI R16, 5
    LDI R17, 8
@@ -8261,8 +8304,8 @@ endBranch:
    nop 
    nop
 \end{lstlisting}
-\item Si A= igual a B, suma A+B; Si A mayor que B, resta A-B; si B mayor que A, resta B-A
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Condicional de suma entre dos números},captionpos=b]
+\item Si A igual a B, sumar A+B; Si A mayor que B, restar A-B; si B mayor que A, restar B-A
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Condicional de suma entre dos números},captionpos=b,numbers=none]
 .org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 Start:;ubicado en la memoria 0x040	
 	ldi R16, 3; Cargar valores
@@ -8282,7 +8325,7 @@ fin:
 	rjmp fin
 \end{lstlisting}
 \item Separar nibles 0xF4 en dos nibles separador en sus respectivos registros.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Separar nibles usando  LSR},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Separar nibles usando LSR},captionpos=b,numbers=none]
 Start:
 	ldi R20, 0xF4; Cargar el bit al registro 20
 	rcall rotate; Llamamos la sub-rutina rotate
@@ -8300,7 +8343,7 @@ rotate:
 fin:
 	rjmp fin
 \end{lstlisting}
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Usando ROR},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Usando FOR},captionpos=b,numbers=none]
 Start:
 	ldi R20, 0xF4; Cargar el bit al registro 20
 	rcall rotate; Llamamos la sub-rutina rotate
@@ -8320,7 +8363,7 @@ fin:
 \end{lstlisting}
 Aquí el resultado no será le mismo, pues usando \textit{ror}, los bits que se desplazan fuera del nible no se pierden, sino que se colocan al final del sentido de desplazamiento, por eso después de desplazar el 0xF4(1111 1000) 4 posiciones hacia la derecha nos queda 0x8F(1000 1111).
 \item Modifique el bit 0 de cualquier registro y cámbielo.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Uso de la función BST y BSI para cambiar bits específicos},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Uso de la función BST y BSI para cambiar bits específicos},captionpos=b,numbers=none]
 .org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 Start:
 	ldi R20,0xF4; Cargamos el valor en el R20
@@ -8336,7 +8379,7 @@ rotate:
 fin:
 \end{lstlisting}
 \item Mejores el anterior ejercicio usando SET:
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Uso del SET para modificar T(SREG)},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Uso del SET para modificar T(SREG)},captionpos=b,numbers=none]
 .org 0x040;directiva donde se va a almacenar en la program memory, son 2 bytes, es decir en la memoria sera 2*40=80
 Start:
 	ldi R20,0xF4; Cargamos el valor en el R20
@@ -8352,7 +8395,7 @@ fin:
 	rjmp fin
 \end{lstlisting}
 \item Realizar una subrutina para que compare el bit 7 de dos registros realizar la siguiente acción si: si ambos son igual a uno, los registros se restan (como resultado mostrar el valor absoluto) y al registro R2 guarda el valor 1; si ambos son igual a cero, los registros se suman y al registro R2 guarda el valor 0; si son distintos, se guarda en R2 el valor 2.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Sub-rutinas con comparación de bits},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Sub-rutinas con comparación de bits},captionpos=b,numbers=none]
 Start:
 	ldi R20,0b1000_0101; Cargamos los numeros binarios 
 	ldi R21,0b1000_0100; Cargamos los numeros binarios
@@ -8397,7 +8440,7 @@ fin:
 	rjmp fin
 \end{lstlisting}
 \item Dado un número en binario, realice dos contadores de ceros y unos presentes en el bit.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Contador de ceros},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Contador de ceros},captionpos=b,numbers=none]
 Start:
 	ldi R20,8; Cantidad de bits
 	ldi R16,0b1011_0011; Carga de bits
@@ -8414,7 +8457,7 @@ ContLimite:
 fin:
 	rjmp fin
 \end{lstlisting}
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Contador de unos},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Contador de unos},captionpos=b,numbers=none]
 Start:
 	ldi R20,8; Cantidad de bits
 	ldi R16,0b1011_0011; Carga de bits
@@ -8454,25 +8497,249 @@ Tenemos los puertos en la figura \ref{fig:ATmega328 pinout}
 \item PC (7 pines)
 \item ADC (usados para convertir analógico a digital, no están disponible en Arduino)
 \end{itemize}
-El micro-controlador nos ofrece una resistencia interna para evitar colocar una resistencia externa para el funcionamiento de un botón, esta resistencia interna se llama \textbf{PULL-UP}. Como se ve en la figura \ref{fig:I/O estructura} se ven los como se controlan los puertos usando los registros \textcolor{green}{$DDR_x$}, \textcolor{red}{$PORT_x$} y \textcolor{blue}{$PIN_x$}. Además se puede ver como están implementados los circuito, se ven los 3 registros de manera física, además se tiene combinaciones entre \textcolor{green}{$DDR_x$} y \textcolor{red}{$PORT_x$}.
+El micro-controlador nos ofrece una resistencia interna para evitar colocar una resistencia externa para el funcionamiento de un botón, esta resistencia interna se llama \textbf{PULL-UP}. Como se ve en la figura \ref{fig:I/O estructura} se ven los como se controlan los puertos usando los registros \textcolor{green}{$DDRx$}, \textcolor{red}{$PORTx$} y \textcolor{blue}{$PINx$}. Además se puede ver como están implementados los circuito, se ven los 3 registros de manera física, además se tiene combinaciones entre \textcolor{green}{$DDRx$} y \textcolor{red}{$PORT_x$}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{MM/MM18.png}
 \caption{I/O estructura}
 \label{fig:I/O estructura}
 \end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{MM/MM19.png}
+\caption{Diferencias entre Pull Up y Pull Down. En Arduino puede ser configurado las entradas digitales con pinMode(I/O,INPUT\_ PULLUP)}
+\label{fig:pull down and up}
+\end{figure}
 \begin{remark}
 Nuestra memoria es una sola, sin embargo esta seccionada en 3: La memoria del 0 al 31 son los registros con los que hemos estado trabajando, desde el 32 al 99 es la memoria para I/0 y desde el 100 en adelante es la memoria para datos.
 \end{remark}
-%\subsection{Estructura de los I/O pins}
 \begin{definition}[Configuración, lectura y escritura de I/O]
 Como se vio en la figura \ref{fig:ATmega328 pinout}, poseemos 3 grupos de pines de I/O: Puertos D, puertos B y puertos C. Existen 3 comandos para esenciales para los puertos:
 \begin{enumerate}
-\item DDRX: Configurar el puerto X como salida o entrada. Se configura usando un registro (o valor), los registros son de 8 bits y los puertos tienen 8 pines: el PIN 0 es controlado por el bit 0, el PIN 1 es controlado por el bit 1 y así con todos sucesivamente. Si queremos definir como \textbf{entrada usamos el valor de 0} y \textbf{salida como 1}. Ejemplificando: Si tenemos el registro R16=0b1111\_ 0000 y lo cargamos a los puertos D (DDRD), como resultado tendremos que el nible alto de los puertos será salida (escritura) y el nible bajo será de entrada (lectura).
-\item PORTX: Escribir datos en los pines del puerto X. Es usado para cargar los valores de un registro a un puerto X, usualmente es bit 0, puerto 0; bit 1, puerto 1, etc.
-\item PINX: Leer datos de los pines del puerto X y los almacenas en un registro de igual manera que PORTX, tomando el cuenta el MSB o LSB.
+\item \textbf{DDRX}: Configurar el puerto X como salida o entrada. Se configura usando un registro (o valor), los registros son de 8 bits y los puertos tienen 8 pines: el PIN 0 es controlado por el bit 0, el PIN 1 es controlado por el bit 1 y así con todos sucesivamente. Si queremos definir como \textbf{entrada usamos el valor de 0} y \textbf{salida como 1}. Ejemplificando: Si tenemos el registro R16=0b1111\_ 0000 y lo cargamos a los puertos D (DDRD), como resultado tendremos que el nible alto de los puertos será salida (escritura) y el nible bajo será de entrada (lectura).
+\item \textbf{PORTX}: Escribir datos en los pines del puerto X. Es usado para cargar los valores de un registro a un puerto X, usualmente es bit 0, puerto 0; bit 1, puerto 1, etc.
+\item \textbf{PINX}: Leer datos de los pines del puerto X y los almacenas en un registro de igual manera que PORTX, tomando el cuenta el MSB o LSB.
 \end{enumerate}
 \end{definition}
+\section{Interrupciones}
+\begin{definition}[Interrupción]
+Se llama interrupción cuando el procesador ``sale'' inmediatamente del flujo normal del programa y ejecuta la función \textbf{ISR} asociada ignorando por completo cualquiera otra tarea. Al finalizar la función ISR asociada, el procesador vuelve al flujo principal en el mismo punto donde había sido interrumpido.
+\begin{center}
+\includegraphics[scale=0.9]{MM/MM20.png}
+\end{center}
+\end{definition}
+\begin{definition}[ISR]
+La función asociada a una interrupción se denomina ISR (\textit{Interruption Service Routines}) y, por definición, tiene que ser una función que no recibe nada y no devuelva nada. Dos ISR no pueden ejecutarse de forma simultánea. En caso de dispararse otra interrupción mientras se ejecuta una ISR, la función ISR se ejecuta una a continuación de otra.
+\begin{center}
+\includegraphics[scale=0.8]{MM/MM21.png}
+\end{center}
+Al producirse una interrupción, se revisa la tabla de ISR y luego se ejecuta la interrupción. Los vectores de interrupción es una tabla en memoria que contiene la dirección de memoria de la primera instrucción de interrupción. ATmega328p Interrupt vectors, además esta tabla establece la prioridad de las interrupciones
+\begin{center}
+\includegraphics[width=0.7\linewidth]{MM/MM23.png}
+\end{center}
+\end{definition}
+Al diseñar una ISR debemos mantener como objetivo que tenga el \textbf{menor tiempo} de ejecución posible, dado que mientras se esté ejecutando el bucle principal y todo el resto de funciones se encuentran
+detenidas. Frecuentemente la función de la ISR se limitará a activar un \textbf{flag}, incrementar un contador, o modificar una variable. Esta modificación será atendida posteriormente en el hilo principal, cuando sea oportuno.
+\begin{remark}
+No uses en una ISR un \textbf{proceso que consuma tiempo}: cálculos complejos, comunicación serial, cambios de entradas o salidas tanto digitales como analógicas.
+\end{remark}
+\subsection{Registros involucrados}
+Para poder trabajar con interrupciones es necesario conoces los registros con los cuales vamos a trabajar:
+\begin{itemize}
+\item \textbf{SREG}:
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM24.png}
+\end{center}
+Es necesario el bit 7, inicialmente están deshabilitadas, por lo que hay que ponerlas a estado SET(1).
+\item \textbf{EIMSK}:
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM25.png}
+\end{center}
+El bit 0 habilitar la interrupción externa 0 y el bit 1 habilitar la interrupción externa 1. Ambos se activan con 1.
+\item \textbf{EIFR}:
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM26.png}
+\end{center}
+Si se habilita la interrupción 0 de EIMSK, el bit 0 de EIFR se pone a 1. Lo mismo con la interrupción 1, si ocurre se pondrá a 1 el bit 1 de EIFR.
+\end{itemize}
+En la figura \ref{fig:arduino pinout} podemos ver que diferentes pines de la placa poseen su exclusiva función de interrupción, por ejemplo el pin D2 y el pin D3 poseen la interrupción INT0 e INT1 respectivamente
+\subsection{Interrupciones externas}
+Ejecutadas con el comando \textbf{attachInterrupt (digitalPinToInterrupt (pin), NameFunction, CHANGE)}; donde \textit{pin} puede tomar los valores 2 ó 3, pues solo esos pines admiten interrupciones externas, \textit{NameFunction} es una función que nosotros programemos y \textit{CHANGE} puede tomar los siguientes valores:
+\begin{itemize}
+\item \textbf{LOW}: La interrupción se dispara cuando el pin es LOW.
+\item \textbf{CHANGE}: Se dispara cuando pase de HIGH a LOW o viceversa, es decir un cambio en el estado del pin.
+\item \textbf{RISING}: Dispara en el flanco de subida (cuando pasa de LOW a HIGH).
+\item \textbf{FALLING}: Dispara en el flanco de bajada (cuando pasa de HIGH a LOW)
+\item \textbf{HIGH}\footnote{Solo disponible para Arduino DUE}: La interrupción se dispara cuando el pin es HIGH.
+\end{itemize}
+\begin{figure}[]
+\centering
+\includegraphics[width=1.3\linewidth ,angle =90]{MM/MM22.png}
+\caption{Arduino UNO pinout}
+\label{fig:arduino pinout}
+\end{figure}
+\begin{table}[]
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\rowcolor[HTML]{34CDF9} 
+Modelo   & INT0 & INT1 & INT2 & INT3 & INT4 & INT5 \\ \hline
+UNO      & 2    & 3    &      &      &      &      \\ \hline
+Nano     & 2    & 3    &      &      &      &      \\ \hline
+Mino Pro & 2    & 3    &      &      &      &      \\ \hline
+Mega     & 2    & 3    & 21   & 20   & 19   & 18   \\ \hline
+Leonardo & 3    & 2    & 0    & 1    & 7    &      \\ \hline
+\end{tabular}
+\end{center}
+\caption{Pines para interrupciones externas.}
+\end{table}
+El siguiente código intercambia el valor de la salida 5 solo si en la entrada dos existe un flanco ascendente, pasar de 0 a 1. Si pasa de 1 a 0, la salida 5 no se ve afectada.
+\begin{lstlisting}[language=Arduino,caption={Interrupción flanco ascendente}]
+void setup(){
+	pinMode(2,INPUT_PULLUP);//Usar la resistencia interna en el puerto 2 para evitar rebotes al leer datos
+	pinMode(5,OUTPUT);//Configurar el pin 5 como salida
+	pinMode(3,INPUT_PULLUP);//Usar la resistencia interna en el puerto 3 para evitar rebotes al leer datos
+			attachInterrupt(digitalPinToInterrupt(2),funcionINTO,RISING);//Si detecta una interrupcion en el pin 2 saltamos a la funcionINTO si se detecta un flanco ascendente(RISING)
+	sei();//Habilitamos las interrupciones de forma global
+}	
+
+void loop(){
+	delay(100);
+}
+
+void funcionINTO(){
+	if(digitalRead(5)){//Si el pin 5 tiene un estado de 1
+		digitalWrite(5,LOW);//Lo cambiamos a 0
+	}
+	else{//De lo contrario
+		digitalWrite(5,HIGH);//Lo combiamos a 1
+	}
+}
+\end{lstlisting}
+Para los interrupciones externas habrá un registro especial llamado \textbf{EICRA} (\textit{external interrupt control register A}):
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM27.png}
+\end{center}
+Los bits desde el 0 al 3 están definidos como:
+\begin{figure}[H]
+\centering
+\subfloat[Interrupción 1]{\includegraphics[width=\linewidth]{MM/MM28.png}}\\
+\subfloat[Interrupción 0]{\includegraphics[width=\linewidth]{MM/MM28.png}}
+\caption{Combinaciones para registros externos usando EICRA}
+\end{figure}
+Podemos activar los dos al mismo tiempo. Usando los registros para hacer el programa anterior usando la entrada 3:
+\begin{lstlisting}[language=Arduino,caption={Interrupción flanco ascendente usando registros específicos}]
+void setup(){
+	pinMode(2,INPUT_PULLUP);//Usar la resistencia interna en el puerto 2 para evitar rebotes al leer datos
+	pinMode(5,OUTPUT);//Configurar el pin 5 como salida
+	pinMode(3,INPUT_PULLUP);//Usar la resistencia interna en el puerto 3 para evitar rebotes al leer datos
+	EICRA=0b00001111;//Las interrupciones por flanco ascendente estan activadas
+	EIMSK=0b00000011;//Habilitamos las interrupciones externas
+	sei();//Habilitamos las interrupciones de forma global
+}	
+
+void loop(){
+	delay(100);
+}
+ISR(INT1_vect){
+	if(digitalRead(5)){//Si se coloca solo, se asume que comparador a 1
+		digitalWrite(5,LOW);
+	}
+	else{
+		digitalWrite(5,HIGH);
+	}
+}
+\end{lstlisting}
+Usando ambas interrupciones al mismo tiempo y diferentes restricciones se obtiene un programa tal que:
+\begin{lstlisting}[language=Arduino,caption={D2 se interrumpe a cualquier flanco y D3 con flanco ascendente}]
+void setup(){
+	pinMode(2,INPUT_PULLUP);//Usar la resistencia interna en el puerto 2 para evitar rebotes al leer datos
+	pinMode(5,OUTPUT);//Configurar el pin 5 como salida
+	pinMode(3,INPUT_PULLUP);//Usar la resistencia interna en el puerto 3 para evitar rebotes al leer datos
+	EICRA=0b00001101;//LasCualquier cambio genera una interupcion(01) y interrupcion por rising activabada(11)
+	EIMSK=0b00000011;//Habilitamos las interrupciones externas
+	sei();//Habilitamos las interrupciones de forma global
+}	
+
+void loop(){
+	delay(100);
+}
+ISR(INT0_vect){//Con cualquier cambio en D2, el led cambia su estado
+	if(digitalRead(5)){//Si se coloca solo, se asume que comparador a 1
+		digitalWrite(5,LOW);
+	}
+	else{
+		digitalWrite(5,HIGH);
+	}
+}
+ISR(INT1_vect){//Con flanco ascendente en D3, el led cambia su estado
+	if(digitalRead(5)){//Si se coloca solo, se asume que comparador a 1
+		digitalWrite(5,LOW);
+	}
+	else{
+		digitalWrite(5,HIGH);
+	}
+}
+\end{lstlisting}
+Y como lo dicho antes, no podemos poner \textit{delay} dentro de las interrupciones, por eso creamos un habilitador si queremos esperar un momento después de una interrupción:
+\begin{lstlisting}[language=Arduino,caption={Interrupciones y delays}]
+byte enableTarea1//Creamos un habilitador
+void setup(){
+	pinMode(2,INPUT_PULLUP);//Usar la resistencia interna en el puerto 2 para evitar rebotes al leer datos
+	pinMode(5,OUTPUT);//Configurar el pin 5 como salida
+	pinMode(3,INPUT_PULLUP);//Usar la resistencia interna en el puerto 3 para evitar rebotes al leer datos
+	EICRA=0b00001101;//LasCualquier cambio genera una interupcion(01) y interrupcion por rising activabada(11)
+	EIMSK=0b00000011;//Habilitamos las interrupciones externas
+	sei();//Habilitamos las interrupciones de forma global
+}	
+
+void loop(){
+	delay(100);
+	if(enableTarea1==1){//Si el bit es 1
+		delay(500);//Esperamos
+		enableTarea1=0;//Ponemos le habilitador a 0 para que no se habilite siempre
+	}
+}
+ISR(INT0_vect){//Con cualquier cambio en D2, el led cambia su estado
+	if(digitalRead(5)){//Si se coloca solo, se asume que comparador a 1
+		digitalWrite(5,LOW);
+	}
+	else{
+		digitalWrite(5,HIGH);
+	}
+	enableTarea1=1;//Ponemos a 1 el bit que creamos
+}
+ISR(INT1_vect){//Con flanco ascendente en D3, el led cambia su estado
+	if(digitalRead(5)){//Si se coloca solo, se asume que comparador a 1
+		digitalWrite(5,LOW);
+	}
+	else{
+		digitalWrite(5,HIGH);
+	}
+}
+\end{lstlisting}
+\subsubsection{Cambiar pines de interrupciones}
+Aunque hay pines destinados para las interrupciones externas, tenemos la posibilidad de usar cualquier pin, para realizar esto debemos tener conocimiento de algunos registros:
+\begin{itemize}
+\item \textbf{PCICR}: \textit{Pin change interrupt control register}
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM30.png}
+\end{center}
+De los 8 bits bits que posee, podemos establecerlos a 1 para y usar el bit 0 para activar los pines PCINT[7:0], el bit 1 para activar los pines PCINT[14:8] y  el bit 2 para los pines PCINT[23:16]. Se pueden activar dos bits o más al mismo tiempo.
+\item \textbf{PCMSK2}: Estos sirven para poder indicar cuales pines de PCINT[23:16] van a funcionar como interruptores.
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM31.png}
+\end{center}
+\item \textbf{PCMSK1}: Estos sirven para poder indicar cuales pines de PCINT[14:8] van a funcionar como interruptores.
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM32.png}
+\end{center}
+\item \textbf{PCMSK0}: Estos sirven para poder indicar cuales pines de PCINT[7:0] van a funcionar como interruptores.
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM33.png}
+\end{center}
+\end{itemize}
+Si se quiere una lectura entre pines del mismo grupo de PCINT, es conveniente usar \&(BITAND) entre PINX y un número binario indicando el bit que estamos dispuesto a ver si esta en estado bajo.\footnote{Ver los códigos de ejemplo}
 \section{Código Assembler II}\label{Código Assembler II}
 \begin{itemize}
 \item \textbf{OUT} A, Rr: Usado cuando la I/O es configurado como salida, escribes el valor del Rr en la I/O A. A debe ser expresado como PORTX, siendo X la letra del conjunto de puertos. Como segunda función sirve para \textbf{configurar} los pines de X, para ellos se usa como valor de A: DDRX. Usando OUT, configurará los puertos de X usando los valores de cada uno de los bits de Rr para definir si son salidas o entradas.
@@ -8482,10 +8749,12 @@ Como se vio en la figura \ref{fig:ATmega328 pinout}, poseemos 3 grupos de pines 
 \item \textbf{SBIS} A, b: Si el bit b de I/O en el registro A es 1, se salta la siguiente línea.
 \item \textbf{BRBC} s, k: Si SREG(s) es zero, realizar la sub-rutina k.
 \item \textbf{.DEF} N=Rr:  Cambia el nombre de la variable del Rr a N, .DEF A=R12: indica que R12 (nombre) puede ser sustituido por A a los largo del código. Se usa en el preámbulo, antes de \textit{Start}.
+\item \textbf{SBI} A,b: Establece 1 al bit b del puerto A. SBI PORTD,0: El bit 0 del puerto D será 1.
+\item \textbf{SBC} A,b: Establece 0 al bit b del puerto A. SBC PORTD,3: El but 3 del puerto D será 0.
 \end{itemize}
 \begin{enumerate}
 \item Leer el valor del puerto C, sumarle 5 y enviar el valor indefinidamente por el puerto B:
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Leer el valor del puerto C y sumar},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={Leer el valor del puerto C y sumar},captionpos=b,numbers=none]
 .org 0x040
 Start:
 	LDI R16,0x00 ;R16 = 00000000 (binario)
@@ -8500,7 +8769,7 @@ L2:
 	RJMP L2 ;saltar L2
 \end{lstlisting}
 \item Evaluar un número del R17 y colocar en el bit 0 del registro R15 1 si es impar; en el bit 1, 1 si es multiplo de 4; en el bit 2, 1 si es mayor que 16 y en el bit 3, 1 si esta en el rango de 50-100.
-\begin{lstlisting}[language={[x86masm]Assembler},frame=single,caption={Set los bits desde el 0 al 3 si cumple ciertas condiciones},captionpos=b,numbers=none]
+\begin{lstlisting}[language={[RISC-V]Assembler},frame=single,caption={SET los bits desde el 0 al 3 si cumple ciertas condiciones},captionpos=b,numbers=none]
 Start:
 	LDI R16,0x01;Cargamos el valor de 1 para colocarlo en cada bit
 	LDI R17,0x0A;Cargamos el numero a comparar en el registro 17<================
@@ -8730,8 +8999,8 @@ El \textbf{equipo de telesupvisión master} se conecta  la \textbf{part line de 
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{IM/IM20.png}
-\label{fig:niveles tipicos}
 \caption{Niveles típicos de un sistema de radio digital de M.O. 34 Mbit/s}
+\label{fig:niveles tipicos}
 \end{figure}
 \section{Mediciones de radiofrecuencia}\index{Mediciones de radiofrecuencia}
 \subsection{¿Qué es radio enlace?}
@@ -9300,15 +9569,22 @@ Si la \textbf{media} y la \textbf{varianza} son 0 y 1 respectivamente se llama \
 \includegraphics[width=0.6\linewidth]{IM/IM22.png}
 \end{center}
 \end{definition}
+\begin{definition}[Función distribución cumulativa]
+El área desde menos infinito hasta \textit{a} representa la probabilidad que \textit{X} sea menor a \textit{a}, esto es representado como:
+\begin{equation}
+\Phi(x)=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z
+\end{equation}
+\end{definition}
 Sobre la ecuación \ref{eq:gauss}, haciendo un cambio de variable de:
 \begin{equation}
 z=\frac{x-\mu}{\sigma}
 \label{eq:int gauss}
 \end{equation}
 y reemplazando el \ref{eq:gauss}, se obtiene:
-\begin{displaymath}
-f(z)=\int_{-\infty}^z\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z
-\end{displaymath}
+\begin{equation}
+f(x)=\int_{-\infty}^x\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z
+\label{eq:z dist}
+\end{equation}
 \begin{theorem}[Área bajo la distribución]
 Usando la ecuación \ref{eq:int gauss}, integramos desde menos infinito a cero y desde cero hasta más infinito:
 \begin{align*}
@@ -9316,14 +9592,14 @@ Usando la ecuación \ref{eq:int gauss}, integramos desde menos infinito a cero y
 \int_{-\infty}^z\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z&=0.5+0.5=1
 \end{align*}
 \end{theorem}
-\begin{proposition}[Probabilidad que sea menor a $a$]
+\begin{proposition}[Probabilidad que sea menor a $a$]\label{prop:prob menor a}
 Para calcular la probabilidad de que Z sea menor a $a$ se dice que $P(Z\leq a)$
 \begin{center}
 \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
 }
 \begin{tikzpicture}
 \begin{axis}[no markers, domain=0:10, samples=100,
-axis lines*=left, xlabel=x, ylabel=p($x$),
+axis lines*=left, xlabel=x, ylabel=p($X$),
 height=6cm, width=10cm,xticklabels={,,,,0,a,,}, ytick=\empty,
 enlargelimits=false, clip=false, axis on top]
 \addplot [fill=cyan!20, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
@@ -9332,14 +9608,14 @@ enlargelimits=false, clip=false, axis on top]
 \end{tikzpicture}
 \end{center}
 \end{proposition}
-\begin{proposition}[Probabilidad que sea mayor a $a$]
+\begin{proposition}[Probabilidad que sea mayor a $a$]\label{prop: prob mayo igual}
 Para saber si Z>a, se debe usar la identidad que dice: $P(Z>a)=1-P(Z\leq a)$:
 \begin{center}
 \pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
 }
 \begin{tikzpicture}
 \begin{axis}[no markers, domain=0:10, samples=100,
-axis lines*=left, xlabel=x, ylabel=p($x$),
+axis lines*=left, xlabel=x, ylabel=p($X$),
 height=6cm, width=10cm,xticklabels={,,,,0,a,,}, ytick=\empty,
 enlargelimits=false, clip=false, axis on top]
 \addplot [fill=none, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
@@ -9354,7 +9630,7 @@ enlargelimits=false, clip=false, axis on top]
 }
 \begin{tikzpicture}
 \begin{axis}[no markers, domain=0:10, samples=100,
-axis lines*=left, xlabel=x, ylabel=p($x$),
+axis lines*=left, xlabel=x, ylabel=p($X$),
 height=6cm, width=10cm,xticklabels={,,,-a,0,,,}, ytick=\empty,
 enlargelimits=false, clip=false, axis on top]
 \addplot [fill=cyan!20, draw=black, domain=-3:-1] {gauss(0,1)} \closedcycle;
@@ -9370,7 +9646,7 @@ Si la probabilidad se encuentra entre límites positivos y negativos se dice que
 }
 \begin{tikzpicture}
 \begin{axis}[no markers, domain=0:10, samples=100,
-axis lines*=left, xlabel=x, ylabel=p($x$),
+axis lines*=left, xlabel=x, ylabel=p($X$),
 height=6cm, width=10cm,xticklabels={,,,-a,0,b,,}, ytick=\empty,
 enlargelimits=false, clip=false, axis on top]
 \addplot [fill=none, draw=black, domain=-3:-1] {gauss(0,1)} \closedcycle;
@@ -9387,7 +9663,7 @@ La probabilidad entre sectores positivos es escrito como $P(a<Z\leq b)=P(Z\leq b
 }
 \begin{tikzpicture}
 \begin{axis}[no markers, domain=0:10, samples=100,
-axis lines*=left, xlabel=x, ylabel=p($x$),
+axis lines*=left, xlabel=x, ylabel=p($X$),
 height=6cm, width=10cm,xticklabels={,,,,0,a,b}, ytick=\empty,
 enlargelimits=false, clip=false, axis on top]
 \addplot [fill=none, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
@@ -9404,7 +9680,7 @@ Si los límites del área están entre límites negativos, se expresa: $P(-b<Z\l
 }
 \begin{tikzpicture}
 \begin{axis}[no markers, domain=0:10, samples=100,
-axis lines*=left, xlabel=x, ylabel=p($x$),
+axis lines*=left, xlabel=x, ylabel=p($X$),
 height=6cm, width=10cm,xticklabels={,,-b,-a,0}, ytick=\empty,
 enlargelimits=false, clip=false, axis on top]
 \addplot [fill=none, draw=black, domain=-3:-2] {gauss(0,1)} \closedcycle;
@@ -9577,6 +9853,408 @@ $\frac{3}{\sqrt{2}}$ & 3           & 0.4972 \\ \hline
 \end{tabular}
 \end{center}
 \end{theorem}
+\section{Función Q}\index{Función Q}
+\begin{definition}[Función Q]
+La función \textit{Q} es solo \textbf{uno menos la función de distribución acumulativa (CDF) para la distribución normal estandarizada}. La CDF para la distribución normal te da la probabilidad de que una variable aleatoria normal tome un valor igual o menor que \textit{a} (como en la proposición \ref{prop:prob menor a}). La función Q es el complemento de esta; en otras palabras, es la probabilidad de que una variable aleatoria normal tome un valor \textbf{mayor que a} (como en la proposición \ref{prop: prob mayo igual}).
+\begin{equation}
+\label{eq: q func}
+Q(x)=1-CDF=P(X>x)
+\end{equation}
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($X$),
+height=6cm, width=10cm,xticklabels={,,,,0,x,,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=red!50, draw=black, domain=1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+Para trabajar con la función Q es necesario usar la ecuación \ref{eq:z dist}, de tal manera que:
+\begin{align*}
+F_X(x)&=P(X\leq x)\\
+&=P\left(\frac{X-\mu}{\sigma}\leq\frac{x-\mu}{\sigma}\right)\\
+&=P\left(Z\leq\frac{x-\mu}{\sigma}\right)\\
+&=\Phi\left(\frac{x-\mu}{\sigma}\right)\\
+&=1-Q\left(\frac{x-\mu}{\sigma}\right)
+\end{align*}
+No hay problema porque sea una distribución estandarizada o no, pues al ser una estandarizada tendríamos $\mu=0$ y $\sigma=1$, al reemplazar en \textit{Z} no afectaría nada.
+Finalmente, función \textit{Q} esta definida por:
+\begin{equation}
+Q\left(\frac{x-\mu}{\sigma}\right)=\int_{\frac{x-\mu}{\sigma}}^{\infty}\frac{1}{\sqrt{2\pi}}e^{-\frac{z^2}{2}}\diff z
+\end{equation}
+\end{definition}
+Y se sabe que:
+\begin{theorem}[Función Q y negativos]
+Q(x)=1-Q(-x)$\therefore$ Q(-x)=1-Q(x)
+\label{theo:neg q}
+\end{theorem}
+Además:
+\begin{theorem}[Función Q y CDF]
+Q(x)=1-$\Phi(x)$
+\end{theorem}
+\begin{remark}
+Cuando se tienen probabilidades como las vistas en las proposiciones de la \textbf{función normal}, lo que se hace es dividir el problema es, hallar el área de cada una y restarlas o sumarlas.
+\end{remark}
+\begin{figure}[]
+\centering
+\includegraphics[width=\linewidth]{IM/IM33.png}
+\caption{Valores de la función Q: 0<x<9}
+\label{fig:tabla funq}
+\end{figure}
+Vamos a ver 1 ejercicio básico para entender el funcionamiento en diferentes casos y usaremos la tabla de la función \textit{Q}\footnote{Revisar los anexos para más tablas.} más la calculadora \textit{Casio CLASSWIZ fx-991LAX}
+\begin{example}[La temperatura durante setiembre está distribuida normalmente con media 18,7°C y desviación estándar 5ºC. Calcule la probabilidad de que la temperatura durante septiembre esté
+por debajo de 21ºC]
+Valores encontrados: media=18,7, desviación estándar=5, x=21. Con estos datos construimos nuestra variable Z usando la ecuación \ref{eq:int gauss}:
+\begin{displaymath}
+Z=\frac{21-18.7}{5}=0.46
+\end{displaymath}
+\textbf{Usando la tabla función Q:}\\
+Genial! Ahora usando la tabla \ref{fig:tabla funq} ubicamos el valor de Z; observamos que el valor de la función \textit{Q} para Z=0.46 es \textbf{0.3228}. \textbf{OJO} que la función \textit{Q} devuelve la probabilidad que x sea mayor a X, sin embargo a nosotros nos esta pidiendo que x sea menor o igual a X. Es por esta razón que tenemos que restar uno menos el valor obtenido de la tabla
+\begin{displaymath}
+1-0.3228=0.6772
+\end{displaymath}
+La probabilidad que en septiembre la temperatura sea menor a 21°C es de 0.6772.\\
+\textbf{Usando la calculadora:}\\
+Aquí es más fácil aún, en caso de la calculadora fx-991LAX no es necesario la función \textit{Q}, pues con tan solo introducir los valores y limites nos da el área o la probabilidad:
+\begin{enumerate}
+\item Entramos al menú y vamos a la opción 7 (Distribución)
+\begin{center}
+\includegraphics[scale=1]{IM/IM28.png}
+\end{center}
+\item Queremos hallar el área bajo la curva, no queremos el valor especifico en ese valor. Es por esta razón que elegimos \textbf{DA normal}\footnote{Distribución acumulada normal}
+\begin{center}
+\includegraphics[scale=1]{IM/IM29.png}
+\end{center}
+\item Colocamos los datos que pide:\textit{Inf}: Límite inferior, en nuestro caso basta con colocar lo menos la media menos 3 veces la varianza, mientras menor sea el número aquí la precisión será mejor; \textit{Sup}: El límite superior, 21 en nuestro ejemplo; $\sigma$: desviación estándar, dada por el problema es 5 y $\mu$: media, dada por el problema es 18.7. Presionamos igual para que nos de el resultado.
+\begin{center}
+\includegraphics[scale=1]{IM/IM30.png}
+\end{center}
+\begin{center}
+\includegraphics[scale=1]{IM/IM31.png}
+\end{center}
+\item Obtenemos el resultado que es 0.6763, difiere un poco con el resultado anterior pero es cuestión de decimales, si continuamos bajando el valor del límite inferior, la aproximación será mejor.
+\end{enumerate}
+\begin{center}
+\includegraphics[scale=1]{IM/IM32.png}
+\end{center}
+\end{example}
+\begin{example}[La media de los pesos de 5000 estudiantes de un colegio es 70 kg y la desviación típica 3 kg. Suponiendo que los pesos se distribuyen normalmente. Hallar cuántos estudiantes
+pesan menos de 60 kg.]
+Tenemos identificados los datos: media=70, desviación estándar=3, total de estudiantes=5000 y x=60.\\
+Plateando Z:
+\begin{displaymath}
+Z=\frac{60-70}{3}=-3.33
+\end{displaymath}
+Si tratamos de ver esto en la tabla, el valor no existe. Pero sabemos que por el teorema \ref{theo:neg q} podemos plantearlo así:
+\begin{displaymath}
+Q(-3.33)=1-Q(3.33)=0.0004342
+\end{displaymath}
+¿Por qué no restamos 1-0.0004342? Nos piden hallar el número de alumnos que pesan menos de 60, si graficámos, la distribución será algo así (sector cían):
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($X$),
+height=6cm, width=10cm,xticklabels={,,-x,,0,,x,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=cyan!20, draw=black, domain=-3:-2] {gauss(0,1)} \closedcycle;
+\addplot [fill=none, draw=black, domain=-2:2] {gauss(0,1)} \closedcycle;
+\addplot [fill=red!20, draw=black, domain=2:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+Nosotros, por el teorema \ref{theo:neg q} hemos hallado el sector rojo, al ser simétricos, ambos valores serán absolutamente los mismos: es igual hallar los valores menores a \textit{-x} que los valores mayores que \textit{x}. Una vez dicho esto, continuamos:
+Nos dicen hallar el número de estudiantes, para ello usaremos el porcentaje:
+\begin{displaymath}
+5000*0.0004342*100\%=2.171\simeq 2
+\end{displaymath}
+\end{example}
+\begin{remark}
+Si usas las tablas que están en los anexos, recuerda debes hallar el valor más cercano en la primera columna, y ubicar cuanto te falta para llegar a tu  número en la primera fila
+\end{remark}
+\begin{example}[En una ciudad se estima que la temperatura máxima en el mes de junio sigue
+una distribución normal, con media 23° y desviación típica 5°. Calcular el número de días del
+mes en los que se espera alcanzar máximas entre 21° y 27°]
+Lo planteamos como:
+\begin{displaymath}
+P(21<x<27)
+\end{displaymath}
+Normalizamos está probabilidad:
+\begin{align*}
+P&\left(\frac{21-23}{5}<x<\frac{27-23}{5}\right)\\
+P&(-0.4<x<0.8)
+\end{align*}
+Graficando para obtener un mejor panorama:
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($X$),
+height=6cm, width=10cm,xticklabels={,,-x,,0,,x,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:-1] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=black, domain=-1:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=red!20, draw=black, domain=1:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+Lo interpretamos como: \emph{Al área por encima de -0.4 le restamos el área por encima de 0.8}
+\begin{displaymath}
+\therefore Q(-0.4)-Q(0.8)
+\end{displaymath}
+Arreglando la expresión con el uso de las propiedades:
+\begin{displaymath}
+1-Q(0.4)-Q(0.8)
+\end{displaymath}
+Ubicando los valores en nuestra tabla:
+\begin{displaymath}
+1-3.1157826\basedec{-1}-2.1185540\basedec{-1}=0.44356634
+\end{displaymath}
+Pero no nos piden la probabilidad, sino los días entre esas temperatura:
+\begin{displaymath}
+0.44356634\times 30=13.30\simeq =13
+\end{displaymath}
+La cantidad de días que en los que se espera alcanzar máximas temperaturas es de 13 días.
+\end{example}
+\begin{example}[Se supone que los resultados de un examen siguen una distribución normal con media 78 y desviación típica 36.]
+\textbf{¿Cuál es la probabilidad de que una persona que se presenta el examen obtenga una calificación superior a 72?}\\
+Normalizamos nuestro valor:
+\begin{displaymath}
+P(Z>72)=P\left(Z>\frac{72-78}{35}\right)=P(Z>-0.16)=Q(-0.16)
+\end{displaymath}
+Aplicando la propiedad y buscando el resultado:
+\begin{displaymath}
+1-Q(0.16)=1-4.3644\basedec{-1}=0.56356
+\end{displaymath}
+\textbf{Calcular la proporción de estudiantes que tienen puntuaciones que exceden por lo menos en cinco puntos de la puntuación que marca la frontera entre el Apto y el No-Apto (son declarados No-Aptos el 25\% de los estudiantes que obtuvieron las puntuaciones más bajas).}\\
+Nos dieron el valor de 25\%, que es lo mismo a 0.25,  por lo tanto tenemos este problema:
+\begin{displaymath}
+P\left(Z<-\frac{N-78}{36}\right)=0.25
+\end{displaymath}
+Nota que estamos poniendo un signo \textbf{negativo} a diferencia del punto anterior. Esto lo hacemos porque es la probabilidad de 0.25 es menor que 0.5. Recordando la gráfica de la distribución gaussiana, al ser simétrica se sabe que hasta la mitad de la distribución es 0.5, de lo contrario, cualquier valor menor a 0.5 será negativo.\\
+Poniendo en términos de la función \textit{Q} y usando la simetría de la distribución:
+\begin{displaymath}
+P\left(Z<-\frac{N-78}{36}\right)=Q(X)=0.25
+\end{displaymath}
+Lo que nos queda es encontrar \textit{X}, y con ese valor encontramos N. Nos queda buscar en las tablas de la función \textit{Q}, aproximadamente es 0.685. Con este valor encontramos \textit{N}:
+\begin{align*}
+-\frac{N-78}{36}&=0.68\\
+N&=53.52
+\end{align*}
+Hemos hallado 53.52, que es la nota cuya probabilidad es de 0.25. El problema pide que excedan por lo menos 5 puntos, por lo tanto:
+\begin{align*}
+&P(X>53.52+5)\Rightarrow P(Z>\frac{58.52-78}{36})\\
+&\therefore P(X>-0.54)\simeq 1-Q(0.54)\\
+&P(X>-0.54)=1-2.9459\basedec{-1}=0.705
+\end{align*}
+Pasando a porcentaje, la proporción de estudiantes que tienen puntuaciones que exceden por lo menos cinco puntos es de 70.5\%.\\
+\textbf{Si se sabe que la calificación de un estudiante es mayor que 72 ¿cuál es la probabilidad de que su calificación sea, de hecho, superior a 84?}\\
+Hallamos la probabilidad para que \textit{X} sea mayor a 84:
+\begin{displaymath}
+P\left(X>84\right)=P\left(Z>\frac{84-78}{36}\right)=P\left(Z>0.16\right)
+\end{displaymath}
+Usando la función \textit{Q}
+\begin{displaymath}
+Q(0.16)=0.4364
+\end{displaymath}
+Hallando la probabilidad de que su examen sea mayor a 84, dado que saco más de 72:
+\begin{displaymath}
+P\left(X>84|X>74\right)=\frac{P\left(X>84\cap X>72\right)}{P\left(X>72\right)}
+\end{displaymath}
+Si graficamos la intersección de ambas probabilidad que es detalla en el numerador:
+\begin{center}
+\pgfmathdeclarefunction{gauss}{2}{\pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+\begin{tikzpicture}
+\begin{axis}[no markers, domain=0:10, samples=100,
+axis lines*=left, xlabel=x, ylabel=p($X$),
+height=6cm, width=10cm,xticklabels={,,,,0,72,84,}, ytick=\empty,
+enlargelimits=false, clip=false, axis on top]
+\addplot [fill=none, draw=black, domain=-3:1] {gauss(0,1)} \closedcycle;
+\addplot [fill=cyan!20, draw=black, domain=1:2] {gauss(0,1)} \closedcycle;
+\addplot [fill=red!20, draw=black, domain=2:3] {gauss(0,1)} \closedcycle;
+\end{axis}
+\end{tikzpicture}
+\end{center}
+La intersección de ambas probabilidades no es mas que la probabilidad que \textit{X} sea mayor a 84, por lo tanto:
+\begin{displaymath}
+\frac{P\left(X>84\right)}{P\left(X>72\right)}
+\end{displaymath}
+Normalizando:
+\begin{displaymath}
+\frac{P\left(X>0.167\right)}{P\left(X>-0.167\right)}=\frac{0.4344}{1-0.4341}=0.768\simeq 0.77
+\end{displaymath}
+La probabilidad es de 77\%.
+\end{example}
+\section{Gestión y calidad en la ingeniería de mantenimiento}\index{Gestión y calidad en la ingeniería de mantenimiento}
+Para \textit{Mora}, la palabra gestión se relaciona con \textbf{administración o dirección de empresas} (pudiendo ser también de áreas de producción, áreas de servicio, entre otras), cuya función básica es crear bienes o servicios que contribuyan a elevar el nivel de vida de la humanidad. Además, señala que la expresión empresa se entiende como una organización conformada por personas, máquinas, tecnología, información, planeación y recursos financieros que busca alcanzar objetivos establecidos (eficiencia y eficacia), manejando adecuadamente los recursos disponibles (\textbf{eficiencia}), respetando el medio ambiente con la mayor efectividad. En ese contexto, para \textit{De Miguel}, la gestión de una empresa (que se refiere a su \textbf{administración}), es el conjunto de actividades que implican: planificar, organizar, dirigir, coordinar y ejecutar, para lograr los objetivos establecidos, tal como lo establecen las escuelas modernas de gestión. En relación al mantenimiento, \textit{Mora} manifiesta que es necesario reconocer dos aspectos básicos: gestión y operación. La primera se refiere al manejo de los recursos, a su planificación, organización y a su control, mientras que la segunda es la realización física del servicio de mantenimiento. De otro lado, \textit{Navarro, Pastor y Mugaburu}, mencionan que la Gestión del Mantenimiento debe enfocarse en dos direcciones: una de ellas es en la gestión que realiza mantenimiento con los demás departamentos o áreas enmarcado en los objetivos de la empresa, y el segundo nivel en la gestión integral e interna, propia del departamento.
+\subsection{¿Por qué se debe gestionar el mantenimiento?}
+¿No es más fácil y más barato acudir a reparar un equipo cuando se averíe y olvidarse de planes de mantenimiento? La alta interrelación de mantenimiento y producción se ratifica en el hecho de que la gestión del mantenimiento depende de la tecnología de los equipos y del tipo de actividad industrial y organización, a la que pertenecen. El estudio de fallas, sistemas de organización, los cuales incrementan notablemente la mano de obra indirecta? \textit{(García, 2003)}. A continuación se describen las razones por qué es necesario gestionar el mantenimiento:
+\begin{enumerate}
+\item Porque practicando una eficiente Gestión del Mantenimiento, las empresas se vuelven más competitivas, en el sentido de que un óptimo mantenimiento, conlleva a sistemas de producción más sostenidos, contribuyendo a satisfacer las necesidades de los clientes.
+\item Porque existen varias técnicas de mantenimiento que al ser implantadas adecuadamente, previo análisis, mejoran la calidad de los productos y la productividad de la empresa: Entre algunas técnicas de mantenimiento se puede mencionar las siguientes: el mantenimiento \textbf{preventivo}, el mantenimiento \textbf{predictivo} (análisis vibracional, termografías, detección de fugas por ultrasonidos, análisis amperimétricos, el RCM, el TPM, entre otras.
+\item Porque la calidad, la seguridad, y las interrelaciones con el medio ambiente son aspectos que han tomado una extraordinaria importancia en la gestión industrial. Es necesario gestionar estos aspectos para incluirlos en las formas de trabajo de los departamentos de mantenimiento.
+\end{enumerate}
+\subsection{Calidad y mantenimiento}
+La calidad considera la \textbf{satisfacción} simultanea de todos aquellos que componen la organización tales como : Accionistas, clientes y empleados. Los accionistas buscan un rendimiento en sus inversiones, los clientes productos ,los usuarios esperan mejores servicios y mientras los empleados se empeñan en mejorar su nivel de vida. De las definiciones antes mencionadas se desprende que, toda empresa o cualquier organización que practica como modelo de gestión, una gestión de calidad, sus procesos y actividades que desarrolla son de calidad. Se entiende por proceso al conjunto de actividades que se realizan sucesivamente con el objeto de \textbf{transformar} una serie de recursos o insumos(entradas o input) en un resultado especifico con valor agregado que puede ser un producto o un servicio (salida u output) .En ese sentido son procesos por ejemplo la enseñanza, las negociaciones para un contrato, un estudio de mercado, el mantenimiento de un equipo y otros. La palabra calidad ha desencadenado una serie de definiciones, por lo que no existe una definición especifica que pueda calificarse como la mas correcta o la mejor. Cada empresa ha de desarrollar su propia definición especifica para la compañía. Sin embargo, se puede considerar la siguiente definición: \emph{La calidad es la totalidad de los rasgos y las características de un producto o servicio que se refieren a su capacidad para satisfacer las necesidades y expectativas de los clientes o de cualquiera que entre en contacto con el producto o servicio.} Calidad implica buscar la mejora continua en todos los procesos para mejorar la competitividad de la organización.
+\subsection{Programa de mantenimiento}
+Toda empresa cuenta con equipos tales como motores, reductores, bombas, instalaciones eléctricas y muchos otros equipos que sufren \textbf{daños} por el tiempo de operación de cada uno de ellos, para mantenerlos en buen estado es necesario que se elabore un \textbf{programa de mantenimiento} para lograr una mayor \textbf{vida útil} en la maquinaria. La programación de trabajo de mantenimiento tiene como finalidad:
+\begin{itemize}
+\item Establecer las fechas de iniciación y terminación de un trabajo. • Definir la secuencia de las actividades.
+\item Conocer la intervención de la mano de obra.
+\item Establecer los tiempos de suministro de los materiales y/o repuestos.
+\item Establecer el presupuesto estimado.
+\end{itemize}
+\subsection{Análisis de la criticidad}
+El análisis de criticidad es una herramienta o metodología que permite en una planta industrial o operador de servicios determinar la \textbf{prioridad} de los equipos, en función de su impacto global, con la finalidad de facilitar la toma de decisiones y mejorar la confiabilidad operacional, entendiendo por confiabilidad como la probabilidad de que un equipo o sistema opere sin fallar un determinado periodo de tiempo, bajo unas condiciones de operación previamente establecidas. Así mismo, se debe tener en cuenta, que \textbf{no todos los equipos tienen la misma criticidad} en una planta industrial o en un operador de servicios, normalmente unos equipos son mas críticos que otros. En ese sentido se debe destinar la mayor parte de los recursos a los equipos mas críticos, dejando una menor porción de los recursos a los equipos menos críticos.
+\subsubsection{Determinar el grado de criticidad}
+Para determinar el grado de criticidad de los equipos se toman ciertos criterios que estén asociados con la frecuencia de fallas, el impacto operacional, flexibilidad operacional, costo del mantenimiento, medio ambiente y otros. Por otro lado, el nivel de criticidad de un equipo se facilita considerablemente al utilizar un \textbf{procedimiento numérico}. Consiste en la asignación de un \textbf{puntaje} a variables que están relacionadas con los equipos y su impacto global, luego se \textbf{pondera} y se \textbf{suman} los resultados. Después se determina el rango en el que se encuentra el valor de la suma, que indica categoría y la criticidad que le debe corresponder al equipo. El puntaje utilizado para la ponderación de cada aspecto o variable relacionada al equipo, esta comprendido entre los valores de 1 a 5 el valor 1 significa que incide en menor grado(leve) ,y el valor 5 que incide en mayor grado(muy grave).se muestra la table a continuación.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+Item & Rango       & Categoria & Criticidad \\ \hline
+01   & Suma: 16-20 & A         & Crítica    \\ \hline
+02   & Suma: 11-15 & B         & Importante \\ \hline
+03   & Suma: 6-10  & C         & Regular    \\ \hline
+04   & Suma: 0-5   & D         & Opcional   \\ \hline
+\end{tabular}
+\end{center}
+\caption{Tabla de determinación de criticidad}
+\end{table}
+\textbf{Variables relacionadas con los equipos para determinar el grado de criticidad}
+\begin{itemize}
+\item Efecto sobre el servicio de operaciones y medio ambiente.
+\item Valor técnico-económico del equipo.
+\item Probabilidad de falla (confiabilidad)
+\item Flexibilidad del equipo en el sistema.
+\item Dependencia logística de los repuestos.
+\item Dependencia del mantenimiento(mano de obra)
+\item Facilidad de reparación.
+\end{itemize}
+\subsection{Análisis de modos y efectos de fallos}
+El análisis de los modos y efectos de fallos (FMEA), desde el punto de vista del mantenimiento industriales una \textbf{herramienta} o metodología muy útil que permite(de manera sistemática),\textbf{reconocer y/o identificar} las fallas funcionales de un equipo(en la actividad de planificación, antes de que estas ocurran, con la intención de eliminarlas o mitigarlas, con lo cual se asegurara su \textbf{operatividad} y por lo tanto, su confiabilidad. Es decir ,el FMEA se utiliza para identificar los modos de fallos funcionales, determinar sus efectos que estos provocan y así mismo, identificar acciones que conlleven a atenuar dichas fallas. En ese sentido, el FMEA es una metodología orientada a lograr el aseguramiento de la funcionalidad y por ende la confiabilidad de una maquina o equipo.
+\subsection{Definición de modo, causa y efecto de fallo}
+\subsubsection{Modo de fallo}
+Es definido como cualquier situación o evento que pueda causar la falla de un activo físico(o sistema o proceso).Por ejemplo, para un motor ,los modos de fallo pueden ser : calentamiento,vibración,fallo al arrancar y otros
+\subsubsection{Causa de fallo}
+Una causa de fallo es la razón potencial de un modo de fallo. En el análisis de FMEA,para cada modo de fallo se debe listar las posibles causas de fallo.
+\subsubsection{Efecto de fallo}
+Describe las consecuencias que provocan la ocurrencia del modo de fallo que se esta analizando. Esta descripción debe incluir toda la información necesaria para apoyar la evaluación de la maquina.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|ccc|}
+\hline
+\rowcolor[HTML]{34CDF9} 
+\multicolumn{3}{|c|}{\cellcolor[HTML]{34CDF9}Bomba}                                                                                                                                                                                                                   \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\textbf{Modo de fallo}} & \multicolumn{1}{c|}{\cellcolor[HTML]{DAE8FC}\textbf{Causas de fallo}}                                            & \textbf{Efectos de fallo}                                                   \\ \hline
+\multicolumn{1}{|c|}{Fallo al arrancar}                              & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Instalación defectuosa\\ Falta de energia electrica\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Parada de equipo\\ Parada de planta\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{Vibración}                                      & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Rotura de rodamiento\\ Rotura de eje\end{tabular}}                & \begin{tabular}[c]{@{}c@{}}Parada de equipo\\ Parada de planta\end{tabular} \\ \hline
+\end{tabular}
+\end{center}
+\caption{Tabla de relación causa-efecto: bomba}
+\end{table}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|ccc|}
+\hline
+\rowcolor[HTML]{34CDF9} 
+\multicolumn{3}{|c|}{\cellcolor[HTML]{34CDF9}Motor generador}                                                                                                                                                                                                                      \\ \hline
+\rowcolor[HTML]{DAE8FC} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{DAE8FC}\textbf{Modo de fallo}} & \multicolumn{1}{c|}{\cellcolor[HTML]{DAE8FC}\textbf{Causas de fallo}}                                                        & \textbf{Efectos de fallo}                                                    \\ \hline
+\multicolumn{1}{|c|}{Fallo al arrancar}                              & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Bateria de arranque descargada\\ Cubículo de control con averia\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Parada de equipo\\ Corte de servicio\end{tabular} \\ \hline
+\multicolumn{1}{|c|}{Alta temperatura}                               & \multicolumn{1}{c|}{Cambio de aceite}                                                                                        & \begin{tabular}[c]{@{}c@{}}Parada de equipo\\ Corte de servicio\end{tabular} \\ \hline
+\end{tabular}
+\end{center}
+\caption{Tabla de relación causa-efecto: motor generador}
+\end{table}
+\subsection{Confiabilidad de un sistema}
+El \textbf{análisis de confiabilida}d hace un uso muy importante de las técnicas cuantitativas o estadísticas para la toma de decisiones en el campo de mantenimiento y en la gestión de activos en general, pero muy poco se utiliza en la practica. Así mismo, se debe tener en cuenta, que el punto de partida para realizar un análisis de confiabilidad de un equipo,maquina,componente o instalación bajo una concepción científica, es la información cuantitativa que sobre las fallas se tenga (estadística de fallas o historial de fallas).
+\subsubsection{Confiabilidad de un sistema}
+Si un sistema productivo (o subsistema) está compuesto por ``n'' ítems que funcionan de manera \textbf{independiente}, acoplados en \textbf{serie}; es decir, operando uno a continuación de otro, de tal manera que el comportamiento de alguno de ellos, no afecta la confiabilidad de los restantes, entonces, la falla en cualquier equipo genera la \textbf{paralización} de todo el sistema productivo. Por lo tanto, la \textbf{probabilidad} de que el sistema en serie no falle antes de un instante de tiempo dado; es decir, su confiabilidad, vendrá dada por el \textbf{producto} de las confiabilidades de los distintos equipos que constituyen dicho sistema; esto implica, que la confiabilidad del sistema es menor o igual que la confiabilidad de cualquier equipo que lo compone; de acuerdo a la expresión matemática ,se tiene:
+\begin{definition}[Confiabilidad de un sistema en serie]
+\begin{equation}
+R_s(t)=\prod_{i=1}^nR_i(t)
+\end{equation}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM34.png}
+\end{center}
+\end{definition}
+\begin{remark}
+En un sistema en serie, el equipo con menor confiabilidad tiene mayor influencia en la confiabilidad del sistema. A mayor numero de equipos en serie, menor será la confiabilidad del sistema en serie
+\end{remark}
+\subsubsection{Confiabilidad de un sistema en paralelo}
+Si un sistema productivo (o sub-sistema) está compuesto por ``n'' ítems que funcionan de manera independiente acoplados en paralelo, entonces, la falla en cualquier equipo no genera la paralización de todo el sistema productivo, y basta que al menos un equipo siga operando para que el sistema productivo también continúe operando. Es decir, el sistema productivo en paralelo dejará de operar (entrará en falla) cuando todos los equipos entran en falla. Por lo tanto, la probabilidad de que el sistema en paralelo falle antes de sobrepasar un instante de tiempo dado, vendrá dado por el producto de las probabilidades de fallo de cada uno de los equipos es decir: 
+\begin{definition}[Confiabilidad de un sistema en paralelo]
+\begin{equation}
+R_p(t)=1-\prod_{i=1}^n(1-R_i(t))
+\end{equation}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM35.png}
+\end{center}
+\end{definition}
+\begin{remark}
+En un sistema en paralelo, la componente mas importante de cara a la confiabilidad es aquella que tiene la mayor confiabilidad de todas. A mayor numero de equipos independientes operando en paralelo,mayor será la confiabilidad del sistema en paralelo.
+\end{remark}
+\subsubsection{Confiabilidad de un sistema mixto}
+La configuración mixta es una combinación de la configuración serie con la configuración paralelo. La confiabilidad del sistema resultante de un sistema mixto se calcula evaluando primero la confiabilidad de cada sub-sistema para posteriormente combinarlos de manera adecuada.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{IM/IM36.png}
+\end{center}
+\subsection{Mantenibilidad de un sistema}
+Se denomina mantenibilidad a la \textbf{probabilidad} de que un ítem o articulo, después de un fallo o avería sea restaurado completamente a su estado de funcionamiento normal ,dentro de un tiempo dado. Se asume que para restaurar el nivel de funcionamiento normal del articulo, la reparación se hace con personal y herramientas adecuadas y con los datos e información técnica pertinente. En cualquier instalación industrial, tan importante como que un equipo no falle es que, cuando este falle, se repare y vuelva a ponerse en servicio lo antes posible. Aparece,pues,un nuevo concepto que intenta reflejar el tiempo que tarda un equipo que ha fallado, en volver a estar en condiciones operativas, lo que se denomina Tiempo técnico de reparación(tiempo que demora la reparación),o simplemente tiempo de reparación y se denota como TTR(Time-To-Repair). Al respecto, del mismo modo se estima el Tiempo medio entre fallas (TMBF) y
+también el Tiempo medio de reparación (MTTR):
+\begin{definition}[Mantenibilidad]
+De la definición se desprende, que la mantenibilidad es una función de distribución de probabilidad:
+\begin{equation}
+M(t)=P(T\leq t)=\int_0^tm(t)\diff t
+\end{equation}
+Donde:
+\begin{itemize}
+\item M(t): Es la función mantenibilidad, que representa la probabilidad de que la reparación comience en el tiempo t=0 y sea concluida satisfactoriamente en el tiempo t (probabilidad de duración de la reparación).
+\item m(t): Es la función de densidad de probabilidad de la variable aleatoria.
+\item T: Tiempo de reparación o tiempo para reparar
+\end{itemize}
+\end{definition}
+\subsection{Disponibilidad de un sistema}
+Se denomina disponibilidad al parámetro o indicador que esta íntimamente asociado a la gestión del mantenimiento, que expresan la limitación de la \textbf{capacidad de producción}. En general, la disponibilidad se define como la \textbf{probabilidad} de que un ítem este apto para el trabajo en un momento arbitrariamente escogido, \textbf{excepto en los periodos de mantenimiento} en los que la utilización del equipo no se prevé. También se puede decir, que la disponibilidad es la \textbf{probabilidad} de que un equipo \textbf{realice} la función asignada cuando sea requerido. El grado de disponibilidad de un equipo será el resultado del comportamiento de la confiabilidad y la mantenibilidad de dicho equipo.
+\begin{table}[]
+\centering
+\resizebox{\textwidth}{!}{\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+ITEM & CANT & EQUIPO                    & FUNCIÓN OPERATIVA                                                                                                                                        \\ \hline
+01   & 1    & Antena                    & Conviente la enegía electromagnética en enegía radiante.                                                                                                 \\ \hline
+02   & 1    & Guia de onda              & Adaprtar la salida de $T_x$ con la entrada de dipolo de la antena.                                                                                       \\ \hline
+03   & 1    & Presurizador dinámico     & Proveer aire seco a la guía de onda para evitar pérdidas.                                                                                                \\ \hline
+04   & 1    & Transmisor 140Mb          & \begin{tabular}[c]{@{}c@{}}Transmitir señal electromagnética en una banda de 6.0GHz a\\ 140Mbit/s.\end{tabular}                                          \\ \hline
+05   & 1    & Receptor 140Mb            & Recibir la señal electromagnética en la banda de 6GHz a 140Mbit/s.                                                                                       \\ \hline
+06   & 1    & Modulador 140Mb           & Modular la banda base a una frecuencia intermedia a 16QAM                                                                                                \\ \hline
+07   & 1    & Demodulador 140Mb         & \begin{tabular}[c]{@{}c@{}}Demodular la banda de frecuencia intermedia en forma coherente y\\ recuperar la banda base.\end{tabular}                      \\ \hline
+08   & 1    & Transmisor 34Mb           & Transmitir señal electromágnetica en la banda base de 6.0GHz.                                                                                            \\ \hline
+09   & 1    & Receptor 34Mb             & Recibir señal electromagnética de la banda de 6.0GHz.                                                                                                    \\ \hline
+10   & 1    & Modulador 34Mb            & Modular la banda base a una frecuencia intermedia a 8-PSK.                                                                                               \\ \hline
+11   & 1    & Demodulador 34Mb          & \begin{tabular}[c]{@{}c@{}}Demodular la señal en frecuencia intermedia en forma coherente y\\ recuperar la banda base.\end{tabular}                      \\ \hline
+12   & 1    & Conmutador de radio 140Mb & \begin{tabular}[c]{@{}c@{}}Proveer el respaldo en caso de que falle el $T_{x1}$ y pueda\\ conmutar al $T_x$ de reserva en un radio de 140Mb\end{tabular} \\ \hline
+13   & 1    & Conmutador de radio 34Mb  & \begin{tabular}[c]{@{}c@{}}Proveer el respaldo en caso de que falle el $T_{x1}$ y pueda\\ conmutar al $T_x$ de reserva en un radio de 34Mb\end{tabular}  \\ \hline
+14   & 1    & MUX de servicio 140Mb     & \begin{tabular}[c]{@{}c@{}}Multiplexar 4 canales para obtener la sub-banda base en el MOD\\ del radio 140Mb\end{tabular}                                 \\ \hline
+15   & 1    & MUX de servicio 34Mb      & \begin{tabular}[c]{@{}c@{}}Multiplexar 4 canales para obtener la sub-banda base en el MOD\\ del radio 34Mb\end{tabular}                                  \\ \hline
+16   & 1    & MUX 140/34                & Multiplexar 4 señales de 34 Mbit/s en una señal digital de 140 Mbit/s.                                                                                   \\ \hline
+17   & 1    & MUX 34/8                  & Multiplexar 4 señales de 8 Mbit/s en una señal digital de 34 Mbit/s.                                                                                     \\ \hline
+18   & 1    & MUX 8/2                   & Multiplexar 4 señales de 2 Mbit/s en una señal digital de 8 Mbit/s.                                                                                      \\ \hline
+19   & 1    & MUX 2                     & Multiplexar 30 señales de 64 Kbit/s en una señal digital de 2 Mbit/s.                                                                                    \\ \hline
+20   & 1    & Fuente switching          & \begin{tabular}[c]{@{}c@{}}Convertir 48VDC en voltajes 12VDC, 10VDC y 6VDC para convertir\\ las tarjetas alojadas en los modulos.\end{tabular}           \\ \hline
+\end{tabular}}
+\caption{Relación de equipos con sus funciones operetivas correspondientes}
+\end{table}
 \newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Duplexer]
@@ -9925,6 +10603,10 @@ Dependiendo de la forma que se use, las unidades angulares son distintas.
 \includepdf[scale=0.8,pages={1}]{Anexos/GAUSS4.pdf}
 
 \includepdf[scale=0.8,pages={1}]{Anexos/GAUSS5.pdf}
+\includepdf[scale=0.8,pages={1}]{Anexos/Qtable-3.5.pdf}
+\includepdf[scale=0.8,pages={1}]{Anexos/Qtable-5.9.pdf}
+
+
 %---------------------------------------------------------------
 % 		ENDING
 %---------------------------------------------------------------
@@ -9934,7 +10616,7 @@ Dependiendo de la forma que se use, las unidades angulares son distintas.
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
-\chapterimage{Biblio.jpg} % Chapter heading image
+\chapterimage{Final.jpg} % Chapter heading image
 \chapterspaceabove{6.75cm} % Whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{7.25cm} % Amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
