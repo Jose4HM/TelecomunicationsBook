@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  11 JUL 2022 10:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  18 JUL 2022 12:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1437,11 +1437,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip101
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 556.
+Package hyperref Info: Option `colorlinks' set `true' on input line 563.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 556.
+(hyperref)                setting the option has no effect on input line 563.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1971,33 +1971,71 @@ pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 
-     
+l.81 ...n{Métodos para control de la congestión}
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 
-     
+l.81 ...n{Métodos para control de la congestión}
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 
-     
+l.81 ...n{Métodos para control de la congestión}
+                                                  
 pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.81 
-     ]
+l.81 ...n{Métodos para control de la congestión}
+                                                  ]
+<Images//IN1/IN75.png, id=31, 670.00313pt x 142.28156pt>
+File: Images//IN1/IN75.png Graphic file (type png)
+<use Images//IN1/IN75.png>
+Package pdftex.def Info: Images//IN1/IN75.png  used on input line 84.
+(pdftex.def)             Requested size: 341.43437pt x 72.50618pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 87.
+<Images//IN1/IN76.png, id=32, 487.06969pt x 268.75406pt>
+File: Images//IN1/IN76.png Graphic file (type png)
+<use Images//IN1/IN76.png>
+Package pdftex.def Info: Images//IN1/IN76.png  used on input line 90.
+(pdftex.def)             Requested size: 341.43437pt x 188.39722pt.
+
+Underfull \vbox (badness 2302) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[2 <./Images//LT/LT1.png> <./Images//LT/LT2.png> <./Images//IN1/IN75.png>]
+<Images//IN1/IN77.png, id=46, 494.59781pt x 201.00093pt>
+File: Images//IN1/IN77.png Graphic file (type png)
+<use Images//IN1/IN77.png>
+Package pdftex.def Info: Images//IN1/IN77.png  used on input line 96.
+(pdftex.def)             Requested size: 426.79135pt x 173.44322pt.
+
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 89.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 89
-.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[3 <./Images//IN1/IN76.png> <./Images//IN1/IN77.png>]
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
+7.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
@@ -2007,10 +2045,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (80.80823pt too wide) in paragraph at lines 94--95
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2019,16 +2053,7 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[2 <./Images//LT/LT1.png> <./Images//LT/LT2.png>]
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[3] (fastmain.aux)
+[4] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2037,13 +2062,13 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54188 strings out of 478354
- 1208821 string characters out of 2837590
- 2159328 words of memory out of 3000000
- 71594 multiletter control sequences out of 15000+600000
- 518551 words of font info for 143 fonts, out of 8000000 for 9000
+ 54475 strings out of 478354
+ 1211500 string characters out of 2837590
+ 2280553 words of memory out of 3000000
+ 71805 multiletter control sequences out of 15000+600000
+ 528585 words of font info for 173 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,119p,1155b,2862s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,16n,108p,1155b,1718s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
 Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
 pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -2051,15 +2076,17 @@ pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 onts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 /avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/courier/ucrr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type
-1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/
-urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/ur
-w/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
-/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on fastmain.pdf (3 pages, 286006 bytes).
+/urw/courier/ucrb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type
+1/urw/courier/ucrr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/courier/ucrro8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1
+/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/
+urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on fastmain.pdf (4 pages, 415943 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 53279 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 65 named destinations out of 1000 (max. 500000)
+ 65094 words of extra memory for PDF output out of 74296 (max. 10000000)
 

@@ -73,6 +73,13 @@
 \input{arduinoLanguage.tex}
 \input{risc-v.tex}
 \usepackage{pythonhighlight}
+\tikzset{
+  pics/carc/.style args={#1:#2:#3}{
+    code={
+      \draw[pic actions] (#1:#3) arc(#1:#2:#3);
+    }
+  }
+}
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------

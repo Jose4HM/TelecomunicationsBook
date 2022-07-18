@@ -61,7 +61,7 @@
 \thispagestyle{empty} % Suppress headers and footers on the title page
 \begin{tikzpicture}[remember picture,overlay]
 \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background.pdf}};
-\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Telecomunicaciones en tu idioma\\[15pt] % Book title
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Apuntes sobre Telecomunicaciones\\[15pt] % Book title
 {\Large Notas de un estudiante}\\[20pt] % Subtitle
 {\huge Jose Antonio Hancco M.}}}; % Author name
 \end{tikzpicture}
@@ -135,8 +135,8 @@ Tener en cuenta 3 puntos importantes:
 \item La función arctg solo dará valores entre $45^{\circ}$ y -$45^{\circ}$.
 \item Observar que, por ejemplo, la función arcotangente proporciona el mismo ángulo para $z=a-\iu b$ y para $w=-a+\iu b$. Sin embargo, $z$ y $w$ están en cuadrantes distintos, así que su argumento es distinto. Para solucionar esto:
 \begin{itemize}
-\item Si el complejo está en el \textbf{segundo cuadrante} $(a<0, b>0)$, hay que \textbf{sumar} $180^{\circ}$ al ángulo obtenido.
-\item Si el complejo está en el \textbf{tercer cuadrante} $(a<0, b<0)$, hay que \textbf{restar} $180^{\circ}$ al ángulo obtenido.
+\item Si el complejo está en el \textbf{segundo cuadrante} $(a<0, b>0)$, hay que \textbf{sumar} $180^{\circ} ó \pi$ al ángulo obtenido.
+\item Si el complejo está en el \textbf{tercer cuadrante} $(a<0, b<0)$, hay que \textbf{restar} $180^{\circ} ó \pi$ al ángulo obtenido.
 \end{itemize}
 \item Si a=0, el argumento es:
 \begin{itemize}
@@ -145,7 +145,7 @@ Tener en cuenta 3 puntos importantes:
 \item $270^{\circ}$ ($3\pi/2$ radianes) si $b<0$
 \end{itemize}
 \end{enumerate}
-Además, se denomina argumento principal de $z$, $Arg(z)$, al argumento de $z$ en el intervalo $]-180^{\circ},180^{\circ}]$ o, si es en radianes $]-\pi,\pi]$
+Además, se denomina \textbf{argumento principal} de $z$, $Arg(z)$, al argumento de $z$ en el intervalo $]-180^{\circ},180^{\circ}]$ o, si es en radianes $]-\pi,\pi]$
 \end{definition}
 Sea el número complejo:
 \begin{equation}
@@ -169,6 +169,9 @@ A&=C\cdot\cos\theta+jC\sin\theta=C(\cos\theta+j\sin\theta)\\
 A&=C\phase{\theta^{\circ}}\\
 &\therefore A=11.18\phase{26.56^{\circ}}
 \end{align*}
+\begin{remark}
+Las siguientes operaciones se realizarán usando como sistema angular los radianes, en la calculadora no olvidarse de cambiar D a R. Incluyendo tangente, cosenos y senos.
+\end{remark}
 \section{Operaciones con complejos}
 \begin{itemize}
 \item \textbf{Suma}:
@@ -224,7 +227,7 @@ Para usar la fórmula de \textbf{Moivre}, se trabaja con la identidad de Euler:
 \end{equation*}
 Para pasar a forma binómica, aplicamos Euler:
 \begin{equation*}
-|z|\cdot e^{\frac{\theta+2k\pi}{n}\iu}=|z|\left[\cos\left(\frac{\theta+2k\pi}{n}\right)+\iu\sin\left(\frac{\theta+2k\pi}{n}\right)\right]
+|z|^{\frac{1}{n}}\cdot e^{\frac{\theta+2k\pi}{n}\iu}=|z|^{\frac{1}{n}}\left[\cos\left(\frac{\theta+2k\pi}{n}\right)+\iu\sin\left(\frac{\theta+2k\pi}{n}\right)\right]
 \end{equation*}
 \begin{figure}[H]
 \centering
@@ -234,6 +237,54 @@ Para pasar a forma binómica, aplicamos Euler:
 \caption{Ejemplos de raíces complejas.}
 \end{figure}
 \end{itemize}
+Este programa en python calcula las raices complejas de un número complejo.
+\begin{python}
+#Importamos librerias
+import math
+import matplotlib.pyplot as plt
+import numpy as np
+#Registramos los valores del usuario, de debe ingresar un complejo como: a+bj
+number=complex(input("Ingresa el numero complejo: "))#Numero complejo
+orden=int(input("Orden de la raiz: "))#Orden de la raiz
+k=orden#Limite para la iteracion
+if number.real==0:#Si la parte real es 0 se hacen excepciones para la indeterminacion
+    if number.imag==0:
+        theta=0
+    elif number.imag>0:
+        theta=math.pi/2
+    elif number.imag<0:
+        theta=3*math.pi/2
+else:
+    theta=math.atan(number.imag/number.real)#Thera calculada usando un arctg
+valor=[]#Array de respuestas
+#Bucle de iteracion
+for i in range(0,k,1):
+    r1=(abs(number)**(1/orden))*(math.cos((theta+2*i*math.pi)/(orden))+
+        1j*math.sin((theta+2*i*math.pi)/(orden)))#Se calcula la rpta para cada valor de k
+    valor.append(np.around(r1,4))#Se anade la respuesta al vector de respuestas y se redondea, el numero despues de r1 indica la cantidad de decimales
+    print("Respuesta "+str(i))#Se imprime las respuestas
+    print("------------------")
+    print(valor[i])
+    print("+++++++++++++++++++")
+# Extraemos la parte real
+x = [index.real for index in valor]
+# Extraemos la parte imaginaria
+y = [index.imag for index in valor]
+ax = plt.gca()#Obtenemos las propiedades del plot
+# plot the complex numbers
+plt.scatter(x, y)#Ploteamos los puntos
+plt.plot(x,y,color='b',zorder=1)#Unimos los puntos
+plt.ylabel('Imaginary')#Rotulo de los ejes
+plt.xlabel('Real')
+plt.grid()#Activamos la grilla
+for i_x, i_y in zip(x, y):#Obtenemos los valores para punto
+    plt.text(i_x, i_y+0.02, '({}, j{})'.format(i_x, i_y))
+plt.axvline(x=0, c="red")#Ploteamos los ejes del origen
+plt.axhline(y=0, c="red")
+plt.title("Raices complejas de "+str(number))#Anadimos titulos
+plt.show()#Mostramos la grafica
+\end{python}
+\newpage
 \begin{remark}
 Las operaciones de multiplicar y dividir un número complejo y un número real afecta tanto a la \textbf{parte real} como a la \textbf{parte imaginaria}:
 \begin{align*}
@@ -7320,7 +7371,7 @@ Donde:
 \item \textbf{1/$\mu$}: Longitud promedio de trama (bits)
 \item \textbf{$\mu$C}: Servicio de canal (tramas/seg)
 \end{itemize}
-El resultado de la ecuación \ref{eq: retardo promedio} solo es \textbf{valido} cuando \textbf{no hay competencia} por el canal. Ahora dividimos el canalen  \textit{N} subcanales independientes, cada uno con capacidad \textit{C/N} bps, la tasa promedio ahora será $\lambda/N$, ahora \textit{T} será:
+El resultado de la ecuación \ref{eq: retardo promedio} solo es \textbf{valido} cuando \textbf{no hay competencia} por el canal. Ahora dividimos el canal en  \textit{N} subcanales independientes, cada uno con capacidad \textit{C/N} bps, la tasa promedio ahora será $\lambda/N$, ahora \textit{T} será:
 \begin{equation}
 T_N=\frac{1}{\mu(\frac{C}{N})-\frac{\lambda}{N}}=\frac{N}{\mu C-\lambda}=NT
 \end{equation}
@@ -7374,8 +7425,9 @@ Para evitar conflictos, es necesario aplicar una regla de arbitraje: tan pronto 
 \end{figure}
 Los vistos hasta ahora son solo simétricos, quiere decir que todos tiene la misma probabilidad $p$ de coger el canal y usarlo. Cada estación tiene una probabilidad $p$ de transmitir durante cada ranura. La probabilidad de que una estación adquiera con éxito el canal durante una ranura dada es la probabilidad de que cualquier otra estación transmita, con probabilidad $p$, y que las otras $k$-1 estaciones posterguen su transmisión, cada una con una probabilidad de 1-$p$. Este valor es $kp(1-p)^{k-1}$. Para encontrar el valor óptimo de $p$, diferenciamos con respecto a $p$, igualamos el resultado a cero y despejamos $p$. Al hacer esto, encontramos que el mejor valor de $p$ es $1/k$. Si sustituimos $p=1/k$, obtenemos:
 \begin{equation}
-Pr[éxitos con p óptima]=\left[\frac{k-1}{k}\right]^{k-1}
+Pr[a]=\left[\frac{k-1}{k}\right]^{k-1}
 \end{equation}
+a=éxitos con p óptima.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{IN1/IN46.png}
@@ -7561,7 +7613,54 @@ Un problema con este sistema es el \textbf{conteo al infinito}, mirando la figur
 \subsection{Encaminamiento por estado del enlace}
 El funcionamiento hace uso de ruta más corta e inundación\footnote{Consiste en mandar paquetes a todas las líneas, excepto por donde envió.}. Para este encaminamiento, un nodo genera un informe de sus vecinos (distancia/coste) y construye un \textbf{LSP} (\emph{Paquete de estado de enlace}) indicando quien lo envía y el informe evaluado. Luego de ello envía el LSP por inundación a todos los routers de la red. Sólo se envían cuando hay cambios, tienen un tiempo de vida limitado permitiendo que los paquetes no se pueden propagar infinitamente ya que pasado ese tiempo el paquete se destruye. Se procura que ni un nodo envié ningún LSP por donde se ha recibido y si un nodo recibe un LSP repetido, lo rechaza o no lo retrasmite.
 \begin{example}[Crear el encaminamiento optimo respecto al nodo C]
-%=====================================FAlta ejemplo=======
+Se presenta la siguiente red, centrándonos en \textcolor{red}{C} y los paquetes de estado de enlace.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN64.png}
+\end{center}
+\begin{enumerate}
+\item Colocamos C en la raíz de nuestro árbol. Examinamos el LSP de C y colocamos los \textbf{vecinos} con coste hasta el origen. Colocando en cada paréntesis la distancia al origen (C en este caso)
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN65.png}
+\end{center}
+\item Examinamos el LSP de F, se colocan los nuevos vecinos con coste hasta el origen. Notamos que omitimos C del cuadro de F pero si colocamos los nodos E y G.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN66.png}
+\end{center}
+Notamos que tenemos dos puntos de G con valor de 3 y 5, si vamos por G tenemos un coste menos, es por esta razón que eliminamos el que tenga mayor coste porque buscamos un camino con menor coste.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN67.png}
+\end{center}
+\item Vamos con LSP de B, ignorando el origen y colocando los restantes junto con sus costes.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN68.png}
+\end{center}
+Examinando nuevamente notamos una mejor ruta hacia E con menos coste, por lo tanto:
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN69.png}
+\end{center}
+\item Seguimos con el nodo F, usando su LSP:
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN70.png}
+\end{center}
+Borramos el nodo de F(7) pues ya tenemos un F(2).
+\end{enumerate}
+\item Examinamos el LSP de G, ignorando F(1) pues ya se tiene uno en la misma rama, tenemos C(5). Pero realmente es una pérdida total al ser de C(8)  (sumando G(3)+C(5)) por lo que lo borramos.
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN71.png}
+\end{center}
+\item Examinamos el LSP de D, borramos el nodo A(8) pues por esta nueva ruta se tiene una ruta de costo 7:
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN72.png}
+\end{center}
+\item Examinando el LSP de A: No se encuentra una ruta mejor, por lo que:
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN73.png}
+\end{center}
+El árbol definitivo sería:
+\begin{center}
+\includegraphics[width=0.8\linewidth]{IN1/IN74.png}
+\end{center}
+Además nota que en la red hay caminos que no se utilizan nunca (lineas negras).
 \end{example}
 \section{Capa de red de Internet}
 %==================================Falta===============
@@ -7653,7 +7752,7 @@ y la \textbf{máscara de subred}\\
 \ipAddress{\textcolor{red}{11111111.11111111.11111111}.\textcolor{violet}{111}00000}
 \end{center}
 \end{example}
-Usando el ejemplo \ref{exa:subred} vamos a identificar las subredes creadas dirección de red como inicio y máscara de subed como fin; lo que haremos es encontrar todas las posibles combinaciones de los \textbf{bits prestados}:\\
+Usando el ejemplo \ref{exa:subred} vamos a identificar las subredes creadas dirección de red como inicio y máscara de subred como fin; lo que haremos es encontrar todas las posibles combinaciones de los \textbf{bits prestados}:\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{000}00000}$\rightarrow$ 192.168.168.0\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{001}00000}$\rightarrow$ 192.168.168.32\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{010}00000}$\rightarrow$ 192.168.168.64\\
@@ -7662,7 +7761,7 @@ Usando el ejemplo \ref{exa:subred} vamos a identificar las subredes creadas dire
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{101}00000}$\rightarrow$ 192.168.168.160\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{110}00000}$\rightarrow$ 192.168.168.192\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00000}$\rightarrow$ 192.168.168.224\\
-La primera subred es capaz de almacenar desde el host \ipAddress{192.168.168.0} hasta el host \ipAddress{192.168.168.31} o \ipAddress{11000000.10101000.10101000.\textcolor{violet}{000}11111}. A veces se llaman \textbf{broadcasting subred} o \textbf{red de difusión de subred} y es cuando todos los bits de host son 1.\\
+La primera subred es capaz de almacenar desde el host \ipAddress{192.168.168.0} hasta el host \ipAddress{192.168.168.31} o \ipAddress{11000000.10101000.10101000.\textcolor{violet}{000}11111}. Se llaman \textbf{máscara de subred} cuando todos los bits de host son ceros y \textbf{broadcasting subred} o \textbf{red de difusión de subred} cuando todos los bits de host son 1.\\
 Cada una de las subredes tiene la posibilidad de direccionar hasta 5 bits de host. Usando la misma lógica y usando como referencia la última subred \ipAddress{192.168.168.224} se pueden escribir las IP de los hosts:\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00001}$\rightarrow$ 192.168.168.225\\
 \ipAddress{11000000.10101000.10101000.\textcolor{violet}{111}00010}$\rightarrow$ 192.168.168.226\\
@@ -7756,6 +7855,7 @@ El buffer es un espacio temporal de memoria física el cual se usa para almacena
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_LT.pdf} % Chapter heading image
 \chapter{Carta de Smith}
+\section{Conociendo la carta de Smith}\index{Conociendo la carta de Smith}
 La carta de Smith es un diagrama polar del coeficiente de reflexión complejo (también llamado Gamma $\Gamma$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
 Una carta de Smith simplificada, que muestra sus círculos de resistencia constante y arcos de reactancia constante, es un buen punto de partida para comprender su disposición. Como beneficio adicional, la carta también proporciona una forma de mostrar los parámetros de dispersión (parámetros S) y cómo sus valores se relacionan con las medidas y consideraciones reales del hardware.\\
 Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedancia de 50 $\Omega$, a diferencia de la figura \ref{fig:smith chart}; para solucionar esto solo se escalan los valores, es decir, dividimos cada valor entre 50. Además, recordando en análisis en frecuencia, sabemos que los inductores se diferencian de los capacitores solo por el signo, inductores son positivos y capacitores negativos. Es por ello que se distingue dos flechas verticales: hacia arriba están los positivos (inductancia) y abajo negativos (capacitancia). Cuando la resistencia, capacitancia y inductancia son constantes son circulos, arcos y arcos respectivamente. En las lineas de transmisión se distinguen dos formas de enlazar circuitos: paralelo y serie; estos son representados las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
@@ -7915,6 +8015,196 @@ Ahora notamos los valores que finales de la carta:
 \begin{remark}
 Si el valor de $\lambda$ excede los 0.5, somos libres de restar la cantidad necesaria de vueltas, ya que como el valor excede el valor de la vuelta completa, no sirve de nada tener valores altos pues siempre estaremos en el mismo punto. A manera de ejemplo: si tenemos el valor de 3.1, necesitaremos 0.5+0.5+0.5+0.5+0.5+0.5+0.1 vueltas q dar, fíjate que hasta el valor de 3 daremos 6 vueltas en el mismo punto, y no es hasta aquí que recién nos moveremos 0.1.
 \end{remark}
+\section{Acoplamiento de impedancias}\index{Acoplamiento de impedancias}
+Adaptación o acoplamiento de impedancias son técnicas que consisten en la eliminación de las reflexiones que se producen en una línea de transmisión cuando ésta se encuentra terminada con una carga de impedancia distinta de la impedancia característica de la línea.\\
+Técnicas de adaptación en banda estrecha son:
+\begin{enumerate}
+\item Transformador $\lambda/4$
+\item Adaptación con elementos concentrados
+\item Simple sintonizador en serie
+\item Simple sintonizador en paralelo
+\item Doble sintonizador en serie
+\item Doble sintonizador en paralelo
+\end{enumerate}
+\subsection*{Simple stub}
+Este método consiste en colocar a una distancia especial de la carga un \textbf{stub} o pedazo de linea de transmisión en corto circuito o circuito abierto:
+\begin{figure}[H]
+\centering
+\subfloat[Simple stub en circuito abierto]{\includegraphics[width=0.4\linewidth]{LT/LT6.png}}
+\subfloat[Simple stub en cortocircuito]{\includegraphics[width=0.4\linewidth]{LT/LT7.png}}\\
+\subfloat[Stub simple paralelo en circuito abierto]{\includegraphics[width=0.4\linewidth]{LT/LT8.png}}
+\subfloat[Stub simple paralelo en cortocircuito]{\includegraphics[width=0.4\linewidth]{LT/LT9.png}}
+\caption{Tipos de stub}
+\end{figure}
+Antes de seguir es necesario que recordemos algunos términos como \textbf{admitancia}, la ubicación de corto circuito y circuito abierto en la carta y los anillos de la carta. Vamos a ver un ejemplo:
+\begin{example}[Stub paralelo en cortocircuito]
+Hallar la distancia de la carga y la longitud del stub.\\
+\begin{center}
+\includegraphics[width=0.6\linewidth]{LT/LT10.png}
+\end{center}
+\textbf{Solución:}\\
+Primero que todo, debemos normalizar nuestra impedancia de carga:
+\begin{displaymath}
+Z_L=\frac{100+\iu 25}{50}=2+\iu 0.5
+\end{displaymath}
+Ahora ubicamos ese punto en nuestra carta de Smith:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Reactance plot - blue
+        \addplot[domain=0:30, samples=600, color=blue] {0.5};
+	    % Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, .01,...,0.5}, mark options={solid},mark size=.08,color={red},line width=0.5] (2,x) ;  
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Al trabajar con stub en corto en paralelo, lo usual es trabajar con \textbf{admitancias} en lugar de impedancias. Para hallar la admitancia, trazamos un \textcolor{green}{circulo} con origen en el centro de la carta, que pase por el punto hallado en el paso anterior. Luego de ello trazamos una recta que pase por el origen y el punto inicial. El nuevo corte entre la \textcolor{orange}{recta} y el \textcolor{green}{circulo} será nuestra admitancia.
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=green] (0pt,0pt) circle (1.05cm);
+        %Line
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0.47,-0.12) (2,0.5)};   
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Anotamos el valor de la admitancia de la carga:
+\begin{equation*}
+\boxed{Y_L=0.47-\iu 0.12}
+\end{equation*}
+Con el valor de admitancia y el \textcolor{green}{circulo} que le pertenece, hallamos el cruce entre el circulo y el \textcolor{violet}{circulo unitario}
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=green] (0pt,0pt) circle (1.05cm);
+        %Line
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0.47,-0.12) (2,0.5)};
+		% Circle 
+        \path[draw=violet] (40pt,0pt) circle (1.42cm);
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Desde el punto donde se encuentra la admitancia $Y_L=0.47-\iu 0.12$, nos movemos \textbf{hacia el generador}, y nos topamos con un corte el circulo unitario. Ese punto lo escribiremos como:
+\begin{equation*}
+\boxed{Y(d_1)=1+\iu0.8}
+\end{equation*}
+Con estos datos, podemos hallar la distancia $d_1$ a la cual se va ubicar el stub. Esto lo hallamos, prolongando la linea naranja que es la linea de admitancia y dibujando una \textcolor{red}{nueva linea} desde el origen que pase por el primer punto en la cual se cortan ambos círculos:\\
+\textbf{Primera solución:\footnote{Hay dos puntos de cruce entre ambos círculos, por lo que habrá 2 soluciones}}\\
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=green] (0pt,0pt) circle (1.05cm);
+        %Line
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0,-0.14) (2,0.5)};
+		%Line
+		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,1.45)};
+		% Circle 
+        \path[draw=violet] (40pt,0pt) circle (1.42cm);
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Cuando tenemos nuestras lineas prolongadas, tenemos que hallar la \textbf{distancia} desde la \textcolor{orange}{recta de $Y_L$} hasta \textcolor{red}{la recta de $Y_{d_1}$} en términos de $\lambda$\footnote{Usando los anillos exteriores}, en este caso:
+\begin{equation*}
+\boxed{d_1=0.18\lambda}
+\end{equation*}
+Ahora encontramos el valor de la \textbf{longitud del stub}, para ello debemos cancelar el stub, es decir, que la \textbf{admitancia} del stub sea 1 con la admitancia de la entrada al stub:
+\begin{align*}
+Y_{s_1}+Y(d_1)&=1\\
+Y_{s_1}+1+\iu 0.8&=1
+\end{align*}
+\begin{equation*}
+\boxed{Y_{s_1}=-\iu 0.8}
+\end{equation*}
+Con este valor hallado, lo ubicamos en la carta y trazamos una \textcolor{blue}{recta} hacia ella desde el origen, recordando que su componente real es cero:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=green] (0pt,0pt) circle (1.05cm);
+        %Line
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0,-0.14) (2,0.5)};
+		%Line
+		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,1.45)};
+		%Line
+		\addplot+ [mark size=1,blue,line width=1] coordinates{(1,0) (0,-0.8)};
+		% Circle 
+        \path[draw=violet] (40pt,0pt) circle (1.42cm);
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Algo importante que debemos recordar es que si trabajamos en \textbf{impedancias}, al lado izquierdo se ubica el corto circuito y al lado derecho circuito abierto, si trabajamos en \textbf{admitancias} al lado izquierdo es circuito abierto y al lado derecho es cortocircuito. Recordando esto, en nuestro ejercicio estamos trabajando con un \textbf{stub en corto circuito}, además que estamos trabajando en \textbf{admitancias}. Es por ello que desde el origen derecho (cortocircuito en admitancia) medimos la longitud en términos de $\lambda$ para hallar la longitud del stub:
+\begin{equation*}
+\boxed{\ell_{s_1}=0.142\lambda}
+\end{equation*}
+\textbf{Segunda solución:}\\
+Para la segunda solución ubicamos el segundo punto de cruce:
+\begin{equation*}
+\boxed{Y(d_2)=1-\iu 0.8}
+\end{equation*}
+Trazamos una \textcolor{red}{linea} desde el origen que pase por ese punto:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=green] (0pt,0pt) circle (1.05cm);
+        %Line
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0,-0.14) (2,0.5)};
+		%Line
+		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,-1.45)};
+		% Circle 
+        \path[draw=violet] (40pt,0pt) circle (1.42cm);
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Para hallar la distancia tenemos que hallar la distancia en términos de $\lambda$ desde \textcolor{orange}{$Y_L$} hasta \textcolor{red}{$Y(d2)$} , nos ayudamos de los anillos exteriores recordando el sentido \textbf{hacia el generador}:
+\begin{equation*}
+\boxed{d_2=0.37\lambda}
+\end{equation*}
+Ahora encontramos el valor de la admitancia para poder cancelar la admitancia de entrada:
+\begin{align*}
+Y_{s_2}+Y(d_2)&=1\\
+Y_{s_2}+1-\iu 0.8&=1
+\end{align*}
+\begin{equation*}
+\boxed{Y_{s_2}=\iu 0.8}
+\end{equation*}
+Ubicamos $Y_{s_2}$ en la carta y trazamos una \textcolor{blue}{recta} desde el origen hacia esta:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=green] (0pt,0pt) circle (1.05cm);
+        %Line
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0,-0.14) (2,0.5)};
+		%Line
+		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,-1.45)};
+		%Line
+		\addplot+ [mark size=1,blue,line width=1] coordinates{(1,0) (0,0.8)};
+		% Circle 
+        \path[draw=violet] (40pt,0pt) circle (1.42cm);
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Desde Y cerrado (lado derecho de la carta) medimos la distancia en términos de $\lambda$ hasta la \textcolor{blue}{recta} de $Y_{s_2}$ en el sentido WTG:
+\begin{equation*}
+\boxed{\ell_{s_2}=0.36\lambda}
+\end{equation*}
+Por lo tanto tenemos:
+\begin{align*}
+\intertext{Primera solución}
+&d_1=0.18\lambda &\ell_{s_1}=0.142\ell
+\intertext{Segunda solución}
+&d_2=0.37\lambda &\ell_{s_2}=0.36\lambda
+\end{align*}
+Con los datos del problema podemos hallar $\lambda$ usando la ecuación \ref{eq: onda y velocidad}:
+\begin{displaymath}
+\lambda=\frac{0.7c}{450MHz}\simeq 0.467 m
+\end{displaymath}
+Reemplazando este valor de $\lambda$ en las distancias se halla la longitud en metros.
+\end{example}
 \newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Refracción]
@@ -8688,7 +8978,7 @@ void setup(){
 	pinMode(2,INPUT_PULLUP);//Usar la resistencia interna en el puerto 2 para evitar rebotes al leer datos
 	pinMode(5,OUTPUT);//Configurar el pin 5 como salida
 	pinMode(3,INPUT_PULLUP);//Usar la resistencia interna en el puerto 3 para evitar rebotes al leer datos
-	EICRA=0b00001101;//LasCualquier cambio genera una interupcion(01) y interrupcion por rising activabada(11)
+	EICRA=0b00001101;//Cualquier cambio genera una interupcion(01) e interrupcion por rising activabada(11)
 	EIMSK=0b00000011;//Habilitamos las interrupciones externas
 	sei();//Habilitamos las interrupciones de forma global
 }	
