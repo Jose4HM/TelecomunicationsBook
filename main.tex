@@ -29,7 +29,7 @@
 	12pt, % Default font size, select one of 10pt, 11pt or 12pt
 	fleqn, % Left align equations
 	a4paper, % Paper size, use either 'a4paper' for A4 size or 'letterpaper' for US letter size
-	%oneside, % Uncomment for oneside mode, this doesn't start new chapters and parts on odd pages (adding an empty page if required), this mode is more suitable if the book is to be read on a screen instead of printed
+	oneside, % Uncomment for oneside mode, this doesn't start new chapters and parts on odd pages (adding an empty page if required), this mode is more suitable if the book is to be read on a screen instead of printed
 ]{LegrandOrangeBook}
 
 % Book information for PDF metadata, remove/comment this block if not required 
@@ -43,8 +43,11 @@
 
 \addbibresource{sample.bib} % Bibliography file
 
-\definecolor{ocre}{RGB}{255, 0, 0} % Define the color used for highlighting throughout the book
-
+\definecolor{ocre}{RGB}{103, 61, 76} % Define the color used for highlighting throughout the book, replace it with average color for a better presentation:
+% Background.pdf -> Average color=63,76,83
+% Background1.pdf -> Average color=31,31,40
+% Background2.pdf -> Average color=123,119,101
+% Background3.pdf -> Average color=103,61,76
 \chapterimage{Final.jpg} % Chapter heading image
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
@@ -60,7 +63,7 @@
 \begingroup
 \thispagestyle{empty} % Suppress headers and footers on the title page
 \begin{tikzpicture}[remember picture,overlay]
-\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background.pdf}};
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background3.pdf}};%here you change your bookcover background
 \draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Apuntes sobre Telecomunicaciones\\[15pt] % Book title
 {\Large Notas de un estudiante}\\[20pt] % Subtitle
 {\huge Jose Antonio Hancco M.}}}; % Author name
@@ -118,6 +121,28 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
+\section*{Libros recomendados:}
+\begin{itemize}
+\item Fundamentos de circuitos eléctricos\cite{alexander2013fundamentos}
+\item Signals and Systems Using MATLAB\cite{chaparro2018signals}
+\item Procesamiento de señales analógicas y digitales\cite{ambardar1995analog}
+\item Física Para Ciencias E Ingeniería. Vol 1\cite{serway2018fisica1}
+\item Física Para Ciencias E Ingeniería. Vol 2\cite{serway2018fisica2}
+\item Cálculo de una variable: trascendentes tempranas. 7ma edición \cite{stewart12calculo}
+\item Análisis de Fourier\cite{hsu1998analisis}
+\item Matemáticas Avanzadas Para Ingeniería\cite{o2014matematicas}
+\item Métodos numéricos para ingenieros\cite{chapra2013metodos}
+\item Comunicaciones y redes de computadores\cite{stallings2004comunicaciones}
+\item Electrónica: teoría de circuitos y dispositivos electrónicos\cite{boylestad1989electronica}
+\item Fundamentos de sistemas digitales\cite{floyd2006fundamentos}
+\item Tratamiento de señales en tiempo discreto\cite{oppenheim2011tratamiento}
+\item Tratamiento digital de señales\cite{proakis2007tratamiento}
+\item Sistemas de comunicación digitales y análogos\cite{couchsistemas}
+\item Data communication and networking\cite{forouzan2007data}
+\item Life Pre-Intermediate 2e\cite{hughes2017life}
+\item Redes de computadoras\cite{tanenbaum2012computer}
+\item Líneas de transmisión\cite{velalineas1999}
+\end{itemize}
 \part{Electrotécnia}
 \chapterimage{chapter_head_Elec.pdf}
 \chapter{Números complejos}\index{Números complejos}
@@ -129,14 +154,15 @@ Dado un número complejo $z=a+\iu b$, se define el \textbf{módulo} de $z$ como:
 Se define el argumento de $z$ como:
 \begin{equation}
 arg(z)=\theta=arctg=\frac{b}{a}, a\neq 0
+\label{eq:argumento}
 \end{equation}
 Tener en cuenta 3 puntos importantes:
 \begin{enumerate}
 \item La función arctg solo dará valores entre $45^{\circ}$ y -$45^{\circ}$.
 \item Observar que, por ejemplo, la función arcotangente proporciona el mismo ángulo para $z=a-\iu b$ y para $w=-a+\iu b$. Sin embargo, $z$ y $w$ están en cuadrantes distintos, así que su argumento es distinto. Para solucionar esto:
 \begin{itemize}
-\item Si el complejo está en el \textbf{segundo cuadrante} $(a<0, b>0)$, hay que \textbf{sumar} $180^{\circ} ó \pi$ al ángulo obtenido.
-\item Si el complejo está en el \textbf{tercer cuadrante} $(a<0, b<0)$, hay que \textbf{restar} $180^{\circ} ó \pi$ al ángulo obtenido.
+\item Si el complejo está en el \textbf{segundo cuadrante} $(a<0, b>0)$, hay que \textbf{sumar} $180^{\circ}$ ó $\pi$\footnote{Dependiendo del sistema angular en el que se este trabajando} al ángulo \textit{theta} obtenido en \ref{eq:argumento}.
+\item Si el complejo está en el \textbf{tercer cuadrante} $(a<0, b<0)$, hay que \textbf{restar} $180^{\circ}$ ó $\pi$ al ángulo \textit{theta} obtenido en \ref{eq:argumento}.
 \end{itemize}
 \item Si a=0, el argumento es:
 \begin{itemize}
@@ -170,7 +196,7 @@ A&=C\phase{\theta^{\circ}}\\
 &\therefore A=11.18\phase{26.56^{\circ}}
 \end{align*}
 \begin{remark}
-Las siguientes operaciones se realizarán usando como sistema angular los radianes, en la calculadora no olvidarse de cambiar D a R. Incluyendo tangente, cosenos y senos.
+Las siguientes operaciones se realizarán usando como sistema angular los radianes, en la calculadora no olvidarse de cambiar D (grados sexagesimales) a R (radianes). Con respecto a \textbf{theta} se puede trabajar con ambos sistemas siempre y cuando se especifique el sistema (° ó  rad). Excluyendo tangente, cosenos y senos (como en las raíces complejas) donde se usará únicamente el sistema radian, por lo que theta debe estar en radianes.
 \end{remark}
 \section{Operaciones con complejos}
 \begin{itemize}
@@ -3391,7 +3417,7 @@ Todos los codigos estarán disponibles en \textbf{GitHub}, puedes acceder desde 
 \end{wrapfigure}
 \textbf{NodeMCU ESP8266} es una plataforma de desarrollo similar a \textbf{Arduino} especialmente orientada al Internet de las cosas (IoT). La placa NodeMcu v2 ESP8266 tiene como núcleo al \textbf{SoM ESP-12E} que a su vez está basado en el \textbf{SoC Wi-Fi ESP8266}, integra además el conversor USB-Serial TTL CP2102 y conector micro-USB necesario para la programación y comunicación a PC. NodeMcu v2 ESP8266 está diseñado especialmente para trabajar montado en protoboard o soldado sobre una placa. Posee un regulador de voltaje de 3.3V en placa, esto permite alimentar la placa directamente del puerto micro-USB o por los pines 5V y GND. Los pines de entradas/salidas (GPIO) trabajan a 3.3V por lo que para conexión a sistemas de 5V es necesario utilizar conversores de nivel como: Conversor de nivel 3.3-5V 4CH o Conversor de nivel bidirecional 8CH - TXS0108E.
 
-\section{Instalación Windows:Materiales}\index{Instalación Windows:Materiales}
+\section{Instalación Windows: Materiales}\index{Instalación Windows: Materiales}
 \begin{enumerate}
 \item \textbf{Software IDE arduino}: Disponible desde \url{https://www.arduino.cc/en/software}
 \item \textbf{Cable micro usb}: Que sea capaz de transmitir datos, no solo energía.
@@ -3401,11 +3427,11 @@ Todos los codigos estarán disponibles en \textbf{GitHub}, puedes acceder desde 
 \begin{enumerate}
 \item Descargar e instalar el IDE de arduino, la primera vez que lo abras te preguntará sobre el \textit{Firewall de windows}, permite el acceso\footnote{Si deseas cambiar el lenguaje a español ve a: \textit{File>Preferences>Editor Languaje>Español(Spanish)}. Presionamos OK y reiniciamos el Arduino IDE}.
 \item Una vez instalado, conectar tu ESP8266 por cable usb, windows lo debe reconocer asi que espera a que se instale el driver automaticamente.
-\item Nos dirigimos a \textit{Archivo>Preferencias>Gestor de URLs Adicionales de Tarjetas} y pegamos esta dirección: \url{https://arduino.esp8266.com/stable/package_esp8266com_index.json}\footnote{Repositorio oficial: \url{https://github.com/esp8266/arduino}}. Le damos en OK.
-\item Vamos a \textit{Herramientas>Placa:''Arduino/Genuino UNO"}>Gestor de Tarjetas\footnote{Puede tener el nombre de: Placa"\textit{Nombre genérico}"}
-\item Introducimos en el buscador \textbf{\textit{ESP8266}},donde nos salga el resultado de la busqueda clickamos en instalar. Esperemos que termine de instalar.
-\item Vamos a Herramientas>Placas>Gestor de tarjetas>ESP8266 Boards(3.0.2)>NodeMCU 1.0 (ESP-12E Module)
-\item Vamos a Herramientas>Upload Speed, y (recomendablemente)seleccionamos \textbf{115200}(\textit{También asegurarte de fijar la misma cantidad usando \textbf{Serial.begin(115200)}  en el código)};ademas que con el \textbf{Monitor serie} tengan el mismo número de baudios).
+\item Abrimos Arduino IDE y nos dirigimos a \textit{Archivo>Preferencias>Gestor de URLs Adicionales de Tarjetas} y pegamos esta dirección: \url{https://arduino.esp8266.com/stable/package_esp8266com_index.json}\footnote{Repositorio oficial: \url{https://github.com/esp8266/arduino}}. Le damos en OK.
+\item Vamos a \textit{Herramientas>Placa:``Arduino/Genuino UNO''}>Gestor de Tarjetas\footnote{No siempre tendrá el nombre de ``Arduino/Genuino UNO'', puede decir cualquier tipo de nombre pero empezará por la palabra Placa:}
+\item Introducimos en el buscador \textbf{\textit{ESP8266}} ,donde nos salga el resultado de la búsqueda clickamos en instalar. Esperemos que termine de instalar.
+\item Vamos a Herramientas>Placa>Gestor de tarjetas>ESP8266 Boards(3.0.2)>NodeMCU 1.0 (ESP-12E Module)
+\item Vamos a Herramientas>Upload Speed, y (recomendablemente) seleccionamos \textbf{115200} (\textit{también asegurarte de fijar la misma cantidad usando \textbf{Serial.begin(115200)}  en el código});ademas que con el \textbf{Monitor serie} tengan el mismo número de baudios).
 \item Herramientas>Puerto y seleccionamos el puerto que aparece de la forma \textbf{COMxx}, donde xx son números. Al abrir el IDE de Arduino siempre fijate que este selecionada la COM correcta.
 \end{enumerate}
 \section{Equivalente al Hola Mundo pero en placas}\index{Equivalente al Hola Mundo pero en Placas}
@@ -5187,7 +5213,7 @@ Las líneas (o la dirección de E) son siempre normales a las superficies equipo
 Revisar el ejericio 4.13 de libro \cite{sadiku2018elements}.
 \end{notation}
 \chapter{Campos eléctricos en el espacio material}
-\section{CORRIENTES DE CONVECCIÓN Y CONDUCCIÓN}
+\section{Corrientes de convección y conducción}
 \begin{definition}[Corriente]
 La corriente (en amperios) a través de un área dada es la carga eléctrica que pasa por el área por unidad de tiempo.\\
 \begin{equation}
@@ -8027,14 +8053,15 @@ Técnicas de adaptación en banda estrecha son:
 \item Doble sintonizador en paralelo
 \end{enumerate}
 \subsection*{Simple stub}
-Este método consiste en colocar a una distancia especial de la carga un \textbf{stub} o pedazo de linea de transmisión en corto circuito o circuito abierto:
-\begin{figure}[H]
+Este método consiste en colocar a una distancia especial de la carga un \textbf{stub} o pedazo de linea de transmisión en corto circuito o circuito abierto (Figura \ref{fig:tipos de stub}).
+\begin{figure}[]
 \centering
 \subfloat[Simple stub en circuito abierto]{\includegraphics[width=0.4\linewidth]{LT/LT6.png}}
 \subfloat[Simple stub en cortocircuito]{\includegraphics[width=0.4\linewidth]{LT/LT7.png}}\\
 \subfloat[Stub simple paralelo en circuito abierto]{\includegraphics[width=0.4\linewidth]{LT/LT8.png}}
 \subfloat[Stub simple paralelo en cortocircuito]{\includegraphics[width=0.4\linewidth]{LT/LT9.png}}
 \caption{Tipos de stub}
+\label{fig:tipos de stub}
 \end{figure}
 Antes de seguir es necesario que recordemos algunos términos como \textbf{admitancia}, la ubicación de corto circuito y circuito abierto en la carta y los anillos de la carta. Vamos a ver un ejemplo:
 \begin{example}[Stub paralelo en cortocircuito]
@@ -8190,12 +8217,12 @@ Ubicamos $Y_{s_2}$ en la carta y trazamos una \textcolor{blue}{recta} desde el o
 \end{center}
 Desde Y cerrado (lado derecho de la carta) medimos la distancia en términos de $\lambda$ hasta la \textcolor{blue}{recta} de $Y_{s_2}$ en el sentido WTG:
 \begin{equation*}
-\boxed{\ell_{s_2}=0.36\lambda}
+\boxed{\ell_{s_2}=0.36\ell}
 \end{equation*}
 Por lo tanto tenemos:
 \begin{align*}
 \intertext{Primera solución}
-&d_1=0.18\lambda &\ell_{s_1}=0.142\ell
+&d_1=0.18\lambda &\ell_{s_1}=0.142\lambda
 \intertext{Segunda solución}
 &d_2=0.37\lambda &\ell_{s_2}=0.36\lambda
 \end{align*}

@@ -1,144 +1,144 @@
-\indexentry{Números complejos|hyperpage}{19}
-\indexentry{Dominio de la frecuencia|hyperpage}{25}
-\indexentry{Fasores|hyperpage}{25}
-\indexentry{Conceptos introductorios|hyperpage}{31}
-\indexentry{Variables separables|hyperpage}{33}
-\indexentry{Ecuaciones diferenciales lineales|hyperpage}{36}
-\indexentry{Ecuaciones Diferenciales Exactas|hyperpage}{38}
-\indexentry{Ecuaciones Diferenciales No Exactas|hyperpage}{40}
-\indexentry{Ecuaciones por sustitución|hyperpage}{43}
-\indexentry{Sistemas de numeración|hyperpage}{49}
-\indexentry{Sistema decimal: 10|hyperpage}{49}
-\indexentry{Sistema binario-2|hyperpage}{50}
-\indexentry{Compuertas lógicas|hyperpage}{57}
-\indexentry{Formas de expresar funciones booleanas|hyperpage}{63}
-\indexentry{Axiomas|hyperpage}{67}
-\indexentry{Teoremas del álgebra de conmutación|hyperpage}{67}
-\indexentry{Mapas de Karnaugh|hyperpage}{70}
-\indexentry{Parámetros TTL y CMOS|hyperpage}{78}
-\indexentry{Sumador|hyperpage}{83}
-\indexentry{Codificador y Decodificador|hyperpage}{87}
-\indexentry{Multiplexor y Demultiplexor|hyperpage}{90}
-\indexentry{Latch|hyperpage}{93}
-\indexentry{Flip-Flops|hyperpage}{99}
-\indexentry{División de frecuencia|hyperpage}{105}
-\indexentry{Monoestables|hyperpage}{105}
-\indexentry{Máquina de estados|hyperpage}{107}
-\indexentry{Grafos de estados|hyperpage}{110}
-\indexentry{ESP8266|hyperpage}{121}
-\indexentry{Instalación Windows:Materiales|hyperpage}{122}
-\indexentry{Instalación|hyperpage}{122}
-\indexentry{Equivalente al Hola Mundo pero en Placas|hyperpage}{122}
-\indexentry{Conectar a una red Wi-Fi|hyperpage}{123}
-\indexentry{Crear una red Wi-Fi|hyperpage}{126}
-\indexentry{Crear un servidor local|hyperpage}{127}
-\indexentry{Lectura Analógica|hyperpage}{131}
-\indexentry{Proyecto explicativo 1|hyperpage}{133}
-\indexentry{Sensor de temperatura y humedad DHT11|hyperpage}{138}
-\indexentry{Software|hyperpage}{141}
-\indexentry{Hardware|hyperpage}{148}
-\indexentry{Back-end|hyperpage}{149}
-\indexentry{Front-end|hyperpage}{163}
-\indexentry{Theorems|hyperpage}{167}
-\indexentry{Theorems!Several Equations|hyperpage}{167}
-\indexentry{Theorems!Single Line|hyperpage}{167}
-\indexentry{Definitions|hyperpage}{167}
-\indexentry{Notations|hyperpage}{168}
-\indexentry{Remarks|hyperpage}{168}
-\indexentry{Corollaries|hyperpage}{168}
-\indexentry{Propositions|hyperpage}{168}
-\indexentry{Propositions!Several Equations|hyperpage}{168}
-\indexentry{Propositions!Single Line|hyperpage}{168}
-\indexentry{Examples|hyperpage}{168}
-\indexentry{Examples!Equation and Text|hyperpage}{168}
-\indexentry{Examples!Paragraph of Text|hyperpage}{169}
-\indexentry{Exercises|hyperpage}{169}
-\indexentry{Problems|hyperpage}{169}
-\indexentry{Vocabulary|hyperpage}{169}
-\indexentry{Table|hyperpage}{169}
-\indexentry{Figure|hyperpage}{169}
-\indexentry{Sistemas de coordenadas y transformaciones|hyperpage}{177}
-\indexentry{Cálculo vectorial|hyperpage}{182}
-\indexentry{Ley de Coulomb|hyperpage}{187}
-\indexentry{Intensidad de campo eléctrico|hyperpage}{188}
-\indexentry{Campo eléctrico creado por una distribución continua de carga en un punto|hyperpage}{189}
-\indexentry{Densidad de campo eléctrico|hyperpage}{189}
-\indexentry{Ley de Gauss-Ecuaciones de Maxwell|hyperpage}{190}
-\indexentry{Potencial eléctrico|hyperpage}{195}
-\indexentry{Relación entre E y V-Ecuación de Maxwell|hyperpage}{196}
-\indexentry{Dipolo eléctrico|hyperpage}{197}
-\indexentry{Evolución de la telefonía|hyperpage}{207}
-\indexentry{Conmutadores|hyperpage}{208}
-\indexentry{Repaso:Señales analógicas y digitales|hyperpage}{208}
-\indexentry{Multiplexación|hyperpage}{209}
-\indexentry{Técnicas de conmutación|hyperpage}{212}
-\indexentry{Resumen comparativo|hyperpage}{214}
-\indexentry{Señalización telefónica|hyperpage}{218}
-\indexentry{Planta interna y externa|hyperpage}{219}
-\indexentry{Tráfico Telefónico|hyperpage}{225}
-\indexentry{Medidas de tráfico telefónico|hyperpage}{227}
-\indexentry{Tipos de tráfico|hyperpage}{231}
-\indexentry{Accesibilidad|hyperpage}{232}
-\indexentry{Grade of service|hyperpage}{233}
-\indexentry{Diseño de redes|hyperpage}{234}
-\indexentry{Encaminamiento de tráfico|hyperpage}{237}
-\indexentry{Erlang-B|hyperpage}{241}
-\indexentry{Repaso: TCP/IP|hyperpage}{254}
-\indexentry{VoIP|hyperpage}{258}
-\indexentry{Digitización de la voz|hyperpage}{258}
-\indexentry{Componentes de VoIP|hyperpage}{262}
-\indexentry{Tecnología IP|hyperpage}{265}
-\indexentry{Vocabulario-Sistemas de telefonía|hyperpage}{266}
-\indexentry{Introducción|hyperpage}{269}
-\indexentry{Modelo OSI|hyperpage}{272}
-\indexentry{Modelo TCP/IP|hyperpage}{274}
-\indexentry{Múltiplos y sub-múltiplos|hyperpage}{275}
-\indexentry{Bases teóricas|hyperpage}{279}
-\indexentry{Medios de transmisión guiados|hyperpage}{281}
-\indexentry{Transmisión inalámbrica|hyperpage}{285}
-\indexentry{Satélites|hyperpage}{289}
-\indexentry{Modulación digital y multiplexión|hyperpage}{294}
-\indexentry{Multiplexión por división de frecuencia-FDM|hyperpage}{295}
-\indexentry{Multiplexión por división de tiempo-TDM|hyperpage}{296}
-\indexentry{Cuestiones de diseño de la capa de enlace de datos|hyperpage}{297}
-\indexentry{Servicios proporcionados a la capa de red|hyperpage}{297}
-\indexentry{Entramado|hyperpage}{298}
-\indexentry{Código de detección de errores: Paridad|hyperpage}{301}
-\indexentry{Protocolos elementales de enlace de datos|hyperpage}{301}
-\indexentry{Protocolos de ventana deslizante|hyperpage}{302}
-\indexentry{Protocolo retroceso N|hyperpage}{303}
-\indexentry{Asignación estática de canal|hyperpage}{307}
-\indexentry{Protocolos de acceso múltiple|hyperpage}{308}
-\indexentry{Ethernet conmutado|hyperpage}{313}
-\indexentry{Algoritmos de enrutamiento|hyperpage}{321}
-\indexentry{IPv4|hyperpage}{328}
-\indexentry{IPv6|hyperpage}{331}
-\indexentry{Vocabulario-Internetworking 1|hyperpage}{333}
-\indexentry{Conociendo la carta de Smith|hyperpage}{337}
-\indexentry{Acoplamiento de impedancias|hyperpage}{344}
-\indexentry{Arquitectura interna de una CPU|hyperpage}{355}
-\indexentry{Código Assembler I|hyperpage}{364}
-\indexentry{Decibelios|hyperpage}{391}
-\indexentry{Definición de mantenimiento|hyperpage}{395}
-\indexentry{Mediciones de radiofrecuencia|hyperpage}{398}
-\indexentry{Decibelios como medida|hyperpage}{399}
-\indexentry{Radio digital y sus partes|hyperpage}{408}
-\indexentry{Repetidor pasivo|hyperpage}{411}
-\indexentry{Definición de falla|hyperpage}{415}
-\indexentry{Fiabilidad y vida de un equipo|hyperpage}{415}
-\indexentry{Causas del deterioro o desgaste|hyperpage}{416}
-\indexentry{Función Q|hyperpage}{428}
-\indexentry{Gestión y calidad en la ingeniería de mantenimiento|hyperpage}{436}
-\indexentry{a/an, the and no-article|hyperpage}{445}
-\indexentry{When use \textit{the}?|hyperpage}{445}
-\indexentry{Use of \textit{Would}|hyperpage}{446}
-\indexentry{How to use \textit{rather}?|hyperpage}{446}
-\indexentry{Future form|hyperpage}{447}
-\indexentry{Logaritmos y exponenciales|hyperpage}{453}
-\indexentry{Matrices|hyperpage}{455}
-\indexentry{Conformabilidad de matrices|hyperpage}{455}
-\indexentry{Integrales|hyperpage}{457}
-\indexentry{Integral por tabulación|hyperpage}{457}
-\indexentry{Producto cruz y producto escalar|hyperpage}{459}
-\indexentry{Producto escalar|hyperpage}{459}
-\indexentry{Producto cruz|hyperpage}{459}
+\indexentry{Números complejos|hyperpage}{18}
+\indexentry{Dominio de la frecuencia|hyperpage}{24}
+\indexentry{Fasores|hyperpage}{24}
+\indexentry{Conceptos introductorios|hyperpage}{29}
+\indexentry{Variables separables|hyperpage}{31}
+\indexentry{Ecuaciones diferenciales lineales|hyperpage}{34}
+\indexentry{Ecuaciones Diferenciales Exactas|hyperpage}{36}
+\indexentry{Ecuaciones Diferenciales No Exactas|hyperpage}{38}
+\indexentry{Ecuaciones por sustitución|hyperpage}{41}
+\indexentry{Sistemas de numeración|hyperpage}{46}
+\indexentry{Sistema decimal: 10|hyperpage}{46}
+\indexentry{Sistema binario-2|hyperpage}{47}
+\indexentry{Compuertas lógicas|hyperpage}{54}
+\indexentry{Formas de expresar funciones booleanas|hyperpage}{60}
+\indexentry{Axiomas|hyperpage}{64}
+\indexentry{Teoremas del álgebra de conmutación|hyperpage}{64}
+\indexentry{Mapas de Karnaugh|hyperpage}{67}
+\indexentry{Parámetros TTL y CMOS|hyperpage}{75}
+\indexentry{Sumador|hyperpage}{80}
+\indexentry{Codificador y Decodificador|hyperpage}{84}
+\indexentry{Multiplexor y Demultiplexor|hyperpage}{87}
+\indexentry{Latch|hyperpage}{90}
+\indexentry{Flip-Flops|hyperpage}{96}
+\indexentry{División de frecuencia|hyperpage}{102}
+\indexentry{Monoestables|hyperpage}{102}
+\indexentry{Máquina de estados|hyperpage}{104}
+\indexentry{Grafos de estados|hyperpage}{107}
+\indexentry{ESP8266|hyperpage}{116}
+\indexentry{Instalación Windows: Materiales|hyperpage}{117}
+\indexentry{Instalación|hyperpage}{117}
+\indexentry{Equivalente al Hola Mundo pero en Placas|hyperpage}{117}
+\indexentry{Conectar a una red Wi-Fi|hyperpage}{118}
+\indexentry{Crear una red Wi-Fi|hyperpage}{121}
+\indexentry{Crear un servidor local|hyperpage}{122}
+\indexentry{Lectura Analógica|hyperpage}{126}
+\indexentry{Proyecto explicativo 1|hyperpage}{128}
+\indexentry{Sensor de temperatura y humedad DHT11|hyperpage}{133}
+\indexentry{Software|hyperpage}{136}
+\indexentry{Hardware|hyperpage}{143}
+\indexentry{Back-end|hyperpage}{144}
+\indexentry{Front-end|hyperpage}{158}
+\indexentry{Theorems|hyperpage}{160}
+\indexentry{Theorems!Several Equations|hyperpage}{160}
+\indexentry{Theorems!Single Line|hyperpage}{160}
+\indexentry{Definitions|hyperpage}{160}
+\indexentry{Notations|hyperpage}{161}
+\indexentry{Remarks|hyperpage}{161}
+\indexentry{Corollaries|hyperpage}{161}
+\indexentry{Propositions|hyperpage}{161}
+\indexentry{Propositions!Several Equations|hyperpage}{161}
+\indexentry{Propositions!Single Line|hyperpage}{161}
+\indexentry{Examples|hyperpage}{161}
+\indexentry{Examples!Equation and Text|hyperpage}{161}
+\indexentry{Examples!Paragraph of Text|hyperpage}{162}
+\indexentry{Exercises|hyperpage}{162}
+\indexentry{Problems|hyperpage}{162}
+\indexentry{Vocabulary|hyperpage}{162}
+\indexentry{Table|hyperpage}{162}
+\indexentry{Figure|hyperpage}{162}
+\indexentry{Sistemas de coordenadas y transformaciones|hyperpage}{168}
+\indexentry{Cálculo vectorial|hyperpage}{173}
+\indexentry{Ley de Coulomb|hyperpage}{178}
+\indexentry{Intensidad de campo eléctrico|hyperpage}{179}
+\indexentry{Campo eléctrico creado por una distribución continua de carga en un punto|hyperpage}{180}
+\indexentry{Densidad de campo eléctrico|hyperpage}{180}
+\indexentry{Ley de Gauss-Ecuaciones de Maxwell|hyperpage}{181}
+\indexentry{Potencial eléctrico|hyperpage}{186}
+\indexentry{Relación entre E y V-Ecuación de Maxwell|hyperpage}{187}
+\indexentry{Dipolo eléctrico|hyperpage}{188}
+\indexentry{Evolución de la telefonía|hyperpage}{196}
+\indexentry{Conmutadores|hyperpage}{197}
+\indexentry{Repaso:Señales analógicas y digitales|hyperpage}{197}
+\indexentry{Multiplexación|hyperpage}{198}
+\indexentry{Técnicas de conmutación|hyperpage}{201}
+\indexentry{Resumen comparativo|hyperpage}{203}
+\indexentry{Señalización telefónica|hyperpage}{207}
+\indexentry{Planta interna y externa|hyperpage}{208}
+\indexentry{Tráfico Telefónico|hyperpage}{214}
+\indexentry{Medidas de tráfico telefónico|hyperpage}{216}
+\indexentry{Tipos de tráfico|hyperpage}{220}
+\indexentry{Accesibilidad|hyperpage}{221}
+\indexentry{Grade of service|hyperpage}{222}
+\indexentry{Diseño de redes|hyperpage}{223}
+\indexentry{Encaminamiento de tráfico|hyperpage}{226}
+\indexentry{Erlang-B|hyperpage}{230}
+\indexentry{Repaso: TCP/IP|hyperpage}{243}
+\indexentry{VoIP|hyperpage}{247}
+\indexentry{Digitización de la voz|hyperpage}{247}
+\indexentry{Componentes de VoIP|hyperpage}{251}
+\indexentry{Tecnología IP|hyperpage}{254}
+\indexentry{Vocabulario-Sistemas de telefonía|hyperpage}{255}
+\indexentry{Introducción|hyperpage}{257}
+\indexentry{Modelo OSI|hyperpage}{260}
+\indexentry{Modelo TCP/IP|hyperpage}{262}
+\indexentry{Múltiplos y sub-múltiplos|hyperpage}{263}
+\indexentry{Bases teóricas|hyperpage}{266}
+\indexentry{Medios de transmisión guiados|hyperpage}{268}
+\indexentry{Transmisión inalámbrica|hyperpage}{272}
+\indexentry{Satélites|hyperpage}{276}
+\indexentry{Modulación digital y multiplexión|hyperpage}{281}
+\indexentry{Multiplexión por división de frecuencia-FDM|hyperpage}{282}
+\indexentry{Multiplexión por división de tiempo-TDM|hyperpage}{283}
+\indexentry{Cuestiones de diseño de la capa de enlace de datos|hyperpage}{284}
+\indexentry{Servicios proporcionados a la capa de red|hyperpage}{284}
+\indexentry{Entramado|hyperpage}{285}
+\indexentry{Código de detección de errores: Paridad|hyperpage}{288}
+\indexentry{Protocolos elementales de enlace de datos|hyperpage}{288}
+\indexentry{Protocolos de ventana deslizante|hyperpage}{289}
+\indexentry{Protocolo retroceso N|hyperpage}{290}
+\indexentry{Asignación estática de canal|hyperpage}{293}
+\indexentry{Protocolos de acceso múltiple|hyperpage}{294}
+\indexentry{Ethernet conmutado|hyperpage}{299}
+\indexentry{Algoritmos de enrutamiento|hyperpage}{306}
+\indexentry{IPv4|hyperpage}{313}
+\indexentry{IPv6|hyperpage}{316}
+\indexentry{Vocabulario-Internetworking 1|hyperpage}{318}
+\indexentry{Conociendo la carta de Smith|hyperpage}{320}
+\indexentry{Acoplamiento de impedancias|hyperpage}{327}
+\indexentry{Arquitectura interna de una CPU|hyperpage}{336}
+\indexentry{Código Assembler I|hyperpage}{345}
+\indexentry{Decibelios|hyperpage}{370}
+\indexentry{Definición de mantenimiento|hyperpage}{374}
+\indexentry{Mediciones de radiofrecuencia|hyperpage}{377}
+\indexentry{Decibelios como medida|hyperpage}{378}
+\indexentry{Radio digital y sus partes|hyperpage}{387}
+\indexentry{Repetidor pasivo|hyperpage}{390}
+\indexentry{Definición de falla|hyperpage}{393}
+\indexentry{Fiabilidad y vida de un equipo|hyperpage}{393}
+\indexentry{Causas del deterioro o desgaste|hyperpage}{394}
+\indexentry{Función Q|hyperpage}{406}
+\indexentry{Gestión y calidad en la ingeniería de mantenimiento|hyperpage}{414}
+\indexentry{a/an, the and no-article|hyperpage}{422}
+\indexentry{When use \textit{the}?|hyperpage}{422}
+\indexentry{Use of \textit{Would}|hyperpage}{423}
+\indexentry{How to use \textit{rather}?|hyperpage}{423}
+\indexentry{Future form|hyperpage}{424}
+\indexentry{Logaritmos y exponenciales|hyperpage}{428}
+\indexentry{Matrices|hyperpage}{429}
+\indexentry{Conformabilidad de matrices|hyperpage}{429}
+\indexentry{Integrales|hyperpage}{430}
+\indexentry{Integral por tabulación|hyperpage}{430}
+\indexentry{Producto cruz y producto escalar|hyperpage}{431}
+\indexentry{Producto escalar|hyperpage}{431}
+\indexentry{Producto cruz|hyperpage}{431}

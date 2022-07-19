@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  18 JUL 2022 12:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  19 JUL 2022 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -876,6 +876,12 @@ ghlight.sty
 Package: pythonhighlight 2017/02/09 python code highlighting; provided by Olivi
 er Verdier <olivier.verdier@gmail.com>
 )
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
@@ -980,16 +986,19 @@ rs
 \f@nch@O@erf=\skip73
 \f@nch@O@olf=\skip74
 \f@nch@O@orf=\skip75
-) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.st
-y
+)
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 149.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 153.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
 pages
-) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-)
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \ttl@box=\box126
 \beforetitleunit=\skip76
@@ -1001,9 +1010,6 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 \titlewidthlast=\dimen336
 \titlewidthfirst=\dimen337
 )
-\c@ttlp@side=\count360
-\ttlp@side=\count361
-
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
 \ttl@leftsep=\dimen338
@@ -1026,12 +1032,12 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count362
+\pdfpages@includegraphics@status=\count360
 \AM@pagebox=\box127
 \AM@global@opts=\toks54
-\AM@pagecnt=\count363
+\AM@pagecnt=\count361
 \AM@toc@title=\toks55
-\c@AM@survey=\count364
+\c@AM@survey=\count362
 \AM@templatesizebox=\box128
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
@@ -1045,7 +1051,7 @@ y
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count365
+\lrq@indent=\count363
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/logreq\logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1054,48 +1060,48 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-\c@tabx@nest=\count366
-\c@listtotal=\count367
-\c@listcount=\count368
-\c@liststart=\count369
-\c@liststop=\count370
-\c@citecount=\count371
-\c@citetotal=\count372
-\c@multicitecount=\count373
-\c@multicitetotal=\count374
-\c@instcount=\count375
-\c@maxnames=\count376
-\c@minnames=\count377
-\c@maxitems=\count378
-\c@minitems=\count379
-\c@citecounter=\count380
-\c@maxcitecounter=\count381
-\c@savedcitecounter=\count382
-\c@uniquelist=\count383
-\c@uniquename=\count384
-\c@refsection=\count385
-\c@refsegment=\count386
-\c@maxextratitle=\count387
-\c@maxextratitleyear=\count388
-\c@maxextraname=\count389
-\c@maxextradate=\count390
-\c@maxextraalpha=\count391
-\c@abbrvpenalty=\count392
-\c@highnamepenalty=\count393
-\c@lownamepenalty=\count394
-\c@maxparens=\count395
-\c@parenlevel=\count396
-\blx@tempcnta=\count397
-\blx@tempcntb=\count398
-\blx@tempcntc=\count399
-\c@blx@maxsection=\count400
-\c@blx@maxsegment@0=\count401
-\blx@notetype=\count402
-\blx@parenlevel@text=\count403
-\blx@parenlevel@foot=\count404
-\c@blx@sectionciteorder@0=\count405
-\blx@entrysetcounter=\count406
-\blx@biblioinstance=\count407
+\c@tabx@nest=\count364
+\c@listtotal=\count365
+\c@listcount=\count366
+\c@liststart=\count367
+\c@liststop=\count368
+\c@citecount=\count369
+\c@citetotal=\count370
+\c@multicitecount=\count371
+\c@multicitetotal=\count372
+\c@instcount=\count373
+\c@maxnames=\count374
+\c@minnames=\count375
+\c@maxitems=\count376
+\c@minitems=\count377
+\c@citecounter=\count378
+\c@maxcitecounter=\count379
+\c@savedcitecounter=\count380
+\c@uniquelist=\count381
+\c@uniquename=\count382
+\c@refsection=\count383
+\c@refsegment=\count384
+\c@maxextratitle=\count385
+\c@maxextratitleyear=\count386
+\c@maxextraname=\count387
+\c@maxextradate=\count388
+\c@maxextraalpha=\count389
+\c@abbrvpenalty=\count390
+\c@highnamepenalty=\count391
+\c@lownamepenalty=\count392
+\c@maxparens=\count393
+\c@parenlevel=\count394
+\blx@tempcnta=\count395
+\blx@tempcntb=\count396
+\blx@tempcntc=\count397
+\c@blx@maxsection=\count398
+\c@blx@maxsegment@0=\count399
+\blx@notetype=\count400
+\blx@parenlevel@text=\count401
+\blx@parenlevel@foot=\count402
+\c@blx@sectionciteorder@0=\count403
+\blx@entrysetcounter=\count404
+\blx@biblioinstance=\count405
 \labelnumberwidth=\skip78
 \labelalphawidth=\skip79
 \biblabelsep=\skip80
@@ -1107,9 +1113,9 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 \blx@bcfin=\read3
 \blx@bcfout=\write4
 \blx@langwohyphens=\language79
-\c@mincomprange=\count408
-\c@maxcomprange=\count409
-\c@mincompwidth=\count410
+\c@mincomprange=\count406
+\c@maxcomprange=\count407
+\c@mincompwidth=\count408
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1120,74 +1126,74 @@ Package biblatex Info: Trying to load biblatex citestyle data model...
 Package biblatex Info: ... file 'numeric.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count411
-\c@savedafterword=\count412
-\c@annotator=\count413
-\c@savedannotator=\count414
-\c@author=\count415
-\c@savedauthor=\count416
-\c@bookauthor=\count417
-\c@savedbookauthor=\count418
-\c@commentator=\count419
-\c@savedcommentator=\count420
-\c@editor=\count421
-\c@savededitor=\count422
-\c@editora=\count423
-\c@savededitora=\count424
-\c@editorb=\count425
-\c@savededitorb=\count426
-\c@editorc=\count427
-\c@savededitorc=\count428
-\c@foreword=\count429
-\c@savedforeword=\count430
-\c@holder=\count431
-\c@savedholder=\count432
-\c@introduction=\count433
-\c@savedintroduction=\count434
-\c@namea=\count435
-\c@savednamea=\count436
-\c@nameb=\count437
-\c@savednameb=\count438
-\c@namec=\count439
-\c@savednamec=\count440
-\c@translator=\count441
-\c@savedtranslator=\count442
-\c@shortauthor=\count443
-\c@savedshortauthor=\count444
-\c@shorteditor=\count445
-\c@savedshorteditor=\count446
-\c@labelname=\count447
-\c@savedlabelname=\count448
-\c@institution=\count449
-\c@savedinstitution=\count450
-\c@lista=\count451
-\c@savedlista=\count452
-\c@listb=\count453
-\c@savedlistb=\count454
-\c@listc=\count455
-\c@savedlistc=\count456
-\c@listd=\count457
-\c@savedlistd=\count458
-\c@liste=\count459
-\c@savedliste=\count460
-\c@listf=\count461
-\c@savedlistf=\count462
-\c@location=\count463
-\c@savedlocation=\count464
-\c@organization=\count465
-\c@savedorganization=\count466
-\c@origlocation=\count467
-\c@savedoriglocation=\count468
-\c@origpublisher=\count469
-\c@savedorigpublisher=\count470
-\c@publisher=\count471
-\c@savedpublisher=\count472
-\c@language=\count473
-\c@savedlanguage=\count474
-\c@origlanguage=\count475
-\c@savedoriglanguage=\count476
-\c@pageref=\count477
-\c@savedpageref=\count478
+\c@afterword=\count409
+\c@savedafterword=\count410
+\c@annotator=\count411
+\c@savedannotator=\count412
+\c@author=\count413
+\c@savedauthor=\count414
+\c@bookauthor=\count415
+\c@savedbookauthor=\count416
+\c@commentator=\count417
+\c@savedcommentator=\count418
+\c@editor=\count419
+\c@savededitor=\count420
+\c@editora=\count421
+\c@savededitora=\count422
+\c@editorb=\count423
+\c@savededitorb=\count424
+\c@editorc=\count425
+\c@savededitorc=\count426
+\c@foreword=\count427
+\c@savedforeword=\count428
+\c@holder=\count429
+\c@savedholder=\count430
+\c@introduction=\count431
+\c@savedintroduction=\count432
+\c@namea=\count433
+\c@savednamea=\count434
+\c@nameb=\count435
+\c@savednameb=\count436
+\c@namec=\count437
+\c@savednamec=\count438
+\c@translator=\count439
+\c@savedtranslator=\count440
+\c@shortauthor=\count441
+\c@savedshortauthor=\count442
+\c@shorteditor=\count443
+\c@savedshorteditor=\count444
+\c@labelname=\count445
+\c@savedlabelname=\count446
+\c@institution=\count447
+\c@savedinstitution=\count448
+\c@lista=\count449
+\c@savedlista=\count450
+\c@listb=\count451
+\c@savedlistb=\count452
+\c@listc=\count453
+\c@savedlistc=\count454
+\c@listd=\count455
+\c@savedlistd=\count456
+\c@liste=\count457
+\c@savedliste=\count458
+\c@listf=\count459
+\c@savedlistf=\count460
+\c@location=\count461
+\c@savedlocation=\count462
+\c@organization=\count463
+\c@savedorganization=\count464
+\c@origlocation=\count465
+\c@savedoriglocation=\count466
+\c@origpublisher=\count467
+\c@savedorigpublisher=\count468
+\c@publisher=\count469
+\c@savedpublisher=\count470
+\c@language=\count471
+\c@savedlanguage=\count472
+\c@origlanguage=\count473
+\c@savedoriglanguage=\count474
+\c@pageref=\count475
+\c@savedpageref=\count476
 \shorthandwidth=\skip86
 \shortjournalwidth=\skip87
 \shortserieswidth=\skip88
@@ -1212,19 +1218,19 @@ Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.def
 File: biblatex.def 2022/02/02 v3.17 biblatex compatibility (PK/MW)
-\c@textcitecount=\count479
-\c@textcitetotal=\count480
-\c@textcitemaxnames=\count481
-\c@biburlbigbreakpenalty=\count482
-\c@biburlbreakpenalty=\count483
-\c@biburlnumpenalty=\count484
-\c@biburlucpenalty=\count485
-\c@biburllcpenalty=\count486
+\c@textcitecount=\count477
+\c@textcitetotal=\count478
+\c@textcitemaxnames=\count479
+\c@biburlbigbreakpenalty=\count480
+\c@biburlbreakpenalty=\count481
+\c@biburlnumpenalty=\count482
+\c@biburlucpenalty=\count483
+\c@biburllcpenalty=\count484
 \biburlbigskip=\muskip17
 \biburlnumskip=\muskip18
 \biburlucskip=\muskip19
 \biburllcskip=\muskip20
-\c@smartand=\count487
+\c@smartand=\count485
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
@@ -1237,8 +1243,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex/bbx\standard.bb
 x
 File: standard.bbx 2022/02/02 v3.17 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count488
-\c@bbx:relatedtotal=\count489
+\c@bbx:relatedcount=\count486
+\c@bbx:relatedtotal=\count487
 ))
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
@@ -1270,7 +1276,7 @@ Package: expl3 2022-06-02 L3 programming layer (loader)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
 File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count490
+\l__color_backend_stack_int=\count488
 \l__pdf_internal_box=\box129
 ))
 Package biblatex Info: ... and expl3
@@ -1305,12 +1311,12 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \cmidrulesep=\dimen351
 \cmidrulekern=\dimen352
 \defaultaddspace=\dimen353
-\@cmidla=\count491
-\@cmidlb=\count492
+\@cmidla=\count489
+\@cmidlb=\count490
 \@aboverulesep=\dimen354
 \@belowrulesep=\dimen355
-\@thisruleclass=\count493
-\@lastruleclass=\count494
+\@thisruleclass=\count491
+\@lastruleclass=\count492
 \@thisrulewidth=\dimen356
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
@@ -1319,8 +1325,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen357
 \enit@toks=\toks56
 \enit@inbox=\box130
-\enit@count@id=\count495
-\enitdp@description=\count496
+\enit@count@id=\count493
+\enitdp@description=\count494
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2022-05-17 v7.00q Hypertext links for LaTeX
@@ -1350,11 +1356,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 estring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count497
+\c@section@level=\count495
 )
 \@linkdim=\dimen358
-\Hy@linkcounter=\count498
-\Hy@pagecounter=\count499
+\Hy@linkcounter=\count496
+\Hy@pagecounter=\count497
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2022-05-17 v7.00q Hyperref: PDFDocEncoding definition (HO)
@@ -1367,7 +1373,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count500
+\Hy@SavedSpaceFactor=\count498
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2022-05-17 v7.00q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
@@ -1380,7 +1386,7 @@ Package hyperref Info: Plain pages OFF on input line 4154.
 Package hyperref Info: Backreferencing OFF on input line 4159.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4385.
-\c@Hy@tempcnt=\count501
+\c@Hy@tempcnt=\count499
 LaTeX Info: Redefining \url on input line 4723.
 \XeTeXLinkMargin=\dimen359
 
@@ -1392,7 +1398,7 @@ sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count502
+\Fld@menulength=\count500
 \Field@Width=\dimen360
 \Fld@charsize=\dimen361
 Package hyperref Info: Hyper figures OFF on input line 6001.
@@ -1407,9 +1413,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6031.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count503
-\c@Item=\count504
-\c@Hfootnote=\count505
+\Hy@abspage=\count501
+\c@Item=\count502
+\c@Hfootnote=\count503
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -1421,8 +1427,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count506
-\c@bookmark@seq@number=\count507
+\Fld@listcount=\count504
+\c@bookmark@seq@number=\count505
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfile
 check.sty
@@ -1437,18 +1443,18 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip101
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 563.
+Package hyperref Info: Option `colorlinks' set `true' on input line 562.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 563.
+(hyperref)                setting the option has no effect on input line 562.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count508
+\BKM@id=\count506
 )) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip102
@@ -1461,14 +1467,14 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count509
+\inf@bad=\count507
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count510
-\leftroot@=\count511
+\uproot@=\count508
+\leftroot@=\count509
 LaTeX Info: Redefining \overline on input line 399.
 LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count512
-\DOTSCASE@=\count513
+\classnum@=\count510
+\DOTSCASE@=\count511
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -1481,20 +1487,20 @@ LaTeX Info: Redefining \Bigg on input line 725.
 \big@size=\dimen363
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count514
+\macc@depth=\count512
 LaTeX Info: Redefining \bmod on input line 905.
 LaTeX Info: Redefining \pmod on input line 910.
 LaTeX Info: Redefining \smash on input line 940.
 LaTeX Info: Redefining \relbar on input line 970.
 LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count515
+\c@MaxMatrixCols=\count513
 \dotsspace@=\muskip21
-\c@parentequation=\count516
-\dspbrk@lvl=\count517
+\c@parentequation=\count514
+\dspbrk@lvl=\count515
 \tag@help=\toks57
-\row@=\count518
-\column@=\count519
-\maxfields@=\count520
+\row@=\count516
+\column@=\count517
+\maxfields@=\count518
 \andhelp@=\toks58
 \eqnshift@=\dimen364
 \alignsep@=\dimen365
@@ -1540,8 +1546,8 @@ Package: karnaugh-map 2022/01/15 v2.0 Draw Karnaugh Maps
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count521
-\decimalpart=\count522
+\integerpart=\count519
+\decimalpart=\count520
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
@@ -1553,18 +1559,18 @@ File: tikzlibrarycalc.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 /libraries\tikzlibrarymatrix.code.tex
 File: tikzlibrarymatrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-\@karnaughmap@var@colorindex@=\count523
-\@karnaughmap@var@colorindexnext@=\count524
+\@karnaughmap@var@colorindex@=\count521
+\@karnaughmap@var@colorindexnext@=\count522
 )
-\c@proposition=\count525
-\c@theoremeT=\count526
-\c@problem=\count527
-\c@exampleT=\count528
-\c@exerciseT=\count529
-\c@notation=\count530
-\c@vocabulary=\count531
-\c@definitionT=\count532
-\c@corollaryT=\count533
+\c@proposition=\count523
+\c@theoremeT=\count524
+\c@problem=\count525
+\c@exampleT=\count526
+\c@exerciseT=\count527
+\c@notation=\count528
+\c@vocabulary=\count529
+\c@definitionT=\count530
+\c@corollaryT=\count531
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -1578,14 +1584,14 @@ Package zref Info: New property list: main on input line 767.
 Package zref Info: New property: default on input line 768.
 Package zref Info: New property: page on input line 769.
 )
-\c@abspage=\count534
+\c@abspage=\count532
 Package zref Info: New property: abspage on input line 65.
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip108
-\c@mdf@globalstyle@cnt=\count535
+\c@mdf@globalstyle@cnt=\count533
 \mdf@skipabove@length=\skip109
 \mdf@skipbelow@length=\skip110
 \mdf@leftmargin@length=\skip111
@@ -1660,16 +1666,16 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip172
 \mdfsubtitleheight=\skip173
 \mdfsubsubtitleheight=\skip174
-\c@mdfcountframes=\count536
+\c@mdfcountframes=\count534
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count537
-\c@mdf@env@i=\count538
-\c@mdf@env@ii=\count539
-\c@mdf@zref@counter=\count540
+\mdf@envdepth=\count535
+\c@mdf@env@i=\count536
+\c@mdf@env@ii=\count537
+\c@mdf@zref@counter=\count538
 Package zref Info: New property: mdf@pagevalue on input line 895.
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3ke
@@ -1677,9 +1683,9 @@ ys2e.sty
 Package: l3keys2e 2022-06-07 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count541
-\l__lipsum_a_int=\count542
-\l__lipsum_b_int=\count543
+\g__lipsum_par_int=\count539
+\l__lipsum_a_int=\count540
+\l__lipsum_b_int=\count541
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex))
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/steinmetz\steinmetz.sty
@@ -1715,8 +1721,8 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 ))
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 18.
-\@quotelevel=\count544
-\@quotereset=\count545
+\@quotelevel=\count542
+\@quotereset=\count543
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 18
 .
  (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
@@ -1747,16 +1753,16 @@ LaTeX Font Info:    ... okay on input line 18.
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mki
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count546
+\scratchcounter=\count544
 \scratchdimen=\dimen378
 \scratchbox=\box139
-\nofMPsegments=\count547
-\nofMParguments=\count548
+\nofMPsegments=\count545
+\nofMParguments=\count546
 \everyMPshowfont=\toks68
-\MPscratchCnt=\count549
+\MPscratchCnt=\count547
 \MPscratchDim=\dimen379
-\MPnumerator=\count550
-\makeMPintoPDFobject=\count551
+\MPnumerator=\count548
+\makeMPintoPDFobject=\count549
 \everyMPtoPDFconversion=\toks69
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-ba
@@ -1791,7 +1797,7 @@ nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 18.
-\c@lstlisting=\count552
+\c@lstlisting=\count550
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1800,7 +1806,7 @@ or `english'. on input line 18.
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(85.35826pt, 688.5567pt, 71.13188pt)
 * \paperwidth=597.50787pt
@@ -1814,7 +1820,7 @@ or `english'. on input line 18.
 * \headsep=10.0pt
 * \topskip=12.0pt
 * \footskip=39.83368pt
-* \marginparwidth=88.0pt
+* \marginparwidth=38.0pt
 * \marginparsep=7.0pt
 * \columnsep=28.45274pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -1822,8 +1828,8 @@ or `english'. on input line 18.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -2004,9 +2010,6 @@ File: Images//IN1/IN76.png Graphic file (type png)
 Package pdftex.def Info: Images//IN1/IN76.png  used on input line 90.
 (pdftex.def)             Requested size: 341.43437pt x 188.39722pt.
 
-Underfull \vbox (badness 2302) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2022,9 +2025,6 @@ File: Images//IN1/IN77.png Graphic file (type png)
 Package pdftex.def Info: Images//IN1/IN77.png  used on input line 96.
 (pdftex.def)             Requested size: 426.79135pt x 173.44322pt.
 
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2034,17 +2034,6 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
 [3 <./Images//IN1/IN76.png> <./Images//IN1/IN77.png>]
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10
-7.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2053,7 +2042,49 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[4] (fastmain.aux)
+[4]
+\c@ttl@toc@part=\count551
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <220> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 111.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 111.
+ (fastmain.ptc) [5
+
+]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[6]
+Chapter 1.
+
+
+pdfTeX warning: pdflatex (file ./Images//chapter_head_Elec.pdf): PDF inclusion:
+ found PDF version <1.6>, but at most version <1.5> allowed
+<Images//chapter_head_Elec.pdf, id=74, 598.75887pt x 299.55342pt>
+File: Images//chapter_head_Elec.pdf Graphic file (type pdf)
+<use Images//chapter_head_Elec.pdf>
+Package pdftex.def Info: Images//chapter_head_Elec.pdf  used on input line 117.
+
+(pdftex.def)             Requested size: 597.50787pt x 298.93105pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 117.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
+\tf@ptc=\write6
+\openout6 = `fastmain.ptc'.
+
+[7
+
+ <./Images//chapter_head_Elec.pdf>] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -2062,13 +2093,13 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54475 strings out of 478354
- 1211500 string characters out of 2837590
- 2280553 words of memory out of 3000000
- 71805 multiletter control sequences out of 15000+600000
- 528585 words of font info for 173 fonts, out of 8000000 for 9000
+ 53861 strings out of 478354
+ 1207496 string characters out of 2837590
+ 2143544 words of memory out of 3000000
+ 71164 multiletter control sequences out of 15000+600000
+ 559116 words of font info for 238 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,108p,1155b,1718s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,16n,108p,1155b,970s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
 Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
 pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -2076,17 +2107,14 @@ pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 onts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 /avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
 rw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/courier/ucrb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type
-1/urw/courier/ucrr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/urw/courier/ucrro8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/
-urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/times/utmri8a.pfb>
-Output written on fastmain.pdf (4 pages, 415943 bytes).
+/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
+rw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on fastmain.pdf (7 pages, 564458 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 65094 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 153 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 101467 words of extra memory for PDF output out of 106986 (max. 10000000)
 
