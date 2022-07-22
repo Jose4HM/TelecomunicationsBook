@@ -99,7 +99,8 @@
     \vspace*{\fill}
     \textit{Ya sabes cómo funciona esto. Coges un libro, saltas a la dedicatoria y descubres que, una vez más, el autor ha dedicado su libro a alguien que no eres tú.\\
     Pero esta vez no será así...\\
-    Dedico este libro a mi yo del pasado, quien ha sacrificado tiempo para poder escribir este libro para quienes lo necesiten pues como cualquier carrera, no es difícil los temas que tienes que aprender, sino que te lo explican mal y sin ganas, ganas  desganadas que destruyen las tuyas.}
+    Dedico este libro a mi yo del pasado, quien ha sacrificado tiempo para poder escribir este libro para quienes lo necesiten pues como cualquier carrera, no es difícil los temas que tienes que aprender, sino que te lo explican mal y sin ganas, ganas desganadas que destruyen las tuyas. En consecuencia haces que quieras aprender para el examen, tan solo aprobar y obtener tus créditos. Espero hacer que lo temas te sean explicador bien (o al menos intentarlo) para que luego no sean difíciles los cursos posteriores.\\
+    A lo largo de mi paso por la carrera de Ingeniería en Telecomunicaciones me han tocado cursos de contenido más que interesante pero con algunos docentes más paupérrimos (no todos, he tenido excelentes docentes con dedicación). Es en este contexto donde tu educación depende de ti y tus libros. Espero apoyar a esa causa de auto-educación para poder hacerte comprender algunos temas que realmente son muy complejos. No tengo la intención de que este sea un libro académico para que alguien lo use como fuente confiable; este libro es como su nombre lo dice: un cuaderno de apuntes que he ido recolectando a lo largo del tiempo.}
     \vspace*{\fill}
 \end{center}
 \clearpage
@@ -192,11 +193,11 @@ A&=C\cdot e^{j\theta}, donde:\\
 A&=C\cdot\cos\theta+jC\sin\theta=C(\cos\theta+j\sin\theta)\\
 &\therefore A=11.18(\cos 26.56+j\sin 26.56)\\
 \intertext{\textbf{Forma polar-Tipo fasor}}
-A&=C\phase{\theta^{\circ}}\\
-&\therefore A=11.18\phase{26.56^{\circ}}
+A&=\fase{C}{\theta}\\
+&\therefore A=\fase{11.18}{26.56}
 \end{align*}
 \begin{remark}
-Las siguientes operaciones se realizarán usando como sistema angular los radianes, en la calculadora no olvidarse de cambiar D (grados sexagesimales) a R (radianes). Con respecto a \textbf{theta} se puede trabajar con ambos sistemas siempre y cuando se especifique el sistema (° ó  rad). Excluyendo tangente, cosenos y senos (como en las raíces complejas) donde se usará únicamente el sistema radian, por lo que theta debe estar en radianes.
+Las siguientes operaciones se realizarán usando como sistema angular los sexágesimales, en la calculadora no olvidarse de cambiar D (grados sexagesimales) a R (radianes). Con respecto a \textbf{theta} se puede trabajar con ambos sistemas siempre y cuando se especifique el sistema (° ó  rad). Es exclusivamente en la raíz cuadrada de complejos donde se debe trabajar \textit{theta} y su arctan, coseno, seno en \textbf{radianes} hasta obtener sus respuesta binómica desde donde ya se puede escoger el sistema en el que se expresará en su forma fasorial.
 \end{remark}
 \section{Operaciones con complejos}
 \begin{itemize}
@@ -216,12 +217,12 @@ Las siguientes operaciones se realizarán usando como sistema angular los radian
 \end{align*}
 La forma más fácil de multiplicar es operando los números complejos en forma de \textbf{polar}/fasorial:
 \begin{align*}
-A&=Ce^{\iu\theta}=C\phase{\theta}\\
-B&=Ce^{\iu\phi}=C\phase{\phi}\\
+A&=Ce^{\iu\theta}=\fase{C}{\theta}\\
+B&=De^{\iu\phi}=\fase{D}{\phi}\\
 \end{align*}
 El producto entre A y B esta definido por:
 \begin{align*}
-A\cdot B&=(C\phase{\theta})\cdot(C\phase{\phi})\\
+A\cdot B&=(\fase{C}{\theta})\cdot(\fase{D}{\phi})\\
 A\cdot B&=(C\cdot D)\phase{\theta+\phi}
 \end{align*}
 \item \textbf{Dividir}:
@@ -231,17 +232,17 @@ A\cdot B&=(C\cdot D)\phase{\theta+\phi}
 \end{align*}
 La forma más fácil de dividir es operando los números complejos en forma de \textbf{polar}/fasorial:
 \begin{align*}
-A&=Ce^{\iu\theta}=C\phase{\theta}\\
-B&=Ce^{\iu\phi}=C\phase{\phi}\\
+A&=Ce^{\iu\theta}=\fase{C}{\theta}\\
+B&=De^{\iu\phi}=\fase{D}{\phi}\\
 \end{align*}
 la división entre A y B esta definido por:
 \begin{align*}
-A/B&=(C\phase{\theta})/(C\phase{\phi})\\
+A/B&=(\fase{C}{\theta})/(\fase{D}{\phi})\\
 A/B&=(C/D)\phase{\theta-\phi}
 \end{align*}
 \item \textbf{Potencias}: Sea $z$ un complejo, la $n$-ésima potencia de z es: elevar a la $n$ el modulo de $z$ y multiplicar $n$ veces el argumento de $z$:
 \begin{equation*}
-\left(R\phase{\theta}\right)^n=\left(R^n\right)\phase{n\cdot\theta}
+\left(\fase{R}{\theta}\right)^n=\left(R^n\right)\phase{n\cdot\theta}
 \end{equation*}
 Para usar la fórmula de \textbf{Moivre}, se trabaja con la identidad de Euler:
 \begin{equation*}
@@ -310,7 +311,6 @@ plt.axhline(y=0, c="red")
 plt.title("Raices complejas de "+str(number))#Anadimos titulos
 plt.show()#Mostramos la grafica
 \end{python}
-\newpage
 \begin{remark}
 Las operaciones de multiplicar y dividir un número complejo y un número real afecta tanto a la \textbf{parte real} como a la \textbf{parte imaginaria}:
 \begin{align*}
@@ -337,7 +337,7 @@ El cual se obtiene de multiplicar al numerador y denominador por el \textbf{conj
 \end{align*}
 \end{definition}
 \chapterimage{chapter_head_Elec.pdf}
-\chapter{Dominio de la frecuencia}\index{Dominio de la frecuencia}
+\chapter{Dominio de la frecuencia}\index{Dominio de la frecuencia}\label{chap:dom freq}
 \section{Fasores}\index{Fasores}
 \begin{definition}[Fasor]
 Es un número complejo que representa la amplitud y la fase de un senosoide.\\Usando la teoría de números complejos se puede escribir un número complejo Z=X+$\iu$Y en su forma fasorial:
@@ -1193,14 +1193,14 @@ Notamos en la primera fila el \textbf{la posición}, en la segunda fila sus pote
 \begin{displaymath}
 \textcolor{red}{1}\textcolor{blue}{2}\textcolor{green}{7}=\textcolor{red}{1}\cdot 10^2 + \textcolor{blue}{2}\cdot 10^1 + \textcolor{green}{7}\cdot 10^0
 \end{displaymath}
-Los números en base 10 van desde el 0 hasta el 9, aunque se llame base 10 \textbf{NO} llega nunca el número 10, sino que el 10 es la combinación del 1 con el 0 y así sucesivamente.\\
+Los números en base 10 van desde el 0 hasta el 9, aunque se llame base 10, \textbf{NO} llega nunca el número 10, sino que el 10 es la combinación de 1 decena con 0 unidades.\\
 En conclusión, el número se descompone en unidades, decenas, centenas, etc y se multiplica el valor de cada uno por la base correspondiente.
 \subsection{Suma}
 La suma se realiza columna por columna, recordando que el \textbf{límite} mayor es el 9, por ejemplo:
 \begin{center}
 \opadd{123}{19}
 \end{center}
-Si sumamos en la primera columna (de derecha a izquierda), nueve más 3 da 12 y decimos \textit{llevamos 1} porque ha rebasado el límite, colocamos solo el número de la unidad y llevamos 1 hacia la otra columna y así sucesivamente con las demás columnas.
+Si sumamos en la primera columna (de derecha a izquierda), 9 más 3 da 12 y decimos \textit{llevamos 1} porque ha rebasado el límite de 9 unidades, colocamos solo el número de la unidad y llevamos 1 hacia la otra columna y así sucesivamente con las demás columnas.
 \subsection{Resta}
 En la resta pasa algo similar, si tenemos el minuendo mayor que el sustraendo no habrá problemas, sin embargo cuando el sustraendo es mayor que el minuendo solemos hacer la jugada comúnmente llamada \textit{``nos prestamos''} de la siguiente columna.
 \begin{center}
@@ -4317,9 +4317,11 @@ El ciclo de trabajo (\textit{duty cycle}) de una señal periódica es el ancho d
 \begin{equation}\label{eq:dutycicle}
 Duty\thinspace cycle=\frac{t}{T}
 \end{equation}
-Donde:\\
-t: Tiempo en parte positiva.\\
-T: Periodo, tiempo total.
+Donde:
+\begin{itemize}
+\item t: Tiempo en parte positiva.
+\item T: Periodo, tiempo total.
+\end{itemize}
 \end{definition}
 Básicamente, consiste en activar una salida digital durante un tiempo y mantenerla apagada durante el resto, generando así pulsos positivos que se repiten de manera constante. Por tanto, la frecuencia es constante (es decir, el tiempo entre disparo de pulsos), mientras que se hace variar la anchura del pulso, el duty cycle. El promedio de esta tensión de salida, a lo largo del tiempo, será igual al valor analógico deseado.
 \begin{figure}[H]
@@ -4333,10 +4335,12 @@ El voltaje promedio de una señal modulada por PWM podrá ser calculada por:
 \begin{equation}\label{eq:Vprom}
 V_{p}=V_{cc}\cdot\frac{DC}{100}
 \end{equation}
-Donde:\\
-$V_{cc}$: La entrada de alimentación de un dispositivo.(Voltios)\\
-DC: Duty cycle.(porcentaje)\\
-$V_p$: Voltaje promedio.
+Donde:
+\begin{itemize}
+\item $V_{cc}$: La entrada de alimentación de un dispositivo.(Voltios)
+\item DC: Duty cycle.(porcentaje)
+\item $V_p$: Voltaje promedio.
+\end{itemize}
 \end{definition}
 \begin{example}
 Se desea un voltaje promedio de 1V con voltaje de entrada de 5V, calcular el tiempo que la señal pwm estará apagada.\\
@@ -4772,7 +4776,7 @@ La ley de Coulomb establece de la fuerza \textit{F} entre dos cargas \textit{$Q_
 \label{eq:eqCoulomb}
 F=\frac{kQ_1Q_2}{R^2}
 \end{equation}
-Donde:\\
+Donde:
 \begin{itemize}
 \item \textit{Q}: Cargas en Coulombs(C).
 \item R: Distancia en metros(m).
@@ -4865,7 +4869,7 @@ Así para el espacio libre:
 \begin{equation}
 \vec{D}=\vec{E}\epsilon_0
 \end{equation}
-Donde:\\
+Donde:
 \begin{itemize}
 \item E: Campo eléctrico(N/C ó V/m).
 \item D: Densidad de flujo eléctrico(C/$m^2$).
@@ -4879,7 +4883,7 @@ Otra forma de ver el flujo eléctrico(figura \ref{fig:flujo electrico en la supe
 \label{eq:flujo coseno}
 \Phi=ES\cos\theta
 \end{equation}
-Donde:\\
+Donde:
 \begin{itemize}
 \item E: Campo eléctrico.
 \item S: Área de la superficie.
@@ -5833,8 +5837,11 @@ Dado un cierto número de llamadas(valor adimensional) y una duración media de 
 \begin{equation}\label{eq:volumen trafico}
 V_t=n\times d
 \end{equation}
-Donde:\\n:número de llamadas.\\
-d:duración promedio de cada llamada.
+Donde:
+\begin{itemize}
+\item n:número de llamadas.
+\item d:duración promedio de cada llamada.
+\end{itemize}
 \end{definition}
 \begin{example}
 Una central telefónica tiene 3 troncales. 
@@ -5902,8 +5909,11 @@ La intensidad de tráfico, se expresa en ERLANGS. Esta definida como:
 \begin{equation}\label{eq:intensidad trafico}
 I_t=\frac{V_t}{T_o}
 \end{equation}
-Donde:\\$V_t$:volumen de tráfico.\\
-$T_o$:Tiempo de observación.
+Donde:
+\begin{itemize}
+\item $V_t$:volumen de tráfico.
+\item $T_o$:Tiempo de observación.
+\end{itemize}
 \begin{remark}
 Para que la intensidad pueda ser medida en Erlangs es esencial que tanto el volumen de tráfico y tiempo de observación esten en horas.
 \end{remark}
@@ -6018,8 +6028,11 @@ La accesibilidad(salidas) de cada usuario individual debe ser menor o igual a la
 \begin{equation}
 K_u\leq N
 \end{equation}
-Donde:\\$K_u$=número de salidas del u-ésimo usuario.\\
-N=Salidas(accesibildad) total.
+Donde:
+\begin{itemize}
+\item $K_u$=número de salidas del u-ésimo usuario.
+\item N=Salidas(accesibildad) total.
+\end{itemize}
 \end{definition}
 \subsubsection{Sistemas de pérdida}
 En los sistemas de pérdidas el abonado que solicita una comunicación y encuentra congestión recibe el tono de ocupado que lo obliga a cancelar o "perder" su comunicación para repetir posteriormente.
@@ -6037,7 +6050,13 @@ También se define como la proporción de tráfico perdido respecto al tráfico 
 \begin{equation}
 GoS=\frac{T_p}{T_o}=\frac{C_p}{C_t}
 \end{equation}
-Donde:\\$T_p$:Tráfico perdido\\$T_o$:Tráfico ofrecido\\$C_p$:Llamadas perdidas\\$C_t$:Llamadas totales
+Donde:
+\begin{itemize}
+\item $T_p$:Tráfico perdido
+\item $T_o$:Tráfico ofrecido
+\item $C_p$:Llamadas perdidas
+\item $C_t$:Llamadas totales
+\end{itemize}
 \end{definition}
 \begin{remark}
 Es obvio que el número de llamadas perdidas debe ser el menor número posible mientras que el número total de llamadas tiene que ser el máximo posible, es así que llegamos a la conclusión que un número optimo de GoS tiene que ser el menor posible como 0.002, donde podemos inferir que por cada 1000 llamadas podemos perder 2.
@@ -6218,12 +6237,14 @@ I_t=\frac{\sum_{i=1}^{n}h_i}{T}
 \begin{equation}\label{eq:sumtimeprom}
 h=\frac{\sum_{i=1}^{n}h_i}{c}
 \end{equation}
-Donde:\\
-$I_t$: Intensidad de tráfico en Erlangs.\\
-T:Tiempo de observación.\\
-$h_i$: Duración de cada llamada individual.\\
-n: Número total de llamadas.\\
-h: tiempo medio de la toma de enlace.
+Donde:
+\begin{itemize}
+\item $I_t$: Intensidad de tráfico en Erlangs.
+\item T:Tiempo de observación.
+\item $h_i$: Duración de cada llamada individual. 
+\item n: Número total de llamadas.
+\item h: tiempo medio de la toma de enlace.
+\end{itemize}
 \end{definition}
 Despejando las ecuaciones \ref{eq:intensidad trafico II} y \ref{eq:sumtimeprom}(igualando las sumatorias de los numeradores):
 \begin{equation*}
@@ -6253,9 +6274,11 @@ Probabilidad de que una llamada encuentre el primer enlace bloqueado es igual a 
 \begin{equation}
 B=\frac{I_t}{1+I_t}
 \end{equation}\\
-Donde:\\
-$I_t:$ Intensidad de tráfico
-B: Probabilidad de que una llamada encuentre el primer enlace bloqueado
+Donde:
+\begin{itemize}
+\item $I_t:$ Intensidad de tráfico
+\item B: Probabilidad de que una llamada encuentre el primer enlace bloqueado
+\end{itemize}
 \end{definition}
 \begin{figure}[H]
 \centering
@@ -6305,10 +6328,12 @@ La distribución de probabilidad se denomina distribución de Poisson truncada o
 P(x)=\frac{I_t^x}{x!\sum^{N}_{k=0}\frac{I_t^k}{k!}}
 \end{equation}
 Se lee: \textit{La probabilidad de que el enlace x este ocupada es}\\
-\textbf{Donde:}\\
-x: troncal escogida.\\
-N: Número de troncales.\\
-$I_t$: Intensidad de tráfico(Erlangs).
+\textbf{Donde:}
+\begin{itemize}
+\item x: troncal escogida.
+\item N: Número de troncales.
+\item $I_t$: Intensidad de tráfico(Erlangs).
+\end{itemize}
 \end{definition}
 ¿Qué pasaría si x=N? La ecuación \ref{eq:poissontr} cambiará ligeramente:
 \begin{definition}[Distribución de Poisson cuando X es igual a N]
@@ -6316,10 +6341,12 @@ En particular, cuando x = N, la probabilidad de pérdida viene dada por:
 \begin{equation}\label{eq:poissonkn}
 P(x)=P(N)=B(N,I_t)=\frac{A^N}{N!\sum^{N}_{k=0}\frac{I_t^k}{k!}}
 \end{equation}\\
-\textbf{Donde:}\\
-$I_t$:Intensidad de tráfico.\\
-N: Número total de troncales.\\
-B: Probabilidad de pérdida o bloqueo(Gos).\\
+\textbf{Donde:}
+\begin{itemize}
+\item $I_t$:Intensidad de tráfico.
+\item N: Número total de troncales.
+\item B: Probabilidad de pérdida o bloqueo(Gos).
+\end{itemize}
 La expresión \ref{eq:poissonkn} iterativa se expresa de forma extendida de la siguiente manera:\\
 \begin{equation}
 B(N,I_t)=\frac{I_t^N}{N!(1+A+\frac{A^2}{2!}+\frac{A^3}{3!}+\cdots+\frac{A^N}{N!})}
@@ -6590,9 +6617,11 @@ La frecuencia de muestro es dos veces la frecuencia máxima de la señal a muest
 \begin{equation}\label{eq:Nyquist}
 f_s\geq2*f_a 
 \end{equation}
-Donde:\\
-$f_s$: Frecuencia de muestreo.
-$f_a$: Frecuencia de la señal a muestrear(frecuencia analógica)
+Donde:
+\begin{itemize}
+\item $f_s$: Frecuencia de muestreo.
+\item $f_a$: Frecuencia de la señal a muestrear(frecuencia analógica)
+\end{itemize}
 \end{definition}
 A manera de repaso de este tema los pasos para la digitalización se hace de la siguiente manera:
 \subsubsection{Muestreo}
@@ -6635,10 +6664,12 @@ Tambien llamada \textbf{tasa de transmisión de bits},  define el número de bit
 \begin{equation}\label{eq:bitrate}
 V_{bin}=f_s\times nbm
 \end{equation}
-\textbf{Donde}:\\
-$V_{bin}$: Tasa de transmisión de bits.\\
-$f_s$: Frecuencia de muestreo.\\
-nbm: Número de bits por muestra.
+\textbf{Donde}:
+\begin{itemize}
+\item $V_{bin}$: Tasa de transmisión de bits.
+\item $f_s$: Frecuencia de muestreo.
+\item nbm: Número de bits por muestra.
+\end{itemize}
 \end{definition}
 \begin{example}
 Con un rango de frecuencia de voz de 4kHz, y una resolución de 8 bits por muestra, se puede calcular, la transmición binaria, primero, usando la ecuación \ref{eq:Nyquist} obtenemos:
@@ -7050,8 +7081,8 @@ v=\lambda\cdot f
 \end{equation}
 Donde:
 \begin{itemize}
-\item \textit{v} es velocidad de onda(\textit{c} para la luz en el vacío) (m/s).
-\item $\lambda$ es la longitud de onda. (m)
+\item \textit{v}: Velocidad de onda (es \textit{c} cuando se está en el vacío o espacio libre.) (m/s).
+\item $\lambda$: Longitud de onda. (m)
 \item \textit{f} es la frecuencia (Hz).
 \end{itemize}
 \end{definition}
@@ -7338,7 +7369,7 @@ Para encontrar un valor apropiado para \textit{w} necesitamos saber cuántas tra
 \text{utilización del enlace}\leqslant\frac{w}{1+2\frac{BD}{L_t}}
 \label{eq:utilizacion de enlace}
 \end{equation}
-Donde:\\
+Donde:
 \begin{itemize}
 \item \textbf{Utilización del enlace}: Tiempo de utilización del enlace antes de bloquearse (seg).
 \item \textbf{\textit{w}}: Número de tramas antes de bloquearse, tamaño de la ventana.
@@ -7880,9 +7911,317 @@ El buffer es un espacio temporal de memoria física el cual se usa para almacena
 \part{Líneas de transmisión}
 %----------------------------------------------------------------------------------------
 \chapterimage{chapter_head_LT.pdf} % Chapter heading image
+\chapter{Ecuaciones de una línea de transmisión}
+\section{Ecuaciones generales sobre una línea de transmisión}\index{Ecuaciones generales sobre una línea de transmisión}
+\emph{La demostración de las siguientes ecuaciones son encontradas a más detalle en el libro \textit{Líneas de transmisión\cite{velalineas1999}.}}\\
+Los parámetros básicos\footnote{También llamado constantes primarias.} de una línea de transmisión son:
+\begin{enumerate}
+\item[L] Inductancia
+\item[C] Capacitancia
+\item[R] Resistencia\footnote{A veces llamado resistancia.}
+\item[G] Conductancia\footnote{Revisar el capítulo \ref{chap:dom freq} si es necesario.}
+\end{enumerate}
+\begin{definition}[Constante de propagación]
+\begin{align}
+\gamma &=\sqrt{\left(R+\iu\omega L\right)\left(G+\iu\omega  C\right)}\\
+\gamma &=\sqrt{Z\cdot Y}
+\label{eq:cons propag}
+\end{align}
+Donde:
+\begin{itemize}
+\item \textbf{L}: Inductancia en Henrios por metro (H/m)
+\item \textbf{C}: Capacitancia en Faradios por metro (F/m)
+\item \textbf{R}: Resistencia en Ohmios por metro ($\Omega$/m)
+\item \textbf{G}: Conductancia en Siemens por metro (S/m)
+\end{itemize}
+La \textbf{constante de propagación} es un número complejo que se expresa como:
+\begin{equation}
+\gamma=\alpha+\iu\beta
+\label{eq:cont prop alpha beta}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\alpha$: constante de atenuación.(Np/m)
+\item $\beta$: constante de rapidez de cambio de fase. (rad/m)
+\end{itemize}
+$\alpha$ es más común expresarla en decibeles por metro y usar L\footnote{No confundir con L de inductancia, esta L viene de \textit{Loss} que es pérdida.}:
+\begin{equation}
+\textit{L}=8.686\cdot\alpha
+\label{eq:np a db}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{\textit{L}}: Atenuación en dB/m.
+\item $\alpha$: Constante de atenuación en Np/m
+\end{itemize}
+\end{definition}
+\begin{definition}[Impedancia característica]
+\begin{equation}
+Z_0=\sqrt{\frac{\left(R+\iu\omega L\right)}{\left(G+\iu\omega C\right)}}\Omega
+\label{eq: imp carac}
+\end{equation}
+\end{definition}
+\begin{remark}
+El parámetro $Z_0$ es proporcionado por los fabricantes. Algunos valores conocidos son: $50\Omega$ (radiodifusión y computadoras), $75\Omega$ (televisión por cable), cables bifilares de $300\Omega$ (antenas receptoras de TV y FM) y cables bifilares multipar de telefonía y datos de $75\Omega, 100\Omega, 150\Omega, 600\Omega, etc$.
+\end{remark}
+\begin{definition}[Velocidad de fase]
+\begin{equation}
+v_p=\frac{\omega}{\beta}=\frac{2\pi f}{\beta}m/s
+\label{eq:vel fase}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\omega$: Velocidad angular. (rad/s)
+\item $\beta$: Constante de fase. (rad/m).\footnote{Ver ecuación \ref{eq:cont prop alpha beta}}.
+\end{itemize}
+Si el medio es considerado \textbf{sin pérdidas, $\alpha$=0}:\\
+\textbf{La longitud de onda dentro del medio de propagación:}
+\begin{equation}
+\lambda_{medio}=\frac{2\pi}{\beta}=\frac{v}{f}=\frac{c}{\sqrt{\epsilon_r}f}=\frac{\lambda_0}{\sqrt{\epsilon_r}}
+\label{eq:longitud de onda sin perdidas}
+\end{equation}
+\textbf{Velocidad de fase sin pérdidas}
+\begin{equation}
+v_p=\lambda\cdot f=\frac{c}{\sqrt{\epsilon_r}}
+\label{eq:vel fase sin perdidas}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\lambda$: Longitud de onda. (metros)
+\item $f$: Frecuencia. (Hertz)
+\item $c$: Velocidad de luz: $3\basedec{8} m/s$.
+\item $\epsilon_r$: Constante dieléctrica relativa.
+\end{itemize}
+\end{definition}
+\begin{definition}[Tiempo de retardo de la línea]
+\begin{equation}
+t_d=\frac{l}{v_p}=\frac{\beta l}{\omega}
+\label{eq:tiempo retardo linea}
+\end{equation}
+Donde:
+\begin{enumerate}
+\item l: Longitud de la línea. (metros)
+\item $v_p$: Velocidad de fase. (m/s)
+\item $\beta$: Constante de fase. (rad/m)
+\item $\omega$: Velocidad angular. (rad/s)
+\end{enumerate}
+\end{definition}
+\begin{definition}[Coeficiente de reflexión]
+\begin{equation}
+\rho=\frac{Z_L-Z_0}{Z_L+Z_0}
+\label{eq:coef reflex}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\rho$: Coeficiente de reflexión.\footnote{También es representado por la letra griega $\Gamma$.}
+\item $Z_L$: Impedancia de carga. ($\Omega$)
+\item $Z_0$: Impedancia característica. ($\Omega$)
+\end{itemize}
+\end{definition}
+\begin{definition}[Impedancia de entrada]
+\begin{equation}
+Z_i=Z_0\cdot\frac{1+\rho e^{-2\gamma l}}{1-\rho e^{-2\gamma l}}=Z_0\cdot\frac{Z_L+Z_0\tanh\gamma l}{Z_0+Z_L\tanh\gamma l}
+\label{eq:imp entrada tanh}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $Z_i$: Impedancia de entrada. ($\Omega$)
+\item $Z_0$: Impedancia característica. ($\Omega$)
+\item $\rho$: Coeficiente de reflexión.
+\item $l$: Longitud de la linea. (metros)
+\item $\gamma$: Constante de propagación. 
+\end{itemize}
+La ecuación \ref{eq:imp entrada tanh} no sólo permite calcular la impedancia de entrada de la línea, sino también la impedancia Z vista desde \emph{cualquier punto de la línea}, sustituyendo en lugar de $l$ la distancia entre dicho punto y la carga.
+\end{definition}
+\section{Impedancias de líneas particulares}\index{Impedancias de líneas particulares}
+\subsection{Impedancias de una línea terminada en cortocircuito}
+\begin{definition}[Impedancia de entrada en cortocircuito]
+Para una carga de $0+0\iu$ se tiene que la impedancia de carga en cortocircuito es de:
+\begin{equation}
+Z_{i,c.c.}=Z_0\cdot\frac{1-2e^{-2\gamma l}}{1+2e^{-2\gamma l}}=Z_0\cdot\tanh\gamma l
+\label{eq:imp corto}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $Z_0$: Impedancia de entrada. ($\Omega$)
+\item $l$: Longitud de la línea. (metro)
+\item $\gamma$: Constante de propagación.
+\end{itemize}
+Si la línea es lo suficientemente corta ($|\gamma l|<<1$):
+\begin{equation*}
+Z_{i,c.c.}\approx Z_0\cdot\gamma\cdot l
+\end{equation*}
+Además:
+\begin{equation}
+\gamma Z_0=R+\iu\omega L
+\label{eq:gamma z0}
+\end{equation}
+Finalmente:
+\begin{equation}
+Z_{i,c.c.}=l(R+\iu\omega L)
+\end{equation}
+\end{definition}
+\begin{remark}
+En la práctica, medir la impedancia de entrada de una línea corta terminada en circuito cerrado \textbf{permite} medir indirectamente los parámetros R y L de la línea.
+\end{remark}
+\subsection{Impedancias de una línea terminada en circuito abierto}
+\begin{definition}[Impedancia de entrada en circuito abierto]
+\begin{equation}
+Z_{i,c.a.}=Z_0\cdot\frac{1+e^{-2\gamma l}}{1-e^{-2\gamma l}}=Z_0\cdot\coth\gamma l
+\end{equation}
+Donde:
+\begin{itemize}
+\item $Z_0$: Impedancia de entrada. ($\Omega$)
+\item $l$: Longitud de la línea. (metro)
+\item $\gamma$: Constante de propagación.
+\end{itemize}
+Si la línea es lo suficientemente corta ($|\gamma l|<<1$):
+\begin{equation*}
+Z_{i,c.a.}\approx\frac{Z_0}{\gamma l}
+\end{equation*}
+\begin{equation}
+\frac{\gamma}{Z_0}=G+\iu\omega C
+\label{eq:gamma/z0}
+\end{equation}
+Por lo tanto:
+\begin{equation}
+Z_{i,c.a.}=\frac{1}{l(G+\iu\omega C)}
+\end{equation}
+\end{definition}
+\begin{remark}
+Por lo tanto, la impedancia de entrada medida a cierta frecuencia angular $\omega$ para una línea corta de longitud $l$ terminada en circuito abierto \textbf{permite} obtener los parámetros G y C de la línea.
+\end{remark}
+\subsection{Obtención de $Z_0$ y $\gamma$ a partir de entradas medidas en corto y abierto}
+\begin{equation}
+Z_0=\sqrt{\left(Z_{i,c.c.}\right)\left(Z_{i,c.a.}\right)}
+\label{eq:impedancia con corto y abierto}
+\end{equation}
+\begin{equation}
+e^{-2\gamma l}=\frac{1-\sqrt{\frac{Z_{i,c.c.}}{Z_{i,c.a.}}}}{1+\sqrt{\frac{Z_{i,c.c.}}{Z_{i,c.a.}}}}=\fase{r}{\theta}
+\label{eq:cons propa exp}
+\end{equation}
+De esta ecuación se obtiene:
+\begin{align}
+&\alpha=-\frac{1}{2r} &\beta=-\frac{1}{2l}(\theta\pm 2\pi n)
+\label{eq: alfa beta const}
+\end{align}
+Donde $\theta$ es ángulo del resultado de operar \ref{eq:cons propa exp}, además esta en \textbf{radianes} y el valor correcto de \textit{n} depende de la longitud de la línea en términos de $\lambda$.
+\begin{example}[Obtención de impedancia característica y constante de propagación]
+Un cable telefónico de 20 km de longitud fue sometido a pruebas de medición con terminaciones en corto circuito y circuito abierto, a una frecuencia de 1.5 kHz. Los valores obtenidos para la impedancia de entrada fueron:
+\begin{align*}
+Z_{i,c.c.}&=\fase{1392}{5.1}\Omega\\
+Z_{i,c.a.}&=\fase{421}{-26.3}\Omega
+\end{align*}
+Calcule a partir de estos datos: a) la impedancia característica, b) la constante de propagación, y c) los cuatro parámetros R, L, G y C de la línea, a la frecuencia en que se hicieron las mediciones.\\
+\textbf{Solución:}\\
+\begin{enumerate}
+\item \textbf{Obtención de $Z_0$}, usando la ecuación \ref{eq:impedancia con corto y abierto}:
+\begin{align*}
+Z_0&=\sqrt{(\fase{1382}{5.1})\cdot(\fase{421}{-26.3})}
+\intertext{Pasamos de forma fasorial a binómica usando grados sexágesimales:}
+Z_0&=\sqrt{\fase{581822}{-21.2}}\simeq \sqrt{542446.4987-\iu 210401.1306}
+\intertext{Hallamos el modulo y el argumento usando el sistema de radianes}
+&r=581822\hspace{20pt}\theta=-0.37rad
+\intertext{Con estos valores se calcula las raices, no olvidando el sistema radian. De las dos respuestas tomamos la raiz principal (k=0):}
+&=\sqrt{581822}\cdot\left[\cos\left(\frac{-0.37}{2}\right)+\iu\sin\left(\frac{-0.37}{2}\right)\right]=749.75-\iu140.31
+\intertext{Expresando como fasor usando el sistema de grados sexágesimales:}
+Z_0&=\fase{762.77}{-10.6}\Omega
+\end{align*}
+Los valores de la raíz obtenidas en este paso fueron calculadas con \textbf{programa} en Python donde se introdujo el valor en su forma binómica;  si se desea calcular manualmente se recomienda usar la raíz cuadrada de un fasor\footnote{Revisar Electrotecnia-fasores}.
+\item \textbf{Constante de propagación}, usando la ecuación \ref{eq:cons propa exp}:
+\begin{align*}
+e^{-2\gamma l}&=\frac{1-\sqrt{\frac{\fase{1392}{5.1}}{\fase{421}{-26.3}}}}{1+\sqrt{\frac{\fase{1392}{5.1}}{\fase{421}{-26.3}}}}
+\intertext{Usando las raices de complejos para agilizar los cálculos:}
+&=\frac{1-\sqrt{\fase{3.2826}{31.4}}}{\fase{3.2826}{31.4}}=\frac{1-\fase{\sqrt{3.2826}}{(31.4/2)}}{\fase{\sqrt{3.2826}}{(31.4/2)}}\\
+&=\frac{1-\fase{1.8118}{15.7}}{1+\fase{1.8118}{15.7}}=\frac{-0.7442-\iu 0.4906}{2.7442+\iu 0.4903}\\
+&=-0.2936-\iu 0.126\simeq \fase{0.3197}{-156.75}
+\end{align*}
+Una vez hallado la constante de propagación\footnote{Nota que en este paso no hemos usado otro sistema angular que no sea el sexágesimal.} y usando las expresiones de \ref{eq: alfa beta const} hallamos la \textbf{constante de atenuación}:
+\begin{displaymath}
+\alpha=-\frac{1}{2\cdot 0.3197}=0.0000285 Np/m
+\end{displaymath}
+Si lo expresamos en decibelios con la ecuación \ref{eq:np a db}:
+\begin{displaymath}
+\alpha=8.686\cdot 0.0000285=0.0002476 dB/m
+\end{displaymath}
+Y hallamos la \textbf{constante de rapidez de cambio de fase}, para encontrar la constante de fase $\beta$, hay que decidir sobre el valor de \textit{n} en la ecuación \ref{eq: alfa beta const}. Como primer paso, es necesario convertir la longitud de la línea a dimensiones eléctricas, es decir, en términos de $\lambda$. Como no se
+conoce el material dieléctrico del cable, se supondrá que $\lambda$ es cercana a $\lambda_0$\footnote{Es la longitud de onda en el espacio libre a la misma frecuencia.\ref{eq: onda y velocidad}}.
+\begin{displaymath}
+\lambda_0=\frac{c}{f}=\frac{3\basedec{8}}{1.5\basedec{3}}=200Km
+\end{displaymath}
+Evidentemente, la línea de 20 km es corta (<< $\lambda_0$), por lo que el producto $\beta l$ debe estar en el rango $0<\beta l<2\pi$, al no haber longitud suficiente para que se cumpla un ciclo. Por eso tomamos n=-1, reemplazando en \ref{eq: alfa beta const}
+\begin{displaymath}
+\beta=-\frac{1}{2\cdot 20\basedec{3}}\left[\frac{-156.75°\cdot\pi}{180}-2\pi\right]=0.000225 rad/m
+\end{displaymath}
+Con $\alpha$ y $\beta$ encontrado podemos escribir nuestra \textbf{constante de propagación} como:
+\begin{displaymath}
+\gamma =0.0000285+\iu 0.00225\simeq \fase{0.000226}{82.78}
+\end{displaymath}
+\item \textbf{Cálculo de parámetros básicos} usando las ecuaciones \ref{eq:gamma z0}:
+\begin{align*}
+(\fase{0.000226}{82.78})\cdot (\fase{762.77}{-10.6}\Omega)=R+\iu\omega L\\
+\fase{762.77}{31.73}\simeq 648.76+\iu 401.15=R+\iu\omega L
+\end{align*}
+Comparando valores:
+\begin{align*}
+R&=648 \Omega/m\\
+\omega L&=401.15\rightarrow L=0.0425 H/m
+\end{align*}
+Ahora usando la ecuación \ref{eq:gamma/z0}:
+\begin{align*}
+G+\iu\omega C&=\frac{\fase{0.000226}{82.78})}{\fase{762.77}{-10.6}\Omega}\\
+G+\iu\omega C&=\fase{296.28\basedec{-9}}{93.38}\simeq 1.9155\basedec{-7}-\iu 2.26\basedec{-7}
+\end{align*}
+Comparando respuestas:
+\begin{align*}
+G&=0.19155\basedec{-6}\mu S/m\\
+C&=\frac{2.26\basedec{-7}}{2\pi\cdot 1.5\basedec{3}}=23.99 pF/m
+\end{align*}
+\end{enumerate}
+\end{example}
+\section{Reactancia de entrada y aplicaciones de líneas sin pérdidas terminadas en corto y circuito abierto}\index{Líneas sin pérdidas}
+Hasta ahora hemos analizado líneas con pérdidas ($\alpha\neq0$), mayormente usado en sistemas de alta frecuencia, por lo que se refiere al cálculo de $Z_0$, de $\gamma$ y de la impedancia vista en cualquier punto de la línea, puesto que $\omega L= 2\pi fL >> R y \omega C =2\pi f C >> G$. Al hacer estas consideraciones,las ecuaciones \ref{eq:cons propag} y \ref{eq: imp carac} se reducen a:
+\begin{corollary}[Constante de propagación sin pérdidas]
+\begin{equation}
+\gamma=\sqrt{(\iu\omega L)(\iu\omega C)}=\iu\beta=\iu\omega\sqrt{LC}
+\label{eq:cons propa sin perdidas}
+\end{equation}
+\end{corollary}
+\begin{corollary}[Impedancia de característica sin pérdidas]
+\begin{equation}
+Z_0=\sqrt{\frac{\iu\omega L}{\iu\omega C}}=\sqrt{\frac{L}{C}}
+\label{eq:imp carac sin perdidas}
+\end{equation}
+\end{corollary}
+Por lo tanto $\alpha\approx 0$ y $Z_0$ es real (puramente resistiva).\\
+Después de un análisis se puede concluir que la ecuación \ref{eq:imp entrada tanh} se puede escribir como:
+\begin{corollary}[Impedancia de entrada sin pérdidas]
+\begin{equation}
+Z_i=Z_0\frac{Z_L+\iu Z_0\tan\beta l}{Z_0+\iu Z_L\tan\beta l}
+\label{eq:imp entrada sin perdidas}
+\end{equation}
+Donde $l$ es la longitud \textbf{total} de la línea.
+\end{corollary}
+\subsubsection*{Casos especiales de corto y circuito abierto}
+\begin{itemize}
+\item \textbf{Corto circuito $Z_L=0$}: La ecuación \ref{eq:imp entrada sin perdidas} se reduce a:
+\begin{equation}
+Z_i=Z_0\cdot\frac{\iu Z_0\tan\beta l}{Z_0}=\iu Z_0\tan\beta l=\iu X_i
+\label{eq:corto sin perdidas}
+\end{equation}
+\item \textbf{Circuito abierto sin pérdidas $Z_L\rightarrow\infty$}: La ecuación \ref{eq:imp entrada sin perdidas} toma la forma de:
+\begin{equation}
+Z_i=Z_0\cdot\frac{1+\frac{\iu Z_0\tan\beta l}{Z_L}}{\frac{Z_0}{Z_L}+\iu\tan\beta l}=\frac{Z_0}{\iu\tan\beta l}=-\iu Z_0\cot\beta l=\iu X_i
+\end{equation}
+\end{itemize}
+La impedancia de entrada es puramente reactiva ($\iu X_i$). En cualquiera de los dos casos, la \textbf{reactancia }puede ser inductiva o capacitiva, dependiendo del valor de $\beta l$, ya que las funciones ($\tan\beta l$) y $\cot\beta l$ pueden tomar valores positivos o negativos.
+\begin{notation}
+Revisar los ejercicios 2-9 y 2-10 del libro \emph{Líneas de transmisión}\cite{velalineas1999}.
+\end{notation}
+\chapterimage{chapter_head_LT.pdf} % Chapter heading image
 \chapter{Carta de Smith}
 \section{Conociendo la carta de Smith}\index{Conociendo la carta de Smith}
-La carta de Smith es un diagrama polar del coeficiente de reflexión complejo (también llamado Gamma $\Gamma$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
+La carta de Smith es un diagrama polar del coeficiente de reflexión complejo (también llamado Gamma $\rho$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
 Una carta de Smith simplificada, que muestra sus círculos de resistencia constante y arcos de reactancia constante, es un buen punto de partida para comprender su disposición. Como beneficio adicional, la carta también proporciona una forma de mostrar los parámetros de dispersión (parámetros S) y cómo sus valores se relacionan con las medidas y consideraciones reales del hardware.\\
 Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedancia de 50 $\Omega$, a diferencia de la figura \ref{fig:smith chart}; para solucionar esto solo se escalan los valores, es decir, dividimos cada valor entre 50. Además, recordando en análisis en frecuencia, sabemos que los inductores se diferencian de los capacitores solo por el signo, inductores son positivos y capacitores negativos. Es por ello que se distingue dos flechas verticales: hacia arriba están los positivos (inductancia) y abajo negativos (capacitancia). Cuando la resistencia, capacitancia y inductancia son constantes son circulos, arcos y arcos respectivamente. En las lineas de transmisión se distinguen dos formas de enlazar circuitos: paralelo y serie; estos son representados las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
 \begin{figure}[]
@@ -7941,13 +8280,13 @@ Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del c
 \item \textbf{dBS}: Unidad de SWR en decibelios.
 \item \textbf{RTN LOSS}: Perdida por retorno, esto indica
 la cantidad de onda reflejada expresada en dB. Así, en el centro de la carta, nada es reflejado y la pérdida de retorno es infinita. En el límite tenemos reflexión completa, por lo tanto la pérdida por retorno es 0 dB.
-\item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en términos de potencia, proporcional a $|\Gamma|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
-\item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\Gamma$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno.
-\item \textbf{Coeficiente de Voltaje de transmisión}: Tenga en cuenta que el módulo del coeficiente de transmisión de voltaje (y corriente) tiene un rango de cero, es decir, cortocircuito, a +2 (abierto = 1+$\Gamma$ con $\Gamma$=1). esta regla solo es válida para $Z_L$ = real, es decir, el caso de un escalón en la impedancia característica de la línea coaxial.
+\item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en términos de potencia, proporcional a $|\rho|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
+\item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\rho$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno.
+\item \textbf{Coeficiente de Voltaje de transmisión}: Tenga en cuenta que el módulo del coeficiente de transmisión de voltaje (y corriente) tiene un rango de cero, es decir, cortocircuito, a +2 (abierto = 1+$\rho$ con $\rho$=1). esta regla solo es válida para $Z_L$ = real, es decir, el caso de un escalón en la impedancia característica de la línea coaxial.
 \item \textbf{ATTEN}: en dB supone que estamos midiendo una atenuador (que puede ser una línea con pérdida) que a su vez está terminado por un circuito abierto o cortocircuito (reflexión completa). Por lo tanto, la onda viaja dos veces a través del atenuador (hacia adelante y hacia atrás). hacia atrás). El valor de este atenuador puede estar entre cero y algún número muy alto correspondiente al caso emparejado. La escala inferior de la regla 1 muestra la misma situación solo en términos de VSWR.
-\item \textbf{RFL.LOSS[dB]}: esta regla se refiere a la pérdida en la onda transmitida, que no debe confundirse con la pérdida de retorno refiriéndose a la onda reflejada. Muestra la relación en dB de $P_t=1-|\Gamma|^2$.
-\item \textbf{TRANSM. COEFF. P}: Se refiere a la potencia transmitida como función de desajuste y muestra esencialmente la relación $P_t=1-|\Gamma|^2$. Así, en el centro de la carta, se transmite toda la potencia. En el límite tenemos reflexión total y
-por ej. para un valor de $\Gamma$ de 0,5 vemos que se transmite el 75\% de la potencia incidente.
+\item \textbf{RFL.LOSS[dB]}: esta regla se refiere a la pérdida en la onda transmitida, que no debe confundirse con la pérdida de retorno refiriéndose a la onda reflejada. Muestra la relación en dB de $P_t=1-|\rho|^2$.
+\item \textbf{TRANSM. COEFF. P}: Se refiere a la potencia transmitida como función de desajuste y muestra esencialmente la relación $P_t=1-|\rho|^2$. Así, en el centro de la carta, se transmite toda la potencia. En el límite tenemos reflexión total y
+por ej. para un valor de $\rho$ de 0,5 vemos que se transmite el 75\% de la potencia incidente.
 \end{itemize}
 \newpage
 \begin{example}[Una línea de transmisión sin pérdidas tiene una $Z_0=50\Omega$ y una constante de fase de 2.321 rad/m, si la longitud de línea es de 120m y opera a 90MHz con una impedancia de carga $Z_L=90+\iu 90$. Encontrar: Impedancia de entrada, coeficiente de reflexión, SWR, perdida por retorno y potencia relativa.]\label{exe:1}
@@ -7975,19 +8314,19 @@ Z_{in}=50\frac{(90+\iu 90)+\iu(50)\tan(0.8\pi)}{50+\iu(90+\iu 90)\tan(0.8\pi)}=1
 \end{displaymath}
 Continuamos hallando el \textbf{Coeficiente de reflexión}, para ello solo hay que reemplazar en la ecuación respectiva:
 \begin{displaymath}
-\Gamma=\frac{(90+\iu 90)-50}{(90+\iu 90)+50}=0.592\phase{33.28^{\circ}}
+\rho=\frac{(90+\iu 90)-50}{(90+\iu 90)+50}=\fase{0.592}{33.28}
 \end{displaymath}
 Lo mismo con \textbf{SWR}, usando su ecuación:
 \begin{displaymath}
-SWR=\frac{1+0.592\phase{33.28^{\circ}}}{1-0.592\phase{33.28^{\circ}}}=3.9
+SWR=\frac{1+\fase{0.592}{33.28}}{1-\fase{0.592}{33.28}}=3.9
 \end{displaymath}
 Usando la relación logarítmica para SWR se encuentra la pérdida por retorno:
 \begin{displaymath}
-SWR=-20\log(0.592\phase{33.28^{\circ}})=4.5dB
+SWR=-20\log(\fase{0.592}{33.28})=4.5dB
 \end{displaymath}
 Por último la potencia relativa, ya que no específica voltaje asumimos 1V y lo expresamos en porcentaje:
 \begin{displaymath}
-P_r=(0.592\phase{33.28^{\circ}})^2\cdot 1\cdot 100\%=34.81\%
+P_r=(\fase{0.592}{33.28})^2\cdot 1\cdot 100\%=34.81\%
 \end{displaymath}
 \end{example}
 \begin{example}[Resolver el ejercicio \ref{exe:1} usando la carta de Smith]
@@ -9437,7 +9776,7 @@ Definida como:
 \label{eq:Pire}
 P_{IRE}=P_t-L_c+G_a
 \end{equation}
-Donde:\\
+Donde:
 \begin{itemize}
 \item $P_t$: Potencia del transmisor.(dBm)
 \item $L_c$: Perdidas de cable.(dB)

@@ -1,6 +1,6 @@
-\contentsline {part}{\numberline {I}Electrotécnia}{17}{part.1}%
-\contentsline {chapter}{\numberline {1}Números complejos}{18}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Operaciones con complejos}{19}{section.1.1}%
+\contentsline {part}{\numberline {I}Electrotécnia}{18}{part.1}%
+\contentsline {chapter}{\numberline {1}Números complejos}{19}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Operaciones con complejos}{20}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Dominio de la frecuencia}{24}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Fasores}{24}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}Relación fasorial para R}{24}{subsection.2.1.1}%
@@ -190,7 +190,7 @@
 \contentsline {chapter}{\numberline {14}Campos eléctricos estáticos}{178}{chapter.14}%
 \contentsline {section}{\numberline {14.1}Ley de Coulomb}{178}{section.14.1}%
 \contentsline {section}{\numberline {14.2}Intensidad de campo eléctrico}{179}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Campo eléctrico creado por una distribución continua de carga en un punto}{180}{section.14.3}%
+\contentsline {section}{\numberline {14.3}Campo eléctrico creado por una distribución continua de carga en un punto}{179}{section.14.3}%
 \contentsline {section}{\numberline {14.4}Densidad de campo eléctrico}{180}{section.14.4}%
 \contentsline {section}{\numberline {14.5}Ley de Gauss-Ecuaciones de Maxwell}{181}{section.14.5}%
 \contentsline {section}{\numberline {14.6}Potencial eléctrico}{186}{section.14.6}%
@@ -377,120 +377,127 @@
 \contentsline {subsubsection}{\numberline {23.2.1.2}Sub redes}{315}{subsubsection.23.2.1.2}%
 \contentsline {subsection}{\numberline {23.2.2}IPv6}{316}{subsection.23.2.2}%
 \contentsline {part}{\numberline {IX}Líneas de transmisión}{319}{part.9}%
-\contentsline {chapter}{\numberline {24}Carta de Smith}{320}{chapter.24}%
-\contentsline {section}{\numberline {24.1}Conociendo la carta de Smith}{320}{section.24.1}%
-\contentsline {section}{\numberline {24.2}Acoplamiento de impedancias}{327}{section.24.2}%
-\contentsline {part}{\numberline {X}Microcontrolador y microprocesador}{335}{part.10}%
-\contentsline {chapter}{\numberline {25}Arquitectura y principios del microcontrolador}{336}{chapter.25}%
-\contentsline {section}{\numberline {25.1}Arquitectura interna de una CPU}{336}{section.25.1}%
-\contentsline {subsection}{\numberline {25.1.1}Memoria}{336}{subsection.25.1.1}%
-\contentsline {subsubsection}{\numberline {25.1.1.1}ROM}{336}{subsubsection.25.1.1.1}%
-\contentsline {subsection}{\numberline {25.1.2}RAM}{337}{subsection.25.1.2}%
-\contentsline {subsection}{\numberline {25.1.3}I/O}{340}{subsection.25.1.3}%
-\contentsline {subsection}{\numberline {25.1.4}¿Cómo escriben en la memoria los periféricos?}{340}{subsection.25.1.4}%
-\contentsline {subsection}{\numberline {25.1.5}CPU}{342}{subsection.25.1.5}%
-\contentsline {subsection}{\numberline {25.1.6}Arquitecturas}{344}{subsection.25.1.6}%
-\contentsline {section}{\numberline {25.2}Código Assembler I}{345}{section.25.2}%
-\contentsline {subsection}{\numberline {25.2.1}Lista de comandos}{345}{subsection.25.2.1}%
-\contentsline {subsection}{\numberline {25.2.2}Ejemplos del código Assembler}{347}{subsection.25.2.2}%
-\contentsline {chapter}{\numberline {26}Desarrollo basado en en microcontroladores}{356}{chapter.26}%
-\contentsline {section}{\numberline {26.1}Control de puertos}{356}{section.26.1}%
-\contentsline {section}{\numberline {26.2}Interrupciones}{358}{section.26.2}%
-\contentsline {subsection}{\numberline {26.2.1}Registros involucrados}{360}{subsection.26.2.1}%
-\contentsline {subsection}{\numberline {26.2.2}Interrupciones externas}{360}{subsection.26.2.2}%
-\contentsline {subsubsection}{\numberline {26.2.2.1}Cambiar pines de interrupciones}{366}{subsubsection.26.2.2.1}%
-\contentsline {section}{\numberline {26.3}Código Assembler II}{366}{section.26.3}%
-\contentsline {part}{\numberline {XI}Ingeniería en mantenimiento}{369}{part.11}%
-\contentsline {chapter}{\numberline {27}Decibelios}{370}{chapter.27}%
-\contentsline {section}{\numberline {27.1}Definición de dB}{370}{section.27.1}%
-\contentsline {section}{\numberline {27.2}Definición de dBm}{370}{section.27.2}%
-\contentsline {section}{\numberline {27.3}Definición dB$\mu $V}{371}{section.27.3}%
-\contentsline {section}{\numberline {27.4}Diferencia entre decibelios de tensión y decibelios de potencia}{371}{section.27.4}%
-\contentsline {section}{\numberline {27.5}¿Qué es un nivel?}{371}{section.27.5}%
-\contentsline {section}{\numberline {27.6}Atenuación y ganancia}{372}{section.27.6}%
-\contentsline {section}{\numberline {27.7}Decibelios a porcentaje y viceversa}{373}{section.27.7}%
-\contentsline {subsection}{\numberline {27.7.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{373}{subsection.27.7.1}%
-\contentsline {subsection}{\numberline {27.7.2}Conversión de la energía: porcentaje a decibelios y viceversa}{373}{subsection.27.7.2}%
-\contentsline {subsection}{\numberline {27.7.3}Conversión de voltaje: porcentaje más o menos a decibelios}{373}{subsection.27.7.3}%
-\contentsline {subsection}{\numberline {27.7.4}Conversión de potencia: porcentaje más o menos a decibelios}{373}{subsection.27.7.4}%
-\contentsline {chapter}{\numberline {28}Aspectos introductorios}{374}{chapter.28}%
-\contentsline {section}{\numberline {28.1}Definición de mantenimiento}{374}{section.28.1}%
-\contentsline {subsection}{\numberline {28.1.1}Evolución de mantenimiento}{374}{subsection.28.1.1}%
-\contentsline {subsection}{\numberline {28.1.2}Impacto del mantenimiento}{375}{subsection.28.1.2}%
-\contentsline {subsection}{\numberline {28.1.3}Objetivos de mantenimiento}{375}{subsection.28.1.3}%
-\contentsline {subsection}{\numberline {28.1.4}Confiabilidad de las actividades de mantenimiento}{375}{subsection.28.1.4}%
-\contentsline {section}{\numberline {28.2}Mediciones de radiofrecuencia}{377}{section.28.2}%
-\contentsline {subsection}{\numberline {28.2.1}¿Qué es radio enlace?}{377}{subsection.28.2.1}%
-\contentsline {subsection}{\numberline {28.2.2}Bandas de frecuencia}{377}{subsection.28.2.2}%
-\contentsline {section}{\numberline {28.3}Decibelios como medida}{378}{section.28.3}%
-\contentsline {section}{\numberline {28.4}Radio digital y sus partes}{387}{section.28.4}%
-\contentsline {section}{\numberline {28.5}Repetidores}{389}{section.28.5}%
-\contentsline {subsection}{\numberline {28.5.1}Repetidor activo}{390}{subsection.28.5.1}%
-\contentsline {subsection}{\numberline {28.5.2}Repetidor pasivo}{390}{subsection.28.5.2}%
-\contentsline {chapter}{\numberline {29}Aspectos, desafíos y soluciones del mantenimiento}{393}{chapter.29}%
-\contentsline {section}{\numberline {29.1}¿Qué es falla?}{393}{section.29.1}%
-\contentsline {section}{\numberline {29.2}Fiabilidad y vida de un equipo}{393}{section.29.2}%
-\contentsline {section}{\numberline {29.3}Causas del deterioro o desgaste}{394}{section.29.3}%
-\contentsline {section}{\numberline {29.4}La relación del mantenimiento y la organización}{397}{section.29.4}%
-\contentsline {section}{\numberline {29.5}Distribución Normal}{398}{section.29.5}%
-\contentsline {section}{\numberline {29.6}Función Gamma}{401}{section.29.6}%
-\contentsline {section}{\numberline {29.7}Función Q}{406}{section.29.7}%
-\contentsline {section}{\numberline {29.8}Gestión y calidad en la ingeniería de mantenimiento}{414}{section.29.8}%
-\contentsline {subsection}{\numberline {29.8.1}¿Por qué se debe gestionar el mantenimiento?}{414}{subsection.29.8.1}%
-\contentsline {subsection}{\numberline {29.8.2}Calidad y mantenimiento}{415}{subsection.29.8.2}%
-\contentsline {subsection}{\numberline {29.8.3}Programa de mantenimiento}{415}{subsection.29.8.3}%
-\contentsline {subsection}{\numberline {29.8.4}Análisis de la criticidad}{415}{subsection.29.8.4}%
-\contentsline {subsubsection}{\numberline {29.8.4.1}Determinar el grado de criticidad}{416}{subsubsection.29.8.4.1}%
-\contentsline {subsection}{\numberline {29.8.5}Análisis de modos y efectos de fallos}{416}{subsection.29.8.5}%
-\contentsline {subsection}{\numberline {29.8.6}Definición de modo, causa y efecto de fallo}{417}{subsection.29.8.6}%
-\contentsline {subsubsection}{\numberline {29.8.6.1}Modo de fallo}{417}{subsubsection.29.8.6.1}%
-\contentsline {subsubsection}{\numberline {29.8.6.2}Causa de fallo}{417}{subsubsection.29.8.6.2}%
-\contentsline {subsubsection}{\numberline {29.8.6.3}Efecto de fallo}{417}{subsubsection.29.8.6.3}%
-\contentsline {subsection}{\numberline {29.8.7}Confiabilidad de un sistema}{417}{subsection.29.8.7}%
-\contentsline {subsubsection}{\numberline {29.8.7.1}Confiabilidad de un sistema}{417}{subsubsection.29.8.7.1}%
-\contentsline {subsubsection}{\numberline {29.8.7.2}Confiabilidad de un sistema en paralelo}{418}{subsubsection.29.8.7.2}%
-\contentsline {subsubsection}{\numberline {29.8.7.3}Confiabilidad de un sistema mixto}{419}{subsubsection.29.8.7.3}%
-\contentsline {subsection}{\numberline {29.8.8}Mantenibilidad de un sistema}{419}{subsection.29.8.8}%
-\contentsline {subsection}{\numberline {29.8.9}Disponibilidad de un sistema}{419}{subsection.29.8.9}%
-\contentsline {part}{\numberline {XII}Inglés}{421}{part.12}%
-\contentsline {chapter}{\numberline {30}English notes}{422}{chapter.30}%
-\contentsline {section}{\numberline {30.1}\textit {a/an}, \textit {the} and no-article}{422}{section.30.1}%
-\contentsline {section}{\numberline {30.2}When use \textit {the}?}{422}{section.30.2}%
-\contentsline {section}{\numberline {30.3}Use of \textit {Would}}{423}{section.30.3}%
-\contentsline {section}{\numberline {30.4}How to use \textit {rather}?}{423}{section.30.4}%
-\contentsline {section}{\numberline {30.5}Future form}{424}{section.30.5}%
-\contentsline {subsection}{\numberline {30.5.1}Present continuous}{424}{subsection.30.5.1}%
-\contentsline {subsection}{\numberline {30.5.2}be going to + infinitive}{424}{subsection.30.5.2}%
-\contentsline {subsection}{\numberline {30.5.3}will + infinitive}{424}{subsection.30.5.3}%
-\contentsline {section}{\numberline {30.6}Preset Perfect}{425}{section.30.6}%
-\contentsline {part}{\numberline {XIII}Extras}{427}{part.13}%
-\contentsline {chapter}{\numberline {31}Logaritmos y exponenciales}{428}{chapter.31}%
-\contentsline {section}{\numberline {31.1}Propiedades}{428}{section.31.1}%
-\contentsline {chapter}{\numberline {32}Matrices}{429}{chapter.32}%
-\contentsline {section}{\numberline {32.1}Conformabilidad de matrices}{429}{section.32.1}%
-\contentsline {chapter}{\numberline {33}Integrales}{430}{chapter.33}%
-\contentsline {section}{\numberline {33.1}Integral por tabulación}{430}{section.33.1}%
-\contentsline {chapter}{\numberline {34}Producto cruz y producto escalar}{431}{chapter.34}%
-\contentsline {section}{\numberline {34.1}Producto escalar}{431}{section.34.1}%
-\contentsline {section}{\numberline {34.2}Producto cruz}{431}{section.34.2}%
-\contentsline {section}{\numberline {34.3}Propiedades}{432}{section.34.3}%
-\contentsline {section}{\numberline {34.4}Ángulo de desfase}{432}{section.34.4}%
-\contentsline {part}{\numberline {XIV}Anexos}{433}{part.14}%
-\contentsline {section}{\numberline {34.5}Ejercicios resueltos U2-Sistemas de telefonía}{434}{section.34.5}%
-\contentsline {section}{\numberline {34.6}Ejercicios resueltos U2-Sistemas de telefonía}{435}{section.34.6}%
-\contentsline {section}{\numberline {34.7}Ejercicios resueltos U2-Sistemas de telefonía}{436}{section.34.7}%
-\contentsline {section}{\numberline {34.8}Ejercicios resueltos U2-Sistemas de telefonía 2 }{437}{section.34.8}%
-\contentsline {section}{\numberline {34.9}Ejercicios resueltos U2-Sistemas de telefonía 2 }{438}{section.34.9}%
-\contentsline {section}{\numberline {34.10}Ejercicios resueltos U2-Sistemas de telefonía 2 }{439}{section.34.10}%
-\contentsline {section}{\numberline {34.11}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{440}{section.34.11}%
-\contentsline {section}{\numberline {34.12}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{441}{section.34.12}%
-\contentsline {section}{\numberline {34.13}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{442}{section.34.13}%
-\contentsline {section}{\numberline {34.14}Ejercicios resueltos U2-Erlang B}{443}{section.34.14}%
-\contentsline {section}{\numberline {34.15}Ejercicios resueltos U2-Erlang B}{444}{section.34.15}%
-\contentsline {section}{\numberline {34.16}Ejercicios resueltos U2-Erlang B}{445}{section.34.16}%
-\contentsline {section}{\numberline {34.17}Ejericios de la ley de Gauss}{446}{section.34.17}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{451}{chapter*.364}%
-\contentsline {section}{Articles}{451}{chapter*.364}%
-\contentsline {section}{Books}{451}{chapter*.364}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{453}{section*.365}%
+\contentsline {chapter}{\numberline {24}Ecuaciones de una línea de transmisión}{320}{chapter.24}%
+\contentsline {section}{\numberline {24.1}Ecuaciones generales sobre una línea de transmisión}{320}{section.24.1}%
+\contentsline {section}{\numberline {24.2}Impedancias de líneas particulares}{322}{section.24.2}%
+\contentsline {subsection}{\numberline {24.2.1}Impedancias de una línea terminada en cortocircuito}{322}{subsection.24.2.1}%
+\contentsline {subsection}{\numberline {24.2.2}Impedancias de una línea terminada en circuito abierto}{323}{subsection.24.2.2}%
+\contentsline {subsection}{\numberline {24.2.3}Obtención de $Z_0$ y $\gamma $ a partir de entradas medidas en corto y abierto}{323}{subsection.24.2.3}%
+\contentsline {section}{\numberline {24.3}Reactancia de entrada y aplicaciones de líneas sin pérdidas terminadas en corto y circuito abierto}{326}{section.24.3}%
+\contentsline {chapter}{\numberline {25}Carta de Smith}{328}{chapter.25}%
+\contentsline {section}{\numberline {25.1}Conociendo la carta de Smith}{328}{section.25.1}%
+\contentsline {section}{\numberline {25.2}Acoplamiento de impedancias}{335}{section.25.2}%
+\contentsline {part}{\numberline {X}Microcontrolador y microprocesador}{343}{part.10}%
+\contentsline {chapter}{\numberline {26}Arquitectura y principios del microcontrolador}{344}{chapter.26}%
+\contentsline {section}{\numberline {26.1}Arquitectura interna de una CPU}{344}{section.26.1}%
+\contentsline {subsection}{\numberline {26.1.1}Memoria}{344}{subsection.26.1.1}%
+\contentsline {subsubsection}{\numberline {26.1.1.1}ROM}{344}{subsubsection.26.1.1.1}%
+\contentsline {subsection}{\numberline {26.1.2}RAM}{345}{subsection.26.1.2}%
+\contentsline {subsection}{\numberline {26.1.3}I/O}{348}{subsection.26.1.3}%
+\contentsline {subsection}{\numberline {26.1.4}¿Cómo escriben en la memoria los periféricos?}{348}{subsection.26.1.4}%
+\contentsline {subsection}{\numberline {26.1.5}CPU}{350}{subsection.26.1.5}%
+\contentsline {subsection}{\numberline {26.1.6}Arquitecturas}{352}{subsection.26.1.6}%
+\contentsline {section}{\numberline {26.2}Código Assembler I}{353}{section.26.2}%
+\contentsline {subsection}{\numberline {26.2.1}Lista de comandos}{353}{subsection.26.2.1}%
+\contentsline {subsection}{\numberline {26.2.2}Ejemplos del código Assembler}{355}{subsection.26.2.2}%
+\contentsline {chapter}{\numberline {27}Desarrollo basado en en microcontroladores}{364}{chapter.27}%
+\contentsline {section}{\numberline {27.1}Control de puertos}{364}{section.27.1}%
+\contentsline {section}{\numberline {27.2}Interrupciones}{366}{section.27.2}%
+\contentsline {subsection}{\numberline {27.2.1}Registros involucrados}{368}{subsection.27.2.1}%
+\contentsline {subsection}{\numberline {27.2.2}Interrupciones externas}{368}{subsection.27.2.2}%
+\contentsline {subsubsection}{\numberline {27.2.2.1}Cambiar pines de interrupciones}{374}{subsubsection.27.2.2.1}%
+\contentsline {section}{\numberline {27.3}Código Assembler II}{374}{section.27.3}%
+\contentsline {part}{\numberline {XI}Ingeniería en mantenimiento}{377}{part.11}%
+\contentsline {chapter}{\numberline {28}Decibelios}{378}{chapter.28}%
+\contentsline {section}{\numberline {28.1}Definición de dB}{378}{section.28.1}%
+\contentsline {section}{\numberline {28.2}Definición de dBm}{378}{section.28.2}%
+\contentsline {section}{\numberline {28.3}Definición dB$\mu $V}{379}{section.28.3}%
+\contentsline {section}{\numberline {28.4}Diferencia entre decibelios de tensión y decibelios de potencia}{379}{section.28.4}%
+\contentsline {section}{\numberline {28.5}¿Qué es un nivel?}{379}{section.28.5}%
+\contentsline {section}{\numberline {28.6}Atenuación y ganancia}{380}{section.28.6}%
+\contentsline {section}{\numberline {28.7}Decibelios a porcentaje y viceversa}{381}{section.28.7}%
+\contentsline {subsection}{\numberline {28.7.1}Conversión de voltaje: porcentaje a decibelios y viceversa}{381}{subsection.28.7.1}%
+\contentsline {subsection}{\numberline {28.7.2}Conversión de la energía: porcentaje a decibelios y viceversa}{381}{subsection.28.7.2}%
+\contentsline {subsection}{\numberline {28.7.3}Conversión de voltaje: porcentaje más o menos a decibelios}{381}{subsection.28.7.3}%
+\contentsline {subsection}{\numberline {28.7.4}Conversión de potencia: porcentaje más o menos a decibelios}{381}{subsection.28.7.4}%
+\contentsline {chapter}{\numberline {29}Aspectos introductorios}{382}{chapter.29}%
+\contentsline {section}{\numberline {29.1}Definición de mantenimiento}{382}{section.29.1}%
+\contentsline {subsection}{\numberline {29.1.1}Evolución de mantenimiento}{382}{subsection.29.1.1}%
+\contentsline {subsection}{\numberline {29.1.2}Impacto del mantenimiento}{383}{subsection.29.1.2}%
+\contentsline {subsection}{\numberline {29.1.3}Objetivos de mantenimiento}{383}{subsection.29.1.3}%
+\contentsline {subsection}{\numberline {29.1.4}Confiabilidad de las actividades de mantenimiento}{383}{subsection.29.1.4}%
+\contentsline {section}{\numberline {29.2}Mediciones de radiofrecuencia}{385}{section.29.2}%
+\contentsline {subsection}{\numberline {29.2.1}¿Qué es radio enlace?}{385}{subsection.29.2.1}%
+\contentsline {subsection}{\numberline {29.2.2}Bandas de frecuencia}{385}{subsection.29.2.2}%
+\contentsline {section}{\numberline {29.3}Decibelios como medida}{386}{section.29.3}%
+\contentsline {section}{\numberline {29.4}Radio digital y sus partes}{395}{section.29.4}%
+\contentsline {section}{\numberline {29.5}Repetidores}{397}{section.29.5}%
+\contentsline {subsection}{\numberline {29.5.1}Repetidor activo}{398}{subsection.29.5.1}%
+\contentsline {subsection}{\numberline {29.5.2}Repetidor pasivo}{398}{subsection.29.5.2}%
+\contentsline {chapter}{\numberline {30}Aspectos, desafíos y soluciones del mantenimiento}{401}{chapter.30}%
+\contentsline {section}{\numberline {30.1}¿Qué es falla?}{401}{section.30.1}%
+\contentsline {section}{\numberline {30.2}Fiabilidad y vida de un equipo}{401}{section.30.2}%
+\contentsline {section}{\numberline {30.3}Causas del deterioro o desgaste}{402}{section.30.3}%
+\contentsline {section}{\numberline {30.4}La relación del mantenimiento y la organización}{405}{section.30.4}%
+\contentsline {section}{\numberline {30.5}Distribución Normal}{406}{section.30.5}%
+\contentsline {section}{\numberline {30.6}Función Gamma}{409}{section.30.6}%
+\contentsline {section}{\numberline {30.7}Función Q}{414}{section.30.7}%
+\contentsline {section}{\numberline {30.8}Gestión y calidad en la ingeniería de mantenimiento}{422}{section.30.8}%
+\contentsline {subsection}{\numberline {30.8.1}¿Por qué se debe gestionar el mantenimiento?}{422}{subsection.30.8.1}%
+\contentsline {subsection}{\numberline {30.8.2}Calidad y mantenimiento}{423}{subsection.30.8.2}%
+\contentsline {subsection}{\numberline {30.8.3}Programa de mantenimiento}{423}{subsection.30.8.3}%
+\contentsline {subsection}{\numberline {30.8.4}Análisis de la criticidad}{423}{subsection.30.8.4}%
+\contentsline {subsubsection}{\numberline {30.8.4.1}Determinar el grado de criticidad}{424}{subsubsection.30.8.4.1}%
+\contentsline {subsection}{\numberline {30.8.5}Análisis de modos y efectos de fallos}{424}{subsection.30.8.5}%
+\contentsline {subsection}{\numberline {30.8.6}Definición de modo, causa y efecto de fallo}{425}{subsection.30.8.6}%
+\contentsline {subsubsection}{\numberline {30.8.6.1}Modo de fallo}{425}{subsubsection.30.8.6.1}%
+\contentsline {subsubsection}{\numberline {30.8.6.2}Causa de fallo}{425}{subsubsection.30.8.6.2}%
+\contentsline {subsubsection}{\numberline {30.8.6.3}Efecto de fallo}{425}{subsubsection.30.8.6.3}%
+\contentsline {subsection}{\numberline {30.8.7}Confiabilidad de un sistema}{425}{subsection.30.8.7}%
+\contentsline {subsubsection}{\numberline {30.8.7.1}Confiabilidad de un sistema}{425}{subsubsection.30.8.7.1}%
+\contentsline {subsubsection}{\numberline {30.8.7.2}Confiabilidad de un sistema en paralelo}{426}{subsubsection.30.8.7.2}%
+\contentsline {subsubsection}{\numberline {30.8.7.3}Confiabilidad de un sistema mixto}{427}{subsubsection.30.8.7.3}%
+\contentsline {subsection}{\numberline {30.8.8}Mantenibilidad de un sistema}{427}{subsection.30.8.8}%
+\contentsline {subsection}{\numberline {30.8.9}Disponibilidad de un sistema}{427}{subsection.30.8.9}%
+\contentsline {part}{\numberline {XII}Inglés}{429}{part.12}%
+\contentsline {chapter}{\numberline {31}English notes}{430}{chapter.31}%
+\contentsline {section}{\numberline {31.1}\textit {a/an}, \textit {the} and no-article}{430}{section.31.1}%
+\contentsline {section}{\numberline {31.2}When use \textit {the}?}{430}{section.31.2}%
+\contentsline {section}{\numberline {31.3}Use of \textit {Would}}{431}{section.31.3}%
+\contentsline {section}{\numberline {31.4}How to use \textit {rather}?}{431}{section.31.4}%
+\contentsline {section}{\numberline {31.5}Future form}{432}{section.31.5}%
+\contentsline {subsection}{\numberline {31.5.1}Present continuous}{432}{subsection.31.5.1}%
+\contentsline {subsection}{\numberline {31.5.2}be going to + infinitive}{432}{subsection.31.5.2}%
+\contentsline {subsection}{\numberline {31.5.3}will + infinitive}{432}{subsection.31.5.3}%
+\contentsline {section}{\numberline {31.6}Preset Perfect}{433}{section.31.6}%
+\contentsline {part}{\numberline {XIII}Extras}{435}{part.13}%
+\contentsline {chapter}{\numberline {32}Logaritmos y exponenciales}{436}{chapter.32}%
+\contentsline {section}{\numberline {32.1}Propiedades}{436}{section.32.1}%
+\contentsline {chapter}{\numberline {33}Matrices}{437}{chapter.33}%
+\contentsline {section}{\numberline {33.1}Conformabilidad de matrices}{437}{section.33.1}%
+\contentsline {chapter}{\numberline {34}Integrales}{438}{chapter.34}%
+\contentsline {section}{\numberline {34.1}Integral por tabulación}{438}{section.34.1}%
+\contentsline {chapter}{\numberline {35}Producto cruz y producto escalar}{439}{chapter.35}%
+\contentsline {section}{\numberline {35.1}Producto escalar}{439}{section.35.1}%
+\contentsline {section}{\numberline {35.2}Producto cruz}{439}{section.35.2}%
+\contentsline {section}{\numberline {35.3}Propiedades}{440}{section.35.3}%
+\contentsline {section}{\numberline {35.4}Ángulo de desfase}{440}{section.35.4}%
+\contentsline {part}{\numberline {XIV}Anexos}{441}{part.14}%
+\contentsline {section}{\numberline {35.5}Ejercicios resueltos U2-Sistemas de telefonía}{442}{section.35.5}%
+\contentsline {section}{\numberline {35.6}Ejercicios resueltos U2-Sistemas de telefonía}{443}{section.35.6}%
+\contentsline {section}{\numberline {35.7}Ejercicios resueltos U2-Sistemas de telefonía}{444}{section.35.7}%
+\contentsline {section}{\numberline {35.8}Ejercicios resueltos U2-Sistemas de telefonía 2 }{445}{section.35.8}%
+\contentsline {section}{\numberline {35.9}Ejercicios resueltos U2-Sistemas de telefonía 2 }{446}{section.35.9}%
+\contentsline {section}{\numberline {35.10}Ejercicios resueltos U2-Sistemas de telefonía 2 }{447}{section.35.10}%
+\contentsline {section}{\numberline {35.11}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{448}{section.35.11}%
+\contentsline {section}{\numberline {35.12}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{449}{section.35.12}%
+\contentsline {section}{\numberline {35.13}Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}{450}{section.35.13}%
+\contentsline {section}{\numberline {35.14}Ejercicios resueltos U2-Erlang B}{451}{section.35.14}%
+\contentsline {section}{\numberline {35.15}Ejercicios resueltos U2-Erlang B}{452}{section.35.15}%
+\contentsline {section}{\numberline {35.16}Ejercicios resueltos U2-Erlang B}{453}{section.35.16}%
+\contentsline {section}{\numberline {35.17}Ejericios de la ley de Gauss}{454}{section.35.17}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{459}{chapter*.364}%
+\contentsline {section}{Articles}{459}{chapter*.364}%
+\contentsline {section}{Books}{459}{chapter*.364}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{461}{section*.365}%
 \contentsfinish 

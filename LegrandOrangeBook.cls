@@ -70,6 +70,8 @@
 \renewcommand*\ttdefault{pcr}
 \let\ipAddress\texttt
 \newcommand{\basedec}[1]{\times 10^{#1}}
+\newcommand{\fase}[2]{#1\phase{#2^{\circ}}}
+\newcommand{\faserad}[2]{#1\phase{#2 rad}}
 \input{arduinoLanguage.tex}
 \input{risc-v.tex}
 \usepackage{pythonhighlight}

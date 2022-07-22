@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  19 JUL 2022 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  21 JUL 2022 12:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -989,11 +989,11 @@ rs
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 149.
+less on input line 151.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 153.
+less on input line 155.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
@@ -1443,11 +1443,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip101
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 562.
+Package hyperref Info: Option `colorlinks' set `true' on input line 564.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 562.
+(hyperref)                setting the option has no effect on input line 564.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1875,12 +1875,17 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'fastmain.bbl' found.
  (fastmain.bbl)
+
+Package biblatex Warning: citation 'velalineas1999'
+(biblatex)                was not found at all in the .bbl file,
+(biblatex)                bibliography labels cannot be generated,
+(biblatex)                please correct the citation.
+
 Package biblatex Info: Reference section=0 on input line 18.
 Package biblatex Info: Reference segment=0 on input line 18.
 Package hyperref Info: Link coloring ON on input line 18.
 LaTeX Font Info:    Trying to load font information for T1+pag on input line 23
 .
-
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
@@ -1892,13 +1897,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 23.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 25.
-
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 26.
+ 24.
+
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1907,35 +1908,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 26.
+ 24.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 26.
+ 24.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 26.
+ 24.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-6.
+4.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 26.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1943,24 +1944,23 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-
-LaTeX Warning: Reference `subsec:DEL' on page 1 undefined on input line 40.
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-2.
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<Images//LT/LT1.png, id=7, 534.66417pt x 283.72667pt>
-File: Images//LT/LT1.png Graphic file (type png)
-<use Images//LT/LT1.png>
-Package pdftex.def Info: Images//LT/LT1.png  used on input line 73.
-(pdftex.def)             Requested size: 341.43437pt x 181.18613pt.
-<Images//LT/LT2.png, id=9, 563.01772pt x 282.88542pt>
-File: Images//LT/LT2.png Graphic file (type png)
-<use Images//LT/LT2.png>
-Package pdftex.def Info: Images//LT/LT2.png  used on input line 74.
-(pdftex.def)             Requested size: 341.43437pt x 171.55411pt.
+<Images//IN1/IN75.png, id=6, 670.00313pt x 142.28156pt>
+File: Images//IN1/IN75.png Graphic file (type png)
+<use Images//IN1/IN75.png>
+Package pdftex.def Info: Images//IN1/IN75.png  used on input line 31.
+(pdftex.def)             Requested size: 341.43437pt x 72.50618pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 34.
+<Images//IN1/IN76.png, id=8, 487.06969pt x 268.75406pt>
+File: Images//IN1/IN76.png Graphic file (type png)
+<use Images//IN1/IN76.png>
+Package pdftex.def Info: Images//IN1/IN76.png  used on input line 37.
+(pdftex.def)             Requested size: 341.43437pt x 188.39722pt.
+<Images//IN1/IN77.png, id=9, 494.59781pt x 201.00093pt>
+File: Images//IN1/IN77.png Graphic file (type png)
+<use Images//IN1/IN77.png>
+Package pdftex.def Info: Images//IN1/IN77.png  used on input line 43.
+(pdftex.def)             Requested size: 426.79135pt x 173.44322pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1972,44 +1972,7 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
-1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.81 ...n{Métodos para control de la congestión}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
-2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.81 ...n{Métodos para control de la congestión}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
-1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.81 ...n{Métodos para control de la congestión}
-                                                  
-pdfTeX warning (ext4): destination with the same identifier (name{equation.0.1.
-2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.81 ...n{Métodos para control de la congestión}
-                                                  ]
-<Images//IN1/IN75.png, id=31, 670.00313pt x 142.28156pt>
-File: Images//IN1/IN75.png Graphic file (type png)
-<use Images//IN1/IN75.png>
-Package pdftex.def Info: Images//IN1/IN75.png  used on input line 84.
-(pdftex.def)             Requested size: 341.43437pt x 72.50618pt.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 87.
-<Images//IN1/IN76.png, id=32, 487.06969pt x 268.75406pt>
-File: Images//IN1/IN76.png Graphic file (type png)
-<use Images//IN1/IN76.png>
-Package pdftex.def Info: Images//IN1/IN76.png  used on input line 90.
-(pdftex.def)             Requested size: 341.43437pt x 188.39722pt.
-
+ <./Images//IN1/IN75.png> <./Images//IN1/IN76.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2018,103 +1981,41 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[2 <./Images//LT/LT1.png> <./Images//LT/LT2.png> <./Images//IN1/IN75.png>]
-<Images//IN1/IN77.png, id=46, 494.59781pt x 201.00093pt>
-File: Images//IN1/IN77.png Graphic file (type png)
-<use Images//IN1/IN77.png>
-Package pdftex.def Info: Images//IN1/IN77.png  used on input line 96.
-(pdftex.def)             Requested size: 426.79135pt x 173.44322pt.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[3 <./Images//IN1/IN76.png> <./Images//IN1/IN77.png>]
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[4]
-\c@ttl@toc@part=\count551
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <220> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 111.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 111.
- (fastmain.ptc) [5
-
-]
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[6]
-Chapter 1.
-
-
-pdfTeX warning: pdflatex (file ./Images//chapter_head_Elec.pdf): PDF inclusion:
- found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_Elec.pdf, id=74, 598.75887pt x 299.55342pt>
-File: Images//chapter_head_Elec.pdf Graphic file (type pdf)
-<use Images//chapter_head_Elec.pdf>
-Package pdftex.def Info: Images//chapter_head_Elec.pdf  used on input line 117.
-
-(pdftex.def)             Requested size: 597.50787pt x 298.93105pt.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 117.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 117.
-\tf@ptc=\write6
-\openout6 = `fastmain.ptc'.
-
-[7
-
- <./Images//chapter_head_Elec.pdf>] (fastmain.aux)
+[2 <./Images//IN1/IN77.png>] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                fastmain
+(biblatex)                and rerun LaTeX afterwards.
 
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53861 strings out of 478354
- 1207496 string characters out of 2837590
- 2143544 words of memory out of 3000000
- 71164 multiletter control sequences out of 15000+600000
- 559116 words of font info for 238 fonts, out of 8000000 for 9000
+ 53471 strings out of 478354
+ 1201090 string characters out of 2837590
+ 2126693 words of memory out of 3000000
+ 70938 multiletter control sequences out of 15000+600000
+ 503771 words of font info for 119 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,16n,108p,1155b,970s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,13n,108p,1238b,892s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
-Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
-pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
-/avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/u
-rw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
-/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on fastmain.pdf (7 pages, 564458 bytes).
+Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
+fb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a
+.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk
+8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr
+.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.
+pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.p
+fb>
+Output written on fastmain.pdf (2 pages, 154800 bytes).
 PDF statistics:
- 153 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 101467 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 79 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 38460 words of extra memory for PDF output out of 42996 (max. 10000000)
 
