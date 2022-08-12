@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  21 JUL 2022 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.6.25)  8 AUG 2022 19:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1875,30 +1875,30 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'fastmain.bbl' found.
  (fastmain.bbl)
-
-Package biblatex Warning: citation 'velalineas1999'
-(biblatex)                was not found at all in the .bbl file,
-(biblatex)                bibliography labels cannot be generated,
-(biblatex)                please correct the citation.
-
 Package biblatex Info: Reference section=0 on input line 18.
 Package biblatex Info: Reference segment=0 on input line 18.
 Package hyperref Info: Link coloring ON on input line 18.
-LaTeX Font Info:    Trying to load font information for T1+pag on input line 23
+LaTeX Font Info:    Trying to load font information for T1+pag on input line 57
 .
+
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 23.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 57.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pag' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 23.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 57.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 58.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 58.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 24.
+ 59.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1908,35 +1908,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 24.
+ 59.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 24.
+ 59.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 24.
+ 59.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-4.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+9.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1944,23 +1944,23 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-<Images//IN1/IN75.png, id=6, 670.00313pt x 142.28156pt>
-File: Images//IN1/IN75.png Graphic file (type png)
-<use Images//IN1/IN75.png>
-Package pdftex.def Info: Images//IN1/IN75.png  used on input line 31.
-(pdftex.def)             Requested size: 341.43437pt x 72.50618pt.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 34.
-<Images//IN1/IN76.png, id=8, 487.06969pt x 268.75406pt>
-File: Images//IN1/IN76.png Graphic file (type png)
-<use Images//IN1/IN76.png>
-Package pdftex.def Info: Images//IN1/IN76.png  used on input line 37.
-(pdftex.def)             Requested size: 341.43437pt x 188.39722pt.
-<Images//IN1/IN77.png, id=9, 494.59781pt x 201.00093pt>
-File: Images//IN1/IN77.png Graphic file (type png)
-<use Images//IN1/IN77.png>
-Package pdftex.def Info: Images//IN1/IN77.png  used on input line 43.
-(pdftex.def)             Requested size: 426.79135pt x 173.44322pt.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
+2.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+<Images//IM/IM37.png, id=8, 542.025pt x 542.025pt>
+File: Images//IM/IM37.png Graphic file (type png)
+<use Images//IM/IM37.png>
+Package pdftex.def Info: Images//IM/IM37.png  used on input line 104.
+(pdftex.def)             Requested size: 256.07741pt x 256.08334pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1972,7 +1972,20 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
- <./Images//IN1/IN75.png> <./Images//IN1/IN76.png>]
+]
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 107.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 109.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 114.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 119.
+Package mdframed Info: Not enough space on this page on input line 123.
+
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1981,12 +1994,50 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[2 <./Images//IN1/IN77.png>] (fastmain.aux)
+[2 <./Images//IM/IM37.png>]
+Package mdframed Info: Not enough space on this page on input line 123.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 124.
+<Images//IM/IM38.png, id=40, 542.025pt x 542.025pt>
+File: Images//IM/IM38.png Graphic file (type png)
+<use Images//IM/IM38.png>
+Package pdftex.def Info: Images//IM/IM38.png  used on input line 131.
+(pdftex.def)             Requested size: 341.43437pt x 341.44447pt.
+
+Overfull \hbox (77.43613pt too wide) in paragraph at lines 137--147
+ [] 
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 152.
+
+
+Overfull \hbox (151.51093pt too wide) in paragraph at lines 154--162
+ [] 
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[3 <./Images//IM/IM38.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[4] (fastmain.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1998,24 +2049,28 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 53471 strings out of 478354
- 1201090 string characters out of 2837590
- 2126693 words of memory out of 3000000
- 70938 multiletter control sequences out of 15000+600000
- 503771 words of font info for 119 fonts, out of 8000000 for 9000
+ 53665 strings out of 478354
+ 1203516 string characters out of 2837590
+ 2146381 words of memory out of 3000000
+ 71024 multiletter control sequences out of 15000+600000
+ 541477 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,13n,108p,1238b,892s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,16n,108p,1155b,1077s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
-Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
-fb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a
-.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk
-8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr
-.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.
-pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.p
-fb>
-Output written on fastmain.pdf (2 pages, 154800 bytes).
+Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
+pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/urw/avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fon
+ts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts
+/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/
+type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on fastmain.pdf (4 pages, 150986 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 10 named destinations out of 1000 (max. 500000)
- 38460 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 109 PDF objects out of 1000 (max. 8388607)
+ 22 named destinations out of 1000 (max. 500000)
+ 76831 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -439,7 +439,7 @@ $v(t)=\frac{1}{C}\int idt$ & $\mathbb{V}=\frac{\mathbb{I}}{\iu\omega C}$ \\ \hli
 \end{center}
 \caption{Resumen de relaciones fasoriales}
 \end{table}
-\section{Impedancia}\label{Impedancia}
+\section{Impedancia}\label{sec:Impedancia}
 Las relaciones de tensión-corriente para los 3 elementos pasivos en el dominio de la frecuencia son:
 \begin{equation*}
 \mathbb{V}=\mathbb{R}\mathbb{I}
@@ -480,7 +480,7 @@ La parte imaginaria es la \textbf{reactancia}, dentro la cual se distinguen 2:
 \begin{displaymath}
 X=\Im[Z]
 \end{displaymath}
-Si X es \textbf{positivo} se llama \textbf{inductancia}, si es negativo se llama \textbf{capacitancia}.
+Si X es \textbf{positivo} se llama \textbf{reactancia inductiva}, si es \textbf{negativo} se llama \textbf{reactancia capacitiva}.
 \begin{remark}
 En C.A. la impedancia tiene un papel análogo a la resistencia en C.C.
 \end{remark}
@@ -521,6 +521,19 @@ La parte imaginaria de la admitancia se llama \textbf{suceptancia}:
 \begin{displaymath}
 B=\Im[\mathbb{Y}]
 \end{displaymath}
+\begin{table}[]
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor[HTML]{CBCEFB} 
+Elemento & Impedancia                & Admintancia               \\ \hline
+R        & $Z=R$                     & $Y=\frac{1}{R}$           \\ \hline
+L        & $Z=\iu\omega L$           & $Y=\frac{1}{\iu\omega L}=-\iu\omega L$ \\ \hline
+C        & $Z=\frac{1}{\iu\omega C}=-\iu\omega C$ & $Y=\iu\omega C$           \\ \hline
+\end{tabular}
+\end{center}
+\caption{Impedancias y Admitancias.}
+\end{table}
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
@@ -3519,7 +3532,7 @@ Debemos cambiar algunas cosas en nuestro programa:
 \end{description}
 Las lineas de \textbf{byte}(\textit{Lineas 6-7}) son dos variables que van contar el número de intentos en los que va tratar de conectarse a la red, esta inicializada en 0 y el límite es 50 intentos. Ademas el programa tiene algunos mensajes para mostrarse en el display, como no poseemos ni un display por el momento usaremos una función del mismo IDE de arduino llamado \textbf{Monitor serie}. Tenemos que tener el \textit{monitor serie}\footnote{En el monitor serie asegurate de tener seleccionada: sin ajuste de linea y tener seleccionada la cantidad correcta de baudios, que coincida con el definido en el programa} abierto antes de correr el programa, puesto que el código nos mostrará información acerca del estado de la placa.
 \begin{figure}[ht]
-\centering\includegraphics[scale=0.5]{SmartCities/sm2.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/sm2.png}
 \caption{Ubicación del Monitor serie}
 \label{fig:Monitor serie}
 \end{figure}
@@ -3600,7 +3613,7 @@ Para crear esto utilizaremos el lenguaje HTML, hay varias formas pero esta es la
 \end{lstlisting}
 Cuando lo hemos copiado, damos click derecho en cualquiera parte del editor y le damos en \textit{Dar formato al texto} como en la figura \ref{fig:VSformato}:
 \begin{figure}[h]
-\centering\includegraphics[scale=0.6]{SmartCities/SM3.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM3.png}
 \caption{Dar formato al texto}
 \label{fig:VSformato}
 \end{figure}
@@ -3623,7 +3636,7 @@ Nos dará nuestra IP y lo copiamos en nuestro navegador, por ejemplo: nuestra IP
 \end{figure}
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.3]{SmartCities/SM6.png}
+\includegraphics[width=\linewidth]{SmartCities/SM6.png}
 \caption{Diagrama de la conexión leds}
 \label{espleds1}
 \end{figure}
@@ -3659,7 +3672,7 @@ void loop() {
 \end{lstlisting}
 Y implementamos el circuito de la figura \ref{fig:readanalog potenciometer}:
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM28.png}
+\centering\includegraphics[width=0.8\linewidth]{SmartCities/SM28.png}
 \caption{Diagrama de la conexión para el potenciómetro(presta mucha atención)}
 \label{fig:readanalog potenciometer}
 \end{figure}
@@ -3672,7 +3685,7 @@ Luego de ingresar al Serial Plotter podremos ver el estado de la resistencia de 
 \end{figure}
 Los pines de entrada analógica permiten leer valores analógicos que se convertirán en valores dentro del rango de 0-1024(Image\ref{fig:SerialPlotter}), (2 elevado a la 10). Se trata de una conversión analógica digital de 10 bits de resolución, donde le menor valor es: \textbf{0000000000} y el máximo valor es \textbf{1111111111} ademas las señales analógicas no deben superar los 5V.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM10.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM10.png}
 \caption{Serial Plotter}
 \label{fig:SerialPlotter}
 \end{figure}
@@ -3680,7 +3693,7 @@ Los pines de entrada analógica permiten leer valores analógicos que se convert
 \section{Proyecto explicativo 1}\index{Proyecto explicativo 1}
 Ahora analizaremos un proyecto acerca de bases de dato, IoT y servidores locales. Antes de todo necesitamos tener instalado en nuestro computador \textbf{Xammp}, para ello no vamos a su pagina oficial y los descargamos. Una vez instalado, lo abrimos y nos aparecerá una ventana como esta(figura \ref{fig:xammpmain}).\\
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM11.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM11.png}
 \caption{Xammp interfaz de server}
 \label{fig:xammpmain}
 \end{figure}
@@ -3699,7 +3712,7 @@ Descargamos el archivo rar\footnote{ \url{https://www.dropbox.com/s/hvxl74ye9pk1
 \end{figure}
 Abrimos el archivo que esta ubicado en \textit{6.Proyecto explicativo 1>Terminal>wifi\_get>wifi\_get.ino}, cambiamos nuestras credenciales de la red wifi. Ahora necesitamos nuestra IP para conectarnos a la red. Para ello vamos abrir nuestro CMD(windows + R, escribimos \textit{cmd} y enter), cuando abra escribimos \textbf{ipconfig} y buscamos \textbf{Direccion IPv4}(figura \ref{fig:ipcmd}) del adaptador de red, es dirección la pegamos en la linea 44 reemplazando a la anterior(figura \ref{fig:linea44}).
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM13.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM13.png}
 \caption{IP desde el CMD}
 \label{fig:ipcmd}
 \end{figure}
@@ -3707,18 +3720,18 @@ Volvemos al IDE de arduino y nos vamos a la linea 44, revisamos que tenga el sig
 Nos vamos a \textit{C>xampp>htdocs}, y creamos la carpeta \textbf{practica1}, entramos en la carpeta y pegamos \textbf{api\_get.php} ubicada en \textbf{6.Proyecto explicativo1>web>api\_get.php}\\
 Corremos el programa y entramos a la dirección URL de la linea 44(toda la URL)(figura \ref{fig:linea44}) y lo ponemos en nuestro navegador.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM14.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM14.png}
 \caption{Atento con la linea 44}
 \label{fig:linea44}
 \end{figure}
 Si abrimos el archivo \textit{api\_get.php} con VScode o sublime text podemos editar la respuesta de la API.(figura \ref{fig:apiedi})
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM17.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM17.png}
 \caption{Editar respuesta de la API}
 \label{fig:apiedi}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM16.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM16.png}
 \caption{Resultado final Parte 1}
 \label{fig:finpart1}
 \end{figure}
@@ -3731,7 +3744,7 @@ La diferencia está en como obtiene los datos, en la parte 1 lo mandamos a trav�
 \label{fig:lin44ip}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM18.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM18.png}
 \caption{Usuario monitor series}
 \label{fig:usermonser}
 \end{figure}
@@ -3739,7 +3752,7 @@ La diferencia está en como obtiene los datos, en la parte 1 lo mandamos a trav�
 \textbf{Importante: \textit{Realizar primero la sección "Sensor de temperatura y humedad DHT11''}}.\\
 Para la parte 3 tenemos que abrir el sql, para ello en el administrador de servidores ponemos \textit{\textbf{admin}}(figura \ref{fig:sqlmain}). 
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM19.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM19.png}
 \caption{Localizar MySQL}
 \label{fig:sqlmain}
 \end{figure}
@@ -3750,32 +3763,32 @@ Creamos una base de datos, nos dirigimos a Nueva(figura \ref{fig:localhostmain})
 \label{fig:befsql}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM21.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM21.png}
 \caption{Seleccionar un archivo sql}
 \label{fig:selectsql}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM22.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM22.png}
 \caption{Creando una base de datos}
 \label{fig:localhostmain}
 \end{figure}
 De la carpeta del proyecto copiamos \textit{\textbf{recibe\_data.php}} a la carpeta del servidor. Lo abrimos, y modificamos el \textit{\textbf{dbname}} que por defecto esta en \textit{\textit{schema}}, le ponemos el nombre de nuestra carpeta(practica1 en nuestro caso(figura \ref{fig:changescheme}) y guardamos.\\
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM23.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM23.png}
 \caption{Cambiar Scheme}
 \label{fig:changescheme}
 \end{figure}
 Ahora abrimos el programa \textbf{Send\_Data\_MySQL.ino} y modificamos lo mismo que los anteriores(credenciales, nuestra IP, carpeta del servidor(linea del comentario \textit{Indicamos el destino-Modificar} debe parecido a esto pero con tus datos: \textit{\url{http.begin(wifiClient,"http://192.168.0.104/practica1/recibe_data.php");}}))\\
 Nos fijamos bien en la conexión de los puertos del sensor de temperatura y humedad(\textbf{La instalación de este sensor se detalla más adelante}). Una vez que tenemos todo listo, corremos el programa y nos vamos a nuestro servidor, nos dirigimos a \textbf{practica 1>sensor data} y veremos(figura\ref{fig:localhostdata}) que los datos se registrarán en nuestro servidor local.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM24.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM24.png}
 \caption{Datos en la nube local}
 \label{fig:localhostdata}
 \end{figure}
 \section{Sensor de temperatura y humedad DHT11}\index{Sensor de temperatura y humedad DHT11}
 Instalamos las librerias desde la IDE de arduino, para eso vamos a \textbf{\textit{Programa>Incluir Libreria>Administrar bibliotecas}} y buscamos DHT11(figura \ref{fig:dht11lib}), uno hecho por Adafruit.\\
 \begin{figure}[H]
-\centering\includegraphics[scale=0.6]{SmartCities/SM25.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM25.png}
 \caption{Librerías del DHT11}
 \label{fig:dht11lib}
 \end{figure}
@@ -3804,20 +3817,20 @@ Para este proyecto necesitaremos instalar algunas cosas, por ahora tenemos que i
 Descargamos el paquete de instalación de \url{https://nodejs.org/en/}, la que tu quieras pero preferible la más estable, en mi caso yo trabajaré con la 16.13.0 LTS. Abriremos el archivo \textit{.msi} y lo ejecutamos, aceptamos todo e instalamos. Una vez finalizada abrimos nuestra ventana de comandos\footnote{windows+R, escribimos cmd y presioamos enter}, dentro del CMD\footnote{para powershell escribes: node --version; npm --version} escribimos: \textbf{node --version \&\& npm --version} y presionas enter, esperas y te debe dar las versiones que actualmente tienes en tu PC(figura \ref{fig:noderedversion}).\\
 Si llegamos aqui sin problemas tenemos el node.js instalado perfectamente.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM29.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM29.png}
 \caption{Versión Node red}
 \label{fig:noderedversion}
 \end{figure}
 Luego de ello, sin salir del CMD abierto escribimos: \textbf{npm install -g --unsafe-perm node-red}, con esto instalaremos Node red en nuestra computadora. Esperamos a que instale.\\
 Cuando ya se haya instalado cerramos el CMD y lo volvemos a abrir, para correr el node red escribimos el siguiente comando: node-red\footnote{De no correr, prueba subir de directorio hasta el C:/, para subir tienes que escribir le siguiente comando: \textbf{cd..}}, esperamos a que se lance el programa. Una vez lanzado, buscamos la linea donde nos dice en que dirección esta corriendo el server(figura \ref{fig:serverrunning}) y entramos a esa dirección desde nuestro navegador.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM30.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM30.png}
 \caption{Localizar el servidor actual de Node red}
 \label{fig:serverrunning}
 \end{figure}
 Aprovechando que estamos dentro de la interfaz del Node red, instalaremos algunas paletas que nos serán utiles. Para instalar paletas vamos a las tres barras horizontales de la esquina superior derecha > Manage palettes > install; y buscamos \textit{node-red-contrib-ibm-watson-iot}, \textit{node-red-dashboard}. Por ahora debemos tener 4 palettes instaladas(figura \ref{fig:updatepalettes}).
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM31.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM31.png}
 \caption{Paletas necesarias en node red}
 \label{fig:updatepalettes}
 \end{figure}
@@ -3827,46 +3840,46 @@ Para la instalación de mosquitto, descagamos el instalador desde \url{https://m
 Una vez instalado cerramos todo y abrimos el CMD, tenemos que irnos hacia donde hemos instalado el Mosquitto. En la mayoria de casos cuando abres el CMD estarás en la ruta: \textbf{\textit{C:$\backslash$user$\backslash$User}}, para ir donde a la carpeta donde esta instalado Mosquitto, tenemos que subir hasta el disco C y bajar. Tipeamos el comando \textit{cd..} pasa subir un nivel, ahora nos encontramos en \textit{\textbf{C:$\backslash$user}}, tipeamos el comando una vez más y nos encotramos en \textit{C:}.\\
 Ahora que estamos en el disco C, nos dijimos a donde hemos instalado el mosquitto(en mi caso: C>Archivos de programa>mosquitto) usando el comando \textit{dir}. Entonces tipeamos el comando: dir y presionamos enter, podremos ver los archivos en esa carpeta, en mi caso esta la carpeta \textbf{Program Files}, por lo que escribimos: cd Program Files\footnote{puedes escribir solo cd pro y apretar tab las veces que sea necesaria para que windows lo autocomplete} y damos enter, ahora usando de nuevo el comando \textit{dir} para ver si efectivamente esta la carpeta mosquitto. Si no esta sube de nivel y sigue buscando, si esta usa el comando \textit{cd mosquitto} y con esto estamos dentro de la carpeta mosquitto. Para asegurarnos que estamos en la carpeta correcta escribimos el comando \textbf{\textit{mosquitto -v}}(figura \ref{fig:mosquittov}).
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM32.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM32.png}
 \caption{Ver la versión de mosquitto}
 \label{fig:mosquittov}
 \end{figure}
 Dejamos todo por un momento, vamos a la ubicación donde hemos instalado el mosquitto mediante nuestro explorador de archivos, y dentro de la carpeta donde hemos instalado mosquitto buscamos el archivo \textbf{mosquitto.conf} y lo abrimos con VScode o Sublime Text; tenemos que configurar, porque si no te diste cuenta, en la figura \ref{fig:mosquittov} nos dice que las conexiones solo serán posibles para clientes DENTRO de esta maquina; pero obviamente nuestra ESP8266 no esta dentro de la maquina, es por ello que editamos este archivo de configuración. 
 Entonce añadimos las dos primeras lineas de la figura \ref{fig:mosquittoconf} y guardamos, si nos dice error al guardar en VScode, nos da opciones, escogemos guardar como administrador, esperamos y aceptamos la solicitud que nos pedirá.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM33.png}
-\caption{Editando archivo de configuración}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM33.png}
+\caption{Editando archivo de configuración. Solo colocar las líneas 1 y 2 sin la parte \textit{\# añadimos esta linea}}
 \label{fig:mosquittoconf}
 \end{figure}
 Cerramos el explorador de archivos y volvemos al CMD de mosquitto. Presionamos ctrl+c para detener mosquitto y ahora usando el comando \textbf{\textit{ mosquitto -c mosquitto.conf -v}} hacemos que mosquitto inicie usando el archivo de configuración que acabamos de modificar.\\
-En este punto realmente ver es siguiente lista de reproducción \url{https://youtube.com/playlist?list=PLcmn4IteQPYrMOJO6rCerzIcbaGYdUPz6}\\
+En este punto realmente es recomendable ver la siguiente lista de reproducción \url{https://youtube.com/playlist?list=PLcmn4IteQPYrMOJO6rCerzIcbaGYdUPz6}\\
 Para los trabajos de aquí en adelante, antes de programar tenemos que tener corriendo al mismo tiempo Node Red como Mosquitto como ya hemos visto en estos dos pasos.
 \subsubsection{Conexión de Mosquitto a Node red desde ESP8266}
 Antes de todo, tenemos que saber nuestra IP de nuestro adaptador sea de Ethernet o Wifi, para ello abrimos una consola de CMD y escribimos el comando: \textbf{\textit{ipconfig /all}}, y uso mediante red inalambrica, por eso busco mi IP(figura \ref{fig:IPlocal}) de ese adaptador, anótate esa dirección IP porque será importante.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM34.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM34.png}
 \caption{IP de nuestro computador}
 \label{fig:IPlocal}
 \end{figure}
 Una vez hemos puesto a correr Mosquitto y Node Red(se tienen que ejecutar desde CMD independientes) nos vamos a Node red y buscamos en las paletas del lateral izquierdo el Nodo \textbf{mqtt in} y lo arrastramos a nuestro entorno de trabajo, le damos doble click y lo configuramos como la figura \ref{fig:configmqttin}, en server que dice \textit{Add new mqtt-broker}, damos click al icono de lapiz de su derecha y lo configuramos como la figura \ref{fig:mqttconfignodered}.
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM35.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM35.png}
 \caption{Configuración de mqtt in}
 \label{fig:configmqttin}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM36.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM36.png}
 \caption{Server es nuestro IP y port es 1880 u 1883. No esta de más ver las IP de nuestro ordenador con \textbf{\textit{netstat -an}} Una vez que lo termines de crear, selecciona este broker siempre en el apartado server de la figura \ref{fig:configmqttin}}
 \label{fig:mqttconfignodered}
 \end{figure}
 Ahora, al nodo de \textit{mqtt in} le añadimos los siguientes nodos(ver figura \ref{fig:configchange} y figura \ref{fig:configdebug}):
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM37.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM37.png}
 \caption{Configuración nodo \textit{change}}
 \label{fig:configchange}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM38.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM38.png}
 \caption{Configuración del nodo \textit{debug}}
 \label{fig:configdebug}
 \end{figure}
@@ -3893,7 +3906,7 @@ Se tiene que deplegar el circuito de la figura \ref{fig:circuitopb}
 \label{fig:circuitopb}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.1]{SmartCities/SM77.jpg}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM77.jpg}
 \caption{Circuito terminado-Vista trasera}
 \end{figure}
 \begin{figure}[H]
@@ -3911,12 +3924,12 @@ Entramos en \textit{localhost:/phpmyadmin}, y crearemos 3 bases de datos: para e
 \subsubsection{Base de datos: GPS}
 Crearemos la base de datos en base a los siguientes parámetros:\\
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM39.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM39.png}
 \caption{Creación de la database}
 \label{fig:creaciongpsdb}
 \end{figure}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM40.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM40.png}
 \caption{Creación de la tabla dentro del database}
 \label{fig:listagps}
 \end{figure}
@@ -3933,31 +3946,33 @@ Resumiendo los pasos mostrados en las imágenes\footnote{Los datos de las imáge
 \item time: Tipo timestamp, predeterminado CURRENT\_ TIMESTAMP
 \end{enumerate}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM42.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM42.png}
 \caption{Resumen de la creación del database: GPS}
 \label{fig:summarygps}
 \end{figure}
 \subsubsection{Base de datos: Usuarios}
 Para la base de datos, tenemos que nombrar a nuestra base: \textbf{php\_login\_database}, y dentro de ella crear una tabla llamada \textbf{users} con los siguientes parámetros(figura \ref{fig:summaryusuarios})
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM43.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM43.png}
 \caption{Resumen de la creación del database: Usuarios}
 \label{fig:summaryusuarios}
 \end{figure}
 \subsubsection{Base de datos: Estados}
 Nombrada en phpmyadmin como: \textbf{statusbutton}, con una tabla dentro de ella, llamada \textbf{historial}, que debe tener las siguientes columnas(figura \ref{fig:summarystatus}).
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM44.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM44.png}
 \caption{Resumen de la creación del database: Estados}
 \label{fig:summarystatus}
 \end{figure}
+\newpage
 \subsection{Xammp-Htdocs}
 En C>xammp>htdocs tenemos que creamos una carpeta llamada \textbf{panicbuttonserver}, y dentro de ella pegamos nuestros archivos que se encuentran en la carpeta \textit{panicbuttonserver} dentro del repositorio de GITHUB.\footnote{\url{https://github.com/Yasperterian/4rduino}}. Como resultado debe ser como la figura \ref{fig:summaryhtdocs}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM45.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM45.png}
 \caption{Resumen de la creación de la carpeta htdocs.}
 \label{fig:summaryhtdocs}
 \end{figure}
+\newpage
 \subsection{Node-RED}
 En node-red(Windows+R y escribimos node-red y presionamos enter, luego entramos la dirección que nos devuelve en la consola)vamos a configurar dos nodos paralelos:
 \begin{enumerate}
@@ -3974,159 +3989,159 @@ Antes de desplegar los nodos, tenemos que tener instalados los siguientes paquet
 \item node-red-node-ui-table
 \end{itemize}
 \subsubsection{Nodos estados del botón}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM46.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM46.png}
 \caption{Flujo de datos: status button}
 \label{fig:statusbuttontodo}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM47.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM47.png}
 \caption{Nodo: LED status}
 \label{fig:nodoled}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM48.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM48.png}
 \caption{Nodo: Change node(\textit{payload to number})}
 \label{fig:nodochange}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM49.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM49.png}
 \caption{Nodo: function node(\textit{insert values into database})}
 \label{fig:nodofunction1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM50.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM50.png}
 \caption{Nodo: function node(\textit{GET data from database})}
 \label{fig:nodofunction2}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM51.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM51.png}
 \caption{Nodo: switch node(\textit{If payload=1, then send email})}
 \label{fig:nodoswitch1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM52.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM52.png}
 \caption{Nodo: function node(\textit{Evaluate payload to change status})}
 \label{fig:nodofunction3}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM53.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM53.png}
 \caption{Nodo: led node(\textit{LED status})}
 \label{fig:nodoled1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM54.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM54.png}
 \caption{Nodo: mysql node(\textit{Storage values in database})}
 \label{fig:nodomysql1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM55.png}
+\begin{figure}[]
+\centering\includegraphics[width=0.8\linewidth]{SmartCities/SM55.png}
 \caption{Configuración del database: statusbutton}
 \label{fig:nodomysqlprop}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM56.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM56.png}
 \caption{Nodo: mysql node(\textit{Indicate database})}
 \label{fig:nodomysql2}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM57.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM57.png}
 \caption{Nodo: change node(\textit{Set Subject and Body's mail})}
 \label{fig:nodochange2}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM58.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM58.png}
 \caption{Nodo: text node(\textit{E-mail status})}
 \label{fig:nodotext}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM59.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM59.png}
 \caption{Nodo: audio out node(\textit{Audio out})}
 \label{fig:nodotext}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM60.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM60.png}
 \caption{Nodo: email node(\textit{Receiver mail}), el password debe ser del correo desde donde se va enviar el correo.}
 \label{fig:nodomail}
 \end{figure}
+\newpage
 \subsubsection{Nodo coordenadas gps}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM61.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM61.png}
 \caption{Flujo de datos: coordenadas gps}
 \label{fig:statusgpstodo}
 \end{figure}
-\begin{figure}[H]
+\begin{figure}[]
 \centering\includegraphics[scale=0.4]{SmartCities/SM62.png}
 \caption{Nodo: mqtt node(\textit{SGPS Coordinates})}
 \label{fig:nodomqtt1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM63.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM63.png}
 \caption{Mosquitto broker, se necesario para la figura \ref{fig:nodoled}}
 \label{fig:mqttbroker}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM64.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM64.png}
 \caption{Nodo: function node(\textit{Storage coordinates into database})}
 \label{fig:nodofunction4}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM65.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM65.png}
 \caption{Nodo: function node(\textit{Select data from database})}
 \label{fig:nodofunction5}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.4]{SmartCities/SM66.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM66.png}
 \caption{Nodo: worldmap node(\textit{World map dashboard})}
 \label{fig:nodomap1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM67.png}
+\begin{figure}[]
+\centering\includegraphics[width=0.8\linewidth]{SmartCities/SM67.png}
 \caption{Nodo: worldmap node(\textit{World map function})}
 \label{fig:nodomap2}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.45]{SmartCities/SM68.png}
+\begin{figure}[]
+\centering\includegraphics[width=0.8\linewidth]{SmartCities/SM68.png}
 \caption{Nodo: worldmap node propiedades para la figura \ref{fig:nodomap1}}
 \label{fig:nodomap11}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM69.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM69.png}
 \caption{Nodo: worldmap node propiedades para la figura \ref{fig:nodomap2}}
 \label{fig:nodomap21}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM70.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM70.png}
 \caption{Nodo: mysql node(\textit{Indicate database for coordinates})}
 \label{fig:nodomysql3}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM71.png}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM71.png}
 \caption{Nodo: mysql node(\textit{read gps})}
 \label{fig:nodomysql4}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM72.png}
-\caption{Nodo:edit mysql node para gps}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM72.png}
+\caption{Nodo: edit mysql node para gps}
 \label{fig:nodomysql5}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM73.png}
-\caption{Nodo:edit table node para gps}
+\begin{figure}[]
+\centering\includegraphics[width=\linewidth]{SmartCities/SM73.png}
+\caption{Nodo: edit table node para gps}
 \label{fig:nodotable1}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM74.png}
-\caption{Nodo:edit table node para gps. Parte 2}
+\begin{figure}[]
+\centering\includegraphics[width=0.8\linewidth]{SmartCities/SM74.png}
+\caption{Nodo: edit table node para gps. Parte 2}
 \label{fig:nodotable2}
 \end{figure}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM75.png}
+\begin{figure}[]
+\centering\includegraphics[width=0.8\linewidth]{SmartCities/SM75.png}
 \caption{Resultado final de la organización del dashboard.}
 \label{fig:dash}
 \end{figure}
-Igual se deja un archivo JSON llamado \textit{flows.json} en la carpeta del botón de pánico para que lo puedas importar a node-red.
-\newpage
+Igual se deja un archivo JSON llamado \textit{flows.json} en la carpeta \textit{panic button server} para que lo puedas importar a node-red.
 \section{Front-end}\index{Front-end}
 En cuanto al front-end, ya todo esta configurado y listo para usarse. Tan solo hay que copiar los archivos como se dijo en la carpeta htdocs y poder acceder a ellos desde localhost. Se tendrá como pagina principal \textit{http://localhost/panicbuttonserver/}. Se puede usar un editor de texto para poder cambiar textos dentro de cada archivo CSS. Hay algunos apartados que no funcionan como configuración o recuperar cuenta.
 %----------------------------------------------------------------------------------------
@@ -8200,7 +8215,7 @@ Después de un análisis se puede concluir que la ecuación \ref{eq:imp entrada 
 Z_i=Z_0\frac{Z_L+\iu Z_0\tan\beta l}{Z_0+\iu Z_L\tan\beta l}
 \label{eq:imp entrada sin perdidas}
 \end{equation}
-Donde $l$ es la longitud \textbf{total} de la línea.
+Donde $l$ es la longitud \textbf{total} de la línea. Esta ecuación no sólo permite calcular la impedancia de entrada de la línea, sino también la impedancia Z vista en cualquier punto de la línea, sustituyendo en lugar de $l$ la distancia que hay \textbf{entre dicho punto y la carga}
 \end{corollary}
 \subsubsection*{Casos especiales de corto y circuito abierto}
 \begin{itemize}
@@ -8218,12 +8233,84 @@ La impedancia de entrada es puramente reactiva ($\iu X_i$). En cualquiera de los
 \begin{notation}
 Revisar los ejercicios 2-9 y 2-10 del libro \emph{Líneas de transmisión}\cite{velalineas1999}.
 \end{notation}
+\section{Líneas desacoplada y ondas estacionarias}\index{Líneas desacopladas y ondas estacionarias}
+Seguiremos con el estudio con $\alpha=0$ (sin pérdidas) y altas frecuencias. Para esta sección hay que tener en cuentas unas ecuaciones como eq. \ref{eq:imp entrada tanh}, \ref{eq:coef reflex}, \ref{eq:imp carac sin perdidas}, \ref{eq:cons propa sin perdidas} y \ref{eq:imp entrada sin perdidas}. De aquí en adelante se continuará con el estudio suponiendo $\alpha=0$ y se transmite a altas frecuencias.
+\begin{remark}
+Si $\rho=0$, la línea estará \textbf{acoplada}, porque $Z_L=Z_0$. Pero si $\rho\neq 0$, la línea esta desacoplada. El objetivo se in ingeniero en transmisión es lograr que $\rho$ sea la menor posible. Un valor considerable como acoplamiento es $|\rho|\leq 0.2$, en el cual se entrega aproximadamente 96\% de la potencia incidente.
+\end{remark}
+Después de un análisis en el voltaje de la línea de transmisión\footnote{Ver página 101 de \emph{Líneas de transmisión}\cite{velalineas1999}.} se llega a la ecuación del voltaje:
+\begin{equation}
+|V(z)|=A\sqrt{1+2|\rho_v|\cos(2\beta z+\theta)+|\rho_v|^2}
+\label{eq:magnitud de voltaje}
+\end{equation}
+Considerando que $-1\leq\cos(2\beta z+\theta)\leq 1$, los valores extremos de esta función son:
+\begin{align*}
+\intertext{Cuando $\cos(2\beta z+\theta)$=1}\Rightarrow |V(z)|&=A\sqrt{1+2|\rho_v|+|\rho_b|^2}\\
+&=A(1+|\rho_v|)
+\intertext{Cuando $\cos(2\beta z+\theta)$=-1}\Rightarrow |V(z)|&=A\sqrt{1-2|\rho_v|+|\rho_b|^2}\\
+&=A(1-|\rho_v|)
+\end{align*}
+De estas expresiones se desprende la siguiente gráfica:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{LT/LT11.png}
+\caption{Línea desacoplada ($Z_L\neq Z_0$) y su patrón típico de onda de voltaje total (patrón de onda estacionaria)}
+\label{fig:onda estacionaria}
+\end{figure}
+El patrón de la onda total de voltaje es periódico y se denomina \textbf{patrón de onda estacionaria}, pero resulta interesante (y siempre debe recordarse) que su periodo es diferente al de la onda incidente. La onda incidente y la reflejada tienen un periodo de $\beta z$, mientras que la onda total (superposición de las dos ondas anteriores) tiene un periodo de $2\beta z$. Es decir, que si la onda incidente tiene una longitud de onda $\lambda$, entonces la onda estacionaria tendrá
+una longitud de onda $\lambda_e=\lambda/2$.
+Al igual que la ecuación \ref{eq:magnitud de voltaje} se puede demostrar que:
+\begin{equation}
+|I(z)|=\frac{A}{Z_0}\sqrt{1+2|\rho_v|\cos(2\beta z+\theta)+|\rho_v|^2}
+\label{eq:magnitud de corriente}
+\end{equation}
+\begin{definition}[Relación de onda estacionaria (ROE o vSWR\footnote{De \textit{voltage standing-wave ratio}})]
+\begin{equation}
+ROE=VSWR=\frac{V_{max}}{V_{min}}=\frac{1+|\rho_v|}{1-|\rho_v|}
+\label{eq:swr}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\rho_v$: Coeficiente de reflexión en la carga, dada por la ecuación \ref{eq:coef reflex}.
+\end{itemize}
+\end{definition}
+Asimismo con el cociente del voltaje mínimo sobre la corriente mínima (ambos en el mismo punto obviamente), se obtiene la \textbf{impedancia vita} en ese punto \textbf{hacia la carga} (fig. \ref{fig:onda estacionaria}):
+\begin{equation}
+Z|_{V_{max}}=\frac{|V(z)_{max}|}{|I(z)_{min}|}=\frac{A(1+|\rho_v|)}{\frac{A}{Z_0}(1-|\rho_v|)}=Z_0\cdot\frac{1+|\rho_v|}{1-|\rho_v|}=Z_0\cdot VSWR
+\label{eq:imp vol max}
+\end{equation}
+Similarmente, para un punto con voltaje mínimo y corriente máxima:
+\begin{equation}
+Z|_{V_{mix}}=\frac{|V(z)_{min}|}{|I(z)_{max}|}=\frac{A(1-|\rho_v|)}{\frac{A}{Z_0}(1+|\rho_v|)}=Z_0\cdot\frac{1-|\rho_v|}{1+|\rho_v|}=\frac{Z_0}{VSWR}
+\label{eq:imp vol min}
+\end{equation}
+Como $Z_0$ es real, las ecuaciones \ref{eq:imp vol max} y \ref{eq:imp vol min} darán como resultado valores puramente resistivos.\\
+De la ecuación \ref{eq:swr} se puede desprender:
+\begin{equation}
+|\rho_v|=\frac{VSWR-1}{VSWR+1}
+\label{eq:coef reflex func vswr}
+\end{equation}
+En la carga, $z=0, \rho_v(0)=B/A=\rho$:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{LT/LT12.png}
+\caption{Línea desacoplada y lugar geométrico del coefi ciente de reflexión asociado con la onda estacionaria de voltaje. El desplazarse hacia el generador equivale a girar en el sentido de las manecillas del reloj en el plano complejo.}
+\label{fig:plano complejo reflex}
+\end{figure}
 \chapterimage{chapter_head_LT.pdf} % Chapter heading image
 \chapter{Carta de Smith}
 \section{Conociendo la carta de Smith}\index{Conociendo la carta de Smith}
-La carta de Smith es un diagrama polar del coeficiente de reflexión complejo (también llamado Gamma $\rho$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
+La carta de Smith es un diagrama polar del coeficiente de reflexión complejo ($\rho$ o $\Gamma$). Logra mostrar lo que al principio puede parecer una tarea casi imposible: la representación gráfica simultánea de las partes real e imaginaria de una impedancia compleja, donde la parte real R puede variar de 0 a infinito ($\infty$) y la parte imaginaria X puede que abarque menos infinito hasta más infinito; y todo esto lo hace en una sola hoja de papel.\\
 Una carta de Smith simplificada, que muestra sus círculos de resistencia constante y arcos de reactancia constante, es un buen punto de partida para comprender su disposición. Como beneficio adicional, la carta también proporciona una forma de mostrar los parámetros de dispersión (parámetros S) y cómo sus valores se relacionan con las medidas y consideraciones reales del hardware.\\
-Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedancia de 50 $\Omega$, a diferencia de la figura \ref{fig:smith chart}; para solucionar esto solo se escalan los valores, es decir, dividimos cada valor entre 50. Además, recordando en análisis en frecuencia, sabemos que los inductores se diferencian de los capacitores solo por el signo, inductores son positivos y capacitores negativos. Es por ello que se distingue dos flechas verticales: hacia arriba están los positivos (inductancia) y abajo negativos (capacitancia). Cuando la resistencia, capacitancia y inductancia son constantes son circulos, arcos y arcos respectivamente. En las lineas de transmisión se distinguen dos formas de enlazar circuitos: paralelo y serie; estos son representados las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
+Como se ve en la figura \ref{fig:partes smith}, la carta esta para una impedancia de 50 $\Omega$, a diferencia de la figura \ref{fig:smith chart}; para solucionar esto se divide la impedancia vista a lo largo de la línea entre la impedancia característica y se dice que se ha \textbf{normalizado}:
+\begin{corollary}[Impedancia normalizada]
+\begin{equation}
+\hat{z}=\frac{Z(z)}{Z_0}=r+\iu x
+\label{eq:imp normalizada}
+\end{equation}
+Donde $r$ es una resistencia normalizada y $x$ es una reactancia normalizada
+\end{corollary}
+Además, recordando en análisis en frecuencia, sabemos que los inductores se diferencian de los capacitores solo por el signo, inductores son positivos y capacitores negativos. Es por ello que se distingue dos flechas verticales: \textbf{hacia arriba} están los positivos (inductancia) y \textbf{abajo negativos}\footnote{Este comportamiento es necesario recordarlo para capítulos más adelante} (capacitancia). Cuando la resistencia, capacitancia y inductancia son constantes son circulos, arcos y arcos respectivamente. En las lineas de transmisión se distinguen dos formas de enlazar circuitos: paralelo y serie; estos son representados las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith} y nos dan un indicio de el sentido en el que nos debemos mover si añadimos componentes; estos nos serán más útiles en temas siguientes.
 \begin{figure}[]
 \centering
 \includegraphics[width=0.4\linewidth]{LT/LT3.png}
@@ -8281,7 +8368,12 @@ Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del c
 \item \textbf{RTN LOSS}: Perdida por retorno, esto indica
 la cantidad de onda reflejada expresada en dB. Así, en el centro de la carta, nada es reflejado y la pérdida de retorno es infinita. En el límite tenemos reflexión completa, por lo tanto la pérdida por retorno es 0 dB.
 \item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en términos de potencia, proporcional a $|\rho|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
-\item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\rho$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno.
+\item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\rho$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno. El coeficiente de reflexión, si no se cuenta con las reglas inferiores, se calcula con una regla de 3 simple:
+\begin{align*}
+& 1 -\!\!\!-\!\!\!- \overline{OR}\\
+& |\rho_L| -\!\!\!-\!\!\!- \overline{OA}
+\end{align*}
+Donde $\overline{OR}$ es la distancia desde el origen hacia el circulo $r=0$ y $\overline{OA}$ es la distancia del origen al punto A (punto de la impedancia de carga). Miden con una regla pues las unidades de longitud en esta operación no son útiles.
 \item \textbf{Coeficiente de Voltaje de transmisión}: Tenga en cuenta que el módulo del coeficiente de transmisión de voltaje (y corriente) tiene un rango de cero, es decir, cortocircuito, a +2 (abierto = 1+$\rho$ con $\rho$=1). esta regla solo es válida para $Z_L$ = real, es decir, el caso de un escalón en la impedancia característica de la línea coaxial.
 \item \textbf{ATTEN}: en dB supone que estamos midiendo una atenuador (que puede ser una línea con pérdida) que a su vez está terminado por un circuito abierto o cortocircuito (reflexión completa). Por lo tanto, la onda viaja dos veces a través del atenuador (hacia adelante y hacia atrás). hacia atrás). El valor de este atenuador puede estar entre cero y algún número muy alto correspondiente al caso emparejado. La escala inferior de la regla 1 muestra la misma situación solo en términos de VSWR.
 \item \textbf{RFL.LOSS[dB]}: esta regla se refiere a la pérdida en la onda transmitida, que no debe confundirse con la pérdida de retorno refiriéndose a la onda reflejada. Muestra la relación en dB de $P_t=1-|\rho|^2$.
@@ -8344,6 +8436,7 @@ Ubicamos en punto en la carta de Smith (intersección de las curvas roja y azul)
         \addplot+[mark=*,only marks,samples at={0, .01,...,1.8}, mark options={solid},mark size=.08,color={red},line width=0.5] (1.8,x) ;
         \path[draw=green] (0pt,0pt) circle (1.68cm);
 		\addplot+ [orange,line width=1] coordinates{(1,0) (0,3.30)};        
+		\addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(1.8,1.8) [$Z_L$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8361,17 +8454,18 @@ Ahora que hallamos este valor de $0.103\lambda$ ubicamos ese valor en el anillo 
         \addplot+[mark=*,only marks,samples at={0, .01,...,1.8}, mark options={solid},mark size=.08,color={red},line width=0.5] (1.8,x) ;
         \path[draw=green] (0pt,0pt) circle (1.68cm);
 		\addplot+ [orange,line width=1] coordinates{(1,0) (0,3.30)};
-		\addplot+ [violet,line width=1] coordinates{(1,0) (0,0.76)};  
+		\addplot+ [violet,line width=1] coordinates{(1,0) (0,0.76)};
+		\addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(1.8,1.8) [$Z_L$] (0.38,0.68)[$Z_i$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
 Ahora notamos los valores que finales de la carta:
 \begin{enumerate}
-\item $0.38+\iu 0.68$: Resultado del cruce del circulo verde y la recta violeta, este representa la impedancia de entrada $Z_{in}$, sin embargo esta respuesta no esta desnormalizada:
+\item $0.38+\iu 0.68$: Resultado del cruce del circulo verde y la recta violeta, este representa la impedancia de entrada $Z_i$, sin embargo esta respuesta no esta desnormalizada:
 \begin{displaymath}
 50(0.38+\iu 0.68)=19+\iu 34
 \end{displaymath}
-\item 0.59: Este valor se obtiene de la regla inferior \textbf{RFL. COEFF, E or I}, con el compás medimos el radio del circulo verde, luego ubicamos la punta del compás en el centro de cada regla y marcamos el valor hacia la izquierda.
+\item \fase{0.59}{33.2}: Este valor se obtiene de la regla inferior \textbf{RFL. COEFF, E or I}, con el compás medimos el radio del circulo verde, luego ubicamos la punta del compás en el centro de cada regla y marcamos el valor hacia la izquierda. El ángulo es obtenido de la recta desde el origen hacia el exterior de la carta que pasa por la impedancia de carga, el valor es leido el anillo \emph{ángulo del coeficiente de reflexión en grados}.
 \item 35\%: \textbf{RFL. COEFF, P}, expresado en porcentaje pues el valor ahí indica que es 0.35.
 \item 3.9: SWR medido en las regla inferios \textbf{SWR}.
 \item 4.5dB: Perdida por retorno hallado en las regla inferior \textbf{RTN. LOSS [dB]}.
@@ -8380,18 +8474,24 @@ Ahora notamos los valores que finales de la carta:
 \begin{remark}
 Si el valor de $\lambda$ excede los 0.5, somos libres de restar la cantidad necesaria de vueltas, ya que como el valor excede el valor de la vuelta completa, no sirve de nada tener valores altos pues siempre estaremos en el mismo punto. A manera de ejemplo: si tenemos el valor de 3.1, necesitaremos 0.5+0.5+0.5+0.5+0.5+0.5+0.1 vueltas q dar, fíjate que hasta el valor de 3 daremos 6 vueltas en el mismo punto, y no es hasta aquí que recién nos moveremos 0.1.
 \end{remark}
+\underline{\textbf{Concentrando los pasos:}}
+\begin{enumerate}
+\item Normalizar la impedancia y ubicar los puntos en la carta de impedancias.
+\item Hacer un circulo del radio del punto de la impedancia.
+\item Desplazarnos en dirección que queramos usando lambda.
+\item Trazar la línea desde el centro al nuevo punto resultante del movimiento de lambda.
+\item Ubicar el punto de corte entre la recta y el círculo.
+\item Hallar el radio del círculo y usar la reglas inferiores para los demás datos. El ángulo de coeficiente de reflexión es hallado en el anillo \emph{ángulo del coeficiente de reflexión} que indica la impedancia de carga.
+\end{enumerate}
 \section{Acoplamiento de impedancias}\index{Acoplamiento de impedancias}
 Adaptación o acoplamiento de impedancias son técnicas que consisten en la eliminación de las reflexiones que se producen en una línea de transmisión cuando ésta se encuentra terminada con una carga de impedancia distinta de la impedancia característica de la línea.\\
 Técnicas de adaptación en banda estrecha son:
 \begin{enumerate}
 \item Transformador $\lambda/4$
-\item Adaptación con elementos concentrados
-\item Simple sintonizador en serie
-\item Simple sintonizador en paralelo
-\item Doble sintonizador en serie
-\item Doble sintonizador en paralelo
+\item Acoplamiento con un equilibrador reactivo (un ``stub'')
+\item Acoplamiento con dos equilibradores reactivos (dos ``stub'')
 \end{enumerate}
-\subsection*{Simple stub}
+\subsection*{Un stub}
 Este método consiste en colocar a una distancia especial de la carga un \textbf{stub} o pedazo de linea de transmisión en corto circuito o circuito abierto (Figura \ref{fig:tipos de stub}).
 \begin{figure}[]
 \centering
@@ -8420,7 +8520,8 @@ Ahora ubicamos ese punto en nuestra carta de Smith:
         % Reactance plot - blue
         \addplot[domain=0:30, samples=600, color=blue] {0.5};
 	    % Resistance plot - red 
-        \addplot+[mark=*,only marks,samples at={0, .01,...,0.5}, mark options={solid},mark size=.08,color={red},line width=0.5] (2,x) ;  
+        \addplot+[mark=*,only marks,samples at={0, .01,...,0.5}, mark options={solid},mark size=.08,color={red},line width=0.5] (2,x) ;
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8431,7 +8532,8 @@ Al trabajar con stub en corto en paralelo, lo usual es trabajar con \textbf{admi
         % Circle 
         \path[draw=green] (0pt,0pt) circle (1.05cm);
         %Line
-		\addplot+ [mark size=1,orange,line width=1] coordinates{(0.47,-0.12) (2,0.5)};   
+		\addplot+ [mark size=1,orange,line width=1] coordinates{(0.47,-0.12) (2,0.5)};
+		\addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$] (0.47,-0.12)[$Y_L$]};  
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8449,6 +8551,7 @@ Con el valor de admitancia y el \textcolor{green}{circulo} que le pertenece, hal
 		\addplot+ [mark size=1,orange,line width=1] coordinates{(0.47,-0.12) (2,0.5)};
 		% Circle 
         \path[draw=violet] (40pt,0pt) circle (1.42cm);
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$] (0.47,-0.12)[$Y_L$](1,0.8) [$Y(d_1)$] (1,-0.8)[$Y(d_2)$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8456,7 +8559,7 @@ Desde el punto donde se encuentra la admitancia $Y_L=0.47-\iu 0.12$, nos movemos
 \begin{equation*}
 \boxed{Y(d_1)=1+\iu0.8}
 \end{equation*}
-Con estos datos, podemos hallar la distancia $d_1$ a la cual se va ubicar el stub. Esto lo hallamos, prolongando la linea naranja que es la linea de admitancia y dibujando una \textcolor{red}{nueva linea} desde el origen que pase por el primer punto en la cual se cortan ambos círculos:\\
+Con estos datos, podemos hallar la distancia $d_1$ a la cual se va ubicar el stub. Esto lo hallamos, prolongando la linea naranja que es la linea de admitancia y dibujando una \textcolor{red}{nueva linea} desde el origen que pase por el primer punto ($Y(d_1)$) en la cual se cortan ambos círculos:\\
 \textbf{Primera solución:\footnote{Hay dos puntos de cruce entre ambos círculos, por lo que habrá 2 soluciones}}\\
 \begin{center}
 \begin{tikzpicture}
@@ -8469,6 +8572,7 @@ Con estos datos, podemos hallar la distancia $d_1$ a la cual se va ubicar el stu
 		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,1.45)};
 		% Circle 
         \path[draw=violet] (40pt,0pt) circle (1.42cm);
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$] (0.47,-0.12)[$Y_L$](1,0.8) [$Y(d_1)$] (1,-0.8)[$Y(d_2)$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8498,6 +8602,7 @@ Con este valor hallado, lo ubicamos en la carta y trazamos una \textcolor{blue}{
 		\addplot+ [mark size=1,blue,line width=1] coordinates{(1,0) (0,-0.8)};
 		% Circle 
         \path[draw=violet] (40pt,0pt) circle (1.42cm);
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$] (0.47,-0.12)[$Y_L$](1,0.8) [$Y(d_1)$] (1,-0.8)[$Y(d_2)$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8510,7 +8615,7 @@ Para la segunda solución ubicamos el segundo punto de cruce:
 \begin{equation*}
 \boxed{Y(d_2)=1-\iu 0.8}
 \end{equation*}
-Trazamos una \textcolor{red}{linea} desde el origen que pase por ese punto:
+Trazamos una \textcolor{red}{linea} desde el origen que pase por ese punto ($Y(d_2)$):
 \begin{center}
 \begin{tikzpicture}
 	\begin{smithchart}[show origin]
@@ -8522,6 +8627,7 @@ Trazamos una \textcolor{red}{linea} desde el origen que pase por ese punto:
 		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,-1.45)};
 		% Circle 
         \path[draw=violet] (40pt,0pt) circle (1.42cm);
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$] (0.47,-0.12)[$Y_L$](1,0.8) [$Y(d_1)$] (1,-0.8)[$Y(d_2)$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8551,6 +8657,7 @@ Ubicamos $Y_{s_2}$ en la carta y trazamos una \textcolor{blue}{recta} desde el o
 		\addplot+ [mark size=1,blue,line width=1] coordinates{(1,0) (0,0.8)};
 		% Circle 
         \path[draw=violet] (40pt,0pt) circle (1.42cm);
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,0.5) [$Z_L$] (0.47,-0.12)[$Y_L$](1,0.8) [$Y(d_1)$] (1,-0.8)[$Y(d_2)$]};
 	\end{smithchart}
 \end{tikzpicture}
 \end{center}
@@ -8571,6 +8678,275 @@ Con los datos del problema podemos hallar $\lambda$ usando la ecuación \ref{eq:
 \end{displaymath}
 Reemplazando este valor de $\lambda$ en las distancias se halla la longitud en metros.
 \end{example}
+\underline{\textbf{Concentrando los pasos:}}
+\begin{enumerate}
+\item Normalizar la impedancia de carga y ubicar el punto.
+\item Trazar un círculo en el centro de la carta con radio de la impedancia de carga, trazar una recta que pase por el origen e impedancia de carga.
+\item Hallar el otro punto de corte de la recta y el círculo.
+\item Resaltar el círculo R=1 y hallar ambos puntos de cruce entre este círculo y el anterior.
+\item Trazar una recta desde el origen hacia el exterior que pase por un punto de corte de ambos círculos.
+\item Hallamos la distancia desde la reta que pasa por la impedancia y su admitancia hacia la recta desde el origen hacia el punto de corte del circulo. (distancia desde la carga hacia el stub)
+\item Conjugamos el punto de cruce entre ambos círculos con el que estemos trabajando y tomamos la parte compleja.
+\item Ubicamos el punto en los arcos de reactancias y trazamos un círculo desde ese punto hacia el origen.
+\item Hallamos la distancia desde esa recta hacia corto circuito en admitancias mediamos la distancia en función de lambda. (longitud del stub)
+\end{enumerate}
+Si nos acordamos de  impedancias\ref{sec:Impedancia}, nos acoradamos que si la reactancia es positiva hablamos de una inductancia y su es negativa hablamos de una capacitancia. Al hablar de \textbf{admitancias}, los papeles se invierten, en otras palabras, si la \textbf{suceptancia} es positiva hablamos de una susceptancia capacitiva y si es negativa hablamos de una suceptancia inductiva. La conductancia se sigue tratando como una resistencia:
+\begin{figure}[H]
+\centering
+\subfloat[Suceptancia inductiva]{\includegraphics[width=0.5\linewidth]{LT/LT13.png}}
+\subfloat[Suceptancia capacitiva]{\includegraphics[width=0.5\linewidth]{LT/LT14.png}}
+\caption{Suceptancia}
+\end{figure}
+La carta de Smith no es indiferente a la admitancias, pues también existe su variante para esta. En la carta de Smith para admitancias, se gráfica la conjugada de la admitancia. En la figura \ref{fig:admivsimp} se representa el punto $Z=1+\iu 1$ y el punto $Y=0.5+\iu 0.5$
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{LT/LT15.png}
+\caption{El mismo punto en admitancia e impedancia.}
+\label{fig:admivsimp}
+\end{figure}
+\begin{corollary}[Ecuaciones RLC]\label{cor:rlc}
+Para hacer más fácil el uso de la carta de Smith, se proponen las siguientes ecuaciones:\\
+Componente capacitivo en serie:
+\begin{equation}
+C_s=\frac{1}{\omega\cdot X\cdot N}
+\label{eq:cap ser}
+\end{equation}
+Componente inductivo en serie:
+\begin{equation}
+L_s=\frac{X\cdot N}{\omega}
+\label{eq:ind serie}
+\end{equation}
+Componente capacitivo en paralelo:
+\begin{equation}
+C_p=\frac{B}{\omega\cdot N}
+\label{eq:cap par}
+\end{equation}
+Componente inductivo en paralelo:
+\begin{equation}
+L_p=\frac{N}{\omega\cdot B}
+\label{eq:ind par}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\omega$: Frecuencia angular $2\pi f$.
+\item $X$: Reactancia leída de la carta.
+\item $B$: Suceptancia leída en la carta.
+\item $N$: Factor de normalización ó impedancia de normalización.
+\end{itemize}
+\end{corollary}
+\begin{figure}[]
+\centering
+\makebox[\textwidth][c]{\includegraphics[width=1.2\textwidth]{LT/colorSmith.eps}}
+\caption{Carta de Smith admitancia e impedancia.}
+\label{fig:smith chart color}
+\end{figure}
+Antes de continuar vamos a notar unas cosas en las ecuaciones \ref{eq:cap par}, \ref{eq:cap ser}, \ref{eq:ind par}, \ref{eq:ind serie} tienen un comportamiento característico de acuerdo a sus frecuencias, después de un análisis podemos  concluir que:
+\begin{proposition}[Comportamiento frecuencial]\label{prop:comp frec}
+Los capacitores tiene un comportamiento favorable hacia las altas frecuencias, es decir, permite el paso a las altas frecuencias comportandose como un corto circuito. Los inductores poseen un comportamiento contrario, para altas frecuencias se comporta como una resistencia alta mientras que para bajas frecuencias tiene resistencia muy baja comparada con un corto circuito.
+\end{proposition}
+Aunque puede ser un tanto difícil de entender haremos un ejercicio para que quede más claro:
+\begin{example}[Filtro pasa-bajos]
+Un $T_x$ con $Z_g=100+\iu 20$ alimenta una antena $Z_L=40-\iu 30$ a través de una línea de transmisión de $Z_0=50\Omega$ a una frecuencia de 100 MHz. Diseñar la red que permita el paso de bajas frecuencias:\\
+\textbf{Solución}:\\
+Recordemos lo visto en la proposición \ref{prop:comp frec}, los capacitores son ``amigables'' con altas frecuencias, mientras que los inductores lo son con las bajas frecuencias. Con esto en mente, seguimos analizando: nos pide filtro pasabajos, en otras 	palabras: conservar frecuencias bajas y deshacernos de las altas. Con ambas deducciones en la mente podemos decir: las frecuencias bajas las mando a la antena mientras que las altas las mando a tierra. Con eso dicho podemos plantear:
+\begin{center}
+\includegraphics[width=0.7\linewidth]{LT/LT16.png}
+\end{center}
+Como lo hemos planteado, usando el capacitor desviamos a tierra las frecuencias altas y usando el inductor conducimos las frecuencias altas a la antena. Ahora normalizamos la impedancia del generador y de la carga:
+\begin{align*}
+&\overline{Z_L}=\frac{40-\iu 30}{50}=0.8-\iu 0.6 &\overline{Z_g}=\frac{100+\iu 20}{50}=2+\iu 0.4
+\end{align*}
+Ahora \textbf{conjugamos} la impedancia del generador:
+\begin{displaymath}
+\overline{Z_g}=2+\iu 0.4\rightarrow \overline{Z_g*}=2-\iu 0.4
+\end{displaymath}
+Ubicamos los puntos en la carta de Smith de impedancias:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Reactance plot - blue
+        \addplot[domain=0:90, samples=600, color=blue] {-.6};
+        % Resistance plot - violet
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-.6}, mark options={solid},color={violet},mark size=.2,line width=1] (0.8,x);
+        % Reactance plot - red
+        \addplot[domain=0:90, samples=600, color=red] {-.4};
+        % Resistance plot - orange
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-.4}, mark options={solid},color={orange},mark size=.2,line width=1] (2,x);
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.8,-0.6) [$Z_L$](2,-0.4) [$Z_g*$]};
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+El siguiente paso es ir desde el punto $Z_L$ hacia $Z_g*$, esto lo haremos recordando que tenemos un \textbf{inductor en serie} y un \textbf{capacitor en paralelo}. Bien, por lo tanto nos debemos mover en sentido horario hacia arriba (inductor en serie) y sentido horario hacia abajo (capacitor en serie)\footnote{Los comportamientos se pueden apreciar en las figuras \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}}. Procedemos a movernos de tal manera que ambos recorridos convergan en un punto no olvidando el sentido mencionado líneas antes:
+\begin{center}
+\begin{tikzpicture}[]
+% Carta de admitancia
+\begin{smithchart}[
+	smithchart mirrored,
+	xticklabel shift=-19pt,
+	grid style={blue!30},%Color de la grilla
+	ticklabel style={blue},%Color del texto
+	yticklabel around circle,]
+	% Resistance plot - green 
+        \addplot+[mark=*,only marks,samples at={0, .01,...,0.6}, mark options={solid},color={green},mark size=.2,line width=0.5] (0.48,x);
+        % Resistance plot - green 
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-0.1}, mark options={solid},color={green},mark size=.2,line width=0.5] (.48,x);
+        % Resistance plot - teal 
+        \addplot[domain=0:.48, samples=600, color=teal] {0.6};
+        % Resistance plot - teal 
+        \addplot[domain=0:.48, samples=600, color=cyan] {-.1};
+\end{smithchart}
+% Carta de impedancia
+\begin{smithchart}[
+	show origin,
+	grid style={red!30},%Color de la grilla
+	ticklabel style={red},%Color del texto
+	yticklabel around circle*,]
+		% Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, .01,...,1.01}, mark options={solid},color={red},mark size=.2,line width=0.5] (0.8,x);
+        % Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-0.6}, mark options={solid},color={red},mark size=.2,line width=0.5] (0.8,x);
+        % Resistance plot - red 
+        \addplot[domain=0:.8, samples=600, color=orange] {1.01};
+        % Resistance plot - red 
+        \addplot[domain=0:.8, samples=600, color=purple] {-.6};
+        % Resistance plot 
+        %\addplot[domain=0:2, samples=600, color=cyan] {-.4};
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.8,-0.6) [$Z_L$](2,-0.4) [$Z_g*$](0.8,1.01)[A]};
+\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Hallamos los valores del punto A y $Z_L$, para eso hemos trazado las lineas naranja y violeta. Obtenemos sus valores:
+\begin{displaymath}
+A=0.8+\iu 1.1\hspace{20pt} Z_L=0.8-\iu 0.6
+\end{displaymath}
+Ahora sumamos los absolutos de sus partes complejas, pues necesitamos saber la distancia entre ambos puntos para hallar la reactancia:
+\begin{displaymath}
+X_L=1.1+0.6=1.7
+\end{displaymath}
+Con este valor, reemplazamos en la ecuación \ref{eq:ind serie}:
+\begin{displaymath}
+Ls=\frac{1.7\cdot 50}{2\pi\cdot 100\basedec{6}}=127.32 nH
+\end{displaymath}
+Con esto ya hemos hallado el valor del inductor, ayudándonos de las líneas cían y verde azulado. Procedemos con el valor del capacitor, para ello trabajamos en la carta de la admitancia, y hallamos el valor del punto A y $Z_g*$:
+\begin{displaymath}
+A=2.2+\iu 0.6\hspace{20pt} Z_g*=2.2-\iu 0.1
+\end{displaymath}
+Sumamos el absoluto de las partes complejas:
+\begin{displaymath}
+B_C=0.6+0.1=0.7
+\end{displaymath}
+Una vez hallada la suceptancia, usando la ecuación \ref{eq:cap par}:
+\begin{displaymath}
+C_p=\frac{0.7}{2\pi\cdot 100\basedec{6}\cdot 50}=22.28pF
+\end{displaymath}
+Ahora el sistema puede filtrar las frecuencias bajas solo hasta 100MHz.
+\end{example}
+Para terminar estos ejemplos, vamos a plantear el caso contrario: un filtro pasa-altos:
+\begin{example}[Filtro pasa-altas]
+Un $T_x$ con $Z_g=100+\iu 20$ alimenta una antena $Z_L=40-\iu 30$ a través de una línea de transmisión de $Z_0=50\Omega$ a una frecuencia de 100 MHz. Diseñar la red que permita el paso de altas frecuencias:\\
+\textbf{Solución}:\\
+Lo planteamos igual, usamos un inductor para deshacernos de las bajas frecuencias y un capacitor para conservar las altas frecuencias:
+\begin{center}
+\includegraphics[width=0.7\linewidth]{LT/LT17.png}
+\end{center}
+Una vez que hemos definido el circuito, normalizamos las impedancias:
+\begin{align*}
+&\overline{Z_L}=\frac{40-\iu 30}{50}=0.8-\iu 0.6 &\overline{Z_g}=\frac{100+\iu 20}{50}=2+\iu 0.4
+\end{align*}
+Conjugamos la impedancia del generador:
+\begin{displaymath}
+\overline{Z_g*}=2-\iu 0.4
+\end{displaymath}
+Ubicamos la impedancia de carga y la impedancia del generador en la carta:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Reactance plot - blue
+        \addplot[domain=0:90, samples=600, color=blue] {-.6};
+        % Resistance plot - violet
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-.6}, mark options={solid},color={violet},mark size=.2,line width=1] (0.8,x);
+        % Reactance plot - red
+        \addplot[domain=0:90, samples=600, color=red] {-.4};
+        % Resistance plot - orange
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-.4}, mark options={solid},color={orange},mark size=.2,line width=1] (2,x);
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.8,-0.6) [$Z_L$](2,-0.4) [$Z_g*$]};
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Ahora tenemos que movernos desde $Z_L$ hacia $Z_g*$, recordemos que tenemos un \textbf{capacitor en serie} e \textbf{inductor en paralelo}, en consecuencia los movimientos que haremos son: anti-horario hacia abajo y anti-horario hacia arriba respectivamente, usando esas direcciones nos movemos de tal manera que coincidamos en un punto, de manera que:
+Obtenemos los valores complejos de los puntos y hallamos las distancias, primero para el inductor tenemos que hallar la \textbf{distancia} entre el punto A y el punto $Z_L$, usando las partes complejas:
+\begin{displaymath}
+X_C=0.99-0.6=0.39
+\end{displaymath}
+Con este valor, reemplazamos en la ecuación \ref{eq:cap par} para hallar la reactancia del capacitor\footnote{El primer elemento que se halla es reactancia, en el anterior fue reactancia inductiva pues era el primer elemento que nos encontrábamos desde la carga hacia el generador, en este caso es un capacitor, es por eso que se halla esa reactancia.}
+\begin{displaymath}
+C_s=\frac{1}{2\pi 100\basedec{6}\cdot 0.39\cdot 50}=81.62 pF
+\end{displaymath}
+Procedemos con el inductor, usando los puntos A y $Z_g*$ hallamos la distancia usando la carta de admitancias:
+\begin{displaymath}
+B_L=0.6-0.1=0.5
+\end{displaymath}
+Reemplazando en la ecuación \ref{eq:ind par}:
+\begin{displaymath}
+L_p=\frac{50}{2\pi 100\basedec{6}\cdot 0.5}=159 mH
+\end{displaymath}
+Con los valores hallados del capacitor e inductor, la línea de transmisión va funcionar como filtro pasa-altas.
+\end{example}
+\begin{remark}
+Se halla la reactancia del primer elemento y la suceptancia segundo elemento desde la carga hacia el generador. Además hallamos las distancias solo usando los valores absolutos en los arcos. Para la carga se usa la carta de \textbf{impedancias}, mientras que para el generador se usa la carta de \textbf{admitancias}.
+\end{remark}
+\underline{\textbf{Concentrando los pasos:}}
+\begin{enumerate}
+\item Normalizar las impedancias del generador y carga.
+\item Conjugar la impedancia del generador.
+\item Ubicar los puntos normalizados en la carta de impedancias.
+\item Encontrar el punto de intersección (A) de las rutas según lo requerido por el problema y las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
+\item Hallar la distancia entre la impedancia del generador y el punto A en función de la reactancia usando los valores según la carta que se usa. Si se usa la carta de impedancia, usar los valores de la reactancia y si es admitancia usar los valores de admitancia. Es fácil darse cuenta cuando las líneas trazadas coinciden con alguna de las cartas.
+\item De acuerdo a los movimientos y el problema reemplazar esas distancias en sus correspondientes ecuaciones \ref{cor:rlc}.
+\end{enumerate}
+\begin{notation}
+Cuando se trate de filtro pasabajas, es usual conectar el capacitor a tierra y viceversa. En cuando al la posición, osea primero el inductor y luego el capacitor no son siempre los mismos, estos cambian el orden dependiendo de la posición de los puntos y como nos movemos de un punto, respetando las figuras \ref{fig:resistencias smith}, \ref{fig:inductancias smith} y \ref{fig:capacitancias smith}.
+\end{notation}
+\begin{problem}
+Un $T_x$ con $Z_g=20-\iu 15$ alimenta una antena con $Z_L=100-\iu 25$ a través de una línea de transmisión con $Z_0=50\Omega$ a una frecuencia de 60 MHz. Diseñar una red de acoplamiento que permite el paso de bajas frecuencias
+Respuesta:\\
+\begin{tikzpicture}[]
+% Carta de admitancia
+\begin{smithchart}[
+	smithchart mirrored,
+	xticklabel shift=-19pt,
+	grid style={blue!30},%Color de la grilla
+	ticklabel style={blue},%Color del texto
+	yticklabel around circle,]
+        % Resistance plot - green 
+        \addplot+[mark=*,only marks,samples at={-.1, -.11,...,-.83}, mark options={solid},color={green},mark size=.2,line width=1](.47,x);
+        % Resistance plot - teal 
+        \addplot[domain=0:.48, samples=600, color=teal] {-0.85};
+        % Resistance plot - teal 
+        \addplot[domain=0:.48, samples=600, color=teal] {-.12};
+\end{smithchart}
+% Carta de impedancia
+\begin{smithchart}[
+	show origin,
+	grid style={red!30},%Color de la grilla
+	ticklabel style={red},%Color del texto
+	yticklabel around circle*,]
+        % Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-0.9}, mark options={solid},color={red},mark size=.2,line width=1](.5,x);
+        % Resistance plot - red 
+        \addplot+[mark=*,only marks,samples at={0, .01,...,.3}, mark options={solid},color={red},mark size=.2,line width=1](.5,x);
+        % Resistance plot - red 
+        \addplot[domain=0:.5, samples=600, color=orange] {-0.91};
+        % Resistance plot - red 
+        \addplot[domain=0:.5, samples=600, color=orange] {.3};
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(2,-0.5) [$Z_L$](0.5,0.3) [$Z_g*$]};
+\end{smithchart}
+\end{tikzpicture}
+\end{problem}
 \newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Refracción]
@@ -9059,7 +9435,7 @@ Start:
 	rjmp Cero; Sl el bit 7 de R20 no es 1(es 0), vamos a comprar a la sub-rutina Cero
 	rjmp Uno; Vamos a la sub-rutina 1 para comprobar el valor del otro registro
 Uno:
-	sbrs R21,7; Si el bit 7 del R21 es 1, se comprueba que ambos es 1, se omite la sgte lineas
+	sbrs R21,7; Si el bit 7 del R21 es 1, se comprueba que ambos son 1, se omite la sgte linea
 	rjmp Nada
 	rjmp resta; Ambos numeros se restan
 
@@ -9199,26 +9575,6 @@ detenidas. Frecuentemente la función de la ISR se limitará a activar un \textb
 \begin{remark}
 No uses en una ISR un \textbf{proceso que consuma tiempo}: cálculos complejos, comunicación serial, cambios de entradas o salidas tanto digitales como analógicas.
 \end{remark}
-\subsection{Registros involucrados}
-Para poder trabajar con interrupciones es necesario conoces los registros con los cuales vamos a trabajar:
-\begin{itemize}
-\item \textbf{SREG}:
-\begin{center}
-\includegraphics[width=\linewidth]{MM/MM24.png}
-\end{center}
-Es necesario el bit 7, inicialmente están deshabilitadas, por lo que hay que ponerlas a estado SET(1).
-\item \textbf{EIMSK}:
-\begin{center}
-\includegraphics[width=\linewidth]{MM/MM25.png}
-\end{center}
-El bit 0 habilitar la interrupción externa 0 y el bit 1 habilitar la interrupción externa 1. Ambos se activan con 1.
-\item \textbf{EIFR}:
-\begin{center}
-\includegraphics[width=\linewidth]{MM/MM26.png}
-\end{center}
-Si se habilita la interrupción 0 de EIMSK, el bit 0 de EIFR se pone a 1. Lo mismo con la interrupción 1, si ocurre se pondrá a 1 el bit 1 de EIFR.
-\end{itemize}
-En la figura \ref{fig:arduino pinout} podemos ver que diferentes pines de la placa poseen su exclusiva función de interrupción, por ejemplo el pin D2 y el pin D3 poseen la interrupción INT0 e INT1 respectivamente
 \subsection{Interrupciones externas}
 Ejecutadas con el comando \textbf{attachInterrupt (digitalPinToInterrupt (pin), NameFunction, CHANGE)}; donde \textit{pin} puede tomar los valores 2 ó 3, pues solo esos pines admiten interrupciones externas, \textit{NameFunction} es una función que nosotros programemos y \textit{CHANGE} puede tomar los siguientes valores:
 \begin{itemize}
@@ -9249,6 +9605,26 @@ Leonardo & 3    & 2    & 0    & 1    & 7    &      \\ \hline
 \end{center}
 \caption{Pines para interrupciones externas.}
 \end{table}
+\subsubsection{Registros involucrados}
+Para poder trabajar con interrupciones es necesario conoces los registros con los cuales vamos a trabajar:
+\begin{itemize}
+\item \textbf{SREG}:
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM24.png}
+\end{center}
+Es necesario el bit 7, inicialmente están deshabilitadas, por lo que hay que ponerlas a estado SET(1).
+\item \textbf{EIMSK}:
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM25.png}
+\end{center}
+El bit 0 habilitar la interrupción externa 0 y el bit 1 habilitar la interrupción externa 1. Ambos se activan con 1.
+\item \textbf{EIFR}:
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM26.png}
+\end{center}
+Si se habilita la interrupción 0 de EIMSK, el bit 0 de EIFR se pone a 1. Lo mismo con la interrupción 1, si ocurre se pondrá a 1 el bit 1 de EIFR.
+\end{itemize}
+En la figura \ref{fig:arduino pinout} podemos ver que diferentes pines de la placa poseen su exclusiva función de interrupción, por ejemplo el pin D2 y el pin D3 poseen la interrupción INT0 e INT1 respectivamente
 El siguiente código intercambia el valor de la salida 5 solo si en la entrada dos existe un flanco ascendente, pasar de 0 a 1. Si pasa de 1 a 0, la salida 5 no se ve afectada.
 \begin{lstlisting}[language=Arduino,caption={Interrupción flanco ascendente}]
 void setup(){
@@ -9396,6 +9772,183 @@ De los 8 bits bits que posee, podemos establecerlos a 1 para y usar el bit 0 par
 \end{center}
 \end{itemize}
 Si se quiere una lectura entre pines del mismo grupo de PCINT, es conveniente usar \&(BITAND) entre PINX y un número binario indicando el bit que estamos dispuesto a ver si esta en estado bajo.\footnote{Ver los códigos de ejemplo}
+\subsection{Interrupciones internas-Temporizador}
+El cristal interno del Arduino UNO es de una frecuencia de 16 MHz (o periodo de 62.5 ns), puede variar de frecuencia dependiendo de tu microcontrolador. Existen los \textbf{pre-escalers} (8, 64, 256, 1024) que harán de la frecuencia del cristal una más lenta. Por ejemplo, si usamos el pre-escaler de 8, nuestro periodo ahora sería 8 veces más lenta:
+\begin{displaymath}
+62.5 ns\cdot 8=500ns
+\end{displaymath}
+Podemos decir que: \emph{cada 8 pulsos de reloj del sistema, nuestro temporizador aumenta en 1}.\\
+Arduino posee 3 tipos de temporizadores:
+\begin{enumerate}
+\item \textbf{Timer0}: Es de 8 bits, límite 256.
+\item \textbf{Timer1}: Es de 16 bits, límite 65536.
+\item \textbf{Timer2}: Es de 8 bits, límite 256.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{MM/MM34.png}
+\caption{Comportamiento del Timer0}
+\end{figure}
+Cada timer mencionado tiene modos especiales:
+\begin{enumerate}
+\item \textbf{Compare Match}: Escribimos un valor en un registro diferente, cuando el valor del temporizador sea igual a ese registro, se activará la interrupción. Es útil cuando se requiere una toma de muestras cada cierto tiempo.
+\item \textbf{Overflow}: Cada vez que se llegué al máximo valor del timer es cuando se activará la interrupción.
+\item \textbf{Input Capture}: El timer puede almacenar su valor en un registro diferente, cada vez que un evento externo suceda en un pin. Usado para cuando queremos medir pulsos externos, como frecuencia.
+\end{enumerate}
+En la tabla \ref{tab:func timer} se observa las funciones disponibles para cada timer y las funciones de Arduino que se verán afectadas por las modificaciones a los timers, ya sea dejando de funcionar o cambiando sus valores.
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{CBCEFB} 
+Timer   & Tamaño (bits) & Interrupciones                                                                   & Usado por Arduino                                   \\ \hline
+Timer 0 & 8             & \begin{tabular}[c]{@{}c@{}}Compare Match\\ Overflow\end{tabular}                 & millis(), delay(), micro(), analogWrite() pins 5, 6 \\ \hline
+Timer 1 & 16            & \begin{tabular}[c]{@{}c@{}}Compare Match\\ Overflow\\ Input Capture\end{tabular} & Servo functions, analogWrite() pins 9,10            \\ \hline
+Timer 2 & 8             & \begin{tabular}[c]{@{}c@{}}Compare Match\\ Overflow\end{tabular}                 & tone(), noTone(), analogWrite() pins 3,11           \\ \hline
+\end{tabular}
+\end{center}
+\caption{Funciones relacionas a los timer.}
+\label{tab:func timer}
+\end{table}
+\subsubsection{Registros involucrados}
+Dependiendo del timer que utilizaremos se seleccionan los registros correspondientes para elegir el pre-escaler:
+\begin{figure}[]
+\centering
+\subfloat[Timer0]{\includegraphics[width=0.7\linewidth]{MM/MM35.png}}\\
+\subfloat[Pre-escaler timer 0]{\includegraphics[width=0.7\linewidth]{MM/MM36.png}}\\
+\subfloat[Timer1]{\includegraphics[width=0.7\linewidth]{MM/MM37.png}}\\
+\subfloat[Pre-escaler timer 1]{\includegraphics[width=0.7\linewidth]{MM/MM38.png}}\\
+\subfloat[Timer2]{\includegraphics[width=0.7\linewidth]{MM/MM39.png}}\\
+\subfloat[Pre-escaler timer 2]{\includegraphics[width=0.7\linewidth]{MM/MM40.png}}
+\caption{Registros de cada timer y sus pre-escalers.}
+\end{figure}
+\subsubsection*{¿Por qué usar pre-escalers?}
+Se usa por un límite en los temporizadores y sus tamaños, ejemplificando: Queremos encender un LED cada 500 ms. Si usamos la frecuencia del cristal del microcontrolador (de 62.5 ns) necesitaríamos 500000000 ns/62 ns=800000 pulsos, este número es demasiado grande para los 16 bits 65536. Si usamos el pre-escaler de 256:
+\begin{displaymath}
+62.5 ns\cdot 256=16\mu s
+\end{displaymath}
+y ahora tenemos:
+\begin{displaymath}
+500000000 ns/16\mu s=31250 pulsos
+\end{displaymath}
+Y este es número aceptable para el registro de 16 bits. Los valores de los timer se almacenan directamente en el registro TCNT:
+\begin{figure}[H]
+\centering
+\subfloat[Registro timer 0]{\includegraphics[width=\linewidth]{MM/MM41.png}}\\
+\subfloat[Registro timer 1]{\includegraphics[width=\linewidth]{MM/MM42.png}}\\
+\subfloat[Registro timer 2]{\includegraphics[width=\linewidth]{MM/MM43.png}}
+\caption{Registro de los valores para cada timer. }
+\end{figure}
+Para activar la comparación es necesario los registros TIMSK:\\
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM44.png}
+\end{center}
+\begin{itemize}
+\item \textbf{OCIE0B}: Activamos (set 1) el valor B para poder comprobar y que suceda la interrupción. El valor a comparar se escribe en el registro OCR0B.
+\item \textbf{OCIE0A}: Activamos (set 1) el valor A para poder comprobar y que suceda la interrupción. El valor a comparar se escribe en el registro OCR0A.
+\item \textbf{TOIE0}: Se coloca a 1 para activar las interrupciones por overflow.
+\end{itemize}
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM45.png}
+\end{center}
+\begin{itemize}
+\item \textbf{ICIE1}: Se activa \textit{input capture enable}.
+\item \textbf{OCIE1B}: Activamos (set 1) el valor B para poder comprobar y que suceda la interrupción. El valor a comparar se escribe en el registro OCR1B.
+\item \textbf{OCIE1A}: Activamos (set 1) el valor A para poder comprobar y que suceda la interrupción. El valor a comparar se escribe en el registro OCR1A.
+\item \textbf{TOIE0}: Se coloca a 1 para activar las interrupciones por overflow.
+\end{itemize}
+\begin{center}
+\includegraphics[width=\linewidth]{MM/MM46.png}
+\end{center}
+\begin{itemize}
+\item \textbf{OCIE2B}: Activamos (set 1) el valor B para poder comprobar y que suceda la interrupción. El valor a comparar se escribe en el registro OCR2B.
+\item \textbf{OCIE2A}: Activamos (set 1) el valor A para poder comprobar y que suceda la interrupción. El valor a comparar se escribe en el registro OCR2A.
+\item \textbf{TOIE0}: Se coloca a 1 para activar las interrupciones por overflow.
+\end{itemize}
+\subsubsection*{¿Cómo usar timer con cualquier tiempo?}
+Como lo vimos antes, vamos a tratar de simplificar el proceso en pasos y haremos un ejemplo en código, vamos a definir \textit{n} como una variable de número (0, 1 o 2):
+\begin{itemize}
+\item Detenemos todas las interrupciones con cli().
+\item Definimos a 0 los registros TCCRnA y TCCRnB.
+\item Seleccionamos el pre-escaler que queremos usando los registros TCCRnB.
+\item Activamos el valor que usaremos, puede ser A o B, para ello TIMSKn.
+\item Si hemos activado el valor A, configuramos el valor límite en OCRnA, con el valor B configuramos el valor en OCRnB. Para esto usamos la ecuación \ref{eq:limite tiempo}.
+\item Activamos todas las interrupciones sei().
+\item Creamos nuestra función ISR(TIMERn\_ COMPx\_ vect), donde \textit{x} puede ser A, B ó C dependiendo del que hayamos usado
+\item Dentro la función ISR tenemos que borrar el contador con TCNTx.
+\end{itemize}
+\begin{proposition}[Límite de tiempo]
+Este se calcula de la siguiente manera:
+\begin{equation}
+\frac{t}{(p\cdot 62.5ns)}=L
+\label{eq:limite tiempo}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{t}: Tiempo que durá cada estado o el periodo entre 2. (seg)
+\item \textbf{p}: pre-escaler.
+\item \textbf{L}: Limite superior, este número no debe pasar límite de cada timer.
+\end{itemize}
+\end{proposition}
+Observa en el ejemplo, que el timer 2 es cada 2 seg. si hacemos el cálculo usando la ecuación \ref{eq:limite tiempo} nos da como resultado 15625, valor el cual es muy grande comparado con 256. Por ello, no hemos configurado OCR2A como el máximo valor (mismo valor como el timer0). Ese 156 nos indica aproximadamente que cada 10ms se activará la interrupción y dentro del ISR del timer 2 hemos usado un if para que cada vez que pase 10ms un contador lo cuente, y cuando este contador llegue a 500, haga el cambio de estado.
+\begin{lstlisting}[language=Arduino,caption={Uso de timer0 (cada 10ms) y timer1 (500ms)}]
+bool LED_STATE0 = true;
+bool LED_STATE1 = true;
+bool LED_STATE2 = true;
+int contador=0;
+void setup(){
+  pinMode(5,OUTPUT);//Define el pin como salida
+  pinMode(4,OUTPUT);//Define el pin como salida
+  pinMode(3,OUTPUT);//Define el pin como salida
+  cli();//Detenemos las interrupciones
+  //Timer 0->10ms|50Hz|T=20ms
+  TCCR0A=0;//Reseteamos el vector completo
+  TCCR0B=0;//Reseteamos el vector completo
+  TCCR0B=0b00000101;//Escaler de 1024
+  TIMSK0=0b00000100;//Activamos el valor B
+  OCR0B=156;//Valor para el tiempo, aprox cada 156 veces sera 10ms
+  
+  //Timer 1->500ms|1Hz|T=1seg
+  TCCR1A=0;//Reseteamos el vector completo
+  TCCR1B=0;//Reseteamos el vector completo
+  TCCR1B=0b00000100;//Pre-escaler a 256
+  TIMSK1=0b00000010;//Activamso el OCIE1A para la comparacion
+  OCR1A=31250;//Establecemos el limite maximo para disparar la interrupcion
+  
+  //Timer 2->1000ms|0.5Hz|T=2seg
+  TCCR2A=0;//Reseteamos el vector completo
+  TCCR2B=0;//Reseteamos el vector completo
+  TCCR2B=0b00000101;//Pre-escaler de 1024
+  TIMSK2=0b00000010;//Activamos el limite a comparar
+  OCR2A=156;//Valor para el tiempo, aprox cada 156 veces sera 10ms
+
+  sei();//Activamos las interrupciones
+  
+}
+void loop(){
+
+}
+ISR(TIMER0_COMPB_vect){
+  TCNT0=0;//Reestablecemos a 0 el contador
+  LED_STATE0=!LED_STATE0;//Invertimos el estado del LED
+  digitalWrite(4,LED_STATE0);
+}
+ISR(TIMER1_COMPA_vect){//Usamos el A al establecer el comparador A
+  TCNT1=0;//Reestablecemos a 0 el contador
+  LED_STATE1=!LED_STATE1;//Invertimos el estado del LED
+  digitalWrite(5,LED_STATE1);
+}
+
+ISR(TIMER2_COMPA_vect){
+  contador++;
+  if(contador==500){
+    TCNT2=0;//Reestablecemos a 0 el contador
+  	LED_STATE2=!LED_STATE2;//Invertimos el estado del LED
+  	digitalWrite(3,LED_STATE2);
+    contador=0;
+  }
+}
+\end{lstlisting}
 \section{Código Assembler II}\label{Código Assembler II}
 \begin{itemize}
 \item \textbf{OUT} A, Rr: Usado cuando la I/O es configurado como salida, escribes el valor del Rr en la I/O A. A debe ser expresado como PORTX, siendo X la letra del conjunto de puertos. Como segunda función sirve para \textbf{configurar} los pines de X, para ellos se usa como valor de A: DDRX. Usando OUT, configurará los puertos de X usando los valores de cada uno de los bits de Rr para definir si son salidas o entradas.
@@ -9406,7 +9959,7 @@ Si se quiere una lectura entre pines del mismo grupo de PCINT, es conveniente us
 \item \textbf{BRBC} s, k: Si SREG(s) es zero, realizar la sub-rutina k.
 \item \textbf{.DEF} N=Rr:  Cambia el nombre de la variable del Rr a N, .DEF A=R12: indica que R12 (nombre) puede ser sustituido por A a los largo del código. Se usa en el preámbulo, antes de \textit{Start}.
 \item \textbf{SBI} A,b: Establece 1 al bit b del puerto A. SBI PORTD,0: El bit 0 del puerto D será 1.
-\item \textbf{SBC} A,b: Establece 0 al bit b del puerto A. SBC PORTD,3: El but 3 del puerto D será 0.
+\item \textbf{SBC} A,b: Establece 0 al bit b del puerto A. SBC PORTD,3: El out 3 del puerto D será 0.
 \end{itemize}
 \begin{enumerate}
 \item Leer el valor del puerto C, sumarle 5 y enviar el valor indefinidamente por el puerto B:
@@ -10832,9 +11385,9 @@ Describe las consecuencias que provocan la ocurrencia del modo de fallo que se e
 \end{center}
 \caption{Tabla de relación causa-efecto: motor generador}
 \end{table}
+
 \subsection{Confiabilidad de un sistema}
 El \textbf{análisis de confiabilida}d hace un uso muy importante de las técnicas cuantitativas o estadísticas para la toma de decisiones en el campo de mantenimiento y en la gestión de activos en general, pero muy poco se utiliza en la practica. Así mismo, se debe tener en cuenta, que el punto de partida para realizar un análisis de confiabilidad de un equipo,maquina,componente o instalación bajo una concepción científica, es la información cuantitativa que sobre las fallas se tenga (estadística de fallas o historial de fallas).
-\subsubsection{Confiabilidad de un sistema}
 Si un sistema productivo (o subsistema) está compuesto por ``n'' ítems que funcionan de manera \textbf{independiente}, acoplados en \textbf{serie}; es decir, operando uno a continuación de otro, de tal manera que el comportamiento de alguno de ellos, no afecta la confiabilidad de los restantes, entonces, la falla en cualquier equipo genera la \textbf{paralización} de todo el sistema productivo. Por lo tanto, la \textbf{probabilidad} de que el sistema en serie no falle antes de un instante de tiempo dado; es decir, su confiabilidad, vendrá dada por el \textbf{producto} de las confiabilidades de los distintos equipos que constituyen dicho sistema; esto implica, que la confiabilidad del sistema es menor o igual que la confiabilidad de cualquier equipo que lo compone; de acuerdo a la expresión matemática ,se tiene:
 \begin{definition}[Confiabilidad de un sistema en serie]
 \begin{equation}
@@ -10845,13 +11398,13 @@ R_s(t)=\prod_{i=1}^nR_i(t)
 \end{center}
 \end{definition}
 \begin{remark}
-En un sistema en serie, el equipo con menor confiabilidad tiene mayor influencia en la confiabilidad del sistema. A mayor numero de equipos en serie, menor será la confiabilidad del sistema en serie
+En un sistema en serie, el equipo con menor confiabilidad tiene mayor influencia en la confiabilidad del sistema. A mayor número de equipos en serie, menor será la confiabilidad del sistema en serie
 \end{remark}
 \subsubsection{Confiabilidad de un sistema en paralelo}
 Si un sistema productivo (o sub-sistema) está compuesto por ``n'' ítems que funcionan de manera independiente acoplados en paralelo, entonces, la falla en cualquier equipo no genera la paralización de todo el sistema productivo, y basta que al menos un equipo siga operando para que el sistema productivo también continúe operando. Es decir, el sistema productivo en paralelo dejará de operar (entrará en falla) cuando todos los equipos entran en falla. Por lo tanto, la probabilidad de que el sistema en paralelo falle antes de sobrepasar un instante de tiempo dado, vendrá dado por el producto de las probabilidades de fallo de cada uno de los equipos es decir: 
 \begin{definition}[Confiabilidad de un sistema en paralelo]
 \begin{equation}
-R_p(t)=1-\prod_{i=1}^n(1-R_i(t))
+R_sp(t)=1-\prod_{i=1}^n(1-R_i(t))
 \end{equation}
 \begin{center}
 \includegraphics[width=0.5\linewidth]{IM/IM35.png}

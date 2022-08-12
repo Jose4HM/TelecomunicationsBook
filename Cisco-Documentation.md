@@ -1,5 +1,4 @@
-﻿
-# Script de comandos de packet tracer
+﻿# Script de comandos de packet tracer
 
 ## Equipo `Switch`
 
@@ -88,6 +87,16 @@ S1(config)# banner motd "Message of the day"
 S1(config)# exit
 S1#
 ```
+Alternativamente
+```
+S1>enable
+S1# configure terminal
+S1(config)# banner motd #
+Enter TEXT message.  End with the character '#'.
+Here you write your message. #
+S1(config)# exit
+```
+
 
 ### Guardar los cambios de la configuración en la NVRAM
 
@@ -1232,6 +1241,8 @@ R1(config)# logging console
 |**show running-config interface** _interface slot/number_|Un comando de modo habilitado para mostrar la configuración en ejecución para una interfaz específica|
 |**show ip interface** _[type number]_|Muestra el estado de usabilidad de las interfaces que están configuradas para IP|
 |**ip name-server** _serverip-1 serverip-2_|Un comando de modo de configuración que establece las direcciones IP de los servidores DNS|
+|**show version**| Muestra la versión de IOS junto con otra información útil|
+|**show ip interface brief**| Revisar el estado de las interfaces conectadas|
 ## Comandos de solución de problemas
 |Comando|Proposito|
 |--|--|
@@ -1271,6 +1282,7 @@ R1(config)# logging console
 |**switchport mode** _{ access/trunk }_|Configura el modo de membresía de VLAN de un puerto. El puerto de acceso está configurado para acceder incondicionalmente y funciona como una única interfaz VLAN sin enlace troncal que envía y recibe tramas no encapsuladas (no etiquetadas). Un puerto de acceso se puede asignar a una sola VLAN. El puerto troncal envía y recibe tramas encapsuladas (etiquetadas) que identifican la VLAN de origen. Un enlace troncal es un enlace punto a punto entre dos conmutadores o entre un conmutador y un enrutador.|
 |**switchport trunk** _{encapsulation { dot1q }_|Establece las características del enlace troncal cuando la interfaz está en modo enlace troncal. En este modo, el conmutador admite tráfico etiquetado y sin etiquetar simultáneamente en un puerto.|
 |**encapsulation dot1q vlan-id**|Un comando de modo de configuración que define los criterios de coincidencia para asignar el ingreso de tramas 802.1Q en una interfaz a la instancia de servicio adecuada|
+|**switch#conf t<br/>switch(config)#int vlan1<br/>switch(config-if)#no shut<br/>switch(config-if)#end<br/>switch#copy run start**|Si una VLAN aparece como *Administratively down*. Esto debería elevar la interfaz y guardar ese estado para el siguiente reinicio del interruptor.|
 ## Comandos DHCP
 |Comando|Proposito|
 |--|--|
