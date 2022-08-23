@@ -19,7 +19,11 @@ Puedes contactarme directamente para cualquier tipo de feedback a mi correo: jha
 
 ## Licencia:copyright:	
 [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/)
-
+<div class="container"> 
+<img src="https://user-images.githubusercontent.com/71269653/186210854-5a769421-5964-46da-8183-073651215b62.png" alt="drawing" width="400"/>
+<img src="https://user-images.githubusercontent.com/71269653/186212411-420c2ec3-f0a4-4fe5-89a1-086f33b14654.png" alt="drawing" width="400" />
+</div> 
+Nota: Yo no poseo estas imagenes. Todos los derechos reservados.
 # :us:Steps for Telecommunications :artificial_satellite:
 
 This is a book/notebook where you can observe my notes along the career I study: Telecommunications Engineering.
