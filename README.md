@@ -24,6 +24,7 @@ Puedes contactarme directamente para cualquier tipo de feedback a mi correo: jha
 <img src="https://user-images.githubusercontent.com/71269653/186212411-420c2ec3-f0a4-4fe5-89a1-086f33b14654.png" alt="drawing" width="400" />
 </div> 
 Nota: Yo no poseo estas imagenes. Todos los derechos reservados.
+
 # :us:Steps for Telecommunications :artificial_satellite:
 
 This is a book/notebook where you can observe my notes along the career I study: Telecommunications Engineering.
