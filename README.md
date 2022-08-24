@@ -12,7 +12,7 @@ Las solicitudes de extracción son bienvenidas. Para cambios importantes, abra u
 git clone https://github.com/Yasperterian/TelecomunicationsBook.git
 ```
 Recordando siempre la licencia que se especificará luego.
-## Uso::open_book:	:	
+## Uso:open_book:
 Puedes usarlo como gustes, este libro esta bajo la licencia [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/)
 ## Contacto:email:	
 Puedes contactarme directamente para cualquier tipo de feedback a mi correo: jhanccoma@unsa.edu.pe
@@ -39,7 +39,7 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 git clone https://github.com/Yasperterian/TelecomunicationsBook.git
 ```
 Always remembering the license to be specified later.
-## Usage::open_book:	:	
+## Usage:open_book:
 You can use it as you like, this book is licensed under the [Creative Commons 3.0](https://creativecommons.org/licenses/by/3.0/) license.
 ## Contact:email:	
 You can contact me directly for any feedback at my email: jhanccoma@unsa.edu.pe
