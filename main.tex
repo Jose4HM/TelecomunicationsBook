@@ -34,7 +34,7 @@
 
 % Book information for PDF metadata, remove/comment this block if not required 
 \hypersetup{
-	pdftitle={Apuntes sobre las Telecomunicaciones}, % Title field
+	pdftitle={Pasos por Telecomunicaciones I}, % Title field
 	pdfauthor={Jose Hancco}, % Author field
 	pdfsubject={Educación}, % Subject field
 	pdfkeywords={Telecomunicaciones, UNSA, Pregrado, Señales}, % Keywords
@@ -64,7 +64,7 @@
 \thispagestyle{empty} % Suppress headers and footers on the title page
 \begin{tikzpicture}[remember picture,overlay]
 \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background3.pdf}};%here you change your bookcover background
-\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Apuntes sobre Telecomunicaciones\\[15pt] % Book title
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Pasos por Telecomunicaciones I\\[15pt] % Book title
 {\Large Notas de un estudiante}\\[20pt] % Subtitle
 {\huge Jose Antonio Hancco M.}}}; % Author name
 \end{tikzpicture}
@@ -3418,7 +3418,7 @@ Ya solo nos queda expresar en la forma de funciones lógicas y podemos implement
 Todos los codigos estarán disponibles en \textbf{GitHub}, puedes acceder desde este link: \url{https://github.com/Yasperterian/4rduino} o desde este codigo QR:\\
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.15]{SmartCities/qr/qr6.png}
+\includegraphics[scale=0.15]{SmartCities/qr.png}
 \caption{Repositorio con todos los programas}
 \label{fig:SMgithub}
 \end{figure}
@@ -3455,11 +3455,6 @@ Como en la programación de computadoras es un clásico que nuestro primer progr
 \item Le damos click en la flecha que apunta a la derecha en la parte superior(subir) y esperamos que compile.
 \item Esperamos que termine de descargar y compilar, en consecuencia, tenemos que ver nuestro LED parpadear con una frecuencia de 1 segundo.
 \end{enumerate}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr1.png}
-\caption{QR program: 1.Blink}
-\label{fig:qr1}
-\end{figure}
 \begin{lstlisting}[language=Arduino,caption={Blink Program}]
 // the setup function runs once when you press reset or power the board
 #define LED_BUILTIN 2
@@ -3476,11 +3471,6 @@ void loop() {
 }
 \end{lstlisting}
 \section{Conectar a una red Wi-Fi}\index{Conectar a una red Wi-Fi}
-\begin{figure}
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr2.png}
-\caption{QR program: 2.WifiConnect}
-\label{fig:qr2}
-\end{figure}
 Una de las funciones más elementales e importantes del ESP8266 es la posibilidad de conectarse a internet para realizar proyectos de IoT(\textit{Internet of things}). Asi que, como primer paso vamos a conectarnos a nuestra red Wifi:
 \begin{lstlisting}[language=Arduino,caption={Conectarse a una red WiFi}]
 #include <ESP8266WiFi.h>
@@ -3538,11 +3528,6 @@ Las lineas de \textbf{byte}(\textit{Lineas 6-7}) son dos variables que van conta
 \end{figure}
 \newpage
 \section{Crear una red WiFi}\index{Crear una red Wi-Fi}
-\begin{wrapfigure}{r}{0.1\linewidth}
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr3.png}
-\caption{QR program: 3.CreateWiFi}
-\label{fig:qr3}
-\end{wrapfigure}
 Nuestra ESP8266, como hemos visto, se puede conectar a una red wifi pero también puede crear su propia red wifi para que dispositivos se conecten a ella. En este apartado veremos como podemos crear una red wifi:
 \begin{lstlisting}[language=Arduino,caption={Conectarse a una red WiFi}]
 #include <ESP8266WiFi.h>
@@ -3563,11 +3548,6 @@ void loop() {
 
 \chapter{Servicios en la red}
 \section{Crear un servidor local}\index{Crear un servidor local}
-\begin{wrapfigure}{r}{0.1\linewidth}
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr4.png}
-\caption{QR program: 4.Server local On Off led}
-\label{fig:qr4}
-\end{wrapfigure}
 Para crear esto utilizaremos el lenguaje HTML, hay varias formas pero esta es la básica para empezar.\footnote{Si da error, puedes ponerle una tilde en la i de titulo en línea 33}. Puedes hacerlo en \textbf{Sublime text}\footnote{\url{https://www.sublimetext.com/}} o en \textbf{VScode}\footnote{\url{https://code.visualstudio.com/}}, en nuestro caso usaremos VScode, luego copiamos el código en nuestro editor. \textbf{OJO: Hacemos este código solo para ver como funcionan las etiquetas en el "lenguaje" HTML}.
 \begin{lstlisting}[language=html, caption={Conectarse a una red WiFi},captionpos=b,frame=single]
 <!DOCTYPE html>
@@ -3618,8 +3598,7 @@ Cuando lo hemos copiado, damos click derecho en cualquiera parte del editor y le
 \label{fig:VSformato}
 \end{figure}
 Luego de ello, guardamos. Tenemos la primera parte.
-Ahora nos vamos a arduino y abrirmos el programa llamado \textit{ejemplo.ino}\footnote{Escanear el código qr \ref{fig:qr4} para conseguir el programa}
-modificamos las lineas 3 y 4 donde nos piden nuestras credenciales de nuestra red WiFi. Una vez hecho abrimos el Monitor serie \ref{fig:Monitor serie} y ejecutamos nuestro programa(no esta de más decir que te fijes que el puerto correcto esta seleccionado\footnote{Ver item 8 de la parte 1.3 Instalación})\\
+Ahora nos vamos a arduino y abrirmos el programa llamado \textit{ejemplo.ino} modificamos las lineas 3 y 4 donde nos piden nuestras credenciales de nuestra red WiFi. Una vez hecho abrimos el Monitor serie \ref{fig:Monitor serie} y ejecutamos nuestro programa(no esta de más decir que te fijes que el puerto correcto esta seleccionado\footnote{Ver item 8 de la parte 1.3 Instalación})\\
 Implementamos el circuito de la figura \ref{fig:espleds2}, una vez implementado ejecutamos el programa.
 Al ejecutar observamos en nuestro Monitor que después de buscar nuestra red nos dirá su nombre y su IP como en la figura \ref{fig:wifi+ip}.
 \begin{figure}[h]
@@ -3648,11 +3627,6 @@ Nos dará nuestra IP y lo copiamos en nuestro navegador, por ejemplo: nuestra IP
 \end{figure}
 \newpage
 \section{Lectura Analógica}\index{Lectura Analógica}
-\begin{wrapfigure}{r}{0.1\linewidth}
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr5.png}
-\caption{QR program: 5.GraphAnalog}
-\label{fig:qr5}
-\end{wrapfigure}
 También podemos usar nuestra ESP8266 para medir dispositivos analógicos como por ejemplo, medir la resistencia de un potenciómetro:  ver gráficamente como cambia este valor.\\
 En nuevo documento copiamos el siguiente programa:
 \begin{lstlisting}[language=Arduino,caption={Medir la resistencia de un potenciómetro}]
@@ -3705,11 +3679,6 @@ Por ahora solo necesitamos \textbf{Apache} y \textbf{MySQL}. Si es necesario, po
 \end{figure}
 Descargamos el archivo rar\footnote{ \url{https://www.dropbox.com/s/hvxl74ye9pk1slc/6.Proyecto\%20explicativo\%201.rar?dl=0}}, extraemos y tendremos dos carpetas: terminal y web. Mientras avancemos tendremos que hacer algunos cambios a los archivos. 
 \subsection{Parte 1}
-\begin{figure}[H]
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr8.png}
-\caption{QR program: 6.Proyecto explicativo 1}
-\label{fig:qr6}
-\end{figure}
 Abrimos el archivo que esta ubicado en \textit{6.Proyecto explicativo 1>Terminal>wifi\_get>wifi\_get.ino}, cambiamos nuestras credenciales de la red wifi. Ahora necesitamos nuestra IP para conectarnos a la red. Para ello vamos abrir nuestro CMD(windows + R, escribimos \textit{cmd} y enter), cuando abra escribimos \textbf{ipconfig} y buscamos \textbf{Direccion IPv4}(figura \ref{fig:ipcmd}) del adaptador de red, es dirección la pegamos en la linea 44 reemplazando a la anterior(figura \ref{fig:linea44}).
 \begin{figure}[H]
 \centering\includegraphics[width=\linewidth]{SmartCities/SM13.png}
@@ -3792,12 +3761,7 @@ Instalamos las librerias desde la IDE de arduino, para eso vamos a \textbf{\text
 \caption{Librerías del DHT11}
 \label{fig:dht11lib}
 \end{figure}
-Probamos el programa testSensorDHT11.ino y vemos si todo funciona correctamente, debe leer la temperatura y la humedad y temperatura en grados farenheit y mostrará en el \textbf{monitor serie}.\\
-\begin{wrapfigure}{r}{0.2\linewidth}
-\centering\includegraphics[scale=0.1]{SmartCities/qr/qr7.png}
-\caption{QR program: Test DHT11}
-\label{fig:testdht11}
-\end{wrapfigure}
+Probamos el programa testSensorDHT11.ino y vemos si todo funciona correctamente, debe leer la temperatura y la humedad y temperatura en grados farenheit y mostrará en el \textbf{monitor serie}.
 Implementamos el diagrama de la figura \ref{fig:dhtfirst} encima del diagrama de la figura \ref{fig:espleds2}, es preferible cambiar el color de los leds, rojo que este conectado al puerto D2 y verde al puerto D1.
 Si da error de lectura, asegúrate que este bien conectado el DHT11, a veces no hace contacto bien con la protoboard.
 \begin{figure}[H]
@@ -3872,6 +3836,9 @@ Una vez hemos puesto a correr Mosquitto y Node Red(se tienen que ejecutar desde 
 \caption{Server es nuestro IP y port es 1880 u 1883. No esta de más ver las IP de nuestro ordenador con \textbf{\textit{netstat -an}} Una vez que lo termines de crear, selecciona este broker siempre en el apartado server de la figura \ref{fig:configmqttin}}
 \label{fig:mqttconfignodered}
 \end{figure}
+\begin{remark}
+Si vamos a cambiar de red, también se cambiará la IP. Al haber un cambio node red no va poder iniciarse correctamente. Para solucionar eso, debemos actualizar la IP del mosquitto broker en Node red. Para ellos debemos iniciar node red con el comando \textbf{\textit{node-red --safe}}. Esto hará que el node red arranque sin correr los nodos, actualizamos la IP en el nodo mqtt y para confirmar los cambios presionamos \textit{flow}.
+\end{remark}
 Ahora, al nodo de \textit{mqtt in} le añadimos los siguientes nodos(ver figura \ref{fig:configchange} y figura \ref{fig:configdebug}):
 \begin{figure}[H]
 \centering\includegraphics[width=\linewidth]{SmartCities/SM37.png}
@@ -3901,7 +3868,7 @@ Los componentes requeridos son:
 \end{enumerate}
 Se tiene que deplegar el circuito de la figura \ref{fig:circuitopb}
 \begin{figure}[H]
-\centering\includegraphics[scale=0.5]{SmartCities/SM76.png}
+\centering\includegraphics[width=\linewidth]{SmartCities/SM76.png}
 \caption{Circuito botón de pánico}
 \label{fig:circuitopb}
 \end{figure}
@@ -4142,8 +4109,9 @@ Antes de desplegar los nodos, tenemos que tener instalados los siguientes paquet
 \label{fig:dash}
 \end{figure}
 Igual se deja un archivo JSON llamado \textit{flows.json} en la carpeta \textit{panic button server} para que lo puedas importar a node-red.
+\newpage
 \section{Front-end}\index{Front-end}
-En cuanto al front-end, ya todo esta configurado y listo para usarse. Tan solo hay que copiar los archivos como se dijo en la carpeta htdocs y poder acceder a ellos desde localhost. Se tendrá como pagina principal \textit{http://localhost/panicbuttonserver/}. Se puede usar un editor de texto para poder cambiar textos dentro de cada archivo CSS. Hay algunos apartados que no funcionan como configuración o recuperar cuenta.
+En cuanto al front-end, ya todo esta configurado y listo para usarse. Tan solo hay que copiar la carpeta \textit{panicbuttonserver} en la carpeta htdocs y poder acceder a ellos desde localhost. Se tendrá como pagina principal \textit{http://localhost/panicbuttonserver/}. Se puede usar un editor de texto para poder cambiar textos dentro de cada archivo CSS. Hay algunos apartados que NO funcionan como configuración o recuperar cuenta.
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -5082,7 +5050,7 @@ Ya tenemos todos los datos, y el último radio que no falta probar es \textit{r=
 \begin{remark}
 Es necesario que trabajes en las unidades del SI, de lo contrario no saldrán las respuestas correctas. Las unidades son errores que se suele cometer comúnmente.
 \end{remark}
-\textbf{Se dejan algunos ejercicios en la seccción de Anexos.}\\
+\textbf{Se dejan algunos ejercicios en la carpeta Anexos.}\\
 \section{Potencial eléctrico}\index{Potencial eléctrico}
 Supongamos que deseamos mover una carga puntual Q del punto A al punto B en un campo eléctrico
 E. De la ley de Coulomb, la fuerza sobre Q es F=QE de modo que el trabajo hecho al desplazar la carga por dl es:
@@ -6086,7 +6054,7 @@ El GoS se aplica a una conexión de terminal a terminal. Pero normalmente un cen
 \item La red troncal (troncal a troncal).
 \item Una llamada de terminación (central de conmutación a abonado).
 \end{itemize}
-Ver ejericios:\footnote{Ver ejercicios resueltos \ref{Anexo 1} y \ref{Anexo 2}}
+Ver ejericios:\footnote{Ver ejercicios resueltos Anexo 1 y Anexo 2 en la carpeta Anexos.}
 \section{Diseño de redes}\index{Diseño de redes}
 Para el encaminamiento de redes se tiene dos posible escenarios: linea directa o linea alternativa.
 \begin{figure}[ht]
@@ -6221,7 +6189,7 @@ Esta respuesta se ve graficada en el imagen \ref{fig:solu6.5}.
 \caption{Gráfica de la solución}
 \label{fig:solu6.5}
 \end{figure}
-Como siempre, tendrás algunos ejercicios resueltos en el anexo \ref{Anexo 3}
+Como siempre, tendrás algunos ejercicios resueltos en el Anexo 3.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{SisTelefonia/st79.png}
@@ -8793,7 +8761,7 @@ El siguiente paso es ir desde el punto $Z_L$ hacia $Z_g*$, esto lo haremos recor
         \addplot+[mark=*,only marks,samples at={0, -.01,...,-0.1}, mark options={solid},color={green},mark size=.2,line width=0.5] (.48,x);
         % Resistance plot - teal 
         \addplot[domain=0:.48, samples=600, color=teal] {0.6};
-        % Resistance plot - teal 
+        % Resistance plot - cyan
         \addplot[domain=0:.48, samples=600, color=cyan] {-.1};
 \end{smithchart}
 % Carta de impedancia
@@ -8806,9 +8774,9 @@ El siguiente paso es ir desde el punto $Z_L$ hacia $Z_g*$, esto lo haremos recor
         \addplot+[mark=*,only marks,samples at={0, .01,...,1.01}, mark options={solid},color={red},mark size=.2,line width=0.5] (0.8,x);
         % Resistance plot - red 
         \addplot+[mark=*,only marks,samples at={0, -.01,...,-0.6}, mark options={solid},color={red},mark size=.2,line width=0.5] (0.8,x);
-        % Resistance plot - red 
+        % Resistance plot - orange 
         \addplot[domain=0:.8, samples=600, color=orange] {1.01};
-        % Resistance plot - red 
+        % Resistance plot - purple 
         \addplot[domain=0:.8, samples=600, color=purple] {-.6};
         % Resistance plot 
         %\addplot[domain=0:2, samples=600, color=cyan] {-.4};
@@ -8877,6 +8845,35 @@ Ubicamos la impedancia de carga y la impedancia del generador en la carta:
 \end{tikzpicture}
 \end{center}
 Ahora tenemos que movernos desde $Z_L$ hacia $Z_g*$, recordemos que tenemos un \textbf{capacitor en serie} e \textbf{inductor en paralelo}, en consecuencia los movimientos que haremos son: anti-horario hacia abajo y anti-horario hacia arriba respectivamente, usando esas direcciones nos movemos de tal manera que coincidamos en un punto, de manera que:
+\begin{center}
+\begin{tikzpicture}
+\begin{smithchart}[
+	smithchart mirrored,
+	xticklabel shift=-19pt,
+	grid style={blue!30},%Color de la grilla
+	ticklabel style={blue},%Color del texto
+	yticklabel around circle,]
+	% Resistance plot - teal 
+        \addplot[domain=0:.48, samples=600, color=teal] {-0.6};
+    % Resistance plot - cyan
+        \addplot[domain=0:.48, samples=600, color=cyan] {-.1};
+	% green 
+        \addplot+[mark=*,only marks,samples at={-0.1, -.11,...,-0.6}, mark options={solid},color={green},mark size=.2,line width=0.5] (.48,x);
+        
+\end{smithchart}
+
+	\begin{smithchart}[show origin]
+		% Resistance plot - orange 
+        \addplot[domain=0:.8, samples=600, color=orange] {-1.01};
+        % Resistance plot - purple 
+        \addplot[domain=0:.8, samples=600, color=purple] {-.6};
+        % red 
+        \addplot+[mark=*,only marks,samples at={-0.6, -.61,...,-1}, mark options={solid},color={red},mark size=.2,line width=0.5] (0.8,x);
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.8,-0.6) [$Z_L$](2,-0.4) [$Z_g*$](0.8,-1)[$A$]};
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
 Obtenemos los valores complejos de los puntos y hallamos las distancias, primero para el inductor tenemos que hallar la \textbf{distancia} entre el punto A y el punto $Z_L$, usando las partes complejas:
 \begin{displaymath}
 X_C=0.99-0.6=0.39
@@ -8897,6 +8894,9 @@ Con los valores hallados del capacitor e inductor, la línea de transmisión va 
 \end{example}
 \begin{remark}
 Se halla la reactancia del primer elemento y la suceptancia segundo elemento desde la carga hacia el generador. Además hallamos las distancias solo usando los valores absolutos en los arcos. Para la carga se usa la carta de \textbf{impedancias}, mientras que para el generador se usa la carta de \textbf{admitancias}.
+\end{remark}
+\begin{remark}
+\textbf{¿Cómo saber que uso reactancia o susceptancia?} Para los cálculos de los valores de los elementos solo se trabaja con la \textbf{susceptancia}, que es la parte imaginaria de la admitancia y la \textbf{reactancia}, que es la parte imaginaria de la impedancia. Si trabajamos con la carta de impedancia, la que tiene 0 en la parte izquierda, los valores que mediremos en los arcos serán la \textbf{reactancia (\textit{X})}. Si estamos usando la carta de admitancia, la que tiene 0 en la parte derecha , los valores medidos en los arcos serán la \textbf{susceptancia (\textit{B})}.
 \end{remark}
 \underline{\textbf{Concentrando los pasos:}}
 \begin{enumerate}
@@ -10027,6 +10027,39 @@ Loop:
     rjmp  Loop
 \end{lstlisting}
 \end{enumerate}
+\chapterimage{chapter_head_MM.pdf}
+\chapter{Proyecto final}
+\section{Hardware}\index{Hardware: Monitoreo}
+En esta sección enumeraremos lo necesario para construir el proyecto:
+\begin{enumerate}
+\item ESP8266 x1
+\item ESP32 x2
+\item Interruptor magnético x1
+\item Lector RFID x1
+\item Servomotor SG-90 x1
+\item Sensor ultrasónico HC-SR04 x1
+\item DHT11 x1
+\item LED x3
+\item Jumpers
+\item Protoboard x3
+\item LCD 16x2 (opcional) x2
+\item Switches x2
+\item Resistencia 10k x2
+\item Resistencia 470K x4
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\subfloat[Esquemático radar]{\includegraphics[width=0.5\linewidth]{MM/MM47.png}}
+\subfloat[Esquemático RFID+DHT11]{\includegraphics[width=0.5\linewidth]{MM/MM48.png}}\\
+\subfloat[Esquemático sensor magnético]{\includegraphics[width=0.5\linewidth]{MM/MM49.png}}
+\caption{Esquemáticos}
+\end{figure}
+\section{Software}\index{Software: Monitoreo}
+Los programas para cada circuito pueden ser ubicados en la carpeta número 8 del repositorio Github\footnote{Es el mismo repositorio que se uso en Smart Cities, escanear el código QR \ref{fig:SMgithub}.} Bajo el apoyo de node red, también se comparte el sistema de nodos para su importación a node red (archivo \textit{Sistema de monitoreo.json}).\\
+Se siguen todos los pasos al igual que el proyecto \textit{Botón de pánico} del curso \textit{Smart Cities}. Si se trabaja en el hogar y nos movemos a otra red wifi, es probable que nuestra IP cambien; esto ocasionará que la IP donde se debe conectar Node red se vea alterada más no la de mosquitto. Para ellos inicia Node red con el comando \textit{node-red --safe}, una vez que termine de iniciar, vamos al engranaje en la esquina superior derecha y buscamos el nodo donde hemos configurado nuestro broker junto con su IP. Actualizamos la IP a la nueva IP asignada a nuestra computadora (\textit{ipconfig} en una ventana de CMD para ver nuesrta IP) y para correr los nodos presionamos \textbf{deploy}.
+\begin{notation}
+Igual se dejará el informe junto con el libro en la carpeta Anexos. El archivo se llama \textit{Sistema de monitoreo usando módulos ESP y basados en Internet de las Cosas}
+\end{notation}
 %----------------------------------------------------------------------------------------
 %	CHAPTER
 %----------------------------------------------------------------------------------------
@@ -11385,7 +11418,36 @@ Describe las consecuencias que provocan la ocurrencia del modo de fallo que se e
 \end{center}
 \caption{Tabla de relación causa-efecto: motor generador}
 \end{table}
+\begin{table}[H]
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|ccc|}
+\hline
+\rowcolor[HTML]{38FFF8} 
+\multicolumn{3}{|c|}{\cellcolor[HTML]{38FFF8}Guía de onda}                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
+\rowcolor[HTML]{96FFFB} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96FFFB}Modo de fallo}                                                        & \multicolumn{1}{c|}{\cellcolor[HTML]{96FFFB}Causa de fallo}                                                                                                                                                                            & Efecto de fallo                                                                                                                \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}c@{}}Desadaptación en el sistema Tx\\ guía de onda-dipolo\end{tabular}} & \multicolumn{1}{c|}{\begin{tabular}[c]{@{}c@{}}Sección elíptica asimétrica de la guía\\ ocasionado por el golpe en la superficie de la guía.\\ Exceso de radio de encorbatura en el tendido de la\\ guía hacia la torre.\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Curva de retardo asimétrica\\ con ruptura.\\ Corte en el sistema por exceso \\ de ROE.\end{tabular} \\ \hline
+\end{tabular}
+}
+\caption{Guía de onda}
+\end{table}
 
+\begin{table}[H]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|ccc|}
+\hline
+\rowcolor[HTML]{38FFF8} 
+\multicolumn{3}{|c|}{\cellcolor[HTML]{38FFF8}Antena}                                                                                                                                                                                                                       \\ \hline
+\rowcolor[HTML]{96FFFB} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{96FFFB}Modo de fallo}                                                   & \multicolumn{1}{|c|}{\cellcolor[HTML]{96FFFB}Causa de fallo}                                                                            & Efecto de fallo   \\ \hline
+\multicolumn{1}{|c|}{\begin{tabular}[c]{@{}l@{}}Desadaptación en el dipolo\\ con guía de onda\end{tabular}}   & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Twist en el conector hacia el dipolo.\\ Conector con armado defectuoso.\end{tabular}}   & Corte del sistema \\ \hline
+\multicolumn{1}{|l|}{Desorientación de antena}                                                                & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Ajuste mecánico defectuoso en la abrazadera de\\ la antena hacia la torre\end{tabular}} & Corte del sistema \\ \hline
+\multicolumn{1}{|l|}{\begin{tabular}[c]{@{}l@{}}Desadaptación del dipolo con\\ el espacio libre\end{tabular}} & \multicolumn{1}{l|}{\begin{tabular}[c]{@{}l@{}}Temperatura bajo el cero provoca granizo de hielo\\ en el dipolo\end{tabular}}          & Corte del sistema \\ \hline
+\end{tabular}
+}
+\caption{Antenna}
+\end{table}
 \subsection{Confiabilidad de un sistema}
 El \textbf{análisis de confiabilida}d hace un uso muy importante de las técnicas cuantitativas o estadísticas para la toma de decisiones en el campo de mantenimiento y en la gestión de activos en general, pero muy poco se utiliza en la practica. Así mismo, se debe tener en cuenta, que el punto de partida para realizar un análisis de confiabilidad de un equipo,maquina,componente o instalación bajo una concepción científica, es la información cuantitativa que sobre las fallas se tenga (estadística de fallas o historial de fallas).
 Si un sistema productivo (o subsistema) está compuesto por ``n'' ítems que funcionan de manera \textbf{independiente}, acoplados en \textbf{serie}; es decir, operando uno a continuación de otro, de tal manera que el comportamiento de alguno de ellos, no afecta la confiabilidad de los restantes, entonces, la falla en cualquier equipo genera la \textbf{paralización} de todo el sistema productivo. Por lo tanto, la \textbf{probabilidad} de que el sistema en serie no falle antes de un instante de tiempo dado; es decir, su confiabilidad, vendrá dada por el \textbf{producto} de las confiabilidades de los distintos equipos que constituyen dicho sistema; esto implica, que la confiabilidad del sistema es menor o igual que la confiabilidad de cualquier equipo que lo compone; de acuerdo a la expresión matemática ,se tiene:
@@ -11464,6 +11526,83 @@ ITEM & CANT & EQUIPO                    & FUNCIÓN OPERATIVA                    
 \end{tabular}}
 \caption{Relación de equipos con sus funciones operetivas correspondientes}
 \end{table}
+\section{Distribución de Weibull}\index{Distribución de Weibull}
+\begin{definition}[Función densidad probabilidad]
+\begin{equation}
+f(t,k,\lambda)=\lambda k\left[\lambda\cdot (t-\gamma)\right]^{k-1}e^{-\left[\lambda\cdot (t-\gamma)\right]^{k}}, t>0
+\label{eq:fdp weibull}
+\end{equation}
+\end{definition}
+Si resolvemos la ecuación \ref{eq:fdp weibull} para t>0:
+\begin{align*}
+\frac{k}{\lambda^{k}}\int_0^xt^{k-1}e^{-\left(\frac{t}{\lambda}\right)^{k}}&=u\\
+\left(\frac{\beta}{\lambda^{k}}\right)\left(-\frac{\lambda^{k}}{k}\right)e^{-\left(\frac{t}{\lambda}\right)^{k}}\Big|_0^t&=u\\
+1-e^{-\left(\frac{t}{\lambda}\right)^{k}}&=u
+\intertext{Despejando se tiene:}
+1-u&=e^{-\left(\frac{t}{\lambda}\right)^{k}}\\
+1-u&=\frac{1}{e^{\left(\frac{t}{\lambda}\right)^{k}}}\\
+e^{\left(\frac{t}{\lambda}\right)^{k}}&=\frac{1}{1-u}
+\intertext{Tomando Log neperiano:}
+Ln e^{\left(\frac{t}{\lambda}\right)^{k}}&=Ln\left(\frac{1}{1-u}\right)\\
+\left(\frac{t}{\lambda}\right)^{k}&=Ln\left(\frac{1}{1-u}\right)\\
+\frac{t^{k}}{\lambda^{k}}&=Ln\left(\frac{1}{1-u}\right)\rightarrow t^{k}=\lambda^{k}Ln\left(\frac{1}{1-u}\right)\\
+t&=\lambda\left[Ln\left(\frac{1}{1-u}\right)\right]^{\frac{1}{k}}
+\end{align*}
+La distribución de Weibull es ampliamente usada en el estudio de tiempo de vida o tiempo de vida o tiempo para la falla de los componentes mecánicos. Los parámetros de la distribución de Weibull son: Forma ($k$ ó $k$) y Escala ($\lambda$).\\
+El número de ocurrencias de eventos por unidad de tiempo no permanece necesariamente constante, es decir, esta tasa de ocurrencia de eventos puede crecer o decrecer con el tiempo.
+\begin{itemize}
+\item R(t): Probabilidad de que el equipo no falle en un tiempo t. También se le llama \textbf{confiabilidad}.
+\item $\lambda$: Parámetro de escala, vida característica del equipo.\footnote{No confundir con $\lambda$ de la función distribución.}
+\item $k$: Parámetro de forma, relaciona el periodo de tiempo en el que se encuentra operando el equipo.
+\item $\gamma$: También llamado parámetro de posición; define el punto de partida de la distribución.
+\end{itemize}
+\begin{table}[H]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{EFEFEF} 
+Valor($k$)    & Carácteristicas                   \\ \hline
+0<$k$<1       & Tasa de falla decreciente         \\ \hline
+$k$=1         & Distribución exponencial          \\ \hline
+1<$k$<2       & Tasa de falla creciente (concava) \\ \hline
+$k$=2         & Distribución de Rayleigh          \\ \hline
+$k$>2         & Tasa de falla creciente (convexa) \\ \hline
+3$\leq k\leq$4 & Tasa de falla creciente           \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=.6\linewidth]{IM/IM37.png}
+\caption{Distribución Weibull con diferentes valores de $k$ (k).}
+\end{figure}
+\subsection*{Propiedades de la distribución de Weibull}
+De manera general
+\begin{corollary}[Distribución]
+\begin{equation}
+f(t)=\frac{k}{k^k}(t-\gamma)^{k-1}e^{\left(\frac{t-\gamma}{k}\right)^{\beta}}
+\end{equation}
+\end{corollary}
+\begin{corollary}[Infiabilidad]
+\begin{equation}
+F(t)=1-e^{-\left(\frac{t-\gamma}{k}\right)^{\beta}}
+\end{equation}
+\end{corollary}
+\begin{corollary}[Confiabilidad]
+\begin{equation}
+R(t)=e^{-\left(\frac{t-\gamma}{k}\right)^{\beta}}
+\end{equation}
+\end{corollary}
+\begin{corollary}[Tasa de fallas]
+\begin{equation}
+\eta (t)=\frac{k}{k^k}(t-\gamma)^{k-1}
+\end{equation}
+\end{corollary}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{IM/IM38.png}
+\caption{CDF de una distribución de Weibull o Infiabilidad}
+\end{figure}
 \newpage
 \section*{Vocabulario}
 \begin{vocabulary}[Duplexer]
@@ -11625,6 +11764,12 @@ Después de sonidos \textbf{sin} voz                                            
 \end{tabular}
 \caption{Past pronunciation.}
 \end{table}
+\section{Conditional}\index{Conditional}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Ingles/Ing2.png}
+\caption{Conditionals}
+\end{figure}
 %----------------------------------------------------------------------------------------
 %	EXTRAS
 %----------------------------------------------------------------------------------------
@@ -11793,27 +11938,27 @@ Dependiendo de la forma que se use, las unidades angulares son distintas.
 %----------------------------------------------------------------------------------------
 %	ANEXOS
 %----------------------------------------------------------------------------------------
-\part{Anexos}
-\includepdf[scale=0.8,pages={2-4},pagecommand={
-\section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}},linktodoc=true]{Anexos/TraficoTelefonico.pdf}
-
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Sistemas de telefonía 2 }\label{Anexo 2}]{Anexos/TraficoTelefonico2.pdf}
-
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}\label{Anexo 3}]{Anexos/Redireccionamiento.pdf}
-
-\includepdf[scale=0.8,pages={2-4},pagecommand=
-\section{Ejercicios resueltos U2-Erlang B}\label{Anexo 4}]{Anexos/ErlangB.pdf}
-
-\includepdf[scale=0.8,pages={1},pagecommand=
-\section{Ejericios de la ley de Gauss}\label{Anexo 5}]{Anexos/GAUSS3.pdf}
-
-\includepdf[scale=0.8,pages={1}]{Anexos/GAUSS4.pdf}
-
-\includepdf[scale=0.8,pages={1}]{Anexos/GAUSS5.pdf}
-\includepdf[scale=0.8,pages={1}]{Anexos/Qtable-3.5.pdf}
-\includepdf[scale=0.8,pages={1}]{Anexos/Qtable-5.9.pdf}
+%\part{Anexos}
+%\includepdf[scale=0.8,pages={2-4},pagecommand={
+%\section{Ejercicios resueltos U2-Sistemas de telefonía}\label{Anexo 1}},linktodoc=true]{Anexos/TraficoTelefonico.pdf}
+%
+%\includepdf[scale=0.8,pages={2-4},pagecommand=
+%\section{Ejercicios resueltos U2-Sistemas de telefonía 2 }\label{Anexo 2}]{Anexos/TraficoTelefonico2.pdf}
+%
+%\includepdf[scale=0.8,pages={2-4},pagecommand=
+%\section{Ejercicios resueltos U2-Encaminamiento de tráfico telefónico}\label{Anexo 3}]{Anexos/Redireccionamiento.pdf}
+%
+%\includepdf[scale=0.8,pages={2-4},pagecommand=
+%\section{Ejercicios resueltos U2-Erlang B}\label{Anexo 4}]{Anexos/ErlangB.pdf}
+%
+%\includepdf[scale=0.8,pages={1},pagecommand=
+%\section{Ejericios de la ley de Gauss}\label{Anexo 5}]{Anexos/GAUSS3.pdf}
+%
+%\includepdf[scale=0.8,pages={1}]{Anexos/GAUSS4.pdf}
+%
+%\includepdf[scale=0.8,pages={1}]{Anexos/GAUSS5.pdf}
+%\includepdf[scale=0.8,pages={1}]{Anexos/Qtable-3.5.pdf}
+%\includepdf[scale=0.8,pages={1}]{Anexos/Qtable-5.9.pdf}
 
 
 %---------------------------------------------------------------

@@ -64,6 +64,7 @@
 \usepgfplotslibrary{smithchart}
 \pgfplotsset{compat=1.7}
 \usepgfplotslibrary{polar}   
+\usepackage[framed, numbered]{matlab-prettifier}
 \usepackage{siunitx} 
 \newcommand\diff{\mathop{}\!d}
 \usepackage[export]{adjustbox}
@@ -103,6 +104,7 @@
   breakatwhitespace=true,
   tabsize=3
 }
+
 %----------------------------------------------------------------------------------------
 %	MARGINS
 %----------------------------------------------------------------------------------------
