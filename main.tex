@@ -5771,11 +5771,11 @@ Es asi como la planta externa forma el conjunto de elementos e instalaciones que
 \end{figure}
 \textit{Elementos de la planta externa}
 \begin{itemize}
-\item[\textbf{MDF}] Es el elemento principal de distribución de líneas, y que se encuentra ubicado en el edificio de la central, se conectan los cables de enlace, de red directa y los cables alimentadores. Los blocks de conexión de líneas, son de 100 pares y se instalan en forma vertical para los cables de planta externa y horizontal para los cables de planta interna
-\item[\textbf{Armarios de distribución}] Elemento subrepartidor de líneas, que por medio de puentes, permite conectar un par primario con cualquier par secundario.Puente: Par de conductores (24 AWG), que se usa en los MDF y armarios, como medio de conexión entre los diferentes blocks. Las capacidades se obtienen sumando número de pares primarios más los pares secundarios.
-\item[\textbf{Canalización}] Es el sistema construido en forma subterránea, para permitir la instalación, retiro, protección  y  mantenimiento  de los cables; en  una red de servicios de telecomunicaciones, a partir del túnel de cables.
+\item \textbf{MDF} Es el elemento principal de distribución de líneas, y que se encuentra ubicado en el edificio de la central, se conectan los cables de enlace, de red directa y los cables alimentadores. Los blocks de conexión de líneas, son de 100 pares y se instalan en forma vertical para los cables de planta externa y horizontal para los cables de planta interna
+\item \textbf{Armarios de distribución} Elemento subrepartidor de líneas, que por medio de puentes, permite conectar un par primario con cualquier par secundario.Puente: Par de conductores (24 AWG), que se usa en los MDF y armarios, como medio de conexión entre los diferentes blocks. Las capacidades se obtienen sumando número de pares primarios más los pares secundarios.
+\item \textbf{Canalización} Es el sistema construido en forma subterránea, para permitir la instalación, retiro, protección  y  mantenimiento  de los cables; en  una red de servicios de telecomunicaciones, a partir del túnel de cables.
 Las canalizaciones están conformadas por \textbf{Cámaras} que son pozos subterráneos destinados a alojar los empalmes y facilitar, la instalación y cambio de dirección de los cables; y \textbf{Ducterias} que son ductos que conecta cámaras entre si, una cámara con el túnel de cables, una cámara  a subida  a poste, fachada , edificios o base de un armario.
-\item[\textbf{Postes}] Elemento de soporte que se utiliza para la instalación de los cables de redes de telecomunicaciones en  forma aérea. Se tiene dos tipos: Los de \textbf{madera} de 7mt y de \textbf{concreto} de 9,11 y 15m.\\
+\item \textbf{Postes} Elemento de soporte que se utiliza para la instalación de los cables de redes de telecomunicaciones en  forma aérea. Se tiene dos tipos: Los de \textbf{madera} de 7mt y de \textbf{concreto} de 9,11 y 15m.\\
 Características:
 \begin{enumerate}
 \item Poseen  3 niveles de líneas de cables
@@ -7148,8 +7148,8 @@ La ITU tambien a asignado bandas de frecuencias especificas a los usuarios de sa
 \rowcolor[HTML]{FFCE93} 
 Banda & Enlace descendente & Enlace ascendente & Ancho de Banda & Problemas                                                              \\ \hline
 L     & 1.5 GHz            & 1.6 GHz           & 15 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\ \hline
-S     & .1.9 GHz           & 2.2 GHz           & 70 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\ \hline
-C     & .4.0 GHz           & 6.0 GHz           & 500 MHz        & Interferencia terrestre                                                \\ \hline
+S     & 1.9 GHz           & 2.2 GHz           & 70 MHz         & \begin{tabular}[c]{@{}l@{}}Bajo ancho de banda\\ Saturada\end{tabular} \\ \hline
+C     & 4.0 GHz           & 6.0 GHz           & 500 MHz        & Interferencia terrestre                                                \\ \hline
 Ku    & 11 GHz             & 14 GHz            & 500 MHz        & Lluvia                                                                 \\ \hline
 Ka    & 20 GHz             & 30 GHz            & 3500 MHz       & Lluvia, costo alto.\\ \hline
 \end{tabular}
@@ -10067,10 +10067,10 @@ Igual se dejará el informe junto con el libro en la carpeta Anexos. El archivo 
 \chapterimage{chapter_head_IM.pdf}
 \chapter{Decibelios}\label{chap:decibelios}\index{Decibelios}
 \section{Definición de dB}
-Aunque el logaritmo en base 10 de la relación de dos valores de potencia es una cantidad sin dimensiones, tiene unidades de "Bel" en honor del inventor del teléfono (Alexander Graham Bell). Con el fin de obtener números más manejables, se usan los dB (decibelios, donde "deci" significa un décimo) en lugar del Bel  para los  para los propósitos de propósitos de cálculo. Tenemos que cálculo. Tenemos que multipli multiplicar los car los valores Bel valores Bel por 10 (al igual (al igual que necesitamos que necesitamos multiplicar una distancia de 1000 si queremos usar milímetros en lugar de metros).
+Aunque el logaritmo en base 10 de la relación de dos valores de potencia es una cantidad sin dimensiones, tiene unidades de "Bel" en honor del inventor del teléfono (Alexander Graham Bell). Con el fin de obtener números más manejables, se usan los dB (decibelios, donde "deci" significa un décimo) en lugar del Bel  para los  para los propósitos de propósitos de cálculo. Tenemos que multiplicar los  los valores Bel valores Bel por 10 (al igual que necesitamos que necesitamos multiplicar una distancia de 1000 si queremos usar milímetros en lugar de metros).
 \begin{equation}
 \label{art:decibel}
-a=10\cdot \log_{10}\left(\frac{P_1}{P_2}\right)dB
+a=10\cdot \log_{10}\left(\frac{P_{out}}{P_{in}}\right)dB = 20\cdot \log_{10}\left(\frac{V_{out}}{V_{in}}\right)dB
 \end{equation}
 \section{Definición de dBm}
 Si nos referimos un valor de potencia arbitraria a un valor de potencia arbitraria a una cantidad de r una cantidad de referencia fijo, la relación logarítmica de referencia fijo, la relación logarítmica de los dos valores se obtiene una nueva cantidad absoluta. Esta cantidad se define como un nivel. La cantidad de referencia más utilizado en la ingeniería de las telecomunicaciones y de radio frecuencia es de una potencia de 1 mW (una milésima de un vatio) en 50 Ohm. La relación de potencia general de P1($P_out$) a P2($P_in$) se convierte ahora en una relación de P1 a 1 mW. La relación logarítmica proporciona el nivel L. De acuerdo con IEC 27, el valor de referencia tuvo que figurará en el índice de nivel:

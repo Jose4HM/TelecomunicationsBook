@@ -1,5 +1,5 @@
 \ttl@starttoc {part@1}
-\contentsline {part}{\numberline {I}Telecomunicaciones 2}{7}{part.1}%
+\contentsline {part}{\numberline {I}Samples}{7}{part.1}%
 \contentsline {chapter}{\numberline {1}Unidad I}{8}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Theorems}{8}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Several equations}{8}{subsection.1.1.1}%
@@ -21,9 +21,29 @@
 \contentsline {section}{\numberline {1.12}Figure}{10}{section.1.12}%
 \ttl@stoptoc {part@1}
 \ttl@starttoc {part@2}
-\contentsline {part}{\numberline {II}Anexos}{12}{part.2}%
+\contentsline {part}{\numberline {II}Antenas}{12}{part.2}%
+\contentsline {chapter}{\numberline {2}Unidad I}{13}{chapter.2}%
 \ttl@stoptoc {part@2}
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{13}{chapter*.4}%
-\contentsline {section}{Articles}{13}{chapter*.4}%
-\contentsline {section}{Books}{13}{chapter*.4}%
+\ttl@starttoc {part@3}
+\contentsline {part}{\numberline {III}Internetworking 2}{14}{part.3}%
+\contentsline {chapter}{\numberline {3}Unidad I}{15}{chapter.3}%
+\ttl@stoptoc {part@3}
+\ttl@starttoc {part@4}
+\contentsline {part}{\numberline {IV}Control Adaptativo Moderno}{16}{part.4}%
+\contentsline {chapter}{\numberline {4}Unidad I}{17}{chapter.4}%
+\ttl@stoptoc {part@4}
+\ttl@starttoc {part@5}
+\contentsline {part}{\numberline {V}Software de telecomunicaciones}{18}{part.5}%
+\contentsline {chapter}{\numberline {5}Unidad I}{19}{chapter.5}%
+\ttl@stoptoc {part@5}
+\ttl@starttoc {part@6}
+\contentsline {part}{\numberline {VI}Microelectrónica en radiofrecuencia}{20}{part.6}%
+\contentsline {chapter}{\numberline {6}Unidad I}{21}{chapter.6}%
+\ttl@stoptoc {part@6}
+\ttl@starttoc {part@7}
+\contentsline {part}{\numberline {VII}Anexos}{22}{part.7}%
+\ttl@stoptoc {part@7}
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{23}{chapter*.4}%
+\contentsline {section}{Articles}{23}{chapter*.4}%
+\contentsline {section}{Books}{23}{chapter*.4}%
 \contentsfinish 
