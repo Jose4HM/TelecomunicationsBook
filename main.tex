@@ -488,12 +488,11 @@ En C.A. la impedancia tiene un papel análogo a la resistencia en C.C.
 Las dos asociaciones son\\
 \textbf{Serie}:
 \begin{equation}
-Z_{eq}=Z_1+Z_2+\vdots+Z_n
-\label{eq:serie impedancias}
+Z_{eq}=\sum_i^N Z_i
 \end{equation}
 \textbf{Paralelo}:
 \begin{equation}
-\frac{1}{Z_{eq}}=\frac{1}{Z_1}+\frac{1}{Z_2}+\vdots+\frac{1}{Z_n}
+\frac{1}{Z_{eq}}=\sum_i^N\frac{1}{Z_i}
 \end{equation}
 \end{definition}
 \section{Admitancia}\label{Admitancia}
@@ -521,6 +520,17 @@ La parte imaginaria de la admitancia se llama \textbf{suceptancia}:
 \begin{displaymath}
 B=\Im[\mathbb{Y}]
 \end{displaymath}
+\begin{definition}[Asociación de admitancias]
+Las dos asociaciones son\\
+\textbf{Serie}:
+\begin{equation}
+\frac{1}{Y_{eq}}=\sum_i^N\frac{1}{Y_i}
+\end{equation}
+\textbf{Paralelo}:
+\begin{equation}
+Y_{eq}=\sum_i^NY_i
+\end{equation}
+\end{definition}
 \begin{table}[]
 \begin{center}
 \begin{tabular}{|c|c|c|}
@@ -6884,6 +6894,8 @@ Se omiten capas del modelo OSI como la sesión o presentación pues no son muy u
 \section{Múltiplos y sub-múltiplos}\index{Múltiplos y sub-múltiplos}
 Para evitar errores y confusiones en las unidades de medida, al igual que en todo sistema de medida aquí también se una los múltiplos:
 \begin{table}[]
+\centering
+\resizebox{\linewidth}{!}{
 \begin{tabular}{|l|l|
 >{\columncolor[HTML]{C0C0C0}}l |l|r|
 >{\columncolor[HTML]{C0C0C0}}l |}
@@ -6898,6 +6910,7 @@ $10^{-18}$                     & 0.0000000000000000001             & atto       
 $10^{-21}$                     & 0.0000000000000000000001          & zepto                           & $10^{21}$                      & 1000000000000000000000                                & Zetta                           \\ \hline
 $10^{-24}$                     & 0.0000000000000000000000001       & yocto                           & $10^{24}$                      & 1000000000000000000000000                             & Yotta                          \\ \hline
 \end{tabular}
+}
 \caption{Principales prefijos métricos.}
 \end{table}
 También vale la pena señalar que para medir los tamaños de memoria, disco, archivos y bases de

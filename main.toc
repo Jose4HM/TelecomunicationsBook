@@ -489,8 +489,8 @@
 \contentsline {section}{\numberline {36.2}Producto cruz}{470}{section.36.2}%
 \contentsline {section}{\numberline {36.3}Propiedades}{471}{section.36.3}%
 \contentsline {section}{\numberline {36.4}Ángulo de desfase}{471}{section.36.4}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliography}}{472}{chapter*.374}%
+\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{472}{chapter*.374}%
 \contentsline {section}{Articles}{472}{chapter*.374}%
 \contentsline {section}{Books}{472}{chapter*.374}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{474}{section*.375}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{474}{section*.375}%
 \contentsfinish 

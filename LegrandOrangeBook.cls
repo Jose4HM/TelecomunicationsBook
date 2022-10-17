@@ -73,6 +73,7 @@
 \newcommand{\basedec}[1]{\times 10^{#1}}
 \newcommand{\fase}[2]{#1\phase{#2^{\circ}}}
 \newcommand{\faserad}[2]{#1\phase{#2 rad}}
+\newcommand{\parentesis}[1]{\left(#1\right)}
 \input{arduinoLanguage.tex}
 \input{risc-v.tex}
 \usepackage{pythonhighlight}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.8)  9 OCT 2022 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.8)  16 OCT 2022 21:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1006,11 +1006,11 @@ rs
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 153.
+less on input line 154.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 157.
+less on input line 158.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
@@ -1461,11 +1461,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip104
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 566.
+Package hyperref Info: Option `colorlinks' set `true' on input line 567.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 566.
+(hyperref)                setting the option has no effect on input line 567.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -2135,19 +2135,19 @@ Package pdftex.def Info: Images//chapter_head_generalindex3.pdf  used on input
 line 114.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
 (mainv2.toc
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
 
-Overfull \hbox (390.95769pt too wide) detected at line 1
+Overfull \hbox (390.95769pt too wide) detected at line 6
 [][][][][][] [][][][][][] 
  []
 
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <12> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 2.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 7.
 
-Overfull \hbox (390.95769pt too wide) detected at line 21
+Overfull \hbox (390.95769pt too wide) detected at line 22
 [][][][][][] [][][][][][] 
  []
 
@@ -2155,27 +2155,22 @@ Overfull \hbox (390.95769pt too wide) detected at line 21
 
 
  <./Images//chapter_head_generalindex3.pdf>]
-Overfull \hbox (390.95769pt too wide) detected at line 31
+Overfull \hbox (390.95769pt too wide) detected at line 35
 [][][][][][] [][][][][][] 
  []
 
 
-Overfull \hbox (390.95769pt too wide) detected at line 34
+Overfull \hbox (390.95769pt too wide) detected at line 42
 [][][][][][] [][][][][][] 
  []
 
 
-Overfull \hbox (390.95769pt too wide) detected at line 36
+Overfull \hbox (390.95769pt too wide) detected at line 44
 [][][][][][] [][][][][][] 
  []
 
 
-Overfull \hbox (390.95769pt too wide) detected at line 38
-[][][][][][] [][][][][][] 
- []
-
-
-Overfull \hbox (390.95769pt too wide) detected at line 40
+Overfull \hbox (390.95769pt too wide) detected at line 52
 [][][][][][] [][][][][][] 
  []
 
@@ -2265,6 +2260,19 @@ ne 141.
 LaTeX Warning: Citation 'velalineas1999' on page 6 undefined on input line 142.
 
 
+<Images//mrf/mrf16.png, id=231, 348.05232pt x 145.33498pt>
+File: Images//mrf/mrf16.png Graphic file (type png)
+<use Images//mrf/mrf16.png>
+Package pdftex.def Info: Images//mrf/mrf16.png  used on input line 149.
+(pdftex.def)             Requested size: 213.39568pt x 89.10658pt.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 160.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 160.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 160.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 160.
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2275,190 +2283,372 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [6
 
-]
+ <./Images//mrf/mrf16.png>]
+<Images//mrf/mrf17.png, id=245, 429.85594pt x 155.07938pt>
+File: Images//mrf/mrf17.png Graphic file (type png)
+<use Images//mrf/mrf17.png>
+Package pdftex.def Info: Images//mrf/mrf17.png  used on input line 170.
+(pdftex.def)             Requested size: 213.39568pt x 76.98813pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 173.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 180.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[7 <./Images//mrf/mrf17.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 223.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 232.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 246.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[8]
+<Images//mrf/mrf18.png, id=278, 258.21469pt x 350.05782pt>
+File: Images//mrf/mrf18.png Graphic file (type png)
+<use Images//mrf/mrf18.png>
+Package pdftex.def Info: Images//mrf/mrf18.png  used on input line 250.
+(pdftex.def)             Requested size: 213.39568pt x 289.30869pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[9 <./Images//mrf/mrf18.png>]
+<Images//mrf/mrf15.png, id=289, 276.21594pt x 196.35759pt>
+File: Images//mrf/mrf15.png Graphic file (type png)
+<use Images//mrf/mrf15.png>
+Package pdftex.def Info: Images//mrf/mrf15.png  used on input line 282.
+(pdftex.def)             Requested size: 213.39568pt x 151.70515pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 296.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 303.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 315.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[10 <./Images//mrf/mrf15.png>]
+<Images//mrf/mrf19.png, id=304, 608.2725pt x 292.09125pt>
+File: Images//mrf/mrf19.png Graphic file (type png)
+<use Images//mrf/mrf19.png>
+Package pdftex.def Info: Images//mrf/mrf19.png  used on input line 322.
+(pdftex.def)             Requested size: 341.43437pt x 163.95772pt.
+<Images//mrf/mrf20.png, id=305, 459.96844pt x 268.00125pt>
+File: Images//mrf/mrf20.png Graphic file (type png)
+<use Images//mrf/mrf20.png>
+Package pdftex.def Info: Images//mrf/mrf20.png  used on input line 329.
+(pdftex.def)             Requested size: 341.43437pt x 198.94757pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[11 <./Images//mrf/mrf19.png> <./Images//mrf/mrf20.png>]
+<Images//mrf/mrf21.png, id=315, 251.43938pt x 118.94438pt>
+File: Images//mrf/mrf21.png Graphic file (type png)
+<use Images//mrf/mrf21.png>
+Package pdftex.def Info: Images//mrf/mrf21.png  used on input line 368.
+(pdftex.def)             Requested size: 256.07741pt x 121.13834pt.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 383.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 383.
+
+Missing character: There is no ° in font zptmcm7t!
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[12 <./Images//mrf/mrf21.png>]
+<Images//mrf/mrf22.png, id=327, 260.47313pt x 127.22531pt>
+File: Images//mrf/mrf22.png Graphic file (type png)
+<use Images//mrf/mrf22.png>
+Package pdftex.def Info: Images//mrf/mrf22.png  used on input line 388.
+(pdftex.def)             Requested size: 192.0548pt x 93.80746pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 396.
+
+<Images//mrf/mrf23.png, id=329, 399.74344pt x 118.94438pt>
+File: Images//mrf/mrf23.png Graphic file (type png)
+<use Images//mrf/mrf23.png>
+Package pdftex.def Info: Images//mrf/mrf23.png  used on input line 398.
+(pdftex.def)             Requested size: 256.07741pt x 76.20036pt.
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+404.
+
+<Images//mrf/mrf24.png, id=330, 226.59656pt x 134.75343pt>
+File: Images//mrf/mrf24.png Graphic file (type png)
+<use Images//mrf/mrf24.png>
+Package pdftex.def Info: Images//mrf/mrf24.png  used on input line 406.
+(pdftex.def)             Requested size: 226.19888pt x 134.51663pt.
+
+Underfull \hbox (badness 1728) in paragraph at lines 394--410
+\T1/ptm/m/n/12 (+20) es-pe-ciales, nece-si-ta-mos para ar-ran-
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 394--410
+\T1/ptm/m/n/12 (+20) como una señal de ar-ranque ($\OML/ztmcm/m/it/12 x[]$\T1/p
+tm/m/n/12 (+20) )
+ []
+
+
+Underfull \hbox (badness 1810) in paragraph at lines 394--410
+\T1/ptm/m/n/12 (+20) ida del lazo de re-al-i-mentación haga las fun-ciones de l
+a mag-ni-tud de en-trada.
+ []
+
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 41
+0.
+
+<Images//mrf/mrf25.png, id=332, 451.6875pt x 239.39438pt>
+File: Images//mrf/mrf25.png Graphic file (type png)
+<use Images//mrf/mrf25.png>
+Package pdftex.def Info: Images//mrf/mrf25.png  used on input line 414.
+(pdftex.def)             Requested size: 256.07741pt x 135.72928pt.
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 41
+8.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[13 <./Images//mrf/mrf23.png> <./Images//mrf/mrf22.png> <./Images//mrf/mrf25.pn
+g>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 449.
+
+<Images//mrf/mrf26.png, id=347, 149.8097pt x 307.90031pt>
+File: Images//mrf/mrf26.png Graphic file (type png)
+<use Images//mrf/mrf26.png>
+Package pdftex.def Info: Images//mrf/mrf26.png  used on input line 451.
+(pdftex.def)             Requested size: 106.69783pt x 219.29668pt.
+<Images//mrf/mrf27.png, id=348, 147.55125pt x 309.40594pt>
+File: Images//mrf/mrf27.png Graphic file (type png)
+<use Images//mrf/mrf27.png>
+Package pdftex.def Info: Images//mrf/mrf27.png  used on input line 452.
+(pdftex.def)             Requested size: 106.69783pt x 223.74466pt.
+<Images//mrf/mrf28.png, id=349, 476.53032pt x 301.8778pt>
+File: Images//mrf/mrf28.png Graphic file (type png)
+<use Images//mrf/mrf28.png>
+Package pdftex.def Info: Images//mrf/mrf28.png  used on input line 457.
+(pdftex.def)             Requested size: 298.75264pt x 189.26736pt.
+
+Overfull \hbox (8.03441pt too wide) in paragraph at lines 448--459
+\T1/ptm/m/n/12 (-20) tanto la fase como la mag-ni-tud deben
+ []
+
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 464.
+
+<Images//mrf/mrf29.png, id=350, 601.24625pt x 418.56375pt>
+File: Images//mrf/mrf29.png Graphic file (type png)
+<use Images//mrf/mrf29.png>
+Package pdftex.def Info: Images//mrf/mrf29.png  used on input line 466.
+(pdftex.def)             Requested size: 204.85802pt x 142.61635pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[14 <./Images//mrf/mrf24.png> <./Images//mrf/mrf28.png>]
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 46
+9.
+
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+471.
+
+<Images//mrf/mrf30.png, id=360, 1204.5pt x 1204.5pt>
+File: Images//mrf/mrf30.png Graphic file (type png)
+<use Images//mrf/mrf30.png>
+Package pdftex.def Info: Images//mrf/mrf30.png  used on input line 473.
+(pdftex.def)             Requested size: 204.85802pt x 204.85419pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 477.
+
+<Images//mrf/mrf31.png, id=361, 415.5525pt x 241.65282pt>
+File: Images//mrf/mrf31.png Graphic file (type png)
+<use Images//mrf/mrf31.png>
+Package pdftex.def Info: Images//mrf/mrf31.png  used on input line 479.
+(pdftex.def)             Requested size: 256.07741pt x 148.9198pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[15 <./Images//mrf/mrf26.png> <./Images//mrf/mrf27.png> <./Images//mrf/mrf29.pn
+g>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[16 <./Images//mrf/mrf31.png> <./Images//mrf/mrf30.png>]
 \c@ttl@toc@part=\count555
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <220> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 147.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 485.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <30> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 147.
- (mainv2.ptc) [7
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 485.
+ (mainv2.ptc) [17
 
 ]
 Chapter 1.
 
 
-pdfTeX warning: pdflatex (file ./Images//chapter_head_T2.pdf): PDF inclusion: f
-ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_T2.pdf, id=247, 3581.70126pt x 1790.85063pt>
-File: Images//chapter_head_T2.pdf Graphic file (type pdf)
-<use Images//chapter_head_T2.pdf>
-Package pdftex.def Info: Images//chapter_head_T2.pdf  used on input line 150.
-(pdftex.def)             Requested size: 597.50787pt x 298.72942pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 159.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 159.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 170.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 180.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 194.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
-[8
-
- <./Images//chapter_head_T2.pdf>]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 209.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 209.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 218.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 252.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 258.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[9]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 262.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 272.
-<Images//placeholder.jpg, id=287, 351.3125pt x 193.72375pt>
-File: Images//placeholder.jpg Graphic file (type jpg)
-<use Images//placeholder.jpg>
-Package pdftex.def Info: Images//placeholder.jpg  used on input line 317.
-(pdftex.def)             Requested size: 175.6558pt x 96.86163pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[10]
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[11 <./Images//placeholder.jpg>] (mainv2.ptc) [12
-
-]
-Chapter 2.
-
-
 pdfTeX warning: pdflatex (file ./Images//chapter_head_ANT.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_ANT.pdf, id=313, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_ANT.pdf, id=392, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_ANT.pdf Graphic file (type pdf)
 <use Images//chapter_head_ANT.pdf>
-Package pdftex.def Info: Images//chapter_head_ANT.pdf  used on input line 331.
+Package pdftex.def Info: Images//chapter_head_ANT.pdf  used on input line 488.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 340.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 497.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 342.
+(mdframed)              on input line 499.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 353.
+(mdframed)              on input line 510.
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 355.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 355.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 512.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 355.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 512.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 355.
-
-Missing character: There is no ° in font zptmcm7t!
-Missing character: There is no ° in font zptmcm7t!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 512.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 512.
 
 Missing character: There is no ° in font zptmcm7t!
 Missing character: There is no ° in font zptmcm7t!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
-
-Missing character: There is no ° in font zptmcm7t!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
-
-Missing character: There is no ° in font zptmcm7t!
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 Missing character: There is no ° in font zptmcm7t!
 Missing character: There is no ° in font zptmcm7t!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 Missing character: There is no ° in font zptmcm7t!
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 362.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
 
 Missing character: There is no ° in font zptmcm7t!
-[13
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 519.
+
+Missing character: There is no ° in font zptmcm7t!
+[18
 
  <./Images//chapter_head_ANT.pdf>]
 
@@ -2469,16 +2659,16 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[14]
+[19]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 415.
+(mdframed)              on input line 572.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 434.
+(mdframed)              on input line 591.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 446.
+(mdframed)              on input line 603.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2488,173 +2678,24 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[15]
+[20]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 472.
+(mdframed)              on input line 629.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 480.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 637.
 
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 480.
+LaTeX Warning: Command \textdegree invalid in math mode on input line 637.
 
 Missing character: There is no ° in font zptmcm7t!
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 494.
+(mdframed)              on input line 651.
 Package mdframed Info: You first box width is to small
  mdframed fixed it
-(mdframed)              on input line 494.
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[16]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 495.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 509.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 524.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 536.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[17]
-<Images//Ant/Ant6.png, id=373, 530.98375pt x 532.99126pt>
-File: Images//Ant/Ant6.png Graphic file (type png)
-<use Images//Ant/Ant6.png>
-Package pdftex.def Info: Images//Ant/Ant6.png  used on input line 539.
-(pdftex.def)             Requested size: 256.07741pt x 257.04468pt.
-<Images//Ant/Ant1.png, id=375, 2450.15375pt x 760.8425pt>
-File: Images//Ant/Ant1.png Graphic file (type png)
-<use Images//Ant/Ant1.png>
-Package pdftex.def Info: Images//Ant/Ant1.png  used on input line 544.
-(pdftex.def)             Requested size: 341.43437pt x 106.018pt.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[18 <./Images//Ant/Ant6.png> <./Images//Ant/Ant1.png>]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 556.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.562 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.562 \end{align}
-                 
-
-LaTeX Warning: Reference `eq:dist millas' on page 19 undefined on input line 56
-7.
-
-
-LaTeX Warning: Reference `eq:dist km' on page 19 undefined on input line 567.
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 571.
-
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.
-1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.577 \end{align}
-                 
-pdfTeX warning (ext4): destination with the same identifier (name{equation.2.1.
-2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.577 \end{align}
-                 
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[19]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 602.
-
-<Images//Ant/Ant2.png, id=406, 144.54pt x 102.6234pt>
-File: Images//Ant/Ant2.png Graphic file (type png)
-<use Images//Ant/Ant2.png>
-Package pdftex.def Info: Images//Ant/Ant2.png  used on input line 605.
-(pdftex.def)             Requested size: 213.39568pt x 151.51851pt.
-<Images//Ant/Ant3.png, id=407, 144.0582pt x 92.9874pt>
-File: Images//Ant/Ant3.png Graphic file (type png)
-<use Images//Ant/Ant3.png>
-Package pdftex.def Info: Images//Ant/Ant3.png  used on input line 606.
-(pdftex.def)             Requested size: 213.39568pt x 137.75398pt.
-
-Overfull \hbox (3.0pt too wide) in paragraph at lines 605--606
- [][][][] 
- []
-
-<Images//Ant/Ant4.png, id=408, 145.2627pt x 100.9371pt>
-File: Images//Ant/Ant4.png Graphic file (type png)
-<use Images//Ant/Ant4.png>
-Package pdftex.def Info: Images//Ant/Ant4.png  used on input line 607.
-(pdftex.def)             Requested size: 213.39568pt x 148.29103pt.
-<Images//Ant/Ant5.png, id=409, 144.2991pt x 68.1747pt>
-File: Images//Ant/Ant5.png Graphic file (type png)
-<use Images//Ant/Ant5.png>
-Package pdftex.def Info: Images//Ant/Ant5.png  used on input line 608.
-(pdftex.def)             Requested size: 213.39568pt x 100.81996pt.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 616.
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[20 <./Images//Ant/Ant2.png> <./Images//Ant/Ant3.png> <./Images//Ant/Ant4.png> 
-<./Images//Ant/Ant5.png>]
-Package mdframed Info: Not enough space on this page on input line 629.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 630.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 645.
-
+(mdframed)              on input line 651.
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2666,6 +2707,15 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 [21]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
+(mdframed)              on input line 652.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 666.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 681.
+Package mdframed Info: You first box width is to small
+ mdframed fixed it
 (mdframed)              on input line 693.
 
 
@@ -2677,15 +2727,16 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
 [22]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 707.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 720.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 740.
+<Images//Ant/Ant6.png, id=452, 530.98375pt x 532.99126pt>
+File: Images//Ant/Ant6.png Graphic file (type png)
+<use Images//Ant/Ant6.png>
+Package pdftex.def Info: Images//Ant/Ant6.png  used on input line 696.
+(pdftex.def)             Requested size: 256.07741pt x 257.04468pt.
+<Images//Ant/Ant1.png, id=453, 2450.15375pt x 760.8425pt>
+File: Images//Ant/Ant1.png Graphic file (type png)
+<use Images//Ant/Ant1.png>
+Package pdftex.def Info: Images//Ant/Ant1.png  used on input line 701.
+(pdftex.def)             Requested size: 341.43437pt x 106.018pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2695,14 +2746,39 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[23]
+[23 <./Images//Ant/Ant6.png> <./Images//Ant/Ant1.png>]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 779.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 791.
+(mdframed)              on input line 713.
 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.719 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.719 \end{align}
+                 
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 728.
+
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.734 \end{align}
+                 
+pdfTeX warning (ext4): destination with the same identifier (name{equation.1.1.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.734 \end{align}
+                 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2712,21 +2788,103 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
 [24]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 759.
+
+<Images//Ant/Ant2.png, id=484, 144.54pt x 102.6234pt>
+File: Images//Ant/Ant2.png Graphic file (type png)
+<use Images//Ant/Ant2.png>
+Package pdftex.def Info: Images//Ant/Ant2.png  used on input line 762.
+(pdftex.def)             Requested size: 213.39568pt x 151.51851pt.
+<Images//Ant/Ant3.png, id=485, 144.0582pt x 92.9874pt>
+File: Images//Ant/Ant3.png Graphic file (type png)
+<use Images//Ant/Ant3.png>
+Package pdftex.def Info: Images//Ant/Ant3.png  used on input line 763.
+(pdftex.def)             Requested size: 213.39568pt x 137.75398pt.
+
+Overfull \hbox (3.0pt too wide) in paragraph at lines 762--763
+ [][][][] 
+ []
+
+<Images//Ant/Ant4.png, id=486, 145.2627pt x 100.9371pt>
+File: Images//Ant/Ant4.png Graphic file (type png)
+<use Images//Ant/Ant4.png>
+Package pdftex.def Info: Images//Ant/Ant4.png  used on input line 764.
+(pdftex.def)             Requested size: 213.39568pt x 148.29103pt.
+<Images//Ant/Ant5.png, id=487, 144.2991pt x 68.1747pt>
+File: Images//Ant/Ant5.png Graphic file (type png)
+<use Images//Ant/Ant5.png>
+Package pdftex.def Info: Images//Ant/Ant5.png  used on input line 765.
+(pdftex.def)             Requested size: 213.39568pt x 100.81996pt.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 792.
+(mdframed)              on input line 773.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[25 <./Images//Ant/Ant2.png> <./Images//Ant/Ant3.png> <./Images//Ant/Ant4.png> 
+<./Images//Ant/Ant5.png>]
+Package mdframed Info: Not enough space on this page on input line 786.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 806.
+(mdframed)              on input line 787.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 819.
+(mdframed)              on input line 802.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[26]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 832.
+(mdframed)              on input line 850.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[27]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 864.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 877.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 897.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[28]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 936.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 844.
+(mdframed)              on input line 948.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2736,7 +2894,23 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[25]
+[29]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 949.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 963.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 976.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 989.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1002.
+
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2745,82 +2919,976 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[26] (mainv2.ptc) [27
+[30]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[31] (mainv2.ptc) [32
+
+]
+Chapter 2.
+
+
+pdfTeX warning: pdflatex (file ./Images//chapter_head_IT2.pdf): PDF inclusion: 
+found PDF version <1.6>, but at most version <1.5> allowed
+<Images//chapter_head_IT2.pdf, id=582, 3595.4325pt x 1798.43892pt>
+File: Images//chapter_head_IT2.pdf Graphic file (type pdf)
+<use Images//chapter_head_IT2.pdf>
+Package pdftex.def Info: Images//chapter_head_IT2.pdf  used on input line 1012.
+
+(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
+<Images//IN2/IN1.png, id=583, 173.448pt x 101.178pt>
+File: Images//IN2/IN1.png Graphic file (type png)
+<use Images//IN2/IN1.png>
+Package pdftex.def Info: Images//IN2/IN1.png  used on input line 1017.
+(pdftex.def)             Requested size: 256.07741pt x 149.38597pt.
+[33
+
+ <./Images//chapter_head_IT2.pdf> <./Images//IN2/IN1.png>]
+<Images//IN2/IN2.png, id=594, 173.448pt x 104.5506pt>
+File: Images//IN2/IN2.png Graphic file (type png)
+<use Images//IN2/IN2.png>
+Package pdftex.def Info: Images//IN2/IN2.png  used on input line 1038.
+(pdftex.def)             Requested size: 256.07741pt x 154.36552pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[34 <./Images//IN2/IN2.png>]
+<Images//IN2/IN3.png, id=607, 273.86526pt x 184.85905pt>
+File: Images//IN2/IN3.png Graphic file (type png)
+<use Images//IN2/IN3.png>
+Package pdftex.def Info: Images//IN2/IN3.png  used on input line 1056.
+(pdftex.def)             Requested size: 256.07741pt x 172.8649pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[35 <./Images//IN2/IN3.png>]
+<Images//IN2/IN4.png, id=621, 173.448pt x 105.5142pt>
+File: Images//IN2/IN4.png Graphic file (type png)
+<use Images//IN2/IN4.png>
+Package pdftex.def Info: Images//IN2/IN4.png  used on input line 1074.
+(pdftex.def)             Requested size: 256.07741pt x 155.78827pt.
+<Images//IN2/IN5.png, id=623, 491.8375pt x 226.8475pt>
+File: Images//IN2/IN5.png Graphic file (type png)
+<use Images//IN2/IN5.png>
+Package pdftex.def Info: Images//IN2/IN5.png  used on input line 1087.
+(pdftex.def)             Requested size: 256.07741pt x 118.11368pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[36 <./Images//IN2/IN4.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[37 <./Images//IN2/IN5.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[38]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[39]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[40] (mainv2.ptc) [41
 
 ]
 Chapter 3.
 
 
-pdfTeX warning: pdflatex (file ./Images//chapter_head_IT2.pdf): PDF inclusion: 
+pdfTeX warning: pdflatex (file ./Images//chapter_head_CAM.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_IT2.pdf, id=507, 3595.4325pt x 1798.43892pt>
-File: Images//chapter_head_IT2.pdf Graphic file (type pdf)
-<use Images//chapter_head_IT2.pdf>
-Package pdftex.def Info: Images//chapter_head_IT2.pdf  used on input line 851.
-(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-[28
+<Images//chapter_head_CAM.pdf, id=666, 3595.4325pt x 1798.43892pt>
+File: Images//chapter_head_CAM.pdf Graphic file (type pdf)
+<use Images//chapter_head_CAM.pdf>
+Package pdftex.def Info: Images//chapter_head_CAM.pdf  used on input line 1178.
 
- <./Images//chapter_head_IT2.pdf>] (mainv2.ptc) [29
+(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
+<Images//cam/cam1.png, id=667, 768.8725pt x 25.09375pt>
+File: Images//cam/cam1.png Graphic file (type png)
+<use Images//cam/cam1.png>
+Package pdftex.def Info: Images//cam/cam1.png  used on input line 1185.
+(pdftex.def)             Requested size: 426.79135pt x 13.92947pt.
+<Images//cam/cam2.png, id=668, 478.78876pt x 25.09375pt>
+File: Images//cam/cam2.png Graphic file (type png)
+<use Images//cam/cam2.png>
+Package pdftex.def Info: Images//cam/cam2.png  used on input line 1187.
+(pdftex.def)             Requested size: 426.79135pt x 22.36858pt.
+<Images//cam/cam3.png, id=669, 861.2175pt x 31.11626pt>
+File: Images//cam/cam3.png Graphic file (type png)
+<use Images//cam/cam3.png>
+Package pdftex.def Info: Images//cam/cam3.png  used on input line 1189.
+(pdftex.def)             Requested size: 426.79135pt x 15.42038pt.
+<Images//cam/cam4.png, id=670, 401.5pt x 31.11626pt>
+File: Images//cam/cam4.png Graphic file (type png)
+<use Images//cam/cam4.png>
+Package pdftex.def Info: Images//cam/cam4.png  used on input line 1191.
+(pdftex.def)             Requested size: 426.79135pt x 33.07849pt.
+<Images//cam/cam5.png, id=671, 690.58pt x 31.11626pt>
+File: Images//cam/cam5.png Graphic file (type png)
+<use Images//cam/cam5.png>
+Package pdftex.def Info: Images//cam/cam5.png  used on input line 1193.
+(pdftex.def)             Requested size: 426.79135pt x 19.23062pt.
+<Images//cam/cam6.png, id=672, 359.3425pt x 31.11626pt>
+File: Images//cam/cam6.png Graphic file (type png)
+<use Images//cam/cam6.png>
+Package pdftex.def Info: Images//cam/cam6.png  used on input line 1195.
+(pdftex.def)             Requested size: 426.79135pt x 36.95946pt.
+<Images//cam/cam7.png, id=673, 439.6425pt x 31.11626pt>
+File: Images//cam/cam7.png Graphic file (type png)
+<use Images//cam/cam7.png>
+Package pdftex.def Info: Images//cam/cam7.png  used on input line 1197.
+(pdftex.def)             Requested size: 426.79135pt x 30.2074pt.
+<Images//cam/cam8.png, id=674, 494.84875pt x 31.11626pt>
+File: Images//cam/cam8.png Graphic file (type png)
+<use Images//cam/cam8.png>
+Package pdftex.def Info: Images//cam/cam8.png  used on input line 1199.
+(pdftex.def)             Requested size: 426.79135pt x 26.83684pt.
+<Images//cam/cam9.png, id=675, 391.4625pt x 31.11626pt>
+File: Images//cam/cam9.png Graphic file (type png)
+<use Images//cam/cam9.png>
+Package pdftex.def Info: Images//cam/cam9.png  used on input line 1201.
+(pdftex.def)             Requested size: 426.79135pt x 33.92647pt.
+<Images//cam/cam10.png, id=676, 588.1975pt x 31.11626pt>
+File: Images//cam/cam10.png Graphic file (type png)
+<use Images//cam/cam10.png>
+Package pdftex.def Info: Images//cam/cam10.png  used on input line 1203.
+(pdftex.def)             Requested size: 426.79135pt x 22.57793pt.
+<Images//cam/cam11.png, id=677, 509.905pt x 31.11626pt>
+File: Images//cam/cam11.png Graphic file (type png)
+<use Images//cam/cam11.png>
+Package pdftex.def Info: Images//cam/cam11.png  used on input line 1205.
+(pdftex.def)             Requested size: 426.79135pt x 26.04535pt.
+<Images//cam/cam12.png, id=678, 375.4025pt x 31.11626pt>
+File: Images//cam/cam12.png Graphic file (type png)
+<use Images//cam/cam12.png>
+Package pdftex.def Info: Images//cam/cam12.png  used on input line 1207.
+(pdftex.def)             Requested size: 426.79135pt x 35.37791pt.
+<Images//cam/cam13.png, id=679, 558.085pt x 31.11626pt>
+File: Images//cam/cam13.png Graphic file (type png)
+<use Images//cam/cam13.png>
+Package pdftex.def Info: Images//cam/cam13.png  used on input line 1209.
+(pdftex.def)             Requested size: 426.79135pt x 23.79672pt.
+<Images//cam/cam14.png, id=680, 669.50125pt x 31.11626pt>
+File: Images//cam/cam14.png Graphic file (type png)
+<use Images//cam/cam14.png>
+Package pdftex.def Info: Images//cam/cam14.png  used on input line 1211.
+(pdftex.def)             Requested size: 426.79135pt x 19.83646pt.
+<Images//cam/cam15.png, id=681, 518.93875pt x 31.11626pt>
+File: Images//cam/cam15.png Graphic file (type png)
+<use Images//cam/cam15.png>
+Package pdftex.def Info: Images//cam/cam15.png  used on input line 1213.
+(pdftex.def)             Requested size: 426.79135pt x 25.59239pt.
+<Images//cam/cam16.png, id=682, 365.365pt x 31.11626pt>
+File: Images//cam/cam16.png Graphic file (type png)
+<use Images//cam/cam16.png>
+Package pdftex.def Info: Images//cam/cam16.png  used on input line 1215.
+(pdftex.def)             Requested size: 426.79135pt x 36.34935pt.
+<Images//cam/cam17.png, id=683, 643.40375pt x 31.11626pt>
+File: Images//cam/cam17.png Graphic file (type png)
+<use Images//cam/cam17.png>
+Package pdftex.def Info: Images//cam/cam17.png  used on input line 1217.
+(pdftex.def)             Requested size: 426.79135pt x 20.64124pt.
+<Images//cam/cam18.png, id=684, 275.0275pt x 31.11626pt>
+File: Images//cam/cam18.png Graphic file (type png)
+<use Images//cam/cam18.png>
+Package pdftex.def Info: Images//cam/cam18.png  used on input line 1219.
+(pdftex.def)             Requested size: 426.79135pt x 48.29092pt.
+<Images//cam/cam19.png, id=685, 704.6325pt x 31.11626pt>
+File: Images//cam/cam19.png Graphic file (type png)
+<use Images//cam/cam19.png>
+Package pdftex.def Info: Images//cam/cam19.png  used on input line 1221.
+(pdftex.def)             Requested size: 426.79135pt x 18.84698pt.
+<Images//cam/cam20.png, id=686, 803.0pt x 31.11626pt>
+File: Images//cam/cam20.png Graphic file (type png)
+<use Images//cam/cam20.png>
+Package pdftex.def Info: Images//cam/cam20.png  used on input line 1223.
+(pdftex.def)             Requested size: 426.79135pt x 16.53853pt.
+<Images//cam/cam21.png, id=687, 817.0525pt x 29.10875pt>
+File: Images//cam/cam21.png Graphic file (type png)
+<use Images//cam/cam21.png>
+Package pdftex.def Info: Images//cam/cam21.png  used on input line 1225.
+(pdftex.def)             Requested size: 426.79135pt x 15.20503pt.
+[42
+
+ <./Images//chapter_head_CAM.pdf> <./Images//cam/cam1.png> <./Images//cam/cam2.
+png> <./Images//cam/cam3.png> <./Images//cam/cam4.png> <./Images//cam/cam5.png>
+ <./Images//cam/cam6.png> <./Images//cam/cam7.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[43 <./Images//cam/cam8.png> <./Images//cam/cam9.png> <./Images//cam/cam10.png>
+ <./Images//cam/cam11.png> <./Images//cam/cam12.png> <./Images//cam/cam13.png> 
+<./Images//cam/cam14.png> <./Images//cam/cam15.png> <./Images//cam/cam16.png> <
+./Images//cam/cam17.png> <./Images//cam/cam18.png> <./Images//cam/cam19.png> <.
+/Images//cam/cam20.png> <./Images//cam/cam21.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1240.
+<Images//cam/cam22.png, id=702, 232.61906pt x 103.13531pt>
+File: Images//cam/cam22.png Graphic file (type png)
+<use Images//cam/cam22.png>
+Package pdftex.def Info: Images//cam/cam22.png  used on input line 1246.
+(pdftex.def)             Requested size: 206.39568pt x 91.51157pt.
+<Images//cam/cam23.png, id=703, 163.3603pt x 420.06938pt>
+File: Images//cam/cam23.png Graphic file (type png)
+<use Images//cam/cam23.png>
+Package pdftex.def Info: Images//cam/cam23.png  used on input line 1250.
+(pdftex.def)             Requested size: 123.83865pt x 318.44202pt.
+<Images//cam/cam24.png, id=704, 411.03563pt x 422.32782pt>
+File: Images//cam/cam24.png Graphic file (type png)
+<use Images//cam/cam24.png>
+Package pdftex.def Info: Images//cam/cam24.png  used on input line 1257.
+(pdftex.def)             Requested size: 247.67732pt x 254.48126pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[44 <./Images//cam/cam22.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[45 <./Images//cam/cam23.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1263.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1269--1272
+
+ []
+
+<Images//cam/cam25.png, id=720, 192.72pt x 352.31625pt>
+File: Images//cam/cam25.png Graphic file (type png)
+<use Images//cam/cam25.png>
+Package pdftex.def Info: Images//cam/cam25.png  used on input line 1273.
+(pdftex.def)             Requested size: 165.11401pt x 301.84637pt.
+<Images//cam/cam26.png, id=721, 433.62pt x 427.5975pt>
+File: Images//cam/cam26.png Graphic file (type png)
+<use Images//cam/cam26.png>
+Package pdftex.def Info: Images//cam/cam26.png  used on input line 1277.
+(pdftex.def)             Requested size: 165.11401pt x 162.82149pt.
+<Images//cam/cam28.png, id=722, 239.39438pt x 415.5525pt>
+File: Images//cam/cam28.png Graphic file (type png)
+<use Images//cam/cam28.png>
+Package pdftex.def Info: Images//cam/cam28.png  used on input line 1281.
+(pdftex.def)             Requested size: 165.11401pt x 286.61105pt.
+<Images//cam/cam27.png, id=723, 197.98969pt x 426.09187pt>
+File: Images//cam/cam27.png Graphic file (type png)
+<use Images//cam/cam27.png>
+Package pdftex.def Info: Images//cam/cam27.png  used on input line 1286.
+(pdftex.def)             Requested size: 82.557pt x 177.67003pt.
+<Images//cam/cam29.png, id=724, 225.84375pt x 410.2828pt>
+File: Images//cam/cam29.png Graphic file (type png)
+<use Images//cam/cam29.png>
+Package pdftex.def Info: Images//cam/cam29.png  used on input line 1290.
+(pdftex.def)             Requested size: 144.47949pt x 262.48619pt.
+<Images//cam/cam30.png, id=725, 278.54062pt x 408.02437pt>
+File: Images//cam/cam30.png Graphic file (type png)
+<use Images//cam/cam30.png>
+Package pdftex.def Info: Images//cam/cam30.png  used on input line 1294.
+(pdftex.def)             Requested size: 123.83865pt x 181.40529pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1296--1298
+
+ []
+
+<Images//cam/cam31.png, id=726, 738.50906pt x 412.54124pt>
+File: Images//cam/cam31.png Graphic file (type png)
+<use Images//cam/cam31.png>
+Package pdftex.def Info: Images//cam/cam31.png  used on input line 1300.
+(pdftex.def)             Requested size: 350.87517pt x 196.00319pt.
+<Images//cam/cam32.png, id=727, 936.49875pt x 342.5297pt>
+File: Images//cam/cam32.png Graphic file (type png)
+<use Images//cam/cam32.png>
+Package pdftex.def Info: Images//cam/cam32.png  used on input line 1304.
+(pdftex.def)             Requested size: 330.23433pt x 120.78615pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[46 <./Images//cam/cam24.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[47 <./Images//cam/cam25.png> <./Images//cam/cam26.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[48 <./Images//cam/cam28.png> <./Images//cam/cam27.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[49 <./Images//cam/cam29.png> <./Images//cam/cam30.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[50 <./Images//cam/cam31.png> <./Images//cam/cam32.png>]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1316.
+
+<Images//CAM/cam33.png, id=761, 669.50125pt x 500.87125pt>
+File: Images//CAM/cam33.png Graphic file (type png)
+<use Images//CAM/cam33.png>
+Package pdftex.def Info: Images//CAM/cam33.png  used on input line 1318.
+(pdftex.def)             Requested size: 213.39568pt x 159.64772pt.
+<Images//CAM/cam34.png, id=763, 982.67125pt x 435.6275pt>
+File: Images//CAM/cam34.png Graphic file (type png)
+<use Images//CAM/cam34.png>
+Package pdftex.def Info: Images//CAM/cam34.png  used on input line 1329.
+(pdftex.def)             Requested size: 213.39568pt x 94.59532pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[51 <./Images//CAM/cam33.png> <./Images//CAM/cam34.png>]
+<Images//CAM/cam35.png, id=776, 380.17032pt x 221.32687pt>
+File: Images//CAM/cam35.png Graphic file (type png)
+<use Images//CAM/cam35.png>
+Package pdftex.def Info: Images//CAM/cam35.png  used on input line 1345.
+(pdftex.def)             Requested size: 213.39568pt x 124.236pt.
+<Images//CAM/cam36.png, id=777, 283.0575pt x 131.74219pt>
+File: Images//CAM/cam36.png Graphic file (type png)
+<use Images//CAM/cam36.png>
+Package pdftex.def Info: Images//CAM/cam36.png  used on input line 1346.
+(pdftex.def)             Requested size: 213.39568pt x 99.32301pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1342--1349
+
+ []
+
+<Images//CAM/cam37.png, id=779, 228.10219pt x 373.395pt>
+File: Images//CAM/cam37.png Graphic file (type png)
+<use Images//CAM/cam37.png>
+Package pdftex.def Info: Images//CAM/cam37.png  used on input line 1358.
+(pdftex.def)             Requested size: 170.71393pt x 279.45871pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1364.
+
+<Images//CAM/cam38.png, id=782, 395.97937pt x 182.18062pt>
+File: Images//CAM/cam38.png Graphic file (type png)
+<use Images//CAM/cam38.png>
+Package pdftex.def Info: Images//CAM/cam38.png  used on input line 1366.
+(pdftex.def)             Requested size: 426.79135pt x 196.36015pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1371.
+
+<Images//CAM/cam39.png, id=784, 661.72218pt x 420.82219pt>
+File: Images//CAM/cam39.png Graphic file (type png)
+<use Images//CAM/cam39.png>
+Package pdftex.def Info: Images//CAM/cam39.png  used on input line 1373.
+(pdftex.def)             Requested size: 426.79135pt x 271.4186pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[52 <./Images//CAM/cam35.png> <./Images//CAM/cam36.png> <./Images//CAM/cam37.pn
+g>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1380.
+<Images//cam/cam40.png, id=796, 394.47375pt x 138.5175pt>
+File: Images//cam/cam40.png Graphic file (type png)
+<use Images//cam/cam40.png>
+Package pdftex.def Info: Images//cam/cam40.png  used on input line 1385.
+(pdftex.def)             Requested size: 247.67732pt x 86.97057pt.
+<Images//cam/cam41.png, id=797, 280.04625pt x 199.49532pt>
+File: Images//cam/cam41.png Graphic file (type png)
+<use Images//cam/cam41.png>
+Package pdftex.def Info: Images//cam/cam41.png  used on input line 1390.
+(pdftex.def)             Requested size: 247.67732pt x 176.44527pt.
+<Images//cam/cam42.png, id=798, 461.47406pt x 228.855pt>
+File: Images//cam/cam42.png Graphic file (type png)
+<use Images//cam/cam42.png>
+Package pdftex.def Info: Images//cam/cam42.png  used on input line 1395.
+(pdftex.def)             Requested size: 247.67732pt x 122.82906pt.
+<Images//cam/cam43.png, id=799, 362.10281pt x 406.51875pt>
+File: Images//cam/cam43.png Graphic file (type png)
+<use Images//cam/cam43.png>
+Package pdftex.def Info: Images//cam/cam43.png  used on input line 1400.
+(pdftex.def)             Requested size: 247.67732pt x 278.06046pt.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1402.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[53 <./Images//CAM/cam38.png> <./Images//cam/cam40.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[54 <./Images//CAM/cam39.png> <./Images//cam/cam41.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[55 <./Images//cam/cam42.png> <./Images//cam/cam43.png>] (mainv2.ptc) [56
 
 ]
 Chapter 4.
 
 
-pdfTeX warning: pdflatex (file ./Images//chapter_head_CAM.pdf): PDF inclusion: 
+pdfTeX warning: pdflatex (file ./Images//chapter_head_SFT.pdf): PDF inclusion: 
 found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_CAM.pdf, id=523, 3595.4325pt x 1798.43892pt>
-File: Images//chapter_head_CAM.pdf Graphic file (type pdf)
-<use Images//chapter_head_CAM.pdf>
-Package pdftex.def Info: Images//chapter_head_CAM.pdf  used on input line 864.
-(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-[30
+<Images//chapter_head_SFT.pdf, id=829, 3595.4325pt x 1798.43892pt>
+File: Images//chapter_head_SFT.pdf Graphic file (type pdf)
+<use Images//chapter_head_SFT.pdf>
+Package pdftex.def Info: Images//chapter_head_SFT.pdf  used on input line 1409.
 
- <./Images//chapter_head_CAM.pdf>] (mainv2.ptc) [31
+(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
+[57
+
+ <./Images//chapter_head_SFT.pdf>] (mainv2.ptc) [58
 
 ]
 Chapter 5.
 
 
-pdfTeX warning: pdflatex (file ./Images//chapter_head_SFT.pdf): PDF inclusion: 
-found PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_SFT.pdf, id=539, 3595.4325pt x 1798.43892pt>
-File: Images//chapter_head_SFT.pdf Graphic file (type pdf)
-<use Images//chapter_head_SFT.pdf>
-Package pdftex.def Info: Images//chapter_head_SFT.pdf  used on input line 871.
-(pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-[32
-
- <./Images//chapter_head_SFT.pdf>] (mainv2.ptc) [33
-
-]
-Chapter 6.
-
-
 pdfTeX warning: pdflatex (file ./Images//chapter_head_MR.pdf): PDF inclusion: f
 ound PDF version <1.6>, but at most version <1.5> allowed
-<Images//chapter_head_MR.pdf, id=554, 3595.4325pt x 1798.43892pt>
+<Images//chapter_head_MR.pdf, id=850, 3595.4325pt x 1798.43892pt>
 File: Images//chapter_head_MR.pdf Graphic file (type pdf)
 <use Images//chapter_head_MR.pdf>
-Package pdftex.def Info: Images//chapter_head_MR.pdf  used on input line 878.
+Package pdftex.def Info: Images//chapter_head_MR.pdf  used on input line 1416.
 (pdftex.def)             Requested size: 597.50787pt x 298.87009pt.
-[34
+<Images//mrf/mrf1.png, id=851, 1003.75pt x 736.7525pt>
+File: Images//mrf/mrf1.png Graphic file (type png)
+<use Images//mrf/mrf1.png>
+Package pdftex.def Info: Images//mrf/mrf1.png  used on input line 1435.
+(pdftex.def)             Requested size: 341.43437pt x 250.6162pt.
+<Images//mrf/mrf2.png, id=852, 642.4pt x 196.735pt>
+File: Images//mrf/mrf2.png Graphic file (type png)
+<use Images//mrf/mrf2.png>
+Package pdftex.def Info: Images//mrf/mrf2.png  used on input line 1440.
+(pdftex.def)             Requested size: 384.1096pt x 117.63663pt.
+[59
 
- <./Images//chapter_head_MR.pdf>] (mainv2.ptc) [35
+ <./Images//chapter_head_MR.pdf>]
+<Images//mrf/mrf3.png, id=862, 770.88pt x 552.0625pt>
+File: Images//mrf/mrf3.png Graphic file (type png)
+<use Images//mrf/mrf3.png>
+Package pdftex.def Info: Images//mrf/mrf3.png  used on input line 1446.
+(pdftex.def)             Requested size: 384.1096pt x 275.07867pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[60 <./Images//mrf/mrf1.png> <./Images//mrf/mrf2.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[61 <./Images//mrf/mrf3.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1463.
+<Images//mrf/mrf5.png, id=875, 327.2225pt x 155.58125pt>
+File: Images//mrf/mrf5.png Graphic file (type png)
+<use Images//mrf/mrf5.png>
+Package pdftex.def Info: Images//mrf/mrf5.png  used on input line 1490.
+(pdftex.def)             Requested size: 341.43437pt x 162.33955pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[62]
+<Images//mrf/mrf6.png, id=883, 389.20406pt x 169.38281pt>
+File: Images//mrf/mrf6.png Graphic file (type png)
+<use Images//mrf/mrf6.png>
+Package pdftex.def Info: Images//mrf/mrf6.png  used on input line 1496.
+(pdftex.def)             Requested size: 341.43437pt x 148.59726pt.
+<Images//mrf/mrf7.png, id=884, 442.65375pt x 219.82124pt>
+File: Images//mrf/mrf7.png Graphic file (type png)
+<use Images//mrf/mrf7.png>
+Package pdftex.def Info: Images//mrf/mrf7.png  used on input line 1502.
+(pdftex.def)             Requested size: 341.43437pt x 169.56474pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[63 <./Images//mrf/mrf5.png> <./Images//mrf/mrf6.png> <./Images//mrf/mrf7.png>]
+<Images//mrf/mrf8.png, id=895, 449.42906pt x 188.20313pt>
+File: Images//mrf/mrf8.png Graphic file (type png)
+<use Images//mrf/mrf8.png>
+Package pdftex.def Info: Images//mrf/mrf8.png  used on input line 1512.
+(pdftex.def)             Requested size: 341.43437pt x 142.98416pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1516.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1516.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1516.
+
+LaTeX Warning: Command \~ invalid in math mode on input line 1530.
+
+Missing character: There is no ñ in font zptmcm7t!
+
+LaTeX Warning: Command \~ invalid in math mode on input line 1534.
+
+Missing character: There is no ñ in font zptmcm7t!
+
+LaTeX Warning: Command \' invalid in math mode on input line 1548.
+
+Missing character: There is no á in font zptmcm7t!
+
+LaTeX Warning: Command \' invalid in math mode on input line 1548.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+Missing character: There is no á in font zptmcm7t!
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Command \' invalid in math mode on input line 1548.
+
+Missing character: There is no á in font zptmcm7t!
+
+LaTeX Warning: Command \' invalid in math mode on input line 1548.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+Missing character: There is no á in font zptmcm7t!
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1548.
+
+Missing character: There is no ° in font zptmcm7t!
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1549.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[64 <./Images//mrf/mrf8.png>]
+<Images//mrf/mrf9.png, id=904, 469.00218pt x 249.93375pt>
+File: Images//mrf/mrf9.png Graphic file (type png)
+<use Images//mrf/mrf9.png>
+Package pdftex.def Info: Images//mrf/mrf9.png  used on input line 1554.
+(pdftex.def)             Requested size: 341.43437pt x 181.95052pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[65]
+<Images//mrf/mrf10.png, id=909, 367.3725pt x 267.24844pt>
+File: Images//mrf/mrf10.png Graphic file (type png)
+<use Images//mrf/mrf10.png>
+Package pdftex.def Info: Images//mrf/mrf10.png  used on input line 1560.
+(pdftex.def)             Requested size: 256.07741pt x 186.29784pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[66 <./Images//mrf/mrf9.png> <./Images//mrf/mrf10.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1584.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[67]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1603.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1621.
+<Images//mrf/mrf11.png, id=927, 401.24907pt x 215.30438pt>
+File: Images//mrf/mrf11.png Graphic file (type png)
+<use Images//mrf/mrf11.png>
+Package pdftex.def Info: Images//mrf/mrf11.png  used on input line 1627.
+(pdftex.def)             Requested size: 330.23433pt x 177.21106pt.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 1628.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[68]
+<Images//mrf/mrf12.png, id=937, 430.60875pt x 210.7875pt>
+File: Images//mrf/mrf12.png Graphic file (type png)
+<use Images//mrf/mrf12.png>
+Package pdftex.def Info: Images//mrf/mrf12.png  used on input line 1633.
+(pdftex.def)             Requested size: 341.43437pt x 167.14105pt.
+<Images//mrf/mrf13.png, id=938, 394.47375pt x 215.30438pt>
+File: Images//mrf/mrf13.png Graphic file (type png)
+<use Images//mrf/mrf13.png>
+Package pdftex.def Info: Images//mrf/mrf13.png  used on input line 1639.
+(pdftex.def)             Requested size: 341.43437pt x 186.35727pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[69 <./Images//mrf/mrf11.png> <./Images//mrf/mrf12.png>]
+<Images//mrf/mrf14.png, id=947, 434.37282pt x 244.66406pt>
+File: Images//mrf/mrf14.png Graphic file (type png)
+<use Images//mrf/mrf14.png>
+Package pdftex.def Info: Images//mrf/mrf14.png  used on input line 1645.
+(pdftex.def)             Requested size: 341.43437pt x 192.32677pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[70 <./Images//mrf/mrf13.png> <./Images//mrf/mrf14.png>]
+File: Images//mrf/mrf20.png Graphic file (type png)
+<use Images//mrf/mrf20.png>
+Package pdftex.def Info: Images//mrf/mrf20.png  used on input line 1671.
+(pdftex.def)             Requested size: 341.43437pt x 198.94757pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[71]
+File: Images//mrf/mrf21.png Graphic file (type png)
+<use Images//mrf/mrf21.png>
+Package pdftex.def Info: Images//mrf/mrf21.png  used on input line 1710.
+(pdftex.def)             Requested size: 256.07741pt x 121.13834pt.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1725.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 1725.
+
+Missing character: There is no ° in font zptmcm7t!
+File: Images//mrf/mrf22.png Graphic file (type png)
+<use Images//mrf/mrf22.png>
+Package pdftex.def Info: Images//mrf/mrf22.png  used on input line 1730.
+(pdftex.def)             Requested size: 192.0548pt x 93.80746pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[72]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1738.
+
+File: Images//mrf/mrf23.png Graphic file (type png)
+<use Images//mrf/mrf23.png>
+Package pdftex.def Info: Images//mrf/mrf23.png  used on input line 1740.
+(pdftex.def)             Requested size: 256.07741pt x 76.20036pt.
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+1746.
+
+File: Images//mrf/mrf24.png Graphic file (type png)
+<use Images//mrf/mrf24.png>
+Package pdftex.def Info: Images//mrf/mrf24.png  used on input line 1748.
+(pdftex.def)             Requested size: 226.19888pt x 134.51663pt.
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
+52.
+
+File: Images//mrf/mrf25.png Graphic file (type png)
+<use Images//mrf/mrf25.png>
+Package pdftex.def Info: Images//mrf/mrf25.png  used on input line 1756.
+(pdftex.def)             Requested size: 256.07741pt x 135.72928pt.
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 17
+60.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[73]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1791.
+
+File: Images//mrf/mrf26.png Graphic file (type png)
+<use Images//mrf/mrf26.png>
+Package pdftex.def Info: Images//mrf/mrf26.png  used on input line 1793.
+(pdftex.def)             Requested size: 106.69783pt x 219.29668pt.
+File: Images//mrf/mrf27.png Graphic file (type png)
+<use Images//mrf/mrf27.png>
+Package pdftex.def Info: Images//mrf/mrf27.png  used on input line 1794.
+(pdftex.def)             Requested size: 106.69783pt x 223.74466pt.
+File: Images//mrf/mrf28.png Graphic file (type png)
+<use Images//mrf/mrf28.png>
+Package pdftex.def Info: Images//mrf/mrf28.png  used on input line 1799.
+(pdftex.def)             Requested size: 298.75264pt x 189.26736pt.
+
+Overfull \hbox (8.03441pt too wide) in paragraph at lines 1790--1801
+\T1/ptm/m/n/12 (-20) tanto la fase como la mag-ni-tud deben
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[74]
+
+Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
+put line 1806.
+
+File: Images//mrf/mrf29.png Graphic file (type png)
+<use Images//mrf/mrf29.png>
+Package pdftex.def Info: Images//mrf/mrf29.png  used on input line 1808.
+(pdftex.def)             Requested size: 204.85802pt x 142.61635pt.
+
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 18
+11.
+
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+1813.
+
+File: Images//mrf/mrf30.png Graphic file (type png)
+<use Images//mrf/mrf30.png>
+Package pdftex.def Info: Images//mrf/mrf30.png  used on input line 1815.
+(pdftex.def)             Requested size: 204.85802pt x 204.85419pt.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 1819.
+
+File: Images//mrf/mrf31.png Graphic file (type png)
+<use Images//mrf/mrf31.png>
+Package pdftex.def Info: Images//mrf/mrf31.png  used on input line 1821.
+(pdftex.def)             Requested size: 256.07741pt x 148.9198pt.
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[75]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[76] (mainv2.ptc) [77
 
 ]
-<Images//Final2.jpg, id=566, 1028.34187pt x 496.10344pt>
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[78]
+<Images//Final2.jpg, id=1018, 1028.34187pt x 496.10344pt>
 File: Images//Final2.jpg Graphic file (type jpg)
 <use Images//Final2.jpg>
-Package pdftex.def Info: Images//Final2.jpg  used on input line 897.
+Package pdftex.def Info: Images//Final2.jpg  used on input line 1852.
 (pdftex.def)             Requested size: 597.50787pt x 288.26251pt.
 
 
-Package biblatex Warning: Type 'book' not found on input line 909.
+Package biblatex Warning: Type 'book' not found on input line 1864.
 
 
-LaTeX Warning: Empty bibliography on input line 909.
+LaTeX Warning: Empty bibliography on input line 1864.
 
-[36
+[79
 
  <./Images//Final2.jpg>]
 No file mainv2.ind.
@@ -2844,32 +3912,20 @@ Package logreq Info: Writing requests to 'mainv2.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55284 strings out of 475385
- 1231628 string characters out of 2777379
- 2197373 words of memory out of 3000000
- 74968 multiletter control sequences out of 15000+600000
- 630070 words of font info for 528 fonts, out of 8000000 for 9000
+ 56315 strings out of 475385
+ 1250780 string characters out of 2777379
+ 2199414 words of memory out of 3000000
+ 75594 multiletter control sequences out of 15000+600000
+ 647602 words of font info for 638 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,18n,108p,1153b,1435s stack positions out of 10000i,1000n,20000p,200000b,80000s
 
-pdfTeX warning (dest): name{section*.9} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{section*.60} has been referenced but does not exist
+, replaced by a fixed one
 
 
-pdfTeX warning (dest): name{subfigure.2.1.3} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subfigure.2.1.2} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{subfigure.2.1.1} has been referenced but does not e
-xist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{chapter*.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{chapter*.48} has been referenced but does not exist
+, replaced by a fixed one
 
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Us
 ers/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pf
@@ -2879,19 +3935,18 @@ nts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/typ
 e1/public/amsfonts/symbols/msam10.pfb><C:/Users/User/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/User/AppData/Local
-/Programs/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/User/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Users/User/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><C:/Users/User/AppData/
-Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/User/AppData
-/Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/User/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local
-/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on mainv2.pdf (36 pages, 3750774 bytes).
+/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Users/User/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><C:/Users/User/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Users/User/AppData/
+Local/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/User/AppData/Local
+/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/
+Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on mainv2.pdf (79 pages, 5100144 bytes).
 PDF statistics:
- 779 PDF objects out of 1000 (max. 8388607)
- 204 named destinations out of 1000 (max. 500000)
- 183133 words of extra memory for PDF output out of 184870 (max. 10000000)
+ 1254 PDF objects out of 1440 (max. 8388607)
+ 371 named destinations out of 1000 (max. 500000)
+ 189625 words of extra memory for PDF output out of 221844 (max. 10000000)
 
