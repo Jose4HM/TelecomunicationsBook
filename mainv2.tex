@@ -97,7 +97,7 @@
 \begin{center}
     \thispagestyle{empty}
     \vspace*{\fill}
-    \textit{Dedicatoria aquí}
+    \textit{Realmente no sé a quien dedicar este texto, pues no es más que una recopilación de lo que voy aprendiendo para convertirme en ingeniero en telecomunicaciones, visto de manera dedico este libro a todos los estudiantes que por lo menos toman en cuenta la información contenida en el libro y más aún con las ganas de aprender de otro estudiante, como lo soy yo.}
     \vspace*{\fill}
 \end{center}
 \clearpage
@@ -141,344 +141,6 @@
 \item Redes de computadoras\cite{tanenbaum2012computer}
 \item Líneas de transmisión\cite{velalineas1999}
 \end{itemize}
-\section{Circuitos resonantes}
-Un circuito resonante es una combinación de elementos sensibles a la frecuencia, conectados para obtener una respuesta selectora de frecuencia.
-\subsection*{Circuito resonante en paralelo}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\linewidth]{mrf/mrf16.png}
-\caption{Circuito resonante en paralelo.}
-\end{figure}
-\begin{equation}
-Y(\iu\omega)=G+\iu\omega C+\frac{1}{\iu\omega L}
-\end{equation}
-En paralelo, al buscar una igualdad entre la reactancia capacitiva y la inductiva, estos no entrarán en corto circuito, sino entrarán en circuito abierto. De este modo, la admitancia será tan solo la conductancia:
-\begin{displaymath}
-Y(\iu\omega_0)=G
-\end{displaymath}
-\begin{notation}
-En serie, la impedancia en los elementos L y C tiende a 0, mientras que en paralelo tiende a infinito cuando el circuito esta en resonancia (funcionando con frecuencia de resonancia).
-\end{notation}
-Cuando se logra una impedancia o admitancia puramente real es cuando se trabaja en la \textbf{frecuencia de resonancia}, cuando se logra eso se dice que el circuito mismo están en resonancia. En la resonancia, el voltaje y la corriente están en \textbf{fase} y, por consiguiente, el \textbf{ángulo de fase es cero} y el \textbf{factor de potencia es unitario}.\\
-En el caso en \textbf{serie}, en la resonancia, la \textbf{impedancia} es un \textbf{mínimo} y, por consiguiente, la \textbf{corriente es máxima} para un voltaje dado.
-\begin{notation}
-A bajas frecuencias, la impedancia del circuito en serie está dominado por el término capacitivo y la admitancia del circuito en paralelo está dominada por el término inductivo.\\
-A altas frecuencias, la impedancia del circuito en serie está dominado por el término inductivo y la admitancia del circuito en paralelo está dominada por el término capacitivo.
-\end{notation}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\linewidth]{mrf/mrf17.png}
-\caption{Gráficas del comportamiento en la frecuecnia de resonancia para serie y paralelo.}
-\end{figure}
-\begin{definition}[Función de transferencia en paralelo]
-Realizando una asociación de admitancias en paralelo para hallar la función de transferencia sobre una fuente de corriente se obtiene:
-\begin{equation}
-H=\frac{1}{1+\iu\left(\omega\cdot C-\frac{1}{\omega\cdot L}\right)R}
-\label{eq:funcion transferencia paralelo}
-\end{equation}
-\end{definition}
-\begin{definition}[Factor de calidad-paralelo]
-En esencia \textit{Q} es una medida de la capacidad de almacenamiento de energía de un circuito en relación con su capacidad de disipación de energía.
-\begin{equation}
-Q=\omega_r\cdot C\cdot R=\frac{R}{\omega_r\cdot L}=R\sqrt{\frac{C}{L}}
-\label{eq:factor calidad paralelo}
-\end{equation}
-Donde:
-\begin{itemize}
-\item $\omega_r$: Frecuencia de resonancia. (rad/s)
-\item \textbf{C}: Capacitancia. (F)
-\item \textbf{R}: Resistancia. ($\Omega$)
-\item \textbf{L}: Inductancia. (H)
-\end{itemize}
-\end{definition}
-\begin{remark}
-Cuando esta en resonancia, la función de transferencia debe ser igual a la unidad.
-\end{remark}
-Con el factor de calidad se puede llegar a una expresión para la función de transferencia expresada en la ecuación \ref{eq:funcion transferencia paralelo} :
-\begin{equation}
-H=\frac{1}{1+\iu Q\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)}
-\end{equation}
-Donde su magnitud y fase están dadas por:
-\begin{align}
-|H|&=\frac{1}{\left[+Q^2\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)^2\right]^{\frac{1}{2}}}\\
-\phi&=-\tan^-1Q\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)
-\end{align}
-A ciertas frecuencias se obtiene los siguientes valores:
-\begin{table}[H]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline
-$\omega$ & 0   & $\omega_1$           & $\omega_0$ & $\omega_2$            & $\infty$ \\ \hline
-|H|      & 0   & $\frac{1}{\sqrt{2}}$ & 1          & $-\frac{1}{\sqrt{2}}$ & 0        \\ \hline
-$\phi$   & 90° & 45°                  & 0°         & -45°                  & -90°     \\ \hline
-\end{tabular}
-\caption{Valores importantes para el módulo y fase de H.}
-\end{table}
-Notamos que tenemos dos frecuecias: $\omega_1$ y $\omega_2$, que corresponden a $H=\frac{1}{\sqrt{2}}$. Examinando la ecuación de la magnitud H, se observa que $H=\frac{1}{\sqrt{2}}$ se presenta cuando:
-\begin{equation}
-Q^2\left(\frac{\omega}{\omega_r}-\frac{\omega_r}{\omega}\right)^2=1
-\label{eq:h resonancia}
-\end{equation}
-La ecuación \ref{eq:h resonancia} se puede reordenar en forma de una ecuación de cuarto grado, en función de $\omega$. Despejando los valores de interés, se obtiene:
-\begin{definition}[Límites de ancho de banda]
-Estos parámetros indican desde que frecuencias hasta que frecuencias opera nuestro circuito, en otras palabras limita el ancho de banda:
-\begin{align}
-\omega_1&=\omega_0\sqrt{1+\parentesis{\frac{1}{2Q}}^2}-\frac{\omega_r}{2Q}\\
-\omega_2&=\omega_0\sqrt{1+\parentesis{\frac{1}{2Q}}^2}+\frac{\omega_r}{2Q}
-\label{eq:limites de banda}
-\end{align}
-\end{definition}
-
-\begin{definition}[Ancho de banda]
-El ancho de banda (WB) del circuito se define como el intervalo que se encuentra entre las dos frecuencias donde la magnitud de la ganancia es $\frac{1}{\sqrt{2}}$ (-3dB). El ancho de banda de un circuito selectivo en frecuencia es el intervalo entre las frecuencias donde la magnitud de la ganancia cae a $\frac{1}{\sqrt{2}}$ veces el valor máximo.
-\begin{equation}
-WB=\omega_2-\omega_1=\frac{\omega_r}{Q}
-\label{eq:ancho de banda resonancia}
-\end{equation}
-Donde:
-\begin{itemize}
-\item \textbf{WB}: Ancho de banda. (rad/s)
-\item $\omega_2$: Frecuencia superior en -3dB. (rad/s)
-\item $\omega_1$: Frecuencia inferior en -3dB. (rad/s)
-\item $\omega_r$: Frecuencia de resonancia. (rad/s)
-\item \textbf{\textit{Q}}: Factor de calidad.
-\end{itemize}
-\end{definition}
-La ecuación \ref{eq:ancho de banda resonancia} ilustra que el ancho de banda es inversamente proporcional a \textit{Q}. Por tanto, la selectividad de frecuencia del circuito esta determinada por el valor de \textit{Q}. Un circuito de \textit{Q} alta tiene un ancho de banda pequeño y, por consiguiente, el circuito es muy selectivo.
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\linewidth]{mrf/mrf18.png}
-\caption{Cuanto más alta \textit{Q}, tanto más pequeño el ancho de banda.}
-\end{figure}
-Cuando Q>10, las expresiones \ref{eq:limites de banda} se reducen a:
-\begin{align}
-\omega_1&\cong\omega_r-\frac{WB}{2}\\
-\omega_2&\cong\omega_r+\frac{WB}{2}
-\end{align}
-Cuando Q>10, la curva de magnitud tiene una simetría aritmética aproximada entorno $\omega_r$. Independientemente de Q, la respuesta es simétrica en una escala logarítmica de frecuencia.
-\begin{remark}
-Si la banda de frecuencia que se va a seleccionar o a rechazar es estrecha, el \textit{Q} del circuito resonante debe ser alto. Si la banda de frecuencias es amplia, el \textit{Q} debe ser bajo.
-\end{remark}
-Para pequeñas desviaciones de frecuencias con respecto a $\omega_0$, \textit{Q} es relativamente alta y definimos $\delta$ como:
-\begin{displaymath}
-\delta=\frac{\omega-\omega_r}{\omega_r}=\frac{\omega}{\omega_r}-1
-\end{displaymath}
-donde $\delta$ representa la cantidad propocional por la que la frecuencia se desvía de $\omega_r$, entonces podemos escribir el siguiente factor en términod de $\delta$:
-\begin{displaymath}
-\frac{\omega}{\omega_r}-\frac{\omega_r}{\omega}=\parentesis{\delta+1}+\parentesis{\frac{1}{\delta+1}}=\frac{\parentesis{\delta+1}^2-1}{\delta+1}=\frac{\delta^2+2\delta}{\delta+1}
-\end{displaymath}
-Usando $\delta\ll 1$ para pequeñas desviaciones de $\omega_r$:
-\begin{displaymath}
-\frac{\omega}{\omega_r}-\frac{\omega_r}{\omega}\cong 2\delta
-\end{displaymath}
-Entonces H es:
-\begin{equation}
-H=\frac{1}{1+\iu 2Q\delta}
-\end{equation}
-Que es una aproximación valida siempre que $\delta\ll 1$.
-\subsection*{Circuito resonante en serie}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\linewidth]{mrf/mrf15.png}
-\caption{Circuito resonante en serie.}
-\end{figure}
-Para un circuito RLC en serie, la \textbf{impedancia de entrada} se define:
-\begin{equation}
-Z(\iu\omega)=R+\iu\omega L+\frac{1}{\iu\omega C}
-\end{equation}
-Vemos que las reactancias inductivas y capacitivas se mueven, independientemente de sus valores L y C, con la frecuencia $\omega$, lo que se busca es que las reactancias se anulen para que nos quede la impedancia como un elemento netamente resistivo:
-\begin{displaymath}
-Z(\iu\omega_0)=R
-\end{displaymath}
-\begin{notation}
-Que las reactancias se anulen significa que esos elementos funcionarán como un corto circuito.
-\end{notation}
-\begin{definition}[Función de transferencia en serie]
-La función de transferencia para un circuito en serie esta dada por:
-\begin{equation}
-H=\frac{1}{1+\iu\parentesis{\frac{\omega\cdot L}{R}-\frac{1}{\omega CR}}}
-\label{eq:funcion transferencia serie}
-\end{equation}
-\end{definition}
-\begin{definition}[Factor de calidad-serie]
-\begin{equation}
-Q=\frac{\omega_r L}{R}=\frac{1}{\omega_rCR}=\frac{1}{R}\sqrt{\frac{L}{C}}
-\label{eq:factor calidad serie}
-\end{equation}
-Donde:
-\begin{itemize}
-\item $\omega_r$: Frecuencia de resonancia. (rad/s)
-\item \textbf{C}: Capacitancia. (F)
-\item \textbf{R}: Resistancia. ($\Omega$)
-\item \textbf{L}: Inductancia. (H)
-\end{itemize}
-\end{definition}
-Con el factor de calidad se puede definir la ecuación \ref{eq:funcion transferencia serie} como:
-\begin{equation}
-H=\frac{1}{1+\iu Q\parentesis{\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}}}
-\end{equation}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{mrf/mrf19.png}
-\caption{Resumen de osciladores: $\omega_0$ es la frecuencia de resonancia $\omega_r$}
-\end{figure}
-\section{Osciladores}
-\subsection{Sistemas retroalimentados}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\linewidth]{mrf/mrf20.png}
-\caption{Sistemas retroalimentados.}
-\end{figure}
-De esta figura se desprenden dos ecuaciones que caracterizan a la función de transferencia:\\
-\textbf{Lazo abierto: ganancia}
-\begin{equation}
-G(s)=\frac{x_s(S)}{x_{er}(s)}
-\end{equation}
-\textbf{Lazo cerrado: ganancia retroalimentada}:
-\begin{equation}
-\frac{x_s(s)}{x_e(s)}=\frac{G(s)}{1+G(s)\cdot H(s)}
-\end{equation}
-\begin{notation}
-Si la retroalimentación es negativa, en la ecuación de lazo cerrado es positiva; igualmente si es positiva la retroalimentación, la ecuación es negativa.
-\end{notation}
-Algunos casos particulares que tenemos son:
-\begin{itemize}
-\item Realimentación negativa:
-\begin{displaymath}
-|1+G(s)\cdot H(s)|>1
-\end{displaymath}
-\item Alta ganancia de lazo: Cuando la ganancia es muy grande
-\begin{displaymath}
-\frac{x_s(s)}{x_e(s)}=\frac{1}{H(s)}
-\end{displaymath}
-\item Realimentación positiva:
-\begin{displaymath}
-|1+G(s)\cdot H(s)|<1
-\end{displaymath}
-\item Oscilación
-\begin{displaymath}
-|1+G(s)\cdot H(s)|=0
-\end{displaymath}
-La \textbf{oscilación} es indeseada en servosistemas y deseada en osciladores.
-\end{itemize}
-\subsection*{Caso de oscilación}
-Si tenemos en cuenta la condición de oscilación, entonces se tendrá $x_s(s)/x_e(s)\rightarrow\infty$. Por lo tanto se genera una señal de salida ($x_s$) aunque no haya entrada ($x_e$)
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\linewidth]{mrf/mrf21.png}
-\caption{Inversión de la red de retroalimentación}
-\end{figure}
-Cuando se esta oscilando, se tiene:
-\begin{displaymath}
-|G(s)\cdot H(s)|=1
-\end{displaymath}
-\begin{displaymath}
-\fase{ }{G(s)\cdot H(s)}=180^{\circ}
-\end{displaymath}
-En oscilación:
-\begin{displaymath}
-|G(\iu\omega_r)\cdot H(\iu\omega_r)|=1
-\end{displaymath}
-\begin{displaymath}
-\fase{ }{G(\iu\omega_r)\cdot H(\iu\omega_r)}=180°
-\end{displaymath}
-Graficando la oscilación en la figura \ref{fig:oscilacion}, nota como la señal sale en fase de la planta, en la salida llega la onda amplificada mientras que en la red de retroalimentación se atenúa  la señal un poco pero esta totalmente desfasada. Por mejor del bloque inversor esta se acoplada nuevamente a la onda. Con esto nos aseguramos que la oscilación ha comenzado.
-\begin{wrapfigure}{r}{0.5\textwidth}%tamaño del campo asignado
-  \begin{center}
-    \includegraphics[width=0.45\textwidth]{mrf/mrf22.png}%tamaño del la imgen dentro del campo
-  \end{center}
-  \caption{Condición de oscilación.}
-  \label{fig:oscilacion}
-\end{wrapfigure}
-\subsubsection{Condición de oscilación}\index{Condición de oscilación}
-\textbf{¿Qué tiene que suceder para que comience la oscilación?}\\
-Los circuitos osciladores son un tanto especiales, necesitamos para arrancar una señal de entrada que sirva como una señal de arranque ($x_e$) (Fig. \ref{fig:condi osci}).
-\begin{figure}[]
-\centering
-\includegraphics[width=0.6\linewidth]{mrf/mrf23.png}
-\caption{Condición de oscilación}
-\label{fig:condi osci}
-\end{figure}
-Cuando el sistema termine de arrancar, cerramos el switch y podemos quitar la señal de entrada. Hay que asegurarnos que $|G\parentesis{\iu\omega_{osc}}\cdot H\parentesis{\iu\omega_{osc}}|>1$, cuando el desfase es 180$^{\circ}$, entonces podemos hacer que la salida del
-lazo de realimentación haga las funciones de la magnitud de entrada.
-\begin{wrapfigure}{l}{0.55\textwidth}
-  \begin{center}
-    \includegraphics[width=0.53\textwidth]{mrf/mrf24.png}
-  \end{center}
-  \caption{Oscilación.}
-  \label{fig:oscilacion 1}
-\end{wrapfigure}
-En la figura \ref{fig:oscilacion 1} el sistema ya esta arrancando, pero no termina ahí, ahora debe calibrarse para que pueda auto-arrancar por si solo.\\\textbf{Momento de oscilación}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.6\linewidth]{mrf/mrf25.png}
-\caption{Transición a estable.}
-\end{figure}
-\begin{notation}
-$G_{pm}(s)$ significa función de transferencia de pequeña magnitud. $G_{gm}(s)$: función de transferencia de gran magnitud.
-\end{notation}
-\subsubsection*{Criterio de Nyquist}
-Para que \textbf{empiece} la oscilación:
-\begin{itemize}
-\item Tiene que existir una $\omega_{osc}$ a la que se cumpla:
-\begin{displaymath}
-\fase{}{G(\iu\omega_{osc})\cdot H(\iu\omega_{osc})}=180^{\circ}
-\end{displaymath}
-\item A esa $\omega_{osc}$ tiene que cumplirse:
-\begin{displaymath}
-|G(\iu\omega_{osc})\cdot H(\iu\omega_{osc})|>1
-\end{displaymath}
-\end{itemize}
-Cuando se \textbf{estabiliza} la oscilación:
-\begin{itemize}
-\item Disminuye la ganancia
-\begin{displaymath}
-G(\iu\omega_{osc})
-\end{displaymath}
-hasta que
-\begin{displaymath}
-|G(\iu\omega_{osc})\cdot H(\iu\omega_{osc})|=1
-\end{displaymath}
-cuando
-\begin{displaymath}
-\fase{}{G(\iu\omega_{osc})\cdot H(\iu\omega_{osc})}=180^{\circ}
-\end{displaymath}
-\end{itemize}
-\subsubsection*{Diagramas de Bode}
-Observa la linea punteada, de la figura \ref{fig:cuando oscila}, debe ser corregida pues tanto la fase como la magnitud deben coincidir en la misma frecuencia a 0dB (o $|G(\iu\omega_{osc})\cdot H(\iu\omega_{osc})|$)
-\begin{figure}[]
-\centering
-\subfloat[Cuando ya oscila.]{\includegraphics[width=0.25\linewidth]{mrf/mrf26.png}\label{fig:cuando oscila}}
-\subfloat[Para que no oscile.]{\includegraphics[width=0.25\linewidth]{mrf/mrf27.png}}
-\caption{Condición de oscilación}
-\end{figure}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\linewidth]{mrf/mrf28.png}
-\caption{Resumen de arranque de osciladores.}
-\end{figure}
-%Osciladores hartley
-\subsection{Osciladores de frecuencia muy constante}
-\subsubsection*{Cristales osciladores}
-Es un cristal de cuarzo (u otro material piezoeléctrico) que consta de una placa de cuarzo en medio de dos contactos metálicos, encapsulados. Se aplica voltaje en sus terminales para que vibren de manera tan exacta que es muy precisa.
-\begin{wrapfigure}{r}{0.5\textwidth}
-  \begin{center}
-    \includegraphics[width=0.48\textwidth]{mrf/mrf29.png}
-  \end{center}
-  \caption{Símbolo cristal oscilador}
-\end{wrapfigure}
-
-\begin{wrapfigure}{l}{0.5\textwidth}
-  \begin{center}
-    \includegraphics[width=0.48\textwidth]{mrf/mrf30.png}
-  \end{center}
-  \caption{Cristal oscilador}
-\end{wrapfigure}
-\begin{figure}[]
-\centering
-\includegraphics[width=0.6\linewidth]{mrf/mrf31.png}
-\caption{Circuito equivalente de un cristal de cuarzo.}
-\end{figure}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -503,7 +165,7 @@ Otros conceptos importantes a recordar son:
 Donde:
 \begin{itemize}
 \item $\lambda$: Longitud de onda. (m)
-\item \textbf{v}: Velocidad, si el medio es el aire o espacio libre: v=c=300000 km/s=300000000 m/s (m/s)
+\item \textbf{v}: Velocidad, si el medio es el aire o espacio libre: $v=c=3\times\basedec{8}$ m/s (m/s)
 \item $f$: Frecuencia. (Hz)
 \end{itemize}
 \end{definition}
@@ -602,12 +264,11 @@ Donde:
 \end{itemize}
 \end{definition}
 \subsection{Ruido}\index{Ruido}
-Energía eléctrica no deseable presente en la banda útil del circuito de comunicación. Se puede clasificar el ruido en dos categorías:
+Energía eléctrica \textbf{no deseable} presente en la banda útil del circuito de comunicación. Se puede clasificar el ruido en dos categorías:
 \begin{enumerate}
-\item \textbf{Correlacionado}: Solo existe cuando hay una señal. Es aquel que se relaciona mutuamente con la señal, y no puede estar en un circuito a menos que haya una señal de entrada.
+\item \textbf{Correlacionado}: Solo existe \textbf{cuando hay una señal}. Es aquel que se relaciona mutuamente con la señal, y no puede estar en un circuito a menos que haya una señal de entrada.
 Se produce por amplificación no lineal, e incluye la distorsión armónica (cuando se producen las armónicas no deseadas de una señal, debido a una amplificación no lineal) y de intermodulación (generación de frecuencias indeseables de suma o diferencia), ya que las dos son formas de distorsión no lineal.
-
-\item \textbf{No Correlacionado}: Está presente siempre, haya o no señal. El ruido No Correlacionado puede sub dividirse en dos categorías generales:
+\item \textbf{No Correlacionado}: Está presente \textbf{siempre}, haya o no señal. El ruido no correlacionado puede sub dividirse en dos categorías generales:
 \begin{enumerate}
 \item \textbf{El Ruido Externo }es el que se genera fuera del dispositivo o circuito. Hay tres causas principales de ruido Externo:
 \begin{enumerate}
@@ -624,7 +285,7 @@ Se produce por amplificación no lineal, e incluye la distorsión armónica (cua
 \end{enumerate}
 \end{enumerate}
 \subsection{Ruido térmico}\index{Ruido térmico}
-Es el movimiento aleatorio de los electrones libres dentro de un conductor, causado por la agitación térmica.
+Es el movimiento \textbf{aleatorio} de los electrones libres dentro de un conductor, causado por la agitación térmica. Lamentablemente, este ruido está a lo largo de todo el espectro electromagnético.
 Llamado también: Movimiento Browniano por su descubridor Robert Brown, Ruido de Johnson en honor a quien lo relacionó con el movimiento de los electrones y Ruido Blanco porque se produce en todas las frecuencias.
 \begin{definition}[Potencia de ruido térmico]
 \begin{equation}
@@ -633,17 +294,17 @@ P_{tn}=K\cdot T\cdot B
 \end{equation}
 Donde:
 \begin{itemize}
-\item $P_{tn}$: Potencia del ruido. (W) térmico\footnote{tn:thermal noise o ruido térmico.} (W)
+\item $P_{tn}$: Potencia del ruido  térmico\footnote{tn:thermal noise o ruido térmico.} (W)
 \item \textbf{K:} Constante de Boltzmann= $1.38\times\basedec{-23} J/°K$.
 \item \textbf{T}: Temperatura absoluta. (°K)
 \item \textbf{B}: Ancho de banda. (Hz)
 \end{itemize}
-Alternativamente, el ruido térmico puede ser expresado en dBm, para ello debemos usar la siguiente expresión:
+Alternativamente, el ruido térmico puede ser expresado en dBm, para ello debemos usar la siguiente expresión comparada con un 1mW:
 \begin{equation}
 P_{tn}(dBm)=10\cdot\log\left(\frac{K\cdot T\cdot B}{0.001}\right)
 \label{eq:ruido termico log}
 \end{equation}
-En temperatura ambiente, el ruido térmico ambiente:
+En temperatura ambiente (17 C o 290 K), el ruido térmico ambiente:
 \begin{equation}
 P_{tn}(dBm)=-174 dBm+10\log(B)
 \label{eq:ruido termico ambiente}
@@ -745,7 +406,7 @@ Si la distancia se expresa en Km y la frecuencia en MHz:
 L_p(dB)=32.4+20\cdot\log(f)+20\log(d)
 \end{equation}
 \end{definition}
-Otro término usado es la \textbf{polarización}, recordando que una OEM contiene un campo eléctrico y un campo magnético que forman 90° entre sí. Por lo tanto, la polarización de una OEM plana, no es mas que la orientación dle vector campo eléctrico respecto a la superficie de la tierra.\\
+Otro término usado es la \textbf{polarización}, recordando que una OEM contiene un campo eléctrico y un campo magnético que forman 90° entre sí. Por lo tanto, la polarización de una OEM plana, no es mas que la orientación del vector campo eléctrico respecto a la superficie de la tierra.\\
 \textbf{Tipos de polarización:}
 \begin{enumerate}
 \item \textbf{Polarización lineal}: Si la polarización permanece constante. Las formas lineales son:(Fig. \ref{fig:pol lin})
@@ -798,6 +459,7 @@ Donde:
 \item \textbf{r}: Radio de la esfera. (m)
 \item \textbf{\textit{PIRE}}: Potencia Isotrópica Radiada Equivalente. (W)
 \end{itemize}
+
 \end{definition}
 \begin{definition}[Impedancia en el espacio libre]
 La relación entre el módulo del campo eléctrico y el módulo del campo magnético es la impedancia característica del medio. La impedancia característica de un medio de transmisión \textbf{sin pérdidas} en igual a la raíz cuadrada de la relación de su permeabilidad magnética entre su permitividad eléctrica:
@@ -836,17 +498,38 @@ Las dos funciones primordiales de la antena son:
 \item Adapta la impedancia interna del generador a la impedancia del espacio.
 \end{enumerate}
 En las líneas de transmisión se propagan ondas electromagnéticas \textbf{guiadas}, es decir campos electromagnéticos variables entre cargas y corrientes. Las antenas convierten estos ondas electromagnéticas guiadas en \textbf{libres} y \textbf{viceversa}. Tanto las ondas guiada como las libres son señales de radio.\\
-En el proceso de su propagación, las ondas de radio se \textbf{dispersan} más allá de las líneas de radio-comunicación y son absorbidas por el medio circundante. Si la dirección de radiocomunicación es conocida y limitada, las perdidas pueden reducirse concentrando las ondas emitidas en direcciones definidas.
+En el proceso de su propagación, las ondas de radio se \textbf{dispersan} más allá de las líneas de radio-comunicación y son absorbidas por el medio circundante. Si la dirección de radiocomunicación es conocida y limitada, las perdidas pueden reducirse concentrando las ondas emitidas en direcciones definidas.\\
+Con lo definido sobre antenas y conocimientos en impedancias, podemos definir:
+\begin{corollary}[Impedancia de antena]
+Es la relación entre tensión y corriente en sus terminales de entrada (de la antena). Como todas, dicha impedancia es en general compleja: parte real ó resistencia de antena y la parte compleja ó reactancia de antena.
+\end{corollary}
 \subsection{Tipos de antenas}
 A grandes rasgos existen dos tipos de antenas: antenas de \textbf{transmisión} y antenas de \textbf{recepción}.
 \subsubsection*{Antenas de transmisión}
 La antena de transmisión transforma energía de un campo electromagnético estacionario producido por la señal de radio, en energía de un campo electromagnético de radiación, añadiendo además que este último debe emitirse en unas direcciones dadas.
+\begin{figure}[]
+\centering
+\includegraphics[width=0.8\linewidth]{Ant/Ant7.png}
+\caption{Gráficas de antena.}
+\end{figure}
 \subsubsection*{Antenas de recepción}
 La antena de recepción está destinada a la transformación de la energía de una radioseñal consistente en un campo de radiación que procede de una dirección dada, en energía de un campo estacionario de ondas electromagnéticas.
 \begin{remark}
 La antena de transmisión y recepción tienen procesos \textbf{recíprocos}. Esto quiere decir que existe la posibilidad de utilizar la misma antena en calidad de transmisora y de receptora, y de conservar invariables los parámetros principales de la antena.
 \end{remark}
 \subsection{Características y parámetros de las antenas transmisoras}
+Los parámetros de una antena son los que permiten especificar el funcionamiento de las mismas, y por lo tanto son susceptibles de ser medidos. Se puede especificar la antena como un \textbf{conjunto de parámetros} conectados con los  requisitos de un sistema más amplio de radiocomunicaciones o radiodifusión.\\
+\textbf{Parámetros de antena}:
+\begin{itemize}
+\item Diagrama de radiación
+\item Densidad de potencia radiada
+\item Directividad
+\item Ganancia
+\item Polarización
+\item Impedancia
+\item Adaptación
+\item Área y longitud efectiva
+\end{itemize}
 \begin{definition}[Potencia de radiación y resistencia de radiación]
 Representa la característica de la antena para la emisión energía electromagnética.
 \begin{equation}
@@ -855,7 +538,7 @@ R_r=\frac{P_r}{i^2}
 \end{equation}
 Donde:
 \begin{itemize}
-\item $R_r$: Resistencia de radiación. ($\Omega$)
+\item $R_r$: Resistencia de total de radiación. ($\Omega$)
 \item $P_r$: Potencia de radiación. (W)
 \item \textbf{i}: Valor eficaz de la corriente de la antena. (A)
 \end{itemize}
@@ -871,7 +554,7 @@ Donde:
 \begin{itemize}
 \item $R_p$: Resistencia de pérdidas. ($\Omega$)
 \item $P_p$: Potencia de pérdidas. (W)
-\item \textbf{i}: Valor eficaz de la corriente de la antena.
+\item \textbf{i}: Valor eficaz de la corriente de la antena. (A)
 \end{itemize}
 \end{definition}
 \begin{definition}[Potencia de una antena y resistencia activa total o resistencia de antena]
@@ -946,6 +629,11 @@ Donde:
 \item $\mathbb{P}_{ref}$: Densidad de potencia en el mismo punto, con una antena no direccional o de referencia. ($W/m^2$)
 \end{itemize}
 \end{definition}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Ant/Ant8.png}
+\caption{Representación tridimensional de la directividad.}
+\end{figure}
 \begin{definition}[Ganancia de potencia]
 \begin{equation}
 G=\eta_A\cdot D=\frac{\mathbb{P}_{max}}{\mathbb{P}_{ref}'}
@@ -1375,7 +1063,7 @@ Configuramos la compuerta OR: la primera entrada/contacto que se cierre con el p
 \label{fig:motor y logo}
 \end{figure}
 \begin{remark}
-Para PLC necesitas cable fase y cable neutro. Para ladder necesitas cable negativo y cable negativo.
+Para PLC necesitas cable fase y cable neutro. Para ladder necesitas cable negativo y cable negativo. En PLC LOGO, P1 es puerto positivo y P2 es puerto negativo (en la parte superior: Dispositivos de entrada) y sirven para dar energía al PLC, por lo tanto hay que energizarlas. De igual manera con la parte inferior (Dispositivos de salida), se debe energizar positivamente las entradas 1 y los dispositivos deben estarn en las salidas 2 hacia negativo.
 \end{remark}
 \begin{example}[Diseñe una faja transportadora con el PLC LOGO, sensores y tenga apagado automático]
 Para este proyecto se usaremos parte de encender un motor con ladder explicado anteriormente.\\
@@ -1407,10 +1095,91 @@ Esto lo haremos estableciendo el sensor \textit{S3} como normalmente abierto, y 
 \chapterimage{chapter_head_SFT.pdf} % Chapter heading image
 
 \chapter{Unidad I}
+\section{XDR}
+\section{RPC y RMI}
+Llamada a procedimiento remoto o RPC es una técnica que utiliza  el modelo cliente-servidor para ejecutar  tareas es un proceso diferente como podría ser en una computadora remota. A veces solamente se le llama como a una función o subrutina remota.
+\subsection*{RPC}
+\begin{enumerate}
+\item El cliente hace la llamada al procedimiento remoto mediante un mensaje a través de la red. Este se detiene ya que es un proceso síncrono (se envía el mensaje y se queda ``callado'' hasta que reciba una respuesta), es decir, necesita una respuesta del servidor para poder continua su ejecución.
+\item El servidor recibe la petición y desempaqueta el mensaje para extraer la información necesaria para realizar la tarea.
+\item El servidor ejecuta la tarea. Con esto nos referimos que como cliente, enviamos la información a otra computadora (servidor) para que nos haga el ``trabajo sucio''.
+\item El servidor crea un mensaje de respuesta para el cliente que incluye el resultado de la tarea que este le pidió realizar.
+\item El cliente recibe y desempaqueta el mensaje de respuesta del servidor. Continua con su ejecución normal.
+\end{enumerate}
+\begin{notation}
+El servidor siempre va estar activo, su función es atender a varios clientes a la vez.
+\end{notation}
+\subsection*{STUB}
+Es la pieza de código que le permite al servidor ejecutar la tarea que se le asignó. Se encarga de proveer la información necesaria para que el servidor convierta las direcciones de los parámetros que el cliente envió en direcciones de memoria válidos dentro del ambiente del servidor. Parte del código que se encarga de ``traducir'' los entornos de ambos, en otras palabras le explica al servidor (o viceversa) como debe interpretar los datos. A manera de ejemplo (solo para explicar): El cliente solicita una suma de 15+83 y manda 1853 al servidor; el servidor no sabrá que significa ese número, el \textit{stub} le dirá: ``El primer y tercer dígito es el primer sumando, además el segundo y cuarto es otro número'', 
+con esto el servidor sabrá cuales son los datos. El servidor hace la suma (89) con los números y devuelve : 0089. Este resultado viaja al cliente, sin no antes pasar por el \textit{stub} que le dice: ``El resultado de la suma es el número conformado por el cuarto dígito y el tercer dígito''. En conclusión, el \textit{stub} acomoda los datos para que los datos puedan ser procesados por cada lado.
+La representación de datos en cliente y servidor (\textit{big-endian} o \textit{little-endian}) podría discrepar, el \textit{stub} también provee la información necesaria para solucionar esta situación.\\
+Una inconveniente con esto es que RPC es dependiente del lenguaje de programación que se utilice.
+\begin{definition}[Socket]
+Los \textbf{sockets} sirven para la comunicación entre programas (en una primera medida), y para comenzar una conexión debemos crear un \textit{socket}; para dicha conexión se necesita una dirección IP y un puerto para realizar la conexión.
+\end{definition}
+\subsection{RMI}
+Es un paquete de JAVA que permite manejar objetos (y sus respectivos métodos) de manera remota, para utilizar los recursos de un servidor de manera transparente para el usuario local. Es el analogo a RMS pero en JAVA, de igual manera al \textit{stub} aquí se le conoce como \textbf{Skeletons}. La diferencia más notable es que RPC es una solicitud remota mientras que RMI genera una \textbf{máquina virtual}, cuando mando una solicitud al servidor, es simular como si se estuviera ejecutando en el mismo lugar (servidor).
+
+\begin{enumerate}
+\item El servidor proporciona un servicio RMI y el cliente llama a métodos del objeto ofrecido por el servicio.
+\item El servicio RMI se debe registrar en un servicio de consulta para permitir a los clientes encontrar el servicio.
+\item El J2SE incluye una aplicación llamada \textit{rmiregistry}, que lanza un proceso que permite registrar servicios RMI mediante un nombre. Este nombre identifica al servicio, esto se hace as´ı ya que en una maquina puede haber diferentes servicios.
+\item Una vez que el servicio se ha registrado, el servidor esperará a que lleguen peticiones RMI desde
+los clientes.
+\item El cliente solicita el servicio mediante el nombre con el que fue registrado y obtiene una referencia al objeto remoto
+\item El formato utilizado por RMI para representar una referencia al objeto remoto es el siguiente \url{rmi://hostname:puerto/nombreServicio}.
+\item Una vez obtenida la referencia remota (ya sea mediante \textit{rmiregistry}, leyendo el URL de un archivo,...) los clientes pueden enviar mensajes como si se tratase de objetos ejecutándose en la misma máquina virtual.
+\item Los detalles de red de las peticiones y las repuestas son transparentes para el desarrollador. Esto se consigue mediante el uso de \textit{stub} (a partir de la versión 1.2, ya que en la versión 1.1 se requería generar un skeleton).
+\end{enumerate}
+\begin{definition}[Skeleton]
+La clase skeleton es una clase generada por RMI. Esta clase es la responsable de comunicarse con el \textit{stub} durante la comunicación RMI. Debe reconstruir los parámetros para formar los tipos primitivos y objetos, lo que es conocido como \textit{unmarshalling}.
+\end{definition}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{soft/soft1.png}
+\caption{Arquitectura RMI}
+\end{figure}
+\section{CORBA}
+CORBA (\textit{Common Object Request Broker Architectur}e) es una arquitectura abierta desarrollada por los miembros del OMG (\textit{Object Management Group}). Desde 1989 la misión del OMG ha sido la especificación de una arquitectura para un \textbf{bus software abierto}, o \textit{Object Request Broker} (ORB), sobre el que diversos componentes de objetos escritos por diferentes vendedores puedan interoperar a través de la red y de los sistemas operativos. Este estándar permite que los objetos CORBA realicen llamadas entre ellos sin conocer dónde residen los objetos a los que acceden o en qué lenguaje están implementados estos últimos. OMG define un lenguaje (\textit{Interface Definition Language}: IDL) usado para definir las interfaces de los objetos CORBA.
+\subsubsection*{Características}:
+\begin{itemize}
+\item Los objetos CORBA pueden estar en cualquier sitio de la red
+\item Los objetos CORBA pueden interoperar con objetos de otras plataformas
+\item Los objetos CORBA pueden escribirse en cualquier lenguaje de programación para el que exista un "mapeado" (correspondencia) desde el OMG IDL a dicho lenguaje. Actualmente las correspondencias definidas incluyen Java, C++, C, Smalltalk, COBOL, y Ada).
+\end{itemize}
+La plataforma Java 2 SE 1.4 proporciona un ORB que cumple con la especificación de CORBA 2.3.1 y dos modelos de programación CORBA que utilizan el ORB CORBA para Java y el Internet InterORB Protocol (IIOP). Los dos modelos de programación son el \textit{modelo de programación RMI} (o RMI-IIOP), y el \textit{modelo de programación IDL} (o Java IDL).
+\subsection{CORBA y EAI}
+La integraciones de aplicaciones para empresa (EAI( se puede conseguir en cuatro fases:
+\begin{itemize}
+\item Nivel de datos
+\item Nivel de interfaz de aplicación
+\item Nivel de lógica de negocio.
+\item Nivel de presentación
+\end{itemize}
+Normalmente se comienza con la integración a nivel de \textbf{datos}, y se continúa con la integración a nivel de \textbf{interfaz}, y posteriormente a nivel de \textbf{lógica del negocio}. En ambas fases (interfaz y negocio) el objetivo es el \textbf{reusar} la funcionalidad de las aplicaciones existentes.\\
+El uso de aplicaciones existentes se conseguirá por:
+\begin{itemize}
+\item \textbf{Modificando el código fuente}: Debemos definir una o más \textbf{APIs} con las operaciones que necesitamos para acceder de forma externa, y conectar dichas operaciones con el código existente. CORBA es una tecnología adecuada para realizar esto. Para cada interfaz que queramos añadir a la aplicación deberemos definir un \textbf{nuevo objeto CORBA distribuido}, declararemos las operaciones de la interfaz y conectaremos cada operación con el código fuente de la aplicación existente.
+\item \textbf{Mediante técnicas como screeen scraping o emulación de terminales}: Si el código fuente no está disponible, o si no disponemos de las herramientas necesarias para recompilar la apliación a partir del código fuente, o simplemente no queremos modificar el código fuente, podemos utilizar estas técnicas. \textbf{Sreen scraping} y emulación de terminales son apropiadas principalmente para aplicaciones basadas en caracteres, los wrappers simulan lo que teclea el cliente para realizar las funciones de las aplicaciones existentes y leer la pantalla para extraer los resultados. En este caso el uso de CORBA vuelve a resultar adecuado.
+\end{itemize}
+\subsection{Arquitectura CORBA}
+CORBA consiste en la especificación de un modelo de objetos distribuido idependiente del lenguaje, sistema operativo y plataforma. La parte principal de CORBA es el ORB (Object Request Broker). ORB actúa como un bus de mensajes que transporta peticiones de invocación de operaciones y sus resultados sobre objetos CORBA, proporcionando la infraestructura de comunicación necesaria de forma que oculte todos los detalles de la comunicación entre objetos distribuidos. La \textbf{transparencia de localización} es la capacidad de acceder e invocar operaciones sobre un objeto CORBA sin necesidad de conocer dónde reside dicho objeto. La idea es que debería ser igualmente sencillo invocar una operación residente en una máquina remota que un método de un objeto en el mismo espacio de direcciones. La \textbf{transparencia de lenguaje de programación} proporciona la libertad de implementar la funcionalidad encapsulada un objeto usando el lenguaje más adecuado, bien por las habilidades de los programadores, la idoneidad del lenguaje para la tarea específica, o la elección de un ``tercer'' desarrollador que proporciona componentes ya creados (off-the-shelf components). La clave de este grado de libertad es un \textbf{lenguaje de definición de interfaces} que es neutral con respecto a la implementación, y que proporciona una separación entre la interfaz y su implementación. Dicho lenguaje se denomina \textbf{\textit{Interface Denifition Language}} (IDL), y se utiliza para definir las interfaces de los objetos, independientemente del lenguaje de programación en el que estén implementados. Es un lenguaje fuertemente declarativo, con un rico conjunto de tipos de datos para describir parámetros complejos. Una interfaz IDL actúa como un contrato entre los desarrolladores de objetos y los eventuales usuarios de dichos interfaces. También permite a los usuarios de CORBA compilar las definiciones de las interfaces en código oculto para la transmisión de peticiones de invocaciones a través de las redes y las arquitecturas de las máquinas sin necesitar ningún conocimiento sobre el protocolo de red utilizado, o incluso la localización del objeto involucrado.
+\section{SOAP}
+Protocolo de acceso simple a objetos o SOAP. 
+que existen diversos tipos de web
+services, uno de los que mayor impacto tiene es el tipo SOAP este tipo de servicio está basado en el intercambio de información mediante \textit{xml} y su principal protocolo de funcionamiento es el \textit{http}, sin embargo también puede ser enviado mediante otros protocolos como \textit{ftp}, \textit{pop3}, \textit{tcp} y colas de mensajería. \\
+\textbf{Ventajas}:
+\begin{itemize}
+\item Permite agregar metadatos en sus atributos.
+\item Permite definir espacios de nombres para evitar la ambigüedad en su descripción.
+\item Cuenta con métodos de validación más potentes que los de \textit{json}.
+\item Funciona bien en ambientes empresariales es decir comunicaciones de servidor a servidor.
+\end{itemize}
+Al usar SOAP con el protocolo \textit{http} el tipo de contenido del mensaje que utiliza este protocolo debe establecerse en \textit{xml} que requiere la agregación de una línea que contiene SOAPAction en que debe estar presente en la cabecera \textit{http}. Por último podemos decir que la entrada SOAPAction permite que los firewalls del destino identifiquen los mensajes SOAP.
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
-\part{Microelectrónica en radiofrecuencia}
+\part{Microelectrónica en RF}
 \chapterimage{chapter_head_MR.pdf} % Chapter heading image
 
 \chapter{Unidad I}
@@ -1595,7 +1364,7 @@ P_{med}(dBm)=P_{pico}(dBm)-7=\underbrace{P_{1dB}+1}_{P_{pico}}-7=44dBm
 \textbf{Determine la OPBO}:\\
 El nivel de salida realtivo a saturación se puede obtener como:
 \begin{displaymath}
-OPBO(dB)=\underbrace{P_{sat}(dBm)}_{P_{pici}+1dB}- P_{media}(dBm)=52dB-44dB=8dB
+OPBO(dB)=\underbrace{P_{sat}(dBm)}_{P_{pico}+1dB}- P_{media}(dBm)=52dB-44dB=8dB
 \end{displaymath}
 \end{example}
 \subsubsection{Armónicos}\index{Distorsión de armónicos}
@@ -1603,7 +1372,7 @@ La saturación provoca la aparación de armónicos de la señal de entrada, son 
 \begin{definition}[Nivel de armónico de orden N]
 Para calcular el nivel de un armónico de orden N ($P{AN}$) en un punto de potencia de salida ($P_0$) diferente del especificado, se puede hacer el siguiente cálculo:
 \begin{equation}
-P_{AN}=P_{AN0}\left(\frac{P_out}{P_{ref}}\right)^N
+P_{AN}=P_{AN0}\left(\frac{P_{out}}{P_{ref}}\right)^N
 \label{eq:potencia del armonico}
 \end{equation}
 Donde:
@@ -1664,6 +1433,199 @@ I_3(dBm)&=3\cdot P_{out}(dBm)-2\cdot PI_3(dBm)\\
 \left(\frac{P_0}{I_3}\right)(dB)&=2\cdot PI_3(dBm)-2\cdot P_{out}(dBm)
 \end{align}
 %ejercico diapo 29-distorsion
+\section{Circuitos resonantes}
+Un circuito resonante es una combinación de elementos sensibles a la frecuencia, conectados para obtener una respuesta selectora de frecuencia.
+\subsection*{Circuito resonante en paralelo}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{mrf/mrf16.png}
+\caption{Circuito resonante en paralelo.}
+\end{figure}
+\begin{equation}
+Y(\iu\omega)=G+\iu\omega C+\frac{1}{\iu\omega L}
+\end{equation}
+En paralelo, al buscar una igualdad entre la reactancia capacitiva y la inductiva, estos no entrarán en corto circuito, sino entrarán en circuito abierto. De este modo, la admitancia será tan solo la conductancia:
+\begin{displaymath}
+Y(\iu\omega_0)=G
+\end{displaymath}
+\begin{notation}
+En serie, la impedancia en los elementos L y C tiende a 0, mientras que en paralelo tiende a infinito cuando el circuito esta en resonancia (funcionando con frecuencia de resonancia).
+\end{notation}
+Cuando se logra una impedancia o admitancia puramente real es cuando se trabaja en la \textbf{frecuencia de resonancia}, cuando se logra eso se dice que el circuito mismo está en \textbf{resonancia}. En la resonancia, el voltaje y la corriente están en \textbf{fase} y, por consiguiente, el \textbf{ángulo de fase es cero} y el \textbf{factor de potencia es unitario}.\\
+En el caso en \textbf{serie}, en la resonancia, la \textbf{impedancia} es un \textbf{mínimo} y, por consiguiente, la \textbf{corriente es máxima} para un voltaje dado.
+\begin{notation}
+A bajas frecuencias, la impedancia del circuito en serie está dominado por el término capacitivo y la admitancia del circuito en paralelo está dominada por el término inductivo.\\
+A altas frecuencias, la impedancia del circuito en serie está dominado por el término inductivo y la admitancia del circuito en paralelo está dominada por el término capacitivo.
+\end{notation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{mrf/mrf17.png}
+\caption{Gráficas del comportamiento en la frecuecnia de resonancia para serie y paralelo.}
+\end{figure}
+\begin{definition}[Función de transferencia en paralelo]
+Realizando una asociación de admitancias en paralelo para hallar la función de transferencia sobre una fuente de corriente se obtiene:
+\begin{equation}
+H=\frac{1}{1+\iu\left(\omega\cdot C-\frac{1}{\omega\cdot L}\right)R}
+\label{eq:funcion transferencia paralelo}
+\end{equation}
+\begin{definition}[Frecuencia de resonancia]
+\begin{equation}
+f_r=\frac{1}{2\pi\sqrt{L\cdot C}}
+\label{eq:frec resonancia}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $f_r$: Frecuencia de resonancia. (Hz)
+\item \textbf{L}: Inductancia. (H)
+\item \textbf{C}: Capacitancia. (F)
+\end{itemize}
+\end{definition}
+\end{definition}
+\begin{definition}[Factor de calidad-paralelo]
+En esencia \textit{Q} es una medida de la capacidad de almacenamiento de energía de un circuito en relación con su capacidad de disipación de energía.
+\begin{equation}
+Q=\omega_r\cdot C\cdot R=\frac{R}{\omega_r\cdot L}=R\sqrt{\frac{C}{L}}
+\label{eq:factor calidad paralelo}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\omega_r$: Frecuencia de resonancia. (rad/s)
+\item \textbf{C}: Capacitancia. (F)
+\item \textbf{R}: Resistancia. ($\Omega$)
+\item \textbf{L}: Inductancia. (H)
+\end{itemize}
+\end{definition}
+\begin{remark}
+Cuando esta en resonancia, la función de transferencia debe ser igual a la unidad.
+\end{remark}
+Con el factor de calidad se puede llegar a una expresión para la función de transferencia expresada en la ecuación \ref{eq:funcion transferencia paralelo} :
+\begin{equation}
+H=\frac{1}{1+\iu Q\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)}
+\end{equation}
+Donde su magnitud y fase están dadas por:
+\begin{align}
+|H|&=\frac{1}{\left[+Q^2\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)^2\right]^{\frac{1}{2}}}\\
+\phi&=-\tan^-1Q\left(\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}\right)
+\end{align}
+A ciertas frecuencias se obtiene los siguientes valores:
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$\omega$ & 0   & $\omega_1$           & $\omega_0$ & $\omega_2$            & $\infty$ \\ \hline
+|H|      & 0   & $\frac{1}{\sqrt{2}}$ & 1          & $-\frac{1}{\sqrt{2}}$ & 0        \\ \hline
+$\phi$   & 90° & 45°                  & 0°         & -45°                  & -90°     \\ \hline
+\end{tabular}
+\caption{Valores importantes para el módulo y fase de H.}
+\end{table}
+Notamos que tenemos dos frecuecias: $\omega_1$ y $\omega_2$, que corresponden a $H=\frac{1}{\sqrt{2}}$. Examinando la ecuación de la magnitud H, se observa que $H=\frac{1}{\sqrt{2}}$ se presenta cuando:
+\begin{equation}
+Q^2\left(\frac{\omega}{\omega_r}-\frac{\omega_r}{\omega}\right)^2=1
+\label{eq:h resonancia}
+\end{equation}
+La ecuación \ref{eq:h resonancia} se puede reordenar en forma de una ecuación de cuarto grado, en función de $\omega$. Despejando los valores de interés, se obtiene:
+\begin{definition}[Frecuencias de media potencia]
+Estos parámetros indican desde que frecuencias hasta que frecuencias opera nuestro circuito, en otras palabras limita el ancho de banda:
+\begin{align}
+\omega_1&=\omega_0\sqrt{1+\parentesis{\frac{1}{2Q}}^2}-\frac{\omega_r}{2Q}\\
+\omega_2&=\omega_0\sqrt{1+\parentesis{\frac{1}{2Q}}^2}+\frac{\omega_r}{2Q}
+\label{eq:limites de banda}
+\end{align}
+\end{definition}
+
+\begin{definition}[Ancho de banda]
+El ancho de banda (WB) del circuito se define como el intervalo que se encuentra entre las dos frecuencias donde la magnitud de la ganancia es $\frac{1}{\sqrt{2}}$ (-3dB). El ancho de banda de un circuito selectivo en frecuencia es el intervalo entre las frecuencias donde la magnitud de la ganancia cae a $\frac{1}{\sqrt{2}}$ veces el valor máximo.
+\begin{equation}
+WB=\omega_2-\omega_1=\frac{\omega_r}{Q}
+\label{eq:ancho de banda resonancia}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{WB}: Ancho de banda. (rad/s)
+\item $\omega_2$: Frecuencia superior en -3dB. (rad/s)
+\item $\omega_1$: Frecuencia inferior en -3dB. (rad/s)
+\item $\omega_r$: Frecuencia de resonancia. (rad/s)
+\item \textbf{\textit{Q}}: Factor de calidad.
+\end{itemize}
+\end{definition}
+La ecuación \ref{eq:ancho de banda resonancia} ilustra que el ancho de banda es inversamente proporcional a \textit{Q}. Por tanto, la selectividad de frecuencia del circuito esta determinada por el valor de \textit{Q}. Un circuito de \textit{Q} alta tiene un ancho de banda pequeño y, por consiguiente, el circuito es muy selectivo.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{mrf/mrf18.png}
+\caption{Cuanto más alta \textit{Q}, tanto más pequeño el ancho de banda.}
+\end{figure}
+Cuando Q>10, las expresiones \ref{eq:limites de banda} se reducen a:
+\begin{align}
+\omega_1&\cong\omega_r-\frac{WB}{2}\\
+\omega_2&\cong\omega_r+\frac{WB}{2}
+\end{align}
+Cuando Q>10, la curva de magnitud tiene una simetría aritmética aproximada entorno $\omega_r$. Independientemente de Q, la respuesta es simétrica en una escala logarítmica de frecuencia.
+\begin{remark}
+Si la banda de frecuencia que se va a seleccionar o a rechazar es estrecha, el \textit{Q} del circuito resonante debe ser alto. Si la banda de frecuencias es amplia, el \textit{Q} debe ser bajo.
+\end{remark}
+Para pequeñas desviaciones de frecuencias con respecto a $\omega_0$, \textit{Q} es relativamente alta y definimos $\delta$ como:
+\begin{displaymath}
+\delta=\frac{\omega-\omega_r}{\omega_r}=\frac{\omega}{\omega_r}-1
+\end{displaymath}
+donde $\delta$ representa la cantidad propocional por la que la frecuencia se desvía de $\omega_r$, entonces podemos escribir el siguiente factor en términod de $\delta$:
+\begin{displaymath}
+\frac{\omega}{\omega_r}-\frac{\omega_r}{\omega}=\parentesis{\delta+1}+\parentesis{\frac{1}{\delta+1}}=\frac{\parentesis{\delta+1}^2-1}{\delta+1}=\frac{\delta^2+2\delta}{\delta+1}
+\end{displaymath}
+Usando $\delta\ll 1$ para pequeñas desviaciones de $\omega_r$:
+\begin{displaymath}
+\frac{\omega}{\omega_r}-\frac{\omega_r}{\omega}\cong 2\delta
+\end{displaymath}
+Entonces H es:
+\begin{equation}
+H=\frac{1}{1+\iu 2Q\delta}
+\end{equation}
+Que es una aproximación valida siempre que $\delta\ll 1$.
+\subsection*{Circuito resonante en serie}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{mrf/mrf15.png}
+\caption{Circuito resonante en serie.}
+\end{figure}
+Para un circuito RLC en serie, la \textbf{impedancia de entrada} se define:
+\begin{equation}
+Z(\iu\omega)=R+\iu\omega L+\frac{1}{\iu\omega C}
+\end{equation}
+Vemos que las reactancias inductivas y capacitivas se mueven, independientemente de sus valores L y C, con la frecuencia $\omega$, lo que se busca es que las reactancias se anulen para que nos quede la impedancia como un elemento netamente resistivo:
+\begin{displaymath}
+Z(\iu\omega_0)=R
+\end{displaymath}
+\begin{notation}
+Que las reactancias se anulen significa que esos elementos funcionarán como un corto circuito.
+\end{notation}
+\begin{definition}[Función de transferencia en serie]
+La función de transferencia para un circuito en serie esta dada por:
+\begin{equation}
+H=\frac{1}{1+\iu\parentesis{\frac{\omega\cdot L}{R}-\frac{1}{\omega CR}}}
+\label{eq:funcion transferencia serie}
+\end{equation}
+\end{definition}
+\begin{definition}[Factor de calidad-serie]
+\begin{equation}
+Q=\frac{\omega_r L}{R}=\frac{1}{\omega_rCR}=\frac{1}{R}\sqrt{\frac{L}{C}}
+\label{eq:factor calidad serie}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\omega_r$: Frecuencia de resonancia. (rad/s)
+\item \textbf{C}: Capacitancia. (F)
+\item \textbf{R}: Resistancia. ($\Omega$)
+\item \textbf{L}: Inductancia. (H)
+\end{itemize}
+\end{definition}
+Con el factor de calidad se puede definir la ecuación \ref{eq:funcion transferencia serie} como:
+\begin{equation}
+H=\frac{1}{1+\iu Q\parentesis{\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}}}
+\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf19.png}
+\caption{Resumen de osciladores: $\omega_0$ es la frecuencia de resonancia $\omega_r$}
+\end{figure}
 \section{Osciladores}
 \subsection{Sistemas retroalimentados}
 \begin{figure}[H]
@@ -1840,6 +1802,8 @@ Es un cristal de cuarzo (u otro material piezoeléctrico) que consta de una plac
 \epsilon_0=8.854\cdot\basedec{-12} F/m
 \end{displaymath}
 \end{itemize}
+\section{Voltajes}
+
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
@@ -1881,17 +1845,7 @@ Es un cristal de cuarzo (u otro material piezoeléctrico) que consta de una plac
 %\section{Appendix Section Title}
 %
 %Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget est euismod pretium.
-%
 %%------------------------------------------------
-%
-%\chapter{Appendix Chapter Title}
-%
-%\section{Appendix Section Title}
-%
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget est euismod pretium.
-%
-%%------------------------------------------------
-%
 %\end{appendices}
 %----------------------------------------------------------------------------------------
 %	INDEX

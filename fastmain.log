@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.8)  16 OCT 2022 21:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.8)  19 OCT 2022 12:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1909,14 +1909,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 21.
-<Images//mrf/mrf20.png, id=6, 459.96844pt x 268.00125pt>
-File: Images//mrf/mrf20.png Graphic file (type png)
-<use Images//mrf/mrf20.png>
-Package pdftex.def Info: Images//mrf/mrf20.png  used on input line 24.
-(pdftex.def)             Requested size: 341.43437pt x 198.94757pt.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 23.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 32.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 29.
+ 32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -1926,35 +1925,33 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 29.
+ 32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 29.
+ 32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 29.
+ 32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+2.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1962,25 +1959,9 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 4
-1.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<Images//mrf/mrf21.png, id=8, 251.43938pt x 118.94438pt>
-File: Images//mrf/mrf21.png Graphic file (type png)
-<use Images//mrf/mrf21.png>
-Package pdftex.def Info: Images//mrf/mrf21.png  used on input line 63.
-(pdftex.def)             Requested size: 256.07741pt x 121.13834pt.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 39.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1992,99 +1973,39 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
- <./Images//mrf/mrf20.png>]
+]
+Package textcomp Info: Symbol \textasciiacute not provided by
+(textcomp)             font family ptm in TS1 encoding.
+(textcomp)             Default family used instead on input line 48.
 
-LaTeX Warning: Command \textdegree invalid in math mode on input line 78.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 52
+.
 
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 78.
-
-Missing character: There is no ° in font zptmcm7t!
-<Images//mrf/mrf22.png, id=31, 260.47313pt x 127.22531pt>
-File: Images//mrf/mrf22.png Graphic file (type png)
-<use Images//mrf/mrf22.png>
-Package pdftex.def Info: Images//mrf/mrf22.png  used on input line 83.
-(pdftex.def)             Requested size: 192.0548pt x 93.80746pt.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 91.
-
-<Images//mrf/mrf23.png, id=33, 399.74344pt x 118.94438pt>
-File: Images//mrf/mrf23.png Graphic file (type png)
-<use Images//mrf/mrf23.png>
-Package pdftex.def Info: Images//mrf/mrf23.png  used on input line 93.
-(pdftex.def)             Requested size: 256.07741pt x 76.20036pt.
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-99.
-
-<Images//mrf/mrf24.png, id=34, 226.59656pt x 134.75343pt>
-File: Images//mrf/mrf24.png Graphic file (type png)
-<use Images//mrf/mrf24.png>
-Package pdftex.def Info: Images//mrf/mrf24.png  used on input line 101.
-(pdftex.def)             Requested size: 226.19888pt x 134.51663pt.
-
-Underfull \hbox (badness 1728) in paragraph at lines 89--105
-\T1/ptm/m/n/12 (+20) es-pe-ciales, nece-si-ta-mos para ar-ran-
- []
-
-
-Underfull \hbox (badness 3128) in paragraph at lines 89--105
-\T1/ptm/m/n/12 (+20) como una señal de ar-ranque ($\OML/ztmcm/m/it/12 x[]$\T1/p
-tm/m/n/12 (+20) )
- []
-
-
-Underfull \hbox (badness 1810) in paragraph at lines 89--105
-\T1/ptm/m/n/12 (+20) ida del lazo de re-al-i-mentación haga las fun-ciones de l
-a mag-ni-tud de en-trada.
- []
-
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 10
-5.
-
-<Images//mrf/mrf25.png, id=36, 451.6875pt x 239.39438pt>
-File: Images//mrf/mrf25.png Graphic file (type png)
-<use Images//mrf/mrf25.png>
-Package pdftex.def Info: Images//mrf/mrf25.png  used on input line 109.
-(pdftex.def)             Requested size: 256.07741pt x 135.72928pt.
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[2 <./Images//mrf/mrf21.png> <./Images//mrf/mrf22.png>]
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 11
-3.
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 144.
-
-<Images//mrf/mrf26.png, id=51, 149.8097pt x 307.90031pt>
-File: Images//mrf/mrf26.png Graphic file (type png)
-<use Images//mrf/mrf26.png>
-Package pdftex.def Info: Images//mrf/mrf26.png  used on input line 146.
-(pdftex.def)             Requested size: 106.69783pt x 219.29668pt.
-<Images//mrf/mrf27.png, id=52, 147.55125pt x 309.40594pt>
-File: Images//mrf/mrf27.png Graphic file (type png)
-<use Images//mrf/mrf27.png>
-Package pdftex.def Info: Images//mrf/mrf27.png  used on input line 147.
-(pdftex.def)             Requested size: 106.69783pt x 223.74466pt.
-<Images//mrf/mrf28.png, id=53, 476.53032pt x 301.8778pt>
-File: Images//mrf/mrf28.png Graphic file (type png)
-<use Images//mrf/mrf28.png>
-Package pdftex.def Info: Images//mrf/mrf28.png  used on input line 152.
-(pdftex.def)             Requested size: 298.75264pt x 189.26736pt.
-
-Overfull \hbox (8.03441pt too wide) in paragraph at lines 143--154
-\T1/ptm/m/n/12 (-20) tanto la fase como la mag-ni-tud deben
- []
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 56.
+<Images//soft/soft1.png, id=27, 441.14813pt x 151.3153pt>
+File: Images//soft/soft1.png Graphic file (type png)
+<use Images//soft/soft1.png>
+Package pdftex.def Info: Images//soft/soft1.png  used on input line 61.
+(pdftex.def)             Requested size: 213.39568pt x 73.19618pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2094,17 +2015,13 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[3 <./Images//mrf/mrf23.png> <./Images//mrf/mrf25.png> <./Images//mrf/mrf24.png
->]
+[2 <./Images//soft/soft1.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+8.
 
-Package wrapfig Warning: wrapfigure used inside a conflicting environment on in
-put line 159.
-
-<Images//mrf/mrf29.png, id=63, 601.24625pt x 418.56375pt>
-File: Images//mrf/mrf29.png Graphic file (type png)
-<use Images//mrf/mrf29.png>
-Package pdftex.def Info: Images//mrf/mrf29.png  used on input line 161.
-(pdftex.def)             Requested size: 204.85802pt x 142.61635pt.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2113,30 +2030,7 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[4 <./Images//mrf/mrf26.png> <./Images//mrf/mrf27.png> <./Images//mrf/mrf28.png
->]
-
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 16
-4.
-
-
-Package wrapfig Warning: Collision between wrapping environments on input line 
-166.
-
-<Images//mrf/mrf30.png, id=75, 1204.5pt x 1204.5pt>
-File: Images//mrf/mrf30.png Graphic file (type png)
-<use Images//mrf/mrf30.png>
-Package pdftex.def Info: Images//mrf/mrf30.png  used on input line 168.
-(pdftex.def)             Requested size: 204.85802pt x 204.85419pt.
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 172.
-
-<Images//mrf/mrf31.png, id=76, 415.5525pt x 241.65282pt>
-File: Images//mrf/mrf31.png Graphic file (type png)
-<use Images//mrf/mrf31.png>
-Package pdftex.def Info: Images//mrf/mrf31.png  used on input line 174.
-(pdftex.def)             Requested size: 256.07741pt x 148.9198pt.
+[3]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2145,44 +2039,33 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[5 <./Images//mrf/mrf31.png> <./Images//mrf/mrf29.png>]
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[6 <./Images//mrf/mrf30.png>] (fastmain.aux)
+[4] (fastmain.aux)
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54020 strings out of 475385
- 1212087 string characters out of 2777379
- 2181544 words of memory out of 3000000
- 74318 multiletter control sequences out of 15000+600000
- 531661 words of font info for 200 fonts, out of 8000000 for 9000
+ 54175 strings out of 475385
+ 1213409 string characters out of 2777379
+ 2185917 words of memory out of 3000000
+ 74363 multiletter control sequences out of 15000+600000
+ 535305 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,108p,1155b,977s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
-Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/symbols/msam10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTe
-X/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fo
-nts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/font
-s/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (6 pages, 440371 bytes).
+ 114i,12n,108p,2261b,891s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:
+\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk
+><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avan
+tgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/av
+antgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+courier/ucrr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmbi8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
+imes/utmri8a.pfb>
+Output written on fastmain.pdf (4 pages, 136585 bytes).
 PDF statistics:
- 154 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 70241 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 127 PDF objects out of 1000 (max. 8388607)
+ 29 named destinations out of 1000 (max. 500000)
+ 73802 words of extra memory for PDF output out of 74296 (max. 10000000)
 

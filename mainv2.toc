@@ -1,61 +1,65 @@
-\contentsline {section}{\numberline {0.1}Circuitos resonantes}{6}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Osciladores}{11}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Sistemas retroalimentados}{11}{subsection.0.2.1}%
-\contentsline {subsubsection}{\numberline {0.2.1.1}Condición de oscilación}{13}{subsubsection.0.2.1.1}%
-\contentsline {subsection}{\numberline {0.2.2}Osciladores de frecuencia muy constante}{15}{subsection.0.2.2}%
-\contentsline {part}{\numberline {I}Antenas}{17}{part.1}%
-\contentsline {chapter}{\numberline {1}Unidad I}{18}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introducción}{18}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Ancho de banda y capacidad de información}{20}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Ruido}{21}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Ruido térmico}{21}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Ángulo crítico}{22}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Repaso: Propagación de ondas electromagnéticas}{24}{subsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.5.1}Densidad de potencia radiada}{25}{subsubsection.1.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.1.5.2}Ley de cuadrado inverso}{26}{subsubsection.1.1.5.2}%
-\contentsline {section}{\numberline {1.2}Antenas}{27}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Tipos de antenas}{27}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Características y parámetros de las antenas transmisoras}{27}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Parámetros de acción directiva de antenas}{29}{subsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.3.1}Directividad}{29}{subsubsection.1.2.3.1}%
-\contentsline {subsection}{\numberline {1.2.4}Antenas receptoras}{30}{subsection.1.2.4}%
-\contentsline {part}{\numberline {II}Internetworking 2}{32}{part.2}%
-\contentsline {chapter}{\numberline {2}Unidad I}{33}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Protocolo spanning tree}{33}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Problemas con la redundancia de capa 1}{33}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Introducción}{36}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Tecnología EtherChannel}{36}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Funcionamiento}{36}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Ventajas de EtherChannel}{37}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Restricciones}{37}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Funcionamiento del PAgP}{38}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}PAgP}{38}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}LACP}{39}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Pautas y restricciones para la configuración}{39}{subsection.2.2.7}%
-\contentsline {part}{\numberline {III}Control Adaptativo Moderno}{41}{part.3}%
-\contentsline {chapter}{\numberline {3}Unidad I}{42}{chapter.3}%
-\contentsline {section}{\numberline {3.1}CADe Simu}{42}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Paneles}{42}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Simulaciones}{43}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Ladder}{50}{subsection.3.1.3}%
-\contentsline {subsubsection}{\numberline {3.1.3.1}Compuertas lógicas}{51}{subsubsection.3.1.3.1}%
-\contentsline {part}{\numberline {IV}Software de telecomunicaciones}{56}{part.4}%
-\contentsline {chapter}{\numberline {4}Unidad I}{57}{chapter.4}%
-\contentsline {part}{\numberline {V}Microelectrónica en radiofrecuencia}{58}{part.5}%
-\contentsline {chapter}{\numberline {5}Unidad I}{59}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Ondas electromagnéticas}{59}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Distorsión}{62}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Distorsión lineal}{62}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Distorsión no lineal}{65}{subsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Armónicos}{68}{subsubsection.5.2.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Intermodulación 3er orden: 2 tonos}{69}{subsubsection.5.2.2.2}%
-\contentsline {section}{\numberline {5.3}Osciladores}{71}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Sistemas retroalimentados}{71}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}Condición de oscilación}{73}{subsubsection.5.3.1.1}%
-\contentsline {subsection}{\numberline {5.3.2}Osciladores de frecuencia muy constante}{75}{subsection.5.3.2}%
-\contentsline {part}{\numberline {VI}Anexos}{77}{part.6}%
-\contentsline {section}{\numberline {5.4}Constantes universales}{78}{section.5.4}%
-\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{79}{chapter*.59}%
-\contentsline {section}{Articles}{79}{chapter*.59}%
-\contentsline {section}{Books}{79}{chapter*.59}%
+\contentsline {part}{\numberline {I}Antenas}{8}{part.1}%
+\contentsline {chapter}{\numberline {1}Unidad I}{9}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducción}{9}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Ancho de banda y capacidad de información}{11}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Ruido}{12}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Ruido térmico}{12}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Ángulo crítico}{13}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Repaso: Propagación de ondas electromagnéticas}{15}{subsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.5.1}Densidad de potencia radiada}{16}{subsubsection.1.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.1.5.2}Ley de cuadrado inverso}{17}{subsubsection.1.1.5.2}%
+\contentsline {section}{\numberline {1.2}Antenas}{18}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Tipos de antenas}{18}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Características y parámetros de las antenas transmisoras}{19}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Parámetros de acción directiva de antenas}{20}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}Directividad}{20}{subsubsection.1.2.3.1}%
+\contentsline {subsection}{\numberline {1.2.4}Antenas receptoras}{22}{subsection.1.2.4}%
+\contentsline {part}{\numberline {II}Internetworking 2}{23}{part.2}%
+\contentsline {chapter}{\numberline {2}Unidad I}{24}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Protocolo spanning tree}{24}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Problemas con la redundancia de capa 1}{24}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Introducción}{27}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Tecnología EtherChannel}{27}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Funcionamiento}{27}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Ventajas de EtherChannel}{28}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Restricciones}{28}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Funcionamiento del PAgP}{29}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}PAgP}{29}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}LACP}{30}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Pautas y restricciones para la configuración}{30}{subsection.2.2.7}%
+\contentsline {part}{\numberline {III}Control Adaptativo Moderno}{32}{part.3}%
+\contentsline {chapter}{\numberline {3}Unidad I}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}CADe Simu}{33}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Paneles}{33}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Simulaciones}{34}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Ladder}{41}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}Compuertas lógicas}{42}{subsubsection.3.1.3.1}%
+\contentsline {part}{\numberline {IV}Software de telecomunicaciones}{47}{part.4}%
+\contentsline {chapter}{\numberline {4}Unidad I}{48}{chapter.4}%
+\contentsline {section}{\numberline {4.1}XDR}{48}{section.4.1}%
+\contentsline {section}{\numberline {4.2}RPC y RMI}{48}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}RMI}{49}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}CORBA}{50}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}CORBA y EAI}{50}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Arquitectura CORBA}{51}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}SOAP}{51}{section.4.4}%
+\contentsline {part}{\numberline {V}Microelectrónica en RF}{53}{part.5}%
+\contentsline {chapter}{\numberline {5}Unidad I}{54}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Ondas electromagnéticas}{54}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Distorsión}{57}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Distorsión lineal}{57}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Distorsión no lineal}{60}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Armónicos}{63}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Intermodulación 3er orden: 2 tonos}{64}{subsubsection.5.2.2.2}%
+\contentsline {section}{\numberline {5.3}Circuitos resonantes}{66}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Osciladores}{72}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Sistemas retroalimentados}{72}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}Condición de oscilación}{73}{subsubsection.5.4.1.1}%
+\contentsline {subsection}{\numberline {5.4.2}Osciladores de frecuencia muy constante}{76}{subsection.5.4.2}%
+\contentsline {part}{\numberline {VI}Anexos}{78}{part.6}%
+\contentsline {section}{\numberline {5.5}Constantes universales}{79}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Voltajes}{79}{section.5.6}%
+\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{80}{chapter*.51}%
+\contentsline {section}{Articles}{80}{chapter*.51}%
+\contentsline {section}{Books}{80}{chapter*.51}%
 \contentsfinish 

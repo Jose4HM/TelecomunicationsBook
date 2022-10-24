@@ -3,7 +3,13 @@
 Este es un libro/cuaderno donde puedes observar mis notas a lo largo de la carrera que estudio: Ingenieria en Telecomunicaciones.
 
 ## Uso y descarga:closed_book:	
-Para usarlo tienes que descargar el archivo [main.pdf](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf) y luego le das en el botón de descargar. Es recomendable descargarlo pues Github no puede renderizar un pdf de tal tamaño:
+Para usarlo debes de descargar cualquiera de los libros:
+
+[Pasos por telecomunicaciones I](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf) 
+
+[Pasos por telecomunicaciones II](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/mainv2.pdf)
+
+y luego le das en el botón de descargar pues Github no puede renderizar un pdf de tal tamaño:
 ![Ubicación del botón de descarga.](https://user-images.githubusercontent.com/71269653/165668601-ec0d9582-12ba-4913-a5b7-99926fad42e5.png)
 
 ## Contribución:handshake:	
@@ -30,7 +36,13 @@ Nota: Yo no poseo estas imagenes. Todos los derechos reservados.
 This is a book/notebook where you can observe my notes along the career I study: Telecommunications Engineering.
 
 ## Use and download:closed_book:	
-To use it you have to download the file [main.pdf](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf) and then hit the download button. It is recommended to download it because Github cannot render a pdf of such size:
+To use it you must download any of both books:
+
+[Pasos por telecomunicaciones I](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/main.pdf) 
+
+[Pasos por telecomunicaciones II](https://github.com/Yasperterian/TelecomunicationsBook/blob/master/mainv2.pdf)
+
+And then hit the download button because Github cannot render a pdf of such size:
 ![Ubicación del botón de descarga.](https://user-images.githubusercontent.com/71269653/165668601-ec0d9582-12ba-4913-a5b7-99926fad42e5.png)
 
 ## Contribution:handshake:	
