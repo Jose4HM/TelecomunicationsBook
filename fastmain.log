@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.8)  19 OCT 2022 12:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.7)  9 NOV 2022 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./fastmain.tex
 (fastmain.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (LegrandOrangeBook.cls
+L3 programming layer <2022-10-26> (LegrandOrangeBook.cls
 Document Class: LegrandOrangeBook 2022/01/26 The Legrand Orange Book Class v3.0
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -774,7 +774,7 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \sectionRuleOffset@mlpr=\skip68
 \toks@mlpr=\toks46
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2022-10-04 v3.1.8 A comprehensive (SI) units package
+Package: siunitx 2022-10-23 v3.1.9 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen306
 \l__siunitx_angle_marker_box=\box116
 \l__siunitx_angle_unit_box=\box117
@@ -832,7 +832,7 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \l__siunitx_unit_total_int=\count354
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
@@ -852,7 +852,7 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.st
 y
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box123
 )
 \tc@llx=\dimen312
@@ -874,7 +874,7 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@ptotalheight=\dimen323
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count356
 LaTeX Info: Redefining \checkoddpage on input line 45.
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
@@ -1006,11 +1006,11 @@ rs
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 154.
+less on input line 170.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 158.
+less on input line 174.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
@@ -1032,7 +1032,7 @@ Package: titletoc 2021/07/05 v2.14 TOC entries
 \ttl@leftsep=\dimen340
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
-Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
+Package: pdfpages 2022/10/09 v0.5w Insert pages of external PDF documents (AM)
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
@@ -1047,7 +1047,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@fboxrule=\dimen345
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
-File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2022/10/09 v0.5w Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count363
 \AM@pagebox=\box127
@@ -1288,16 +1288,16 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-09-28 L3 programming layer (loader) 
+Package: expl3 2022-10-26 L3 programming layer (loader) 
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count492
 \l__pdf_internal_box=\box129
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2022-09-28 L3 programming layer (loader) 
+(biblatex)             2022-10-26 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -1461,11 +1461,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip104
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 567.
+Package hyperref Info: Option `colorlinks' set `true' on input line 586.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 567.
+(hyperref)                setting the option has no effect on input line 586.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1909,59 +1909,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 23.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 32.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 32.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 32.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 32.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 32.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 32.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-2.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 32.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 39.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 26.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1974,15 +1922,60 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-Package textcomp Info: Symbol \textasciiacute not provided by
-(textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 33.
 
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
-(RS)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 52
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 33.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 33.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 33.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+3.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 33
 .
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
@@ -1992,20 +1985,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 56.
-<Images//soft/soft1.png, id=27, 441.14813pt x 151.3153pt>
-File: Images//soft/soft1.png Graphic file (type png)
-<use Images//soft/soft1.png>
-Package pdftex.def Info: Images//soft/soft1.png  used on input line 61.
-(pdftex.def)             Requested size: 213.39568pt x 73.19618pt.
+<Images//IN2/IN10.png, id=23, 803.0pt x 427.5975pt>
+File: Images//IN2/IN10.png Graphic file (type png)
+<use Images//IN2/IN10.png>
+Package pdftex.def Info: Images//IN2/IN10.png  used on input line 36.
+(pdftex.def)             Requested size: 298.75264pt x 159.08942pt.
+<Images//IN2/IN11.png, id=24, 803.0pt x 406.51875pt>
+File: Images//IN2/IN11.png Graphic file (type png)
+<use Images//IN2/IN11.png>
+Package pdftex.def Info: Images//IN2/IN11.png  used on input line 45.
+(pdftex.def)             Requested size: 298.75264pt x 151.24698pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2015,9 +2004,9 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[2 <./Images//soft/soft1.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
-8.
+[2 <./Images//IN2/IN10.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
+2.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
@@ -2030,7 +2019,7 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[3]
+[3 <./Images//IN2/IN11.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2039,33 +2028,38 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[4] (fastmain.aux)
+[4]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[5] (fastmain.aux)
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54175 strings out of 475385
- 1213409 string characters out of 2777379
- 2185917 words of memory out of 3000000
- 74363 multiletter control sequences out of 15000+600000
- 535305 words of font info for 271 fonts, out of 8000000 for 9000
+ 54532 strings out of 475380
+ 1215771 string characters out of 2777244
+ 2206285 words of memory out of 3000000
+ 74759 multiletter control sequences out of 15000+600000
+ 537468 words of font info for 254 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,12n,108p,2261b,891s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C:
-\Users\User\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk
-><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbo
-ls/msam10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avan
-tgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/av
-antgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-courier/ucrr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw
-/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmbi8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/t
-imes/utmri8a.pfb>
-Output written on fastmain.pdf (4 pages, 136585 bytes).
+ 114i,13n,108p,1155b,2570s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
+Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C
+:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb>
+<C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb
+><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
+<C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
+C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on fastmain.pdf (5 pages, 144015 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 29 named destinations out of 1000 (max. 500000)
- 73802 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 81975 words of extra memory for PDF output out of 89155 (max. 10000000)
 

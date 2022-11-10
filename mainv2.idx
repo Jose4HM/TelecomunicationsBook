@@ -3,11 +3,15 @@
 \indexentry{Ruido térmico|hyperpage}{12}
 \indexentry{Ángulo crítico|hyperpage}{13}
 \indexentry{Parámetros de acción directiva de antenas|hyperpage}{20}
-\indexentry{Protocolo spanning tree|hyperpage}{24}
-\indexentry{PAgP|hyperpage}{29}
-\indexentry{LACP|hyperpage}{30}
-\indexentry{Ladder|hyperpage}{41}
-\indexentry{Distorsión lineal|hyperpage}{57}
-\indexentry{Distorsión no lineal|hyperpage}{60}
-\indexentry{Distorsión de armónicos|hyperpage}{63}
-\indexentry{Condición de oscilación|hyperpage}{73}
+\indexentry{Antena dipolo|hyperpage}{23}
+\indexentry{Antena Marconi|hyperpage}{27}
+\indexentry{Protocolo spanning tree|hyperpage}{29}
+\indexentry{PAgP|hyperpage}{34}
+\indexentry{LACP|hyperpage}{35}
+\indexentry{Tipos de NAT|hyperpage}{44}
+\indexentry{Configurar NAT|hyperpage}{47}
+\indexentry{Ladder|hyperpage}{62}
+\indexentry{Distorsión lineal|hyperpage}{78}
+\indexentry{Distorsión no lineal|hyperpage}{81}
+\indexentry{Distorsión de armónicos|hyperpage}{84}
+\indexentry{Condición de oscilación|hyperpage}{94}

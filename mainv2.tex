@@ -147,7 +147,7 @@
 \part{Antenas}
 \chapterimage{chapter_head_ANT.pdf} % Chapter heading image
 
-\chapter{Unidad I}
+\chapter{Conceptos básicos sobre antenas}
 \section{Introducción}
 Como siempre, antes de este curso hay que recordar algunos términos o conceptos para poder entender cosas que se vienen. Empezamos con las unidades logarítmicas:
 \begin{align*}
@@ -161,11 +161,12 @@ Otros conceptos importantes a recordar son:
 \begin{definition}[Longitud de Onda]
 \begin{equation}
 \lambda=\frac{v}{f}
+\label{eq:longitud de onda}
 \end{equation}
 Donde:
 \begin{itemize}
 \item $\lambda$: Longitud de onda. (m)
-\item \textbf{v}: Velocidad, si el medio es el aire o espacio libre: $v=c=3\times\basedec{8}$ m/s (m/s)
+\item \textbf{v}: Velocidad. Si el medio es el aire o espacio libre: $v=c=3\times\basedec{8}$ m/s (m/s)
 \item $f$: Frecuencia. (Hz)
 \end{itemize}
 \end{definition}
@@ -691,6 +692,78 @@ Donde:
 \begin{remark}
 Recuerda que en todas las ecuaciones se debe trabajar con unidades \textbf{lineales}. Esto significa que todos los decibelios que nos da los problemas deben ser transformadas a sus equivalentes lineales para poder usar las ecuaciones dadas a los largo de este capitulo.
 \end{remark}
+\chapterimage{chapter_head_ANT.pdf} % Chapter heading image
+
+\chapter{Tipos de antenas}
+\section{Antena Dipolo}\index{Antena dipolo}
+\subsection{Diseño de un dipolo}
+Vamos a diseñar un dipolo simétrico, usaremos una frecuencia de 93.5 MHz. Como vimos en teoría de la antena y usando la ecuación \ref{eq:longitud de onda} calculamos la distancia de los brazos:
+\begin{wrapfigure}{r}{0.3\linewidth}
+	\centering
+    \includegraphics[width=.9\linewidth]{Ant/Ant9}
+  \caption{Longitudes del dipolo.}
+  \label{fig:antena dipolo medidas}
+\end{wrapfigure}
+\begin{displaymath}
+\lambda=\frac{3\basedec{8}m/s}{93.5\basedec{6}Hz}=3.20 m\simeq 3200mm
+\end{displaymath}
+Con $\lambda$ calculado, podemos hallar nuestra longitud de la antena:
+\begin{displaymath}
+\frac{\lambda}{2}=1600mm
+\end{displaymath}
+Y la longitud de cada brazo es:
+\begin{displaymath}
+\frac{\lambda}{4}=800mm
+\end{displaymath}
+Ahora calcularemos el GAP\footnote{Distancia entre los brazos del dipolo simétrico}, el valor del GAP esta dado por la ecuación:
+\begin{equation}
+GAP=0.01\lambda
+\label{eq:gap}
+\end{equation}
+Usando la ecuación \ref{eq:gap} calculamos nuestro valor para el GAP:
+\begin{displaymath}
+GAP=0.01(3200mm)=32mm\approx 40mm
+\end{displaymath}
+Aunque el valor nos salga 32mm, se aproxima al \textbf{múltiplo} de diez cercano o un número par. Esto ya es a criterio del ingeniero. En nuestro diseño lo hicimos a 40mm.
+Resumiendo los datos en la figura \ref{fig:antena dipolo medidas}.\\
+También necesitamos la caja de radiación, para esto solo agregamos la longitud de $\lambda/4$ a todos los lados:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Ant/ant10_1.png}
+\caption{Caja de radiación.}
+\end{figure}
+\begin{notation}
+Nota que en la figura \ref{eq:gap}, si sumamos el GAP y longitud de ambos brazos no sale $\lambda/2$, estos valores van a ser modificador luego, son tan solo una aproximación.
+\end{notation}
+Con esto ya calculado, llevamos la antena al ANSYS:\\
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=\linewidth]{ant/ant11.png} & \textbf{Creamos un cilindro} \newline 
+        En un nuevo proyecto creamos un cilindro, no importa el tamaño porque luego lo editaremos. \\
+        \includegraphics[width=\linewidth]{ant/ant12.png} & \textbf{Cambiamos las propiedades} \newline 
+        En el panel de objetos doble click en \textit{cylinder1} y cambiamos el nombre, material y color. Aceptar.\\
+        \includegraphics[width=\linewidth]{ant/ant13.png} & \textbf{Dimensiones} \newline 
+        Desplegamos el otro menu bajo \textit{BrazoL} y clickamos en CreateCylinder. Modificamos las dimensiones de acuerdo a lo calculado arriba. \textit{Center Position} es un punto relativo al cual vamos a trabajar (a modo de anclaje), aquí colocaremos la mitad del GAP, \textit{Radius} 20, pues nuestro diámetro es 40 y \textit{Height} ponemos -800, recuerda que es un dipolo, si lo situamos en el origen un brazo ira hacia los positivos y el otro hacía el positivo.\\
+        \includegraphics[width=\linewidth]{ant/ant14.png} & \textbf{Duplicamos el brazoL} \newline 
+        Seleccionando nuestro cilindro, vamos a \textit{Edit>Duplicate>Around Axis}, configuramos como la imagen y OK.
+    \end{tabular}
+   
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=\linewidth]{ant/ant15.png} & \textbf{Creamos la caja de radiación} \newline 
+        Creamos un cilindro que cubra nuestra antena. Si la orientación del cilindro causase problemas, asegurate que el plano de referencia en la barra de herramientas este en \textbf{YZ}. Cambiamos su nombre a ``aire'', material: vacuum, color celeste y transparencia 0.9.\\
+        \includegraphics[width=\linewidth]{ant/ant16.png} & \textbf{Ajustamos la caja de radiación} \newline 
+        Vamos a \textit{Create Cylinder}. \textit{Center Position}: Mitad del largo de la caja de radiación (1620); \textit{Radius}: mitad del diámetro (820) y \textit{Height}: Menos la longitud de la caja de radiación (-3240).\\
+         \includegraphics[width=\linewidth]{ant/ant17.png} & \textbf{Creación de puerto} \newline 
+        Creamos un rectángulo en el espacio libre que dejamos entre ambas brazos. Le cambiamos el nombre a ``Puerto'' y cambiamos el color.\\
+        \includegraphics[width=\linewidth]{ant/ant18.png} & \textbf{Fronteras} \newline 
+        Click derecho en ``aire''>Assign boundary>Radiation\\
+        \includegraphics[width=\linewidth]{ant/ant19.png} & \textbf{Excitación} \newline 
+        Click derecho en ``puerto''>Assign excitation>Port>Lumped port. Aceptamos la impedancia de 50 ohms. En la siguiente pantalla, en la columna \textit{integration line} seleccionamos \textit{new line}. Seleccionamos la mitad de nuestro puerto, asegurándonos que se muestre un triangulo como en la figura. Damos aceptar y finalizar.\\
+\end{tabular}
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=\linewidth]{Ant/ant20.png} & \textbf{Análisis} \newline 
+        En la ventana de \textit{project manager}>Analysis (click derecho) > Add solution setup>Advanced. Colocamos nuestra frecuencia de trabajo y aceptar. En la siguiente ventana damos aceptar. Validamos el proyecto\footnote{En la pestaña \textit{Simulation}} y \textit{Analyze all}. Esperamos que termine.
+\end{tabular}
+\section{Antena Marconi}\index{Antena Marconi}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -763,8 +836,6 @@ Secuencia de eventos:
 \caption{S1 y S3 envian una trama duplicada a la PC4.}
 \end{figure}
 \end{itemize}
-\subsection{Introducción}
-
 \section{Tecnología EtherChannel}
 \subsection{Funcionamiento}
 Hay escenarios en los que se necesita más ancho de banda o redundancia entre  dispositivos que lo que puede proporcionar un único enlace. Se pueden conectar varios  enlaces entre dispositivos para aumentar el ancho de banda. Sin embargo, el protocolo de  árbol de expansión (STP), que está habilitado en dispositivos de \textbf{capa 2} como switches. Cisco de forma predeterminada, bloqueará enlaces redundantes para evitar bucles de  conmutación. Se necesita una tecnología de agregación de enlaces que permita \textbf{vínculos redundantes} entre dispositivos que \textbf{no serán bloqueados por STP}. Esa tecnología se conoce como EtherChannel.\\
@@ -856,7 +927,322 @@ sin necesidad de que las interfaces sean físicamente contiguas
 \item \textbf{VLAN match}: Todas las interfaces en el grupo EtherChannel se deben asignar a la  misma VLAN o se deben configurar como enlace troncal (mostrado en la figura).
 \item \textbf{Rango de VLAN}: Un EtherChannel admite el mismo rango permitido de VLAN en  todas las interfaces de un EtherChannel de enlace troncal. Si el rango permitido de  VLAN no es el mismo, las interfaces no forman un EtherChannel, incluso si se  establecen en modo auto o desirable .
 \end{itemize}
-
+\section{Conceptos de routing}
+El routing es la capacidad de buscar la ruta correcta para mover o transferir paquetes de información entre una o varias redes de Internet. Para hacer routing se necesitan de routers, estos son computadoras especializadas que poseen componentes como:
+\begin{itemize}
+\item Unidad central de procesamiento (CPU)
+\item Sistema operativo (OS): los routers utilizan IOS de Cisco
+\item Memoria y almacenamiento (RAM, ROM, NVRAM, flash, disco duro)
+\item Tarjetas de interfaz de red
+\end{itemize}
+Estos se pueden enlazar mediante puertos para interconectarse con otras redes.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{IN2/IN6.png}
+\caption{Memorias del router}
+\end{figure}
+Más adelante se estudiará las ruta estática y los protocolos de routing dinámico para descubrir redes remotas y crear sus tablas de routing. La tabla de routing ayuda a determinar la mejor ruta para enviar paquetes. Los paquetes son encapsulados y se envían en cada interfaz indicada en la tabla de routing.
+\begin{figure}
+\centering
+\includegraphics[width=\linewidth]{IN2/IN7.png}
+\caption{Encapsulación de paquetes.}
+\end{figure}
+\subsection{Funciones de routing}
+\begin{itemize}
+\item \textbf{Conectar redes y administrar el tráfico de ellas}: El router es el responsable del routing, capacidad de reenviar paquetes IP desde una red a otra, del tráfico entre redes. Los routers encapsulan los paquetes y los reenvían a la interfaz indicada en la tabla de routing. Los métodos de reenvío de paquetes son:
+\begin{itemize}
+	\item Switching de procesos: es  un mecanismo de reenvío de  paquetes más antiguo que  todavía está disponible para  routers Cisco.
+	\item Switching rápido: es un  mecanismo común de reenvío  de paquetes que usa una  memoria caché de switching  rápido para almacenar la información de siguiente salto.
+	\item Cisco Express Forwarding: Es el mecanismo más reciente, más rápido y más utilizado de CISCO.
+\end{itemize}
+\item \textbf{Aceleración de datos entre redes}: Los routers son capaces de utilizar las tablas de routing para determinar cuál es la mejor ruta para enviar paquetes. Pueden emplear rutas estáticas o dinámicas para descubrir redes remotas.
+\item \textbf{Creación de tabla de routing}: La tabla de routing es el listado de todas las posibles rutas de la red. Cuando un router recibe paquetes IP que deben enviarse a otro lugar de la red, mira la dirección IP de destino del paquete y, luego, busca la información de routing en la tabla de routing.
+\item \textbf{Seguridad de red}: El router sirve como un firewall, lo que restringe el acceso de cualquier persona que no esté autorizada. Esto se hace con claves de seguridad similares a las contraseñas, sólo los dispositivos precargados con la clave de seguridad o usadas por usuarios que pueden ingresar la contraseña correcta, tienen acceso a la red
+\end{itemize}
+\subsection{Conexión de dispositivos}
+Para conectar los dispositivos en los routers se debe hacer uso de:
+\begin{itemize}
+\item \textbf{Gateways predeterminadas}: Para habilitar el acceso a  la red, los dispositivos deben estar configurados con la siguiente información de  direcciones IP.
+\begin{itemize}
+\item \textbf{Dirección IP}: Identifica a un  host único en una red local.
+\item \textbf{Máscara de subred}: Identifica a la subred de la  red del host.
+\item \textbf{Gateway predeterminado}: Identifica al router al que se  envía un paquete cuando el  destino no está en la misma  subred de la red local.
+\end{itemize}
+\item \textbf{Habilitar IP en un host}: La dirección IP puede ser asignada en forma estática o dinámica.
+\begin{itemize}
+\item Estática: Manualmente. Al host se le asigna  manualmente una dirección IP, una máscara de subred y un gateway  predeterminado. También se puede asignar la dirección IP de un  servidor DNS. Se utiliza para identificar recursos de red específicos, como servidores de red e impresoras. Se puede utilizar en redes muy pequeñas con pocos hosts.
+\item Dinámica: Un servidor asigna en forma dinámica la información de la dirección IP utilizando el \textbf{ protocolo de  configuración dinámica de hosts} (DHCP). La mayoría de los hosts obtienen la información de su dirección IP  mediante DHCP. Los routers Cisco pueden proporcionar servicios DHCP.
+\end{itemize}
+\item \textbf{Acceso a la consola}: 
+\begin{itemize}
+\item Puerto de computadora: Puerto serie y puerto USB tipo A
+\item Cable requerido: Cable de consola, Adaptador de puerto serie USB a RS232 y Cable USB tipo A a USB tipo B.
+\item Puerto en el ISR: Puerto de consola RJ-45 y Puerto de consola USB Tipo B
+\item Emulación del terminal: Tera Term o PuTTY.
+\end{itemize}
+\item \textbf{Habilitar IP en in switch}
+\end{itemize}
+\subsection{Verificación de la conectividad de redes conectadas directamente}
+Existen diferentes métodos para comprobar la conectividad entre dos redes conectadas:
+\subsubsection{Prueba de stack}
+\begin{enumerate}
+\item \textbf{PING}: El comando ping es una manera efectiva de probar la conectividad. La prueba se denomina prueba de stack de protocolos, porque el comando ping se mueve desde la Capa 3 del Modelo OSI hasta la Capa 2 y luego hacia a la Capa. El ping utiliza el protocolo ICMP (Protocolo de mensajes de control de Internet) para comprobar la conectividad.
+\item \textbf{Indicadores de ping IOS}: Un ping de IOS cederá a una de varias indicaciones para cada eco ICMP enviado. Los indicadores más comunes son:
+! - indica la recepción de una respuesta de eco ICMP
+. - indica un límite de tiempo cuando se espera una respuesta
+U - se recibió un mensaje ICMP inalcanzable
+\item \textbf{Prueba de loopback}: A modo de primer paso en la secuencia de prueba, se utiliza el comando ping para verificar la configuración IP interna en el host local. Recuerde que esta prueba se cumple con el comando ping en una dirección reservada denominada loopback (127.0.0.1). Esto verifica la correcta operación del stack de protocolos desde la capa de Red a la capa Física, y viceversa, sin colocar realmente una señal en el medio.
+\end{enumerate}
+\subsubsection{Asignación de interfaz}
+Del mismo modo que se usan comandos y utilidades para verificar la configuración de un host, se deben aprender los comandos para verificar las interfaces de dispositivos intermediarios. El IOS provee comandos para verificar la operación de interfaces de router y switch.
+\begin{enumerate}
+\item \textbf{Verificación de interfaz de router}: Uno de los comandos más utilizados es el comando show ip interface brief. Este proporciona un resultado más abreviado que el comando show ip interface. Ofrece además un resumen de la información clave de todas las interfaces.
+\item \textbf{Prueba red local}: La siguiente prueba de la secuencia corresponde a los hosts en la LAN local. Al hacer ping a los hosts remotos satisfactoriamente se verifica que tanto el host local (en este caso, el router) como el host remoto estén configurados correctamente. Esta prueba se realiza al hacer ping a cada host en forma individual en la LAN. Si un host responde con el mensaje "Destination Unreachable" (destino inalcanzable), observe qué dirección no fue satisfactoria y continúe haciendo ping a los otros hosts de la LAN. Otro mensaje de falla es "Request Timed Out" (la petición ha expirado). Indica que no hubo respuesta al intento del ping en el período de tiempo predeterminado, lo cual indica que el problema puede estar en la latencia de red.
+\end{enumerate}
+\subsection{Determinación de ruta}
+\subsubsection{Función determinación de ruta}
+La función de determinación de ruta es el proceso según el cual el router determina qué ruta usar cuando envía un paquete. Para determinar la mejor ruta, el router \textbf{busca} en su tabla de enrutamiento una dirección de red que coincida con la dirección IP de destino del paquete. El resultado de esta búsqueda es una de tres determinaciones de ruta:
+\begin{itemize}
+\item \textbf{Red conectada directamente}: si la dirección IP de destino del paquete pertenece a un dispositivo en una red que está directamente conectado a una de las interfaces del router, ese paquete se envía directamente a ese dispositivo. Esto significa que la dirección IP de destino del paquete es una dirección host en la misma red que la interfaz de este router.
+\item \textbf{Red remota}: si la dirección IP de destino del paquete pertenece a una red remota, entonces el paquete se envía a otro router. Las redes remotas sólo se pueden alcanzar mediante el envío de paquetes a otro router.
+\item \textbf{Sin determinación de ruta}: si la dirección IP de destino del paquete no pertenece ya sea a una red conectada o remota, y si el router no tiene una ruta por defecto, entonces el paquete se descarta. El router envía un mensaje ICMP de destino inalcanzable a la dirección IP de origen del paquete. En los primeros dos resultados, el router vuelve a encapsular el paquete IP en el formato de la trama de enlace de datos de Capa 2 de la interfaz de salida. El tipo de interfaz determina el tipo de encapsulación de Capa 2. Por ejemplo, si la interfaz de salida es FastEthernet, el paquete se encapsula en una trama de Ethernet. Si la interfaz de salida es una interfaz serial configurada para PPP, el paquete IP se encapsula en una trama PPP.
+\end{itemize}
+\subsubsection{Función de conmutación}
+La función de conmutación es el proceso utilizado por un router para \textbf{aceptar} un paquete en una interfaz y \textbf{enviarlo} desde otra interfaz. Una responsabilidad clave de la función de conmutación es la de \textbf{encapsular} los paquetes en el tipo de trama de enlace de datos correcto para el enlace de datos de salida.
+\section{Routing estático}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN2/IN8.png}
+\caption{Sintaxis comando \textit{IP route}.}
+\end{figure}
+El enrutamiento estático proporciona un método que otorga a los ingenieros de redes \textbf{control absoluto} sobre las rutas por las que se transmiten los datos en una internetwork. Para adquirir este control, en lugar de configurar protocolos de enrutamiento dinámico para que creen las tablas de enrutamiento, se crean manualmente. Es importante entender las ventajas y desventajas de la implementación de rutas estáticas, porque se utilizan extensamente en internetworks pequeñas y para establecer la conectividad con proveedores de servicios. Es posible que se crea que el enrutamiento estático es sólo un método antiguo de enrutamiento y que el enrutamiento dinámico es el único método usado en la actualidad. Esto no es así, además, se destaca que escribir una ruta estática en un router no es más que especificar una ruta y un destino en la tabla de enrutamiento, y que los protocolos de enrutamiento hacen lo mismo, sólo que de manera automática. Sólo hay dos maneras de completar una tabla de enrutamiento: manualmente (el administrador agrega rutas estáticas) y automáticamente (por medio de protocolos de enrutamiento dinámico). 
+\begin{itemize}
+\item Facilita el mantenimiento de la tabla de enrutamiento en redes más pequeñas en las cuales no está previsto que crezcan significativamente.
+\item Proporciona routing hacia las redes de rutas internas y desde estas. Una red de rutas internas es aquella a la cual se accede a través de una única ruta y cuyo router tiene solo un vecino.
+\item Utiliza una única ruta predeterminada para representar una ruta hacia cualquier red que no tenga una coincidencia más específica con otra ruta en la tabla de routing.
+\end{itemize}
+\subsection{Tipos de rutas estáticas}
+Las rutas estáticas suelen usarse con más frecuencia para conectarse a una red específica o para proporcionar un gateway de último recurso para una red de rutas internas. También pueden utilizarse para lo siguiente:
+\begin{itemize}
+\item Para reducir el número de rutas anunciadas mediante el resumen de varias redes contiguas como una sola ruta estática
+\item Para crear una ruta de respaldo en caso de que falle un enlace de la ruta principal
+\end{itemize}
+\subsubsection*{Ruta estática predeterminada}
+IPv4 e IPv6 admiten la configuración de rutas estáticas. Las rutas estáticas son útiles para conectarse a una red remota específica.
+\subsubsection*{Ruta estática predeterminada}
+Una ruta por defecto o predeterminada, es una ruta que coincide con \textbf{todos los paquetes} y es utilizada por el router si un paquete no coincide con ninguna otra ruta más específica en la tabla de routing. Además, puede ser aprendida de forma dinámica o configurada de manera estática. Una ruta estática predeterminada es simplemente una ruta estática con \textbf{0.0.0.0/0} como dirección IPv4 de destino. Al configurar una ruta estática predeterminada, se crea un gateway de último recurso. Las rutas estáticas predeterminadas se utilizan en los siguientes casos:
+\begin{itemize}
+\item Cuando ninguna otra ruta de la tabla de routing coincide con la dirección IP destino del paquete. En otras palabras, cuando no existe una coincidencia más específica. Se utilizan comúnmente cuando se conecta un router periférico de una compañía a la red ISP.
+\item Cuando un router tiene otro router único al que está conectado. En esta situación, se conoce al router como router de rutas internas.
+\end{itemize}
+\subsubsection*{Rutas estática resumida}
+Para reducir el número de entradas en la tabla de routing, se pueden resumir varias rutas estáticas en una única ruta estática si se presentan las siguientes condiciones:
+\begin{itemize}
+\item Las redes de destino son contiguas y se pueden resumir en una única dirección de red.
+\item Todas las rutas estáticas utilizan la misma interfaz de salida o la dirección IP del siguiente salto.
+\end{itemize}
+\subsubsection*{Ruta estática flotante}
+Las rutas estáticas flotantes son rutas estáticas que se utilizan para proporcionar una ruta de \textbf{respaldo} a una ruta estática o dinámica principal, en el caso de una falla del enlace. La ruta estática flotante se utiliza únicamente cuando la ruta principal \textbf{no está disponible}. Para lograrlo, la ruta estática flotante se configura con una distancia administrativa mayor que la ruta principal.La distancia administrativa representa la \textbf{confiabilidad} de una ruta. Si existen varias rutas al destino, el router elegirá la que tenga una menor distancia administrativa. Por ejemplo, suponga que un administrador desea crear una ruta estática flotante como respaldo de una ruta descubierta por EIGRP. La ruta estática flotante se debe configurar con una \textbf{distancia administrativa mayor} que el EIGRP. El EIGRP tiene una distancia administrativa de 90. Si la ruta estática flotante se configura con una distancia administrativa de 95, se prefiere la ruta dinámica descubierta por el EIGRP a la ruta estática flotante. Si se pierde la ruta descubierta por el EIGRP, en su lugar se utiliza la ruta estática flotante.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{IN2/IN9.png}
+\caption{Ruta estática flotante.}
+\end{figure}
+\section{Routing dinámico}
+\subsection{Comparación entre routing dinámico y estático}
+\textbf{Routing estático}
+\begin{enumerate}
+\item Facilita el mantenimiento de la tabla de routing en redes más pequeñas
+\item Realiza routing desde y hacia una red de rutas internas
+\item Permite acceder a una única ruta predeterminada.
+\item Fácil de implementar en redes pequeñas
+\item Adecuado solamente para topologías simples o para fines específicos, como una ruta estática predeterminada.
+\item Muy seguro.
+\item No se envían anuncios, a diferencia del caso de los protocolos de routing dinámico.
+\item La complejidad de la configuración aumenta notablemente a medida que crece la red.
+\item La ruta hacia el destino siempre es la misma.
+\item Se requiere intervención manual para volver a enrutar el tráfico.
+\item Dado que no se requieren algoritmos de routing ni mecanismos de actualización, no se necesitan recursos adicionales (CPU o RAM). 
+\end{enumerate}
+\textbf{Routing dinámico}
+\begin{enumerate}
+\item Ayudan al administrador de red a administrar el proceso riguroso y lento de configuración y mantenimiento de rutas estáticas.
+\item Adecuado en todas las topologías donde se requieren varios routers.
+\item La implementación puede ser más compleja.
+\item Por lo general, es independiente del tamaño de la red.
+\item Menos seguro.
+\item Se requieren opciones de configuración adicionales para proporcionarle protección.
+\item Si es posible, adapta automáticamente la topología para volver a enrutar el tráfico.
+\item La ruta depende de la topología actual.
+\item Requiere CPU, RAM y ancho de banda de enlace adicionales.
+\end{enumerate}
+En general, las operaciones de un protocolo de enrutamiento dinámico pueden
+describirse de la siguiente manera:
+\begin{enumerate}
+\item El router envía y recibe mensajes de enrutamiento en sus interfaces.
+\item El router comparte mensajes de enrutamiento e información de enrutamiento con otros routers que están usando el mismo protocolo de enrutamiento.
+\item Los routers intercambian información de enrutamiento para obtener información sobre redes remotas.
+\item Cuando un router detecta un cambio de topología, el protocolo de enrutamiento puede anunciar este cambio a otros routers.
+\end{enumerate}
+\subsection{Routing dinámico vector distancia}
+“Vector distancia” significa que las rutas se anuncian proporcionando dos
+características:
+\begin{itemize}
+\item \textbf{Distancia}: identifica la distancia hasta la red de destino. Se basa en una métrica como el conteo de saltos, el costo, el ancho de banda y el retraso, entre otros.
+\item \textbf{Vector}: especifica el sentido en que se encuentra el router de siguiente salto o la interfaz de salida para llegar al destino.
+\end{itemize}
+\subsection{Estado de enlace}
+A diferencia de la operación del protocolo de routing vector distancia, un router configurado con un protocolo de routing de estado de enlace puede crear una ``vista completa'' o una topología de la red al reunir información proveniente de todos los demás routers. Un router de estado de enlace usa la información de estado de enlace para crear un mapa de la topología y seleccionar la mejor ruta hacia todas las redes de destino en la topología. Los routers con RIP habilitado envían actualizaciones periódicas de su información de routing a sus vecinos. Los protocolos de enrutamiento de link-state no usan actualizaciones periódicas. Una vez que se produjo la convergencia de la red, la actualización del estado de enlace solo se envía cuando se produce un cambio en la topología. Cuando se produce un fallo en la red el router que detecta el error utiliza una dirección multicast para enviar una tabla LSA (anuncion de estado de enlace), cada router recibe y la reenvía a sus vecinos. La métrica utilizada se basa en el coste, que surge a partir del algoritmo de Dijkstra y se basa en la velocidad del enlace.
+\subsubsection*{Ventajas}
+\begin{enumerate}
+\item Los protocolos de estado de enlace solo envían actualizaciones cuando
+hay cambios en la topología.
+\item Las actualizaciones periódicas son menos frecuentes que en los protocolos por vector de distancia.
+\item Las redes que ejecutan protocolos de enrutamiento por estado de enlace pueden ser segmentadas en distintas áreas jerárquicamente organizadas, limitando así el alcance de los cambios de rutas.
+\item Las redes que ejecutan protocolos de enrutamiento por estado de enlace soporta direccionamiento sin clase.
+\item Las redes con protocolos de enrutamiento por estado de enlace soportan resúmenes de ruta.
+\end{enumerate}
+\section{NAT para IPv4}
+El término NAT es la abreviatura de \textit{Network Address Transalation} o direcciones de red. NAT es el proceso mediante el cual una o más direcciones locales (\textit{local address}) se traducen en una más direcciones globales (\textit{global IP address}) y viceversa, con el fin de proporcionar acceso a internet a los host locales.\\
+Además de esto el NAT es el encargado de sustituir la red privada o \textit{private network} por la IP pública del router, con el objetivo de facilitar el acceso a internet de los nodos en direcciones privadas, haciendo que los direccionamientos sean compatibles. Este router mantiene una tabla de conexiones para saber luego a quién se debe enviar los datos.\\
+Este puede ser el caso de tu red doméstica y la red de Internet, siendo necesario el modo NAT para que puedas llegar a conectar a la red global y así recibir o enviar información a ella. Si lo has pensado, la mayoría de usuarios tenemos las mismas direcciones IP dentro de nuestra casa, las típicas 192.168.1.xxx, o las que nosotros decidamos configurar en el router en un momento dado. Entonces te preguntas: si son las mismas IP ¿por qué el paquete de datos no le llega al vecino en lugar de a mí?\\
+Podemos decir que en vez de tener que asignar una dirección IP diferente para cada de los dispositivos conectados, el NAT lo que hace es dar una única para todos. Puede ser cualquiera entre 192.168.0.0 y 192.168.255.255. Los paquetes de datos que proceden de Internet contienen la dirección IPv4 externa en su encabezado. Según el tipo de datos, el NAT lo reenvía a los dispositivos privados o internos para que los datos puedan procesarse según sea necesario.\\
+Pues aquí es donde actúa el NAT, ya que oculta todo el espacio de direcciones IP privadas detrás de una sola dirección IP, o unas cuantas en función del modo NAT que se utilice. Esta sería la dirección IP pública del router, la que realmente conecta nuestra red interna a la red externa. Cuando el paquete de información llega a nuestro router, realmente lo ha hecho al tener información sobre esa IP pública. Será por tanto el router el que analice el paquete y compruebe si efectivamente hay un destinatario dentro de su red que está pidiendo esta información y la dejará entrar.
+\subsection{Tipos de NAT}\index{Tipos de NAT}
+\begin{enumerate}
+\item \textbf{NAT estática}: Este tipo de NAT, normalmente es utilizada cuando la dirección local es convertida a su vez en una dirección pública, lo que esto quiere decir es que, habrá una dirección IP asociada a nuestro router o dispositivo NAT que será consistente.
+\item \textbf{NAT dinámica}: En este caso la dirección IP privada se traduce a una IP pública de una lista que tenga el router. De esta forma cuando una determinada IP privada quiere acceder al exterior, el router comprueba en su lista propia cuál es la IP pública que está libre para asignársela. Esto añade mayor seguridad para los hosts que pertenezcan a esa red privada, ya que permite enmascarar la configuración interna de la red la ser IP asignadas aleatoriamente. Lo que sí debe asegurarse en este modo NAT es que todos los host, al menos puedan tener una IP pública asociada en el caso de que todos ellos se conecten a la vez.
+\item \textbf{NAT por sobrecarga}: El último quizás sea el más importante o útil en lo que se refiere a nuestra red privada doméstica, ya que es el modo NAT que usa nuestro router. Sin duda el más utilizado por utilizar también puertos, además de IP para la traducción. Por ello recibe también el nombre de Port Address Translation o PAT.\\
+En este caso, nuestro router solamente tiene asignada una dirección pública a la vez, y esta incluso puede ser dinámica al asignarse por DHCP cuando el router se arranca. En teoría, un router podría coger una IP pública distinta cada vez que se encendiera. Pero en la práctica, se asignará casi siempre la misma IP por estar ya asociada al router con anterioridad mediante la MAC. Es exactamente lo que ocurre cuando un router le asigna la misma IP a nuestro PC cada vez que se enciende.
+\end{enumerate}
+Vamos a explicarlo a la siguiente manera\footnote{Ejemplo sacado de \textit{Profesional review} \url{https://www.profesionalreview.com/2020/08/22/modo-nat-que-es/Que\_es\_el\_modo\_NAT}}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN2/IN10.png}
+\caption{Red privada a pública}
+\end{figure}
+Este modo NAT de sobrecarga permite comunicarnos con el exterior \textbf{sin desvelar} la IP privada que tiene nuestro equipo. Esto lo hace a través de una \textbf{IP pública} que tiene asignada el router para salir a Internet, es todo bastante intuitivo.\\
+Imaginemos que subimos una foto a Instagram desde nuestro equipo, para ello nos tenemos que conectar a la IP del servidor a donde se guardará la foto. Nuestro PC tiene la \textbf{dirección privada 10.0.0.3}, y se pone en contacto con el router para enviar el paquete.\\
+Este paquete además tiene asociado un número de puerto de origen, por ejemplo el 80 si estamos en nuestro navegador. A continuación, el router detecta que nuestro equipo desea comunicarse con una remota perteneciente a Internet, así que coge el paquete y le reasigna la dirección IP pública de nuestra conexión y un puerto escogido al azar de entre los 65.536 que hay disponibles y que no esté en uso.\\
+Finalmente el paquete se envía a la red de Internet hasta llegar a la IP pública del otro extremo. Dependiendo del modo NAT que utilice, hará un proceso de traducción similar de IP y de puerto para almacenar la foto en uno de los servidores (con su IP privada) que haya detrás de la IP pública de Instagram.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{IN2/IN11.png}
+\caption{Red privada a pública}
+\end{figure}
+El proceso contrario será el mismo, cuando un paquete llega a nuestro router a través de una dirección IP y un puerto al azar, este analiza si el paquete va destinado a algún nodo de su red interna mediante la información de la cabecera. Si es así, cambiará de nuevo al puerto al que corresponda, por ejemplo el 80 si debe verse en el navegador, y la dirección IP de destino a la IP interna de nuestro PC. De esta forma, el proceso concluye.
+\subsection{Ventajas y desventajas}
+\textbf{Ventajas}:
+\begin{itemize}
+\item Conserva los esquemas y rangos de direccionamiento registrados legalmente, permitiendo así la privatización de intranets, como sabemos, el surgimiento del NAT fue para ahorrar en uso de direcciones IP públicas, ya que estas tenían un número limitado.
+\item Conserva las direcciones a través de la multiplexación de aplicaciones a nivel de puertos, esto se utiliza en la mayoría de casos en los que se utiliza PAT (Traducción de la dirección del puerto) por sus siglas en inglés, y en el cual podemos realizar el manejo de múltiples equipos y/o aplicaciones utilizando una sola dirección IP gracias a la utilización de los puertos TCP y UDP.
+\item Aumenta la flexibilidad de las conexiones a las redes públicas, esto quiere decir que podemos mantener nuestro direccionamiento privado IPv4 y al mismo tiempo permite mantener los cambios a nuevas direcciones públicas.
+\item Permite ocultar las direcciones IPv4 privadas de los usuarios y otros dispositivos, esto significa que, al momento de la traducción de direcciones, el usuario tendrá una dirección privada y a su vez una dirección pública diferente a esa dirección privada evitando que esta sea conocida.
+\end{itemize}
+\textbf{Desventajas}:
+\begin{itemize}
+\item Se deteriora el rendimiento de la red, en especial, en el caso de los protocolos en tiempo real como VoIP. NAT aumenta los retrasos de reenvió porque la traducción de cada dirección IPv4 dentro de los encabezados de los paquetes lleva tiempo.
+\item Se pierde el direccionamiento de extremo a extremo. Muchos protocolos y aplicaciones de Internet dependen del direccionamiento de extremo a extremo desde el origen hasta el destino. Algunas aplicaciones no funcionan con NAT. Por ejemplo, algunas aplicaciones de seguridad, como las firmas digitales, fallan porque la dirección IPv4 de origen cambia antes de llegar a destino. Las aplicaciones que utilizan direcciones físicas, en lugar de un nombre de dominio calificado, no llegan a los destinos que se traducen a través del router NAT. En ocasiones, este problema se puede evitar al implementar las asignaciones de NAT estática.
+\item Se reduce el seguimiento IPv4 de extremo a extremo. El seguimiento de los paquetes que pasan por varios cambios de dirección a través de varios saltos de NAT se torna mucho más difícil y, en consecuencia, dificulta la resolución de problemas.
+\item Genera complicaciones en la utilización de protocolos de tunneling, como IPsec, porque NAT modifica valores en los encabezados, lo que hace fallar las comprobaciones de integridad.
+\item El inicio de las conexiones TCP puede interrumpirse. A menos que el router NAT esté configurado para admitir dichos protocolos, los paquetes entrantes no pueden llegar a su destino. Algunos protocolos pueden admitir una instancia de NAT entre los hosts participantes (por ejemplo, FTP de modo pasivo), pero fallan cuando NAT separa a ambos sistemas de Internet.
+\end{itemize}
+\subsection{Configurar}\index{Configurar NAT}
+\subsubsection{NAT estática}
+La configuración estática de una NAT se divide en una relación de 1 a 1, una dirección IP privada a una dirección IP pública. Por lo que existe una traducción en la tabla de direcciones de la NAT tan pronto como se configura con los comandos NAT, siendo posible borrarlos únicamente con los mismos comandos.
+Para configurar la NAT estática en el software Packet Tracer de cisco, accedemos al modo de configuración global del Router e introducimos el siguiente comando:
+\begin{lstlisting}[numbers=none]
+R1(config)# ip nat inside source static [direccion privada] [direccion global]
+\end{lstlisting}
+Luego configuramos las interfaces del router que tienen la direccion privada y global
+\begin{lstlisting}[numbers=none]
+R1(config)# interface gi 0/0/0
+R1(config-int)# ip nat inside
+R1(config-int)# interface gi 0/0/1
+R1(config-int)# ip nat outside
+\end{lstlisting}
+\subsubsection{NAT dinámica}
+Por otro lado tenemos la configuración de la NAT dinámica, la cual se encarga de que las direcciones IP privadas pertenecientes a una red tengan acceso a otras redes por medio de un conjunto de direcciones de IP pública, las cuales se asignan a cada host de forma aleatoria.\\
+Para configurar la NAT dinámica en CPT, primeramente ingresamos al modo de configuración global del router. Luego creamos una conjunto de direcciones IP públicas por las cuales accederemos a otras redes
+\begin{lstlisting}[numbers=none]
+R1(config)# ip nat pool [nombre] [conjunto de direcciones públicas] netmask [máscara de la red]
+\end{lstlisting}
+Posteriormente configuramos una lista de acceso, la cual contendrá las direcciones de nuestra red privada
+\begin{lstlisting}[numbers=none]
+R1(config)# access-list [N#] permit [dirección de red] [máscara invertida]
+\end{lstlisting}
+Finalmente, configuramos las interfaces del router que contendrán la red privada y la red global.
+\begin{lstlisting}[numbers=none]
+ip nat inside source static {local-ip} {local-port} {global-ip} {global port}
+\end{lstlisting}
+Para traducir 192.168.1.1 a 192.168.2.200
+\begin{lstlisting}[numbers=none]
+R1(config)#ip nat inside source static 192.168.1.1 192.168.2.200
+\end{lstlisting}
+\chapterimage{chapter_head_IT2.pdf} % Chapter heading image
+\chapter{Unidad II}
+\section{Tecnología WAN}
+Una red de área extensa (WAN) es una red privada de telecomunicaciones geográficamente distribuida que interconecta múltiples redes de área local (LANs). En una empresa, una WAN puede consistir en conexiones a la sede de una empresa, sucursales, instalaciones de colocación, servicios en la nube y otras instalaciones. Normalmente, se utiliza un enrutador u otro dispositivo multifunción para conectar una LAN a una WAN. Las WAN de empresa permiten a los usuarios compartir el acceso a aplicaciones, servicios y otros recursos ubicados centralmente. Esto elimina la necesidad de instalar el mismo servidor de aplicaciones, cortafuegos u otro recurso en varias ubicaciones.\\
+Una WAN se describe mejor como una red de datos que cubre una distancia geográfica relativamente amplia. A diferencia de una LAN, que normalmente se localiza en un área relativamente pequeña, como una oficina, un edificio o un campus pequeño, una WAN suele abarcar distancias de unos pocos a miles de kilómetros.\\
+Con el fin de interconectar lugares geográficamente dispersos, las empresas suelen proporcionar servicios de una compañía de telecomunicaciones, generalmente alquilar enlaces sobre una base mensual. La velocidad y el costo de estos enlaces pueden variar considerablemente, dependiendo de los requisitos de ancho de banda, las distancias a recorrer y las tecnologías disponibles.
+\subsection{Operaciones}
+Las redes WAN trabajan sobre el modelo TCP/IP, más específico, en la capa 1 y 2. Los protocolos de capa 1 describen la manera de  proporcionar \textbf{conexiones} eléctricas, mecánicas, operativas  y funcionales a los servicios de un proveedor de servicios  de comunicación. Los protocolos de capa 2 definen la forma en que se  \textbf{encapsulan} los datos y los mecanismos para transferir las  tramas resultantes.\\
+Se muestra la terminología que normalmente se usa para describir las conexiones WAN, entre otros:
+\begin{itemize}
+\item \textbf{Equipo local del cliente (CPE)}: cables internos y dispositivos ubicados en el perímetro empresarial que se conectan a un enlace de una prestadora de servicios. El suscriptor es dueño del CPE o lo alquila al proveedor de servicios. En este contexto, un suscriptor es una empresa que obtiene los servicios WAN de un proveedor de servicios.
+\item \textbf{Equipo de comunicación de datos (DCE)}: también llamado “equipo de terminación de circuito de datos”, el DCE consta de dispositivos que colocan los datos en el bucle local. Principalmente, el DCE proporciona una interfaz para conectar a los suscriptores a un enlace de comunicación en la nube WAN.
+\item \textbf{Equipo terminal de datos (DTE)}: dispositivos del cliente que transmiten los datos desde un equipo host o la red de un cliente para la transmisión a través de la WAN. El DTE se conecta al bucle local a través del DCE.
+\item \textbf{Punto de demarcación}: un punto establecido en un edificio o un complejo para separar el equipo del cliente del equipo del proveedor de servicios. En términos físicos, el punto de demarcación es la caja de conexiones del cableado, ubicada en las instalaciones del cliente, que conecta los cables del CPE al bucle local. Por lo general, se coloca de modo que sea de fácil acceso para un técnico. El punto de demarcación es el lugar donde la responsabilidad de la conexión pasa del usuario al proveedor de servicios. Cuando surgen problemas, es necesario determinar si el usuario o el proveedor de servicios es responsable de la resolución o la reparación.
+\item \textbf{Bucle local}: cable de cobre o fibra propiamente dicho que conecta el CPE a la CO del proveedor de servicios. A veces, el bucle local también se denomina “última milla”.
+\item \textbf{Oficina central (CO)}: la CO es la instalación o el edificio del proveedor de servicios local que conecta el CPE a la red del proveedor.
+\item \textbf{Red interurbana}: consta de líneas de comunicación, switches, routers y otros equipos digitales, de largo alcance y de fibra óptica dentro de la red del proveedor de servicios WAN.
+\end{itemize}
+\subsection{Opciones de acceso}
+Existen diversas opciones de conexión de acceso  WAN que los ISP pueden utilizar para conectar el  bucle local al perímetro empresarial. Cada opción tiene distintas de ventajas y  desventajas, así como diferencias con respecto a la  tecnología, la velocidad y el costo.
+\subsubsection{Pública}
+El proveedor de servicios puede ofrecer acceso a Internet de banda ancha mediante una línea de suscriptor digital (DSL), cable y acceso satelital. Las opciones de conexión de banda ancha normalmente se usan para conectar oficinas pequeñas y trabajadores a distancia a un sitio corporativo a través de Internet. Los datos que se transmiten entre sitios corporativos a través de la infraestructura WAN pública se deben proteger mediante VPN.\\
+Las conexiones de infraestructura pública incluyen DSL, cable, tecnología inalámbrica y datos móviles 3G/4G. En las conexiones mediante infraestructura pública, se puede proporcionar seguridad con redes virtuales privadas (VPN) de acceso remoto o de sitio a sitio. En esta sección se comparan las diferentes tecnologías WAN públicas: DSL, cable, tecnología inalámbrica y datos móviles 3G/4G. Además de la seguridad con redes virtuales privadas (VPN).
+\subsubsection{Privada}
+Los proveedores de servicios pueden ofrecer líneas arrendadas punto a punto dedicadas, enlaces de conmutación de circuitos, como PSTN o ISDN, y enlaces de conmutación de paquetes, como WAN Ethernet, ATM o Frame Relay.\\
+El uso de líneas alquiladas o arrendadas proporciona conexiones punto a punto dedicadas permanentes. El acceso por dial-up, si bien es lento, aún es viable para las áreas remotas con opciones de WAN limitadas. Otras opciones de conexión privada incluyen ISDN, Frame Relay, ATM, WAN Ethernet, MPLS y VSAT. En esta sección se comparan las diferentes tecnologías WAN privadas: Líneas arrendadas, dial-up, ISDN, Frame Relay, ATM, WAN Ethernet, MPLS y VSAT.
+\begin{vocabulary}[Líneas arrendada]
+Una línea arrendada, también conocida como línea dedicada, conecta dos ubicaciones para servicios privados de telecomunicaciones de voz y/o datos. Una línea arrendada no es un cable dedicado; es un circuito reservado entre dos puntos. La línea arrendada está siempre activa y disponible por una cuota mensual fija. Este término también hace referencia a:
+\begin{itemize}
+\item Circuitos arrendados
+\item Enlace serial
+\item Línea serial
+\item Enlace punto a punto
+\item Líneas T1/E1 o T3/E3
+\end{itemize}
+\end{vocabulary}
+\begin{vocabulary}[Dial Up]
+La tecnología Dial-Up le permite acceder al servicio Internet a través de una línea telefónica analógica y un MODEM. El módem modula los datos binarios en una  señal analógica en el origen y demodula la señal  analógica en datos binarios en el destino. Las características físicas del bucle local y su  conexión a la PSTN limitan la velocidad de señal  a menos de 56 kb/s.
+\end{vocabulary}
+\begin{vocabulary}[ISDN]
+Red digital de servicios integrados es una red que procede de la evolución de la \textbf{Red telefónica básica} (RTB) o  \textbf{Red telefónica conmutada} (RTC) que facilita conexiones digitales extremo a extremo entre terminales conectadas a ella.\\
+ISDN cambia las conexiones internas de la  PSTN ( Red Telefónica Pública Conmutada) para que transporte señales digitales  multiplexadas por división de tiempo (TDM) en  vez de señales analógicas. TDM permite que se transfieran dos o más  señales, o flujos de bits, como subcanales en  un canal de comunicación. La conexión ISDN puede requerir un adaptador  de terminal (TA), que es un dispositivo utilizado  para conectar las conexiones de la interfaz de  velocidad básica (BRI) de ISDN a un router.
+\end{vocabulary}
+\begin{vocabulary}[Frame relay]
+Frame Relay es una tecnología de protocolo de red de conmutación de paquetes digital de capa de enlace de datos diseñada para conectar redes de área local (LAN) y transferir datos a través de redes de área amplia (WAN). Frame Relay es una tecnología de paquetes rápida, lo que significa que el protocolo no intenta corregir errores. Requiere una conexión dedicada durante el período de transmisión y no es ideal para voz o video, que requieren un flujo constante de transmisiones.
+\end{vocabulary}
+\begin{vocabulary}[ATM]
+La tecnología del modo de transferencia  asíncrona (ATM) puede transferir voz, video y  datos a través de redes privadas y públicas.\\
+Una línea ATM típica necesita casi un 20\% más  de ancho de banda que Frame Relay para  transportar el mismo volumen de tráfico de red.
+Cuando la celda transporta los paquetes de  capa de red segmentados, la sobrecarga es  mayor debido a que el ATM debe poder rearmar  los paquetes en el destino.
+\end{vocabulary}
+\begin{vocabulary}[MPLS]
+El switching por etiquetas multiprotocolo  (Multiprotocol Label Switching, MPLS) es una  tecnología WAN de alto rendimiento multiprotocolo  que dirige los datos desde un router al siguiente. 
+MPLS se basa en etiquetas de ruta cortas en lugar de direcciones de red IP. Se llama multiprotocolo porque tiene la capacidad de  transportar cualquier contenido, incluido tráfico IPv4,  IPv6, Ethernet, ATM, DSL y Frame Relay. Usa etiquetas que le indican al router qué hacer con un paquete.
+\end{vocabulary}
+\begin{vocabulary}[VSAT]
+Una VSAT es una pequeña antena satelital que se  utiliza para crear una WAN privada que proporciona  conectividad a ubicaciones remotas. El satélite se encuentra en órbita geosincrónica en el espacio. Las señales deben recorrer alrededor de  35 786 km hasta el satélite y regresar.
+\end{vocabulary}
+\begin{vocabulary}[DSL]
+DSL (línea de suscriptor digital) es tecnología de banda ancha que proporciona transmisión de información a alta velocidad (hasta 7.1 Mbps) a través de una línea telefónica existente. Las velocidades son hasta 50 veces más rápidas que las de un módem por dial-up estándar de 28.8 Kbps. Además, el servicio DSL es instantáneo - con sólo un clic tendrás una conexión a Internet superrápida.
+\end{vocabulary}
+\begin{vocabulary}[VPN]
+VPN significa "Virtual Private Network" (Red privada virtual) y describe la oportunidad de establecer una conexión protegida al utilizar redes públicas. Las VPN cifran su tráfico en internet y disfrazan su identidad en línea. Esto le dificulta a terceros el seguimiento de sus actividades en línea y el robo de datos. El cifrado se hace en tiempo real.
+\end{vocabulary}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -929,7 +1315,7 @@ Para poder realizar circuitos en CADe Simu, necesitamos tener en cuenta los sigu
 Nos piden diseñar un arranque de motor trífasico con botones de Start y Stop, además que tenga un sistema de protección si el motor se sobre carga.\\
 \textbf{Solución}\\
 \textbf{Circuito de mando:}\\
-Empezamos con dos relés térmicos: NA (normalmente abierto) y NC (normalmente cerrado). Estos van a actuar al mismo tiempo, por eso les ponemos el mismo nombre: \textit{-F2}. Con esta configuración podemos desviar la corriente de la rama principal, en la cual irá el circuito de arranque, de la rama de emergencia.
+Empezamos con dos relés térmicos: NA (normalmente abierto) y NC (normalmente cerrado). Estos van a actuar al mismo tiempo, por eso les ponemos el mismo nombre: \textit{-F2}. Con esta configuración podemos desviar la corriente de la rama principal, en la cual irá el circuito de arranque, hacia la rama de emergencia.
 \begin{center}
 \includegraphics[width=0.5\linewidth]{cam/cam22.png}
 \end{center}
@@ -956,11 +1342,11 @@ Se requiere dos fajas transportadoras que funcionen de dos modos:
 \end{itemize}
 \textbf{Solución}:\\
 \textbf{Circuito de Mando}:\\
-Tomaremos parte del circuito del anterior ejemplo. Empecemos con el modo \textbf{manual}, habrá un botón para poder entrar a este modo al igual que con el modo automático. Al ser un ``menú'', tenemos que usar pulsadores NA (solo se activarán cuando nosotros lo presionemos), Cuando se presione este pulsador \textit{-S1}, vamos a guardar su estado usando la bobina \textit{-K5}, a su vez esta bobina \textit{-K5} mantendrá activo el contacto NA \textit{-K5}. Estamos usando también un contacto NC \textit{-K6} para apagar este modo manual. Más tarde veremos como lo usaremos:\\
+Tomaremos parte del circuito del anterior ejemplo. Empecemos con el modo \textbf{manual}, habrá un botón para poder entrar a este modo al igual que con el modo automático. Al ser un ``menú'', tenemos que usar pulsadores NA (solo se activarán cuando nosotros lo presionemos). Cuando se presione este pulsador \textit{-S1}, vamos a guardar su estado usando la bobina \textit{-K5}, a su vez esta bobina \textit{-K5} mantendrá activo el contacto NA \textit{-K5}. Estamos usando también un contacto NC \textit{-K6} para apagar este modo manual. Más tarde veremos como lo usaremos:\\
 \begin{center}
 \includegraphics[width=0.4\linewidth]{cam/cam25.png}
 \end{center}
-Cuando la energía llegué a \textit{-K5} indica que el modo manual ha sido activado, es por esta razón que procedemos a activar los motores. Al igual que el ejemplo anterior, tendremos una rama (principal) de control y la otra de emergencia. Para este paso no vamos a explicar pues el mismo funcionamiento, la única diferencia es que tanto el rama de control como la de emergencia esta siendo activo solo si el contacto NA \textit{-K5} se cierra, y eso sucede cuando el seleccionamos modo manual. En este ejercicio el pulsador \textit{-S3} representa \textbf{stop} y el pulsador \textit{-S4} representa \textbf{start}:
+Cuando la energía llegué a \textit{-K5} indica que el modo manual ha sido activado, es por esta razón que procedemos a activar los motores. Al igual que el ejemplo anterior, tendremos una rama (principal) de control y la otra de emergencia (para este paso no vamos a explicar pues es el mismo funcionamiento), la única diferencia es que tanto el rama de control como la de emergencia esta siendo activo solo si el contacto NA \textit{-K5} se cierra, y eso sucede cuando el seleccionamos modo manual. En este ejercicio el pulsador \textit{-S3} representa \textbf{stop} y el pulsador \textit{-S4} representa \textbf{start}:
 \begin{center}
 \includegraphics[width=0.4\linewidth]{cam/cam26.png}
 \end{center}
@@ -979,7 +1365,7 @@ Cuando se seleccione el modo auto, el contacto \textit{-K6} se encenderá ayudad
 \end{center}
 Esto quiere decir que los detectores no dejarán pasar energía a no ser que detecten algo, es ahí cuando se cierran y se activarán los temporizadores, el temporizador a su vez cierra el contacto desconexión NA \textit{-K1} energizando la bobina del motor \textit{-K3}. 
 \begin{center}
-\includegraphics[width=0.3\linewidth]{cam/cam30.png}
+\includegraphics[width=0.3\linewidth]{cam/cam28.png}
 \end{center}
 \textit{-K1} estará encendido durante 3 seg (se configura en el temporizador de desconexión), pasado ese tiempo \textit{-K1} se desconecta apagando el motor. El proceso es exactamente lo mismo para el detector inductor \textit{-B2}.
 La parte de los motores es la misma que el ejemplo anterior.\\
@@ -1066,7 +1452,7 @@ Configuramos la compuerta OR: la primera entrada/contacto que se cierre con el p
 Para PLC necesitas cable fase y cable neutro. Para ladder necesitas cable negativo y cable negativo. En PLC LOGO, P1 es puerto positivo y P2 es puerto negativo (en la parte superior: Dispositivos de entrada) y sirven para dar energía al PLC, por lo tanto hay que energizarlas. De igual manera con la parte inferior (Dispositivos de salida), se debe energizar positivamente las entradas 1 y los dispositivos deben estarn en las salidas 2 hacia negativo.
 \end{remark}
 \begin{example}[Diseñe una faja transportadora con el PLC LOGO, sensores y tenga apagado automático]
-Para este proyecto se usaremos parte de encender un motor con ladder explicado anteriormente.\\
+Para este proyecto se usará parte de como  encender un motor con ladder explicado anteriormente.\\
 \textbf{PLC:}\\
 Empezamos cambiando las entradas del PLC, esta vez no contaremos con pulsadores, al ser automático usaremos \textbf{sensores inductivos NA} (etiquetados con \textit{S1}, \textit{S2} y \textit{S3}) y un pulsador de detención \textit{STOP}.
 \begin{center}
@@ -1181,8 +1567,7 @@ Al usar SOAP con el protocolo \textit{http} el tipo de contenido del mensaje que
 %----------------------------------------------------------------------------------------
 \part{Microelectrónica en RF}
 \chapterimage{chapter_head_MR.pdf} % Chapter heading image
-
-\chapter{Unidad I}
+\chapter{Osciladores}
 \section{Ondas electromagnéticas}
 Las ecuaciones de Maxwell, propuestas por primera vez por James Clerk Maxwell, reunen las leyes experimentales de la electricidad y el magnetismo. Estas ecuaciones desempeñan en el electromagnetismo un papel análogo, a las leyes de Newton en la Mecánica. Con estas ecuaciones Maxwell pudo demostrar la existencia de las ondas electromagnéticas. Estas ondas electromagnéticas son originadas por cargas eléctricas aceleradas y fueron producidas por primera vez en el laboratorio por Heinrich Hertz en 1887.
 Maxwell mostró que la velocidad de las ondas electromagnéticas en el \textbf{espacio vacío} es:
@@ -1632,15 +2017,17 @@ H=\frac{1}{1+\iu Q\parentesis{\frac{\omega}{\omega_0}-\frac{\omega_0}{\omega}}}
 \centering
 \includegraphics[width=0.8\linewidth]{mrf/mrf20.png}
 \caption{Sistemas retroalimentados.}
+\label{fig:sis retro}
 \end{figure}
 De esta figura se desprenden dos ecuaciones que caracterizan a la función de transferencia:\\
 \textbf{Lazo abierto: ganancia}
 \begin{equation}
-G(s)=\frac{x_s(S)}{x_{er}(s)}
+G(s)=\frac{x_s(s)}{x_{er}(s)}
 \end{equation}
 \textbf{Lazo cerrado: ganancia retroalimentada}:
 \begin{equation}
 \frac{x_s(s)}{x_e(s)}=\frac{G(s)}{1+G(s)\cdot H(s)}
+\label{eq:fun tran retro}
 \end{equation}
 \begin{notation}
 Si la retroalimentación es negativa, en la ecuación de lazo cerrado es positiva; igualmente si es positiva la retroalimentación, la ecuación es negativa.
@@ -1687,9 +2074,9 @@ En oscilación:
 \fase{ }{G(\iu\omega_r)\cdot H(\iu\omega_r)}=180°
 \end{displaymath}
 Graficando la oscilación en la figura \ref{fig:oscilacion}, nota como la señal sale en fase de la planta, en la salida llega la onda amplificada mientras que en la red de retroalimentación se atenúa  la señal un poco pero esta totalmente desfasada. Por mejor del bloque inversor esta se acoplada nuevamente a la onda. Con esto nos aseguramos que la oscilación ha comenzado.
-\begin{wrapfigure}{r}{0.5\textwidth}%tamaño del campo asignado
+\begin{wrapfigure}{r}{0.5\linewidth}%tamaño del campo asignado
   \begin{center}
-    \includegraphics[width=0.45\textwidth]{mrf/mrf22.png}%tamaño del la imgen dentro del campo
+    \includegraphics[width=.9\linewidth]{mrf/mrf22.png}%tamaño del la imgen dentro del campo
   \end{center}
   \caption{Condición de oscilación.}
   \label{fig:oscilacion}
@@ -1705,9 +2092,9 @@ Los circuitos osciladores son un tanto especiales, necesitamos para arrancar una
 \end{figure}
 Cuando el sistema termine de arrancar, cerramos el switch y podemos quitar la señal de entrada. Hay que asegurarnos que $|G\parentesis{\iu\omega_{osc}}\cdot H\parentesis{\iu\omega_{osc}}|>1$, cuando el desfase es 180$^{\circ}$, entonces podemos hacer que la salida del
 lazo de realimentación haga las funciones de la magnitud de entrada.
-\begin{wrapfigure}{l}{0.55\textwidth}
+\begin{wrapfigure}{r}{0.55\linewidth}
   \begin{center}
-    \includegraphics[width=0.53\textwidth]{mrf/mrf24.png}
+    \includegraphics[width=0.9\linewidth]{mrf/mrf24.png}
   \end{center}
   \caption{Oscilación.}
   \label{fig:oscilacion 1}
@@ -1763,18 +2150,17 @@ Observa la linea punteada, de la figura \ref{fig:cuando oscila}, debe ser correg
 \end{figure}
 %Osciladores hartley
 \subsection{Osciladores de frecuencia muy constante}
-\subsubsection*{Cristales osciladores}
-Es un cristal de cuarzo (u otro material piezoeléctrico) que consta de una placa de cuarzo en medio de dos contactos metálicos, encapsulados. Se aplica voltaje en sus terminales para que vibren de manera tan exacta que es muy precisa.
-\begin{wrapfigure}{r}{0.5\textwidth}
+\begin{wrapfigure}{r}{0.5\linewidth}
   \begin{center}
-    \includegraphics[width=0.48\textwidth]{mrf/mrf29.png}
+    \includegraphics[width=0.9\linewidth]{mrf/mrf29.png}
   \end{center}
   \caption{Símbolo cristal oscilador}
 \end{wrapfigure}
-
-\begin{wrapfigure}{l}{0.5\textwidth}
+\subsubsection*{Cristales osciladores}
+Es un cristal de cuarzo (u otro material piezoeléctrico) que consta de una placa de cuarzo en medio de dos contactos metálicos, encapsulados. Se aplica voltaje en sus terminales para que vibren de manera tan exacta que es muy precisa.
+\begin{wrapfigure}{l}{0.5\linewidth}
   \begin{center}
-    \includegraphics[width=0.48\textwidth]{mrf/mrf30.png}
+    \includegraphics[width=.9\linewidth]{mrf/mrf30.png}
   \end{center}
   \caption{Cristal oscilador}
 \end{wrapfigure}
@@ -1783,6 +2169,286 @@ Es un cristal de cuarzo (u otro material piezoeléctrico) que consta de una plac
 \includegraphics[width=0.6\linewidth]{mrf/mrf31.png}
 \caption{Circuito equivalente de un cristal de cuarzo.}
 \end{figure}
+\chapterimage{chapter_head_MR.pdf} % Chapter heading image
+\chapter{Circuitos de enganche}
+\section{Lazos enganchados por fase-PLL}
+\begin{wrapfigure}{r}{0.5\linewidth}
+  \begin{center}
+    \includegraphics[width=0.5\linewidth]{mrf/mrf32.png}
+  \end{center}
+  \caption{Retroalimentación por corto circuito.}
+  \label{fig:retro pll}
+\end{wrapfigure}
+Recordando el sistema de la figura \ref{fig:sis retro}, y su respectiva ecuación \ref{eq:fun tran retro}; hacemos notar que el bloque \textit{H(s)} puede tener distintos comportamientos como arreglos de capacitores, resistencias e inductores, inclusive podemos tener una resistencia al infinito o resistencia que tiende a cero. La última es la que nos interesa; que pasa si nuestro bloque \textit{H(s)} tiende a cero, nos quedaría un cortocircuito como la figura \ref{fig:retro pll}.\\
+\begin{equation}
+\frac{x_s(s)}{x_e(s)}=\frac{G(s)}{1+G(s)}
+\label{eq:function transferencia pll}
+\end{equation}
+Con el arreglo de la figura \ref{fig:retro pll}, notamos que: $H(s)=1$, y si la ganancia es bastante grande ($G(s)>>1$), por lo tanto:
+\begin{displaymath}
+\frac{x_s(s)}{x_e(s)}=1\Rightarrow x_s(s)=x_e(s)
+\end{displaymath}
+El bloque $G(s)$, internamente vamos a analizar como la siguiente figura:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf33.png}
+\caption{Estructura básica de un PLL.}
+\end{figure}
+\begin{notation}
+Las unidades en estos sistemas no solo es voltios o amperios, también pueden ser fases.
+\end{notation}
+\begin{remark}
+Como lo que se comparan son las \textbf{fases} de las señales de salida y entrada, además como la ganancia de la red de realimentación es 1, el sistema tenderá a anular la diferencia de fases entre estas señales. Los niveles de tensión de ambas no serán similares.
+\end{remark}
+\begin{figure}[H]
+\centering
+\subfloat[Diagrama de bloques]{\includegraphics[width=0.45\linewidth]{mrf/mrf34.png}}
+\subfloat[Señal en el dominio de tiempo]{\includegraphics[width=0.45\linewidth]{mrf/mrf35.png}}
+\caption{Nombre}
+\end{figure}
+Volviendo al diagrama de bloques inicial, tendremos lo siguiente:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf36.png}
+\caption{Diagrama de bloques PLL.}
+\end{figure}
+Hay que localizar un punto de equilibrio para linealizar el
+funcionamiento del sistema. La clave está en el VCO.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7\linewidth]{mrf/mrf37.png}
+\caption{VCO: Para $K_v$>0.}
+\end{figure}
+Por lo tanto, podemos escribir la frecuencia es oscilación como:
+\begin{align}
+f_{osc}&=f_{osc0}+K_v\cdot V_c\\
+\omega_{osc}&=\omega_{osc0}+2\pi\cdot K_v\cdot V_c
+\end{align}
+La frecuencia de oscilación será igual a la frecuencia de oscilación en estado inicial más el producto del la constante del varicap por el voltaje de entrada.\\
+Para relacionar la frecuencia con la fase absoluta ($\Phi$):
+\begin{align*}
+\omega_{osc}&=\omega_{osc0}+2\pi\cdot K_v\cdot V_c\\
+\Phi_{osc}&=\omega_{osc0}\cdot t+2\pi\cdot K_v\cdot \int_0^tV_c\cdot t
+\intertext{Referimos la fase absoluta $\Phi_{osc}$ a la frecuencia $\omega_{osc0}$:}
+\Phi_{osc}&=\omega_{osc0}\cdot t+\underbrace{\textcolor{red}{\phi_{osc}(V_c)}}_{relativa}\\
+\intertext{Referimos nuevamente a $\omega_{osc0}$ la fase absoluta $\Phi_e$:}
+\Phi_e=\omega_{osc0}\cdot t+\phi_e
+\end{align*}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf38.png}
+\caption{Diagrama de bloques relativo a $\omega_{osc0}$}
+\end{figure}
+Las ecuaciones:\\
+\begin{align}
+\intertext{VCO:}
+\phi_{osc}(V_c)&=2\pi\cdot K_v\cdot \int_0^TV_c\cdot t\\
+\intertext{Filtro pasa-bajos:}
+V_c&=F(V_{\Delta\Phi})\\
+\intertext{Convertidor $\Phi/V$:}
+V_{\Delta\Phi}=K_{\Delta\Phi}\cdot\parentesis{\Phi_e-\Phi_{osc}}=K_{\Delta\Phi}\cdot\parentesis{\phi_e-\phi_{osc}}
+\end{align}
+\begin{notation}
+Nota que aún no hemos definido la función de transferencia del filtro, arbitrariamente la asumimos. Más adelante se hablará sobre ello.
+\end{notation}
+Tomando las tranformadas de Laplace para las ecuaciones y hallando su función de transferencia:
+\begin{align}
+\intertext{VCO:}
+\frac{\phi_{osc}(s)}{V_c(s)}&=2\pi\cdot \frac{K_v}{s}\\\intertext{Filtro pasa-bajos:}
+\frac{V_c(s)}{V_{\Delta\Phi}(s)}&=F(s)
+\intertext{Convertidor $\Phi/V$}
+\frac{V_{\Delta\Phi}(s)}{\Delta\phi(s)}&=K_{\Delta\Phi}\\
+\intertext{Restador de fases:}
+\Delta\phi(s)&=\phi_e(s)-\phi_{osc}(s)
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf38.png}
+\caption{Diagrama de bloques en Laplace.}
+\label{fig:bloques laplace}
+\end{figure}
+Usando como referencia la ecuación \ref{eq:fun tran retro}, reescribimos el sistema de la figura \ref{fig:bloques laplace} como su función de transferencia lazo cerrado:
+\begin{equation}
+T_{\phi osc-\phi e}(s)=\frac{\phi_{osc}(s)}{\phi_e(s)}=\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot\frac{F(s)}{s}}{1+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot\frac{F(s)}{s}}=\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}{s+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}
+\label{eq:lazo cerrado laplace}
+\end{equation}
+Tenemos dos funciones de transferencia más: Salida del filtro y lazo abierto, respectivamente son:
+\begin{equation}
+T_{\Delta\phi osc-\phi e}(s)=\frac{\Delta\phi(s)}{\phi_e(s)}=1-T_{\phi osc-\phi e}(s)=\frac{s}{s+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}
+\label{eq:lazo cerrado interrumpido laplace}
+\end{equation}
+\begin{equation}
+T_{\phi osc-\Delta\phi}(s)=\frac{\phi_{osc}(s)}{\Delta\phi(s)}=2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot \frac{F(s)}{s}
+\label{eq:lazo abierto laplace}
+\end{equation}
+Ordenando los resultados, volvemos a dibujar el diagrama como:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf38.png}
+\caption{Diagrama de bloques}
+\end{figure}
+Escribiendo la función de transferencia con la ecuación \ref{eq:lazo abierto laplace} junto con la ecuación \ref{eq:function transferencia pll}
+\begin{equation}
+T_{\phi osc-\phi e}(s)=\frac{T_{\phi osc-\Delta\phi}(s)}{1+T_{\phi osc-\Delta\phi}(s)}
+\label{eq:func tran simplificada}
+\end{equation}
+\subsection{Orden y tipo}
+Tomando la ecuación \ref{eq:lazo cerrado interrumpido laplace}, aplicamos un escalón:
+\begin{displaymath}
+\phi_e(s): \phi_e(s)=\frac{\phi_{e1}}{s}
+\end{displaymath}
+Entonces la función de transferencia puede ser escrita como:
+\begin{displaymath}
+\Delta\phi(s)=T_{\Delta\phi osc-\phi e}(s)\cdot\frac{\phi_{e1}}{s}\Rightarrow\frac{\phi_{e1}}{s+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}
+\end{displaymath}
+Por le teorema de valor final:
+\begin{displaymath}
+\lim_{t\to\infty}\Delta\phi(t)=\lim_{s\to 0}s\cdot\Delta\phi(s)=\frac{\phi_{e1}\cdot s}{s+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}
+\end{displaymath}
+Nota que \textit{F(s)} no puede tener un cero en cero, por ejemplo, F(s)=1/(1+RCs) vale como filtro:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{mrf/mrf40.png}
+\caption{Filtro RC}
+\end{figure}
+Con la F.T. del filtro y reemplazando en \ref{eq:lazo cerrado laplace} y dando valores nominales:
+\begin{itemize}
+\item $K_v=\basedec{5}$Hz/V
+\item $RC=\basedec{-6}/\pi s$
+\item $K_{\Delta\Phi}$=1-100 V/rad
+\end{itemize}
+Podemos graficar el diagrama de Bode correspondiente:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{mrf/mrf41.png}
+\caption{Diagrama de Bode de la F.T.}
+\end{figure}
+Volviendo con la ecuación \ref{eq:lazo abierto laplace} y \ref{eq:func tran simplificada} podemos identificar el orden y el tipo:
+\begin{enumerate}
+\item[Orden]: Número de polos de $T_{\phi Osc-\phi_e}$(eq. \ref{eq:func tran simplificada})
+\item[Tipo]: Número de polos en s=0 de $T_{\phi Osc-\Delta\phi}$(eq. \ref{eq:lazo abierto laplace})
+\end{enumerate}
+\begin{example}[Orden y tipo de un PLL]
+Con una red RC como filtro:
+\begin{displaymath}
+F(s)=\frac{1}{1+R\cdot C\cdot s}
+\end{displaymath}
+Procedemos a hallar el orden y tipo. Para ello primero en la ecuación \ref{eq:lazo cerrado laplace}:
+\begin{displaymath}
+T_{\phi osc-\phi e}(s)=\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}{s+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F(s)}=\underbrace{\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}}{R\cdot C\cdot s^2+s+2\pi\cdot K_v\cdot K_{\Delta\Phi}}}_{Orden 2(2 polos)}
+\end{displaymath}
+Usando la ecuación de lazo abierto (eq. \ref{eq:lazo abierto laplace}):
+\begin{displaymath}
+T_{\phi osc-\Delta\phi}(s)=2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot \frac{F(s)}{s}=\underbrace{\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}}{s(1+R\cdot C\cdot s)}}_{Tipo 1(1 polo en s=0)}
+\end{displaymath}
+Como siempre la función de transferencia del integrador tiene un polo en cero, el tipo mínimo posible es 1.
+\end{example}
+\subsubsection{PLL de orden 1 y tipo 1}
+La ecuación \ref{eq:lazo cerrado laplace} puede ser escrita como:
+\begin{displaymath}
+T_{\phi_{osc}-\phi_e}(s)=\frac{1}{\tau\cdot s+1}\Leftarrow \tau=\frac{1}{2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot F_1}
+\end{displaymath}
+Si le agregamos un escalón en frecuencia en la entrada $\omega_e(s)=\omega_{e1}/s$, por lo tanto:
+\begin{displaymath}
+\omega_{osc}(s)=\frac{\omega_{e1}}{s(\tau\cdot s+1)}
+\end{displaymath}
+\begin{figure}[]
+\centering
+\subfloat[Escalón de $\pi/2$]{\includegraphics[width=.8\linewidth]{mrf/mrf42.png}}\\
+\subfloat[Escalón de 0.25$\omega_{osc0}$: No termina de converger]{\includegraphics[width=.8\linewidth]{mrf/mrf43.png}}
+\caption{Respuestas al escalón.}
+\end{figure}
+\subsubsection{PLL orden 2 y tipo 1}
+\begin{wrapfigure}{r}{0.5\linewidth}
+  \begin{center}
+    \includegraphics[width=0.45\linewidth]{mrf/mrf44.png}
+  \end{center}
+  \caption{Filtro orden 2.}
+  \label{fig:filtro orden 2}
+\end{wrapfigure}
+Con el filtro de la figura \ref{fig:filtro orden 2}, se tiene:
+\begin{displaymath}
+F(s)=\frac{1+\frac{s}{\omega_z}}{1+\frac{s}{\omega_p}}
+\end{displaymath}
+Reemplazando los valores de los componentes en la función de transferencia del filtro:
+\begin{displaymath}
+F(s)=\frac{1+R_2\cdot C\cdot s}{1+(R_1+R_2)\cdot C\cdot s}
+\end{displaymath}
+Tiene un polo y cero, siendo:
+\begin{align*}
+\omega_z&=\frac{1}{R_2\cdot C}\\
+\omega_p&=\frac{1}{(R_1+R_2)\cdot C}
+\end{align*}
+Hallando el tipo con la ecuación \ref{eq:lazo abierto laplace}:
+\begin{displaymath}
+T_{\phi osc-\Delta\phi}(s)=\underbrace{\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}(1+R_2\cdot C\cdot s)}{s\left[1+(R_1+R_2)\cdot C\cdot s\right]}}_{Tipo 1 (1 polo en s=0)}
+\end{displaymath}
+Usando la ecuación \ref{eq:func tran simplificada} y después de un proceso algebraico:
+\begin{displaymath}
+T_{\phi osc-\phi e}(s)=\underbrace{\frac{1+R_2\cdot C\cdot s}{\frac{(R_1+R_2)\cdot C}{2\pi\cdot K_v\cdot K_{\Delta\Phi}}\cdot s^2+\frac{1+2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot R_2\cdot C}{2\pi\cdot K_v\cdot K_{\Delta\Phi}}\cdot s+1}}_{Orden 2(2 polos)}
+\end{displaymath}
+Con: $\omega_z=\frac{1}{R_2\cdot C}$, $\omega_p=\frac{1}{(R_1+R_2)\cdot C}$, $K=2\pi\cdot K_v\cdot K_{\Delta\Phi}$ y escalón en la frecuencia de entrada: $\omega_e(s)=\omega_{e1}/s$:
+\begin{displaymath}
+\omega_{osc}(s)=\frac{(1+\frac{s}{\omega_z})\cdot\omega_{e1}}{s\parentesis{\frac{s^2}{\omega_p\cdot K}+s\parentesis{\frac{1+\frac{K}{\omega_z}}{K}}+1}}
+\end{displaymath}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf45.png}
+\caption{Respuesta a la frecuencia: Con $\omega\neq\infty$ existe más posibilidad de optimizar la respuesta dinámica}
+\end{figure}
+\subsubsection{PLL orden 2 y tipo 2}
+\begin{wrapfigure}{r}{0.5\linewidth}
+  \begin{center}
+    \includegraphics[width=0.45\linewidth]{mrf/mrf46.png}
+  \end{center}
+  \caption{PLL activo orden 2 y tipo 2}
+\end{wrapfigure}
+\begin{displaymath}
+F(s)=\omega_p\cdot\frac{1+\frac{s}{\omega_z}}{s}
+\end{displaymath}
+Reemplazando los elementos:
+\begin{displaymath}
+F(s)=\frac{1+(R_1+R_2)\cdot C\cdot s}{R_1\cdot C\cdot s}
+\end{displaymath}
+Tiene un polo en cero y un cero, siendo:
+\begin{align*}
+\omega_z&=\frac{1}{(R_1+R_2)\cdot C}\\
+\omega_p&=\frac{1}{R_1\cdot C}
+\end{align*}
+Usando la ecuación \ref{eq:lazo abierto laplace}:
+\begin{displaymath}
+T_{\phi osc-\Delta\phi}(s)=\frac{2\pi\cdot K_v\cdot K_{\Delta\Phi}\cdot\left[1+(R_1+R_2)\cdot C\cdot s\right]}{\underbrace{s^2}_{Tipo 2 (2 polos en s=0)}\cdot R_1\cdot C}
+\end{displaymath}
+Reemplazando en la ecuación \ref{eq:lazo cerrado laplace} y después de un proceso algebraico:
+\begin{displaymath}
+T_{\phi osc-\phi e}(s)=\frac{1+(R_1+R_2)\cdot C\cdot s}{\underbrace{\frac{R_1\cdot C}{2\pi\cdot K_v\cdot K_{\Delta\Phi}}\cdot s^2+(R_1+R_2)\cdot C\cdot s+1}_{Orden 2(2 polos)}}
+\end{displaymath}
+Reagrupando los términos:
+\begin{displaymath}
+T_{\phi osc-\phi e}(s)=\frac{1+\frac{s}{\omega_z}}{\frac{s^2}{\omega_p\cdot K}+s\frac{1+\frac{K}{\omega_z}}{k}+1}
+\end{displaymath}
+EL resultado es semejante al obtenido en el PLL de Orden 2 y Tipo 1 anterior. Luego se puede optimizar de igual forma la respuesta dinámica. La ventaja es que al ser de Tipo 2 se anula la diferencia de fases en régimen permanente ante un escalón de frecuencia.\\
+\begin{wrapfigure}{r}{0.5\linewidth}
+  \begin{center}
+    \includegraphics[width=0.5\linewidth]{mrf/mrf47.png}
+  \end{center}
+  \caption{Filtro activo}
+  \label{fig:opam filtro}
+\end{wrapfigure}
+Si usamos el circuito de la figura \ref{fig:opam filtro}:
+\begin{displaymath}
+F(s)=-\frac{1+R_2\cdot C\cdot s}{R_1\cdot C\cdot s}\Rightarrow F(s)=-\omega_p\frac{1+\frac{s}{\omega_z}}{s}
+\end{displaymath}
+con: 
+\begin{align*}
+\omega_z&=\frac{1}{R_2\cdot C}\\
+\omega_p&=\frac{1}{R_1\cdot C}
+\end{align*}
+hacemos el análisis como el circuito anterior, vamos a llegar a la siguiente expresión:
+\begin{displaymath}
+T_{\phi osc-\phi e}(s)=\frac{1+\frac{s}{\omega_z}}{\frac{s^2}{-\omega_p\cdot K}+\frac{s}{\omega_z}+1}
+\end{displaymath}
+Para que salga lo mismo que en el caso anterior, K tiene que ser negativa. Como $K=2\pi\cdot K_v\cdot K_{\Delta\Phi}$ o bien $K_v<0$ o $K_{\Delta\Phi}<0$. En caso contrario, el PLL sería inestable, al menos que el detector de fases cambie el signo de $K_{\Delta\Phi}$ en función de la diferencia de fases.
 %----------------------------------------------------------------------------------------
 %	ANEXOS
 %----------------------------------------------------------------------------------------

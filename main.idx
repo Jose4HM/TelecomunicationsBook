@@ -21,73 +21,73 @@
 \indexentry{Multiplexor y Demultiplexor|hyperpage}{87}
 \indexentry{Latch|hyperpage}{90}
 \indexentry{Flip-Flops|hyperpage}{96}
-\indexentry{División de frecuencia|hyperpage}{102}
-\indexentry{Monoestables|hyperpage}{102}
-\indexentry{Máquina de estados|hyperpage}{104}
-\indexentry{Grafos de estados|hyperpage}{107}
-\indexentry{ESP8266|hyperpage}{116}
-\indexentry{Instalación Windows: Materiales|hyperpage}{117}
-\indexentry{Instalación|hyperpage}{117}
-\indexentry{Equivalente al Hola Mundo pero en Placas|hyperpage}{117}
-\indexentry{Conectar a una red Wi-Fi|hyperpage}{118}
-\indexentry{Crear una red Wi-Fi|hyperpage}{120}
-\indexentry{Crear un servidor local|hyperpage}{121}
-\indexentry{Lectura Analógica|hyperpage}{126}
-\indexentry{Proyecto explicativo 1|hyperpage}{128}
-\indexentry{Sensor de temperatura y humedad DHT11|hyperpage}{134}
-\indexentry{Software|hyperpage}{137}
-\indexentry{Hardware|hyperpage}{145}
-\indexentry{Back-end|hyperpage}{147}
-\indexentry{Front-end|hyperpage}{162}
-\indexentry{Theorems|hyperpage}{167}
-\indexentry{Theorems!Several Equations|hyperpage}{167}
-\indexentry{Theorems!Single Line|hyperpage}{167}
-\indexentry{Definitions|hyperpage}{167}
-\indexentry{Notations|hyperpage}{168}
-\indexentry{Remarks|hyperpage}{168}
-\indexentry{Corollaries|hyperpage}{168}
-\indexentry{Propositions|hyperpage}{168}
-\indexentry{Propositions!Several Equations|hyperpage}{168}
-\indexentry{Propositions!Single Line|hyperpage}{168}
-\indexentry{Examples|hyperpage}{168}
-\indexentry{Examples!Equation and Text|hyperpage}{168}
-\indexentry{Examples!Paragraph of Text|hyperpage}{169}
-\indexentry{Exercises|hyperpage}{169}
-\indexentry{Problems|hyperpage}{169}
-\indexentry{Vocabulary|hyperpage}{169}
-\indexentry{Table|hyperpage}{169}
-\indexentry{Figure|hyperpage}{169}
-\indexentry{Sistemas de coordenadas y transformaciones|hyperpage}{175}
-\indexentry{Cálculo vectorial|hyperpage}{180}
-\indexentry{Ley de Coulomb|hyperpage}{185}
-\indexentry{Intensidad de campo eléctrico|hyperpage}{186}
-\indexentry{Campo eléctrico creado por una distribución continua de carga en un punto|hyperpage}{186}
-\indexentry{Densidad de campo eléctrico|hyperpage}{187}
-\indexentry{Ley de Gauss-Ecuaciones de Maxwell|hyperpage}{188}
-\indexentry{Potencial eléctrico|hyperpage}{193}
-\indexentry{Relación entre E y V-Ecuación de Maxwell|hyperpage}{194}
-\indexentry{Dipolo eléctrico|hyperpage}{195}
-\indexentry{Evolución de la telefonía|hyperpage}{203}
-\indexentry{Conmutadores|hyperpage}{204}
-\indexentry{Repaso:Señales analógicas y digitales|hyperpage}{204}
-\indexentry{Multiplexación|hyperpage}{205}
-\indexentry{Técnicas de conmutación|hyperpage}{208}
-\indexentry{Resumen comparativo|hyperpage}{210}
-\indexentry{Señalización telefónica|hyperpage}{214}
-\indexentry{Planta interna y externa|hyperpage}{215}
-\indexentry{Tráfico Telefónico|hyperpage}{221}
-\indexentry{Medidas de tráfico telefónico|hyperpage}{223}
-\indexentry{Tipos de tráfico|hyperpage}{227}
-\indexentry{Accesibilidad|hyperpage}{228}
-\indexentry{Grade of service|hyperpage}{229}
-\indexentry{Diseño de redes|hyperpage}{230}
-\indexentry{Encaminamiento de tráfico|hyperpage}{233}
-\indexentry{Erlang-B|hyperpage}{237}
-\indexentry{Repaso: TCP/IP|hyperpage}{250}
-\indexentry{VoIP|hyperpage}{254}
+\indexentry{División de frecuencia|hyperpage}{101}
+\indexentry{Monoestables|hyperpage}{101}
+\indexentry{Máquina de estados|hyperpage}{103}
+\indexentry{Grafos de estados|hyperpage}{106}
+\indexentry{ESP8266|hyperpage}{115}
+\indexentry{Instalación Windows: Materiales|hyperpage}{116}
+\indexentry{Instalación|hyperpage}{116}
+\indexentry{Equivalente al Hola Mundo pero en Placas|hyperpage}{116}
+\indexentry{Conectar a una red Wi-Fi|hyperpage}{117}
+\indexentry{Crear una red Wi-Fi|hyperpage}{119}
+\indexentry{Crear un servidor local|hyperpage}{120}
+\indexentry{Lectura Analógica|hyperpage}{125}
+\indexentry{Proyecto explicativo 1|hyperpage}{127}
+\indexentry{Sensor de temperatura y humedad DHT11|hyperpage}{133}
+\indexentry{Software|hyperpage}{136}
+\indexentry{Hardware|hyperpage}{144}
+\indexentry{Back-end|hyperpage}{146}
+\indexentry{Front-end|hyperpage}{161}
+\indexentry{Theorems|hyperpage}{166}
+\indexentry{Theorems!Several Equations|hyperpage}{166}
+\indexentry{Theorems!Single Line|hyperpage}{166}
+\indexentry{Definitions|hyperpage}{166}
+\indexentry{Notations|hyperpage}{167}
+\indexentry{Remarks|hyperpage}{167}
+\indexentry{Corollaries|hyperpage}{167}
+\indexentry{Propositions|hyperpage}{167}
+\indexentry{Propositions!Several Equations|hyperpage}{167}
+\indexentry{Propositions!Single Line|hyperpage}{167}
+\indexentry{Examples|hyperpage}{167}
+\indexentry{Examples!Equation and Text|hyperpage}{167}
+\indexentry{Examples!Paragraph of Text|hyperpage}{168}
+\indexentry{Exercises|hyperpage}{168}
+\indexentry{Problems|hyperpage}{168}
+\indexentry{Vocabulary|hyperpage}{168}
+\indexentry{Table|hyperpage}{168}
+\indexentry{Figure|hyperpage}{168}
+\indexentry{Sistemas de coordenadas y transformaciones|hyperpage}{174}
+\indexentry{Cálculo vectorial|hyperpage}{179}
+\indexentry{Ley de Coulomb|hyperpage}{184}
+\indexentry{Intensidad de campo eléctrico|hyperpage}{185}
+\indexentry{Campo eléctrico creado por una distribución continua de carga en un punto|hyperpage}{185}
+\indexentry{Densidad de campo eléctrico|hyperpage}{186}
+\indexentry{Ley de Gauss-Ecuaciones de Maxwell|hyperpage}{187}
+\indexentry{Potencial eléctrico|hyperpage}{192}
+\indexentry{Relación entre E y V-Ecuación de Maxwell|hyperpage}{193}
+\indexentry{Dipolo eléctrico|hyperpage}{194}
+\indexentry{Evolución de la telefonía|hyperpage}{202}
+\indexentry{Conmutadores|hyperpage}{203}
+\indexentry{Repaso:Señales analógicas y digitales|hyperpage}{203}
+\indexentry{Multiplexación|hyperpage}{204}
+\indexentry{Técnicas de conmutación|hyperpage}{207}
+\indexentry{Resumen comparativo|hyperpage}{209}
+\indexentry{Señalización telefónica|hyperpage}{213}
+\indexentry{Planta interna y externa|hyperpage}{214}
+\indexentry{Tráfico Telefónico|hyperpage}{220}
+\indexentry{Medidas de tráfico telefónico|hyperpage}{222}
+\indexentry{Tipos de tráfico|hyperpage}{226}
+\indexentry{Accesibilidad|hyperpage}{227}
+\indexentry{Grade of service|hyperpage}{228}
+\indexentry{Diseño de redes|hyperpage}{229}
+\indexentry{Encaminamiento de tráfico|hyperpage}{232}
+\indexentry{Erlang-B|hyperpage}{236}
+\indexentry{Repaso: TCP/IP|hyperpage}{249}
+\indexentry{VoIP|hyperpage}{253}
 \indexentry{Digitización de la voz|hyperpage}{254}
-\indexentry{Componentes de VoIP|hyperpage}{258}
-\indexentry{Tecnología IP|hyperpage}{261}
+\indexentry{Componentes de VoIP|hyperpage}{257}
+\indexentry{Tecnología IP|hyperpage}{260}
 \indexentry{Vocabulario-Sistemas de telefonía|hyperpage}{262}
 \indexentry{Introducción|hyperpage}{264}
 \indexentry{Modelo OSI|hyperpage}{267}

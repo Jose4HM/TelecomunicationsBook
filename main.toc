@@ -107,190 +107,190 @@
 \contentsline {section}{\numberline {6.5}Flip-Flops}{96}{section.6.5}%
 \contentsline {subsection}{\numberline {6.5.1}Flip Flop tipo S-R disparado por flanco}{96}{subsection.6.5.1}%
 \contentsline {subsection}{\numberline {6.5.2}Flip Flop D disparado por flanco}{97}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}Flip Flop J-K disparado por flanco}{99}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}Entradas asíncronas de inicialización y borrado}{101}{subsection.6.5.4}%
-\contentsline {section}{\numberline {6.6}División de frecuencia}{102}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Monoestables}{102}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Circuitos Lógicos Secuenciales}{104}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Máquina de estados}{104}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Modelo de Mealy}{105}{subsection.7.1.1}%
-\contentsline {section}{\numberline {7.2}Grafos de estados}{107}{section.7.2}%
-\contentsline {part}{\numberline {IV}Smart cities}{115}{part.4}%
-\contentsline {chapter}{\numberline {8}Conociendo la ESP8266}{116}{chapter.8}%
-\contentsline {section}{\numberline {8.1}ESP8266}{116}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Instalación Windows: Materiales}{117}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Instalación}{117}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Equivalente al Hola Mundo pero en placas}{117}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Conectar a una red Wi-Fi}{118}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Crear una red WiFi}{120}{section.8.6}%
-\contentsline {chapter}{\numberline {9}Servicios en la red}{121}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Crear un servidor local}{121}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Lectura Analógica}{126}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Proyecto explicativo 1}{128}{section.9.3}%
-\contentsline {subsection}{\numberline {9.3.1}Parte 1}{129}{subsection.9.3.1}%
-\contentsline {subsection}{\numberline {9.3.2}Parte 2}{130}{subsection.9.3.2}%
-\contentsline {subsection}{\numberline {9.3.3}Parte 3}{131}{subsection.9.3.3}%
-\contentsline {section}{\numberline {9.4}Sensor de temperatura y humedad DHT11}{134}{section.9.4}%
-\contentsline {chapter}{\numberline {10}Proyecto final}{137}{chapter.10}%
-\contentsline {section}{\numberline {10.1}Software}{137}{section.10.1}%
-\contentsline {subsection}{\numberline {10.1.1}Instalación de Node.js}{137}{subsection.10.1.1}%
-\contentsline {subsection}{\numberline {10.1.2}Instalación de Mosquitto}{139}{subsection.10.1.2}%
-\contentsline {subsubsection}{\numberline {10.1.2.1}Conexión de Mosquitto a Node red desde ESP8266}{141}{subsubsection.10.1.2.1}%
-\contentsline {section}{\numberline {10.2}Hardware}{145}{section.10.2}%
-\contentsline {section}{\numberline {10.3}Back-end}{147}{section.10.3}%
-\contentsline {subsection}{\numberline {10.3.1}Xammp-PHP My admin}{147}{subsection.10.3.1}%
-\contentsline {subsubsection}{\numberline {10.3.1.1}Base de datos: GPS}{147}{subsubsection.10.3.1.1}%
-\contentsline {subsubsection}{\numberline {10.3.1.2}Base de datos: Usuarios}{149}{subsubsection.10.3.1.2}%
-\contentsline {subsubsection}{\numberline {10.3.1.3}Base de datos: Estados}{150}{subsubsection.10.3.1.3}%
-\contentsline {subsection}{\numberline {10.3.2}Xammp-Htdocs}{151}{subsection.10.3.2}%
-\contentsline {subsection}{\numberline {10.3.3}Node-RED}{152}{subsection.10.3.3}%
-\contentsline {subsubsection}{\numberline {10.3.3.1}Nodos estados del botón}{152}{subsubsection.10.3.3.1}%
-\contentsline {subsubsection}{\numberline {10.3.3.2}Nodo coordenadas gps}{157}{subsubsection.10.3.3.2}%
-\contentsline {section}{\numberline {10.4}Front-end}{162}{section.10.4}%
-\contentsline {part}{\numberline {V}Telecomunicaciones 2}{166}{part.5}%
-\contentsline {chapter}{\numberline {11}Unidad I}{167}{chapter.11}%
-\contentsline {section}{\numberline {11.1}Theorems}{167}{section.11.1}%
-\contentsline {subsection}{\numberline {11.1.1}Several equations}{167}{subsection.11.1.1}%
-\contentsline {subsection}{\numberline {11.1.2}Single Line}{167}{subsection.11.1.2}%
-\contentsline {section}{\numberline {11.2}Definitions}{167}{section.11.2}%
-\contentsline {section}{\numberline {11.3}Notations}{168}{section.11.3}%
-\contentsline {section}{\numberline {11.4}Remarks}{168}{section.11.4}%
-\contentsline {section}{\numberline {11.5}Corollaries}{168}{section.11.5}%
-\contentsline {section}{\numberline {11.6}Propositions}{168}{section.11.6}%
-\contentsline {subsection}{\numberline {11.6.1}Several equations}{168}{subsection.11.6.1}%
-\contentsline {subsection}{\numberline {11.6.2}Single Line}{168}{subsection.11.6.2}%
-\contentsline {section}{\numberline {11.7}Examples}{168}{section.11.7}%
-\contentsline {subsection}{\numberline {11.7.1}Equation and Text}{168}{subsection.11.7.1}%
-\contentsline {subsection}{\numberline {11.7.2}Paragraph of Text}{169}{subsection.11.7.2}%
-\contentsline {section}{\numberline {11.8}Exercises}{169}{section.11.8}%
-\contentsline {section}{\numberline {11.9}Problems}{169}{section.11.9}%
-\contentsline {section}{\numberline {11.10}Vocabulary}{169}{section.11.10}%
-\contentsline {section}{\numberline {11.11}Table}{169}{section.11.11}%
-\contentsline {section}{\numberline {11.12}Figure}{169}{section.11.12}%
-\contentsline {chapter}{\numberline {12}Unidad 2}{171}{chapter.12}%
-\contentsline {section}{\numberline {12.1}Modulación por ancho de pulso-PWM}{171}{section.12.1}%
-\contentsline {part}{\numberline {VI}Campos electromagnéticos}{174}{part.6}%
-\contentsline {chapter}{\numberline {13}Repaso vectorial y fundamentos del electromagnetismo}{175}{chapter.13}%
-\contentsline {section}{\numberline {13.1}Sistemas de coordenadas y transformaciones}{175}{section.13.1}%
-\contentsline {subsubsection}{\numberline {13.1.0.1}Sistema de coordenadas cartesianas en el espacio (x,y,z)}{175}{subsubsection.13.1.0.1}%
-\contentsline {subsubsection}{\numberline {13.1.0.2}Coordenadas polares (r, $\theta $)}{175}{subsubsection.13.1.0.2}%
-\contentsline {subsection}{\numberline {13.1.1}Coordenadas Cilíndricas (r, $\theta $, z) ó ($\rho $,$\phi $, z)}{176}{subsection.13.1.1}%
-\contentsline {subsection}{\numberline {13.1.2}Coordenadas esféricas (r,$\theta $,$\phi $)}{177}{subsection.13.1.2}%
-\contentsline {subsection}{\numberline {13.1.3}Planos}{180}{subsection.13.1.3}%
-\contentsline {section}{\numberline {13.2}Cálculo vectorial}{180}{section.13.2}%
-\contentsline {subsection}{\numberline {13.2.1}Diferencial de distancia, área y volumen}{180}{subsection.13.2.1}%
-\contentsline {subsubsection}{\numberline {13.2.1.1}Sistema de coordenadas cartesianas}{180}{subsubsection.13.2.1.1}%
-\contentsline {subsubsection}{\numberline {13.2.1.2}Coordenadas cilíndricas}{180}{subsubsection.13.2.1.2}%
-\contentsline {subsubsection}{\numberline {13.2.1.3}Coordenadas esféricas}{180}{subsubsection.13.2.1.3}%
-\contentsline {subsection}{\numberline {13.2.2}Operador DEL($\nabla $)}{181}{subsection.13.2.2}%
-\contentsline {subsection}{\numberline {13.2.3}Gradiente de un campo escalar: $\nabla $V}{181}{subsection.13.2.3}%
-\contentsline {subsection}{\numberline {13.2.4}La divergencia de un vector: $\nabla \cdot $A}{182}{subsection.13.2.4}%
-\contentsline {subsection}{\numberline {13.2.5}Rotacional de un vector: $\nabla \times $A}{183}{subsection.13.2.5}%
-\contentsline {subsection}{\numberline {13.2.6}Laplaciano de un escalar: $\nabla ^2$V}{184}{subsection.13.2.6}%
-\contentsline {chapter}{\numberline {14}Campos eléctricos estáticos}{185}{chapter.14}%
-\contentsline {section}{\numberline {14.1}Ley de Coulomb}{185}{section.14.1}%
-\contentsline {section}{\numberline {14.2}Intensidad de campo eléctrico}{186}{section.14.2}%
-\contentsline {section}{\numberline {14.3}Campo eléctrico creado por una distribución continua de carga en un punto}{186}{section.14.3}%
-\contentsline {section}{\numberline {14.4}Densidad de campo eléctrico}{187}{section.14.4}%
-\contentsline {section}{\numberline {14.5}Ley de Gauss-Ecuaciones de Maxwell}{188}{section.14.5}%
-\contentsline {section}{\numberline {14.6}Potencial eléctrico}{193}{section.14.6}%
-\contentsline {section}{\numberline {14.7}Relación entre E y V-Ecuación de Maxwell}{194}{section.14.7}%
-\contentsline {section}{\numberline {14.8}Dipolo eléctrico}{195}{section.14.8}%
-\contentsline {chapter}{\numberline {15}Campos eléctricos en el espacio material}{198}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Corrientes de convección y conducción}{198}{section.15.1}%
-\contentsline {section}{\numberline {15.2}Conductores}{199}{section.15.2}%
-\contentsline {subsection}{\numberline {15.2.1}Conductor Isolado}{199}{subsection.15.2.1}%
-\contentsline {subsection}{\numberline {15.2.2}Conductor mantenido a potencial}{199}{subsection.15.2.2}%
-\contentsline {subsection}{\numberline {15.2.3}Polarización de un dipolo}{200}{subsection.15.2.3}%
-\contentsline {part}{\numberline {VII}Sistemas de telefonía}{202}{part.7}%
-\contentsline {chapter}{\numberline {16}Telefonía}{203}{chapter.16}%
-\contentsline {section}{\numberline {16.1}Evolución de la telefonía}{203}{section.16.1}%
-\contentsline {section}{\numberline {16.2}Conmutadores}{204}{section.16.2}%
-\contentsline {section}{\numberline {16.3}Repaso:Señales analógicas y digitales}{204}{section.16.3}%
-\contentsline {subsection}{\numberline {16.3.1}Ventajas y desventajas de las señales analógicas}{204}{subsection.16.3.1}%
-\contentsline {subsection}{\numberline {16.3.2}Ventajas y desventajas de las señales digitales}{205}{subsection.16.3.2}%
-\contentsline {section}{\numberline {16.4}Multiplexación}{205}{section.16.4}%
-\contentsline {subsection}{\numberline {16.4.1}¿Para que sirve?}{205}{subsection.16.4.1}%
-\contentsline {subsection}{\numberline {16.4.2}Multiplexación por división de tiempo o TDM \textit {(time-division multiplexing)}}{206}{subsection.16.4.2}%
-\contentsline {subsection}{\numberline {16.4.3}Multiplexación por división de frecuencia o FDM \textit {(frequency-division multiplexing)}}{206}{subsection.16.4.3}%
-\contentsline {subsection}{\numberline {16.4.4}Multiplexación por división de longitud de onda o WDM \textit {(wavelength-division multiplexing)}}{208}{subsection.16.4.4}%
-\contentsline {subsection}{\numberline {16.4.5}Multiplexación por Estadística por División de Tiempo o STDM(\textit {Statistical time-division multiplexing})}{208}{subsection.16.4.5}%
-\contentsline {section}{\numberline {16.5}Técnicas de conmutación}{208}{section.16.5}%
-\contentsline {subsection}{\numberline {16.5.1}Conmutación por circuitos}{208}{subsection.16.5.1}%
-\contentsline {subsection}{\numberline {16.5.2}Conmutador por paquetes}{209}{subsection.16.5.2}%
-\contentsline {section}{\numberline {16.6}Red de telefonía publica}{210}{section.16.6}%
-\contentsline {subsection}{\numberline {16.6.1}Red de telefonía publica conmutada-PSTN}{210}{subsection.16.6.1}%
-\contentsline {subsection}{\numberline {16.6.2}Características}{211}{subsection.16.6.2}%
-\contentsline {subsection}{\numberline {16.6.3}Componentes}{212}{subsection.16.6.3}%
-\contentsline {subsubsection}{\numberline {16.6.3.1}Equipos Terminales}{212}{subsubsection.16.6.3.1}%
-\contentsline {subsubsection}{\numberline {16.6.3.2}Central telefónica}{212}{subsubsection.16.6.3.2}%
-\contentsline {subsubsection}{\numberline {16.6.3.3}Red de enlace}{212}{subsubsection.16.6.3.3}%
-\contentsline {subsubsection}{\numberline {16.6.3.4}Troncales}{212}{subsubsection.16.6.3.4}%
-\contentsline {subsubsection}{\numberline {16.6.3.5}Lazo de abonado o local}{213}{subsubsection.16.6.3.5}%
-\contentsline {subsubsection}{\numberline {16.6.3.6}SLIC y BORSCHT}{213}{subsubsection.16.6.3.6}%
-\contentsline {section}{\numberline {16.7}Señalización telefónica}{214}{section.16.7}%
-\contentsline {section}{\numberline {16.8}Planta interna y externa}{215}{section.16.8}%
-\contentsline {subsection}{\numberline {16.8.1}Planta Interna}{216}{subsection.16.8.1}%
-\contentsline {subsection}{\numberline {16.8.2}Planta externa}{217}{subsection.16.8.2}%
-\contentsline {chapter}{\numberline {17}Herramientas para el análisis telefónico}{221}{chapter.17}%
-\contentsline {section}{\numberline {17.1}Tráfico Telefónico}{221}{section.17.1}%
-\contentsline {subsection}{\numberline {17.1.1}Variaciones}{221}{subsection.17.1.1}%
-\contentsline {subsubsection}{\numberline {17.1.1.1}Variaciones Diarias}{221}{subsubsection.17.1.1.1}%
-\contentsline {subsubsection}{\numberline {17.1.1.2}Variación Semanal}{221}{subsubsection.17.1.1.2}%
-\contentsline {subsubsection}{\numberline {17.1.1.3}Variación anual}{221}{subsubsection.17.1.1.3}%
-\contentsline {subsubsection}{\numberline {17.1.1.4}Variación accidental}{222}{subsubsection.17.1.1.4}%
-\contentsline {section}{\numberline {17.2}Medidas de tráfico telefónico}{223}{section.17.2}%
-\contentsline {subsubsection}{\numberline {17.2.0.1}Volumen del tráfico($V_t$)}{223}{subsubsection.17.2.0.1}%
-\contentsline {subsubsection}{\numberline {17.2.0.2}Tiempo de observación($T_o$)}{224}{subsubsection.17.2.0.2}%
-\contentsline {subsubsection}{\numberline {17.2.0.3}Intensidad de tráfico($I_t$)}{224}{subsubsection.17.2.0.3}%
-\contentsline {subsubsection}{\numberline {17.2.0.4}Erlang}{224}{subsubsection.17.2.0.4}%
-\contentsline {subsubsection}{\numberline {17.2.0.5}Hora cargada}{226}{subsubsection.17.2.0.5}%
-\contentsline {section}{\numberline {17.3}Tipos de tráfico}{227}{section.17.3}%
-\contentsline {section}{\numberline {17.4}Accesibilidad}{228}{section.17.4}%
-\contentsline {subsubsection}{\numberline {17.4.0.1}Accesibilidad completa}{228}{subsubsection.17.4.0.1}%
-\contentsline {subsubsection}{\numberline {17.4.0.2}Accesibilidad Limitada}{228}{subsubsection.17.4.0.2}%
-\contentsline {subsubsection}{\numberline {17.4.0.3}Sistemas de pérdida}{229}{subsubsection.17.4.0.3}%
-\contentsline {subsubsection}{\numberline {17.4.0.4}Sistema a Espera}{229}{subsubsection.17.4.0.4}%
-\contentsline {section}{\numberline {17.5}\textit {Grade of service}(GoS)}{229}{section.17.5}%
-\contentsline {section}{\numberline {17.6}Diseño de redes}{230}{section.17.6}%
-\contentsline {section}{\numberline {17.7}Encaminamiento de tráfico}{233}{section.17.7}%
-\contentsline {section}{\numberline {17.8}Erlang-B}{237}{section.17.8}%
-\contentsline {subsection}{\numberline {17.8.1}Erlang-B para un enlace}{238}{subsection.17.8.1}%
-\contentsline {subsubsection}{\numberline {17.8.1.1}Formula Erlang-B para un enlace}{239}{subsubsection.17.8.1.1}%
-\contentsline {subsection}{\numberline {17.8.2}Erlang-B para N enlaces}{240}{subsection.17.8.2}%
-\contentsline {subsubsection}{\numberline {17.8.2.1}Distribución de Poisson}{240}{subsubsection.17.8.2.1}%
-\contentsline {chapter}{\numberline {18}Telefonía IP}{243}{chapter.18}%
-\contentsline {subsection}{\numberline {18.0.1}Redes de computadoras}{243}{subsection.18.0.1}%
-\contentsline {subsection}{\numberline {18.0.2}PDU}{244}{subsection.18.0.2}%
-\contentsline {subsection}{\numberline {18.0.3}Arquitectura de red}{245}{subsection.18.0.3}%
-\contentsline {subsection}{\numberline {18.0.4}Tipos de servicios}{248}{subsection.18.0.4}%
-\contentsline {subsubsection}{\numberline {18.0.4.1}Orientado a la conexión}{248}{subsubsection.18.0.4.1}%
-\contentsline {subsubsection}{\numberline {18.0.4.2}No orientado a la conexión}{249}{subsubsection.18.0.4.2}%
-\contentsline {section}{\numberline {18.1}Repaso: TCP/IP}{250}{section.18.1}%
-\contentsline {subsection}{\numberline {18.1.1}Capa de transporte}{251}{subsection.18.1.1}%
-\contentsline {subsection}{\numberline {18.1.2}Capa de internet}{252}{subsection.18.1.2}%
-\contentsline {subsubsection}{\numberline {18.1.2.1}Direccionamiento}{252}{subsubsection.18.1.2.1}%
-\contentsline {subsubsection}{\numberline {18.1.2.2}Enrutamiento}{252}{subsubsection.18.1.2.2}%
-\contentsline {subsubsection}{\numberline {18.1.2.3}IPv4}{252}{subsubsection.18.1.2.3}%
-\contentsline {section}{\numberline {18.2}VoIP}{254}{section.18.2}%
+\contentsline {subsection}{\numberline {6.5.3}Flip Flop J-K disparado por flanco}{98}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Entradas asíncronas de inicialización y borrado}{100}{subsection.6.5.4}%
+\contentsline {section}{\numberline {6.6}División de frecuencia}{101}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Monoestables}{101}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Circuitos Lógicos Secuenciales}{103}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Máquina de estados}{103}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Modelo de Mealy}{104}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Grafos de estados}{106}{section.7.2}%
+\contentsline {part}{\numberline {IV}Smart cities}{114}{part.4}%
+\contentsline {chapter}{\numberline {8}Conociendo la ESP8266}{115}{chapter.8}%
+\contentsline {section}{\numberline {8.1}ESP8266}{115}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Instalación Windows: Materiales}{116}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Instalación}{116}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Equivalente al Hola Mundo pero en placas}{116}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Conectar a una red Wi-Fi}{117}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Crear una red WiFi}{119}{section.8.6}%
+\contentsline {chapter}{\numberline {9}Servicios en la red}{120}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Crear un servidor local}{120}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Lectura Analógica}{125}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Proyecto explicativo 1}{127}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Parte 1}{128}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Parte 2}{129}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}Parte 3}{130}{subsection.9.3.3}%
+\contentsline {section}{\numberline {9.4}Sensor de temperatura y humedad DHT11}{133}{section.9.4}%
+\contentsline {chapter}{\numberline {10}Proyecto final}{136}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Software}{136}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Instalación de Node.js}{136}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Instalación de Mosquitto}{138}{subsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.2.1}Conexión de Mosquitto a Node red desde ESP8266}{140}{subsubsection.10.1.2.1}%
+\contentsline {section}{\numberline {10.2}Hardware}{144}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Back-end}{146}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Xammp-PHP My admin}{146}{subsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.1.1}Base de datos: GPS}{146}{subsubsection.10.3.1.1}%
+\contentsline {subsubsection}{\numberline {10.3.1.2}Base de datos: Usuarios}{148}{subsubsection.10.3.1.2}%
+\contentsline {subsubsection}{\numberline {10.3.1.3}Base de datos: Estados}{149}{subsubsection.10.3.1.3}%
+\contentsline {subsection}{\numberline {10.3.2}Xammp-Htdocs}{150}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Node-RED}{151}{subsection.10.3.3}%
+\contentsline {subsubsection}{\numberline {10.3.3.1}Nodos estados del botón}{151}{subsubsection.10.3.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.3.2}Nodo coordenadas gps}{156}{subsubsection.10.3.3.2}%
+\contentsline {section}{\numberline {10.4}Front-end}{161}{section.10.4}%
+\contentsline {part}{\numberline {V}Telecomunicaciones 2}{165}{part.5}%
+\contentsline {chapter}{\numberline {11}Unidad I}{166}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Theorems}{166}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Several equations}{166}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Single Line}{166}{subsection.11.1.2}%
+\contentsline {section}{\numberline {11.2}Definitions}{166}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Notations}{167}{section.11.3}%
+\contentsline {section}{\numberline {11.4}Remarks}{167}{section.11.4}%
+\contentsline {section}{\numberline {11.5}Corollaries}{167}{section.11.5}%
+\contentsline {section}{\numberline {11.6}Propositions}{167}{section.11.6}%
+\contentsline {subsection}{\numberline {11.6.1}Several equations}{167}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.2}Single Line}{167}{subsection.11.6.2}%
+\contentsline {section}{\numberline {11.7}Examples}{167}{section.11.7}%
+\contentsline {subsection}{\numberline {11.7.1}Equation and Text}{167}{subsection.11.7.1}%
+\contentsline {subsection}{\numberline {11.7.2}Paragraph of Text}{168}{subsection.11.7.2}%
+\contentsline {section}{\numberline {11.8}Exercises}{168}{section.11.8}%
+\contentsline {section}{\numberline {11.9}Problems}{168}{section.11.9}%
+\contentsline {section}{\numberline {11.10}Vocabulary}{168}{section.11.10}%
+\contentsline {section}{\numberline {11.11}Table}{168}{section.11.11}%
+\contentsline {section}{\numberline {11.12}Figure}{168}{section.11.12}%
+\contentsline {chapter}{\numberline {12}Unidad 2}{170}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Modulación por ancho de pulso-PWM}{170}{section.12.1}%
+\contentsline {part}{\numberline {VI}Campos electromagnéticos}{173}{part.6}%
+\contentsline {chapter}{\numberline {13}Repaso vectorial y fundamentos del electromagnetismo}{174}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Sistemas de coordenadas y transformaciones}{174}{section.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.0.1}Sistema de coordenadas cartesianas en el espacio (x,y,z)}{174}{subsubsection.13.1.0.1}%
+\contentsline {subsubsection}{\numberline {13.1.0.2}Coordenadas polares (r, $\theta $)}{174}{subsubsection.13.1.0.2}%
+\contentsline {subsection}{\numberline {13.1.1}Coordenadas Cilíndricas (r, $\theta $, z) ó ($\rho $,$\phi $, z)}{175}{subsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.1.2}Coordenadas esféricas (r,$\theta $,$\phi $)}{176}{subsection.13.1.2}%
+\contentsline {subsection}{\numberline {13.1.3}Planos}{179}{subsection.13.1.3}%
+\contentsline {section}{\numberline {13.2}Cálculo vectorial}{179}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}Diferencial de distancia, área y volumen}{179}{subsection.13.2.1}%
+\contentsline {subsubsection}{\numberline {13.2.1.1}Sistema de coordenadas cartesianas}{179}{subsubsection.13.2.1.1}%
+\contentsline {subsubsection}{\numberline {13.2.1.2}Coordenadas cilíndricas}{179}{subsubsection.13.2.1.2}%
+\contentsline {subsubsection}{\numberline {13.2.1.3}Coordenadas esféricas}{179}{subsubsection.13.2.1.3}%
+\contentsline {subsection}{\numberline {13.2.2}Operador DEL($\nabla $)}{180}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.3}Gradiente de un campo escalar: $\nabla $V}{180}{subsection.13.2.3}%
+\contentsline {subsection}{\numberline {13.2.4}La divergencia de un vector: $\nabla \cdot $A}{181}{subsection.13.2.4}%
+\contentsline {subsection}{\numberline {13.2.5}Rotacional de un vector: $\nabla \times $A}{182}{subsection.13.2.5}%
+\contentsline {subsection}{\numberline {13.2.6}Laplaciano de un escalar: $\nabla ^2$V}{183}{subsection.13.2.6}%
+\contentsline {chapter}{\numberline {14}Campos eléctricos estáticos}{184}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Ley de Coulomb}{184}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Intensidad de campo eléctrico}{185}{section.14.2}%
+\contentsline {section}{\numberline {14.3}Campo eléctrico creado por una distribución continua de carga en un punto}{185}{section.14.3}%
+\contentsline {section}{\numberline {14.4}Densidad de campo eléctrico}{186}{section.14.4}%
+\contentsline {section}{\numberline {14.5}Ley de Gauss-Ecuaciones de Maxwell}{187}{section.14.5}%
+\contentsline {section}{\numberline {14.6}Potencial eléctrico}{192}{section.14.6}%
+\contentsline {section}{\numberline {14.7}Relación entre E y V-Ecuación de Maxwell}{193}{section.14.7}%
+\contentsline {section}{\numberline {14.8}Dipolo eléctrico}{194}{section.14.8}%
+\contentsline {chapter}{\numberline {15}Campos eléctricos en el espacio material}{197}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Corrientes de convección y conducción}{197}{section.15.1}%
+\contentsline {section}{\numberline {15.2}Conductores}{198}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}Conductor Isolado}{198}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Conductor mantenido a potencial}{198}{subsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.2.3}Polarización de un dipolo}{199}{subsection.15.2.3}%
+\contentsline {part}{\numberline {VII}Sistemas de telefonía}{201}{part.7}%
+\contentsline {chapter}{\numberline {16}Telefonía}{202}{chapter.16}%
+\contentsline {section}{\numberline {16.1}Evolución de la telefonía}{202}{section.16.1}%
+\contentsline {section}{\numberline {16.2}Conmutadores}{203}{section.16.2}%
+\contentsline {section}{\numberline {16.3}Repaso:Señales analógicas y digitales}{203}{section.16.3}%
+\contentsline {subsection}{\numberline {16.3.1}Ventajas y desventajas de las señales analógicas}{203}{subsection.16.3.1}%
+\contentsline {subsection}{\numberline {16.3.2}Ventajas y desventajas de las señales digitales}{204}{subsection.16.3.2}%
+\contentsline {section}{\numberline {16.4}Multiplexación}{204}{section.16.4}%
+\contentsline {subsection}{\numberline {16.4.1}¿Para que sirve?}{204}{subsection.16.4.1}%
+\contentsline {subsection}{\numberline {16.4.2}Multiplexación por división de tiempo o TDM \textit {(time-division multiplexing)}}{205}{subsection.16.4.2}%
+\contentsline {subsection}{\numberline {16.4.3}Multiplexación por división de frecuencia o FDM \textit {(frequency-division multiplexing)}}{205}{subsection.16.4.3}%
+\contentsline {subsection}{\numberline {16.4.4}Multiplexación por división de longitud de onda o WDM \textit {(wavelength-division multiplexing)}}{207}{subsection.16.4.4}%
+\contentsline {subsection}{\numberline {16.4.5}Multiplexación por Estadística por División de Tiempo o STDM(\textit {Statistical time-division multiplexing})}{207}{subsection.16.4.5}%
+\contentsline {section}{\numberline {16.5}Técnicas de conmutación}{207}{section.16.5}%
+\contentsline {subsection}{\numberline {16.5.1}Conmutación por circuitos}{207}{subsection.16.5.1}%
+\contentsline {subsection}{\numberline {16.5.2}Conmutador por paquetes}{208}{subsection.16.5.2}%
+\contentsline {section}{\numberline {16.6}Red de telefonía publica}{209}{section.16.6}%
+\contentsline {subsection}{\numberline {16.6.1}Red de telefonía publica conmutada-PSTN}{209}{subsection.16.6.1}%
+\contentsline {subsection}{\numberline {16.6.2}Características}{210}{subsection.16.6.2}%
+\contentsline {subsection}{\numberline {16.6.3}Componentes}{211}{subsection.16.6.3}%
+\contentsline {subsubsection}{\numberline {16.6.3.1}Equipos Terminales}{211}{subsubsection.16.6.3.1}%
+\contentsline {subsubsection}{\numberline {16.6.3.2}Central telefónica}{211}{subsubsection.16.6.3.2}%
+\contentsline {subsubsection}{\numberline {16.6.3.3}Red de enlace}{211}{subsubsection.16.6.3.3}%
+\contentsline {subsubsection}{\numberline {16.6.3.4}Troncales}{211}{subsubsection.16.6.3.4}%
+\contentsline {subsubsection}{\numberline {16.6.3.5}Lazo de abonado o local}{212}{subsubsection.16.6.3.5}%
+\contentsline {subsubsection}{\numberline {16.6.3.6}SLIC y BORSCHT}{212}{subsubsection.16.6.3.6}%
+\contentsline {section}{\numberline {16.7}Señalización telefónica}{213}{section.16.7}%
+\contentsline {section}{\numberline {16.8}Planta interna y externa}{214}{section.16.8}%
+\contentsline {subsection}{\numberline {16.8.1}Planta Interna}{215}{subsection.16.8.1}%
+\contentsline {subsection}{\numberline {16.8.2}Planta externa}{216}{subsection.16.8.2}%
+\contentsline {chapter}{\numberline {17}Herramientas para el análisis telefónico}{220}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Tráfico Telefónico}{220}{section.17.1}%
+\contentsline {subsection}{\numberline {17.1.1}Variaciones}{220}{subsection.17.1.1}%
+\contentsline {subsubsection}{\numberline {17.1.1.1}Variaciones Diarias}{220}{subsubsection.17.1.1.1}%
+\contentsline {subsubsection}{\numberline {17.1.1.2}Variación Semanal}{220}{subsubsection.17.1.1.2}%
+\contentsline {subsubsection}{\numberline {17.1.1.3}Variación anual}{220}{subsubsection.17.1.1.3}%
+\contentsline {subsubsection}{\numberline {17.1.1.4}Variación accidental}{221}{subsubsection.17.1.1.4}%
+\contentsline {section}{\numberline {17.2}Medidas de tráfico telefónico}{222}{section.17.2}%
+\contentsline {subsubsection}{\numberline {17.2.0.1}Volumen del tráfico($V_t$)}{222}{subsubsection.17.2.0.1}%
+\contentsline {subsubsection}{\numberline {17.2.0.2}Tiempo de observación($T_o$)}{223}{subsubsection.17.2.0.2}%
+\contentsline {subsubsection}{\numberline {17.2.0.3}Intensidad de tráfico($I_t$)}{223}{subsubsection.17.2.0.3}%
+\contentsline {subsubsection}{\numberline {17.2.0.4}Erlang}{223}{subsubsection.17.2.0.4}%
+\contentsline {subsubsection}{\numberline {17.2.0.5}Hora cargada}{225}{subsubsection.17.2.0.5}%
+\contentsline {section}{\numberline {17.3}Tipos de tráfico}{226}{section.17.3}%
+\contentsline {section}{\numberline {17.4}Accesibilidad}{227}{section.17.4}%
+\contentsline {subsubsection}{\numberline {17.4.0.1}Accesibilidad completa}{227}{subsubsection.17.4.0.1}%
+\contentsline {subsubsection}{\numberline {17.4.0.2}Accesibilidad Limitada}{227}{subsubsection.17.4.0.2}%
+\contentsline {subsubsection}{\numberline {17.4.0.3}Sistemas de pérdida}{228}{subsubsection.17.4.0.3}%
+\contentsline {subsubsection}{\numberline {17.4.0.4}Sistema a Espera}{228}{subsubsection.17.4.0.4}%
+\contentsline {section}{\numberline {17.5}\textit {Grade of service}(GoS)}{228}{section.17.5}%
+\contentsline {section}{\numberline {17.6}Diseño de redes}{229}{section.17.6}%
+\contentsline {section}{\numberline {17.7}Encaminamiento de tráfico}{232}{section.17.7}%
+\contentsline {section}{\numberline {17.8}Erlang-B}{236}{section.17.8}%
+\contentsline {subsection}{\numberline {17.8.1}Erlang-B para un enlace}{237}{subsection.17.8.1}%
+\contentsline {subsubsection}{\numberline {17.8.1.1}Formula Erlang-B para un enlace}{238}{subsubsection.17.8.1.1}%
+\contentsline {subsection}{\numberline {17.8.2}Erlang-B para N enlaces}{239}{subsection.17.8.2}%
+\contentsline {subsubsection}{\numberline {17.8.2.1}Distribución de Poisson}{239}{subsubsection.17.8.2.1}%
+\contentsline {chapter}{\numberline {18}Telefonía IP}{242}{chapter.18}%
+\contentsline {subsection}{\numberline {18.0.1}Redes de computadoras}{242}{subsection.18.0.1}%
+\contentsline {subsection}{\numberline {18.0.2}PDU}{243}{subsection.18.0.2}%
+\contentsline {subsection}{\numberline {18.0.3}Arquitectura de red}{244}{subsection.18.0.3}%
+\contentsline {subsection}{\numberline {18.0.4}Tipos de servicios}{247}{subsection.18.0.4}%
+\contentsline {subsubsection}{\numberline {18.0.4.1}Orientado a la conexión}{247}{subsubsection.18.0.4.1}%
+\contentsline {subsubsection}{\numberline {18.0.4.2}No orientado a la conexión}{248}{subsubsection.18.0.4.2}%
+\contentsline {section}{\numberline {18.1}Repaso: TCP/IP}{249}{section.18.1}%
+\contentsline {subsection}{\numberline {18.1.1}Capa de transporte}{250}{subsection.18.1.1}%
+\contentsline {subsection}{\numberline {18.1.2}Capa de internet}{251}{subsection.18.1.2}%
+\contentsline {subsubsection}{\numberline {18.1.2.1}Direccionamiento}{251}{subsubsection.18.1.2.1}%
+\contentsline {subsubsection}{\numberline {18.1.2.2}Enrutamiento}{251}{subsubsection.18.1.2.2}%
+\contentsline {subsubsection}{\numberline {18.1.2.3}IPv4}{251}{subsubsection.18.1.2.3}%
+\contentsline {section}{\numberline {18.2}VoIP}{253}{section.18.2}%
 \contentsline {section}{\numberline {18.3}Digitización de la voz}{254}{section.18.3}%
-\contentsline {subsection}{\numberline {18.3.1}¿Como se digitaliza de la voz?}{255}{subsection.18.3.1}%
-\contentsline {subsubsection}{\numberline {18.3.1.1}Muestreo}{255}{subsubsection.18.3.1.1}%
+\contentsline {subsection}{\numberline {18.3.1}¿Como se digitaliza de la voz?}{254}{subsection.18.3.1}%
+\contentsline {subsubsection}{\numberline {18.3.1.1}Muestreo}{254}{subsubsection.18.3.1.1}%
 \contentsline {subsubsection}{\numberline {18.3.1.2}Cuantificación}{255}{subsubsection.18.3.1.2}%
-\contentsline {subsubsection}{\numberline {18.3.1.3}Codificación}{256}{subsubsection.18.3.1.3}%
-\contentsline {subsubsection}{\numberline {18.3.1.4}CODECs}{257}{subsubsection.18.3.1.4}%
-\contentsline {subsection}{\numberline {18.3.2}Transporte de Voz}{257}{subsection.18.3.2}%
-\contentsline {section}{\numberline {18.4}Componentes de VoIP}{258}{section.18.4}%
+\contentsline {subsubsection}{\numberline {18.3.1.3}Codificación}{255}{subsubsection.18.3.1.3}%
+\contentsline {subsubsection}{\numberline {18.3.1.4}CODECs}{256}{subsubsection.18.3.1.4}%
+\contentsline {subsection}{\numberline {18.3.2}Transporte de Voz}{256}{subsection.18.3.2}%
+\contentsline {section}{\numberline {18.4}Componentes de VoIP}{257}{section.18.4}%
 \contentsline {subsection}{\numberline {18.4.1}Terminal IP}{258}{subsection.18.4.1}%
-\contentsline {subsection}{\numberline {18.4.2}Centralita IP}{259}{subsection.18.4.2}%
+\contentsline {subsection}{\numberline {18.4.2}Centralita IP}{258}{subsection.18.4.2}%
 \contentsline {subsection}{\numberline {18.4.3}Gateway}{259}{subsection.18.4.3}%
 \contentsline {subsubsection}{\numberline {18.4.3.1}Gateway FXS}{259}{subsubsection.18.4.3.1}%
-\contentsline {subsubsection}{\numberline {18.4.3.2}Gateway FXO}{260}{subsubsection.18.4.3.2}%
-\contentsline {subsection}{\numberline {18.4.4}Adaptador FXS}{260}{subsection.18.4.4}%
+\contentsline {subsubsection}{\numberline {18.4.3.2}Gateway FXO}{259}{subsubsection.18.4.3.2}%
+\contentsline {subsection}{\numberline {18.4.4}Adaptador FXS}{259}{subsection.18.4.4}%
 \contentsline {subsection}{\numberline {18.4.5}Unidad de control MCU}{260}{subsection.18.4.5}%
-\contentsline {section}{\numberline {18.5}Tecnología IP}{261}{section.18.5}%
-\contentsline {subsection}{\numberline {18.5.1}DSL}{261}{subsection.18.5.1}%
-\contentsline {subsection}{\numberline {18.5.2}RDSI}{261}{subsection.18.5.2}%
+\contentsline {section}{\numberline {18.5}Tecnología IP}{260}{section.18.5}%
+\contentsline {subsection}{\numberline {18.5.1}DSL}{260}{subsection.18.5.1}%
+\contentsline {subsection}{\numberline {18.5.2}RDSI}{260}{subsection.18.5.2}%
 \contentsline {subsection}{\numberline {18.5.3}LMDS}{261}{subsection.18.5.3}%
 \contentsline {subsection}{\numberline {18.5.4}GSM}{261}{subsection.18.5.4}%
 \contentsline {part}{\numberline {VIII}Internetworking 1}{263}{part.8}%
