@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.7)  9 NOV 2022 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.7)  15 NOV 2022 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1909,7 +1909,18 @@ Package microtype Info: Loading generic protrusion settings for font family
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 26.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 21.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 2
+7.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+<Images//in2/in12.png, id=6, 562.1pt x 379.4175pt>
+File: Images//in2/in12.png Graphic file (type png)
+<use Images//in2/in12.png>
+Package pdftex.def Info: Images//in2/in12.png  used on input line 36.
+(pdftex.def)             Requested size: 341.43437pt x 230.46591pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1922,79 +1933,11 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 33.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 33.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 33.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 33.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
-3.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 33
-.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-<Images//IN2/IN10.png, id=23, 803.0pt x 427.5975pt>
-File: Images//IN2/IN10.png Graphic file (type png)
-<use Images//IN2/IN10.png>
-Package pdftex.def Info: Images//IN2/IN10.png  used on input line 36.
-(pdftex.def)             Requested size: 298.75264pt x 159.08942pt.
-<Images//IN2/IN11.png, id=24, 803.0pt x 406.51875pt>
-File: Images//IN2/IN11.png Graphic file (type png)
-<use Images//IN2/IN11.png>
-Package pdftex.def Info: Images//IN2/IN11.png  used on input line 45.
-(pdftex.def)             Requested size: 298.75264pt x 151.24698pt.
+<Images//in2/in13.png, id=20, 557.08125pt x 440.64626pt>
+File: Images//in2/in13.png Graphic file (type png)
+<use Images//in2/in13.png>
+Package pdftex.def Info: Images//in2/in13.png  used on input line 52.
+(pdftex.def)             Requested size: 341.43437pt x 270.07805pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -2004,22 +1947,13 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[2 <./Images//IN2/IN10.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-2.
+[2 <./Images//in2/in12.png>]
+<Images//in2/in14.png, id=31, 564.1075pt x 452.69125pt>
+File: Images//in2/in14.png Graphic file (type png)
+<use Images//in2/in14.png>
+Package pdftex.def Info: Images//in2/in14.png  used on input line 64.
+(pdftex.def)             Requested size: 341.43437pt x 273.99992pt.
 
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[3 <./Images//IN2/IN11.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2028,7 +1962,16 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[4]
+[3 <./Images//in2/in13.png>]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[4 <./Images//in2/in14.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2043,23 +1986,21 @@ Package logreq Info: Writing requests to 'fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54532 strings out of 475380
- 1215771 string characters out of 2777244
- 2206285 words of memory out of 3000000
- 74759 multiletter control sequences out of 15000+600000
- 537468 words of font info for 254 fonts, out of 8000000 for 9000
+ 53692 strings out of 475380
+ 1205826 string characters out of 2777244
+ 2183336 words of memory out of 3000000
+ 74095 multiletter control sequences out of 15000+600000
+ 495391 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,13n,108p,1155b,2570s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,12n,108p,1155b,1025s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
 Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C
 :/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb>
-<C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb
-><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb>
-<C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><
-C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (5 pages, 144015 bytes).
+<C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><
+C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb>
+Output written on fastmain.pdf (5 pages, 162297 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 81975 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 112 PDF objects out of 1000 (max. 8388607)
+ 28 named destinations out of 1000 (max. 500000)
+ 28772 words of extra memory for PDF output out of 29859 (max. 10000000)
 

@@ -14,7 +14,7 @@
 
 
 %Atención
-%Está prohibido usar simbolos en \index{•}
+%Está prohibido usar simbolos en \index{•} como tildes o simbolos matematicos.
 % After this, when you wish to update the bibliography/index use the appropriate
 % command above and make sure to compile with pdflatex several times 
 % afterwards to propagate your changes to the document.
@@ -34,14 +34,14 @@
 
 % Book information for PDF metadata, remove/comment this block if not required 
 \hypersetup{
-	pdftitle={Pasos por Telecomunicaciones II}, % Title field
+	pdftitle={Telecomunicaciones II}, % Title field
 	pdfauthor={Jose Hancco}, % Author field
 	pdfsubject={Educación}, % Subject field
 	pdfkeywords={Telecomunicaciones, UNSA, Pregrado, Señales}, % Keywords
 	pdfcreator={LaTeX}, % Content creator field
 }
 
-\addbibresource{sample.bib} % Bibliography file
+\addbibresource{sample2.bib} % Bibliography file
 
 \definecolor{ocre}{RGB}{63, 76, 83} % Define the color used for highlighting throughout the book, replace it with average color for a better presentation:
 % Background.pdf -> Average color=63,76,83
@@ -52,8 +52,7 @@
 \chapterspaceabove{6.5cm} % Default whitespace from the top of the page to the chapter title on chapter pages
 \chapterspacebelow{6.75cm} % Default amount of vertical whitespace from the top margin to the start of the text on chapter pages
 
-%----------------------------------------------------------------------------------------
-
+%---------------------------------------------------------------------------------------
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -64,7 +63,7 @@
 \thispagestyle{empty} % Suppress headers and footers on the title page
 \begin{tikzpicture}[remember picture,overlay]
 \node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{background1.pdf}};%here you change your bookcover background
-\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Pasos por Telecomunicaciones II\\[15pt] % Book title
+\draw (current page.center) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering Telecomunicaciones II\\[15pt] % Book title
 {\Large Notas de un estudiante}\\[20pt] % Subtitle
 {\huge Jose Antonio Hancco M.}}}; % Author name
 \end{tikzpicture}
@@ -119,28 +118,7 @@
 %----------------------------------------------------------------------------------------
 %	PART
 %----------------------------------------------------------------------------------------
-\section*{Libros recomendados:}
-\begin{itemize}
-\item Fundamentos de circuitos eléctricos\cite{alexander2013fundamentos}
-\item Signals and Systems Using MATLAB\cite{chaparro2018signals}
-\item Procesamiento de señales analógicas y digitales\cite{ambardar1995analog}
-\item Física Para Ciencias E Ingeniería. Vol 1\cite{serway2018fisica1}
-\item Física Para Ciencias E Ingeniería. Vol 2\cite{serway2018fisica2}
-\item Cálculo de una variable: trascendentes tempranas. 7ma edición \cite{stewart12calculo}
-\item Análisis de Fourier\cite{hsu1998analisis}
-\item Matemáticas Avanzadas Para Ingeniería\cite{o2014matematicas}
-\item Métodos numéricos para ingenieros\cite{chapra2013metodos}
-\item Comunicaciones y redes de computadores\cite{stallings2004comunicaciones}
-\item Electrónica: teoría de circuitos y dispositivos electrónicos\cite{boylestad1989electronica}
-\item Fundamentos de sistemas digitales\cite{floyd2006fundamentos}
-\item Tratamiento de señales en tiempo discreto\cite{oppenheim2011tratamiento}
-\item Tratamiento digital de señales\cite{proakis2007tratamiento}
-\item Sistemas de comunicación digitales y análogos\cite{couchsistemas}
-\item Data communication and networking\cite{forouzan2007data}
-\item Life Pre-Intermediate 2e\cite{hughes2017life}
-\item Redes de computadoras\cite{tanenbaum2012computer}
-\item Líneas de transmisión\cite{velalineas1999}
-\end{itemize}
+
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -338,7 +316,7 @@ El \textbf{factor a ruido} se define como el cociente entre la potencia SNR de e
 \begin{notation}
 Para voltaje, 6dB indica que la salida es dos veces el valor de la entrada, es decir: Si la entrada es 1, la salida será 2. Para potencia, 3dB indica lo mismo: el valor de la salida es dos veces el valor de la entrada.
 \end{notation}
-\subsection{Ángulo crítico}\index{Ángulo crítico}
+\subsection{Ángulo crítico}\index{Angulo crítico}
 Debemos recordar ecuaciones como Ley de Snell,
 \begin{definition}[Ley de Snell]
 \begin{align}
@@ -692,10 +670,87 @@ Donde:
 \begin{remark}
 Recuerda que en todas las ecuaciones se debe trabajar con unidades \textbf{lineales}. Esto significa que todos los decibelios que nos da los problemas deben ser transformadas a sus equivalentes lineales para poder usar las ecuaciones dadas a los largo de este capitulo.
 \end{remark}
+\section{Transformador $\lambda$/4}
+El transformador lambda-cuartos (``\textit{Quarter-Wavelength}´´) es el adaptador de impedancias más sencillo y usado para conseguir la impedancia que queremos en una línea de transmisión. Se trata de una línea de transmisión con longitud $\lambda$/4 en la frecuencia de diseño. El ancho de banda de adaptación de un transformador lambda-cuartos suele ser estrecho, aunque se puede ensanchar utilizando múltiples secciones lambda-cuartos en lugar de solo una. Por lo tanto si solo queremos que el diseño este adaptado a la frecuencia de trabajo con solo una sección nos valdría, sin embargo, si necesitamos un ancho de banda mayor en el que nuestro circuito funcione y cumpla las especificaciones, necesitaremos utilizar múltiples secciones adaptadoras.\\
+\begin{notation}
+Hay una demostración detrás de toda la teoría y demostración de las ecuaciones, puedes buscarlas en libros o en internet. Usaremos las ecuaciones resultantes
+\end{notation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Ant/ant21.png}
+\caption{Transformador $\lambda/4$.}
+\label{fig:trans lambda}
+\end{figure}
+\textbf{Pasos para calcular}:
+\begin{enumerate}
+\item Normalizamos la impedancia. Ubicamos en la carta.
+\item Trazamos un círculo con entro en 1 y radio el punto que trazamos anteriormente.
+\item Ubicamos el cruce con el eje R más cercano. Siguiente la dirección \textit{hacia el generador}. En la parte superior de la carta tomamos como punto de referencia resistencia infinita, en la parte negativa tomamos resistencia cero. Ese valor hay que desnormalizar para hallar $Z_b$.
+\item Con el valor hallado calculamos $Z_a$.
+\item Con el mismo criterio del paso 3, trazamos una recta desde el centro de la carta que pase por el punto de la impedancia de carga. Hallamos la intersección de la recta y el anillo exterior "hacia el generador". Hallamos la distancia desde ese punto hacia Z=0 o Z=$\infty$ para hallar la longitud.
+\end{enumerate}
+\begin{example}[Se tiene una $Z_L=32-\iu 40$ con una impedancia característica de $80\Omega$. Diseñe la adaptación por $\lambda/4$.]
+Normalizamos nuestra impedancia, en este caso estamos trabajando con una impedancia característica de 80 y no de 50 como casi siempre se suele hacer:
+\begin{displaymath}
+\overline{Z_L}=\frac{32-\iu 40}{80}=0.4-\iu 0.5
+\end{displaymath}
+Ubicamos la impedancia normalizada en la carta de Smith.
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+       % Resistance plot - violet
+        \addplot+[mark=*,only marks,samples at={0, -.01,...,-.5}, mark options={solid},color={violet},mark size=.2,line width=1] (0.4,x);
+        % Reactance plot - blue
+        \addplot[domain=0:90, samples=600, color=blue] {-.5};
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.4,-0.5) [$\overline{Z_L}$]};
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+Trazamos un circulo con centro en 1 y como radio el punto $Z_L$:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=violet] (0pt,0pt) circle (1.5cm);
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.4,-0.5) [$\overline{Z_L}$] (0.32,0) [$\overline{Z_b}$]};
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+El círculo corta la carta de Smith en dos puntos, \textbf{elegimos el más cercano}\footnote{Si estamos en la parte negativa, buscamos a R=0, si estamos en la parte positiva buscamos R=$\infty$. Sigue la dirección del anillo que indica hacia el generador.}. Ese punto es la impedancia del punto B normalizada. Desnormalizando:
+\begin{displaymath}
+Z_b=0.32\cdot 80=25.6\Omega
+\end{displaymath}
+Esto significa que la carga compleja que tenemos, en los puntos de $Z_b$ presenta una impedancia real a una distancia $\ell$. La distancia $\ell$ es hallada trazando una línea \textcolor{red}{recta} desde el origen hacia el exterior de la carta, que pase por le punto $\overline{Z_L}$:
+\begin{center}
+\begin{tikzpicture}
+	\begin{smithchart}[show origin]
+        % Circle 
+        \path[draw=violet] (0pt,0pt) circle (1.5cm);
+		%Line
+		\addplot+ [mark size=1,red,line width=1] coordinates{(1,0) (0,-0.57)};
+        %Puntos
+        \addplot+ [black,mark=o,only marks,point meta=explicit symbolic,nodes near coords] coordinates {(0.4,-0.5) [$\overline{Z_L}$] (0.32,0) [$\overline{Z_b}$]};
+	\end{smithchart}
+\end{tikzpicture}
+\end{center}
+En el anillo hacia el generador, leemos el valor que resulta: 0.417 y nos movemos con la dirección que indica el anillo \textit{wavelength toward generator} hacia el eje real más cercano (en este caso R=0\footnote{Hay situaciones en la cual el más cercano es R=$\infty$, también es valido.}). Si nos recordamos, la vuelta completa es de $0.5\lambda$, para hallar esa distancia restamos:
+\begin{displaymath}
+\ell=0.5-0.417=0.083\lambda
+\end{displaymath}
+Recuerda que $\lambda$ se calcula con la ecuación \ref{eq:longitud de onda}\\
+Calculando la impedancia de $\lambda/4$:
+\begin{displaymath}
+Z_a=\sqrt{25.6\cdot 80}=45.25\Omega
+\end{displaymath}
+Con ambas impedancias, solo bastaría con conseguir un cable de longitud $\lambda/4$ de impedancia $Z_a=45.25$\\
+Con el transformador podemos acoplar una carga compleja o desacoplada a nuestra impedancia característica, logrando así la máxima eficiencia, máximo rendimiento, máxima transferencia de potencia, mínimo coeficiente de reflexión.
+\end{example}
 \chapterimage{chapter_head_ANT.pdf} % Chapter heading image
-
 \chapter{Tipos de antenas}
 \section{Antena Dipolo}\index{Antena dipolo}
+
 \subsection{Diseño de un dipolo}
 Vamos a diseñar un dipolo simétrico, usaremos una frecuencia de 93.5 MHz. Como vimos en teoría de la antena y usando la ecuación \ref{eq:longitud de onda} calculamos la distancia de los brazos:
 \begin{wrapfigure}{r}{0.3\linewidth}
@@ -1049,6 +1104,7 @@ Las rutas estáticas flotantes son rutas estáticas que se utilizan para proporc
 \caption{Ruta estática flotante.}
 \end{figure}
 \section{Routing dinámico}
+Los protocolos de enrutamiento mantienen tablas de enrutamiento dinámicas por medio de mensajes de actualización del enrutamiento, que contienen información acerca de los cambios sufridos en la red, y que indican al software del router que actualice la tabla de enrutamiento en consecuencia. Intentar utilizar el enrutamiento dinámico sobre situaciones que no lo requieren es una pérdida de ancho de banda, esfuerzo, y en consecuencia de dinero. 
 \subsection{Comparación entre routing dinámico y estático}
 \textbf{Routing estático}
 \begin{enumerate}
@@ -1091,8 +1147,16 @@ características:
 \item \textbf{Distancia}: identifica la distancia hasta la red de destino. Se basa en una métrica como el conteo de saltos, el costo, el ancho de banda y el retraso, entre otros.
 \item \textbf{Vector}: especifica el sentido en que se encuentra el router de siguiente salto o la interfaz de salida para llegar al destino.
 \end{itemize}
+Su métrica se basa en lo que se le llama en redes “Número de Saltos”, es decir la cantidad de routers por los que tiene que pasar el paquete para llegar a la red destino, la ruta que tenga el menor número de saltos es la más óptima y la que se publicará.
+\begin{itemize}
+\item Visualiza la red desde la perspectiva de los vecinos
+\item Actualizaciones periódicas
+\item Transmitirá copias completas o parciales de las tablas de enrutamiento
+\item Convergencia lenta
+\item Incrementa las métricas a través de las actualizaciones
+\end{itemize}
 \subsection{Estado de enlace}
-A diferencia de la operación del protocolo de routing vector distancia, un router configurado con un protocolo de routing de estado de enlace puede crear una ``vista completa'' o una topología de la red al reunir información proveniente de todos los demás routers. Un router de estado de enlace usa la información de estado de enlace para crear un mapa de la topología y seleccionar la mejor ruta hacia todas las redes de destino en la topología. Los routers con RIP habilitado envían actualizaciones periódicas de su información de routing a sus vecinos. Los protocolos de enrutamiento de link-state no usan actualizaciones periódicas. Una vez que se produjo la convergencia de la red, la actualización del estado de enlace solo se envía cuando se produce un cambio en la topología. Cuando se produce un fallo en la red el router que detecta el error utiliza una dirección multicast para enviar una tabla LSA (anuncion de estado de enlace), cada router recibe y la reenvía a sus vecinos. La métrica utilizada se basa en el coste, que surge a partir del algoritmo de Dijkstra y se basa en la velocidad del enlace.
+A diferencia de la operación del protocolo de routing vector distancia, un router configurado con un protocolo de routing de estado de enlace puede crear una ``vista completa'' o una topología de la red al reunir información proveniente de todos los demás routers. Un router de estado de enlace usa la información de estado de enlace para crear un mapa de la topología y seleccionar la mejor ruta hacia todas las redes de destino en la topología. Los routers con RIP (Protocolo de información de encaminamiento) habilitado envían actualizaciones periódicas de su información de routing a sus vecinos (esto hace al RIP que se limite a pequeñas redes). Los protocolos de enrutamiento de link-state no usan actualizaciones periódicas. Una vez que se produjo la convergencia de la red, la actualización del estado de enlace solo se envía cuando se produce un cambio en la topología. Cuando se produce un fallo en la red el router que detecta el error utiliza una dirección multicast para enviar una tabla LSA (anuncion de estado de enlace), cada router recibe y la reenvía a sus vecinos. La métrica utilizada se basa en el coste, que surge a partir del algoritmo de Dijkstra y se basa en la velocidad del enlace.
 \subsubsection*{Ventajas}
 \begin{enumerate}
 \item Los protocolos de estado de enlace solo envían actualizaciones cuando
@@ -1103,7 +1167,7 @@ hay cambios en la topología.
 \item Las redes con protocolos de enrutamiento por estado de enlace soportan resúmenes de ruta.
 \end{enumerate}
 \section{NAT para IPv4}
-El término NAT es la abreviatura de \textit{Network Address Transalation} o direcciones de red. NAT es el proceso mediante el cual una o más direcciones locales (\textit{local address}) se traducen en una más direcciones globales (\textit{global IP address}) y viceversa, con el fin de proporcionar acceso a internet a los host locales.\\
+El término NAT es la abreviatura de \textit{Network Address Transalation} o traducción de direcciones de red. NAT es el proceso mediante el cual una o más direcciones locales (\textit{local address}) se traducen en una más direcciones globales (\textit{global IP address}) y viceversa, con el fin de proporcionar acceso a internet a los host locales.\\
 Además de esto el NAT es el encargado de sustituir la red privada o \textit{private network} por la IP pública del router, con el objetivo de facilitar el acceso a internet de los nodos en direcciones privadas, haciendo que los direccionamientos sean compatibles. Este router mantiene una tabla de conexiones para saber luego a quién se debe enviar los datos.\\
 Este puede ser el caso de tu red doméstica y la red de Internet, siendo necesario el modo NAT para que puedas llegar a conectar a la red global y así recibir o enviar información a ella. Si lo has pensado, la mayoría de usuarios tenemos las mismas direcciones IP dentro de nuestra casa, las típicas 192.168.1.xxx, o las que nosotros decidamos configurar en el router en un momento dado. Entonces te preguntas: si son las mismas IP ¿por qué el paquete de datos no le llega al vecino en lugar de a mí?\\
 Podemos decir que en vez de tener que asignar una dirección IP diferente para cada de los dispositivos conectados, el NAT lo que hace es dar una única para todos. Puede ser cualquiera entre 192.168.0.0 y 192.168.255.255. Los paquetes de datos que proceden de Internet contienen la dirección IPv4 externa en su encabezado. Según el tipo de datos, el NAT lo reenvía a los dispositivos privados o internos para que los datos puedan procesarse según sea necesario.\\
@@ -1135,7 +1199,7 @@ El proceso contrario será el mismo, cuando un paquete llega a nuestro router a 
 \textbf{Ventajas}:
 \begin{itemize}
 \item Conserva los esquemas y rangos de direccionamiento registrados legalmente, permitiendo así la privatización de intranets, como sabemos, el surgimiento del NAT fue para ahorrar en uso de direcciones IP públicas, ya que estas tenían un número limitado.
-\item Conserva las direcciones a través de la multiplexación de aplicaciones a nivel de puertos, esto se utiliza en la mayoría de casos en los que se utiliza PAT (Traducción de la dirección del puerto) por sus siglas en inglés, y en el cual podemos realizar el manejo de múltiples equipos y/o aplicaciones utilizando una sola dirección IP gracias a la utilización de los puertos TCP y UDP.
+\item Conserva las direcciones a través de la multiplexación de aplicaciones a nivel de puertos, esto se utiliza en la mayoría de casos en los que se utiliza PAT (Traducción de la dirección del puerto, surge de la sobrecarga del NAT) por sus siglas en inglés, y en el cual podemos realizar el manejo de múltiples equipos y/o aplicaciones utilizando una sola dirección IP gracias a la utilización de los puertos TCP y UDP.
 \item Aumenta la flexibilidad de las conexiones a las redes públicas, esto quiere decir que podemos mantener nuestro direccionamiento privado IPv4 y al mismo tiempo permite mantener los cambios a nuevas direcciones públicas.
 \item Permite ocultar las direcciones IPv4 privadas de los usuarios y otros dispositivos, esto significa que, al momento de la traducción de direcciones, el usuario tendrá una dirección privada y a su vez una dirección pública diferente a esa dirección privada evitando que esta sea conocida.
 \end{itemize}
@@ -1165,11 +1229,11 @@ R1(config-int)# ip nat outside
 Por otro lado tenemos la configuración de la NAT dinámica, la cual se encarga de que las direcciones IP privadas pertenecientes a una red tengan acceso a otras redes por medio de un conjunto de direcciones de IP pública, las cuales se asignan a cada host de forma aleatoria.\\
 Para configurar la NAT dinámica en CPT, primeramente ingresamos al modo de configuración global del router. Luego creamos una conjunto de direcciones IP públicas por las cuales accederemos a otras redes
 \begin{lstlisting}[numbers=none]
-R1(config)# ip nat pool [nombre] [conjunto de direcciones públicas] netmask [máscara de la red]
+R1(config)# ip nat pool [nombre] [conjunto de direcciones publicas] netmask [mascara de la red]
 \end{lstlisting}
 Posteriormente configuramos una lista de acceso, la cual contendrá las direcciones de nuestra red privada
 \begin{lstlisting}[numbers=none]
-R1(config)# access-list [N#] permit [dirección de red] [máscara invertida]
+R1(config)# access-list [N#] permit [direccion de red] [mascara invertida]
 \end{lstlisting}
 Finalmente, configuramos las interfaces del router que contendrán la red privada y la red global.
 \begin{lstlisting}[numbers=none]
@@ -1184,7 +1248,7 @@ R1(config)#ip nat inside source static 192.168.1.1 192.168.2.200
 \section{Tecnología WAN}
 Una red de área extensa (WAN) es una red privada de telecomunicaciones geográficamente distribuida que interconecta múltiples redes de área local (LANs). En una empresa, una WAN puede consistir en conexiones a la sede de una empresa, sucursales, instalaciones de colocación, servicios en la nube y otras instalaciones. Normalmente, se utiliza un enrutador u otro dispositivo multifunción para conectar una LAN a una WAN. Las WAN de empresa permiten a los usuarios compartir el acceso a aplicaciones, servicios y otros recursos ubicados centralmente. Esto elimina la necesidad de instalar el mismo servidor de aplicaciones, cortafuegos u otro recurso en varias ubicaciones.\\
 Una WAN se describe mejor como una red de datos que cubre una distancia geográfica relativamente amplia. A diferencia de una LAN, que normalmente se localiza en un área relativamente pequeña, como una oficina, un edificio o un campus pequeño, una WAN suele abarcar distancias de unos pocos a miles de kilómetros.\\
-Con el fin de interconectar lugares geográficamente dispersos, las empresas suelen proporcionar servicios de una compañía de telecomunicaciones, generalmente alquilar enlaces sobre una base mensual. La velocidad y el costo de estos enlaces pueden variar considerablemente, dependiendo de los requisitos de ancho de banda, las distancias a recorrer y las tecnologías disponibles.
+Con el fin de interconectar lugares geográficamente dispersos, los \textbf{proveedores de servicios}, generalmente alquilan enlaces sobre una base mensual. La velocidad y el costo de estos enlaces pueden variar considerablemente, dependiendo de los requisitos de ancho de banda, las distancias a recorrer y las tecnologías disponibles.
 \subsection{Operaciones}
 Las redes WAN trabajan sobre el modelo TCP/IP, más específico, en la capa 1 y 2. Los protocolos de capa 1 describen la manera de  proporcionar \textbf{conexiones} eléctricas, mecánicas, operativas  y funcionales a los servicios de un proveedor de servicios  de comunicación. Los protocolos de capa 2 definen la forma en que se  \textbf{encapsulan} los datos y los mecanismos para transferir las  tramas resultantes.\\
 Se muestra la terminología que normalmente se usa para describir las conexiones WAN, entre otros:
@@ -1198,51 +1262,134 @@ Se muestra la terminología que normalmente se usa para describir las conexiones
 \item \textbf{Red interurbana}: consta de líneas de comunicación, switches, routers y otros equipos digitales, de largo alcance y de fibra óptica dentro de la red del proveedor de servicios WAN.
 \end{itemize}
 \subsection{Opciones de acceso}
-Existen diversas opciones de conexión de acceso  WAN que los ISP pueden utilizar para conectar el  bucle local al perímetro empresarial. Cada opción tiene distintas de ventajas y  desventajas, así como diferencias con respecto a la  tecnología, la velocidad y el costo.
+Existen diversas opciones de conexión de acceso  WAN que los ISP (Proveedor de servicios de internet) pueden utilizar para conectar el  bucle local al perímetro empresarial. Cada opción tiene distintas de ventajas y  desventajas, así como diferencias con respecto a la  tecnología, la velocidad y el costo.
 \subsubsection{Pública}
 El proveedor de servicios puede ofrecer acceso a Internet de banda ancha mediante una línea de suscriptor digital (DSL), cable y acceso satelital. Las opciones de conexión de banda ancha normalmente se usan para conectar oficinas pequeñas y trabajadores a distancia a un sitio corporativo a través de Internet. Los datos que se transmiten entre sitios corporativos a través de la infraestructura WAN pública se deben proteger mediante VPN.\\
 Las conexiones de infraestructura pública incluyen DSL, cable, tecnología inalámbrica y datos móviles 3G/4G. En las conexiones mediante infraestructura pública, se puede proporcionar seguridad con redes virtuales privadas (VPN) de acceso remoto o de sitio a sitio. En esta sección se comparan las diferentes tecnologías WAN públicas: DSL, cable, tecnología inalámbrica y datos móviles 3G/4G. Además de la seguridad con redes virtuales privadas (VPN).
 \subsubsection{Privada}
 Los proveedores de servicios pueden ofrecer líneas arrendadas punto a punto dedicadas, enlaces de conmutación de circuitos, como PSTN o ISDN, y enlaces de conmutación de paquetes, como WAN Ethernet, ATM o Frame Relay.\\
 El uso de líneas alquiladas o arrendadas proporciona conexiones punto a punto dedicadas permanentes. El acceso por dial-up, si bien es lento, aún es viable para las áreas remotas con opciones de WAN limitadas. Otras opciones de conexión privada incluyen ISDN, Frame Relay, ATM, WAN Ethernet, MPLS y VSAT. En esta sección se comparan las diferentes tecnologías WAN privadas: Líneas arrendadas, dial-up, ISDN, Frame Relay, ATM, WAN Ethernet, MPLS y VSAT.
-\begin{vocabulary}[Líneas arrendada]
+\begin{definition}[Ethernet WAN]
+Proporciona ancho de banda dedicado y de alta velocidad entre dos sitios, tráfico convergente de alta velocidad, incluyendo voz, video y datos en la misma infraestructura de red.
+\end{definition}
+\begin{definition}[Líneas arrendada]
 Una línea arrendada, también conocida como línea dedicada, conecta dos ubicaciones para servicios privados de telecomunicaciones de voz y/o datos. Una línea arrendada no es un cable dedicado; es un circuito reservado entre dos puntos. La línea arrendada está siempre activa y disponible por una cuota mensual fija. Este término también hace referencia a:
 \begin{itemize}
 \item Circuitos arrendados
 \item Enlace serial
 \item Línea serial
-\item Enlace punto a punto
+\item Enlace \textbf{punto a punto}
 \item Líneas T1/E1 o T3/E3
 \end{itemize}
-\end{vocabulary}
-\begin{vocabulary}[Dial Up]
+\end{definition}
+\begin{definition}[Dial Up]
 La tecnología Dial-Up le permite acceder al servicio Internet a través de una línea telefónica analógica y un MODEM. El módem modula los datos binarios en una  señal analógica en el origen y demodula la señal  analógica en datos binarios en el destino. Las características físicas del bucle local y su  conexión a la PSTN limitan la velocidad de señal  a menos de 56 kb/s.
-\end{vocabulary}
-\begin{vocabulary}[ISDN]
-Red digital de servicios integrados es una red que procede de la evolución de la \textbf{Red telefónica básica} (RTB) o  \textbf{Red telefónica conmutada} (RTC) que facilita conexiones digitales extremo a extremo entre terminales conectadas a ella.\\
-ISDN cambia las conexiones internas de la  PSTN ( Red Telefónica Pública Conmutada) para que transporte señales digitales  multiplexadas por división de tiempo (TDM) en  vez de señales analógicas. TDM permite que se transfieran dos o más  señales, o flujos de bits, como subcanales en  un canal de comunicación. La conexión ISDN puede requerir un adaptador  de terminal (TA), que es un dispositivo utilizado  para conectar las conexiones de la interfaz de  velocidad básica (BRI) de ISDN a un router.
-\end{vocabulary}
-\begin{vocabulary}[Frame relay]
-Frame Relay es una tecnología de protocolo de red de conmutación de paquetes digital de capa de enlace de datos diseñada para conectar redes de área local (LAN) y transferir datos a través de redes de área amplia (WAN). Frame Relay es una tecnología de paquetes rápida, lo que significa que el protocolo no intenta corregir errores. Requiere una conexión dedicada durante el período de transmisión y no es ideal para voz o video, que requieren un flujo constante de transmisiones.
-\end{vocabulary}
-\begin{vocabulary}[ATM]
+\end{definition}
+\begin{definition}[PSTN]
+PSTN son las siglas correspondientes a Red Telefónica Pública Conmutada. Se trata de una red tradicional de teléfono que logra que se puedan realizar las llamadas locales a larga distancia en tiempo real y de forma fluida. El objetivo de esta red es lograr una transmisión efectiva de voz de emisor a receptor a través de un auricular.
+\end{definition}
+\begin{definition}[ISDN]
+Red digital de servicios integrados o \textbf{RDSI} es una red que procede de la evolución de la \textbf{Red telefónica básica} (RTB) o  \textbf{Red telefónica conmutada} (RTC) que facilita conexiones digitales extremo a extremo entre terminales conectadas a ella.\\
+ISDN cambia las conexiones internas de la  PSTN (Red Telefónica Pública Conmutada) para que transporte señales digitales  multiplexadas por división de tiempo (TDM) en  vez de señales analógicas. TDM permite que se transfieran dos o más  señales, o flujos de bits, como subcanales en  un canal de comunicación. La conexión ISDN puede requerir un adaptador  de terminal (TA), que es un dispositivo utilizado  para conectar las conexiones de la interfaz de  velocidad básica (BRI) de ISDN a un router.
+\end{definition}
+\begin{definition}[Frame relay]
+Frame Relay es una tecnología de protocolo de red de conmutación de paquetes digital de capa de enlace de datos diseñada para conectar redes de área local (LAN) y transferir datos a través de redes de área amplia (WAN). Frame Relay es una tecnología de \textbf{paquetes o celdas} rápida, lo que significa que el protocolo no intenta corregir errores. Requiere una conexión dedicada durante el período de transmisión y no es ideal para voz o video, que requieren un flujo constante de transmisiones.
+\end{definition}
+\begin{definition}[ATM]
 La tecnología del modo de transferencia  asíncrona (ATM) puede transferir voz, video y  datos a través de redes privadas y públicas.\\
 Una línea ATM típica necesita casi un 20\% más  de ancho de banda que Frame Relay para  transportar el mismo volumen de tráfico de red.
 Cuando la celda transporta los paquetes de  capa de red segmentados, la sobrecarga es  mayor debido a que el ATM debe poder rearmar  los paquetes en el destino.
-\end{vocabulary}
-\begin{vocabulary}[MPLS]
+\end{definition}
+\begin{definition}[MPLS]
 El switching por etiquetas multiprotocolo  (Multiprotocol Label Switching, MPLS) es una  tecnología WAN de alto rendimiento multiprotocolo  que dirige los datos desde un router al siguiente. 
 MPLS se basa en etiquetas de ruta cortas en lugar de direcciones de red IP. Se llama multiprotocolo porque tiene la capacidad de  transportar cualquier contenido, incluido tráfico IPv4,  IPv6, Ethernet, ATM, DSL y Frame Relay. Usa etiquetas que le indican al router qué hacer con un paquete.
-\end{vocabulary}
-\begin{vocabulary}[VSAT]
+\end{definition}
+\begin{definition}[VSAT]
 Una VSAT es una pequeña antena satelital que se  utiliza para crear una WAN privada que proporciona  conectividad a ubicaciones remotas. El satélite se encuentra en órbita geosincrónica en el espacio. Las señales deben recorrer alrededor de  35 786 km hasta el satélite y regresar.
-\end{vocabulary}
-\begin{vocabulary}[DSL]
-DSL (línea de suscriptor digital) es tecnología de banda ancha que proporciona transmisión de información a alta velocidad (hasta 7.1 Mbps) a través de una línea telefónica existente. Las velocidades son hasta 50 veces más rápidas que las de un módem por dial-up estándar de 28.8 Kbps. Además, el servicio DSL es instantáneo - con sólo un clic tendrás una conexión a Internet superrápida.
-\end{vocabulary}
-\begin{vocabulary}[VPN]
+\end{definition}
+\begin{definition}[DSL]
+DSL (línea de suscriptor digital) es una familia de tecnologías que proporcionan el acceso a Internet mediante la transmisión de datos digitales a través del par trenzado de hilos de cobre convencionales de la red telefónica básica o conmutada, constituida por las líneas de abonado: ADSL, ADSL2, ADSL2+, SDSL, IDSL, HDSL, SHDSL, VDSL y VDSL2. Esta tecnología de banda ancha que proporciona transmisión de información a alta velocidad (hasta 7.1 Mbps) a través de una línea telefónica existente. Las velocidades son hasta 50 veces más rápidas que las de un módem por dial-up estándar de 28.8 Kbps. Además, el servicio DSL es instantáneo - con sólo un clic tendrás una conexión a Internet superrápida. Hace uso de \textbf{DSLAM} (Digital Subscriber Line Access Multiplexer o Multiplexor de acceso de línea de abonado digital). Es el equipamiento que permite dotar a tu línea telefónica análoga, de servicios basados en ADSL (ya sea ADSL, ADSL+, VDSL). Básicamente, es una máquina con muchos filtros (uno por línea), que separa la frecuencia de voz (300 a 3.400 Hz) de la utilizada para datos (25 kHz a 1,104 MHz). CMTS son las siglas de Cable Modem Termination System. Es un equipo que se encuentra normalmente en la cabecera de la compañía de cable y se utiliza para proporcionar servicios de datos de alta velocidad, como Internet por cable o Voz sobre IP, a los abonados.
+\end{definition}
+\begin{definition}[VPN]
 VPN significa "Virtual Private Network" (Red privada virtual) y describe la oportunidad de establecer una conexión protegida al utilizar redes públicas. Las VPN cifran su tráfico en internet y disfrazan su identidad en línea. Esto le dificulta a terceros el seguimiento de sus actividades en línea y el robo de datos. El cifrado se hace en tiempo real.
-\end{vocabulary}
+\end{definition}
+\begin{definition}[SONET]
+La red óptica síncrona (SONET) es un protocolo de comunicación digital estandarizado que se utiliza para transmitir un gran volumen de datos a distancias relativamente largas utilizando un medio de fibra óptica. Con SONET, se transfieren múltiples flujos de datos digitales al mismo tiempo a través de fibra óptica utilizando LED y rayos láser. Los sistemas \textbf{SDH} son ampliamente usados, excepto en EE. UU. y Canadá, dónde se usa SONET. El SDH es un dispositivo digital que trabaja realizando multiplexación por división el tiempo. Toma pequeñas ranuras de tiempo y las ubica en forma ordenada en una ranura de tiempo más grande. La sucesión de ranuras en de tiempo se denomina “Trama”. Usa la tecnología \textbf{DWDM} es una técnica de transmisión, que realiza la multiplexación por división en longitudes de onda, es decir, que utiliza varias longitudes de onda de luz, descompuesta en colores, para enviar datos desde dos o más colores de luz que pueden viajar sobre una sola fibra óptica.
+\end{definition}
+\begin{definition}[DTE/DCE]
+El término DTE se refiere a Equipo Terminal de Datos (Data Terminal Equipment) y es un equipo que convierte información en señales y viceversa, como una computadora.\\
+El término DCE se refiere a Equipo de comunicación de Datos (Data Comunication Equipment) y está conectado al computador, por ejemplo un módem.
+\end{definition}
+\begin{definition}[CSU/DSU]
+Una \textbf{unidad de servicio de canal} (CSU) es un dispositivo que conecta un terminal a una línea digital. Una \textbf{unidad de servicio de datos} (DSU) es un dispositivo que lleva a cabo funciones de protección y de diagnóstico en una línea de telecomunicaciones. En general, los dos dispositivos se entregan formando una sola unidad, CSU/DSU.
+\end{definition}
+\begin{definition}[WiMAX]
+WiMAX es una tecnología de comunicaciones de red inalámbrica de próxima generación. La tecnología es similar a la Wi-Fi, pero proporciona acceso de banda ancha de alta velocidad en un área más grande con menos interferencias. WiMAX permite el acceso móvil a Internet. Para que lo entiendas de una manera sencilla, podemos referirnos a WiMAX como una alternativa al cable a la hora de llevar Internet a tu casa mediante conexión inalámbrica basada en los estándares de comunicación IEEE 802.16, y que permite llevarte Internet con un alcance que puede llegar a los 70 kilómetros.
+\end{definition}
+\begin{definition}[BGP]
+El protocolo de puerta de enlace de frontera o BGP es un protocolo mediante el cual se intercambia información de encaminamiento entre sistemas autónomos, por ejemplos distintos servicios de Internet.
+\end{definition}
+\section{EIGRP}
+El protocolo de routing de gateway interior mejorado (EIGRP – Enhanced Interior Gateway Routing Protocol) es un protocolo de routing vector distancia avanzado desarrollado por Cisco Systems. Como lo sugiere el nombre, EIGRP es una mejora de otro protocolo de routing de Cisco: el protocolo de routing de gateway interior (IGRP).\\
+EIGRP incluye características propias de los protocolos de routing de estado de enlace. EIGRP es apto para numerosas topologías y medios diferentes. En una red bien diseñada, EIGRP puede escalar para incluir varias topologías y puede proporcionar tiempos de convergencia extremadamente rápidos con un mínimo tráfico de red.
+\subsection{Características}
+\begin{itemize}
+\item \textbf{Algoritmo de actualización difusa}: El algoritmo de actualización por difusión (DUAL), que es el motor de cómputo detrás del EIGRP, constituye el centro del protocolo de routing. DUAL garantiza rutas de respaldo y sin bucles en todo el dominio de routing. Al usar DUAL, EIGRP almacena todas las rutas de respaldo disponibles a los destinos, de manera que se puede adaptar rápidamente a rutas alternativas si es necesario.
+\item \textbf{Establecimiento de adyacencias de vecinos}: EIGRP establece relaciones con routers conectados directamente que también están habilitados para EIGRP. Las adyacencias de vecinos se usan para rastrear el estado de esos vecinos.
+\item \textbf{Protocolo de transporte confiable}: El protocolo de transporte confiable (RTP) es exclusivo de EIGRP y se encarga de la entrega de los paquetes EIGRP a los vecinos. RTP y el rastreo de las adyacencias de vecinos establecen el marco para DUAL.
+\item \textbf{Actualizaciones parciales y limitadas}: En lo que respecta a sus actualizaciones, en EIGRP se utilizan los términos “parcial” y “limitada”. A diferencia de RIP, EIGRP no envía actualizaciones periódicas, y las entradas de ruta no vencen. El término “parcial” significa que la actualización solo incluye información acerca de cambios de ruta, como un nuevo enlace o un enlace que deja de estar disponible. El término “limitada” se refiere a la propagación de las actualizaciones parciales que se envían solo a aquellos routers que se ven afectados por el cambio. Esto minimiza el ancho de banda que se requiere para enviar actualizaciones de EIGRP.
+\item \textbf{Balanceo de carga de mismo costo o con distinto costo}: EIGRP admite balanceo de carga de mismo costo y balanceo de carga con distinto costo, lo que permite a los administradores distribuir mejor el flujo de tráfico en sus redes.
+\end{itemize}
+\subsection{Detección de la ruta inicial del EIGRP}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{in2/in12.png}
+\caption{Adyacencia de vecinos}
+\end{figure}
+\begin{enumerate}
+\item El router R1 comienza incorporando el dominio  de routing del EIGRP y envía un paquete de  saludo del EIGRP a todas las interfaces  habilitadas para el EIGRP.
+\item El router R2 recibe el paquete de saludo y
+agrega al R1 a su tabla de vecinos.
+\begin{itemize}
+\item El R2 envía un paquete de actualización que  contiene todas las rutas que conoce.
+\item El R2 envía un paquete de saludo del EIGRP al R1.
+\end{itemize}
+\item El R1 actualiza su tabla de vecinos con el R2.
+\end{enumerate}
+Una vez que ambos routers intercambian saludos, se establece la adyacencia de vecino
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{in2/in13.png}
+\caption{Tabla de topología de EIGRP}
+\end{figure}
+\begin{enumerate}
+\item El R1 recibe la actualización de EIGRP del vecino R2 e incluye información acerca de las rutas que anuncia el vecino, incluida la métrica a cada destino. El R1 agrega todas las entradas de actualización a su tabla de topología. La tabla de topología incluye todos los destinos anunciados por los routers vecinos (adyacentes) y el costo (métrica) para llegar a cada red.
+\item Los paquetes de actualización EIGRP utilizan entrega confiable; por lo tanto, el R1 responde con un paquete de acuse de recibo EIGRP que informa al R2 que recibió la actualización.
+\item El R1 envía una actualización de EIGRP al R2 en la que anuncia las redes que conoce, excepto aquellas descubiertas del R2 (horizonte dividido).
+\item El R2 recibe la actualización de EIGRP del vecino R1 y agrega esta información a su propia tabla de topología.
+\item El R2 responde al paquete de actualización EIGRP del R1 con un acuse de recibo EIGRP.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{in2/in14.png}
+\caption{Convergencia del EIGRP}
+\end{figure}
+\begin{enumerate}
+\item Después de recibir los paquetes de actualización EIGRP del R2, el R1 utiliza la información en la tabla de topología para actualizar su tabla de routing IP con la mejor ruta a cada destino, incluidos la métrica y el router del siguiente salto.
+\item De la misma manera que el R1, el R2 actualiza su tabla de routing IP con las mejores rutas a cada red.
+\end{enumerate}
+Llegado a este punto, se considera que EIGRP está en estado convergente en ambos routers.
+\subsection{Métricas}
+De manera predeterminada, EIGRP utiliza los siguientes valores en su métrica compuesta para calcular la ruta preferida a una red:
+\begin{itemize}
+\item \textbf{Ancho de banda}: el ancho de banda más lento entre todas las interfaces de salida, a lo largo de la ruta de origen a destino.
+\item \textbf{Retraso}: la acumulación (suma) de todos los retrasos de las interfaces a lo largo de la ruta (en decenas de microsegundos).
+\end{itemize}
+Se pueden utilizar los valores siguientes, pero no se recomienda, porque generalmente dan como resultado recálculos frecuentes de la tabla de topología:
+\begin{itemize}
+\item \textbf{Confiabilidad}: representa la peor confiabilidad entre origen y destino, que se basa en keepalives.
+\item \textbf{Carga}: representa la peor carga en un enlace entre origen y destino, que se calcula sobre la base de la velocidad de paquetes y el ancho de banda configurado de la interfaz.
+\end{itemize}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -2453,10 +2600,6 @@ Para que salga lo mismo que en el caso anterior, K tiene que ser negativa. Como 
 %	ANEXOS
 %----------------------------------------------------------------------------------------
 \part{Anexos}
-%---------------------------------------------------------------
-% 		ENDING
-%---------------------------------------------------------------
-\stopcontents[part] % Manually stop the 'part' table of contents here so the previous Part page table of contents doesn't list the following chapters
 \section{Constantes universales}
 \begin{itemize}
 \item $\mu_0$: Permeabilidad en el vacío.
@@ -2469,6 +2612,21 @@ Para que salga lo mismo que en el caso anterior, K tiene que ser negativa. Como 
 \end{displaymath}
 \end{itemize}
 \section{Voltajes}
+\begin{center}
+%\includegraphics[width=0.7\linewidth]{Electro/Electro5.png}
+\end{center}
+\begin{equation}
+V_{rms}=\frac{1}{\sqrt{2}}\cdot V_p=0.7071\cdot V_p
+\label{eq:vrms}
+\end{equation}
+\begin{equation}
+V_{pr}=0.636\cdot V_p
+\label{eq:vprom}
+\end{equation}
+%---------------------------------------------------------------
+% 		ENDING
+%---------------------------------------------------------------
+\stopcontents[part] % Manually stop the 'part' table of contents here so the previous Part page table of contents doesn't list the following chapters
 
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY

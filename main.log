@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.8)  31 OCT 2022 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.7)  15 NOV 2022 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-09-28> (LegrandOrangeBook.cls
+L3 programming layer <2022-10-26> (LegrandOrangeBook.cls
 Document Class: LegrandOrangeBook 2022/01/26 The Legrand Orange Book Class v3.0
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -774,7 +774,7 @@ Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \sectionRuleOffset@mlpr=\skip68
 \toks@mlpr=\toks46
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/siunitx\siunitx.sty
-Package: siunitx 2022-10-04 v3.1.8 A comprehensive (SI) units package
+Package: siunitx 2022-10-23 v3.1.9 A comprehensive (SI) units package
 \l__siunitx_angle_tmp_dim=\dimen306
 \l__siunitx_angle_marker_box=\box116
 \l__siunitx_angle_unit_box=\box117
@@ -832,7 +832,7 @@ File: amsgen.sty 1999/11/30 v2.0 generic functions
 \l__siunitx_unit_total_int=\count354
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
-Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+Package: adjustbox 2022/10/17 v1.3a Adjusting TeX boxes (trim, clip, ...)
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
@@ -852,7 +852,7 @@ Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.st
 y
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
 \collectedbox=\box123
 )
 \tc@llx=\dimen312
@@ -874,7 +874,7 @@ File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
 \adjbox@ptotalheight=\dimen323
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
-Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
 \c@checkoddpage=\count356
 LaTeX Info: Redefining \checkoddpage on input line 45.
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
@@ -1006,11 +1006,11 @@ rs
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 154.
+less on input line 153.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 158.
+less on input line 157.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
@@ -1032,7 +1032,7 @@ Package: titletoc 2021/07/05 v2.14 TOC entries
 \ttl@leftsep=\dimen340
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
-Package: pdfpages 2022/05/22 v0.5v Insert pages of external PDF documents (AM)
+Package: pdfpages 2022/10/09 v0.5w Insert pages of external PDF documents (AM)
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
@@ -1047,7 +1047,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@fboxrule=\dimen345
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
-File: pppdftex.def 2022/05/22 v0.5v Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2022/10/09 v0.5w Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count363
 \AM@pagebox=\box127
@@ -1288,16 +1288,16 @@ File: biblatex.cfg
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Document encoding is UTF8 ....
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2022-09-28 L3 programming layer (loader) 
+Package: expl3 2022-10-26 L3 programming layer (loader) 
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdft
 ex.def
-File: l3backend-pdftex.def 2022-09-28 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count492
 \l__pdf_internal_box=\box129
 ))
 Package biblatex Info: ... and expl3
-(biblatex)             2022-09-28 L3 programming layer (loader) 
+(biblatex)             2022-10-26 L3 programming layer (loader) 
 (biblatex)             is new enough (at least 2020/04/06),
 (biblatex)             setting 'casechanger=expl3'.
 
@@ -1461,11 +1461,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip104
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 567.
+Package hyperref Info: Option `colorlinks' set `true' on input line 569.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 567.
+(hyperref)                setting the option has no effect on input line 569.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -3892,11 +3892,11 @@ File: Images//SD/SD70.png Graphic file (type png)
 <use Images//SD/SD70.png>
 Package pdftex.def Info: Images//SD/SD70.png  used on input line 2973.
 (pdftex.def)             Requested size: 158.09023pt x 70.76419pt.
-<Images//SD/SD71.png, id=2917, 558.085pt x 231.86626pt>
+<Images//SD/SD71.png, id=2917, 557.08125pt x 231.86626pt>
 File: Images//SD/SD71.png Graphic file (type png)
 <use Images//SD/SD71.png>
 Package pdftex.def Info: Images//SD/SD71.png  used on input line 2992.
-(pdftex.def)             Requested size: 279.04182pt x 115.93283pt.
+(pdftex.def)             Requested size: 278.53995pt x 115.93283pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -10004,7 +10004,7 @@ Package pdftex.def Info: Images//IM/IM18.png  used on input line 10216.
 
 ]
 
-Package caption Warning: \label without proper reference on input line 10251.
+Package caption Warning: \label without proper reference on input line 10250.
 See the caption package documentation for explanation.
 
 
@@ -11157,20 +11157,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 69541 strings out of 475385
- 1503826 string characters out of 2777379
- 2667514 words of memory out of 3000000
- 85051 multiletter control sequences out of 15000+600000
- 729577 words of font info for 1040 fonts, out of 8000000 for 9000
+ 69556 strings out of 475380
+ 1504216 string characters out of 2777244
+ 2668548 words of memory out of 3000000
+ 85068 multiletter control sequences out of 15000+600000
+ 729887 words of font info for 1042 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  141i,21n,139p,1857b,2953s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
@@ -11196,7 +11192,7 @@ C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C
 :/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C
 :/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:
 /Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (476 pages, 36500252 bytes).
+Output written on main.pdf (476 pages, 36500200 bytes).
 PDF statistics:
  9677 PDF objects out of 10688 (max. 8388607)
  3143 named destinations out of 3580 (max. 500000)
