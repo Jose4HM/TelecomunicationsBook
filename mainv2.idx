@@ -1,17 +1,19 @@
-\indexentry{Ancho de banda y capacidad de información|hyperpage}{10}
-\indexentry{Ruido|hyperpage}{11}
-\indexentry{Ruido térmico|hyperpage}{11}
-\indexentry{Angulo crítico|hyperpage}{12}
-\indexentry{Parámetros de acción directiva de antenas|hyperpage}{19}
-\indexentry{Antena dipolo|hyperpage}{25}
-\indexentry{Antena Marconi|hyperpage}{29}
-\indexentry{Protocolo spanning tree|hyperpage}{31}
-\indexentry{PAgP|hyperpage}{36}
-\indexentry{LACP|hyperpage}{37}
-\indexentry{Tipos de NAT|hyperpage}{47}
-\indexentry{Configurar NAT|hyperpage}{49}
-\indexentry{Ladder|hyperpage}{68}
-\indexentry{Distorsión lineal|hyperpage}{84}
-\indexentry{Distorsión no lineal|hyperpage}{87}
-\indexentry{Distorsión de armónicos|hyperpage}{90}
-\indexentry{Condición de oscilación|hyperpage}{100}
+\indexentry{Ancho de banda y capacidad de información|hyperpage}{11}
+\indexentry{Ruido|hyperpage}{12}
+\indexentry{Ruido térmico|hyperpage}{12}
+\indexentry{Angulo crítico|hyperpage}{13}
+\indexentry{Parámetros de acción directiva de antenas|hyperpage}{21}
+\indexentry{Antena dipolo|hyperpage}{27}
+\indexentry{Protocolo spanning tree|hyperpage}{39}
+\indexentry{PAgP|hyperpage}{44}
+\indexentry{LACP|hyperpage}{45}
+\indexentry{Tipos de NAT|hyperpage}{55}
+\indexentry{Configurar NAT|hyperpage}{57}
+\indexentry{Ladder|hyperpage}{76}
+\indexentry{Distorsión lineal|hyperpage}{99}
+\indexentry{Distorsión no lineal|hyperpage}{102}
+\indexentry{Distorsión de armónicos|hyperpage}{105}
+\indexentry{Condición de oscilación|hyperpage}{115}
+\indexentry{PLL con mezclador|hyperpage}{128}
+\indexentry{PLL con XOR|hyperpage}{130}
+\indexentry{PLL con biestable RS|hyperpage}{131}

@@ -502,10 +502,14 @@ Los parámetros de una antena son los que permiten especificar el funcionamiento
 \begin{itemize}
 \item Diagrama de radiación
 \item Densidad de potencia radiada
-\item Directividad
-\item Ganancia
-\item Polarización
-\item Impedancia
+\item \textbf{Directividad}: Es la relación entre la densidad de potencia radiada en la dirección de máxima radiación, a una cierta distancia R, y la potencia total radiada dividida por el área de la esfera de radio R. La directividad se puede calcular a partir del diagrama de radiación. La ganancia de una antena es igual a la directividad multiplicada por la eficiencia. La relación entre la densidad de potencia radiada por la antena en la dirección útil y la que radia por el lóbulo trasero se conoce como relación delante/detrás (forward/backward) y es un importante parámetro de diseño de la antena en lo relativo a interferencias.\\
+El ángulo que hace referencia al diagrama de radiación del lóbulo principal en el planohorizontal de la antena se denomina ``azimut'', que para el diagrama de radiación vertical se denomina ``ángulo de elevación'', que se diseña para concentrar el máximo de radiación para aquellos ángulos por debajo de la horizontal, que es donde se agrupan los usuarios, ya que las antenas se colocan en cotas elevadas para alcanzar una mayor cobertura.
+\item \textbf{Ganancia}: Es la relación entre la densidad de potencia radiada en la dirección del máximo a una distancia R y la potencia total entregada a la antena dividida por el área de una esfera de radio R. La eficiencia es la relación entre la ganancia y la directividad, que coincide con la relación entre la potencia total radiada y la potencia entregada a la antena.
+\item \textbf{Polarización}: La polarización electromagnética, en una determinada dirección, es la figura geométrica que traza el extremo del vector campo eléctrico a una cierta distancia de la antena, al variar el tiempo. La polarización puede ser lineal, circular y elíptica. La polarización lineal puede tomar distintas orientaciones (horizontal, vertical, $+45^\circ$, $-45^\circ$). Las polarizaciones circular o elíptica pueden ser a derechas o izquierdas (dextrógiras o levógiras), según el sentido de giro del campo (observado alejándose desde la antena). Se llama diagrama copolar al diagrama de radiación con la polarización deseada, y diagrama contrapolar (crosspolar, en inglés) al diagrama de radiación con la polarización contraria.
+\item \textbf{Rendimiento}: El rendimiento de una antena transmisora es la relación entre la potencia de radiación y la potencia total aplicada a la antena, en la cual se toma en cuenta, además de la potencia de radiación, la potencia de pérdida.
+\item \textbf{Impedancia}: Una antena se tendrá que conectar a un transmisor (o a un receptor) y deberá radiar (recibir) el máximo de potencia posible con un mínimo de perdidas. Se deberá adaptar el transmisor o receptor a la antena para una máxima transferencia de potencia, que se suele hacer a través de una línea de transmisión. Esta línea también influirá en la adaptación, debiéndose considerar entre otros, su impedancia característica y atenuación.\\
+La impedancia característica ($Z_0$) es un parámetro que depende de parámetros primarios; de la relación longitud-diámetro del material del conductor y de la frecuencia de trabajo, mientras que la impedancia de entrada es el parámetro circuital de la antena (relación del voltaje de entrada a la corriente de entrada).
+\item \textbf{Anchura de haz}:  Es un parámetro de radiación, ligado al diagrama de radiación. Se puede definir el ancho de haz a -3 dB, que es el intervalo angular en el que la densidad de potencia radiada es igual a la mitad de la máxima. También se puede definir el ancho de haz entre ceros, que es el intervalo angular del haz principal del diagrama de radiación, entre los dos ceros adyacentes al máximo.
 \item Adaptación
 \item Área y longitud efectiva
 \end{itemize}
@@ -818,7 +822,168 @@ Con esto ya calculado, llevamos la antena al ANSYS:\\
         \includegraphics[width=\linewidth]{Ant/ant20.png} & \textbf{Análisis} \newline 
         En la ventana de \textit{project manager}>Analysis (click derecho) > Add solution setup>Advanced. Colocamos nuestra frecuencia de trabajo y aceptar. En la siguiente ventana damos aceptar. Validamos el proyecto\footnote{En la pestaña \textit{Simulation}} y \textit{Analyze all}. Esperamos que termine.
 \end{tabular}
-\section{Antena Marconi}\index{Antena Marconi}
+\section{Isotrópica}
+La antena isotrópica es una antena hipotética sin pérdida (se refiere a que el área física es cero y por lo tanto no hay pérdidas por disipación de calor) que tiene intensidad de radiación igual en todas direcciones. (IEEE Standard Dictionary of Electrical and Electronic Terms, 1979). \\
+Sirve de base de referencia para evaluar la \textbf{directividad}. La antena isotrópica no es una antena, sino un concepto de referencia para evaluar a las antenas en su función de concentración de energía y a las pérdidas por propagación en el espacio libre en los enlaces de radiofrecuencia. Su patrón de radiación es una esfera.\\
+Cada aplicación y cada banda de frecuencia presentan características peculiares que dan origen a
+unos tipos de antenas especiales muy diversas. Los tipos más comunes de antenas son los que se
+explican en los siguientes apartados.
+\section{Dipolo simétrico y asimétrico}
+\begin{definition}[Antena armónica]
+Si se dispone de un número entero de semiondas, el dipolo recibe el nombre de \textbf{antena armónica}. La longitud de la antena armónica es:
+\begin{equation}
+l=p\cdot \frac{\lambda}{2}
+\label{eq:long ant armo}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{l}: Longitud de antena. (m)
+\item \textbf{p}: Número de armónicos.
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+\end{definition}
+\subsubsection{Campo de un dipolo simétrico}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ant/ant22.png}
+\caption{Disposición mutua del dipolo simétrico y del punto M en el que se termina su campo de radiación.}
+\end{figure}
+\begin{definition}[Intensidad de campo eléctrico]
+La intensidad del campo eléctrico del dipolo esta dada por:
+\begin{equation}
+E_{inst}=\frac{60\cdot I_m}{r}\cdot f(\theta)\cdot\sin\parentesis{\omega t-\beta r}
+\label{eq:campo electrico dipolo}
+\end{equation}
+Donde $I_m$ es la amplitud de la corriente en el antinodo.
+\end{definition}
+En la ecuación \ref{eq:campo electrico dipolo}, el factor $\sin\parentesis{\omega t-\beta r}$ indica que el dipolo simétrico emite ondas progresivas. Dentro de este factor, al ángulo de fase $\omega t-\beta r$ depende de la distancia \textit{r}, pero no de $r_1$ ni de $r_2$. Esto indica que le punto medio O es el \textbf{punto equivalente de radiación} (centro de fase de todo el dipolo), y lo segundo significa que las ondas radiadas son \textbf{esféricas}.\\
+La amplitud de la intensidad del campo eléctrico en la dirección del ángulo $\theta$:
+\begin{equation}
+E_m=\frac{60\cdot I_m}{r}f(\theta)
+\end{equation}
+Siendo $f(\theta)$ la función directividad del dipolo:
+\begin{equation}
+f(\theta)=\frac{\cos\parentesis{\frac{\pi l}{\lambda}\cos\theta}-\cos\parentesis{\frac{\pi l}{\lambda}}}{\sin\theta}
+\end{equation}
+\begin{corollary}
+Ésta es función del ángulo $\theta$, es decir, la amplitud de la intensidad de campo de un dipolo simétrico varía en el plano meridional a consecuencia de la interferencia de los campos de las secciones elementales del dipolo.
+\end{corollary}
+
+
+\section{Antena Marconi}
+Conceptualmente, se trata de un conductor vertical de poco espesor, perpendicular a la Tierra. Puede imaginarse como un brazo de un dipolo, al cual la Tierra le sirve de espejo para "fabricar" la imagen del otro brazo del dipolo.
+\begin{wrapfigure}{r}{0.45\linewidth}
+  \begin{center}
+    \includegraphics[width=0.4\linewidth]{ant/ant23.png}
+  \end{center}
+  \caption{Antena marconi}
+\end{wrapfigure}
+La \textbf{altura} de una antena Marconi es del orden de $\lambda/4$, con una impedancia caracteristica de $36\Omega$ y ganancia isotropica de 4.76dBi.
+\begin{remark}
+No confundir altura con longitud de onda de la antena. La altura es $\lambda/4$ y la longitud de onda de la antena es $\lambda/2$.
+\end{remark}
+Las perdidas del suelo afecta a la impedancia de la antena y el punto de eficiencia de la alimentación. Una antena de Marconi montado sobre un suelo perfectamente llevar a cabo tendría una entrada de impedancia que es la mitad de la impedancia de un dipolo, o como vimos anteriormente 36 ohms. Cuando se monta sobre un un fondo real , la impedancia de entrada puede variar de 38 ohm para una antena de radiodifusión de AM bien diseñado montado sobre un suelo preparado especialmente, a más de 100 ohm para una Marconi montada por encima, sin preparación de tierra pobre que no tiene radiales.\\
+La perdida de suelo \textbf{reduce} la eficiencia de la antena, porque parte de la energía que es suministrada a la antena se disipa en el suelo en vez de ser radiada. La eficiencia puede ser calculada a partir del \textbf{valor medio de resistencia} de entrada utilizando la siguiente formula:
+\begin{equation}
+\eta=\frac{36}{R_{input}}
+\end{equation}
+\begin{remark}
+El patrón de radiación de la Antena Marconi es una dona a la mitad. No existe radiación directamente hacia arriba en la dirección del cable.
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ant/ant24.png}
+\end{center}
+\end{remark}
+\subsubsection{Aplicaciones}
+\begin{itemize}
+\item servicios de radio terrestre
+\item telecomunicaciones a bajas frecuencias
+\end{itemize}
+\section{Yagi-Uda}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant25.png}
+\caption{Partes antena Yagi-Uda}
+\end{figure}
+\textbf{Elementos de antena}:
+\begin{itemize}
+\item \textbf{Excitación}: Pueden ser activos o excitados, estos se conectan directamente a la línea de transmisión y reciben potencia de la fuente.
+\item \textbf{Parásitos}: No se conectan a la línea de transmisión y reciben la energía a través de la inducción mutua. Estos elementos se clasifican en reflectores y directores:
+\begin{itemize}
+\item \textbf{Reflector}: Elemento parásito más largo que el elemento de excitación. Reduce la intensidad de la señal que esta en su dirección e incrementa la que esta en dirección opuesta.
+\item \textbf{Director}: Elementos parásitos más cortos que su elemento de excitación. Incrementa la intensidad de campo en su dirección y la reducen en la dirección opuesta.
+\end{itemize}
+\end{itemize}
+En las antenas Yagi, la polarización depende de la posición de la antena, pudiendo ser horizontal y vertical tanto su posición como la polarización. Además en común ver un dispositivo que adapta impedancias de la línea de transmisión a la antena (más de 4 elementos).
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ant/ant26.png}
+\caption{Polarización horizontal y vertical: antena yagi.}
+\end{figure}
+También se puede mezclar ambas, para generar con la misma antena las dos polarizaciones a la vez. Aunque se necesitan 2 cables coaxiales (uno por antena).\\
+Su \textbf{ganancia} esta dada por:
+\begin{equation}
+G=10\log n
+\end{equation}
+Donde \textit{n} es el número de elementos a considerar.\\
+En cuanto a las distancias: el \textbf{reflector} es una barra de aluminio aproximadamente 5\% más larga que el dipolo, y el \textbf{director} se corta aproximadamente 5\% respecto al elemento de excitación. Es espacio \textbf{entre los elementos} por lo general está entre 0.1 y 0.2 longitudes de onda.\\
+Directividad de una antena yagi es calculada con:
+\begin{equation}
+D=\frac{P_{max}}{\frac{W_t}{4\pi r2}}=\frac{4\pi r^2\cdot E_{max}^2}{I_1^2\cdot \Re{Z_{in}}\cdot\eta}
+\end{equation}
+\subsubsection{Aplicaciones}
+\begin{itemize}
+\item Las antenas Yagi UDA se emplean en la recepción de señales de TV ya que esta antena tiene una buena capacidad de recepción.
+\item Utilizado en aplicaciones de defensa.
+\item Empleado en el dominio astronómico.
+\item También se utiliza en radioastronomía.
+\end{itemize}
+\section{Antenas helicoidales}
+Antena con forma de helice a lo largo de un eje, trabaja con polarización circular y opera especialmente en el rango de 2 a 5 GHz (VHF y UHF), su diseño es muy fácil y práctico.\\
+La antena helicoidal posee dos modos: \textbf{Normal} en el cual la antena de comporta similar a una antena dipolo con una radiación omnidireccional respecto al eje de la hélice; las dimensiones de la hélice son pequeñas en comparación con la longitud de onda. Luego esta la \textbf{axial}, en el cual la radiación se produce en el mismo sentido del eje de la hélice, es cuando las dimensiones de la hélice son comparables a una longitud de onda:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ant/ant26.png}
+\caption{Modos de la antena helicoidal.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ant/ant29.png}
+\caption{Medidas de una antena helicoidal.}
+\end{figure}
+La ganancia de potencia una antena helicoidal esta definida por:
+\begin{equation}
+A_p(dB)=10\log\corchetes{15\cdot \parentesis{\frac{D\pi}{\lambda}}^2\cdot\frac{NS}{\lambda}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $A_p(dB)$: Ganancia de la potencia de la antena. (dB)
+\item \textbf{D}: Diámetro de la hélice. (m)
+\item \textbf{N}: Número de vueltas.
+\item \textbf{S}: Paso de la hélice. (m)
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+Y el ancho de haz puede ser calculado con:
+\begin{equation}
+\theta=\frac{52}{\frac{\pi D}{\lambda}\sqrt{\frac{NS}{\lambda}}}
+\end{equation}
+\begin{itemize}
+\item $\theta$: Ancho de haz. (sex.)
+\item \textbf{D}: Diámetro de la hélice. (m)
+\item \textbf{N}: Número de vueltas.
+\item \textbf{S}: Paso de hélice. (m)
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+\subsection{Aplicaciones}
+\begin{itemize}
+\item Radios portátiles en baja frecuencia (30-150 MHz).
+\item Dispositivos inalambricos (2.425 GHz)
+\item Dispositivos GSM, GPS bandas de 434 MHz, 868 MHz y 2400 MHz.
+\item Radio empaquetado de alta velocidad. (S5-PSK, 1.288 Mbit/s)
+\item Acceso a Internet inalámbrico de alta velocidad.
+\end{itemize}
+\begin{notation}
+Algunas otras antenas son bocina que sirven como alimentador de parabólicas, ranuras para comunicaciones espaciales.
+\end{notation}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -1097,10 +1262,10 @@ Para reducir el número de entradas en la tabla de routing, se pueden resumir va
 \item Todas las rutas estáticas utilizan la misma interfaz de salida o la dirección IP del siguiente salto.
 \end{itemize}
 \subsubsection*{Ruta estática flotante}
-Las rutas estáticas flotantes son rutas estáticas que se utilizan para proporcionar una ruta de \textbf{respaldo} a una ruta estática o dinámica principal, en el caso de una falla del enlace. La ruta estática flotante se utiliza únicamente cuando la ruta principal \textbf{no está disponible}. Para lograrlo, la ruta estática flotante se configura con una distancia administrativa mayor que la ruta principal.La distancia administrativa representa la \textbf{confiabilidad} de una ruta. Si existen varias rutas al destino, el router elegirá la que tenga una menor distancia administrativa. Por ejemplo, suponga que un administrador desea crear una ruta estática flotante como respaldo de una ruta descubierta por EIGRP. La ruta estática flotante se debe configurar con una \textbf{distancia administrativa mayor} que el EIGRP. El EIGRP tiene una distancia administrativa de 90. Si la ruta estática flotante se configura con una distancia administrativa de 95, se prefiere la ruta dinámica descubierta por el EIGRP a la ruta estática flotante. Si se pierde la ruta descubierta por el EIGRP, en su lugar se utiliza la ruta estática flotante.
+Las rutas estáticas flotantes son rutas estáticas que se utilizan para proporcionar una ruta de \textbf{respaldo} a una ruta estática o dinámica principal, en el caso de una falla del enlace. La ruta estática flotante se utiliza únicamente cuando la ruta principal \textbf{no está disponible}. Para lograrlo, la ruta estática flotante se configura con una distancia administrativa mayor que la ruta principal. La distancia administrativa representa la \textbf{confiabilidad} de una ruta. Si existen varias rutas al destino, el router elegirá la que tenga una menor distancia administrativa. Por ejemplo, suponga que un administrador desea crear una ruta estática flotante como respaldo de una ruta descubierta por EIGRP. La ruta estática flotante se debe configurar con una \textbf{distancia administrativa mayor} que el EIGRP. El EIGRP tiene una distancia administrativa de 90. Si la ruta estática flotante se configura con una distancia administrativa de 95, se prefiere la ruta dinámica descubierta por el EIGRP a la ruta estática flotante. Si se pierde la ruta descubierta por el EIGRP, en su lugar se utiliza la ruta estática flotante.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.6\linewidth]{IN2/IN9.png}
+\includegraphics[width=0.8\linewidth]{IN2/IN9.png}
 \caption{Ruta estática flotante.}
 \end{figure}
 \section{Routing dinámico}
@@ -1293,7 +1458,7 @@ Red digital de servicios integrados o \textbf{RDSI} es una red que procede de la
 ISDN cambia las conexiones internas de la  PSTN (Red Telefónica Pública Conmutada) para que transporte señales digitales  multiplexadas por división de tiempo (TDM) en  vez de señales analógicas. TDM permite que se transfieran dos o más  señales, o flujos de bits, como subcanales en  un canal de comunicación. La conexión ISDN puede requerir un adaptador  de terminal (TA), que es un dispositivo utilizado  para conectar las conexiones de la interfaz de  velocidad básica (BRI) de ISDN a un router.
 \end{definition}
 \begin{definition}[Frame relay]
-Frame Relay es una tecnología de protocolo de red de conmutación de paquetes digital de capa de enlace de datos diseñada para conectar redes de área local (LAN) y transferir datos a través de redes de área amplia (WAN). Frame Relay es una tecnología de \textbf{paquetes o celdas} rápida, lo que significa que el protocolo no intenta corregir errores. Requiere una conexión dedicada durante el período de transmisión y no es ideal para voz o video, que requieren un flujo constante de transmisiones.
+Frame Relay es una tecnología de protocolo de red de conmutación de paquetes digital de capa de enlace de datos diseñada para conectar redes de área local (LAN) y transferir datos a través de redes de área amplia (WAN). Frame Relay es una tecnología de \textbf{paquetes o celdas} rápida, lo que significa que el protocolo no intenta corregir errores. Requiere una conexión dedicada durante el período de transmisión y \textbf{no es ideal} para voz o video, que requieren un flujo constante de transmisiones.
 \end{definition}
 \begin{definition}[ATM]
 La tecnología del modo de transferencia  asíncrona (ATM) puede transferir voz, video y  datos a través de redes privadas y públicas.\\
@@ -1315,10 +1480,6 @@ VPN significa "Virtual Private Network" (Red privada virtual) y describe la opor
 \end{definition}
 \begin{definition}[SONET]
 La red óptica síncrona (SONET) es un protocolo de comunicación digital estandarizado que se utiliza para transmitir un gran volumen de datos a distancias relativamente largas utilizando un medio de fibra óptica. Con SONET, se transfieren múltiples flujos de datos digitales al mismo tiempo a través de fibra óptica utilizando LED y rayos láser. Los sistemas \textbf{SDH} son ampliamente usados, excepto en EE. UU. y Canadá, dónde se usa SONET. El SDH es un dispositivo digital que trabaja realizando multiplexación por división el tiempo. Toma pequeñas ranuras de tiempo y las ubica en forma ordenada en una ranura de tiempo más grande. La sucesión de ranuras en de tiempo se denomina “Trama”. Usa la tecnología \textbf{DWDM} es una técnica de transmisión, que realiza la multiplexación por división en longitudes de onda, es decir, que utiliza varias longitudes de onda de luz, descompuesta en colores, para enviar datos desde dos o más colores de luz que pueden viajar sobre una sola fibra óptica.
-\end{definition}
-\begin{definition}[DTE/DCE]
-El término DTE se refiere a Equipo Terminal de Datos (Data Terminal Equipment) y es un equipo que convierte información en señales y viceversa, como una computadora.\\
-El término DCE se refiere a Equipo de comunicación de Datos (Data Comunication Equipment) y está conectado al computador, por ejemplo un módem.
 \end{definition}
 \begin{definition}[CSU/DSU]
 Una \textbf{unidad de servicio de canal} (CSU) es un dispositivo que conecta un terminal a una línea digital. Una \textbf{unidad de servicio de datos} (DSU) es un dispositivo que lleva a cabo funciones de protección y de diagnóstico en una línea de telecomunicaciones. En general, los dos dispositivos se entregan formando una sola unidad, CSU/DSU.
@@ -1698,9 +1859,8 @@ El uso de aplicaciones existentes se conseguirá por:
 \subsection{Arquitectura CORBA}
 CORBA consiste en la especificación de un modelo de objetos distribuido idependiente del lenguaje, sistema operativo y plataforma. La parte principal de CORBA es el ORB (Object Request Broker). ORB actúa como un bus de mensajes que transporta peticiones de invocación de operaciones y sus resultados sobre objetos CORBA, proporcionando la infraestructura de comunicación necesaria de forma que oculte todos los detalles de la comunicación entre objetos distribuidos. La \textbf{transparencia de localización} es la capacidad de acceder e invocar operaciones sobre un objeto CORBA sin necesidad de conocer dónde reside dicho objeto. La idea es que debería ser igualmente sencillo invocar una operación residente en una máquina remota que un método de un objeto en el mismo espacio de direcciones. La \textbf{transparencia de lenguaje de programación} proporciona la libertad de implementar la funcionalidad encapsulada un objeto usando el lenguaje más adecuado, bien por las habilidades de los programadores, la idoneidad del lenguaje para la tarea específica, o la elección de un ``tercer'' desarrollador que proporciona componentes ya creados (off-the-shelf components). La clave de este grado de libertad es un \textbf{lenguaje de definición de interfaces} que es neutral con respecto a la implementación, y que proporciona una separación entre la interfaz y su implementación. Dicho lenguaje se denomina \textbf{\textit{Interface Denifition Language}} (IDL), y se utiliza para definir las interfaces de los objetos, independientemente del lenguaje de programación en el que estén implementados. Es un lenguaje fuertemente declarativo, con un rico conjunto de tipos de datos para describir parámetros complejos. Una interfaz IDL actúa como un contrato entre los desarrolladores de objetos y los eventuales usuarios de dichos interfaces. También permite a los usuarios de CORBA compilar las definiciones de las interfaces en código oculto para la transmisión de peticiones de invocaciones a través de las redes y las arquitecturas de las máquinas sin necesitar ningún conocimiento sobre el protocolo de red utilizado, o incluso la localización del objeto involucrado.
 \section{SOAP}
-Protocolo de acceso simple a objetos o SOAP. 
-que existen diversos tipos de web
-services, uno de los que mayor impacto tiene es el tipo SOAP este tipo de servicio está basado en el intercambio de información mediante \textit{xml} y su principal protocolo de funcionamiento es el \textit{http}, sin embargo también puede ser enviado mediante otros protocolos como \textit{ftp}, \textit{pop3}, \textit{tcp} y colas de mensajería. \\
+SOAP es el acrónimo de “Simple Object Access Protocol” y es el protocolo que se oculta tras la tecnología que comúnmente denominamos “Web Services” o servicios web. SOAP es un protocolo extraordinariamente complejo pensado para dar soluciones a casi cualquier necesidad en lo que a comunicaciones se refiere, incluyendo aspectos avanzados de seguridad, transaccionalidad, mensajería asegurada y demás.\\
+Este tipo de servicio está basado en el intercambio de información mediante \textit{xml} y su principal protocolo de funcionamiento es el \textit{http}, sin embargo también puede ser enviado mediante otros protocolos como \textit{ftp}, \textit{pop3}, \textit{tcp} y colas de mensajería. \\
 \textbf{Ventajas}:
 \begin{itemize}
 \item Permite agregar metadatos en sus atributos.
@@ -1708,7 +1868,167 @@ services, uno de los que mayor impacto tiene es el tipo SOAP este tipo de servic
 \item Cuenta con métodos de validación más potentes que los de \textit{json}.
 \item Funciona bien en ambientes empresariales es decir comunicaciones de servidor a servidor.
 \end{itemize}
-Al usar SOAP con el protocolo \textit{http} el tipo de contenido del mensaje que utiliza este protocolo debe establecerse en \textit{xml} que requiere la agregación de una línea que contiene SOAPAction en que debe estar presente en la cabecera \textit{http}. Por último podemos decir que la entrada SOAPAction permite que los firewalls del destino identifiquen los mensajes SOAP.
+Al usar SOAP con el protocolo \textit{http} el tipo de contenido del mensaje que utiliza este protocolo debe establecerse en \textit{xml} que requiere la agregación de una línea que contiene SOAPAction en que debe estar presente en la cabecera \textit{http}. Por último podemos decir que la entrada SOAPAction permite que los firewalls del destino identifiquen los mensajes SOAP.\\
+Debido a estas cualidades, SOAP es ampliamente utilizado en entornos empresariales. Donde es requerida la existencia de un contrato claro entre cliente y servidor, y además la seguridad en las comunicaciones es muy importante. Entre sus desventajas está que al estar ampliamente estandarizado, es poco flexible y suele haber muchos errores a la hora de desarollo si no se conocen dichos estándares.  Al utilizar el protocolo TCP también tiene un peor rendimiento que otro tipo de Web Services.
+\begin{vocabulary}[XML]
+El formato estándar “Extensible Markup Language (XML), tiene varias características que lo hacen conveniente, entre las que podemos destacar: Es un estándar abierto, flexible y ampliamente utilizado para almacenar, publicar e intercambiar cualquier tipo de información.
+\end{vocabulary}
+\chapterimage{chapter_head_SFT.pdf} % Chapter heading image
+\chapter{Unidad II}
+\section{REST}
+REST deriva de ``REpresentational State Transfer'', que traducido vendría a ser ``transferencia de representación de estado'', lo que tampoco aclara mucho, pero contiene la clave de lo que significa.  Porque la clave de REST es que un servicio REST \textbf{no tiene estado} (es stateless), lo que quiere decir que, entre dos llamadas cualesquiera, el servicio pierde todos sus datos. El estado lo mantiene el cliente y por lo tanto es el cliente quien debe pasar el estado en \textbf{cada llamada}. Si quiero que un servicio REST me recuerde, debo pasarle quien soy en cada llamada. Eso puede ser un usuario y una contraseña, un token o cualquier otro tipo de credenciales, pero debo pasarlas en cada llamada. Y lo mismo aplica para el resto de información.\\
+Principios:
+\begin{itemize}
+\item Debe ser un sistema \textbf{cliente-servidor}.
+\item Tiene que ser \textbf{sin estado}, es decir, no hay necesidad de que los servicios guarden las sesiones de los usuarios (cada petición al servicio tiene que ser independiente de las demás).
+\item Debe soportar un sistema de cachés: la infraestructura de la red debería soportar caché en diferentes niveles.
+\item Debe ser un sistema uniformemente accesible (con una interfaz uniforme): Esta restricción define cómo debe ser la interfaz entre clientes y servidores. La idea es simplificar y desacoplar la arquitectura, permitiendo que cada una de sus partes puede evolucionar de forma independiente. Una interfaz uniforme se debe caracterizar por:
+\begin{itemize}
+\item Estar basada en recursos: La abstracción utilizada para representar la información y los datos en REST es el recurso, y cada recurso debe poder ser accedido mediante una URI (Uniform Resource Identifier).
+\item Orientado a representaciones: La interacción con los servicios tiene lugar a través de las representaciones de los recursos que conforman dicho servicio. Un recurso referenciado por una URI puede tener diferentes formatos (representaciones). Diferentes plataformas requieren formatos diferentes. Por ejemplo, los navegadores necesitan HTML, JavaScript requiere JSON (JavaScript Object Notation), y una aplicación Java puede necesitar XML.
+\item Interfaz restringida: Se utiliza un pequeño conjunto de métodos bien definidos para manipular los recursos.
+\item Uso de mensajes auto-descriptivos: cada mensaje debe incluir la suficiente información como para describir cómo procesar el mensaje. Por ejemplo, se puede indicar cómo "parsear" el mensaje indicando el tipo de contenido del mismo (xml, html, texto,...).
+\item Uso de Hipermedia como máquina de estados de la aplicacion (HATEOAS): Los propios formatos de los datos son los que "dirigen" las transiciones entre estados de la aplicación. Como veremos más adelante con más detalle, el uso de HATEOAS (Hypermedia As The Engine Of Application State), va a permitir transferir de forma explícita el estado de la aplicacion en los mensajes intercambiados, y por lo tanto, realizar interacciones con estado.
+\end{itemize}
+\item Tiene que ser un sistema por capas: un cliente no puede "discernir" si está accediendo directamente al servidor, o a algún intermediario. Las "capas" intermedias van a permitir soprtar la escalabilidad, así como reforzar las políticas de seguridad
+\end{itemize}
+REST crea \textbf{una petición HTTP} que contiene toda la información necesaria, es decir, un REQUEST a un servidor tiene toda la información necesaria y solo espera una RESPONSE, ósea una respuesta en concreto. Se apoya sobre un protocolo que es el que se utiliza para las páginas web, que es \textbf{HTTP}, es un protocolo que existe hace muchos años y que ya está consolidado, no se tiene que inventar ni realizar cosas nuevas. Se apoya en los métodos de HTTP:
+\begin{itemize}
+\item Post: Para crear recursos nuevos.
+\item Get: Para obtener un listado o un recurso en concreto.
+\item Put: Para modificar.
+\item Patch: Para modificar un recurso que no es un recurso de un dato, por ejemplo.
+\item Delete: Para borrar un recurso, un dato por ejemplo de nuestra base de datos.
+\end{itemize}
+Todos los objetos se manipulan mediante URI, por ejemplo, si tenemos un recurso usuario y queremos acceder a un usuario en concreto nuestra URI seria /user/identificadordelobjeto, con eso ya tendríamos un servicio USER preparado para obtener la información de un usuario, dado un ID.
+\subsection{REST vs SOAP}
+REST es un conjunto de pautas que ofrece una implementación flexible, mientras que SOAP es un protocolo con requisitos específicos, como en el caso de la mensajería XML.\\
+No obstante, cada uno ofrece ventajas diferentes: REST está considerado relativamente sencillo, no trabaja solo con XML, es más rápido y, en comparación con SOAP, más ligero. La libertad que caracteriza a REST a la hora de elegir si trabajar con XML (a menudo recurre a JSON) caracteriza a SOAP a la hora de elegir el protocolo. Aunque HTTP es a menudo la opción elegida, teóricamente SOAP funciona también en combinación con FTP, SMTP u otros protocolos.\\
+Respecto a la seguridad, SOAP supone una gran ventaja: WS-Security (especificaciones para los criterios de seguridad respecto a servicios web) está anclado en el protocolo de red. También el tratamiento de los errores está mejor regulado en SOAP, porque incorpora directamente una función para la repetición de la solicitud.
+\begin{table}[H]
+\resizebox{\textwidth}{!}{
+\begin{tabular}{ll}
+\rowcolor[HTML]{DAE8FC} 
+REST                                                                                                                                      & SOAP                                                \\
+Pocas operaciones con muchos recursos                                                                                                     & Muchas operaciones con pocos recursos               \\
+\begin{tabular}[c]{@{}l@{}}Se centra en la escalabilidad y rendimiento a gran escala\\ para sistemas distribuidos hipermedia\end{tabular} & Se centra en el diseño de aplicaciones distribuidas \\
+HTTP (GET, POST, PUT, DEL)                                                                                                                & SMTP, HTTP POST, MQ                                 \\
+XML auto descriptivo                                                                                                                      & Tipaso fuerte, XML, Schema                          \\
+Sincrono                                                                                                                                  & Sincrono y asiscrono                                \\
+HTTPS                                                                                                                                     & WS security                                         \\
+Comunicaión P2P segura                                                                                                                    & Comunicación origen a destino seguro               
+\end{tabular}}
+\end{table}
+\section{UML}
+El Lenguaje Unificado de Modelado (UML) desempeña un rol importante no solo en el desarrollo de software, sino también en los sistemas que no tienen software en muchas industrias, ya que es una forma de mostrar visualmente el comportamiento y la estructura de un sistema o proceso.
+\subsection*{Ventajas}
+\begin{itemize}
+\item Simplifica las complejidades 
+\item Mantiene abiertas las líneas de comunicación 
+\item Automatiza la producción de software y los procesos  
+\item Ayuda a resolver los problemas arquitectónicos constantes 
+\item Aumenta la calidad del trabajo 
+\item Reduce los costos y el tiempo de comercialización 
+\end{itemize}
+Vamos a hablar sobre diagrama de \textbf{clases} UML las demás puedes revisar en internet.
+\subsection{Clase abstracta}
+Las cosas que existen y que nos rodean se agrupan naturalmente en categorías. Una clase es una categoría o grupo de cosas que tienen atributos (propiedades) y acciones similares. Un rectángulo es el símbolo que representa a la clase, y se divide en tres áreas. Un diagrama de clases está formado por varios rectángulos de este tipo conectados por líneas que representan las asociaciones o maneras en que las clases se relacionan entre si. No se puede crear una clase que defina a la clase abstracta pues este solo sirve como un contenerdor o plantilla de clases. La clase abstracta se escribe en cursiva.
+\subsection{Clase concreta}
+Cuando una hemos usado una clase abstracta como plantilla para crear un objeto. Por ejemplo, clase abstracta animal, y clase concreta perro.
+\begin{itemize}
+\item \textbf{Clase/nombre}: Indica la clase, puedes encontrar una forma de englobar una categoría de objetos, por ejemplo: aviones, vehículos, muebles, dispositivos móviles, etc.
+\item \textbf{Atributo}: Un dato importante que contiene valores que describen cada instancia de esa clase. Incluye variable y propiedades.
+\item \textbf{Métodos}: Operaciones o funciones especifican el comportamiento de la clase.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{soft/soft4.png}
+\caption{Bloque de clases}
+\end{figure}
+\subsubsection*{Visibilidad}
+Define la accesibilidad para ese atributo o método.
+\begin{itemize}
+\item \textbf{Privado (-)}: Ni una clase o subclase puede acceder a ellos.
+\item \textbf{Público (+)}: Cualquier clase puede acceder a ello.
+\item \textbf{Protegido (\#)}: Solo la misma clase o sus subclases puede acceder a ellos.
+\item \textbf{Paquete/defecto (~)}: Puede ser usada siempre y cuando pertenezcan al mismo paquete. Paquete es el contenedor de clases.
+\end{itemize}
+\subsection{Relaciones}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{soft/soft2.png}
+\caption{Relaciones UML}
+\end{figure}
+\subsubsection*{Asociación}
+\begin{flushright}
+\textit{Usa un verbo que funcione de manera bidireccionalmente para ambas clases: trabaja, compra, hace, etc.}
+\end{flushright}
+Crea un vinculo entre dos clases pero no dependen entre si. Por ejemplo, antena \textbf{transmite} ondas electromagnéticas. No hay dependencia pero están relacionadas.
+\subsubsection*{Herencia o heritaje}
+\begin{flushright}
+\textit{Relación tipo ``es un''}
+\end{flushright}
+Podemos unir clases a otra clase, de esta forma, las primera serán llamadas clases derivadas o subclases y la que reune a todas será llamada superclase o clase principal. Esto nos índica que las subclases \textbf{heredan} todos los atributos y métodos. Además cada subclase pueden tener sus atributos propios. Para definir herencia se debe usar la flecha indicando cual será la clase principal.
+\subsubsection*{Agregación}
+\begin{flushright}
+\textit{Relación tipo ``está formado por''}
+\end{flushright}
+Indica que una parte puede ser parte de un todo pero no tiene que serlo sin dejar de existir. Por ejemplo, un perro es independiente como tal, si unimos varios perros forman una jauría. El perro deja la jauria y sigue siendo perro, no deja de existir. La relación de una parte que puede existir fuera del todo.
+\subsubsection*{Composición}
+\begin{flushright}
+\textit{Relación tipo ``es parte de''}
+\end{flushright}
+Lo contrario a asociación, cuando un objeto derivado no puede existir sin el objeto principal: Baño pertenece al estadio, si el estadio se demuele, el baño deja de existir.
+\subsubsection{Multiplicidad}
+Indica la cantidad de cada clase, estos se escriben en los vínculos entre clases, las variable son:
+\begin{itemize}
+\item \textbf{0..1}: Cero o uno.
+\item \textbf{n}: Indica la cantidad especifica.
+\item \textbf{1..*}: Uno a muchos.
+\item \textbf{m..n}: Indica un rango específico.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{soft/soft3.png}
+\caption{Ejemplo diagrama de clases.}
+\end{figure}
+\section{Patrón de diseño}
+Los patrones de diseño o design patterns, son una solución general, reutilizable y aplicable a diferentes problemas de diseño de software. Se trata de plantillas que identifican problemas en el sistema y proporcionan soluciones apropiadas a problemas generales a los que se han enfrentado los desarrolladores durante un largo periodo de tiempo, a través de prueba y error.
+\subsection{Tipos de patrones}
+\begin{itemize}
+\item \textbf{Patrones creacionales}: Los patrones de creación proporcionan diversos mecanismos de creación de objetos, que aumentan la \textbf{flexibilidad y la reutilización del código existente de una manera adecuada a la situación}. Esto le da al programa más flexibilidad para decidir qué objetos deben crearse para un caso de uso dado.
+\begin{itemize}
+\item Abstract Factory: En este patrón, una interfaz crea conjuntos o familias de objetos relacionados sin especificar el nombre de la clase.
+\item Builder Patterns: Permite producir diferentes tipos y representaciones de un objeto utilizando el mismo código de construcción. Se utiliza para la creación etapa por etapa de un objeto complejo combinando objetos simples. La creación final de objetos depende de las etapas del proceso creativo, pero es independiente de otros objetos.
+\item Factory Method: Proporciona una interfaz para crear objetos en una superclase, pero permite que las subclases alteren el tipo de objetos que se crearán. Proporciona instanciación de objetos implícita a través de interfaces comunes
+\item Prototype: Permite copiar objetos existentes sin hacer que su código dependa de sus clases. Se utiliza para restringir las operaciones de memoria / base de datos manteniendo la modificación al mínimo utilizando copias de objetos.
+\item Singleton: Este patrón de diseño restringe la creación de instancias de una clase a un único objeto. 
+\end{itemize}
+\item \textbf{Patrones estructurales}: Facilitan soluciones y estándares eficientes con respecto a las composiciones de clase y las estructuras de objetos. El concepto de herencia se utiliza para componer interfaces y definir formas de componer objetos para obtener nuevas funcionalidades.
+\begin{itemize}
+\item Adapter: Se utiliza para vincular dos interfaces que no son compatibles y utilizan sus funcionalidades. El adaptador permite que las clases trabajen juntas de otra manera que no podrían al ser interfaces incompatibles.
+\item Bridge: En este patrón hay una alteración estructural en las clases principales y de implementador de interfaz sin tener ningún efecto entre ellas. Estas dos clases pueden desarrollarse de manera independiente y solo se conectan utilizando una interfaz como puente.
+\item Composite: Se usa para agrupar objetos como un solo objeto. Permite componer objetos en estructuras de árbol y luego trabajar con estas estructuras como si fueran objetos individuales.
+\item Decorator: Este patrón restringe la alteración de la estructura del objeto mientras se le agrega una nueva funcionalidad. La clase inicial permanece inalterada mientras que una clase decorator proporciona capacidades adicionales.
+\item Facade: Proporciona una interfaz simplificada para una biblioteca, un marco o cualquier otro conjunto complejo de clases.
+\item Flyweight: El patrón Flyweight se usa para reducir el uso de memoria y mejorar el rendimiento al reducir la creación de objetos. El patrón busca objetos similares que ya existen para reutilizarlo en lugar de crear otros nuevos que sean similares.
+\item Proxy: Se utiliza para crear objetos que pueden representar funciones de otras clases u objetos y la interfaz se utiliza para acceder a estas funcionalidades
+\end{itemize}
+\item \textbf{Patrones de comportamiento}: El patrón de comportamiento se ocupa de la comunicación entre objetos de clase. Se utilizan para detectar la presencia de patrones de comunicación ya presentes y pueden manipular estos patrones. Estos patrones de diseño están específicamente relacionados con la comunicación entre objetos.
+\begin{itemize}
+\item Chain of responsibility: El patrón de diseño Chain of Responsibility es un patrón de comportamiento que evita acoplar el emisor de una petición a su receptor dando a más de un objeto la posibilidad de responder a una petición.
+\item Command: Convierte una solicitud en un objeto independiente que contiene toda la información sobre la solicitud. Esta transformación permite parametrizar métodos con diferentes solicitudes, retrasar o poner en cola la ejecución de una solicitud y respaldar operaciones que no se pueden deshacer.
+\item Interpreter: Se utiliza para evaluar el lenguaje o la expresión al crear una interfaz que indique el contexto para la interpretación.
+\item Iterator: Su utilidad es proporcionar acceso secuencial a un número de elementos presentes dentro de un objeto de colección sin realizar ningún intercambio de información relevante.
+\item Mediator: Este patrón proporciona una comunicación fácil a través de su clase que permite la comunicación para varias clases.
+\item Memento: El patrón Memento permite recorrer elementos de una colección sin exponer su representación subyacente.
+\item Observer: Permite definir un mecanismo de suscripción para notificar a varios objetos sobre cualquier evento que le suceda al objeto que está siendo observado.
+\item State: En el patrón state, el comportamiento de una clase varía con su estado y, por lo tanto, está representado por el objeto de contexto.
+\item Strategy: Permite definir una familia de algoritmos, poner cada uno de ellos en una clase separada y hacer que sus objetos sean intercambiables.
+\item Template method: Se usa con componentes que tienen similitud donde se puede implementar una plantilla del código para probar ambos componentes. El código se puede cambiar con pequeñas modificaciones.
+\item Visitor: El propósito de un patrón Visitor es definir una nueva operación sin introducir las modificaciones a una estructura de objeto existente.
+\end{itemize}
+\end{itemize}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -2373,14 +2693,14 @@ f_{osc}&=f_{osc0}+K_v\cdot V_c\\
 \end{align}
 La frecuencia de oscilación será igual a la frecuencia de oscilación en estado inicial más el producto del la constante del varicap por el voltaje de entrada.\\
 Para relacionar la frecuencia con la fase absoluta ($\Phi$):
-\begin{align*}
+\begin{align}
 \omega_{osc}&=\omega_{osc0}+2\pi\cdot K_v\cdot V_c\\
 \Phi_{osc}&=\omega_{osc0}\cdot t+2\pi\cdot K_v\cdot \int_0^tV_c\cdot t
 \intertext{Referimos la fase absoluta $\Phi_{osc}$ a la frecuencia $\omega_{osc0}$:}
-\Phi_{osc}&=\omega_{osc0}\cdot t+\underbrace{\textcolor{red}{\phi_{osc}(V_c)}}_{relativa}\\
+\Phi_{osc}&=\omega_{osc0}\cdot t+\underbrace{\textcolor{red}{\phi_{osc}(V_c)}}_{relativa:\phi_e}\label{eq:phiosc}\\
 \intertext{Referimos nuevamente a $\omega_{osc0}$ la fase absoluta $\Phi_e$:}
-\Phi_e=\omega_{osc0}\cdot t+\phi_e
-\end{align*}
+\Phi_e&=\omega_{osc0}\cdot t+\phi_e\label{eq:phie}
+\end{align}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{mrf/mrf38.png}
@@ -2596,6 +2916,381 @@ hacemos el análisis como el circuito anterior, vamos a llegar a la siguiente ex
 T_{\phi osc-\phi e}(s)=\frac{1+\frac{s}{\omega_z}}{\frac{s^2}{-\omega_p\cdot K}+\frac{s}{\omega_z}+1}
 \end{displaymath}
 Para que salga lo mismo que en el caso anterior, K tiene que ser negativa. Como $K=2\pi\cdot K_v\cdot K_{\Delta\Phi}$ o bien $K_v<0$ o $K_{\Delta\Phi}<0$. En caso contrario, el PLL sería inestable, al menos que el detector de fases cambie el signo de $K_{\Delta\Phi}$ en función de la diferencia de fases.
+\section{Realización física}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{MRF/mrf48.png}
+\caption{PLL: Diagrama de bloques}
+\end{figure}
+\subsection{Detector de fases}
+El detector de fases tiene dos entradas en las cuales \textbf{compara fases}. Existen dos tipos:
+\begin{itemize}
+\item Detector analógico
+\begin{itemize}
+\item Detector basado en un mezclador.
+\end{itemize}
+\item Detector digital:
+\begin{itemize}
+\item Detector basado en ``puerta exclusiva''.
+\item Detector basado en ``biestable RS activado con flancos''.
+\item Detector fase-frecuencia
+\end{itemize}
+\end{itemize}
+\subsubsection{Mezclador}\index{PLL con mezclador}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{MRF/mrf49.png}
+\caption{Detector de fases basado en mezclador}
+\end{figure}
+Se tienen ambas entradas y se usa un mezclador (multiplicador) de ambas como un detector de fases, la \textbf{salida} puede ser escrita como:
+\begin{equation}
+V_{\Delta\Phi}=K_m\cdot V_e\sin\parentesis{\Phi_e}\cdot V_{osc}\sin\parentesis{\Phi_{osc}}
+\label{eq:eq1}
+\end{equation}
+Usando la producto de senos en \ref{eq:eq1}:
+\begin{equation}
+V_{\Delta\Phi}=K_{\Delta\Phi}\left[\cos\parentesis{\Phi_e-\Phi_{osc}}-\cos\parentesis{\Phi_e+\Phi_{osc}}\right]
+\label{eq:eq2}
+\end{equation}
+Donde:
+\begin{displaymath}
+K_{\Delta\Phi}=V_e\cdot V_{osc}\cdot \frac{K_m}{2}
+\end{displaymath}
+Recordando las ecuaciones \ref{eq:phiosc} y \ref{eq:phie} y reemplazando en \ref{eq:eq1}:
+\begin{equation}
+V_{\Delta\Phi}=K_{\Delta\Phi}\left[\cos\parentesis{\phi_e-\phi_{osc}}-\cos\parentesis{\phi_e+\phi_{osc}+2\cdot\omega_{osc0}\cdot t}\right]
+\end{equation}
+Podemos eliminar el segundo término del paréntesis por filtrado, quedando:
+\begin{equation}
+V_{\Delta\Phi}=K_{\Delta\Phi}\cdot\cos\parentesis{\phi_e-\phi_{osc}}=K_{\Delta\Phi}\cdot\sin\parentesis{\frac{\pi}{2}+\phi_e-\phi_{osc}}
+\end{equation}
+Para \textbf{valores pequeños}, el seno puede ser ignorado:
+\begin{equation}
+V_{\Delta\Phi}\approx K_{\Delta\Phi}\cdot\parentesis{\phi_e-\underbrace{\phi_{osc}+\frac{\pi}{2}}_{\phi'_{osc}}}
+\end{equation}
+Se comporta como se ha previsto, pero $\phi'_{osc}$ retrasada en 90° con relación al comportamiento teórico ($\phi_{osc}$)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{MRF/mrf50.png}
+\caption{Comparación y error: sin(x) y x.}
+\end{figure}
+\begin{corollary}[Aproximación seno]
+Se comporta bastante lineal si:
+\begin{displaymath}
+|\phi_e-\phi'_{osc}|<60°
+\end{displaymath}
+es decir:
+\begin{displaymath}
+|90°+\phi_e-\phi_{osc}|<60°
+\end{displaymath}
+\end{corollary}
+El límite sería:
+\begin{equation}
+|\phi_e-\phi'_{osc}|<90°
+\end{equation}
+Devolviendo el valor de $\phi'_{osc}$ y arreglando términos se llega a:
+\begin{equation}
+-180°<\parentesis{\phi_e-\phi_{osc}}<0°
+\end{equation}
+\begin{figure}[H]
+\centering
+\subfloat[Entrada]{\includegraphics[width=0.35\linewidth]{MRF/mrf51.png}}
+\subfloat[Entrada]{\includegraphics[width=0.35\linewidth]{MRF/mrf52.png}}
+\caption{Comparación y error.}
+\end{figure}
+\begin{remark}
+En caso de que se superen estos límites, cambia el signo de $K_\Delta\Phi$, lo que genera problemas de estabilidad en $T_{\phi_o-\phi_e}(s)$. El lazo se desenganchará. 
+\end{remark}
+\textbf{Ventajas}:
+\begin{itemize}
+\item Trabaja con señales analógicas, por lo que puede operar hasta frecuencias muy altas (el límite depende de la tecnología del mezclador).
+\item El filtro es del doble de la frecuencia de la señal generada.
+\end{itemize}
+\textbf{Desventajas}:
+\begin{itemize}
+\item El valor de la constante $K_\Delta\Phi$ es $K_\Delta\Phi = V_e\cdot V_{osc}·K_m/2$, es decir,
+depende de la amplitud de las señales. A veces hay que limitarlas para acotar el valor de $K_\Delta\Phi$.
+\item La diferencia de fases máxima posible es de $180^\circ$. En este caso:
+$-180^\circ < (\phi_e – \phi_{osc}) < 0^\circ$. Tiene como \textbf{máximo} desde $-90^\circ hasta +90^\circ$ de margen de error.
+\end{itemize}
+\subsubsection{XOR}\index{PLL con XOR}
+Ahora el detector de fases se basa en una compuerta lógica \textbf{XOR}:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf53.png}
+\caption{PLL con XOR}
+\end{figure}
+Usando una tabla de verdad de la compuerta XOR, se puede representar el diagrama de tiempo a la salida:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf54.png}
+\caption{Diagrama de tiempo XOR.}
+\end{figure}
+Ahora aplicaremos señales con distintos valores de desfase:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf55.png}
+\caption{Diagrama de tiempo XOR con desfases.}
+\label{fig:desfasexor}
+\end{figure}
+Si tomamos los \textcolor{blue}{promedios} de la figura \ref{fig:desfasexor} de obtiene la gráfica que se ha representado. El problema con esto, es que no tienen simetría respecto al 0. Para arreglar esto usaremos un offset en DC para hacerlo simétrico:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf56.png}
+\caption{Diagrama de tiempo XOR con desfases.}
+\label{fig:desfasexor}
+\end{figure}
+\textbf{Ventajas}:
+\begin{itemize}
+\item El circuito digital es relativamente sencillo, por lo que puede
+operar hasta frecuencias bastante altas.
+\item El valor de la constante $K_\Delta\Phi$ es $K_\Delta\Phi = V_{\Delta\Phi max}/\pi$, es decir, no
+depende de la amplitud de las señales.
+\item El filtro es del doble de la frecuencia de la señal generada.
+\end{itemize}
+\textbf{Desventajas}:
+\begin{itemize}
+\item La \textbf{diferencia de fases máxima} posible es de $180^\circ$. En este caso: $0<(\phi_e-\phi_{osc})<180$
+\end{itemize}
+\subsubsection{Biestale RS}\index{PLL con biestable RS}
+Existe dos tipos: por flanco de subida o bajada. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf57.png}
+\caption{1 en B solo en el flanco de bajada/subida de A.}
+\end{figure}
+Si unimos en de esos en un biestable Set-Reset por blanco de bajada se puede construir un biestable pro flanco:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{mrf/mrf58.png}
+\caption{Biestable activado por flanco descendente.}
+\end{figure}
+Aplicando un desfase entre la estrada y el retorno:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{mrf/mrf59.png}
+\caption{Biestable activado por flanco descendente: desfase.}
+\end{figure}
+Notamos nuevamente que no es simétrico respecto a cero, si realizamos su \textcolor{blue}{promedio} tenemos un rango de 360, para modificar su simetría modificamos el nivel de tensión y retrasamos $\phi_e-\phi_{osc} \pi$ radianes
+\begin{center}
+\includegraphics[width=0.7\linewidth]{mrf/mrf60.png}
+\end{center}
+Ahora $\phi_{osc}'=\phi_{osc}+\pi$. Por tanto, el desarrollo teórico seguido es válido para , estando $f_{osc}'$ adelantada $180^\circ$ con relación a la fase realmente existente, que es $f_{osc}$.\\
+Como vemos el límite seria: $-180^\circ<(\phi_e-\phi_{osc}')<180\circ$, es decir: $0^\circ<(\phi_e-\phi_{osc}<360^\circ)$\\
+El valor de la constante $K_{\Delta\Phi}$ es $K_{\Delta\Phi}=V_{\Delta\Phi max}/2$\\
+\textbf{Ventaja}:
+\begin{itemize}
+\item La diferencia de fases máxima posible es de $360^\circ$. En este caso:
+$0^\circ < (f_e – f_{osc}) < 360^\circ$
+\item El valor de la constante $K_{\Delta\Phi}$ es $K_{\Delta\Phi}=V_{\Delta\Phi max}/2$, es decir, no depende de la amplitud de las señales.
+\end{itemize}
+\textbf{Desventaja}:
+\begin{itemize}
+\item El filtro es de la frecuencia de la señal generada.
+\item El circuito digital es relativamente complejo, por lo que no puede operar a frecuencias muy altas.
+\end{itemize}
+Ahora tenemos la siguiente idea:
+\textit{Conseguir tener el equivalente a dos detectores basados en biestables activados por flancos: uno que funcione para diferencias de fases relativas de entre $0^\circ$ y $360^\circ$ y otro entre $–360^\circ$ y $0^\circ$.}
+\begin{center}
+\includegraphics[width=0.7\linewidth]{mrf/mrf60.png}
+\end{center}
+Con esto lograríamos un rango de 720 grados de enganche:
+\begin{center}
+\includegraphics[width=\linewidth]{mrf/mrf61.png}
+\end{center}
+Si analizamos los casos de desfase para este PLL:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{mrf/mrf62.png}
+\caption{Detector biestable de 720 grados.}
+\end{figure}
+El circuito presentado antes tiene el siguiente esquema eléctrico:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf64.png}
+\caption{Esquema electrónico de PLL de 720 grados.}
+\end{figure}
+\textbf{Ventajas:}
+\begin{itemize}
+\item La diferencia de fases máxima posible es de $720^\circ$. En este caso: $-360^\circ < (f_e – f_{osc}) < 360^\circ$
+\item El valor de la constante $K_{\Delta\Phi}$ no depende de la amplitud de las señales.
+\item Es el detector de fase con mejor enganche
+\end{itemize}
+\textbf{Desventajas:}
+\begin{itemize}
+\item El filtro es de la frecuencia de la señal generada.
+\item El circuito digital es relativamente complejo, por lo que no puede operar a frecuencias muy altas.
+\end{itemize}
+\begin{vocabulary}[Diodo varicap]
+El diodo Varicap conocido como diodo de capacidad variable o varactor, es un diodo que aprovecha determinadas técnicas constructivas para comportarse, ante variaciones de la tensión aplicada, como un condensador variable. Polarizado en inversa, este dispositivo electrónico presenta características que son de suma utilidad en circuitos sintonizados (L-C), donde son necesarios los cambios de capacidad.
+\end{vocabulary}
+\subsection{VCO}
+Parámetros característicos de los PLL
+\begin{itemize}
+\item \textbf{Margen de mantenimiento estático (hold-in range)}: Es la diferencia de frecuencias de entrada entre las que el lazo permanece enganchado en las siguientes condiciones: partimos del lazo enganchado y cambiamos la frecuencia de entrada muy lentamente.
+\item \textbf{Margen de mantenimiento dinámico (\textit{pull-out range})}: Es la diferencia de frecuencias de entrada entre las que el lazo permanece enganchado en las siguientes condiciones: partimos del lazo enganchado y cambiamos la frecuencia de entrada bruscamente (es, por tanto, el valor del escalón de frecuencia de entrada que acabamos de dar).
+\item \textbf{Margen de enganche lineal (\textit{lock-in range})}: Es la diferencia de frecuencias de entrada entre las que el lazo se engancha trabajando el  detector de fases de forma lineal.
+\item \textbf{Margen de enganche no lineal (\textit{pull-in range})}: Es la diferencia de frecuencias de entrada entre las que el lazo se engancha aunque el detector de fases llegue a trabajar de forma no lineal. 
+\end{itemize}
+\section{Sintetizadores}
+Un sintetizador nace básicamente de un PLL con un bloque en el lazo de realimentación, más específico: un divisor. Además no hay señal de entrada, tan solo hay un oscilador o cristal resonante fija. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{mrf/mrf65.png}
+\caption{Sintetizador: diagrama de bloques.}
+\end{figure}
+Un sintetizador ``engaña'' a un PLL para poder transformar una frecuencia fija en otra frecuencia. En otras palabras, \textbf{transformar} una frecuencia fija de entrada en otra usando un contador  \textit{N}:
+\begin{equation}
+f_{vco}=f_{xtal}\cdot N
+\end{equation}
+Ten en cuenta que los saltos en los que cambiará la salida ($\Delta f$) serán del tamaño de la frecuencia del cristal $f_{xtal}$. El problema con esto es que los contadores programables tienen frecuencias máximas de uso no muy altas, para solucionar esto necesitamos combinar contadores fijos y programables.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf66.png}
+\caption{Sintetizador con divisores fijos y programable.}
+\end{figure}
+Ahora la frecuencia de salida es:
+\begin{equation}
+f_{vco}=N_F\cdot N_P\cdot f_{xtal}
+\end{equation}
+Siendo ahora el cambio de los escalones:
+\begin{equation}
+\Delta f=N_F\cdot f_{xtal}
+\end{equation}
+El problema ahora es que la frecuencia del cristal cuando es muy pequeña, los cambios se realizan lentos. Para solucionar esto usamos sintetizadores de \textbf{doble módulo}.
+\subsubsection{Sintetizador doble módulo}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf67.png}
+\caption{Sintetizadores doble módulo}
+\end{figure}
+Para sintetizador doble módulo:
+\begin{equation}
+f_{vco}=N\cdot f_{xtal}
+\end{equation}
+Siendo:
+\begin{equation}
+N=N_p\cdot P+A
+\end{equation}
+El valor de \textit{N} estará dentro de un rango de valores:
+\begin{displaymath}
+N_{Pmax}\geq N_P\geq N_{Pmin}
+\end{displaymath}
+y
+\begin{displaymath}
+A_{max}\geq A\geq 1
+\end{displaymath}
+Necesariamente:
+\begin{equation}
+N_{P min}\geq A_{max}
+\end{equation}
+Después de un análisis, el número total de pulsos \textit{N} para completar un ciclo de conteo a la salida del bloque \textit{N} es:
+\begin{equation}
+N=N_P\cdot P+A
+\end{equation}
+Si queremos que varíe la generación de frecuencias a escalones siempre constante, entonces debe cumplirse
+\begin{equation}
+\underbrace{\parentesis{N_P\cdot P+A_{max}+1}_{Aumentar en 1 el valor A_{max}}=\underbrace{\parentesis{N_P+1}\cdot P+1}}_{Poner el mínimo en A(=1) y aumentar N_P en 1}
+\end{equation}
+Si:
+\begin{itemize}
+\item $A_{max}>P$: la misma frecuencia se puede generar con dos combinaciones distintas de \textit{A} y \textit{$N_P$}.
+\item $A_{max}<P$: quedan frecuencias sin generar.
+\end{itemize}
+Por tanto, siempre:
+\begin{equation}
+A_{max}\geq P
+\end{equation}
+Los escalones de frecuencias de salida son:
+\begin{equation}
+\Delta f=\parentesis{N_P\cdot P+A}\cdot f_{xtal}-\parentesis{N_P\cdot P+A-1}\cdot f_{xtal}=f_{xtal}
+\end{equation}
+Algunos valores normalizados de P son: 5, 8, 15, 20, 32, 40 y 80.
+%Falta: Ejemplo diapo 9-15 sintetizadores 1.pdf
+\subsubsection{Sintetizador de frecuencia con PLLs y con mezclador}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf68.png}
+\caption{Sintetizador PLL con mezclador}
+\end{figure}
+\begin{equation}
+f_{vco}=f_{xtal1}\cdot N_P+f_{xtal2}
+\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf69.png}
+\caption{Sintetizador PLL con mezclador y pll paralelo.}
+\end{figure}
+\begin{equation}
+f_{vco1}=f_{xtal1}\cdot N_{P1}+f_{xtal2}\cdot N_{P2}
+\end{equation}
+\section{Receptores homodinos y heterodino}
+La estructura de un receptor RF es:
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{mrf/mrf70.png}
+\caption{Diagrama de bloques de un receptor RF.}
+\end{figure}
+\textbf{Cualidades de un receptor}:
+\begin{itemize}
+\item \textbf{Sensibilidad}: capacidad de recibir señales débiles. Se mide como tensión en la entrada necesaria para obtener una relación determinada entre señal y ruido a la salida.
+\item \textbf{Selectividad}: capacidad de rechazar frecuencias indeseadas. Se mide como cociente de potencias de entrada de las señales de frecuencias indeseadas y de la deseada que generan la misma señal de salida.
+\item \textbf{Fidelidad}: o sensitividad, capacidad de reproducir las señales de banda base para una distorsión especificada.
+\item \textbf{Margen dinámico}: cociente entre niveles máximos y mínimos de potencia de entrada que garantizan funcionamiento correcto del receptor.
+\end{itemize}
+\textbf{Tipos de receptores:}
+\begin{itemize}
+\item Homodino o de detección directa o de conversión directa
+\item Reflex
+\item Regenerativo o receptores de reacción
+\item Superregenerativo o receptores a superacción
+\item Superheterodino
+\item SDR:
+\end{itemize}
+\subsection{Receptor homodino}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{mrf/mrf71.png}
+\caption{Receptor homodino: etapas}
+\label{fig:recep homo}
+\end{figure}
+En la figura \ref{fig:recep homo}, como primer filtro tenemos la antena, pues solo aceptará OEM especificas, luego tenemos los filtros RF y su respectivo amplificador, aunque tenemos \textit{n} etapas, si tenemos etapas en cascada esto puede generar una reducción en el ancho de banda. Luego de las etapas, tenemos el demodulador que se encarga de eliminar la portadora y recupera la moduladora.\\
+Cálculo del número de etapas en función de la frecuencia a recibir y del ancho de banda deseado:
+\begin{equation}
+\Delta f_o\approx \frac{\sqrt{2^{\frac{1}{n}-1}}\cdot f_o}{Q}=\frac{\sqrt{2^{\frac{1}{n}-1}}\cdot 2\pi\cdot f_o^2\cdot L}{R}
+\end{equation}
+Las limitaciones del receptor homodino:
+\begin{itemize}
+\item Necesidad de muchos filtros cuando $f_o>>\Delta f_o$ o de filtros muy agudos.
+\item Muchos filtros variables si la frecuencia es variable.
+\item Dificultad de mantenimiento del ancho de banda de recepción en el margen de frecuencias de recepción (selectividad variable en función de la frecuencia de recepción). Se quiere recepcionar varias frecuencias.
+\end{itemize}
+Un receptor homodino es útil si:
+\begin{itemize}
+\item El demodulador es del tipo detector \textbf{coherente}
+\end{itemize}
+\subsubsection*{Detector coherente}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{mrf/mrf72.png}
+\caption{Receptor homodino coherente}
+\end{figure}
+\begin{definition}[Receptor coherente]
+La detección coherente se obtiene al multiplicar la señal modulada por un tono de la
+misma frecuencia y fase que la portadora y extraer, mediante filtrado, la señal de banda
+base resultante.
+\end{definition}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf73.png}
+\caption{Señales coherentes.}
+\label{fig:señal coherente}
+\end{figure}
+En la figura \ref{fig:señal coherente}, se ve la señal a la entrada modulada en ASK, cuando entre al detector, un oscilador con frecuencia diferente y un voltaje diferente. Esa señal se interactuará con la señal recibida, se puede restar la \textcolor{green}{señal recibida} con la \textcolor{blue}{señal del mezclador}, y se obtiene un cambio de portadora.
+\subsubsection*{Demodulación Banda base sup portadora-SSB}
+Si la frecuencia del oscilador local es igual a la de la portadora recibida
+%Falta 52:09
+
 %----------------------------------------------------------------------------------------
 %	ANEXOS
 %----------------------------------------------------------------------------------------

@@ -74,6 +74,8 @@
 \newcommand{\fase}[2]{#1\phase{#2^{\circ}}}
 \newcommand{\faserad}[2]{#1\phase{#2 rad}}
 \newcommand{\parentesis}[1]{\left(#1\right)}
+\newcommand{\corchetes}[1]{\left[#1\right]}
+\newcommand{\llaves}[1]{\left\lbrace #1\right\rbrace}
 \input{arduinoLanguage.tex}
 \input{risc-v.tex}
 \usepackage{pythonhighlight}
