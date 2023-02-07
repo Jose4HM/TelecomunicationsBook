@@ -8347,6 +8347,9 @@ Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del c
 \item \textbf{dBS}: Unidad de SWR en decibelios.
 \item \textbf{RTN LOSS}: Perdida por retorno, esto indica
 la cantidad de onda reflejada expresada en dB. Así, en el centro de la carta, nada es reflejado y la pérdida de retorno es infinita. En el límite tenemos reflexión completa, por lo tanto la pérdida por retorno es 0 dB.
+\begin{equation}
+R_L=-20\log\rho
+\end{equation}
 \item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en términos de potencia, proporcional a $|\rho|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
 \item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\rho$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno. El coeficiente de reflexión, si no se cuenta con las reglas inferiores, se calcula con una regla de 3 simple:
 \begin{align*}
@@ -8394,7 +8397,7 @@ SWR=\frac{1+\fase{0.592}{33.28}}{1-\fase{0.592}{33.28}}=3.9
 \end{displaymath}
 Usando la relación logarítmica para SWR se encuentra la pérdida por retorno:
 \begin{displaymath}
-SWR=-20\log(\fase{0.592}{33.28})=4.5dB
+R_L=-20\log(\fase{0.592}{33.28})=4.5dB
 \end{displaymath}
 Por último la potencia relativa, ya que no específica voltaje asumimos 1V y lo expresamos en porcentaje:
 \begin{displaymath}

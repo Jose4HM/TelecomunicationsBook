@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.7)  22 NOV 2022 11:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.7)  21 DEC 2022 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -899,7 +899,17 @@ File: lstlang1.sty 2020/03/24 1.8d listings language file
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/schemata\schemata.sty
+Package: schemata 2021/02/27 1.4 generic package to aid construction of topical
+ categories
+\@schemata@rhs=\box125
+\@schemata@lhs=\box126
+\@schemata@rheight=\dimen326
+\@schemata@lheight=\dimen327
+\@schemata@one=\dimen328
+\@schemata@two=\dimen329
+\@schemata@three=\dimen330
+) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
@@ -908,14 +918,14 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@cnth=\count358
 \Gm@cntv=\count359
 \c@Gm@tempcnt=\count360
-\Gm@bindingoffset=\dimen326
-\Gm@wd@mp=\dimen327
-\Gm@odd@mp=\dimen328
-\Gm@even@mp=\dimen329
-\Gm@layoutwidth=\dimen330
-\Gm@layoutheight=\dimen331
-\Gm@layouthoffset=\dimen332
-\Gm@layoutvoffset=\dimen333
+\Gm@bindingoffset=\dimen331
+\Gm@wd@mp=\dimen332
+\Gm@odd@mp=\dimen333
+\Gm@even@mp=\dimen334
+\Gm@layoutwidth=\dimen335
+\Gm@layoutheight=\dimen336
+\Gm@layouthoffset=\dimen337
+\Gm@layoutvoffset=\dimen338
 \Gm@dimlist=\toks50
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
@@ -969,13 +979,13 @@ LaTeX Info: Redefining \hbar on input line 50.
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
 \MT@toks=\toks53
-\MT@tempbox=\box125
+\MT@tempbox=\box127
 \MT@count=\count361
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1045.
 LaTeX Info: Redefining \leftprotrusion on input line 1046.
 LaTeX Info: Redefining \rightprotrusion on input line 1056.
 LaTeX Info: Redefining \textls on input line 1234.
-\MT@outer@kern=\dimen334
+\MT@outer@kern=\dimen339
 LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
 \MT@listname@count=\count362
 
@@ -1006,30 +1016,30 @@ rs
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 155.
+less on input line 156.
 
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is use
-less on input line 159.
+less on input line 160.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/emptypage\emptypage.sty
 Package: emptypage 2010/05/30 v1.2 Suppress page numbers and headings on empty 
 pages
 ) (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box126
+\ttl@box=\box128
 \beforetitleunit=\skip79
 \aftertitleunit=\skip80
-\ttl@plus=\dimen335
-\ttl@minus=\dimen336
+\ttl@plus=\dimen340
+\ttl@minus=\dimen341
 \ttl@toksa=\toks54
-\titlewidth=\dimen337
-\titlewidthlast=\dimen338
-\titlewidthfirst=\dimen339
+\titlewidth=\dimen342
+\titlewidthlast=\dimen343
+\titlewidthfirst=\dimen344
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen340
+\ttl@leftsep=\dimen345
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2022/10/09 v0.5w Insert pages of external PDF documents (AM)
@@ -1039,23 +1049,23 @@ Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen341
-\ESO@tempdimb=\dimen342
+\ESO@tempdima=\dimen346
+\ESO@tempdimb=\dimen347
 )
-\AM@pagewidth=\dimen343
-\AM@pageheight=\dimen344
-\AM@fboxrule=\dimen345
+\AM@pagewidth=\dimen348
+\AM@pageheight=\dimen349
+\AM@fboxrule=\dimen350
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/10/09 v0.5w Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count363
-\AM@pagebox=\box127
+\AM@pagebox=\box129
 \AM@global@opts=\toks55
 \AM@pagecnt=\count364
 \AM@toc@title=\toks56
 \c@AM@survey=\count365
-\AM@templatesizebox=\box128
+\AM@templatesizebox=\box130
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/biblatex\biblatex.sty
 Package: biblatex 2022/07/12 v3.18b programmable bibliographies (PK/MW)
@@ -1294,7 +1304,7 @@ Package: expl3 2022-10-26 L3 programming layer (loader)
 ex.def
 File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count492
-\l__pdf_internal_box=\box129
+\l__pdf_internal_box=\box131
 ))
 Package biblatex Info: ... and expl3
 (biblatex)             2022-10-26 L3 programming layer (loader) 
@@ -1319,30 +1329,30 @@ Package: makeidx 2021/10/04 v1.0m Standard LaTeX package
 Writing index file fastmain.idx
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen346
-\lightrulewidth=\dimen347
-\cmidrulewidth=\dimen348
-\belowrulesep=\dimen349
-\belowbottomsep=\dimen350
-\aboverulesep=\dimen351
-\abovetopsep=\dimen352
-\cmidrulesep=\dimen353
-\cmidrulekern=\dimen354
-\defaultaddspace=\dimen355
+\heavyrulewidth=\dimen351
+\lightrulewidth=\dimen352
+\cmidrulewidth=\dimen353
+\belowrulesep=\dimen354
+\belowbottomsep=\dimen355
+\aboverulesep=\dimen356
+\abovetopsep=\dimen357
+\cmidrulesep=\dimen358
+\cmidrulekern=\dimen359
+\defaultaddspace=\dimen360
 \@cmidla=\count493
 \@cmidlb=\count494
-\@aboverulesep=\dimen356
-\@belowrulesep=\dimen357
+\@aboverulesep=\dimen361
+\@belowrulesep=\dimen362
 \@thisruleclass=\count495
 \@lastruleclass=\count496
-\@thisrulewidth=\dimen358
+\@thisrulewidth=\dimen363
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip103
-\enit@outerparindent=\dimen359
+\enit@outerparindent=\dimen364
 \enit@toks=\toks57
-\enit@inbox=\box130
+\enit@inbox=\box132
 \enit@count@id=\count497
 \enitdp@description=\count498
 )
@@ -1376,7 +1386,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count499
 )
-\@linkdim=\dimen360
+\@linkdim=\dimen365
 \Hy@linkcounter=\count500
 \Hy@pagecounter=\count501
 
@@ -1406,7 +1416,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4410.
 \c@Hy@tempcnt=\count503
 LaTeX Info: Redefining \url on input line 4748.
-\XeTeXLinkMargin=\dimen361
+\XeTeXLinkMargin=\dimen366
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1417,8 +1427,8 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count504
-\Field@Width=\dimen362
-\Fld@charsize=\dimen363
+\Field@Width=\dimen367
+\Fld@charsize=\dimen368
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -1461,11 +1471,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip104
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 571.
+Package hyperref Info: Option `colorlinks' set `true' on input line 572.
 
 
 Package hyperref Warning: Option `hyperindex' has already been used,
-(hyperref)                setting the option has no effect on input line 571.
+(hyperref)                setting the option has no effect on input line 572.
 
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
@@ -1480,7 +1490,7 @@ Package: amsmath 2022/04/08 v2.17n AMS math features
 For additional information on amsmath, use the `?' option.
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen364
+\pmbraise@=\dimen369
 )
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
@@ -1496,13 +1506,13 @@ LaTeX Info: Redefining \colon on input line 410.
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box131
-\strutbox@=\box132
+\Mathstrutbox@=\box133
+\strutbox@=\box134
 LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen365
+\big@size=\dimen370
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count516
@@ -1520,12 +1530,12 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count521
 \maxfields@=\count522
 \andhelp@=\toks59
-\eqnshift@=\dimen366
-\alignsep@=\dimen367
-\tagshift@=\dimen368
-\tagwidth@=\dimen369
-\totwidth@=\dimen370
-\lineht@=\dimen371
+\eqnshift@=\dimen371
+\alignsep@=\dimen372
+\tagshift@=\dimen373
+\tagwidth@=\dimen374
+\totwidth@=\dimen375
+\lineht@=\dimen376
 \@envbody=\toks60
 \multlinegap=\skip106
 \multlinetaggap=\skip107
@@ -1652,11 +1662,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box133
-\mdf@footnotebox=\box134
-\mdf@splitbox@one=\box135
-\mdf@splitbox@two=\box136
-\mdf@splitbox@save=\box137
+\mdf@frametitlebox=\box135
+\mdf@footnotebox=\box136
+\mdf@splitbox@one=\box137
+\mdf@splitbox@two=\box138
+\mdf@splitbox@save=\box139
 \mdfsplitboxwidth=\skip151
 \mdfsplitboxtotalwidth=\skip152
 \mdfsplitboxheight=\skip153
@@ -1722,16 +1732,16 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
 \pIIe@GRAPH=\toks68
-\@arclen=\dimen372
-\@arcrad=\dimen373
-\pIIe@tempdima=\dimen374
-\pIIe@tempdimb=\dimen375
-\pIIe@tempdimc=\dimen376
-\pIIe@tempdimd=\dimen377
-\pIIe@tempdime=\dimen378
-\pIIe@tempdimf=\dimen379
+\@arclen=\dimen377
+\@arcrad=\dimen378
+\pIIe@tempdima=\dimen379
+\pIIe@tempdimb=\dimen380
+\pIIe@tempdimc=\dimen381
+\pIIe@tempdimd=\dimen382
+\pIIe@tempdime=\dimen383
+\pIIe@tempdimf=\dimen384
 )
-\stm@phasebox=\box138
+\stm@phasebox=\box140
 \stm@phasedp=\skip178
 \stm@phaseht=\skip179
 \stm@phasetot=\skip180
@@ -1772,13 +1782,13 @@ LaTeX Font Info:    ... okay on input line 18.
 i
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count548
-\scratchdimen=\dimen380
-\scratchbox=\box139
+\scratchdimen=\dimen385
+\scratchbox=\box141
 \nofMPsegments=\count549
 \nofMParguments=\count550
 \everyMPshowfont=\toks69
 \MPscratchCnt=\count551
-\MPscratchDim=\dimen381
+\MPscratchDim=\dimen386
 \MPnumerator=\count552
 \makeMPintoPDFobject=\count553
 \everyMPtoPDFconversion=\toks70
@@ -1796,8 +1806,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen382
-\caption@adjustwidth@linewidth=\dimen383
+\caption@adjustwidth@hsize=\dimen387
+\caption@adjustwidth@linewidth=\dimen388
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1908,69 +1918,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <17.28> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 20.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 27.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 27.
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 29.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `ztmcm' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 29.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 29.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 29.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
-9.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 3
-5.
-
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<Images//ant/ant22.png, id=6, 307.90031pt x 285.31593pt>
-File: Images//ant/ant22.png Graphic file (type png)
-<use Images//ant/ant22.png>
-Package pdftex.def Info: Images//ant/ant22.png  used on input line 43.
-(pdftex.def)             Requested size: 298.75264pt x 276.8606pt.
+<Images//ant/ant47.png, id=7, 595.47469pt x 200.24812pt>
+File: Images//ant/ant47.png Graphic file (type png)
+<use Images//ant/ant47.png>
+Package pdftex.def Info: Images//ant/ant47.png  used on input line 24.
+(pdftex.def)             Requested size: 256.07741pt x 86.11418pt.
+<Images//ant/ant48.png, id=10, 548.0475pt x 246.9225pt>
+File: Images//ant/ant48.png Graphic file (type png)
+<use Images//ant/ant48.png>
+Package pdftex.def Info: Images//ant/ant48.png  used on input line 31.
+(pdftex.def)             Requested size: 256.07741pt x 115.37538pt.
+<Images//ant/ant49.png, id=12, 273.27094pt x 271.76532pt>
+File: Images//ant/ant49.png Graphic file (type png)
+<use Images//ant/ant49.png>
+Package pdftex.def Info: Images//ant/ant49.png  used on input line 38.
+(pdftex.def)             Requested size: 256.07741pt x 254.68398pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1982,14 +1944,17 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [1{C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 46.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 63.
-Package mdframed Info: Not enough space on this page on input line 65.
+ <./Images//ant/ant47.png> <./Images//ant/ant48.png>]
+<Images//ant/ant50.png, id=29, 413.29407pt x 289.83281pt>
+File: Images//ant/ant50.png Graphic file (type png)
+<use Images//ant/ant50.png>
+Package pdftex.def Info: Images//ant/ant50.png  used on input line 45.
+(pdftex.def)             Requested size: 256.07741pt x 179.58391pt.
+<Images//ant/ant51.png, id=31, 549.55313pt x 314.67563pt>
+File: Images//ant/ant51.png Graphic file (type png)
+<use Images//ant/ant51.png>
+Package pdftex.def Info: Images//ant/ant51.png  used on input line 52.
+(pdftex.def)             Requested size: 256.07741pt x 146.63475pt.
 
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
@@ -1999,29 +1964,127 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[2 <./Images//ant/ant22.png>]
-Package mdframed Info: Not enough space on this page on input line 65.
-<Images//ant/ant23.png, id=38, 129.6042pt x 123.3408pt>
-File: Images//ant/ant23.png Graphic file (type png)
-<use Images//ant/ant23.png>
-Package pdftex.def Info: Images//ant/ant23.png  used on input line 72.
-(pdftex.def)             Requested size: 76.82074pt x 73.10919pt.
+[2 <./Images//ant/ant49.png> <./Images//ant/ant50.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 56.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 56.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 58.
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--75
-\T1/ptm/m/n/12 (+20) para "fab-ricar" la im-a-gen del otro brazo del dipolo.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 58.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 58.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 58.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+8.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 58.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 6
+4.
+
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 71.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 84.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 86.
+LaTeX Font Info:    Font shape `T1/pag/b/it' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/it' tried instead on input line 86.
+LaTeX Font Info:    Font shape `T1/pag/db/it' in size <14.4> not available
+(Font)              Font shape `T1/pag/db/sl' tried instead on input line 86.
+<Images//ant/ant52.png, id=42, 222.8325pt x 278.54062pt>
+File: Images//ant/ant52.png Graphic file (type png)
+<use Images//ant/ant52.png>
+Package pdftex.def Info: Images//ant/ant52.png  used on input line 90.
+(pdftex.def)             Requested size: 256.07741pt x 320.1237pt.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[3 <./Images//ant/ant51.png>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 94.
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 106.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[4 <./Images//ant/ant52.png>]
+<Images//ant/ant53.png, id=71, 587.94656pt x 272.51813pt>
+File: Images//ant/ant53.png Graphic file (type png)
+<use Images//ant/ant53.png>
+Package pdftex.def Info: Images//ant/ant53.png  used on input line 112.
+(pdftex.def)             Requested size: 256.07741pt x 118.69412pt.
+
+Overfull \hbox (6.9705pt too wide) in paragraph at lines 116--120
+[]\T1/ptm/m/n/12 (-20) El sub-re-flec-tor suele ser hiper-bólico en cuyo caso l
+a an-tena se des-igna como Cassegrain16
  []
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 78.
-<Images//ant/ant24.png, id=39, 903.375pt x 580.1675pt>
-File: Images//ant/ant24.png Graphic file (type png)
-<use Images//ant/ant24.png>
-Package pdftex.def Info: Images//ant/ant24.png  used on input line 88.
-(pdftex.def)             Requested size: 256.75282pt x 164.88911pt.
+<Images//ant/ant54.png, id=76, 173.89969pt x 210.03468pt>
+File: Images//ant/ant54.png Graphic file (type png)
+<use Images//ant/ant54.png>
+Package pdftex.def Info: Images//ant/ant54.png  used on input line 125.
+(pdftex.def)             Requested size: 170.71393pt x 206.19473pt.
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2030,18 +2093,7 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[3 <./Images//ant/ant23.png> <./Images//ant/ant24.png>]
-<Images//ant/ant25.png, id=52, 299.1175pt x 161.60374pt>
-File: Images//ant/ant25.png Graphic file (type png)
-<use Images//ant/ant25.png>
-Package pdftex.def Info: Images//ant/ant25.png  used on input line 99.
-(pdftex.def)             Requested size: 256.07741pt x 138.36003pt.
-<Images//ant/ant26.png, id=53, 451.6875pt x 451.6875pt>
-File: Images//ant/ant26.png Graphic file (type png)
-<use Images//ant/ant26.png>
-Package pdftex.def Info: Images//ant/ant26.png  used on input line 114.
-(pdftex.def)             Requested size: 426.79135pt x 426.81937pt.
-
+[5 <./Images//ant/ant53.png>]
 
 Package fancyhdr Warning: \headheight is too small (14.22636pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2050,80 +2102,35 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[4 <./Images//ant/ant25.png>]
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[5 <./Images//ant/ant26.png>]
-File: Images//ant/ant26.png Graphic file (type png)
-<use Images//ant/ant26.png>
-Package pdftex.def Info: Images//ant/ant26.png  used on input line 140.
-(pdftex.def)             Requested size: 298.75264pt x 298.76942pt.
-<Images//ant/ant29.png, id=70, 401.5pt x 301.125pt>
-File: Images//ant/ant29.png Graphic file (type png)
-<use Images//ant/ant29.png>
-Package pdftex.def Info: Images//ant/ant29.png  used on input line 145.
-(pdftex.def)             Requested size: 298.75264pt x 224.07878pt.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[6]
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <14.4> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 171.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <6> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 180.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 180.
-
-
-Package fancyhdr Warning: \headheight is too small (14.22636pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
-
-[7 <./Images//ant/ant29.png>] (fastmain.aux)
+[6 <./Images//ant/ant54.png>] (fastmain.aux)
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 54152 strings out of 475380
- 1213895 string characters out of 2777244
- 2180574 words of memory out of 3000000
- 74379 multiletter control sequences out of 15000+600000
- 545568 words of font info for 265 fonts, out of 8000000 for 9000
+ 54147 strings out of 475380
+ 1213802 string characters out of 2777244
+ 2182961 words of memory out of 3000000
+ 74390 multiletter control sequences out of 15000+600000
+ 541442 words of font info for 243 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,13n,108p,1155b,1073s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 114i,13n,108p,1155b,1092s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/
 Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.
 pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/public/amsfonts/symbols/msam10.pfb><C:/Users/User/AppData/Local/Programs/M
-iKTeX/fonts/type1/urw/avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs
-/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/M
-iKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/Mi
-KTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiK
-TeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on fastmain.pdf (7 pages, 597337 bytes).
+/cmr10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/type1/pub
+lic/amsfonts/symbols/msam10.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/fo
+nts/type1/urw/avantgar/uagd8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX/
+fonts/type1/urw/avantgar/uagdo8a.pfb><C:/Users/User/AppData/Local/Programs/MiKT
+eX/fonts/type1/urw/avantgar/uagk8a.pfb><C:/Users/User/AppData/Local/Programs/Mi
+KTeX/fonts/type1/urw/symbol/usyr.pfb><C:/Users/User/AppData/Local/Programs/MiKT
+eX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTe
+X/fonts/type1/urw/times/utmr8a.pfb><C:/Users/User/AppData/Local/Programs/MiKTeX
+/fonts/type1/urw/times/utmri8a.pfb>
+Output written on fastmain.pdf (6 pages, 972033 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 37 named destinations out of 1000 (max. 500000)
- 79451 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 155 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 72269 words of extra memory for PDF output out of 74296 (max. 10000000)
 

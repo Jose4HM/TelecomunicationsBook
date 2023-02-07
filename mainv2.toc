@@ -1,136 +1,170 @@
-\contentsline {part}{\numberline {I}Antenas}{8}{part.1}%
-\contentsline {chapter}{\numberline {1}Conceptos básicos sobre antenas}{9}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Introducción}{9}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Ancho de banda y capacidad de información}{11}{subsection.1.1.1}%
-\contentsline {subsection}{\numberline {1.1.2}Ruido}{12}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Ruido térmico}{12}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Ángulo crítico}{13}{subsection.1.1.4}%
-\contentsline {subsection}{\numberline {1.1.5}Repaso: Propagación de ondas electromagnéticas}{15}{subsection.1.1.5}%
-\contentsline {subsubsection}{\numberline {1.1.5.1}Densidad de potencia radiada}{16}{subsubsection.1.1.5.1}%
-\contentsline {subsubsection}{\numberline {1.1.5.2}Ley de cuadrado inverso}{17}{subsubsection.1.1.5.2}%
-\contentsline {section}{\numberline {1.2}Antenas}{18}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Tipos de antenas}{18}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Características y parámetros de las antenas transmisoras}{19}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Parámetros de acción directiva de antenas}{21}{subsection.1.2.3}%
-\contentsline {subsubsection}{\numberline {1.2.3.1}Directividad}{21}{subsubsection.1.2.3.1}%
-\contentsline {subsection}{\numberline {1.2.4}Antenas receptoras}{23}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Transformador $\lambda $/4}{24}{section.1.3}%
-\contentsline {chapter}{\numberline {2}Tipos de antenas}{27}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Antena Dipolo}{27}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Diseño de un dipolo}{27}{subsection.2.1.1}%
-\contentsline {section}{\numberline {2.2}Isotrópica}{31}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Dipolo simétrico y asimétrico}{31}{section.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.0.1}Campo de un dipolo simétrico}{32}{subsubsection.2.3.0.1}%
-\contentsline {section}{\numberline {2.4}Antena Marconi}{33}{section.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.0.1}Aplicaciones}{34}{subsubsection.2.4.0.1}%
-\contentsline {section}{\numberline {2.5}Yagi-Uda}{34}{section.2.5}%
-\contentsline {subsubsection}{\numberline {2.5.0.1}Aplicaciones}{36}{subsubsection.2.5.0.1}%
-\contentsline {section}{\numberline {2.6}Antenas helicoidales}{36}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Aplicaciones}{37}{subsection.2.6.1}%
-\contentsline {part}{\numberline {II}Internetworking 2}{38}{part.2}%
-\contentsline {chapter}{\numberline {3}Unidad I}{39}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Protocolo spanning tree}{39}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Problemas con la redundancia de capa 1}{39}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Tecnología EtherChannel}{42}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Funcionamiento}{42}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Ventajas de EtherChannel}{43}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Restricciones}{43}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Funcionamiento del PAgP}{44}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}PAgP}{44}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}LACP}{45}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Pautas y restricciones para la configuración}{45}{subsection.3.2.7}%
-\contentsline {section}{\numberline {3.3}Conceptos de routing}{46}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Funciones de routing}{46}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Conexión de dispositivos}{48}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Verificación de la conectividad de redes conectadas directamente}{48}{subsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.3.1}Prueba de stack}{48}{subsubsection.3.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.3.2}Asignación de interfaz}{49}{subsubsection.3.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.4}Determinación de ruta}{49}{subsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.4.1}Función determinación de ruta}{49}{subsubsection.3.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.3.4.2}Función de conmutación}{50}{subsubsection.3.3.4.2}%
-\contentsline {section}{\numberline {3.4}Routing estático}{50}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Tipos de rutas estáticas}{51}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Routing dinámico}{52}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Comparación entre routing dinámico y estático}{52}{subsection.3.5.1}%
-\contentsline {subsection}{\numberline {3.5.2}Routing dinámico vector distancia}{53}{subsection.3.5.2}%
-\contentsline {subsection}{\numberline {3.5.3}Estado de enlace}{53}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}NAT para IPv4}{54}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Tipos de NAT}{55}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Ventajas y desventajas}{56}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Configurar}{57}{subsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.3.1}NAT estática}{57}{subsubsection.3.6.3.1}%
-\contentsline {subsubsection}{\numberline {3.6.3.2}NAT dinámica}{58}{subsubsection.3.6.3.2}%
-\contentsline {chapter}{\numberline {4}Unidad II}{59}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Tecnología WAN}{59}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Operaciones}{59}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Opciones de acceso}{60}{subsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.1}Pública}{60}{subsubsection.4.1.2.1}%
-\contentsline {subsubsection}{\numberline {4.1.2.2}Privada}{60}{subsubsection.4.1.2.2}%
-\contentsline {section}{\numberline {4.2}EIGRP}{63}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Características}{63}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Detección de la ruta inicial del EIGRP}{64}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Métricas}{66}{subsection.4.2.3}%
-\contentsline {part}{\numberline {III}Control Adaptativo Moderno}{67}{part.3}%
-\contentsline {chapter}{\numberline {5}Unidad I}{68}{chapter.5}%
-\contentsline {section}{\numberline {5.1}CADe Simu}{68}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Paneles}{68}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Simulaciones}{69}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Ladder}{76}{subsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.3.1}Compuertas lógicas}{77}{subsubsection.5.1.3.1}%
-\contentsline {part}{\numberline {IV}Software de telecomunicaciones}{82}{part.4}%
-\contentsline {chapter}{\numberline {6}Unidad I}{83}{chapter.6}%
-\contentsline {section}{\numberline {6.1}XDR}{83}{section.6.1}%
-\contentsline {section}{\numberline {6.2}RPC y RMI}{83}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}RMI}{84}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}CORBA}{85}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}CORBA y EAI}{85}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Arquitectura CORBA}{86}{subsection.6.3.2}%
-\contentsline {section}{\numberline {6.4}SOAP}{86}{section.6.4}%
-\contentsline {chapter}{\numberline {7}Unidad II}{88}{chapter.7}%
-\contentsline {section}{\numberline {7.1}REST}{88}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}REST vs SOAP}{89}{subsection.7.1.1}%
-\contentsline {section}{\numberline {7.2}UML}{90}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Clase abstracta}{90}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Clase concreta}{90}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Relaciones}{91}{subsection.7.2.3}%
-\contentsline {subsubsection}{\numberline {7.2.3.1}Multiplicidad}{92}{subsubsection.7.2.3.1}%
-\contentsline {section}{\numberline {7.3}Patrón de diseño}{93}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Tipos de patrones}{93}{subsection.7.3.1}%
-\contentsline {part}{\numberline {V}Microelectrónica en RF}{95}{part.5}%
-\contentsline {chapter}{\numberline {8}Osciladores}{96}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Ondas electromagnéticas}{96}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Distorsión}{99}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Distorsión lineal}{99}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Distorsión no lineal}{102}{subsection.8.2.2}%
-\contentsline {subsubsection}{\numberline {8.2.2.1}Armónicos}{105}{subsubsection.8.2.2.1}%
-\contentsline {subsubsection}{\numberline {8.2.2.2}Intermodulación 3er orden: 2 tonos}{106}{subsubsection.8.2.2.2}%
-\contentsline {section}{\numberline {8.3}Circuitos resonantes}{108}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Osciladores}{114}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Sistemas retroalimentados}{114}{subsection.8.4.1}%
-\contentsline {subsubsection}{\numberline {8.4.1.1}Condición de oscilación}{115}{subsubsection.8.4.1.1}%
-\contentsline {subsection}{\numberline {8.4.2}Osciladores de frecuencia muy constante}{117}{subsection.8.4.2}%
-\contentsline {chapter}{\numberline {9}Circuitos de enganche}{119}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Lazos enganchados por fase-PLL}{119}{section.9.1}%
-\contentsline {subsection}{\numberline {9.1.1}Orden y tipo}{123}{subsection.9.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.1.1}PLL de orden 1 y tipo 1}{125}{subsubsection.9.1.1.1}%
-\contentsline {subsubsection}{\numberline {9.1.1.2}PLL orden 2 y tipo 1}{125}{subsubsection.9.1.1.2}%
-\contentsline {subsubsection}{\numberline {9.1.1.3}PLL orden 2 y tipo 2}{126}{subsubsection.9.1.1.3}%
-\contentsline {section}{\numberline {9.2}Realización física}{128}{section.9.2}%
-\contentsline {subsection}{\numberline {9.2.1}Detector de fases}{128}{subsection.9.2.1}%
-\contentsline {subsubsection}{\numberline {9.2.1.1}Mezclador}{128}{subsubsection.9.2.1.1}%
-\contentsline {subsubsection}{\numberline {9.2.1.2}XOR}{130}{subsubsection.9.2.1.2}%
-\contentsline {subsubsection}{\numberline {9.2.1.3}Biestale RS}{131}{subsubsection.9.2.1.3}%
-\contentsline {subsection}{\numberline {9.2.2}VCO}{135}{subsection.9.2.2}%
-\contentsline {section}{\numberline {9.3}Sintetizadores}{136}{section.9.3}%
-\contentsline {subsubsection}{\numberline {9.3.0.1}Sintetizador doble módulo}{137}{subsubsection.9.3.0.1}%
-\contentsline {subsubsection}{\numberline {9.3.0.2}Sintetizador de frecuencia con PLLs y con mezclador}{138}{subsubsection.9.3.0.2}%
-\contentsline {section}{\numberline {9.4}Receptores homodinos y heterodino}{139}{section.9.4}%
-\contentsline {subsection}{\numberline {9.4.1}Receptor homodino}{139}{subsection.9.4.1}%
-\contentsline {part}{\numberline {VI}Anexos}{141}{part.6}%
-\contentsline {section}{\numberline {9.5}Constantes universales}{142}{section.9.5}%
-\contentsline {section}{\numberline {9.6}Voltajes}{142}{section.9.6}%
-\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{143}{chapter*.110}%
-\contentsline {section}{Articles}{143}{chapter*.110}%
-\contentsline {section}{Books}{143}{chapter*.110}%
-\contentsline {chapter}{\textcolor {ocre}{Index}}{144}{section*.111}%
+\contentsline {part}{\numberline {I}Antenas}{9}{part.1}%
+\contentsline {chapter}{\numberline {1}Conceptos básicos sobre antenas}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introducción}{10}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Ancho de banda y capacidad de información}{12}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Ruido}{13}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Ruido térmico}{13}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Ángulo crítico}{14}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Repaso: Propagación de ondas electromagnéticas}{16}{subsection.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.5.1}Densidad de potencia radiada}{17}{subsubsection.1.1.5.1}%
+\contentsline {subsubsection}{\numberline {1.1.5.2}Ley de cuadrado inverso}{18}{subsubsection.1.1.5.2}%
+\contentsline {section}{\numberline {1.2}Antenas}{19}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Tipos de antenas}{19}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Características y parámetros de las antenas transmisoras}{20}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Parámetros de acción directiva de antenas}{22}{subsection.1.2.3}%
+\contentsline {subsubsection}{\numberline {1.2.3.1}Directividad}{22}{subsubsection.1.2.3.1}%
+\contentsline {subsection}{\numberline {1.2.4}Antenas receptoras}{24}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Transformador $\lambda $/4}{25}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Antenas para HF, VHF, UHF}{28}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Isotrópica}{28}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Dipolo simétrico y asimétrico}{28}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Diseño de un dipolo}{28}{subsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Campo de un dipolo simétrico}{32}{subsubsection.2.2.1.1}%
+\contentsline {section}{\numberline {2.3}Antena Marconi}{33}{section.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.0.1}Aplicaciones}{34}{subsubsection.2.3.0.1}%
+\contentsline {section}{\numberline {2.4}Yagi-Uda}{34}{section.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.0.1}Aplicaciones}{36}{subsubsection.2.4.0.1}%
+\contentsline {section}{\numberline {2.5}Antenas helicoidales}{36}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Aplicaciones}{38}{subsection.2.5.1}%
+\contentsline {chapter}{\numberline {3}Radioenlace de microondas}{39}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Guías de onda}{39}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Conceptos generales}{39}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Inyección y extracción de señales}{40}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Guía de onda rectangular}{41}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}La propagación de la señal}{41}{subsubsection.3.1.3.1}%
+\contentsline {subsection}{\numberline {3.1.4}Guía de onda circular}{42}{subsection.3.1.4}%
+\contentsline {section}{\numberline {3.2}Antenas de bocina}{43}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Tipos de bocina}{44}{subsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.1}Bocinas rectangulares}{44}{subsubsection.3.2.1.1}%
+\contentsline {subsubsection}{\numberline {3.2.1.2}Bocina cónica}{44}{subsubsection.3.2.1.2}%
+\contentsline {section}{\numberline {3.3}Antenas de ranura}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Antenas reflector parabólico}{45}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Antenas \textit {offset}}{48}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Antenas con doble reflector: Cassegrain}{49}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Antenas doble reflector}{49}{subsubsection.3.4.2.1}%
+\contentsline {subsubsection}{\numberline {3.4.2.2}Antena Cassegrain}{50}{subsubsection.3.4.2.2}%
+\contentsline {section}{\numberline {3.5}Antenas Parche}{51}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Características}{51}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Métodos de análisis}{52}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Modelos empíricos}{52}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}Modelo semi-empíricos}{54}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}Modelos de onda completa}{54}{subsubsection.3.5.2.3}%
+\contentsline {subsection}{\numberline {3.5.3}Alimentación}{54}{subsection.3.5.3}%
+\contentsline {section}{\numberline {3.6}Arreglo o arrays de antenas}{55}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Arrays lineales}{56}{subsection.3.6.1}%
+\contentsline {part}{\numberline {II}Internetworking 2}{59}{part.2}%
+\contentsline {chapter}{\numberline {4}Unidad I}{60}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Protocolo spanning tree}{60}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Problemas con la redundancia de capa 1}{60}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Tecnología EtherChannel}{63}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Funcionamiento}{63}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Ventajas de EtherChannel}{64}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Restricciones}{64}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Funcionamiento del PAgP}{65}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}PAgP}{65}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}LACP}{66}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Pautas y restricciones para la configuración}{66}{subsection.4.2.7}%
+\contentsline {section}{\numberline {4.3}Conceptos de routing}{67}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Funciones de routing}{67}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Conexión de dispositivos}{69}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Verificación de la conectividad de redes conectadas directamente}{69}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}Prueba de stack}{69}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}Asignación de interfaz}{70}{subsubsection.4.3.3.2}%
+\contentsline {subsection}{\numberline {4.3.4}Determinación de ruta}{70}{subsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.4.1}Función determinación de ruta}{70}{subsubsection.4.3.4.1}%
+\contentsline {subsubsection}{\numberline {4.3.4.2}Función de conmutación}{71}{subsubsection.4.3.4.2}%
+\contentsline {section}{\numberline {4.4}Routing estático}{71}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Tipos de rutas estáticas}{72}{subsection.4.4.1}%
+\contentsline {section}{\numberline {4.5}Routing dinámico}{73}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Comparación entre routing dinámico y estático}{73}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Routing dinámico vector distancia}{74}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}Estado de enlace}{74}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}NAT para IPv4}{75}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Tipos de NAT}{76}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Ventajas y desventajas}{77}{subsection.4.6.2}%
+\contentsline {subsection}{\numberline {4.6.3}Configurar}{78}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}NAT estática}{78}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}NAT dinámica}{79}{subsubsection.4.6.3.2}%
+\contentsline {chapter}{\numberline {5}Unidad II}{80}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Tecnología WAN}{80}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Operaciones}{80}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Opciones de acceso}{81}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Pública}{81}{subsubsection.5.1.2.1}%
+\contentsline {subsubsection}{\numberline {5.1.2.2}Privada}{81}{subsubsection.5.1.2.2}%
+\contentsline {section}{\numberline {5.2}EIGRP}{84}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Características}{84}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Detección de la ruta inicial del EIGRP}{85}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Métricas}{87}{subsection.5.2.3}%
+\contentsline {part}{\numberline {III}Control Adaptativo Moderno}{88}{part.3}%
+\contentsline {chapter}{\numberline {6}Unidad I}{89}{chapter.6}%
+\contentsline {section}{\numberline {6.1}CADe Simu}{89}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Paneles}{89}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Simulaciones}{90}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Ladder}{97}{subsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.3.1}Compuertas lógicas}{98}{subsubsection.6.1.3.1}%
+\contentsline {part}{\numberline {IV}Software de telecomunicaciones}{103}{part.4}%
+\contentsline {chapter}{\numberline {7}Unidad I}{104}{chapter.7}%
+\contentsline {section}{\numberline {7.1}XDR}{104}{section.7.1}%
+\contentsline {section}{\numberline {7.2}RPC y RMI}{104}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}RMI}{105}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}CORBA}{106}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}CORBA y EAI}{106}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Arquitectura CORBA}{107}{subsection.7.3.2}%
+\contentsline {section}{\numberline {7.4}SOAP}{107}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Unidad II}{109}{chapter.8}%
+\contentsline {section}{\numberline {8.1}REST}{109}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}REST vs SOAP}{110}{subsection.8.1.1}%
+\contentsline {section}{\numberline {8.2}UML}{111}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Clase abstracta}{111}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Clase concreta}{111}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Relaciones}{112}{subsection.8.2.3}%
+\contentsline {subsubsection}{\numberline {8.2.3.1}Multiplicidad}{113}{subsubsection.8.2.3.1}%
+\contentsline {section}{\numberline {8.3}Patrón de diseño}{114}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Tipos de patrones}{114}{subsection.8.3.1}%
+\contentsline {part}{\numberline {V}Microelectrónica en RF}{116}{part.5}%
+\contentsline {chapter}{\numberline {9}Osciladores}{117}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ondas electromagnéticas}{117}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Distorsión}{120}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Distorsión lineal}{120}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Distorsión no lineal}{123}{subsection.9.2.2}%
+\contentsline {subsubsection}{\numberline {9.2.2.1}Armónicos}{126}{subsubsection.9.2.2.1}%
+\contentsline {subsubsection}{\numberline {9.2.2.2}Intermodulación 3er orden: 2 tonos}{127}{subsubsection.9.2.2.2}%
+\contentsline {section}{\numberline {9.3}Circuitos resonantes}{129}{section.9.3}%
+\contentsline {section}{\numberline {9.4}Osciladores}{135}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Sistemas retroalimentados}{135}{subsection.9.4.1}%
+\contentsline {subsubsection}{\numberline {9.4.1.1}Condición de oscilación}{136}{subsubsection.9.4.1.1}%
+\contentsline {subsection}{\numberline {9.4.2}Osciladores de frecuencia muy constante}{138}{subsection.9.4.2}%
+\contentsline {chapter}{\numberline {10}Circuitos de enganche}{140}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Lazos enganchados por fase-PLL}{140}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Orden y tipo}{144}{subsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.1.1}PLL de orden 1 y tipo 1}{146}{subsubsection.10.1.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.1.2}PLL orden 2 y tipo 1}{146}{subsubsection.10.1.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.1.3}PLL orden 2 y tipo 2}{147}{subsubsection.10.1.1.3}%
+\contentsline {section}{\numberline {10.2}Realización física}{149}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Detector de fases}{149}{subsection.10.2.1}%
+\contentsline {subsubsection}{\numberline {10.2.1.1}Mezclador}{149}{subsubsection.10.2.1.1}%
+\contentsline {subsubsection}{\numberline {10.2.1.2}XOR}{151}{subsubsection.10.2.1.2}%
+\contentsline {subsubsection}{\numberline {10.2.1.3}Biestale RS}{152}{subsubsection.10.2.1.3}%
+\contentsline {subsection}{\numberline {10.2.2}VCO}{156}{subsection.10.2.2}%
+\contentsline {section}{\numberline {10.3}Sintetizadores}{157}{section.10.3}%
+\contentsline {subsubsection}{\numberline {10.3.0.1}Sintetizador doble módulo}{158}{subsubsection.10.3.0.1}%
+\contentsline {subsubsection}{\numberline {10.3.0.2}Sintetizador de frecuencia con PLLs y con mezclador}{159}{subsubsection.10.3.0.2}%
+\contentsline {section}{\numberline {10.4}Receptores homodinos y heterodino}{160}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Receptor homodino}{160}{subsection.10.4.1}%
+\contentsline {chapter}{\numberline {11}Mezcladores y circuitos discriminadores RF}{162}{chapter.11}%
+\contentsline {section}{\numberline {11.1}Mezcladores}{162}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}Objetivo de la realización física}{166}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}Mezcladores con diodos}{167}{subsection.11.1.2}%
+\contentsline {subsubsection}{\numberline {11.1.2.1}Teoría mezclador con un diodo}{169}{subsubsection.11.1.2.1}%
+\contentsline {subsubsection}{\numberline {11.1.2.2}Teoría del mezclador equilibrado con dos diodos}{170}{subsubsection.11.1.2.2}%
+\contentsline {subsection}{\numberline {11.1.3}Mezclador doblemente equilibrado con cuatro diodos}{171}{subsection.11.1.3}%
+\contentsline {subsection}{\numberline {11.1.4}Carga a la salida de mezclador de diodos}{172}{subsection.11.1.4}%
+\contentsline {subsection}{\numberline {11.1.5}Mezclados con un transistor bipolar}{174}{subsection.11.1.5}%
+\contentsline {part}{\numberline {VI}Anexos}{176}{part.6}%
+\contentsline {section}{\numberline {11.2}Constantes universales}{177}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Voltajes}{177}{section.11.3}%
+\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{178}{chapter*.149}%
+\contentsline {section}{Articles}{178}{chapter*.149}%
+\contentsline {section}{Books}{178}{chapter*.149}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{179}{section*.150}%
 \contentsfinish 

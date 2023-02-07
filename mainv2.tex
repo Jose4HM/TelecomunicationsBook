@@ -560,7 +560,10 @@ Donde:
 \item $R_A$: Resistencia activa total. ($\Omega$)
 \end{itemize}
 \end{definition}
-\begin{definition}[Rendimiento o Eficacia de una antena]
+\begin{remark}
+Ten en cuenta que cuando se habla de atenuación y la unidad son los \textbf{decibelios}, estos se \textbf{restan}. Por el contrario, si se habla de una atenuación en \textbf{watts}, este \textbf{divide} a la potencia.
+\end{remark}
+\begin{definition}[Rendimiento o Eficiencia de una antena]
 Es la relación entre la Potencia de Radiación y la Potencia Suministrada a la Antena.
 \begin{equation*}
 \eta_A=\frac{P_r}{P_A}=\frac{R_r}{R_r+R_p}=\frac{R_r}{R_A}=\frac{G}{D}
@@ -752,9 +755,14 @@ Con ambas impedancias, solo bastaría con conseguir un cable de longitud $\lambd
 Con el transformador podemos acoplar una carga compleja o desacoplada a nuestra impedancia característica, logrando así la máxima eficiencia, máximo rendimiento, máxima transferencia de potencia, mínimo coeficiente de reflexión.
 \end{example}
 \chapterimage{chapter_head_ANT.pdf} % Chapter heading image
-\chapter{Tipos de antenas}
-\section{Antena Dipolo}\index{Antena dipolo}
-
+\chapter{Antenas para HF, VHF, UHF}
+\section{Isotrópica}
+La antena isotrópica es una antena hipotética sin pérdida (se refiere a que el área física es cero y por lo tanto no hay pérdidas por disipación de calor) que tiene intensidad de radiación igual en todas direcciones. (IEEE Standard Dictionary of Electrical and Electronic Terms, 1979). \\
+Sirve de base de referencia para evaluar la \textbf{directividad}. La antena isotrópica no es una antena, sino un concepto de referencia para evaluar a las antenas en su función de concentración de energía y a las pérdidas por propagación en el espacio libre en los enlaces de radiofrecuencia. Su patrón de radiación es una esfera.\\
+Cada aplicación y cada banda de frecuencia presentan características peculiares que dan origen a
+unos tipos de antenas especiales muy diversas. Los tipos más comunes de antenas son los que se
+explican en los siguientes apartados.
+\section{Dipolo simétrico y asimétrico}\index{Dipolo simétrico y asimétrico}
 \subsection{Diseño de un dipolo}
 Vamos a diseñar un dipolo simétrico, usaremos una frecuencia de 93.5 MHz. Como vimos en teoría de la antena y usando la ecuación \ref{eq:longitud de onda} calculamos la distancia de los brazos:
 \begin{wrapfigure}{r}{0.3\linewidth}
@@ -822,13 +830,6 @@ Con esto ya calculado, llevamos la antena al ANSYS:\\
         \includegraphics[width=\linewidth]{Ant/ant20.png} & \textbf{Análisis} \newline 
         En la ventana de \textit{project manager}>Analysis (click derecho) > Add solution setup>Advanced. Colocamos nuestra frecuencia de trabajo y aceptar. En la siguiente ventana damos aceptar. Validamos el proyecto\footnote{En la pestaña \textit{Simulation}} y \textit{Analyze all}. Esperamos que termine.
 \end{tabular}
-\section{Isotrópica}
-La antena isotrópica es una antena hipotética sin pérdida (se refiere a que el área física es cero y por lo tanto no hay pérdidas por disipación de calor) que tiene intensidad de radiación igual en todas direcciones. (IEEE Standard Dictionary of Electrical and Electronic Terms, 1979). \\
-Sirve de base de referencia para evaluar la \textbf{directividad}. La antena isotrópica no es una antena, sino un concepto de referencia para evaluar a las antenas en su función de concentración de energía y a las pérdidas por propagación en el espacio libre en los enlaces de radiofrecuencia. Su patrón de radiación es una esfera.\\
-Cada aplicación y cada banda de frecuencia presentan características peculiares que dan origen a
-unos tipos de antenas especiales muy diversas. Los tipos más comunes de antenas son los que se
-explican en los siguientes apartados.
-\section{Dipolo simétrico y asimétrico}
 \begin{definition}[Antena armónica]
 Si se dispone de un número entero de semiondas, el dipolo recibe el nombre de \textbf{antena armónica}. La longitud de la antena armónica es:
 \begin{equation}
@@ -864,9 +865,10 @@ E_m=\frac{60\cdot I_m}{r}f(\theta)
 Siendo $f(\theta)$ la función directividad del dipolo:
 \begin{equation}
 f(\theta)=\frac{\cos\parentesis{\frac{\pi l}{\lambda}\cos\theta}-\cos\parentesis{\frac{\pi l}{\lambda}}}{\sin\theta}
+\label{eq:func theta}
 \end{equation}
 \begin{corollary}
-Ésta es función del ángulo $\theta$, es decir, la amplitud de la intensidad de campo de un dipolo simétrico varía en el plano meridional a consecuencia de la interferencia de los campos de las secciones elementales del dipolo.
+La ecuación \ref{eq:func theta} es función del ángulo $\theta$, es decir, la amplitud de la intensidad de campo de un dipolo simétrico varía en el plano meridional a consecuencia de la interferencia de los campos de las secciones elementales del dipolo.
 \end{corollary}
 
 
@@ -874,7 +876,7 @@ f(\theta)=\frac{\cos\parentesis{\frac{\pi l}{\lambda}\cos\theta}-\cos\parentesis
 Conceptualmente, se trata de un conductor vertical de poco espesor, perpendicular a la Tierra. Puede imaginarse como un brazo de un dipolo, al cual la Tierra le sirve de espejo para "fabricar" la imagen del otro brazo del dipolo.
 \begin{wrapfigure}{r}{0.45\linewidth}
   \begin{center}
-    \includegraphics[width=0.4\linewidth]{ant/ant23.png}
+    \includegraphics[width=0.8\linewidth]{ant/ant23.png}
   \end{center}
   \caption{Antena marconi}
 \end{wrapfigure}
@@ -895,8 +897,8 @@ El patrón de radiación de la Antena Marconi es una dona a la mitad. No existe 
 \end{remark}
 \subsubsection{Aplicaciones}
 \begin{itemize}
-\item servicios de radio terrestre
-\item telecomunicaciones a bajas frecuencias
+\item Servicios de radio terrestre
+\item Telecomunicaciones a bajas frecuencias
 \end{itemize}
 \section{Yagi-Uda}
 \begin{figure}[H]
@@ -916,23 +918,28 @@ El patrón de radiación de la Antena Marconi es una dona a la mitad. No existe 
 En las antenas Yagi, la polarización depende de la posición de la antena, pudiendo ser horizontal y vertical tanto su posición como la polarización. Además en común ver un dispositivo que adapta impedancias de la línea de transmisión a la antena (más de 4 elementos).
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth]{ant/ant26.png}
+\includegraphics[width=0.7\linewidth]{ant/ant26.png}
 \caption{Polarización horizontal y vertical: antena yagi.}
 \end{figure}
-También se puede mezclar ambas, para generar con la misma antena las dos polarizaciones a la vez. Aunque se necesitan 2 cables coaxiales (uno por antena).\\
+También se puede mezclar ambas, para generar con la misma antena las dos polarizaciones a la vez. Aunque se necesitan 2 cables coaxiales (uno por antena).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Ant/ant27.png}
+\caption{Doble antena Yagi.}
+\end{figure}
 Su \textbf{ganancia} esta dada por:
 \begin{equation}
 G=10\log n
 \end{equation}
 Donde \textit{n} es el número de elementos a considerar.\\
-En cuanto a las distancias: el \textbf{reflector} es una barra de aluminio aproximadamente 5\% más larga que el dipolo, y el \textbf{director} se corta aproximadamente 5\% respecto al elemento de excitación. Es espacio \textbf{entre los elementos} por lo general está entre 0.1 y 0.2 longitudes de onda.\\
+En cuanto a las distancias: el \textbf{reflector} es una barra de aluminio aproximadamente 5\% más larga que el dipolo, y el \textbf{director} se corta aproximadamente 5\% respecto al elemento de \textbf{excitación}. Es espacio \textbf{entre los elementos} por lo general está entre 0.1 y 0.2 longitudes de onda.\\
 Directividad de una antena yagi es calculada con:
 \begin{equation}
 D=\frac{P_{max}}{\frac{W_t}{4\pi r2}}=\frac{4\pi r^2\cdot E_{max}^2}{I_1^2\cdot \Re{Z_{in}}\cdot\eta}
 \end{equation}
 \subsubsection{Aplicaciones}
 \begin{itemize}
-\item Las antenas Yagi UDA se emplean en la recepción de señales de TV ya que esta antena tiene una buena capacidad de recepción.
+\item Las antenas Yagi Uda se emplean en la recepción de señales de TV ya que esta antena tiene una buena capacidad de recepción.
 \item Utilizado en aplicaciones de defensa.
 \item Empleado en el dominio astronómico.
 \item También se utiliza en radioastronomía.
@@ -942,7 +949,7 @@ Antena con forma de helice a lo largo de un eje, trabaja con polarización circu
 La antena helicoidal posee dos modos: \textbf{Normal} en el cual la antena de comporta similar a una antena dipolo con una radiación omnidireccional respecto al eje de la hélice; las dimensiones de la hélice son pequeñas en comparación con la longitud de onda. Luego esta la \textbf{axial}, en el cual la radiación se produce en el mismo sentido del eje de la hélice, es cuando las dimensiones de la hélice son comparables a una longitud de onda:
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\linewidth]{ant/ant26.png}
+\includegraphics[width=0.7\linewidth]{ant/ant28.png}
 \caption{Modos de la antena helicoidal.}
 \end{figure}
 \begin{figure}[H]
@@ -984,6 +991,417 @@ Y el ancho de haz puede ser calculado con:
 \begin{notation}
 Algunas otras antenas son bocina que sirven como alimentador de parabólicas, ranuras para comunicaciones espaciales.
 \end{notation}
+\chapterimage{chapter_head_ANT.pdf} % Chapter heading image
+\chapter{Radioenlace de microondas}
+\section{Guías de onda}
+\begin{wrapfigure}{r}{0.4\linewidth}
+  \begin{center}
+    \includegraphics[width=.9\linewidth]{Ant/ant30.png}
+  \end{center}
+  \caption{Propagación de OEM por la guía de onda.}
+\end{wrapfigure}
+En electromagnetismo y en telecomunicaciones, una guía de onda es cualquier estructura física que guía ondas electromagnéticas. Una guía de ondas o guíaondas, es un tubo conductor hueco, por lo general de corte transversal rectangular, a veces circular o elíptico. Son adecuadas para transmitir señales debido a sus \textbf{bajas pérdidas}, sin embargo cuentan con ancho de banda limitado y volumen mayor que líneas coaxiales.\\
+Es importante que sepas que las guías de onda no conducen corriente en el sentido estricto, sino mas bien sirve como una frontera para confinar la energía electromagnética; las OEM se reflejan (su energía) en la superficie interior.
+Para lograr una baja resistencia y por ende con pérdidas de transmisión a un nivel bajo, estas guías de onda deben ser fabricadas de cobre, aluminio o bronce.\\
+\subsection{Conceptos generales}
+Las ecuaciones de Maxwell tienen soluciones múltiples, o modos: $E=0$ y $H_n=0$. Los \textbf{modos de propagación} dependen de la longitud de onda, de la polarización y de las dimensiones de la guía. El \textbf{modo longitudinal} de una guía de onda es un tipo particular de onda estacionaria formado por ondas confinadas en la cavidad. \\
+En la \textbf{línea de transmisión}, la velocidad de la onda \textbf{depende del dieléctrico}, mas no de la velocidad de la onda; en la \textbf{guía de onda}, la velocidad varía en \textbf{función de la frecuencia}.
+\begin{definition}[Velocidad de fase]
+\begin{equation}
+V_{ph}=f\cdot\lambda
+\label{eq:velfase}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $V_{ph}$: Velocidad de fase. (m/s)
+\item f: Frecuencia. (Hz)
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+\end{definition}
+\begin{definition}[Velocidad de grupo]
+\begin{equation}
+V_g=\frac{c^2}{V_{ph}}
+\label{eq:velgrup}
+\end{equation}
+\begin{itemize}
+\item $V_g$: Velocidad de grupo. (m/s)
+\item c: Velocidad de la luz $3\times\basedec{8}$ (m/s)
+\end{itemize}
+La longitud de onda en la guía puede ser calculada con:
+\begin{equation}
+\lambda_g=\lambda_0\parentesis{\frac{V_{ph}}{c}}=\frac{c}{\sqrt{f^2-f_c^2}}=\frac{\lambda_0}{\sqrt{1-\parentesis{\frac{f_c}{f}}^2}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\lambda_g$: Longitud de onda en la guía. (m)
+\item $\lambda_0$: Longitud de onda en el espacio libre. (m)
+\item $V_{ph}$: Velocidad de fase. (m/s)
+\item c: Velocidad de la luz. (m/s)
+\item f: Frecuencia de operación. (Hz)
+\item $f_c$: Frecuencia de corte. (Hz)
+\end{itemize}
+\end{definition}
+Combinando las ecuaciones anteriores se puede obtener la velocidad de fase como:
+\begin{equation}
+V_{ph}=\frac{c\cdot\lambda_g}{\lambda_0}=\frac{c}{\sqrt{1-\parentesis{\frac{f_c}{f}}^2}}
+\end{equation}
+\subsection{Inyección y extracción de señales}
+Para realizar la \textbf{inyección} se una señal de microondas en una guía, en el extremo de la guía se introduce una sonda tipo de antena que produce una OEM, los campos eléctricos y magnéticos se combinan con la señal, rebotan en el interior de las paredes viajando por la guía de onda. En este medio \textbf{no hay perdidas por radiación}. La sonda que alimenta la guía de onda, es una antena vertical de \textbf{un cuarto de longitud de onda}. La posición de la sonda determina si la señal está polarizada de manera horizontal o vertical. Para la inyección de onda también se suelen usar \textbf{aros}; para la \textbf{extracción} se usan ambos modos: sondas o aros.
+\subsection{Guía de onda rectangular}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Ant/ant31.png}
+\caption{Guía de onda rectangular}
+\end{figure}
+La frecuencia de operación de una guía de onda la determina el ancho de esta (a), la dimensión de la guía se hace a lambda medios, un poco más bajo de la frecuencia de operación más baja o frecuencia de corte. Por debajo de esta \textbf{frecuencia de corte} la guía de onda no transmitirá energía.\\
+La guía de onda es considerada como un \textbf{filtro pasa alto} debido a esta característica de funcionar solo a frecuencias por encima de la frecuencia de corte. La \textbf{frecuencia de corte} puede ser calculada con:
+\begin{equation}
+f_{c}=\frac{c}{2a}
+\end{equation}
+Teniendo en consideración que el ancho de la guía (a) debe estar en metros.\\
+Generalmente el alto de la guía (b) es la mitad del ancho: b=a/2.\\
+El corte se presenta a la frecuencia para la cual la dimensión transversal máxima de la guía, es la mitad de la longitud de la onda en el espacio libre ($\lambda_{co}$):
+\begin{equation}
+\lambda_{co}=2a
+\end{equation}
+\subsubsection{La propagación de la señal}
+Cuando la sonda envía energía por la guía de onda, la señal se propaga usando el principio de reflexión de la ley de Snell. Una sonda vertical genera una \textbf{onda polarizada en forma vertical} con un campo eléctrico \textbf{vertical} y un campo magnético en \textbf{ángulo recto} con el campo eléctrico formando un ángulo recto, incluso con la dirección de propagación de la onda; por lo que se llama \textbf{campo eléctrico transverso (TE)}.\\
+En caso de que el campo magnético es \textbf{perpendicular} a la dirección de propagación, se denomina \textbf{campo magnético transverso (TM)}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Ant/ant32.png}
+\caption{Modos de transmisión}
+\end{figure}
+En el modo TE, el campo eléctrico existe a través de la guía y no hay línea E que se extiendan en forma longitudinal a lo largo de la guía, los vectores E son \textbf{perpendiculares} a las paredes de la guía.
+En el modelo TM, las líneas H forman aros en planos \textbf{perpendiculares} a las paredes de la guía y ninguna parte de una línea H se extiende de manera longitudinal a lo largo de la guía.
+\begin{notation}
+Los ángulos de incidencia y reflexión dependen de la frecuencia de operación. Conforme la frecuencia de operación decrece, el ángulo también lo hace, y la trayectoria entre los lados se vuelve más corta.
+Cuando la frecuencia de operación alcanza la frecuencia de corte de la guía de onda, la señal solo bota de un lado a otro entre las paredes laterales de la guía de onda. No se propaga energía.
+\end{notation}
+La forma en que los campos eléctrico y magnético se propagan en el interior de la guía de onda depende de: 
+\begin{itemize}
+\item El método de acoplamiento de la energía  (sonda o aro).
+\item De la frecuencia de operación.
+\item Del tamaño de la guía de onda.
+\end{itemize}
+Con la designación de TE y TM se usan subíndices para describir mejor los patrones del campo E y H. Una designación típica es $TE_{m,n}$; el primer número entero (\textit{m}) indica la \textbf{cantidad de patrones} de $\lambda/2$ de líneas perpendiculares a la pared de la guía, que existen a lo largo de la dimensión mayor de la guía (sección \textit{a}) a través de la sección transversal. El segundo número (\textit{n}) indica la cantidad de patrones transversales de $\lambda/2$ que existen a lo largo de la dimensión menor de la guía (sección \textit{b}) a través de la sección transversal. Si no hay cambio en la intensidad del campo de una dimensión se usa Cero.\\
+El modo $TE_{1,0}$ se llama ``modo dominante'' por ser el más natural. La guía de onda rectangular se suele trabajar dentro de los márgenes de frecuencia de $f_c$ a $2f_c$. En caso de trabajar en modos superiores de propagación, esta no se acopla bien con la carga, y se provocan reflexiones y creación de ondas estacionarias.
+\subsection{Guía de onda circular}
+Las guías de onda circulares son mas fácil de fabricar que las rectangulares, y mas fácil de empalmar. Las guías circulares tienen un área mucho mayor que una rectangular correspondiente, para llevar la misma señal. Otra desventaja de la guía circular es la variación de la polarización mientras la onda se propaga por ella.\\
+Se usan en radar y en aplicaciones de microondas, cuando hay ventaja de propagar ondas polarizadas vertical y horizontalmente en la misma guía.
+El comportamiento de las ondas electromagnéticas en las guías de onda circulares es igual que las rectangulares. El modo de propagación $TE_{1,1}$ es el dominante en las guías de onda circulares, para este modo la longitud de onda de corte es:
+\begin{equation}
+\lambda_0=1.7d
+\label{eq:onda de corte circular}
+\end{equation}
+Donde \textit{d} esta en metros y es el diámetro de la guía de onda. La longitud de corte de la ecuación \ref{eq:onda de corte circular} es medida en metros.
+\section{Antenas de bocina}
+Las antenas de bocina son unas antenas que realizan la transición desde el medio guiado (guías de onda) al espacio libre. Las bocinas se utilizan en los satélites principalmente como alimentadores de los reflectores y en algunas ocasiones se utilizan como antenas simples cuando se requieren grandes anchos de haz. Las antenas de bocina se utilizan frecuentemente para conformar haces que den una cobertura terrestre. 
+El ancho de haz necesario par dar cobertura a la tierra desde la órbita geoestacionaria es de 18 grados, que es fácilmente realizable con antenas de bocina.\\
+Si una dimensión del tubo es mayor que media longitud de onda, entonces la onda puede propagar a través de la guía de onda con la perdida sumamente baja, y si al ser colocada el final de una guía de onda simplemente es dejado abierto, la onda irradiara al espacio.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.5\linewidth]{Ant/ant33.png}
+\caption{Antena bocina circular.}
+\end{figure}
+\begin{equation}
+D=\frac{4\pi}{\lambda^2}A_{ef}=\frac{4\pi}{\lambda^2}\parentesis{\pi a^2}\eta_{il}
+\end{equation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Ant/ant34.png}
+\caption{Antena bocina rectangular.}
+\end{figure}
+\begin{equation}
+D=\frac{4\pi}{\lambda^2}A_{ef}=\frac{4\pi}{\lambda^2}ab\eta_{il}
+\end{equation}
+\subsection{Tipos de bocina}
+Existen dos tipos más usadas: rectangulares y cónica:
+\subsubsection{Bocinas rectangulares}
+Adecuada para sistemas de polarización lineal, ya que minimiza las perdidas y reduce la generación de modos de ordenes superiores que afecten al comportamiento de la eficiencia y de la polarización. Tiene la ventaja de transmitir ondas sin polarización cruzada, que junto con el hecho de que su ganancia se puede calcular exactamente a partir de sus dimensiones.
+\subsubsection{Bocina cónica}
+Son las que se utilizan fundamentalmente en antenas de satélites de haz global. Son las más adecuadas para utilizar polarizaciones circulares, aunque también pueda utilizar polarizaciones lineales, estas polarizaciones tienen un mejor comportamiento en las bocinas piramidales. Se pueden clasificar según el modo de propagación transmitido: bocinas de modo dominante, bocinas de modo dual y bocinas corrugadas. 
+Las \textbf{bocinas de modo dual} se han desarrollado para obtener un ancho de haz igual en los planos E y H, con un bajo nivel de polarización cruzada. En este tipo de bocinas, los modos $TE_{11}$ y $TM_{11}$ son combinados con apropiadas relaciones de amplitud y diferencias de fase en su apertura.\\
+Otra variante de las bocinas son las bocinas de \textbf{modos híbridos}. Corrugando la pared interior de una bocina cónica se consigue que no se propaguen ni los modos TE ni los TM, sino que se crean en la bocina unos modos híbridos. Estas antenas mejoran la polarización cruzada y el nivel de los lóbulos secundarios, otra característica remarcable es que consiguen anchos de haz simétricos respecto al eje de la bocina.\\
+Bocinas de \textbf{modo dominante} (o de modo único): Se sintoniza al modo predominante de la guía de onda circular. Este es el más básico de los tres tipos.
+Bocinas de modo dual (o multimodo): Se sintoniza al modo  de propagación de la onda que se propaga por la guía de onda.\\
+Estas bocinas se utilizan extensamente en satélites comerciales. Pero la utilización más común de las bocinas es como un \textbf{elemento de radiación} para reflectores de antenas. La bocina se sitúa en el \textbf{foco} o en un lugar próximo a él de un reflector \textbf{parabólico} para iluminar su superficie tanto en la aplicación de transmisión como en recepción. La radiación electromagnética en la superficie del reflector produce corrientes eléctricas en la superficie. Y de estas corrientes se producen otros campos electromagnéticos que finalmente se convierten en un diagrama de radiación de campo lejano del sistema de antena total.
+\section{Antenas de ranura}
+Se llaman antenas de ranura aquellas en que la radiación y la recepción de las ondas electromagnéticas se realizan mediante unas o varias ranuras practicadas en una guía de ondas o un resonador volumétrico.
+%Antenas de ranura
+\section{Antenas reflector parabólico}
+Cuando se desea la máxima \textbf{directividad} de una antena, la forma del reflector generalmente es parabólica, con la fuente primaria localizada en el foco y dirigida hacia el reflector. Las antenas con reflector parabólico, o simplemente antenas parabólicas se utilizan extensamente en sistemas de comunicaciones en las bandas de \textbf{UHF} a partir de unos 800 MHz y en las de SHF y EHF. Entre sus características principales se encuentran la sencillez de construcción y \textbf{elevada direccionalidad}. La forma más habitual del reflector es la de un paraboloide de revolución, excitado por un alimentador situado en el foco como se ilustra en la figura \ref{fig:ant par}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant47.png}
+\caption{Antena con reflector parabólico}
+\label{fig:ant par}
+\end{figure}
+Otro tipo de antena, bastante utilizado en aplicaciones de radar es el cilindro parabólico que tiene la forma mostrada en la figura \ref{fig:ref cilin} y fue la primera antena con reflector utilizada por Hertz en sus experimentos. El alimentador, o fuente de energía es una antena lineal o un alineamiento de éstas, colocada en la línea focal y la reflexión en la superficie parabólica transforma el frente de onda de cilíndrico en plano.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant48.png}
+\caption{Cilindro parabólico}
+\label{fig:ref cilin}
+\end{figure}
+En las antenas parabólicas se aplican las propiedades ópticas de las ondas electromagnéticas. Las propiedades geométricas de la parábola son tales que las ondas emitidas por el alimentador en el foco se reflejan por la parábola en un haz de rayos paralelos al eje de la parábola, de modo que la longitud del trayecto del foco al reflector parabólico y, después, hasta la superficie de la abertura que pasa por los bordes de la parábola, es la misma para cualquier ángulo. Por consecuencia en la abertura de la antena se tiene una superficie equifase y, teóricamente, el haz radiado es cilíndrico, si bien en la práctica esto no es completamente cierto, ya que parte de la energía se dispersa en los bordes del reflector. En la figura \ref{fig:geo para} se ilustra la geometría de la antena parabólica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant49.png}
+\caption{Geometría de la parábola}
+\label{fig:geo para}
+\end{figure}
+Un defecto de las antenas parabólicas con el alimentador en el foco lo constituye el hecho de que el alimentador obstruye los rayos reflejados produciendo un región de baja intensidad o sombra en el centro de la apertura. El efecto en el patrón de radiación puede estimarse aproximadamente tomando la diferencia de la radiación de la abertura y del área de sombra localizada en la dirección del alimentador. El efecto neto es una alteración del patrón de radiación en que se rellenan los nulos entre lóbulos como se ilustra en la figura \ref{fig:sombra rad} en coordenadas rectangulares.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant50.png}
+\caption{Efecto de la sombra en el patrón de radiación}
+\label{fig:sombra rad}
+\end{figure}
+Otro efecto que se produce cuando el alimentador está en la trayectoria de la onda reflejada es que algo de la energía de ésta regresa al sistema alimentador y produce un desacoplamiento de impedancia. El valor absoluto de la impedancia es prácticamente constante en función de la frecuencia o de la posición del alimentador, pero su fase puede variar rápidamente debido al viaje de ida y vuelta del alimentador al reflector y de regreso a éste. Un método para evitar este problema de impedancia, así como la sombra producida por el alimentador es  desplazar éste como se ilustra en la figura \ref{fig:offset}. En este tipo de antena para todos los fines prácticos, el alimentador queda fuera de la onda reflejada.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant51.png}
+\caption{Antena parabólica con foco desplazado: \textit{offset}.}
+\label{fig:offset}
+\end{figure}
+\begin{definition}[Ganancia de una antena parabólica]
+La ganancia teórica de una antena parabólica de abertura circular excitada uniformemente está dada por:
+\begin{equation}
+G=\eta\parentesis{\frac{\pi\cdot D}{\lambda}}^2
+\label{eq:ganancia para}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{G}:Ganancia
+\item \textbf{D}: Diámetro de la antena. (m)
+\item $\lambda$: Longitud de onda. (m)
+\item $\eta$: Eficiencia
+\end{itemize}
+\end{definition}
+En la eficiencia de cualquier antena y, en particular de las antenas parabólicas intervienen diversos factores como los mencionados en párrafos anteriores y otros como las pérdidas óhmicas, la dispersión en los bordes, la obstrucción y dispersión por los diversos elementos estructurales que soportan el alimentador o el subrreflector en el caso de antenas Cassegrain que se tratarán más adelante, rugosidad de la superficie reflectora, etc.
+\begin{definition}[Directividad]
+\begin{equation}
+D=4\pi\parentesis{\frac{L}{\lambda}}^2
+\label{eq: direc para}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{D}: Directividad.
+\item \textbf{L}: Abertura de lado L. (m)
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+\end{definition}
+\begin{notation}
+No confundir la letra D de las ecuaciones \ref{eq:ganancia para} t \ref{eq: direc para}, en la primera representa distancia y en la segunda representa directividad.
+\end{notation}
+\subsection{Antenas \textit{offset}}
+Antenas en las que la estructura de soporte del alimentador no presenta obstrucción significativa al haz reflejado por el paraboloide como se ilustra en la figura \ref{fig:geo antena offset}. Aunque hay cierta ambigüedad en el uso del término offset en la ingeniería de antenas, aquí entenderemos que una antena offset es aquella que no es simétrica respecto al eje de revolución, ya que se descarta la porción de la superficie reflectora situada a un lado del eje. Como el alimentador debe estar localizado sobre el eje o muy cerca de él, en la antena offset se desplaza al alimentador de la región de máxima abertura, reduciendo o eliminando el bloqueo. Desde luego, el eje del alimentador debe desplazarse verticalmente de modo que el haz transmitido por él incida sobre la superficie de la porción reflectora del paraboloide, ya que otro modo se produce un desborde excesivo en los bordes del reflector.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant52.png}
+\caption{Geometría de una antena offset.}
+\label{fig:geo antena offset}
+\end{figure}
+\begin{definition}[BDF]
+La relación entre el ángulo del haz y el del alimentador se designa como factor de desviación del haz (BDF) y se puede calcular como:
+\begin{equation}
+BDF=\frac{\sin^{-1}\corchetes{\frac{d}{f}\cdot\frac{1+k\parentesis{\frac{D}{4f}}^2}{1+\parentesis{\frac{D}{4f}}^2}}}{\tan^{-1}\parentesis{\frac{d}{f}}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{d}: Distancia entre la posición del alimentador en el eje horizontal perpendicular al del paraboloide. (m)
+\item \textbf{D}: Diámetro del paraboloide. (m)
+\item \textbf{f}: Distancia focal. (m)
+\item \textbf{k}: Constante menor que 1.
+\end{itemize}
+\end{definition}
+\subsection{Antenas con doble reflector: Cassegrain}
+\subsubsection{Antenas doble reflector}
+Las antenas con doble reflector están constituidas por dos reflectores, uno principal parabólico y otro secundario, en la forma que se ilustra esquemáticamente en la figura \ref{fig:doble reflec}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant53.png}
+\caption{Geometría básica de una antena de doble reflector.}
+\label{fig:doble reflec}
+\end{figure}
+El subreflector suele ser hiperbólico en cuyo caso la antena se designa como Cassegrain16 o bien elíptico y la antena se designa como gregoriana17. En la primera, el hiperboloide suele presentar la parte convexa hacia el reflector principal como en el caso de la figura \ref{fig:ant par} y, en la gregoriana, el elipsoide reflector suele presentar la parte cóncava. En algunos casos se emplean también subreflectores planos o esféricos. Estas antenas se utilizan extensamente en comunicaciones espaciales y radioastronomía, además de comunicaciones terrestres. Este
+tipo de antenas ofrece algunas ventajas sobre las antenas de un solo reflector y, aunque pueden tener diseños diferentes, comparten un conjunto de aspectos básicos comunes. Una de
+las ventajas es que el alimentador de la antena no requiere de una línea de transmisión larga y se conecta casi directamente a la salida del transmisor o a la entrada del receptor reduciendo considerablemente las pérdidas. Si bien el bloqueo por la estructura de soporte no puede eliminarse en el caso de la geometría de la figura \ref{fig:ant par}, la eficiencia de las antenas de doble reflector en general es superior a la de las de reflector simple llegando aproximadamente al
+70\% o más. Su ganancia se calcula de la misma manera que la una antena parabólica simple, utilizando la ecuación \ref{eq:ganancia para}.
+\subsubsection{Antena Cassegrain}
+Un telescopio Cassegrain consiste de dos espejos y un instrumento óptico de observación. El espejo primario es grande y cóncavo y refleja la luz incidente hacia un espejo secundario convexo y más pequeño, frente al espejo primario. Este espejo secundario refleja a su vez la luz hacia el centro del espejo primario en el que sitúa el observador o, en al caso de una antena, el receptor, como se ilustra esquemáticamente en la figura \ref{fig:doble reflec}.\\
+El subreflector debe ser lo suficientemente grande como para interceptar la porción útil de la radiación del alimentador y refleja esta onda sobre el reflector primario de acuerdo a las leyes de la óptica. En la geometría clásica de la antena Cassegrain se emplea un paraboloide como reflector primario o principal y un hiperboloide para el reflector secundario en que uno de los dos focos de la hipérbola es el punto focal real del sistema y está localizado en el centro del alimentador. El otro es un foco virtual que se localiza en el foco de la parábola. Como resultado, todas las partes de la onda originada en el foco real y luego que luego son reflejadas por ambas superficies, viajan distancias iguales hasta el plano de la abertura frente a la antena.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{ant/ant54.png}
+\caption{Geometría antena Cassegrain.}
+\end{figure}
+\section{Antenas Parche}
+Microstrip o antenas de parches son cada vez más útiles porque se pueden imprimir directamente sobre una placa de circuito. Ellos son cada vez más generalizada en el mercado de la telefonía móvil. Son de bajo coste, tienen un perfil bajo y se fabrican fácilmente. La tendencia a la miniaturización al lograr dispositivos cada vez mas pequeños, de fácil producción en masa (costos reducidos), fáciles de adaptar con circuitos integrados de microondas, versátiles en términos de impedancia, patrón, polarización y frecuencia de resonancia. Dentro de las desventajas podemos encontrar la baja potencia de radiación (por su estructura no se puede soportar grandes potencias en su estructura), baja eficiencia, ancho de banda angosto para ciertos diseños, considerables perdidas y son fácilmente afectadas por el factor térmico (sobre todo si se trabaja en sustratos flexibles).
+\subsection{Características}
+\begin{figure}[H]
+\centering
+\subfloat[Vista superior]{\includegraphics[width=0.4\linewidth]{ant/ant35.png}}
+\subfloat[Vista lateral]{\includegraphics[width=0.4\linewidth]{ant/ant36.png}}
+\caption{Geometría de microstrip.}
+\end{figure}
+Las antenas tipo parche poseen una tira conductora de largo \textit{L}, ancho \textit{W} y grosor \textit{T}. La tira conductora esta en la parte superior del substrato dieléctrico el cual tiene un ancho \textit{H}. En la parte inferior del substrato dieléctrico esta la tierra, como se ve en la figura.
+donde:
+\begin{itemize}
+\item T y H z<<$\lambda$  ($\lambda$ es la longitud de onda en el espacio libre).
+\item $\lambda$/3 <L< $\lambda$/2
+\item 2.2 $\leq\epsilon_r\leq$ 12 (Se debe buscar la menor permitividad posible para lograr una mejor eficiencia de la antena).
+\end{itemize}
+Dependiendo de los requerimientos específicos para los cuales se construye una antena de microstrip de un solo elemento, se pueden recurrir a varios tipos de configuraciones los mas típicos son:
+\begin{itemize}
+\item Dipolo (tanto en su forma de media onda como de onda completa)
+\item Cuadrada, rectangular, pentagonal, triangular, circular, disco con ranura, sector de disco, anillo, semi-disco, anillo elíptico, espiral.
+\item Otro tipo particular de antena parche que ha surgido en años recientes es la llamada ``Antena  f  invertida plana'' muy utilizada para unidades móviles (es la mitad de una antena parche cuadrada).
+\item Se pueden usar arreglos de antenas con el fin de lograr características deseadas 
+\item El patrón de ondas de una antena parche es omnidireccional aunque la potencia radiada es emitida  solamente hacia la parte superior en su forma ideal.
+\end{itemize}
+\begin{figure}[]
+\centering
+\subfloat[Patrón de radiación 2D]{\includegraphics[width=0.4\linewidth]{ant/ant37.png}}
+\subfloat[Patrón de radiación 3D]{\includegraphics[width=0.4\linewidth]{ant/ant38.png}}
+\caption{Patrón de radiación de una antena microstrip.}
+\end{figure}
+\subsection{Métodos de análisis}
+Dependiendo de la sencillez y la precisión que se busque se puede seleccionar el método que mas se ajuste a las necesidades. Entre los diversos métodos para el análisis de antenas tipo parche se pueden mencionar:
+\begin{itemize}
+\item Modelos empíricos.
+\item Modelos semi-empíricos.
+\item Modelos de onda completa.
+\end{itemize}
+\subsubsection{Modelos empíricos}
+Son los menos precisos a la hora de diseñar, su método de análisis se basa en la suposición de conceptos. Estos modelos pueden tener buen nivel de precisión cuando se trabajan en rango de frecuencias menores a los de las ondas milimétricas (f < 30GHz) pero si se salen de este rango el modelo comienza a tener graves imprecisiones por lo que es necesario usar otros modelos. Aquí se encuentra el modelo de línea de transmisión.\\
+\textbf{Modelo líneas de transmisión}\\
+Este modelo es el mas sencillo pero el mas impreciso además de que solamente puede ser utilizado para el diseño de antenas rectangulares y circulares. Este modelo considera los bordes de la antena como dos aperturas (slots) que radian.
+Las aperturas a su vez son consideradas como admitancias complejas compuestas de una conductancia G y una susceptancia B, la siguiente figura muestra el circuito equivalente para una antena rectangular en el modelo de línea de transmisión.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ant/ant39.png}
+\caption{Circuito antena rectangular.}
+\end{figure}
+\begin{definition}[Fringing Effects]
+El efecto de franja (fringing effects) se debe a las líneas de campo eléctrico que hacen que el tamaño de la antena sea más ancho después de la excitación. La causa principal del efecto de franja se debe al ancho y la posición de la antena de alimentación. Los campos producidos por los fringing effects ayudan en la radiación y dan un patrón de radiación más directivo, pero la frecuencia de resonancia se desplaza de la frecuencia deseada.
+\begin{center}
+\includegraphics[width=0.7\linewidth]{ant/ant40.png}
+\end{center}
+\end{definition}
+El modelo de línea de transmisión se resumen en los siguientes pasos:
+\begin{enumerate}
+\item Se especifica la frecuencia de operación y el sustrato a utilizar.
+\item Se obtiene el ancho efectivo de la antena de parche rectangular mediante la formula:
+\begin{displaymath}
+W=\frac{1}{2f_r\sqrt{\mu_0\epsilon_0}}\sqrt{\frac{2}{\epsilon_r+1}}=\frac{c}{2f_r}\sqrt{\frac{2}{\epsilon_r+1}}
+\end{displaymath}
+\item Se obtiene la permitividad eléctrica efectiva mediante:
+\begin{displaymath}
+\epsilon_{ref}=\frac{\epsilon_r+1}{2}+\frac{\epsilon_r+1}{2}\corchetes{1+12\frac{h}{W}}^{-\frac{1}{2}}
+\end{displaymath}
+\item Se obtiene la extensión $\Delta L$ mediante la ecuación que se derivará en la obtención de la longitud real de la antena considerando la longitud efectiva.
+\begin{displaymath}
+\Delta L=0.412\cdot h\frac{\parentesis{\epsilon_{ref}+0.3}\parentesis{\frac{W}{h}+0.264}}{\parentesis{\epsilon_{ref}-0.258}\parentesis{\frac{W}{h}+0.8}}
+\end{displaymath}
+\item Longitud será:
+\begin{displaymath}
+L=\frac{1}{2\cdot f_r\sqrt{\epsilon_{ref}}\sqrt{\mu_0\epsilon_0}}-2\Delta L
+\end{displaymath}
+\end{enumerate}
+\subsubsection{Modelo semi-empíricos}
+Es un modelo mas complejo que el empírico pero menos preciso que el modelo de onda compleja. Ejemplos de este modelo se pueden nombrar los siguientes:
+\begin{itemize}
+\item Modelo de corriente superficial eléctrica.
+\item Técnica de la transformada de Hankel.
+\item Método de reciprocidad.
+\item Enfoque de ecuación integral dual, etc.
+\end{itemize}
+
+\subsubsection{Modelos de onda completa}
+Estos modelos se presentan como los mas precisos a la hora de diseñar, sin embargo también son los mas complicados de realizar y se requieren de herramientas computacionales avanzadas para llevar a cabo.
+Como ejemplos de modelo de onda completa se tiene:
+\begin{itemize}
+\item Método de momentos en el dominio del tiempo.
+\item Método de momentos en el dominio espectral.
+\item Método de estados finitos.
+\item Técnicas de transformada rápida de Fourier, etc.
+\end{itemize}
+\begin{notation}
+Ejemplos de programas que usan el modelo de onda completa son el programa Sonnet y el programa HFSS. El software Sonnet usa el método de momentos, mientras que el software HFSS usa un método de elementos finitos modificado.
+\end{notation}
+\subsection{Alimentación}
+Existen diferentes métodos para alimentar una antena microstrip de forma que radie lo mas eficientemente posible.
+Por ejemplo esta el método de \textbf{alimentación por sonda coaxial} donde el pin de cable coaxial alimenta directamente al radiador, mientras que la parte negativa de este se conecta a la de tierra de la antena de microstrip.\\
+Otro método de alimentación es el llamado \textbf{alimentación con Substrato de Guía de Onda Integrado} (Substrate Integrated Waveguide), con la que se tiene una antena (elemento radiador), en la parte superior de un substrato dieléctrico que recibe la alimentación de una guía de onda integrada en otro substrato dieléctrico localizada en la parte inferior de la antena. El acoplamiento electromagnético es através de una abertura localizada en la parte superior de la guía de onda y cuyas dimensiones y posicionamiento generan diferentes impedancias características y por lo tanto diferente acoplamiento como se muestra en la siguiente vista superior de la estructura para alimentar a la antena:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ant/ant41.png}
+\caption{Formas de alimentación.}
+\end{figure}
+\section{Arreglo o arrays de antenas}
+Un array es una antena compuesta por un número de radiadores idénticos ordenados regularmente y alimentados para obtener un diagrama de radiación predefinido.\\
+Hay diferentes tipos de arrays. 
+\begin{itemize}
+\item Los arrays lineales tienen los elementos dispuestos sobre una línea.
+\item Los arrays planos son agrupaciones bidimensionales cuyos elementos están sobre un plano.
+\item Los arrays conformados tienen las antenas sobre una superficie
+curva, como por ejemplo el fuselaje de un avión
+\end{itemize}
+Los arrays tienen la ventaja de que se puede controlar la amplitud de las corrientes y la fase de cada elemento, modificando la forma del diagrama de radiación. Además se puede conseguir que los parámetros de antena dependan de la señal recibida a través de circuitos asociados a los elementos radiantes, como en el caso de las agrupaciones adaptativas.\\
+\begin{notation}
+El factor de array es el diagrama de radiación de una agrupación de
+elementos isotrópicos.
+\end{notation}
+Cuando los diagramas de radiación de cada elemento del array son iguales y los elementos están orientados en la misma dirección del espacio, el diagrama de radiación de la agrupación se puede obtener como el producto del factor de array por el diagrama de radiación del elemento.\\
+Hay 5 métodos para controlar el diagrama de radiación de un array:
+\begin{enumerate}
+\item Mediante la configuración geométrica (linear, rectangular, circular…)
+\item La situación relativa de los elementos
+\item La amplitud de la excitación de cada elemento
+\item La fase de la excitación de cada elemento
+\item El diagrama de radiación de cada elemento
+\end{enumerate}
+\subsection{Arrays lineales}
+Dos radiadores iguales, alimentados con misma amplitud y fase. Ambos radiadores producen ondas esféricas que se sumarán de forma
+constructiva en determinadas direcciones y cancelación en otras
+%imagen
+En el caso de que estemos suficientemente lejos de las fuentes, y suponiendo que el primer radiador se encuentra en el origen de coordenadas, la diferencia de caminos recorrida por ambas ondas será:
+\begin{equation}
+R_1-R_2=d\cdot\cos\theta
+\end{equation}
+Se podrá escribir la amplitud total de la señal como el producto de una onda esférica por un factor de interferencia.
+\begin{equation}
+\frac{e^{-jkr}}{4\pi\cdot r}\parentesis{1+e^{jkd\cos\theta}}
+\end{equation}
+Se producirá \textbf{interferencia constructiva} cuando la diferencia de caminos sea un \textbf{múltiplo entero de longitudes de onda}, siendo la amplitud de la señal el doble. Cuando la diferencia de fase sea un\textbf{ múltiplo impar de $\pi$}, la interferencia será destructiva.
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=0.7\linewidth]{ant/ant42.png} & \textbf{d=0}\newline Si la separación entre los dos
+radiadores es cero, no existirá
+ningún tipo de desfase, por lo que
+la señal se radiará isotrópicamente
+en todas las direcciones del
+espacio. \\
+        \includegraphics[width=0.7\linewidth]{ant/ant43.png} & \textbf{d=$\lambda/2$}\newline Si los dos elementos están separados una semilongitud de onda, se
+producirá un máximo en la dirección perpendicular a la recta que
+une sus posiciones, obteniendo un nulo de radiación en la dirección
+de dicho eje, ya que las señales se sumarán en oposición de fase.\\
+        \includegraphics[width=0.7\linewidth]{ant/ant44.png} & \textbf{d=$\lambda$}\newline Si la separación entre los dos radiadores es de una longitud de onda
+se producirán máximos de radiación en las direcciones del eje y
+perpendiculares a él, produciéndose cancelación para un ángulo en
+el que ambas señales esté en oposición de fase, lo que sucede para la
+dirección que forma un ángulo de 60° con el eje de la agrupación. \\
+        \includegraphics[width=0.7\linewidth]{ant/ant45.png} & \textbf{d=$\lambda/4$}\newline Cuando la diferencia de fases es de $-\pi/4$ y la separación es $\lambda/4$, las
+ondas se suman en la dirección del eje z en fase, y en –z en oposición
+de fase. 
+\end{tabular}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ant/ant46.png}
+\caption{Diagramas tridimensionales de dos radiadores isotrópicos de la misma amplitud, en función de
+la separación \textit{d} y de la diferencia de fases $\alpha$.}
+\end{figure}
 %----------------------------------------------------------------------------------------
 %	NEW CHAPTER
 %----------------------------------------------------------------------------------------
@@ -3290,7 +3708,360 @@ En la figura \ref{fig:señal coherente}, se ve la señal a la entrada modulada e
 \subsubsection*{Demodulación Banda base sup portadora-SSB}
 Si la frecuencia del oscilador local es igual a la de la portadora recibida
 %Falta 52:09
+\chapterimage{chapter_head_MR.pdf} % Chapter heading image
+\chapter{Mezcladores y circuitos discriminadores RF}
+\section{Mezcladores}
+La \textbf{idea fundamental} es obtener una señal cuya frecuencia se la \textbf{suma o diferencia} de la frecuencia de otras dos:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{mrf/mrf74.png}
+\caption{Idea fundamental del mezclador}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{mrf/mrf75.png}
+\caption{Mezclador ideal}
+\end{figure}
+\subsubsection*{Cómo generar una señal con frecuencias ($f_1+f_2$) y |$f_1-f_2$|}
+Para lograr eso nos debemos basar en las identidades trigonométricas:
+\begin{theorem}[Coseno de suma]
+\begin{align}
+\cos(A+B)&=\cos A\cdot\cos B-\sin A\cdot\sin B\\
+\cos(A-B)&=\cos A\cdot\cos B+\sin A\cdot\sin B
+\end{align}
+Acomodando:
+\begin{align}
+\cos A\cdot\cos B&=0.5\corchetes{\cos(A+B)+\cos(A-B)}\label{eq:coscos}\\
+\sin A\cdot\sin B&=0.5\corchetes{\cos(A-B)-\cos(A+B)}\label{eq:sensen}
+\end{align}
+\end{theorem}
+\begin{theorem}[Seno de suma]
+\begin{align}
+\sin(A+B)&=\sin A\cdot\cos B+\sin B\cdot\cos A\\
+\sin(A-B)&=\sin A\cdot\cos B-\sin B\cdot\cos A
+\end{align}
+Acomodando:
+\begin{align}
+\sin A\cdot\cos B&=0.5\corchetes{\sin(A+B)+\sin(A-B)}\label{eq:sencon}\\
+\sin B\cdot\cos A&=0.5\corchetes{\sin(A+B)-\sin(A-B)}\label{eq:cossen}
+\end{align}
+\end{theorem}
+\begin{theorem}[Coseno del ángulo doble]
+\begin{align}
+\cos(2A)&=\cos^2A-\sin^2A\\
+1&=\cos^2A+\sin^2A
+\end{align}
+Luego
+\begin{align}
+\cos^2A&=0.5\corchetes{1+\cos(2A)}\label{eq:coscuadrado}\\
+\sin^2A&=0.5\corchetes{1-\cos(2A)}\label{eq:sincuadrado}
+\end{align}
+\end{theorem}
+Notando la expresión \ref{eq:coscos}, vemos que tenemos las componentes frecuenciales que hemos planteado en la idea fundamental.\\
+¿Qué pasa si las señales que se mezclan no están en fase? Si introducimos señales que no están en fase en la expresión \ref{eq:coscos}:
+\begin{displaymath}
+\cos\omega_1t\cdot\cos(\omega_wt+\phi)=0.5\cos\parentesis{(\omega_1+\omega_2)t+\phi}+0.5\cos\parentesis{(\omega_1-\omega_2)t-\phi}
+\end{displaymath}
+Tenemos las componentes deseadas y tenemos el desfase, el desfase sólo provoca desfases, NO nuevas componentes.
+\textbf{¿Cómo multiplicar dos señales?}\\
+Usando un multiplicador analógico clásico, el cual NO es adecuado para alta frecuencia.
+\subsubsection*{Dispositivos de respuesta cuadrática}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Mrf/mrf76.png}
+\caption{Dispositivo de respuesta cuadrática.}
+\end{figure}
+\begin{align*}
+v_s&=V_0+k\cdot\parentesis{V_1\cos\omega_1t+V_2\cos\omega_2t}^2\\
+&=V_0+k\parentesis{V_1^2\cos^2\omega_1t+V_2^2\cos^2\omega_2^t+2V_1\cos\omega_1t\cdot V_2\cos\omega_2t}
+\end{align*}
+Usando la identidad :
+\begin{align*}
+v_s=&\underbrace{V_0+0.5k\cdot V_1^2+0.5k\cdot V_2^2}_{Componente continua}+\underbrace{0.5k\cdot V_1^2\cos\parentesis{2\omega_1t}}_{Componentes de frecuencia 2f_1}+\underbrace{0.5k\cdot V_2^2\cos\parentesis{2\omega_2t}}_{Componentes de frecuencia 2f_2}+\\
+&\underbrace{k\cdot V_1V_2\cos\parentesis{\omega_1+\omega_2}t}_{Componentes de frecuencia f_1+f_2}+\underbrace{k\cdot V_1V_2\cos\parentesis{\omega_1-\omega_2}t}_{Componente de frecuencia |f_1-f_2|}
+\end{align*}
+\begin{corollary}
+Nos sobran las componentes de continua y de frecuencia $2f_1$ y $2f_2$.
+\end{corollary}
+\begin{figure}[]
+\centering
+\subfloat[Señales en el tiempo]{\includegraphics[width=0.4\linewidth]{mrf/mrf78.png}}
+\subfloat[Respuesta en frecuencia]{\includegraphics[width=0.4\linewidth]{mrf/mrf79.png}}
+\caption{Dispositivo cuadrático: $V_0=0$, $V_1=V_2$ y $k=0.5$.}
+\end{figure}
+Es más dificil filtrar el caso real (cuadrático) para aislar una única frecuencia.
+\subsubsection*{Dispositivos de respuesta proporcional más una cuadrática}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{mrf/mrf77.png}
+\caption{Respuesta proporcional más cuadrática.}
+\label{fig:proporcional cuadratica}
+\end{figure}
+\begin{align*}
+v_s&=V_0+K_A\cdot\parentesis{V_1\cos\omega_1t+V_2\cos\omega_2t}+k_B\cdot\parentesis{V_1\cos\omega_1t+V_2\cos\omega_2t}^2\\
+&=V_0+k_A\cdot\parentesis{V_1\cos\omega_1t+V_2\cos\omega_2t}+k_B\cdot\parentesis{V_1^2\cos^2\omega_1t+V_2^2\cos^2\omega_2t+2V_1\cos\omega_1tV_2\cos\omega_2t}
+\end{align*}
+Usando 
+\begin{align*}
+v_s=&\underbrace{V_0+0.5k_B\cdot V_1^2+0.5k_B\cdot V_2^2}_{Componente de continua}+\underbrace{k_A\cdot V_1\cos\omega_1t}_{Componente de frecuencia f_1}+\underbrace{k_A\cdot V_2\cos\omega_2t}_{Componente de frecuencia f_2}+\\
+&\underbrace{0.5k_B\cdot V_1^2\cos(2\omega_1t)}_{Componente de frecuencia 2f_1}+\underbrace{0.5k_B\cdot V_2^2\cos\parentesis{2\omega_2t}}_{Componente de frecuencia 2f_2}\\
+&+\underbrace{k_B\cdot V_1V_2\cos\parentesis{\omega_1+\omega_2}t}_{Componente de frecuencia f_1+f_2}+\underbrace{k_B\cdot V_1V_2\cos(\omega_1-\omega_2)t}_{Componente de frecuencia |f_1-f_2|}
+\end{align*}
+\begin{corollary}
+Nos sobran las componentes de continua y de frecuencia $f_1$, $f_2$, $2f_1$ y $2f_2$.
+\end{corollary}
+\begin{figure}[]
+\centering
+\subfloat[Señales en el tiempo]{\includegraphics[width=0.4\linewidth]{mrf/mrf80.png}}
+\subfloat[Respuesta en frecuencia]{\includegraphics[width=0.4\linewidth]{mrf/mrf81.png}}
+\caption{Dispositivo proporcional más cuadrático: $V_0=0$, $V_1=V_2$, $k_A=0.25$ y $k_B=0.5$}
+\end{figure}
+Más difícil de filtrar para aislar una única frecuencia.
+\subsubsection*{Dispositivos de respuesta no lineal (general)}
+%PDF pag 8
+Es importante que nuestro mezclado genere el mínimo número posibles de mezcla porque de esta manera el filtrado se facilita.\\
+\textbf{Componentes de frecuencias:}
+\begin{itemize}
+\item \textbf{Mezclador ideal}: $(f_{1A}+f_2), (f_{1B}+f_2), |f_{1A}+f_2|, |f_{1A}-f_2|, |f_{1B}-f_2|$.
+\item \textbf{Mezclador cuadrático}: $0, (f_{1A}+f_2), (f_{1B}+f_2), |f_{1A}-f_2|, |f_{1B}-f_2|, 2f_{1A}, 2f_{1B}, 2f_2$
+\item \textbf{Mezclador proporcional + cuadrático}: $0, (f_{1A}+f_2), (f_{1B}+f_2), |f_{1A}-f_2|, |f_{1B}-f_2|, f_{1A}, f_{1B}, f_2, 2f_{1A}, 2f_{1B}, 2f_2$
+\end{itemize}
+\subsection{Objetivo de la realización física}
+\begin{itemize}
+\item Comportamiento adecuado a las frecuencias de trabajo
+\item Uso de dispositivos con comportamiento lo más parecido a cuadrático, sin términos apreciables en x, $x^3$, $x^4$, etc.
+\item Cancelación de componentes indeseadas por simetrías en los circuitos. 
+\end{itemize}
+\begin{center}
+\schema
+{
+	\schemabox{Tipos de mezcladores}
+}
+{
+	\schema
+		{
+			\schemabox{Pasivos (diodos)}
+		}
+		{
+			\schemabox{Simples \\ Equilibrados \\ Doblemente equilibrados}}
+	\schema
+		{
+			\schemabox{Activos (transistores)}
+		}
+		{
+			\schemabox{Simples \\ Equilibrados \\ Doblemente equilibrados}}
 
+} 
+\end{center}
+\subsection{Mezcladores con diodos}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{mrf/mrf82.png}
+\caption{Diodo}
+\end{figure}
+Diodo cuya curva de respuesta:
+\begin{equation}
+I_D=I_S\cdot\parentesis{e^{\frac{V_D}{V_T}}-1}
+\label{eq:diodo}
+\end{equation}
+Con los valores de $I_S=1\mu A$ y $V_T=26 mV$ y graficando la respuesta de la ecuación \ref{eq:diodo} (\textcolor{blue}{Modelo exponencial}):
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf83.png}
+\caption{Gráfica del diodo y modelo exponencial}
+\label{fig:grafica diodo}
+\end{figure}
+Si escribimos la ecuación de la figura \ref{fig:proporcional cuadratica} en función de $V_D$ y ajustando valores obtenemos \textcolor{red}{Modelo proporcional + cuadrático} en la figura \ref{fig:grafica diodo}.
+\begin{equation}
+I_D=K_A\cdot V_D+K_B\cdot V_D^2
+\label{eq:diodo aprox}
+\end{equation}
+Con $K_A=4.467\basedec{-5}$ y $K_B=7.984\basedec{-4}$\\
+Se tiene un error en un margen de tensiones de $\pm 30 mV$. Solo se tomará el valor donde se aprecia un semejanza notoria, pues si lo extendemos mucho el comportamiento es diferente y ya tendría un comportamiento más complejo y con ello generando otras componentes de frecuencia:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf84.png}
+\caption{Comportamiento distinto en dominio más extenso.}
+\end{figure}
+\subsubsection{Teoría mezclador con un diodo}
+\begin{figure}[H]
+\centering
+\subfloat[Idea general]{\includegraphics[width=0.4\linewidth]{mrf/mrf85.png}}
+\subfloat[Realización práctica sin terminal común en las fuentes]
+{\includegraphics[width=0.4\linewidth]{mrf/mrf86.png}\label{fig:diodo reali}}
+\caption{Mezclador con un diodo}
+\end{figure}
+De la figura \ref{fig:diodo reali} se puede escribir que:
+\begin{equation}
+V_S+V_D=V_1+V_2
+\end{equation}
+Donde
+\begin{equation}
+V_S=R\cdot I_D
+\label{eq:voltaje salida diodo}
+\end{equation}
+Asumiremos que:
+\begin{equation}
+V_S<<V_D, V_1, V_2
+\end{equation}
+Por lo tanto
+\begin{equation}
+V_D\approx V_1+V_2
+\end{equation}
+Y usando la ecuación \ref{eq:diodo aprox} para reemplazar en \ref{eq:voltaje salida diodo}:
+\begin{equation}
+    \begin{split}
+        V_S&\approx R[5k_BV_1^2+0.5k_BV_2^2+k_AV_1\cos\omega_1t+k_AV_2\cos\omega_2t\\
+&+0.5k_BV_1^2\cos(2\omega_1t)+0.5k_BV_2^2\cos(2\omega_2t)+k_BV_1V_2\cos(\omega_1+\omega_2)t\\
+&+k_BV_1V_2\cos(\omega_1-\omega_2)t]
+    \end{split}
+    \label{eq:Vs mezclador 1 diodo}
+\end{equation}
+\begin{notation}
+Nos sobran componentes de continua y de frecuencias $f_1$, $f_2$, $2f_1$, $2f_2$.
+\end{notation}
+Acomodando el circuito de la figura \ref{fig:diodo reali}, colocando las fuentes a tierra y haciendo uso de un transformador para que de esta manera ambas fuentes estén en tierra sin ningún tipo de discriminación, la otra forma de colocar ambas fuentes es en \textbf{paralelo}, sin embargo aquí ya se habla de impedancias; para que este arreglo funcione es necesario que ambas fuentes tengan la misma impedancia para que ni una fuente se comporte como carga, al contrario, deben mirar ambas a \textit{R} como la carga del sistema.
+\begin{figure}[H]
+\centering
+\subfloat[Realización práctica con terminal común en las fuentes y la carga]{\includegraphics[width=0.4\linewidth]{mrf/mrf87.png}}
+\subfloat[Realización práctica sin transformador y con terminal común en las fuentes y la carga]{\includegraphics[width=0.4\linewidth]{mrf/mrf88.png}}
+\caption{Asociación de fuentes con tierra común.}
+\end{figure}
+\subsubsection{Teoría del mezclador equilibrado con dos diodos}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{mrf/mrf89.png}
+\caption{Mezclador equilibrado con dos diodos.}
+\label{fig:mezc equi 2 diodos}
+\end{figure}
+Dividiendo las dos mallas del circuito de la figura \ref{fig:mezc equi 2 diodos} y ayudándonos del análisis de la ecuación \ref{eq:Vs mezclador 1 diodo}:
+\begin{equation}
+    \begin{split}
+        V_{S1}&\approx R[5k_BV_1^2+0.5k_BV_2^2+k_AV_1\cos\omega_1t+k_AV_2\cos\omega_2t\\
+&+0.5k_BV_1^2\cos(2\omega_1t)+0.5k_BV_2^2\cos(2\omega_2t)+k_BV_1V_2\cos(\omega_1+\omega_2)t\\
+&+k_BV_1V_2\cos(\omega_1-\omega_2)t]
+    \end{split}
+    \label{eq:Vs1 mezclador 2 diodos}
+\end{equation}
+\begin{equation}
+    \begin{split}
+        V_{S2}&\approx R[5k_BV_1^2+0.5k_BV_2^2-k_AV_1\cos\omega_1t+k_AV_2\cos\omega_2t\\
+&+0.5k_BV_1^2\cos(2\omega_1t)+0.5k_BV_2^2\cos(2\omega_2t)-k_BV_1V_2\cos(\omega_1+\omega_2)t\\
+&-k_BV_1V_2\cos(\omega_1-\omega_2)t]
+    \end{split}
+    \label{eq:Vs2 mezclador 2 diodos}
+\end{equation}
+Realizando la suma algebraica para hallar $V_S$ usando las expresiones \ref{eq:Vs1 mezclador 2 diodos} y \ref{eq:Vs2 mezclador 2 diodos}:
+\begin{equation}
+V_S=V_{S1}-V_{S2}=2R\corchetes{k_AV_1\cos\omega_1t+k_BV_1V_2\cos(\omega_!+\omega_2)t+k_BV_1V_2\cos(\omega_1-\omega_2)t}
+\end{equation}
+\begin{notation}
+Sólo nos sobra la componente de frecuencia $f_1$ ($k_AV_1\cos\omega_1t$).
+\end{notation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf90.png}
+\caption{Se puede lograr el mismo circuito usando transformadores para que las fuentes estén a tierra.}
+\end{figure}
+\subsection{Mezclador doblemente equilibrado con cuatro diodos}
+\begin{figure}[H]
+\centering
+\subfloat[Mezclador doblemente equilibrado.]{\includegraphics[width=0.4\linewidth]{mrf/mrf91.png}\label{fig:mezclador doble equi}}
+\subfloat[Entrada]{\includegraphics[width=0.4\linewidth]{mrf/mrf95.png}}
+\caption{Mezclado doblemente equilibrado}
+\end{figure}
+Analizando la figura \ref{fig:mezclador doble equi}, y recordando la ecuación \ref{eq:diodo aprox} que depende de $V_D$, se pueden escribir las ecuaciones de los demás diodos como:
+\begin{align}
+I_{D1}\approx f(V_1+V_2)\\
+I_{D2}\approx f(-V_1+V_2)\\
+I_{D3}\approx f(V_1-V_2)\\
+I_{D4}\approx f(-V_1-V_2)\\
+\end{align}
+Por lo tanto:
+\begin{equation}
+V_S=V_{13}-V_{24}=I_{13}R-I_{24}R=R\corchetes{I_{D1}-I_{D3}-(I_{D2}-I_{D4})}
+\end{equation}
+\begin{equation}
+\therefore V_S\approx R\corchetes{f(V_1+V_2)-f(V_1-V_2)-f(-V_1+V_2)+f(-V_1-V_2)}
+\end{equation}
+Si analizamos cada una de las componentes, notaremos que se cancelan varias componentes, si sumamos lo restante se obtendrá:
+\begin{equation}
+V_S\approx 4Rk_B\corchetes{V_1V_2\cos(\omega_1+\omega_1)t+V_1V_2\cos(\omega_1-\omega_2)t}
+\end{equation}
+\begin{figure}[]
+\centering
+\subfloat[Realización practica]{\includegraphics[width=0.4\linewidth]{mrf/mrf92.png}}
+\subfloat[Anillo de diodos]{\includegraphics[width=0.4\linewidth]{mrf/mrf93.png}}\\
+\subfloat[Anillo de diodos 2.]{\includegraphics[width=0.4\linewidth]{mrf/mrf94.png}}
+\caption{Realización práctica}
+\end{figure}
+\subsection{Carga a la salida de mezclador de diodos}
+\begin{wrapfigure}{r}{0.5\linewidth}
+  \begin{center}
+    \includegraphics[width=.95\linewidth]{mrf/mrf96.png}
+  \end{center}
+  \caption{}
+\end{wrapfigure}
+Hasta ahora hemos tratado que un mezclador tiene una carga resistiva, cuando lo usual es conectar un filtro a la salida. Dependiendo de la frecuencia que queramos se configura el filtro, sea pasa-bajos o pasa-altos. La impedancia del filtro ($Z_f$) no va ser resistiva, sino que va depender de la frecuencia. Es por ello que se busca un tipo de filtro con $Z_f$ independiente de la frecuencia. Para ello se puede usar un \textbf{diplexor}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{mrf/mrf97.png}
+\caption{Diplexor}
+\end{figure}
+Las funciones de transferencias son:
+\begin{align}
+\frac{V_{S1}}{V_e}&=\frac{1}{LCs^2+\sqrt{2LC}s+1}\\
+\frac{V_{S2}}{V_e}&=\frac{LCs^2}{LCs^2+\sqrt{2LC}s+1}
+\end{align}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\linewidth]{mrf/mrf98.png}
+\caption{Frecuencia de corte de las funciones de transferencia.}
+\end{figure}
+Donde:
+\begin{itemize}
+\item $f_c=\sqrt{f_{sum}\cdot f_{dif}}$
+\item $f_c=\frac{1}{2\pi\sqrt{LC}}$
+\item $L/C=2R^2$
+\end{itemize}
+\begin{notation}
+Donde $f_{sum}$ y $f_{dif}$ representa la suma y la diferencia de las frecuencias.
+\end{notation}
+\subsection{Mezclados con un transistor bipolar}
+\begin{figure}[H]
+\centering
+\subfloat[Idea general]{\includegraphics[width=0.3\linewidth]{mrf/mrf99.png}}
+\subfloat[Realización son terminal común en las fuentes]{\includegraphics[width=0.3\linewidth]{mrf/mrf100.png}}
+\caption{Mezclador con transistor}
+\end{figure}
+Se realiza con las ecuaciones:
+\begin{equation}
+V_{BE}=v_1+v_2
+\end{equation}
+\begin{equation}
+v_s=R\cdot i_c
+\end{equation}
+\begin{equation}
+I_{c(v_{EB}=0)}=-I_{sc}
+\end{equation}
+\begin{equation}
+i_c\approx I_{sc}+k_A\cdot v_{BE}+k_B\cdot v_{BE}^2
+\end{equation}
+\begin{align}
+v_s&\approx R[I_{sc}+0.5k_BV_1^2+0.5k_BV_2^2+k_AV_1\cos\omega_1t+k_AV_2\cos\omega_2t+\\
+&0.5k_BV_1^2\cos(2\omega_1t)+0.5k_BV_2^2\cos(2\omega_2t)+k_BV_1V_2\cos(\omega_1+\omega_2)t+\\
+&k_BV_1V_2\cos(\omega_1-\omega_2)t]
+\end{align}
+\begin{notation}
+Nos sobran las componentes de continua y de frecuencia $f_1$, $f_2$, $2f_1$ y $2f_2$.
+\end{notation}
+Se puede conseguir cancelación de componentes indeseadas por simetrías.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{mrf/mrf101.png}
+\caption{Mezclador con varios transistores bipolares}
+\end{figure}
+En la cual solo nos sobra componentes de frecuencia $f_1$, donde se cancelaron $f_2$, $2f_1$ y $2f_2$.
 %----------------------------------------------------------------------------------------
 %	ANEXOS
 %----------------------------------------------------------------------------------------
