@@ -355,7 +355,7 @@ La propagación de OEM por el espacio libre se suele llamar propagación de radi
 \begin{align}
 d_{max}&=\sqrt{2\cdot h}
 \label{eq:dist millas} \\
-d_{max}&=\sqrt{17\cdot h})\label{eq:dist km}
+d_{max}&=\sqrt{17\cdot h}\label{eq:dist km}
 \end{align}
 \end{subequations}
 Donde:
@@ -437,6 +437,7 @@ Donde:
 \item \textbf{H}: Intensidad del campo magnético. (A/m)
 \item \textbf{r}: Radio de la esfera. (m)
 \item \textbf{\textit{PIRE}}: Potencia Isotrópica Radiada Equivalente. (W)
+\item \textbf{$Z_S$}: Impedancia en el vacío. ($\Omega$)
 \end{itemize}
 
 \end{definition}
@@ -991,6 +992,87 @@ Y el ancho de haz puede ser calculado con:
 \begin{notation}
 Algunas otras antenas son bocina que sirven como alimentador de parabólicas, ranuras para comunicaciones espaciales.
 \end{notation}
+\begin{example}[Cálculo del horizonte]
+Calcule el horizonte de radio en kilómetros de una antena transmisora ubicada en lo alto de un cerro de 590 pies de altura sobre el nivel del mar en un mástil de 20 pies y la antena receptora que se halla sobre un mástil de 26 pies de altura sobre el nivel de mar.\\
+\textbf{Solución:}
+Tenemos dos antenas, por lo que debemos calcular el alcance de cada antena usando las ecuaciones \ref{eq:dist millas} o \ref{eq:dist km} \footnote{Dependiendo en que unidades trabajes, en este caso trabajaremos en millas y luego lo convertiremos a kilómetros.} , teniendo esas ecuaciones calculemos el alcance de cada antena:\\
+\begin{align*}
+d_1&=\sqrt{2(20+590)}\\
+d_1&=34.93 millas\\
+d_2&=\sqrt{2(26)}\\
+d_2&=7.21 millas
+\intertext{Sumamos ambas distancas para hallar la distancia máxima entre ellas}
+d_T=34.93+7.21=42.14\simeq 67.82 Km
+\end{align*}
+\end{example}
+\begin{example}[Cálculo de densidad de potencia]
+Calcule la densidad de potencia a 32 Km de la estación transmisora, la potencia a la salida del transmisor es de 15 W, la atenuación en el conductor es 1,2 dB. La antena transmisora tiene 6.2 dB de factor de directividad y un rendimiento del 95\%.\\
+\textbf{Solución:}\\
+Antes de usar algún tipo de ecuación debemos analizar nuestra atenuación; nos menciona que tenemos 15 W a la salida del transmisor, luego tenemos una atenuación, es decir, se pierde energía por la línea de transmisión así que no todos los 15 W llegarán a la antena. Tenemos dos formas de formas de calcular la potencia que llegará a la antena. Primero la calculamos usando solo unidades lineales:
+\begin{displaymath}
+P[W]=\frac{P_{T_x}[W]}{At}
+\end{displaymath}
+Como estamos trabajando con unidades lineales, debemos convertir la atenuación que originalmente esta en decibelios a unidades lineales, para ello:
+\begin{displaymath}
+At=10^{\frac{1,2 dB}{10}}=1,32
+\end{displaymath}
+Ahora recién con este valor podemos hallar la potencia que llega a la antena tomando en cuenta la atenuación:
+\begin{displaymath}
+P[W]=\frac{15 W}{1,32}=11,36 W
+\end{displaymath}
+La \textbf{segunda manera} de hallar la potencia de la antena es hallando  el valor en unidades de decibelios; planteando la potencia en dB debemos de considerar que ahora las unidades no se deben dividir, se \textbf{deben restar}, esto se puede demostrar usando las propiedades de los logaritmos (esto no de desarrollará pues ya es bien sabido como). Sin perder la formalidad de las matemáticas, lo podemos expresar como:
+\begin{displaymath}
+P_A[dBW]=P_{T_x}[dBW]-  At[dB]
+\end{displaymath}
+Ahora debemos que usar nuestra potencia en unidades de decibelios, para ello:
+\begin{displaymath}
+P_{T_x}[dBW]=10\cdot\log 15=11,76 dBW
+\end{displaymath}
+Ahora que todos los datos están en las mismas unidades, efectuamos la operación:
+\begin{displaymath}
+P_A[dBW]=11,76 dBW - 1,2 dB=10,56 dBW\simeq 11,38 W
+\end{displaymath}
+Hay una pequeña diferencia entre ambas más mientras no afecte significativamente a los cálculos es aceptable.\\
+Calcularemos la intensidad de campo usando la ecuación \ref{eq:int campo}, notaremos de acuerdo a la ecuación \ref{eq:pire}, PIRE puede ser calculado de dos maneras, nosotros tenemos potencia de antena, por lo que nos falta ganancia que puede ser calculada facilmente con la ecuación  \ref{eq:ganancia}:
+\begin{displaymath}
+G=0,95\cdot 10^{\frac{6,2}{10}}=3,96
+\end{displaymath}
+Teniendo en cuenta que debe ser en unidades lineales, por eso convertimos la directividad de decibelios a lineales.\\
+Con la ganancia hallada y usando la ecuación \ref{eq:int campo}:
+\begin{displaymath}
+\mathbb{P}=\frac{11,36 W\cdot 3,96}{4\cdot\pi\cdot(32\basedec{3})^2}=3,5 mW/m^2
+\end{displaymath}
+\end{example}
+\begin{example}[Intensidad de campo eléctrico]
+Si la intensidad del campo eléctrico en la zona de recepción a 21 Km de la estación transmisora es de 1,1 mV/m, cuanto debe ser la ganancia de la antena transmisora expresada en dB, si la potencia a la entrada de la antena transmisora es de 1,5 W.\\
+\textbf{Solución:}\\
+Teniendo en cuenta las ecuaciones \ref{eq:pire} y \ref{eq:int campo} podemos despejar la siguiente expresión:
+\begin{displaymath}
+\frac{P_A\cdot G}{4\pi\cdot r^2}=\frac{E^2}{Z_S}
+\end{displaymath}
+Reemplazando los valores que tenemos en la expresión:
+\begin{displaymath}
+\frac{1.5 W\cdot G}{4\pi\cdot (12\basedec{3})^2}=\frac{(1.1\basedec{-3})^2}{377 \Omega}
+\end{displaymath}
+Despejando la ganancia de esta ecuación:
+\begin{displaymath}
+G=\frac{(1.1\basedec{10^{-3}})\cdot 4\pi\cdot (12\basedec{3})^2}{377\cdot 1,5}=3.87
+\end{displaymath}
+Sin embargo nos pides la respuesta en decibelios:
+\begin{displaymath}
+G[dB]=10\log(3.37)=5.88 dB
+\end{displaymath}
+\end{example}
+\begin{corollary}[Características del diagrama de radiación de un dipolo horizontal próximo a un plano de tierra.]
+\begin{itemize}
+\item Un dipolo horizontal colocado sobre una pantalla irradia, igual que un dipolo aislado, ondas esféricas progresivas con centro de fases en el punto medio entre el dipolo y su imagen eléctrica.
+\item Un dipolo horizontal colocado a cualquier altura \textit{h}, no irradia a lo largo de la superficie de la pantalla.
+\item En los diagramas de directividad del dipolo horizontal sobre la pantalla conductora, se tiene igualdad de máximos y la presencia de mínimos nulos en los lóbulos del diagrama.
+\end{itemize}
+\end{corollary}
+\begin{corollary}[Características constructivas de las antenas periodo logarítmicas]
+Es una antena conformada por barios dipolos que resuenan a distintas frecuencias, que la hace como una antena de banda ancha. El esparcimiento entre dipolos es variable y la alimentación se hace desde el elemento más corto. 
+\end{corollary}
 \chapterimage{chapter_head_ANT.pdf} % Chapter heading image
 \chapter{Radioenlace de microondas}
 \section{Guías de onda}

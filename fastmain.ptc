@@ -1,9 +1,21 @@
-\contentsline {section}{\numberline {0.1}Leyes de maxwell}{1}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Métodos para control de la congestión}{2}{section.0.2}%
-\contentsline {subsection}{\numberline {0.2.1}Enrutamiento consiente de tráfico}{2}{subsection.0.2.1}%
-\contentsline {subsection}{\numberline {0.2.2}Regulación de tráfico}{3}{subsection.0.2.2}%
-\contentsline {subsubsection}{\numberline {0.2.2.1}ECN}{3}{subsubsection.0.2.2.1}%
 \ttl@starttoc {part@1}
-\contentsline {part}{\numberline {I}Electrotécnia}{5}{part.1}%
-\contentsline {chapter}{\numberline {1}Números complejos}{7}{chapter.1}%
+\contentsline {part}{\numberline {I}Legislación y regulación}{1}{part.1}%
+\ttl@stoptoc {part@1}
+\ttl@starttoc {part@2}
+\contentsline {part}{\numberline {II}Proyecto final 1}{2}{part.2}%
+\ttl@stoptoc {part@2}
+\ttl@starttoc {part@3}
+\contentsline {part}{\numberline {III}Dimensionamiento de energía}{3}{part.3}%
+\ttl@stoptoc {part@3}
+\ttl@starttoc {part@4}
+\contentsline {part}{\numberline {IV}Dispositivos de fibra óptica}{4}{part.4}%
+\ttl@stoptoc {part@4}
+\ttl@starttoc {part@5}
+\contentsline {part}{\numberline {V}Sistemas de radio digital y M.O.}{5}{part.5}%
+\ttl@stoptoc {part@5}
+\ttl@starttoc {part@6}
+\contentsline {part}{\numberline {VI}Instrumentación 2}{6}{part.6}%
+\contentsline {section}{\numberline {0.1}Transformada de Laplace}{7}{section.0.1}%
+\contentsline {section}{\numberline {0.2}Transformada de Fourier}{7}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Transformada Z}{7}{section.0.3}%
 \contentsfinish 
