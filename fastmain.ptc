@@ -16,6 +16,9 @@
 \ttl@starttoc {part@6}
 \contentsline {part}{\numberline {VI}Instrumentación 2}{6}{part.6}%
 \contentsline {section}{\numberline {0.1}Transformada de Laplace}{7}{section.0.1}%
-\contentsline {section}{\numberline {0.2}Transformada de Fourier}{7}{section.0.2}%
-\contentsline {section}{\numberline {0.3}Transformada Z}{7}{section.0.3}%
+\contentsline {subsection}{\numberline {0.1.1}Propiedades de la transformada de Laplace}{7}{subsection.0.1.1}%
+\contentsline {subsection}{\numberline {0.1.2}Transformada de la función escalón unitario o Heaviside}{9}{subsection.0.1.2}%
+\contentsline {subsubsection}{\numberline {0.1.2.1}Pulso rectangular}{9}{subsubsection.0.1.2.1}%
+\contentsline {section}{\numberline {0.2}Transformada de Fourier}{11}{section.0.2}%
+\contentsline {section}{\numberline {0.3}Transformada Z}{11}{section.0.3}%
 \contentsfinish 
