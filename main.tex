@@ -83,7 +83,7 @@
 
 \noindent \textsc{Libro libre de usos}\\ % Publisher
 
-\noindent \textsc{https://github.com/Yasperterian}\\ % URL
+\noindent \textsc{https://github.com/Jose4HM}\\ % URL
 
 \noindent Con licencia de Creative Commons Attribution-NonCommercial 3.0 Unported License (la ``Licencia''). No puede usar este archivo excepto de conformidad con la Licencia. Puede obtener una copia de la Licencia en \url{http://creativecommons.org/licenses/by-nc/3.0}. A menos que lo exija la ley aplicable o se acuerde por escrito, el software distribuido bajo la Licencia se distribuye \textsc{``tal cual'', sin garantías ni condiciones de ningún tipo}, ya sea expresa o implícita. Consulte la Licencia para conocer el idioma específico que rige los permisos y las limitaciones en virtud de la Licencia.\\ % License information, replace this with your own license (if any)
 
@@ -315,7 +315,7 @@ plt.show()#Mostramos la grafica
 Las operaciones de multiplicar y dividir un número complejo y un número real afecta tanto a la \textbf{parte real} como a la \textbf{parte imaginaria}:
 \begin{align*}
 (a+\iu b)\cdot k&=ak+\iu bk\\
-(a+\iu b)\cdot k&=\frac{a}{k}+\iu \frac{b}{k}
+\frac{a+\iu b}{k}&=\frac{a}{k}+\iu \frac{b}{k}
 \end{align*}
 \end{remark}
 \begin{definition}[Inverso de un complejo]
@@ -3424,7 +3424,7 @@ Ya solo nos queda expresar en la forma de funciones lógicas y podemos implement
 \part{Smart cities}
 \chapterimage{chapter_head_SM.pdf} % Chapter heading image
 \chapter{Conociendo la ESP8266}
-Todos los codigos estarán disponibles en \textbf{GitHub}, puedes acceder desde este link: \url{https://github.com/Yasperterian/4rduino} o desde este codigo QR:\\
+Todos los codigos estarán disponibles en \textbf{GitHub}, puedes acceder desde este link: \url{https://github.com/Jose4HM/4rduino} o desde este codigo QR:\\
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.15]{SmartCities/qr.png}
@@ -3942,7 +3942,7 @@ Nombrada en phpmyadmin como: \textbf{statusbutton}, con una tabla dentro de ella
 \end{figure}
 \newpage
 \subsection{Xammp-Htdocs}
-En C>xammp>htdocs tenemos que creamos una carpeta llamada \textbf{panicbuttonserver}, y dentro de ella pegamos nuestros archivos que se encuentran en la carpeta \textit{panicbuttonserver} dentro del repositorio de GITHUB.\footnote{\url{https://github.com/Yasperterian/4rduino}}. Como resultado debe ser como la figura \ref{fig:summaryhtdocs}
+En C>xammp>htdocs tenemos que creamos una carpeta llamada \textbf{panicbuttonserver}, y dentro de ella pegamos nuestros archivos que se encuentran en la carpeta \textit{panicbuttonserver} dentro del repositorio de GITHUB.\footnote{\url{https://github.com/Jose4HM/4rduino}}. Como resultado debe ser como la figura \ref{fig:summaryhtdocs}
 \begin{figure}[H]
 \centering\includegraphics[width=\linewidth]{SmartCities/SM45.png}
 \caption{Resumen de la creación de la carpeta htdocs.}
@@ -7779,12 +7779,12 @@ y la máscara\\
 \ipAddress{\textcolor{red}{11111111}.00000000.00000000.00000000}\\
 \ipAddress{\textcolor{red}{255}.0.0.0}
 \end{center}
-Podemos notar que tenemos 8 bits de red y 24 de host, esto nos da la posibilidad de tener $2^24=16 777 216$, pero esto no nos sirve si solo vamos a trabajar con pocas redes pues las demás se desperdiciarán. Es por eso que creamos \textbf{subredes}, para ellos ``tomamos prestado'' bits de host y los pasamos a los bits de red, tomemos \textcolor{violet}{4 bits} a manera de ejemplo siendo ahora 12 bits de red y 20 de host, en binario y decimal tendríamos\\
+Podemos notar que tenemos 8 bits de red y 24 de host, esto nos da la posibilidad de tener $2^{24}=16 777 216$, pero esto no nos sirve si solo vamos a trabajar con pocas redes pues las demás se desperdiciarán. Es por eso que creamos \textbf{subredes}, para ello ``tomamos prestado'' bits de host y los pasamos a los bits de red, tomemos \textcolor{violet}{4 bits} a manera de ejemplo siendo ahora 12 bits de red y 20 de host, en binario y decimal tendríamos:\\
 \begin{center}
 \ipAddress{\textcolor{red}{11111111}.\textcolor{violet}{1111}0000.00000000.00000000}\\
 \ipAddress{\textcolor{red}{255}.240.0.0}
 \end{center}
-Ahora nuestra máscara de red a cambiado a \ipAddress{255.240.0.0}, esta también cambia de nombre a \textbf{máscara de subred}. Como hemos tomado 4 bits prestado para darlos a los bits de red, podemos tener $2^4=16$ subredes.
+Ahora nuestra máscara de red a cambiado a \ipAddress{255.240.0.0}, esta también cambia de nombre a \textbf{máscara de subred}. Como hemos tomado 4 bits prestados para darlos a los bits de red, podemos tener $2^4=16$ subredes.
 \begin{example}[Crear una subred para la dirección de red \ipAddress{192.168.168.0} para 7 subredes dada un máscara de red \ipAddress{255.255.255.0}]\label{exa:subred}
 Si nos damos cuenta en la máscara de red, tenemos 24 bits de red y 8 bits de host\\
 \begin{center}
@@ -8003,7 +8003,7 @@ Donde:
 \end{definition}
 \begin{definition}[Coeficiente de reflexión]
 \begin{equation}
-\rho=\frac{Z_L-Z_0}{Z_L+Z_0}
+\lvert\rho\rvert=\frac{Z_L-Z_0}{Z_L+Z_0}=\frac{V_r}{V_{in}}
 \label{eq:coef reflex}
 \end{equation}
 Donde:
@@ -8011,6 +8011,8 @@ Donde:
 \item $\rho$: Coeficiente de reflexión.\footnote{También es representado por la letra griega $\Gamma$.}
 \item $Z_L$: Impedancia de carga. ($\Omega$)
 \item $Z_0$: Impedancia característica. ($\Omega$)
+\item $V_r$: Voltaje reflejado. (V)
+\item $V_{in}$: Voltaje entrada. (V)
 \end{itemize}
 \end{definition}
 \begin{definition}[Impedancia de entrada]

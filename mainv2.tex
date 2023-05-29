@@ -82,7 +82,7 @@
 
 \noindent \textsc{Libro libre de usos}\\ % Publisher
 
-\noindent \textsc{https://github.com/Yasperterian}\\ % URL
+\noindent \textsc{https://github.com/Jose4HM}\\ % URL
 
 \noindent Con licencia de Creative Commons Attribution-NonCommercial 3.0 Unported License (la ``Licencia''). No puede usar este archivo excepto de conformidad con la Licencia. Puede obtener una copia de la Licencia en \url{http://creativecommons.org/licenses/by-nc/3.0}. A menos que lo exija la ley aplicable o se acuerde por escrito, el software distribuido bajo la Licencia se distribuye \textsc{``tal cual'', sin garantías ni condiciones de ningún tipo}, ya sea expresa o implícita. Consulte la Licencia para conocer el idioma específico que rige los permisos y las limitaciones en virtud de la Licencia.\\ % License information, replace this with your own license (if any)
 
@@ -424,7 +424,7 @@ Donde:
 \item \textbf{D}: Directividad de la antena.\footnote{Estos conceptos se detallan más adelante.}
 \end{itemize}
 \end{definition}
-\begin{definition}[Intensidad de campo]
+\begin{definition}[Densidad de potencia]
 Es la intensidad de los campos eléctrico y magnético de una onda electromagnética que se propaga por el espacio libre.
 \begin{equation}
 \mathbb{P}=E\cdot H=\frac{PIRE}{4\pi r^2}=Z_s\times H^2=\frac{E^2}{Z_s}
@@ -951,14 +951,59 @@ La antena helicoidal posee dos modos: \textbf{Normal} en el cual la antena de co
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{ant/ant28.png}
-\caption{Modos de la antena helicoidal.}
+\caption{Modos de la antena helicoidal. a. Normal b. Axial}
+\label{fig:modos heli}
 \end{figure}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.7\linewidth]{ant/ant29.png}
 \caption{Medidas de una antena helicoidal.}
 \end{figure}
-La ganancia de potencia una antena helicoidal esta definida por:
+Los parametros de una antena helicoidal, generalmente son:
+\begin{itemize}
+\item \textbf{D}: Diámetro de giro de la hélice: Este parámetro influye en el patrón de radiación y la directividad de la antena.($\pi D$)
+\item \textbf{C}: Perímetro de la circunferencia de la hélice.
+\begin{equation}
+C=\pi D
+\end{equation}
+\item \textbf{S}: Espacio entre espiras: Este parámetro determina la impedancia de la antena y el rendimiento del acoplamiento.
+\item \textbf{N}: Número de vueltas de hélice: Este parámetro afecta la impedancia de la antena y su respuesta en frecuencia.
+\item \textbf{L}: Paso de hélice (Pitch): Es la distancia axial entre dos puntos adyacentes en la hélice de la antena. Este parámetro determina la frecuencia de resonancia y el ancho de banda de la antena. Generalmente se toma la distancia a lo largo del eje central de la antena, en línea recta, desde el empiezo a la base. Para calcular la longitud total de toda la antena:
+\begin{equation}
+L_{total}=N\cdot S
+\end{equation}
+\item \textbf{a}: Radio del conductor: Este parámetro influye en la capacidad de manejo de potencia y la eficiencia de la antena.
+\item \textbf{$L_0$}: Largo del cable. Este parámetro influye en la impedancia y pérdidas por transmisión.
+\item \textbf{$\alpha$}: Ángulo de paso: Controla el crecimiento de la antena en dirección L
+\begin{equation}
+\alpha=\tan^{-1}\llaves{\frac{S}{C}}
+\end{equation}
+\end{itemize}
+La antena helicoidal tiene dos modos de operación básicos:
+\begin{enumerate}
+\item \textbf{Modo normal}: Ocurre cuando se cumple la condición de que:
+\begin{equation}
+C\ll\lambda
+\end{equation}
+En este caso la antena puede ser modelada como una serie de pequeños dipolos y loops. Para este modo de operación la antena describe un comportamiento \textbf{omnidireccional}. La Figura \ref{fig:modos heli} (a), muestra el patrón de radiación de la antena en el modo normal
+\item \textbf{Modo axial}: Ocurre cuando se cumple la condición de que:
+\begin{displaymath}
+C\approx\lambda
+\end{displaymath}
+En este modo, la antena presenta un comportamiento \textbf{direccional} y requiere de un análisis más detallado. La Figura \ref{fig:modos heli} (b) muestra el patrón de radiación en este modo de operación.
+\end{enumerate}
+\begin{notation}
+Para el funcionamiento óptimo en modo axial:
+\begin{equation}
+\frac{3}{4}<\frac{C}{\lambda}<\frac{4}{3}
+\end{equation}
+La separación entre espiras debe ser:
+\begin{equation}
+S\approx\frac{\lambda}{4}
+\end{equation}
+\end{notation}
+\begin{definition}[Ganancia de potencia]
+La ganancia de potencia de una antena es una medida de su capacidad para concentrar la energía radiada en una dirección específica en comparación con una antena de referencia. Indica cuánta potencia se puede transmitir o recibir en una dirección determinada en relación con una antena isotrópica ideal y esta definida por:
 \begin{equation}
 A_p(dB)=10\log\corchetes{15\cdot \parentesis{\frac{D\pi}{\lambda}}^2\cdot\frac{NS}{\lambda}}
 \end{equation}
@@ -970,7 +1015,11 @@ Donde:
 \item \textbf{S}: Paso de la hélice. (m)
 \item $\lambda$: Longitud de onda. (m)
 \end{itemize}
+\end{definition}
 Y el ancho de haz puede ser calculado con:
+\begin{definition}[Ancho de haz]
+El ancho de haz en una antena helicoidal se refiere al ángulo en el cual la radiación de la antena está dentro de un rango específico de potencia o intensidad. Es la medida angular de la región en la que la antena emite o recibe señales con niveles de potencia o intensidad aceptables.
+En términos prácticos, el ancho de haz determina la cobertura espacial de la antena helicoidal. Un ancho de haz más estrecho indica que la antena tiene una directividad más alta y una cobertura más enfocada en una dirección específica. Por otro lado, un ancho de haz más amplio indica una mayor cobertura en un rango angular más amplio.
 \begin{equation}
 \theta=\frac{52}{\frac{\pi D}{\lambda}\sqrt{\frac{NS}{\lambda}}}
 \end{equation}
@@ -981,6 +1030,17 @@ Y el ancho de haz puede ser calculado con:
 \item \textbf{S}: Paso de hélice. (m)
 \item $\lambda$: Longitud de onda. (m)
 \end{itemize}
+\end{definition}
+\begin{definition}[Impedancia]
+La impedancia dependerá del modo de la antena. Si es alimentada en su forma \textbf{axial}, la impedancia (resistiva) será\footnote{Usualmente $C$ se ve afectada, pues al momento de hallar el diametro de nuestra antena, este variará debido a que no se cuenta el material de las dimensiones requeridas por $\lambda$}
+\begin{equation}
+Z=140\cdot \frac{C}{\lambda}
+\end{equation}
+Si es alimentada de forma \textbf{normal}:
+\begin{equation}
+Z=\frac{140}{\sqrt{\frac{C}{\lambda}}}
+\end{equation}
+\end{definition}
 \subsection{Aplicaciones}
 \begin{itemize}
 \item Radios portátiles en baja frecuencia (30-150 MHz).
@@ -4144,6 +4204,496 @@ Se puede conseguir cancelación de componentes indeseadas por simetrías.
 \caption{Mezclador con varios transistores bipolares}
 \end{figure}
 En la cual solo nos sobra componentes de frecuencia $f_1$, donde se cancelaron $f_2$, $2f_1$ y $2f_2$.
+\part{Dimensionamiento de energía}
+\chapterimage{chapter_head_DSE.pdf} % Chapter heading image
+\chapter{Sistemas de control}
+\section{Sistemas de control}
+\subsection{Sistemas de control a lazo abierto}
+Un sistema a lazo abierto, también conocido como sistema de control a lazo abierto, es un tipo de sistema de control en el cual la salida del sistema \textbf{no} se utiliza para \textbf{retroalimentar} o \textbf{corregir} la entrada. En otras palabras, \textbf{no hay una conexión de retroalimentación} que permita comparar la salida del sistema con el valor deseado y \textbf{ajustar} el sistema en consecuencia.\\
+En un sistema a lazo abierto, la acción de control se determina previamente y se aplica \textbf{sin tener en cuenta} el efecto real que tiene sobre la salida del sistema. \textbf{No hay un mecanismo para medir o corregir} los errores entre la salida deseada y la salida real.\\
+\subsubsection{Elementos de un sistema de lazo abierto}
+Un sistema a lazo abierto consta de varios elementos principales que interactúan para llevar a cabo una tarea o función específica. Estos elementos son:
+\begin{enumerate}
+\item \textbf{Entrada}: Es la señal o variable que se proporciona al sistema a lazo abierto para iniciar su funcionamiento. Puede ser una señal eléctrica, una instrucción, una señal de control, entre otros.
+\item \textbf{Proceso o planta}: Representa el sistema físico o proceso que recibe la entrada y produce una salida sin tener en cuenta ninguna retroalimentación. Puede ser un motor, una máquina, un circuito electrónico o cualquier otro sistema físico.
+\item \textbf{Controlador}: Es el elemento encargado de generar y enviar la señal de control al proceso en función de la entrada deseada. En un sistema a lazo abierto, el controlador sigue una programación o una lógica predefinida para determinar la señal de control sin considerar la salida real del sistema. Por ejemplo, un PLC.
+\item \textbf{Actuador}: Es el componente que convierte la señal de control generada por el controlador en una acción física o variable que afecta al proceso. Puede ser un motor, una válvula, un relé, entre otros, dependiendo del tipo de sistema y la aplicación específica.
+\item \textbf{Salida}: Es el resultado o respuesta del sistema a lazo abierto después de que el proceso ha sido controlado por la señal de control. La salida puede ser una variable física, una señal eléctrica o cualquier otro tipo de salida que sea relevante para el sistema.
+\end{enumerate}
+Es importante tener en cuenta que, en un sistema a lazo abierto, no hay un elemento de retroalimentación que compare la salida real con la salida deseada y realice ajustes. La salida se produce simplemente en función de la programación o la lógica del controlador, sin considerar las perturbaciones o errores que puedan ocurrir durante el proceso.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{dim/dim1.png}
+\caption{Elementos de un sistema de lazo abierto.}
+\end{figure}
+Un \textbf{ejemplo} bien explicado de un control a lazo abierto es el uso de un temporizador para activar una luz en un cuarto por un período de tiempo predefinido. En este caso, el temporizador es el control a lazo abierto, ya que no recibe retroalimentación sobre si la luz se ha encendido o apagado correctamente.\\
+Imaginemos que queremos que la luz del cuarto se encienda durante 10 minutos después de que presionemos un interruptor. Instalamos un temporizador programable en el sistema eléctrico de la casa y configuramos el temporizador para que active la luz durante 10 minutos cada vez que se presione el interruptor.\\
+Cuando presionamos el interruptor, el temporizador se activa y envía una señal para encender la luz. El temporizador no sabe si la luz realmente se ha encendido o no, simplemente sigue su programación y activa la luz durante el tiempo predeterminado.\\
+En este caso, el control a lazo abierto tiene algunas limitaciones. Por ejemplo, si la bombilla está quemada o si hay un problema en el cableado que impide que la luz se encienda, el temporizador seguirá funcionando normalmente y apagará la luz después de los 10 minutos, incluso si la luz nunca se encendió. Esto significa que no hay una retroalimentación para corregir el problema y asegurarse de que la luz se haya encendido correctamente.\\
+El control a lazo abierto es útil en situaciones en las que el sistema es simple y no requiere una retroalimentación constante para su correcto funcionamiento. Sin embargo, no es adecuado cuando se necesita una respuesta precisa y adaptativa, ya que no tiene la capacidad de ajustar su comportamiento en función de las condiciones reales del sistema.\\
+Es necesario entender dos conceptos importantes:
+\begin{definition}[Variable controlada]
+En el contexto del control de sistemas, la \textbf{variable controlada} es aquella que se desea mantener o controlar dentro de ciertos límites o valores específicos. Es la salida del sistema que queremos mantener bajo control.
+\end{definition}
+En el ejemplo del temporizador y la luz, la variable controlada sería el estado de la luz, es decir, si está encendida o apagada. Queremos que la luz se encienda durante un período de tiempo determinado (variable controlada) cuando activamos el temporizador.
+\begin{definition}[Variable manipulada]
+Por otro lado, la \textbf{variable manipulada} es aquella que podemos ajustar o cambiar para influir en la variable controlada. Es la entrada o acción que realizamos en el sistema para lograr el control deseado.
+\end{definition}
+Siguiendo con el ejemplo, la variable manipulada sería la activación del temporizador al presionar el interruptor. Al activar el temporizador, estamos realizando una acción (variable manipulada) que afecta la variable controlada (estado de la luz), encendiéndola durante el tiempo establecido.\\
+En resumen, la variable controlada es la salida del sistema que queremos controlar (estado de la luz), mientras que la variable manipulada es la entrada o acción que realizamos (activación del temporizador) para influir en la variable controlada y lograr el control deseado.
+\begin{notation}
+Aunque el enfoque de lazo abierto ha sido utilizado durante mucho tiempo, se considera en general menos sofisticado y menos adecuado para muchas aplicaciones modernas en comparación con el enfoque de lazo cerrado, que ha ganado mayor relevancia debido a los avances en la teoría y la tecnología del control.
+\end{notation}
+Los sistemas de control pueden representarse \textbf{matemáticamente} mediante ecuaciones y, en muchos casos, pueden ser resueltos de \textbf{manera lineal} utilizando multiplicaciones y otras operaciones matemáticas básicas. En el análisis y diseño de sistemas de control, es común utilizar modelos matemáticos para describir el comportamiento del sistema. Estos modelos pueden ser representados mediante ecuaciones diferenciales, ecuaciones de estado, funciones de transferencia u otras formas matemáticas, dependiendo del tipo de sistema y el enfoque utilizado. 
+Una vez que se ha establecido un modelo matemático, es posible aplicar técnicas de análisis y diseño de control para comprender y manipular el sistema. En muchos casos, especialmente en sistemas lineales, se utilizan métodos basados en álgebra lineal y ecuaciones lineales para resolver y estudiar el comportamiento del sistema. Por ejemplo, la respuesta de un sistema de control lineal puede describirse mediante una ecuación diferencial lineal, como una ecuación de primer orden o de segundo orden. Estas ecuaciones pueden resolverse utilizando técnicas de integración y álgebra lineal para obtener soluciones analíticas o aproximadas. Además, las funciones de transferencia, que relacionan la entrada y la salida de un sistema de control lineal, también se pueden manipular algebraicamente mediante multiplicaciones y divisiones para analizar y diseñar el comportamiento del sistema.\\
+En resumen, los sistemas de control se pueden representar con ecuaciones matemáticas y, en muchos casos, pueden resolverse de manera lineal utilizando operaciones matemáticas básicas, como multiplicaciones. Sin embargo, es importante tener en cuenta que la complejidad de los sistemas y los métodos de resolución pueden variar dependiendo de la naturaleza del sistema y las técnicas utilizadas.
+Los sistemas de control  se pueden representar con ecuaciones Matemáticas, pueden ser resueltas de manera lineal por medio de pequeñas multiplicaciones. 
+\subsection{Sistema de control a lazo cerrado}
+Un sistema de lazo cerrado es un tipo de sistema de control en el que se utiliza \textbf{retroalimentación} para comparar la \textbf{salida real} del sistema con una \textbf{referencia} o valor deseado, y tomar acciones correctivas en base a esa comparación.\\
+En un sistema de lazo cerrado, se mide la salida del sistema mediante un sensor o instrumento de retroalimentación, y se compara con la referencia establecida. La diferencia entre la salida real y la referencia, conocida como \textbf{error}, se utiliza para \textbf{ajustar} la entrada o la acción de control, con el objetivo de reducir el error y lograr un control preciso.\\
+El concepto clave en un sistema de lazo cerrado es la \textbf{retroalimentación}. La información de retroalimentación permite \textbf{monitorear} constantemente la salida del sistema y realizar \textbf{correcciones en tiempo real} para mantenerla en línea con la referencia. Esta capacidad de ajuste continuo mejora la precisión, estabilidad y capacidad de respuesta del sistema.
+\subsubsection{Elementos de un sistema de lazo cerrado}
+\begin{enumerate}
+\item \textbf{Planta o proceso}: Es el sistema físico o proceso que se desea controlar. Puede ser un motor, una planta de producción, un sistema de climatización, entre otros. La planta o proceso es el componente sobre el cual se actúa para generar la salida deseada.
+Sensor o instrumento de medición: Es el dispositivo encargado de medir la variable de salida del sistema en tiempo real. El sensor convierte la salida del proceso en una señal eléctrica o digital que se puede utilizar para retroalimentar el controlador.
+\item \textbf{Controlador}: Es el componente que toma la señal de retroalimentación proveniente del sensor y genera una señal de control adecuada para ajustar la entrada o la acción sobre la planta. El controlador compara la señal de retroalimentación con la referencia deseada y toma decisiones en base a esa información.
+\item \textbf{Actuador}: Es el componente encargado de realizar la acción de control sobre la planta en respuesta a la señal generada por el controlador. El actuador puede ser un motor, una válvula, un relé, u otro dispositivo que modifica la entrada o la acción sobre el proceso para lograr el control deseado.
+\item \textbf{Retroalimentación}: Es la información proveniente del sensor que se utiliza para comparar la salida real del sistema con la referencia deseada. La retroalimentación permite detectar el error o la diferencia entre la salida actual y la deseada, lo que permite al controlador ajustar la acción de control de manera adecuada.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dim/dim2.png}
+\caption{Elementos de un sistema lazo cerrado.}
+\end{figure}
+El sistema más simple de lazo cerrado es el siguiente:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dim/dim3.png}
+\caption{Lazo cerrado: diagrama de bloques}
+\end{figure}
+Primero analizamos el nodo de la entrada, de ese nodo se desprende:
+\begin{equation}
+E(s)=+R(s)-B(s)
+\end{equation}
+Notamos también que:
+\begin{equation}
+B(s)=H(s)\cdot C(s)
+\end{equation}
+Reemplazando esta ecuación en la primera:
+\begin{equation}
+E(s)=+R(s)-\textcolor{red}{H(s)\cdot C(s)}
+\end{equation}
+Analizando la salida:
+\begin{equation}
+C(s)=G(s)\cdot E(s)
+\end{equation}
+Reemplazando el valor de $E(s)$:
+\begin{equation}
+C(s)=G(s)\cdot\corchetes{R(s)-\textcolor{red}{H(s)\cdot C(s)}}=G(s)R(s)-G(s)H(s)C(s)
+\end{equation}
+Despejando $G(s)R(s)$
+\begin{equation}
+G(s)R(s)=C(s)+G(s)H(s)C(s)
+\end{equation}
+Factorizando $G(s)$:
+\begin{equation}
+G(s)R(s)=C(s)(1+G(s)H(s))
+\end{equation}
+Relacionando la salida con la entrada:
+\begin{equation}
+\frac{C(s)}{R(s)}=\frac{G(s)}{1+G(s)H(s)}	
+\end{equation}
+\begin{notation}
+Si la retroalimentación en \textbf{negativa}, la F.T. es de signo \textbf{positivo}, de igual manera si es una retroalimentación \textbf{positiva}, la F.T. tendrá signo \textbf{negativa}.
+\begin{figure}[H]
+\centering
+\subfloat[Retroalimentación negativa]{\includegraphics[width=0.4\linewidth]{Dim/dim7.png}}
+\subfloat[Retroalimentación negativa]{\includegraphics[width=0.4\linewidth]{Dim/dim8.png}}
+\caption{Retroalimentación lazo cerrado.}
+\end{figure}
+\end{notation}
+\section{Simplificación de diagramas de bloque}
+Los diagramas de bloques son una forma \textbf{visual} de representar los \textbf{componentes} y las \textbf{interacciones} de un sistema de control en forma de bloques conectados entre sí. Cada bloque representa una \textbf{función} o una \textbf{operación} específica en el sistema y las conexiones entre los bloques indican la transferencia de señales o variables entre ellos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Dim/dim4.png}
+\caption{Simplificación de diagramas de bloque}
+\end{figure}
+\textbf{Pasos para simplificar}:
+\begin{enumerate}
+\item \textbf{Identifica los bloques clave}: Al analizar el diagrama, es importante identificar los bloques que tienen un impacto directo en la función de transferencia general del sistema. Estos bloques son aquellos que están directamente conectados a la entrada o salida principal del sistema, o aquellos que tienen una influencia significativa en la dinámica del sistema.Una vez que identificas los bloques clave, puedes centrarte en simplificar su contribución al diagrama de bloques. Esto se logra aplicando las propiedades de los bloques mencionadas anteriormente.\\
+Por ejemplo, si hay varios bloques de ganancia en serie, puedes combinarlos multiplicando sus ganancias y reemplazándolos con un solo bloque de ganancia. De manera similar, si hay bloques de ganancia en paralelo, puedes sumar sus ganancias y reemplazarlos con un solo bloque de ganancia. Si hay bloques de suma en serie, puedes combinarlos en un solo bloque de suma. Si hay bloques de suma en paralelo, puedes combinarlos en un solo bloque de suma, sumando todas las señales de entrada. Si hay bloques de retardo en serie, puedes sumar sus retardos y reemplazarlos con un solo bloque de retardo. Si hay bloques de retardo en paralelo, selecciona el retardo máximo y combínalos en un solo bloque de retardo. De manera similar, si hay bloques de integradores o derivadores en serie, puedes combinarlos utilizando las propiedades de integración y derivación.\\ 
+El objetivo de identificar y simplificar los bloques clave es reducir la complejidad del diagrama de bloques y hacerlo más manejable para su análisis y diseño. Al simplificar estos bloques, puedes obtener una representación más clara y concisa del sistema de control. Recuerda que la simplificación del diagrama de bloques debe realizarse de manera cuidadosa para asegurarte de que la simplificación no altere el comportamiento esencial del sistema y que la representación simplificada sea equivalente a la original.
+\item \textbf{Aplica las propiedades de los bloques}: Utiliza las propiedades de los bloques para simplificar el diagrama. Algunas propiedades comunes incluyen:
+\begin{itemize}
+\item Ganancia en serie: Si hay bloques de ganancia en serie, puedes multiplicar sus ganancias para combinarlos en un solo bloque de ganancia.
+\item Ganancia en paralelo: Si hay bloques de ganancia en paralelo, puedes sumar sus ganancias para combinarlos en un solo bloque de ganancia.
+\item Suma en serie: Si hay bloques de suma en serie, puedes combinarlos en un solo bloque de suma.
+\item Suma en paralelo: Si hay bloques de suma en paralelo, puedes combinarlos en un solo bloque de suma, sumando todas las señales de entrada.
+\item Retardos en serie: Si hay bloques de retardo en serie, puedes sumar sus retardos para combinarlos en un solo bloque de retardo.
+\item Retardos en paralelo: Si hay bloques de retardo en paralelo, puedes seleccionar el retardo máximo de los bloques para combinarlos en un solo bloque de retardo.
+\item Integradores y derivadores: Si hay bloques de integradores o derivadores en serie, puedes combinarlos utilizando las propiedades de integración y derivación.	
+\end{itemize}
+\item \textbf{Simplifica las conexiones}: Examina las conexiones entre los bloques y simplifícalas según las propiedades de los bloques mencionadas anteriormente. Puedes reorganizar las conexiones y eliminar bloques redundantes para simplificar aún más el diagrama.
+\item \textbf{Verifica la equivalencia}: Una vez que hayas simplificado el diagrama de bloques, verifica que la nueva representación sea equivalente a la original. Puedes hacerlo comparando las funciones de transferencia de ambos diagramas y asegurándote de que produzcan las mismas respuestas en el sistema.
+\end{enumerate}
+\section{Función de transferencia}
+La función de transferencia es una herramienta matemática que describe la relación entre \textbf{la señal de entrada y la señal de salida} de un sistema dinámico lineal e invariante en el tiempo. En el contexto de los diagramas de bloques y el control de sistemas, la función de transferencia se utiliza para representar la respuesta del sistema a una entrada específica.\\
+La función de transferencia se expresa como la razón de la transformada de Laplace de la salida del sistema a la transformada de Laplace de la entrada del sistema, asumiendo condiciones iniciales nulas. En otras palabras, la función de transferencia describe cómo el sistema responde a diferentes frecuencias de entrada y cómo amplifica o atenúa esas frecuencias.
+\begin{remark}
+La multiplicación en el dominio complejo de Laplace es equivalente a la convolución de las mismas funciones en el dominio del tiempo.
+\end{remark}
+\subsection{Modelos}
+\subsubsection{Dinámico}
+Se refiere a cómo evoluciona el sistema de control en términos de su respuesta en el tiempo y su estabilidad. La dinámica del sistema se describe mediante modelos matemáticos, como las funciones de transferencia o las ecuaciones diferenciales, y puede analizarse utilizando herramientas como la teoría de control y el análisis de sistemas lineales.
+\subsubsection{Estacionario}
+Un sistema se considera estacionario si su respuesta no varía con el tiempo o si la respuesta en estado estable se mantiene constante. En otras palabras, un sistema estacionario muestra una respuesta constante y predecible una vez que ha alcanzado un estado estable. Esto significa que la salida del sistema no cambia con el tiempo una vez que las condiciones iniciales han desaparecido.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dim/dim5.png}
+\caption{Modelos estáticos y dinámicos.}	
+\end{figure}
+Al momento De resolver Funciones de transferencia notaremos que tenemos varios polinomios Notaremos que tendremos varios polinomios o expresiones matemáticas. De la función de referencia podemos encontrar 2 definiciones importantes: los polos y los ceros, sea la función de transferencia $G(s)$:
+\begin{equation}
+G(s)=\frac{Y(s)}{X(s)}
+\end{equation}
+Los ceros se hallan:
+\begin{equation}
+Y(s)=0
+\end{equation}
+Los polos se hallan:
+\begin{equation}
+X(s)=0
+\end{equation}
+En otras palabras, igualamos a cero sea el denominador o el numerador, luego obtenemos las raíces del polinomio.\\
+Los polos y ceros son importantes para determinar si nuestro sistema es estable o inestable, Para realizar esto tenemos que gráficar los puntos de nuestros \textbf{polos} en el plano $s$. Si los mismos están al lado izquierdo nuestro sistema es \textbf{estable}, de lo contrario nuestro sistema será \textbf{inestable}.
+\begin{figure}[H]
+ \centering
+ \includegraphics[width=0.6\linewidth]{Dim/dim6.png}
+ \caption{Gráfica polos y ceros.}
+ \end{figure} 
+\begin{itemize}
+\item \textbf{Estabilidad en sistemas de tiempo continuo:}
+\begin{itemize}
+\item Si todos los polos del sistema están ubicados en la parte izquierda del plano complejo (es decir, tienen una parte real negativa), el sistema es estable.
+\item Si al menos uno de los polos está ubicado en la parte derecha del plano complejo (es decir, tiene una parte real positiva), el sistema es inestable.
+\end{itemize}
+\item \textbf{Estabilidad en sistemas de tiempo discreto}:
+\begin{itemize}
+\item Si todos los polos del sistema se encuentran dentro del círculo unitario en el plano complejo, el sistema es estable.
+\item Si al menos uno de los polos está fuera del círculo unitario, el sistema es inestable.
+\end{itemize}
+\end{itemize}
+\begin{notation}
+Los polos se grafican usando como símbolo una equis (x) y los ceros usando un circulo ($\circ$)
+\end{notation}
+\begin{remark}
+La ubicación de los \textbf{ceros} no tiene un impacto directo en la estabilidad del sistema, pero puede afectar otros aspectos, como la cancelación de polos y la forma de la respuesta del sistema
+\end{remark}
+Algunos casos especiales que veremos y necesitan utilizar herramientas y técnicas más avanzadas, como el análisis de la función de transferencia, el diagrama de Bode, el lugar de las raíces o el mapeo de polos y ceros, para realizar un análisis completo de la estabilidad de un sistema son:
+\begin{enumerate}
+\item \textbf{Polos en el eje imaginario}:
+\begin{itemize}
+\item Si un sistema tiene polos puros en el eje imaginario, es decir, sin parte real, puede ser marginalmente estable o inestable, dependiendo de otros factores del sistema.
+\item En general, la presencia de polos en el eje imaginario indica que existe oscilación en la respuesta del sistema. La estabilidad depende de la amortiguación asociada con los polos complejos conjugados cercanos al eje imaginario.
+\item Si los polos complejos conjugados tienen una amortiguación suficiente para asegurar que no haya crecimiento exponencial en la respuesta del sistema, entonces el sistema puede ser estable. Si la amortiguación es insuficiente, el sistema puede volverse inestable y exhibir oscilaciones crecientes.
+\end{itemize}
+\item \textbf{Polos repetidos}:
+\item Los polos repetidos son aquellos que tienen la misma ubicación en el plano complejo. La cantidad de veces que se repiten indica el orden de multiplicidad de los polos.
+\item La estabilidad de un sistema con polos repetidos depende de la parte real y de la derivada de la función de transferencia en esa ubicación específica.
+\item Si la derivada de la función de transferencia en un polo repetido es cero, el sistema puede ser marginalmente estable o inestable.
+Si la derivada de la función de transferencia en un polo repetido es diferente de cero, el sistema puede ser estable o inestable, dependiendo de si la parte real es negativa o positiva.
+\item \textbf{Polos en el límite de estabilidad}:
+\item Los polos en el límite de estabilidad son aquellos que se encuentran justo en la frontera entre la estabilidad y la inestabilidad. Por ejemplo, en el caso de sistemas de tiempo discreto, los polos en el círculo unitario.
+\item La estabilidad de un sistema con polos en el límite de estabilidad depende de la ubicación de los otros polos y ceros en el sistema, así como de la respuesta transitoria y de estado estable deseada.
+\item En general, se requiere un análisis más detallado para determinar la estabilidad en estos casos, utilizando herramientas como el lugar de las raíces, el mapeo de polos y ceros, o el análisis de estabilidad mediante condiciones específicas.
+\end{enumerate}
+\part{Sistemas de radio digital y M.O.}
+\chapterimage{chapter_head_SRD.pdf} % Chapter heading image
+\chapter{Ondas electromagnéticas e introducción}
+\section{Radiaciones electromagnéticas}
+Los campos electromagnéticos de baja frecuencia incluyen aquellos generados por corrientes eléctricas de frecuencia industrial, como las producidas por líneas eléctricas, electrodomésticos o equipos electrónicos. Estos campos generalmente tienen frecuencias inferiores a los 300 kilohertz (kHz) y se asocian con la transmisión de energía eléctrica.\\
+Por otro lado, los campos electromagnéticos de alta frecuencia se refieren a aquellos generados por dispositivos inalámbricos, como redes Wi-Fi, telefonía móvil, transmisiones de radio y televisión, así como por equipos de radar y microondas. Estos campos tienen frecuencias más altas, que van desde los megahertz (MHz) hasta los gigahertz (GHz).
+Se debe de recordar la ecuación \ref{eq:longitud de onda}, con esa ecuación se puede encontrar:
+\begin{definition}[Energía de una onda]
+Se refiere a la cantidad de energía transportada por una onda. En el contexto de las ondas, como las ondas electromagnéticas o las ondas sonoras, la energía de onda representa la energía total asociada con la propagación de la onda a través del medio en el que se está propagando.
+\begin{equation}
+E=h\cdot f=h\cdot\frac{c}{\lambda}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{h}: Constante de Plank. ($6.626069\basedec{-34}$) ($J\cdot s$)
+\item \textbf{f}: Frecuencia. (Hz)
+\item \textbf{c}: Velocidad de luz: $3\times\basedec{8}$ (m/s)
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+\end{definition}
+\subsection{Radiaciones ionizantes y no ionizantes}
+Las radiaciones se pueden clasificar en dos categorías principales: radiaciones ionizantes y radiaciones no ionizantes.\\
+Las \textbf{radiaciones ionizantes} son aquellas que tienen suficiente energía para ionizar átomos o moléculas, lo que significa que pueden eliminar electrones de los átomos con los que interactúan. Ejemplos de radiaciones ionizantes incluyen los rayos X, los rayos gamma y las radiaciones nucleares. Estas radiaciones pueden ser dañinas para los tejidos vivos y pueden tener efectos biológicos significativos, como causar mutaciones genéticas o dañar células y tejidos.\\
+Por otro lado, las \textbf{radiaciones no ionizantes} son aquellas que no tienen suficiente energía para ionizar átomos o moléculas. Ejemplos de radiaciones no ionizantes incluyen las ondas de radio, las microondas, la radiación infrarroja, la luz visible y las ondas de radiofrecuencia. Estas radiaciones generalmente son consideradas como seguras para los seres humanos en niveles de exposición típicos, aunque exposiciones excesivas a algunas de estas radiaciones pueden generar efectos térmicos o producir daños en la piel.\\
+En general, la diferencia fundamental entre las radiaciones ionizantes y no ionizantes radica en su capacidad para ionizar átomos o moléculas. Esta distinción es importante en términos de los efectos biológicos y los riesgos asociados con la exposición a cada tipo de radiación.
+\subsection{ICNIRP}
+La International Commission on Non-Ionizing Radiation Protection (ICNIRP) es una organización científica independiente que se dedica a evaluar los posibles riesgos para la salud asociados con las radiaciones no ionizantes y establecer directrices de protección. Según la ICNIRP, las radiaciones no ionizantes, como las provenientes de campos electromagnéticos de frecuencias de radio y microondas, \textbf{no representan} un riesgo significativo para la salud siempre que se mantengan dentro de los límites de exposición recomendados. La comisión establece límites basados en una revisión exhaustiva de la literatura científica y considera tanto los efectos térmicos como los efectos no térmicos. En particular, en relación con el calentamiento, la ICNIRP establece límites de exposición diseñados para prevenir el aumento excesivo de la temperatura en los tejidos corporales, que se considera el principal mecanismo de daño. En general, la ICNIRP sostiene que, si se cumplen estos límites, no se esperan efectos adversos para la salud relacionados con el calentamiento debido a las radiaciones no ionizantes. Sin embargo, la investigación científica continúa y la ICNIRP realiza revisiones periódicas de sus directrices para tener en cuenta los avances científicos y la evidencia emergente.
+\subsection{SAR}
+El SAR (Specific Absorption Rate, tasa de absorción específica) es una medida que se utiliza para \textbf{cuantificar} la cantidad de energía de radiofrecuencia (RF) absorbida por el cuerpo humano cuando se expone a radiación electromagnética, especialmente en el rango de las frecuencias de radio y microondas (entre 100 kHz y 100 GHz). El SAR se expresa típicamente en vatios por kilogramo (W/kg).\\
+El SAR se utiliza como una herramienta para evaluar la seguridad de dispositivos que emiten radiación electromagnética, como teléfonos móviles, tabletas, computadoras portátiles y otros dispositivos inalámbricos. Mide la \textbf{cantidad} de energía RF \textbf{absorbida} por el cuerpo en función de la tasa de absorción y la distribución de la energía en los tejidos.\\
+Es importante tener en cuenta que el SAR \textbf{solo mide} la absorción de energía RF y no evalúa los posibles efectos biológicos o de salud asociados. Los límites de SAR se establecen para evitar el calentamiento excesivo de los tejidos corporales debido a la exposición a la radiación RF.
+\subsection{Medición}
+Las ondas electromagnéticas se pueden medir utilizando instrumentos específicos llamados medidores o analizadores de campo electromagnético. Estos dispositivos están diseñados para detectar y cuantificar la intensidad de las ondas electromagnéticas en diferentes rangos de frecuencia.\\
+Existen varios tipos de medidores de campo electromagnético disponibles en el mercado, cada uno con sus propias características y capacidades de medición. Algunos de los dispositivos comunes utilizados para medir las ondas electromagnéticas son:
+\begin{enumerate}
+\item \textbf{Medidores de campos eléctricos y magnéticos}: Estos medidores pueden medir tanto los campos eléctricos como los campos magnéticos en diversas frecuencias. Utilizan antenas o sondas especiales para capturar y medir la intensidad de los campos en unidades específicas, como voltios por metro (V/m) para campos eléctricos y teslas (T) para campos magnéticos.
+\includegraphics[width=0.6\linewidth]{sdr/sdr1.png}
+\item \textbf{Espectrofotómetros o analizadores de espectro}: Estos dispositivos permiten analizar y visualizar la distribución de energía en diferentes frecuencias dentro de un rango específico. Proporcionan una representación gráfica del espectro electromagnético, mostrando la intensidad de las ondas en función de la frecuencia.
+\includegraphics[width=0.6\linewidth]{sdr/sdr2.png}
+\item \textbf{Dosímetros personales}: Estos dispositivos portátiles se utilizan para medir la exposición personal a la radiación electromagnética durante un período de tiempo determinado. Registran y almacenan los niveles de exposición acumulados, lo que permite evaluar la exposición a largo plazo.
+\includegraphics[width=0.6\linewidth]{sdr/sdr3.png}
+\end{enumerate}
+Es importante seguir las instrucciones del fabricante y utilizar los equipos de medición adecuados según el tipo de ondas electromagnéticas que se desee medir (como frecuencias de radio, microondas, campos electromagnéticos de baja frecuencia, etc.). Además, es recomendable mantenerse actualizado con las regulaciones y límites de exposición establecidos por las autoridades competentes en relación con la radiación electromagnética.
+\section{Radio enlaces terrenos microondas}
+Un radioenlace es una forma de interconexión entre terminales de telecomunicaciones utilizando ondas electromagnéticas. Estos enlaces se establecen típicamente en el rango de frecuencias de 800 MHz a 42 GHz. En la implementación de un radioenlace, se considera que la trayectoria de la señal está sujeta a obstáculos naturales o artificiales, como montañas o edificios, y también puede ser afectada por la curvatura de la Tierra.\\
+Para establecer un radioenlace, se requiere un conjunto de equipos de transmisión y recepción que permiten enviar señales de un nodo o centro de red a otro utilizando tecnología de radio. Dependiendo del diseño del radioenlace, puede transportar una sola señal o varias simultáneamente.\\
+Un ejemplo práctico de un radioenlace es la conexión inalámbrica utilizada para transmitir datos entre una estación base de telefonía móvil y un teléfono móvil. La estación base emite señales de radio en un rango de frecuencia específico, y el teléfono móvil, equipado con un receptor adecuado, recibe y decodifica estas señales para establecer la comunicación.\\
+En resumen, los radioenlaces permiten la comunicación a través de ondas electromagnéticas en un rango de frecuencias determinado y superan obstáculos físicos en el camino de la señal. Estos enlaces son fundamentales en las redes de telecomunicaciones para establecer conexiones inalámbricas confiables y eficientes.
+\subsection{Clasificación de radio enlaces}
+\subsubsection{Radio enlaces fijos terrestres}
+Los radioenlaces fijos terrestres son aquellos que se establecen entre \textbf{dos} puntos de tierra para la transmisión de señales a través de ondas electromagnéticas. Estos enlaces se utilizan para la comunicación de datos, voz y video. Los radioenlaces fijos terrestres se caracterizan por su alta \textbf{confiabilidad} y \textbf{estabilidad}, lo que los hace ideales para la transmisión de datos a larga distancia. Estos enlaces pueden cubrir distancias considerables, desde unos pocos kilómetros hasta cientos de kilómetros, dependiendo de los equipos utilizados y las \textbf{condiciones} del terreno. La \textbf{infraestructura} de un radioenlace fijo terrestre consta de antenas de transmisión y recepción, equipos de radiofrecuencia, sistemas de modulación y demodulación, así como de torres o soportes para ubicar las antenas a una altura adecuada. La alineación precisa de las antenas es esencial para garantizar una transmisión óptima y minimizar la atenuación de la señal.\\
+Los radio enlaces, establecen un concepto de comunicación del tipo
+dúplex. En cuanto al radiocanal se debe considerar una pareja de portadoras ida y retorno. Se asocia a la idea de circuito de telecomunicación dúplex a 4 hilos. El radio enlace debe ser básicamente entre \textbf{puntos visibles}, es decir puntos altos de topografía; es necesario los recorridos entre enlaces tengan una altura libre
+adecuada para la propagación (una altura de 3 metros mínimo). Los radio enlaces de microondas se realizan \textbf{sólo} si existe una \textbf{línea de vista del receptor} (LOS, \textit{Line Of Sight}).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{sdr/sdr4.png}
+\caption{Línea de vista en radio enlaces}
+\end{figure}
+\subsection{Estructura}
+La estructura de un radioenlace terrestre puede variar dependiendo de diversos factores, como la distancia de transmisión, el tipo de aplicación, las condiciones del terreno y las necesidades específicas de la red de comunicación. Sin embargo, en general, un radioenlace terrestre típico consta de los siguientes componentes principales:
+\begin{enumerate}
+\item \textbf{Antenas}: Son los elementos encargados de la transmisión y recepción de las ondas electromagnéticas. Las antenas pueden ser direcionales, lo que significa que enfocan la energía en una dirección específica, o pueden ser omnidireccionales, irradiando la señal en todas las direcciones.
+\item \textbf{Torres o soportes}: Son estructuras físicas que sostienen las antenas y las elevan a una altura adecuada. Las torres se utilizan para garantizar una mejor línea de vista y evitar obstrucciones en el camino de la señal.
+\item \textbf{Equipos de transmisión y recepción}: Incluyen dispositivos como transmisores, receptores, amplificadores y moduladores/demoduladores. Estos equipos se encargan de procesar la señal para su transmisión o recepción, y aseguran la calidad y fiabilidad de la comunicación.
+\item \textbf{Línea de transmisión}: Es el medio físico utilizado para transportar la señal entre los equipos de transmisión y recepción. Puede ser un cable coaxial, fibra óptica o incluso enlaces de microondas inalámbricos.
+\item \textbf{Sistema de alimentación y energía}: Incluye los componentes necesarios para suministrar energía eléctrica a los equipos de transmisión y recepción, como fuentes de alimentación y sistemas de respaldo de energía.
+\item \textbf{Control y gestión}: En algunos casos, los radioenlaces terrestres pueden requerir sistemas de control y gestión para supervisar y optimizar el rendimiento de la red. Esto puede incluir sistemas de monitoreo remoto, configuración y ajuste de parámetros, y diagnóstico de fallas.
+\end{enumerate}
+Es importante destacar que la estructura exacta de un radioenlace terrestre puede variar en función de las necesidades específicas de la aplicación y la tecnología utilizada. Al diseñar un radioenlace terrestre, se deben considerar factores como la frecuencia de operación, la capacidad de transmisión, la calidad de la señal y la eficiencia espectral para garantizar una comunicación confiable y eficiente.\\
+La \textbf{frecuencia intermedia} no es una fija, eso depende para cada frecuencia, por ejemplo, la frecuencia de \textbf{450-470 kHz} utilizada en receptores de \textbf{radio AM}. En \textbf{televisión}, la frecuencia intermedia varía dependiendo del estándar de transmisión, como por ejemplo, 45.75 MHz en el estándar NTSC utilizado en América del Norte.
+\subsection{Repetidores}
+Los repetidores, tanto pasivos como activos, son dispositivos utilizados en las redes de comunicación para extender la cobertura y mejorar la calidad de la señal transmitida. A continuación, te explico en qué consiste cada tipo de repetidor:\\
+\subsubsection{Repetidor Pasivo}
+Un repetidor pasivo es un dispositivo que amplifica y retransmite la señal recibida sin modificarla ni procesarla. Funciona básicamente como un amplificador de señal. Este tipo de repetidor recibe la señal débil, la amplifica y la retransmite en la misma frecuencia sin realizar ningún procesamiento adicional. No requiere de energía eléctrica externa y se basa en componentes pasivos como antenas y filtros.\\
+Los repetidores pasivos son comúnmente utilizados en sistemas de radio y televisión, donde se requiere extender la cobertura en áreas con una señal débil. Sin embargo, tienen limitaciones en cuanto a la amplificación de la señal y pueden introducir cierta degradación en la calidad de la señal debido a ruido y pérdidas en el proceso de amplificación. Estos equipos se colocan en serie, por lo que si uno falla en enlace se corta. Es por esta razón que se requiere equipos de redundancia.\\
+En un sistema con \textbf{hot standby}, el componente principal y el componente de respaldo operan simultáneamente, siendo el componente principal el que realiza las operaciones normales. Sin embargo, el componente de respaldo está en un estado de espera activo, monitoreando constantemente el estado del componente principal. Si se detecta una falla o inoperatividad en el componente principal, el componente de respaldo se activa automáticamente y asume las funciones y responsabilidades del componente principal.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{sdr/sdr5.png}
+\caption{Repetidor pasivo.}
+\end{figure}
+\subsubsection{Repetidor activo}
+Un repetidor activo es un dispositivo que recibe, procesa y regenera la señal antes de retransmitirla. A diferencia de los repetidores pasivos, los repetidores activos tienen la capacidad de realizar amplificación de señal, filtrado, regeneración de la forma de onda y otras operaciones de procesamiento de la señal. En ellos se recibe la señal en la frecuencia de portadora y se la baja a una frecuencia intermedia (FI) para amplificarla y retransmitirla en la frecuencia de salida.\\
+Los repetidores activos se alimentan con energía eléctrica externa y utilizan circuitos electrónicos para amplificar y procesar la señal recibida. Además de amplificar la señal, también pueden realizar tareas como filtrado de ruido, corrección de errores y ajuste de niveles de señal. Esto permite mejorar la calidad de la señal y compensar las pérdidas de transmisión.\\
+Los repetidores activos se utilizan ampliamente en redes de telecomunicaciones, como en sistemas de telefonía móvil, donde se requiere una extensa cobertura y una buena calidad de señal. Estos repetidores pueden extender la cobertura de la red, mejorar la capacidad de transmisión y garantizar una comunicación confiable.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{sdr/sdr6.png}
+\caption{Repetidor activo.}
+\end{figure}
+\section{Enlace de microondas}
+El espectro de enlaces microondas es una parte del espectro electromagnético que se utiliza para transmitir señales de comunicación en aplicaciones de microondas. El \textbf{rango} de frecuencias abarca frecuencias desde aproximadamente 1 GHz (Gigahercio) hasta 300 GHz (Gigahercio). Estas frecuencias se encuentran por encima de las bandas de radio convencionales y por debajo de las frecuencias de infrarrojos. Las microondas tienen una capacidad de propagación directa y en línea recta, lo que significa que suelen requerir una línea de vista clara entre las antenas transmisora y receptora. Objetos sólidos, edificios o accidentes geográficos pueden obstaculizar la propagación de las microondas. En cuanto a la capacidad de transmisión, los enlaces microondas ofrecen una alta capacidad de transmisión de datos debido a las altas frecuencias utilizadas. Estas frecuencias más altas permiten una mayor velocidad de transmisión de datos en comparación con las bandas de frecuencias más bajas utilizadas en las comunicaciones de radio convencionales.
+\begin{definition}[Zonas de Fresnel]
+Las zonas de Fresnel son áreas elípticas que se forman alrededor de un enlace de comunicación inalámbrica, especialmente en enlaces de microondas y radio. La zona de Fresnel es fundamental para garantizar una comunicación inalámbrica de calidad. Si una obstrucción física se encuentra dentro de una zona de Fresnel significativa, puede causar atenuación de la señal, reflejos o dispersión, lo que puede afectar la calidad de la comunicación y provocar una pérdida de señal.
+\begin{equation}
+r_n= \sqrt{\frac{{n \cdot \lambda \cdot d_1 \cdot d_2}}{{d_1 + d_2}}}
+\label{eq:zonas fresnel}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{$r_n$}: Radio de la zona de Fresnel (m).
+\item \textbf{$n$}: Número de zona de Fresnel. (1, 2, 3 ...)
+\item $\lambda$: Longitud de onda de la señal (m).
+\item \textbf{$d_1$}: Distancia desde el transmisor hasta el punto de interés (m).
+\item \textbf{$d_2$}: Distancia desde el receptor hasta el punto de interés (m).
+\end{itemize}
+\end{definition}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{sdr/sdr7.png}
+\caption{Zonas de Fresnel}
+\end{figure}
+En un enlace de comunicación inalámbrica, existen tres zonas de Fresnel que se consideran significativas:
+\begin{enumerate}
+\item \textbf{Zona de Fresnel 1}: También conocida como la primera zona de Fresnel, es la zona más cercana al enlace y tiene forma de elipse alargada. Esta zona es crucial para la transmisión de la señal, ya que cualquier obstrucción significativa en esta área puede provocar una degradación severa de la señal.
+\item \textbf{Zona de Fresnel 2}: La segunda zona de Fresnel es la siguiente más cercana al enlace, y también tiene forma de elipse. Aunque su importancia es menor que la zona de Fresnel 1, sigue siendo relevante para mantener la calidad de la señal, ya que una obstrucción en esta zona puede causar atenuación y pérdida de potencia de la señal.
+\item \textbf{Zona de Fresnel 3}: La tercera zona de Fresnel es la zona más alejada del enlace y también tiene forma de elipse. Aunque tiene menos impacto en la calidad de la señal en comparación con las zonas de Fresnel más cercanas, aún puede tener influencia en la propagación de la señal, especialmente en enlaces de larga distancia.
+\end{enumerate}
+Estas tres zonas de Fresnel son consideradas significativas debido a su impacto en la propagación de la señal inalámbrica. La presencia de obstrucciones físicas dentro de estas zonas puede causar interferencia, reflexiones y dispersión, lo que afecta la calidad y la intensidad de la señal transmitida. Por lo tanto, es importante tener en cuenta y garantizar un despeje adecuado de estas zonas al planificar y diseñar enlaces de comunicación inalámbrica.
+
+%\part{Instrumentación 2}
+%\chapterimage{chapter_head_I2.pdf} % Chapter heading image
+%\section{Transformada de Laplace}
+%la transformada de Laplace es una transformada integral que convierte una función de variable real \textit{t} (normalmente el tiempo) a una función de variable compleja \textit{s}.\\
+%La transformada de Laplace de una función \textit{f(t)} definida para todos los números reales $t\geq 0$, es la función $F(s)$ definida por:
+%\begin{equation}
+%F(s)=\int_0^\infty e^{-st}f(t)dt
+%\end{equation}
+%siempre y cuando la función esté definida. Para la mayoria de funciones, esta integral está tabulada, es decir, ya se ha calculado su transformada.
+%\begin{figure}[H]
+%\centering
+%\includegraphics[width=\linewidth]{I2/1.jpg}
+%\caption{Tabla de transformada de Laplace}
+%\label{fig:tabla de transformadas Laplace}
+%\end{figure}
+%\subsection{Propiedades de la transformada de Laplace}
+%\begin{theorem}[Producto constante]
+%Sea \textit{a} un valor constante que multiplica a una función, la transformada de Laplace de esta función será el valor de la constante multiplicada por la transformada de Fourier de esta función:
+%\begin{equation}
+%L\llaves{a\cdot f(t)}=a\cdot L\llaves{f(t)}
+%\end{equation}
+%\end{theorem}
+%\begin{example}[Producto constante]
+%\begin{align*}
+%&L\llaves{\underbrace{7}_{cte}\cdot\underbrace{\sin(8t)}_{f(t)}}\\
+%&7\cdot L\llaves{\sin(8t)}\\
+%&7\cdot\frac{8}{s^2+64}\\
+%&\frac{56}{s^2+64}
+%\end{align*}
+%\end{example}
+%\begin{theorem}[Linealidad]
+%La transformada de la adición o sustracción de dos funciones es la suma o sustracción de sus transformadas independientes. De igual manera se aplica la propiedad anterior:
+%\begin{equation}
+%L\llaves{a\cdot f(t)\pm b\cdot g(t)}=a\cdot L\llaves{f(t)}\pm b\cdot L\llaves{g(t)}
+%\end{equation}
+%\end{theorem}
+%\begin{example}[Linealidad]
+%\begin{align*}
+%L\llaves{3t^2-9t}&=L\llaves{3t^2}-L\llaves{9t}
+%&=3\cdot\frac{2!}{s^3}-9\cdot\frac{1!}{s^2}
+%&=\frac{6}{s^3}-\frac{9}{s^2}
+%\end{align*}
+%\end{example}
+%\begin{theorem}[Traslación]
+%Si una función es multiplicada por una exponencial, con un múltiplo real del tiempo, esto provocará una traslación en el plano complejo, de otra manera:
+%\begin{equation}
+%L\llaves{e^{a\cdot t}f(t)}=F(s-a), a\in \mathcal{R}
+%\end{equation}
+%\end{theorem}
+%\begin{example}[Traslación]
+%\begin{align*}
+%&L\llaves{\underbrace{e^{2t}}_{e^{at},a=2}\cdot\underbrace{\sin(3t)}_{f(t)}}\\
+%&L\llaves{\sin(3t)}=\frac{3}{s^2+9}=F(s)
+%&L\llaves{e^{2t}\sin(3t)}=F(s-2)=\frac{3}{(s-2)^2+9}
+%\end{align*}
+%\end{example}
+%\begin{theorem}[Derivada en $s$]
+%Sea una función del tiempo, multiplicada por el tiempo elevado a la enésima potencia; su transformada menos uno elevado a la enésima potencia por la enésima derivada de la transformada de Laplace de la función:
+%\begin{equation}
+%\mathscr{L}\llaves{t^n\cdot f(t)}=(-1)^nF^{n'}(s)
+%\end{equation}
+%\end{theorem}
+%\begin{example}[Derivada]
+%\begin{align*}
+%\mathscr{L}\llaves{t\cos(7t)}&=?\\
+%\mathscr{L}\llaves{\cos(7t)}&=\frac{s}{s^2+7^2}=F(s)\\
+%\mathscr{L}\llaves{t\cos(7t)}&=\textcolor{red}{(-1)^1}F'(s)\\
+%&=\parentesis{\frac{s}{s^2+49}}'=\frac{1(s^2+49)-s\cdot 2s}{(s^2+49)^2}\\
+%&=\frac{s^2+49-2s^2}{(s^2+49)^2}=\frac{-s^2+49}{(s^2+49)^2}\\
+%&\mathscr{L}\llaves{t\cos(7t)}=\textcolor{red}{-}\parentesis{\frac{-s^2+49}{(s^2+49)^2}}
+%\end{align*}
+%\end{example}
+%\begin{theorem}[Derivada en $t$]
+%La transformada de Laplace de una derivada n es igual a la variable compleja $s$ elevada a la $n$, multiplicada por la transformada de Laplace de la función original, menos el valor inicial de la función para la n-ésima derivada.:
+%\begin{equation}
+%\mathscr{L}\llaves{f^{(n)}(t)}=s^n\cdot \mathscr{L}\llaves{f(t)}-s^{n-1}\cdot f(0)-\cdots-f^{n-1}(0)
+%\end{equation}
+%Para las primeras 3 derivadas es:
+%\begin{align*}
+%&\mathscr{L}\llaves{f'(t)}=s\cdot\mathscr{L}\llaves{f(t)}-f(0)\\
+%&\mathscr{L}\llaves{f''(t)}=s^2\cdot\mathscr{L}\llaves{f(t)}-s\cdot f(0)-f'(0)\\
+%&\mathscr{L}\llaves{f'''(t)}=s^3\cdot\mathscr{L}\llaves{f(t)}-s^2\cdot f(0)-s\cdot f'(0)-f''(0)
+%\end{align*}
+%\end{theorem}
+%\subsection{Transformada de la función escalón unitario o Heaviside}
+%\begin{wrapfigure}{l}{0.5\linewidth}
+%  \begin{center}
+%    \includegraphics[width=.95\linewidth]{I2/2.jpg}
+%  \end{center}
+%  \caption{Función escalón unitario}
+%\end{wrapfigure}
+%Definida analíticamente como:
+%\begin{equation*}
+%f(t) = \left\lbrace
+%\begin{array}{ll}
+%\textup{si } t>a & 1\\
+%\textup{si } t\leq a & 0
+%\end{array}=u(t-a)=H(t-a)
+%\right.
+%\end{equation*}
+%Su transformada de Laplace de un escalón unitario es:
+%\begin{equation}
+%\mathscr{L}\llaves{u(t-a)}=\frac{e^{-a\cdot s}}{s}
+%\end{equation}
+%Calculando la transformada de Laplace de H(t-3):
+%\begin{equation}
+%\mathscr{L}\llaves{H(t-3)}=\frac{e^{-3\cdot s}}{s}
+%\end{equation}
+%Hasta esta parte resulta fácil, sin embargo se suele mezclar más funciones escalón unitario para crear un pulso rectangular, haremos ambos casos:
+%\subsubsection{Pulso rectangular}
+%\begin{wrapfigure}{l}{0.5\linewidth}
+%  \begin{center}
+%    \includegraphics[width=.95\linewidth]{I2/3.png}
+%  \end{center}
+%  \caption{Función pulso rectangular: caso 1}
+%\end{wrapfigure}
+%Para entender el como se caracteriza esta función usando pulsos unitarios, vamos a empezar analizando desde 0 hasta el infinito. Tenemos un punto de cambio en 3, para números menores a 3 la función vale cero, mientras que para pulsos mayores a 3 debería valer 1; sin embargo en la gráfica se muestra valor constante en 7. Esto se soluciona multiplicando la función escalón unitario por 7; si lo hacemos, para números menores antes de 3 tendremos o ($7\times 0$) y para mayores a 3 tendremos 7 ($7\times 1$). Por lo tanto tenemos:
+%\begin{equation}
+%7\cdot u(t-3)
+%\end{equation}
+%El comportamiento visto sería al infinito positivo, pero notamos que en 5 se hace cero. Lo analizamos de la siguiente manera, para antes del 5 es 7, que ya fue caracterizado, por lo tanto no debemos alterar nada; mientras que para números mayores a 5 vale 0, cosa que cambia pues fue caracterizada como 7. Bajo estas ideas podemos restar una función escalón unitario a la función ya hecha, ojo que esta función a restar deber ser escalada por 7, si no la escalamos tendríamos solo 7-1=6, cuando debería ser 7-7=0:
+%\begin{equation}
+%f(t)=7\cdot u(t-3)-7\cdot u(t-5)
+%\end{equation}
+%De esta manera se ha caracterizado la función pulso rectangular usando funciones heaviside, ahora se puede calcular su transformada de Laplace:
+%\begin{align*}
+%\mathscr{L}\llaves{7\cdot u(t-3)-7\cdot u(t-5)}&=\mathscr{L}\llaves{7\cdot u(t-5)}-\mathscr{L}\llaves{7\cdot u(t-5)}\\
+%&=7\cdot\mathscr{L}\llaves{u(t-5)}-7\cdot\mathscr{L}\llaves{u(t-5)}\\
+%&=7\cdot\frac{e^{-3s}}{s}-7\cdot\frac{e^{-5s}}{s}
+%\end{align*}
+%
+%Para el caso 2, sabiendo como es la función escalón unitario, nos dice que para antes de 2 debe valer 3 y para valores después de 2 debe ser 0. Para caracterizarlo, empezamos con una función constante \textcolor{red}{3}:
+%\begin{align*}
+%&t\leq 2\rightarrow \textcolor{red}{3}-0=3\\
+%&t>2\rightarrow \textcolor{red}{3}-1=2
+%\end{align*}
+%Nota que a la función constante 3 le estamos restando una función escalón unitario, sin embargo despues de 2 NO nos da 0, nos da 2. Esto se arregla escalando la función \textcolor{blue}{Heaviside}:
+%\begin{align*}
+%&t\leq 2\rightarrow \textcolor{red}{3}-\textcolor{blue}{3}\cdot 0=3\\
+%&t>2\rightarrow \textcolor{red}{3}-\textcolor{blue}{3}\cdot 1=0
+%\end{align*}
+%Analíticamente:
+%\begin{equation}
+%f(t)=3-3\cdot u(t-2)
+%\end{equation}
+%\begin{wrapfigure}{r}{0.4\linewidth}
+%  \begin{center}
+%    \includegraphics[width=.95\linewidth]{I2/3.png}
+%  \end{center}
+%  \caption{Función pulso rectangular: caso 2}
+%\end{wrapfigure}
+%Ahora para el punto 4, solo debemos sumar una función heaviside simple, escalada en 3 y desplazada hasta t=4, por lo tanto:
+%\begin{equation}
+%f(t)=3-3\cdot u(t-2)+3\cdot u(t-4)
+%\end{equation}
+%Ahora se resuelve la transformada de esta función:
+%\begin{align*}
+%&\mathscr{L}\llaves{f(t)=3-3\cdot u(t-2)+3\cdot u(t-4)}\\
+%&\mathscr{L}\llaves{3}-3\mathscr{L}\llaves{u(t-2)}+3\mathscr{L}\llaves{u(t-4)}\\
+%&=\frac{3}{s}-3\frac{e^{-2s}}{s}+3\frac{e^{-4s}}{s}
+%\end{align*}
+%
+%\section{Transformada de Fourier}
+%
+%\section{Transformada Z}
 %----------------------------------------------------------------------------------------
 %	ANEXOS
 %----------------------------------------------------------------------------------------
@@ -4171,6 +4721,125 @@ V_{rms}=\frac{1}{\sqrt{2}}\cdot V_p=0.7071\cdot V_p
 V_{pr}=0.636\cdot V_p
 \label{eq:vprom}
 \end{equation}
+\section{Identidades trigonométricas}
+\subsection{Básicas-Suma/Resta}
+\begin{equation}
+\sin\theta=\frac{1}{\csc\theta}
+\end{equation}
+\begin{equation}
+\cos\theta=\frac{1}{\sec\theta}
+\end{equation}
+\begin{equation}
+\csc\theta\frac{1}{\sin\theta}
+\end{equation}
+\begin{equation}
+\sec\theta=\frac{1}{\cos\theta}
+\end{equation}
+\begin{equation}
+\cot\theta=\frac{\cos\theta}{\sin\theta}=\frac{1}{\tan\theta}
+\end{equation}
+\begin{equation}
+\tan\theta=\frac{\sin\theta}{\cos\theta}=\frac{1}{\cot\theta}
+\end{equation}
+\begin{equation}
+\sin^2\theta+\cos^2\theta=1
+\end{equation}
+\begin{equation}
+1+\tan^2\theta=\sec^2\theta
+\end{equation}
+\begin{equation}
+1+\cot^2\theta=\csc^2\theta
+\end{equation}
+\begin{equation}
+\sin\parentesis{\theta\pm\beta}=\sin\theta\cos\beta\pm\sin\beta\cos\theta
+\end{equation}
+\begin{equation}
+\cos\parentesis{\theta\pm\beta}=\cos\theta\cos\beta\mp\sin\theta\sin\beta
+\end{equation}
+\begin{equation}
+\tan\parentesis{\theta\pm\beta}=\frac{\tan\theta\pm\tan\beta}{1\mp\tan\theta\tan\beta}
+\end{equation}
+\subsection{Ángulo doble y medio}
+\begin{equation}
+\sin(2\theta)=2\sin\theta\cos\theta
+\end{equation}
+\begin{equation}
+\cos(2\theta)=\cos^2\theta-\sin^2\theta
+\end{equation}
+\begin{equation}
+\cos(2\theta)=1-2\sin^2\theta
+\end{equation}
+\begin{equation}
+\cos(2\theta)=2\cos^2\theta-1
+\end{equation}
+\begin{equation}
+\tan(2\theta)=\frac{2\tan\theta}{1-\tan^2\theta}
+\end{equation}
+\begin{equation}
+\sin\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{2}}
+\end{equation}
+\begin{equation}
+\cos\frac{\theta}{2}=\pm\sqrt{\frac{1+\cos\theta}{2}}
+\end{equation}
+\begin{equation}
+\tan\frac{\theta}{2}=\pm\sqrt{\frac{1-\cos\theta}{1+\cos\theta}}
+\end{equation}
+\begin{equation}
+\tan\frac{\theta}{2}=\frac{1-\cos\theta}{\sin\theta}=\frac{\sin\theta}{1+\cos\theta}
+\end{equation}
+\subsection{Par, impar}
+\begin{equation}
+\sin(-\theta)=-\sin\theta
+\end{equation}
+\begin{equation}
+\cos(-\theta)=\cos\theta
+\end{equation}
+\subsection{Suma a producto; producto a suma}
+\begin{equation}
+\sin\theta+\sin\beta=2\sin\parentesis{\frac{\theta+\beta}{2}}\cos\parentesis{\frac{\theta-\beta}{2}}
+\end{equation}
+\begin{equation}
+\sin\theta-\sin\beta=2\sin\parentesis{\frac{\theta-\beta}{2}}\cos\parentesis{\frac{\theta+\beta}{2}}
+\end{equation}
+\begin{equation}
+\cos\theta+\cos\beta=2\cos\parentesis{\frac{\theta+\beta}{2}}\cos\parentesis{\frac{\theta-\beta}{2}}
+\end{equation}
+\begin{equation}
+\cos\theta-\cos\beta=-2\sin\parentesis{\frac{\theta+\beta}{2}}\sin\parentesis{\frac{\theta-\beta}{2}}
+\end{equation}
+\begin{equation}
+\sin\theta\sin\beta=\frac{1}{2}\corchetes{\cos(\theta-\beta)-\cos(\theta+\beta)}
+\end{equation}
+\begin{equation}
+\cos\theta\cos\beta=\frac{1}{2}\corchetes{\cos(\theta-\beta)+\cos(\theta+\beta)}
+\end{equation}
+\begin{equation}
+\sin\theta\cos\beta=\frac{1}{2}\corchetes{\sin(\theta+\beta)+\cos(\theta-\beta)}
+\end{equation}
+\subsection{Suplemento, complemento}
+\begin{multicols}{2}
+\begin{equation}
+\sin(\pi\pm\theta)=\mp\sin\theta
+\end{equation}
+\begin{equation}
+\cos(\pi\pm\theta)=-\cos\theta
+\end{equation}
+\begin{equation}
+\sin\parentesis{\frac{\pi}{2}-\theta}=\cos\theta
+\end{equation}
+\begin{equation}
+\cos\parentesis{\frac{\pi}{2}-\theta}=\sin\theta
+\end{equation}
+\end{multicols}
+\subsection{Seno/coseno complejo}
+\begin{multicols}{2}
+\begin{equation}
+\sin\theta=\frac{e^{\iu\theta}-e^{-\iu\theta}}{2\iu}
+\end{equation}
+\begin{equation}
+\cos\theta=\frac{e^{\iu\theta}+e^{-\iu\theta}}{2\iu}
+\end{equation}
+\end{multicols}
 %---------------------------------------------------------------
 % 		ENDING
 %---------------------------------------------------------------
