@@ -4529,6 +4529,617 @@ En un enlace de comunicación inalámbrica, existen tres zonas de Fresnel que se
 \end{enumerate}
 Estas tres zonas de Fresnel son consideradas significativas debido a su impacto en la propagación de la señal inalámbrica. La presencia de obstrucciones físicas dentro de estas zonas puede causar interferencia, reflexiones y dispersión, lo que afecta la calidad y la intensidad de la señal transmitida. Por lo tanto, es importante tener en cuenta y garantizar un despeje adecuado de estas zonas al planificar y diseñar enlaces de comunicación inalámbrica.
 
+
+\part{Ingeniería de sonido y vídeo}
+\chapterimage{chapter_head_IS.pdf} % Chapter heading image
+\chapter{Sonido}
+Desde el punto de vista de la ingeniería, el sonido se puede definir como una forma de energía mecánica que se propaga a través de medios elásticos, como el aire, el agua o los sólidos. En ingeniería, el sonido se estudia en el campo de la \textbf{acústica}.\\
+El sonido se produce cuando hay una perturbación en el medio elástico, generando ondas de presión que se propagan a través del mismo. Estas ondas de presión son percibidas por el oído humano como sonido.\\
+En ingeniería, el sonido se analiza y se estudia desde diversas perspectivas, como:
+\begin{enumerate}
+\item Producción de sonido: Se estudian los diferentes mecanismos y fuentes de producción de sonido, como altavoces, micrófonos, instrumentos musicales, motores, turbinas, etc.
+\item Propagación del sonido: Se analiza cómo se propaga el sonido a través de diferentes medios y cómo se ve afectado por las características del medio, como la densidad, la temperatura y la humedad. Esto incluye el estudio de fenómenos como la reflexión, la refracción y la difracción del sonido.
+\item Medición y análisis del sonido: Se emplean técnicas y equipos para medir y analizar las características del sonido, como su nivel de presión sonora, su frecuencia, su duración y su calidad. Esto es importante en aplicaciones como el diseño de salas de conciertos, la evaluación del ruido ambiental, la ingeniería de audio, entre otros.
+\item Control del sonido: Se investiga cómo reducir o controlar la propagación y los efectos no deseados del sonido, como el aislamiento acústico en edificios, la reducción de ruido en maquinaria, el diseño de sistemas de cancelación de ruido, etc.
+\end{enumerate}
+En resumen, la ingeniería acústica se enfoca en el estudio del sonido desde una perspectiva científica y aplicada, abordando aspectos relacionados con su producción, propagación, medición y control.
+\section{Acústica}
+La acústica es la rama de la física y la ingeniería que se ocupa del estudio del sonido, su producción, propagación y sus efectos en los medios materiales y en los seres vivos. La acústica abarca una amplia gama de fenómenos relacionados con el sonido y se aplica en diversos campos, como la arquitectura, la ingeniería de audio, la medicina, la psicoacústica, entre otros.\\
+La acústica considera varios aspectos en el estudio del sonido, entre ellos:
+\begin{itemize}
+\item \textbf{Producción de sonido}: Se investiga cómo se genera el sonido, ya sea mediante fuentes naturales, como la voz humana o los eventos sísmicos, o mediante fuentes artificiales, como instrumentos musicales o sistemas electrónicos de reproducción de audio.
+\item \textbf{Propagación del sonido}: La acústica estudia cómo se propagan las ondas sonoras a través de diferentes medios, como el aire, el agua o los materiales sólidos. Esto implica el análisis de fenómenos como la reflexión, la refracción, la difracción y la absorción del sonido en los diferentes entornos.
+\item \textbf{Medición y análisis del sonido}: Se utilizan técnicas y equipos para medir y analizar las características físicas del sonido, como la frecuencia, la intensidad, el espectro y la duración. Estos datos permiten cuantificar y comprender mejor el sonido en diferentes contextos.
+\item \textbf{Acústica arquitectónica}: Se enfoca en el diseño y la optimización del sonido en espacios arquitectónicos, como salas de conciertos, teatros, aulas y estudios de grabación, considerando aspectos como la reverberación, la calidad acústica y la inteligibilidad del sonido.
+\end{itemize}
+En condiciones estándar de temperatura y presión (0 °C y 1 atmósfera), la velocidad del sonido en el aire se aproxima a unos 343 metros por segundo, o aproximadamente 1235 kilómetros por hora. Sin embargo, esta velocidad varía con la temperatura del aire. A medida que la temperatura aumenta, la velocidad del sonido también aumenta, y viceversa. Por lo tanto, la acústica tiene en cuenta las variaciones en la velocidad del sonido al estudiar y analizar la propagación del sonido en diferentes entornos y condiciones.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ISV/ISV1.png}
+\caption{Partes del oido.}
+\end{figure}
+El sonido es una forma de energía que se propaga a través de un medio material, como el aire, el agua o los metales. Para que las ondas sonoras se \textbf{transmitan}, se requiere un medio físico en el cual puedan propagarse. Cuando se genera un sonido, se producen cambios de \textbf{presión} en el medio que generan una sucesión de compresiones y rarefacciones. Estas variaciones de presión se transmiten en forma de ondas, que se propagan a través del medio material de manera longitudinal. A medida que las ondas sonoras se desplazan, las partículas del medio experimentan vibraciones en la misma dirección de propagación, transmitiendo así la energía del sonido. Cada vez que escuchamos un sonido, estamos experimentando las perturbaciones de presión causadas por la generación de ondas sonoras y su propagación a través del medio en el que nos encontramos. Las compresiones se corresponden con los máximos de la onda y las rarefacciones con los mínimos.
+\begin{vocabulary}[Rarefacción]
+La rarefacción es una región de una onda sonora donde las partículas del medio están menos comprimidas de lo normal. En otras palabras, es una zona donde la densidad del medio es menor que en las áreas circundantes. Durante una rarefacción, las partículas del medio se separan más de lo habitual debido a una disminución momentánea de la presión local. \\
+Un ejemplo de rarefacción se encuentra en una onda sonora que se propaga en el aire. En cierto punto de la onda, las partículas del aire se separan más de lo normal, creando una región de menor densidad. Este fenómeno se puede visualizar cuando se golpea una campana y se observan las vibraciones del aire a su alrededor. Durante la rarefacción, el aire se expande, creando una zona de menor densidad antes de que las partículas vuelvan a comprimirse y formen una compresión en la siguiente parte de la onda sonora.
+\end{vocabulary}
+En el aspecto psicológico, el cerebro recibe estas señales eléctricas y las procesa en la corteza auditiva. Aquí, se llevan a cabo procesos cognitivos más complejos, como la identificación del sonido, la interpretación del significado, el reconocimiento de patrones y la asociación con experiencias pasadas. La percepción del sonido también está influenciada por factores psicológicos, como la atención, la memoria y las expectativas.\\
+En resumen, el proceso de percepción del sonido es una combinación de procesos físicos y fisiológicos que involucran la captación y transmisión de las ondas sonoras, así como procesos psicológicos que implican la interpretación y comprensión del sonido. Ambos aspectos son fundamentales para que podamos experimentar conscientemente el sonido y darle significado.
+\subsubsection{Clasificaciones del sonido}
+\begin{enumerate}
+\item \textbf{Infrasonido}: El infrasonido se refiere a las ondas sonoras con frecuencias por debajo del rango audible para el oído humano, generalmente inferiores a 20 Hz. Un ejemplo de aplicación del infrasonido es su uso en la detección de terremotos. Los sismógrafos utilizan sensores de infrasonido para captar las vibraciones producidas por los movimientos sísmicos, lo que permite detectar y medir terremotos incluso antes de que sean perceptibles para los humanos.
+\item \textbf{Audible}: El sonido audible es el rango de frecuencias que el oído humano puede percibir, generalmente entre 20 Hz y 20.000 Hz. Un ejemplo de aplicación del sonido audible es en conciertos o eventos en vivo, donde se utilizan sistemas de sonido para amplificar y reproducir música y voces en un nivel de volumen adecuado para que pueda ser escuchado por una audiencia.
+\item \textbf{Hiperacústica}: La hiperacústica se refiere a frecuencias extremadamente altas por encima del rango del ultrasonido convencional, generalmente en el rango de gigahercios (GHz) o terahercios (THz). Un ejemplo de aplicación de la hiperacústica es la espectroscopia terahertz, utilizada en investigación y aplicaciones industriales. Esta técnica permite analizar la composición química y estructural de materiales, así como detectar sustancias ocultas o no visibles a través de la interacción con radiación terahertz.
+\item \textbf{Megasonido}: El megasonido se refiere a frecuencias extremadamente bajas en el rango de megahercios (MHz). Un ejemplo de aplicación del megasonido es la tecnología de ultrasonido de alta potencia utilizada en la terapia de ultrasonido. En este caso, las ondas sonoras de alta frecuencia se enfocan en tejidos específicos para proporcionar tratamientos terapéuticos, como la fisioterapia, la fragmentación de cálculos renales o la destrucción de tumores.
+\end{enumerate}
+\subsection{Características del sonido}
+Un sonido rara vez está compuesto por una única frecuencia. Los sonidos de la naturaleza están compuestos por una  onda principal, de frecuencia base , más una serie mas o menos numerosa de armónicos, que son ondas con frecuencias múltiplos enteros de la frecuencia principal.
+\begin{table}[ht]
+\centering
+\begin{tabularx}{\textwidth}{|X|X|X|}
+\hline
+\textbf{Característica} & \textbf{Definición} & \textbf{Descripción} \\
+\hline
+Intensidad & Amplitud de la onda sonora & La intensidad se refiere al volumen o nivel de energía de un sonido. Un sonido de mayor intensidad se percibe como más fuerte o más débil cuando la intensidad es menor. \\
+\hline
+Tono & Frecuencia de la onda sonora & El tono se refiere a la altura percibida de un sonido. Está relacionado con la frecuencia de la onda sonora, donde frecuencias más altas se perciben como tonos más agudos y frecuencias más bajas se perciben como tonos más graves. \\
+\hline
+Timbre & Calidad o color del sonido & El timbre se refiere a la calidad única de un sonido que permite distinguir entre diferentes fuentes sonoras, como instrumentos musicales o voces. Está determinado por la combinación de armónicos y sobretonos en una onda sonora. \\
+\hline
+\end{tabularx}
+\caption{Características del sonido}
+\end{table}
+\section{Partes del sonido}
+\subsection{Frecuencia y sonido}
+La frecuencia es una propiedad fundamental del sonido que está relacionada con la percepción del tono. En el contexto del sonido, la frecuencia se refiere al número de ciclos completos de \textbf{oscilación} que ocurren en un segundo. Se mide en hercios (Hz), que representa el número de ciclos por segundo.\\
+Cuando hablamos de frecuencia en relación con el sonido, nos referimos a la frecuencia de las ondas sonoras. Las ondas sonoras son vibraciones mecánicas que se propagan a través de un medio, como el aire, el agua o los sólidos. Estas vibraciones generan cambios de presión en el medio, que nuestro sistema auditivo interpreta como sonido.\\
+La frecuencia determina el \textbf{tono} percibido de un sonido. Cuanto mayor sea la frecuencia, más agudo será el tono, y cuanto menor sea la frecuencia, más grave será el tono. Por ejemplo, una guitarra produce sonidos de baja frecuencia cuando se tocan las cuerdas más gruesas, lo que produce tonos graves. Por otro lado, cuando se tocan las cuerdas más delgadas, se generan sonidos de alta frecuencia, lo que produce tonos agudos.\\
+Nuestro oído humano tiene un rango de audición típico de aproximadamente \textbf{20 Hz a 20.000 Hz}. Sin embargo, esta capacidad varía de persona a persona y puede verse afectada por factores como la edad y la exposición a ruidos fuertes. Los sonidos por debajo de \textbf{20 Hz} se denominan \textbf{infrasonidos}, mientras que los sonidos por encima de \textbf{20.000 Hz} se denominan \textbf{ultrasonidos}.\\
+La frecuencia del sonido también tiene aplicaciones prácticas en diferentes campos. Por ejemplo, en la música, los instrumentos tienen diferentes frecuencias características que determinan su timbre y sonido único. En la medicina, las técnicas de ultrasonido utilizan frecuencias altas para la visualización de tejidos y diagnósticos médicos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ISV/ISV2.png}
+\caption{Frecuencia: Graves menos frecuencia, agudos mayor frecuencia.}
+\end{figure}
+\subsection{Amplitud}
+En términos técnicos, la amplitud se refiere a la diferencia entre la presión máxima y mínima de una onda sonora. Cuanto mayor sea la amplitud, mayor será la variación en la presión y, por lo tanto, mayor será la intensidad percibida del sonido. Una amplitud alta produce un sonido más fuerte, mientras que una amplitud baja produce un sonido más suave.\\
+La amplitud se puede representar en una forma de onda como la altura o longitud de los picos y valles de la onda. En una forma de onda de amplitud alta, los picos y valles serán más pronunciados, mientras que en una forma de onda de amplitud baja, serán menos pronunciados.\\
+Es importante tener en cuenta que la amplitud del sonido no está directamente relacionada con su frecuencia o tono. Dos sonidos con la misma frecuencia, como una nota musical, pueden tener diferentes amplitudes y, por lo tanto, se percibirán con diferentes intensidades.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{ISV/ISV3.png}
+\caption{Amplitud y sonido.}
+\end{figure}
+Se mide en \textbf{decibelios} (dB). Cada 3 dB que aumentamos un sonido \textbf{duplicamos} su intensidad. Así, por ejemplo, si el programa nos muestra un sonido con 70 dB y nosotros lo aumentamos a 73 dB habremos duplicado su intensidad; si lo aumentamos a 76 la intensidad será \textbf{4 veces} mayor. \\
+La amplitud es lo que podemos regular con los mandos de \textbf{volumen} de los aparatos que utilicemos en la reproducción. Si el volumen (amplitud) es demasiado \textbf{alto} la grabación saldrá \textbf{deformada}. Si, por el contrario, es demasiado baja sólo grabaremos ruido.
+\subsection{Dinámica}
+La dinámica en el sonido se refiere a la variación de amplitud que ocurre en una composición musical o en una interpretación. Es la forma en que se maneja y controla la diferencia entre las partes más suaves y las partes más fuertes de una pieza musical. La dinámica agrega expresión y emoción a la música, creando contrastes y resaltando elementos específicos.\\
+Supongamos que estás en un concierto de música en vivo y se toca una canción en la que la banda pasa de una sección suave a una sección fuerte. Se mide la intensidad del sonido en ambas secciones utilizando un medidor de sonido y se obtienen los siguientes valores:
+\begin{itemize}
+\item En la sección suave, la intensidad del sonido se mide en 60 dB.
+\item En la sección fuerte, la intensidad del sonido se mide en 90 dB.
+\end{itemize}
+Esta \textbf{diferencia} de 30 dB entre las dos secciones indica un cambio significativo en la amplitud y en la percepción del volumen. Aumentar en 30 dB implica un aumento sustancial en la energía y la intensidad del sonido.\\
+Durante la sección suave, la música puede ser más delicada y suave, mientras que durante la sección fuerte, la música puede ser enérgica y poderosa. La diferencia en los niveles de decibelios entre estas secciones contribuye a la variedad y la emocionalidad de la interpretación musical.\\
+\subsection{Ancho de banda}
+\textbf{El ancho de banda} se refiere a la cantidad de información o datos que pueden transmitirse en una determinada cantidad de tiempo. En el contexto del \textbf{sonido}, el ancho de banda se relaciona con la cantidad de frecuencias o rangos de frecuencias que pueden ser reproducidos o transmitidos.\\
+En términos generales, \textbf{el ancho de banda} en el sonido se refiere a la gama de frecuencias que pueden ser capturadas, reproducidas o transmitidas en un sistema de audio. Un sistema con \textbf{mayor ancho de banda} puede abarcar un rango más amplio de frecuencias, lo que permite una reproducción más precisa y detallada del sonido.\\
+\textbf{El ancho de banda} en el sonido se expresa en hercios (Hz) y generalmente se mide desde la frecuencia más baja hasta la frecuencia más alta que puede ser reproducida o transmitida sin una pérdida significativa de calidad. Para el \textbf{sonido humano}, el rango de audición típico abarca desde aproximadamente 20 Hz hasta 20.000 Hz.\\
+Es importante tener en cuenta que \textbf{la calidad} y la fidelidad del sonido pueden verse afectadas por el ancho de banda disponible. Por ejemplo, si \textbf{el ancho de banda} de un sistema de audio es limitado y no puede reproducir frecuencias más altas, se puede perder información y el sonido puede parecer menos detallado o menos natural.\\
+En el ámbito de la transmisión de sonido, como en la telefonía o la transmisión de audio por Internet, \textbf{el ancho de banda} también es un factor importante. Una \textbf{mayor cantidad de ancho de banda} disponible permite transmitir audio de mayor calidad y permite una reproducción más fiel del sonido original.\\
+En resumen, \textbf{el ancho de banda en el sonido} se refiere al rango de frecuencias que pueden ser reproducidas o transmitidas en un sistema de audio. Un \textbf{mayor ancho de banda} permite una reproducción más precisa y detallada del sonido, mientras que \textbf{un ancho de banda limitado} puede resultar en una pérdida de calidad y detalle en la reproducción del sonido.\\
+Ademas, \textbf{el ancho de banda en el sonido} se refiere al rango de frecuencias en las que \textbf{la amplitud del sonido} no se diferencia en más de 3 dB.\\
+Cuando se dice que \textbf{la amplitud del sonido} no se diferencia en más de 3 dB dentro de un rango de frecuencias, significa que \textbf{la intensidad del sonido} se mantiene relativamente constante en ese rango. Esto implica que no hay una disminución o aumento drástico en la fuerza del sonido a medida que varía la frecuencia dentro de ese rango específico.\\
+Por ejemplo, si tenemos un sistema de audio con \textbf{un ancho de banda} de 100 Hz a 10.000 Hz y se establece una tolerancia de $\pm$3 dB, significa que en ese rango de frecuencias, \textbf{el sonido se mantendrá relativamente constante} en términos de intensidad, sin fluctuaciones mayores a 3 dB. Esto garantiza una \textbf{reproducción equilibrada} y uniforme del sonido en ese rango.\\
+En resumen, \textbf{el ancho de banda en el sonido} se refiere al rango de frecuencias en el cual \textbf{la amplitud del sonido} se mantiene estable, sin diferencias significativas de más de 3 dB. Esto asegura una \textbf{reproducción del sonido consistente} y balanceada dentro de ese rango específico de frecuencias.\\
+El ancho de banda está directamente relacionado con la calidad de los componentes que empleemos para grabar (y editar) el sonido. 
+\subsection{Ruido}
+El \textbf{ruido en el sonido} se refiere a las perturbaciones o componentes no deseados que se suman al sonido original, afectando su calidad y claridad. Estas perturbaciones pueden provenir de diversas fuentes, como interferencias eléctricas, ruidos ambientales o distorsiones en los componentes del sistema de audio.\\
+La \textbf{medición del ruido en el sonido} se realiza utilizando la unidad de medida llamada \textbf{decibelio} (dB). El decibelio es una escala logarítmica que se utiliza para cuantificar la relación entre la señal de sonido deseada y el nivel de ruido presente. En otras palabras, nos permite expresar la relación entre el sonido útil y el ruido no deseado.\\
+Cuando se mide el \textbf{ruido en el sonido}, se suele utilizar la unidad \textbf{dB(A)} o \textbf{dB(A)} para indicar que se ha aplicado un filtro de ponderación A, que tiene en cuenta la respuesta de frecuencia del oído humano. Esta ponderación A es comúnmente utilizada para reflejar mejor la sensibilidad auditiva humana a diferentes frecuencias.\\
+En resumen, el \textbf{ruido en el sonido} se refiere a las perturbaciones no deseadas que afectan la calidad del sonido. Se mide en \textbf{decibelios (dB)}, utilizando la unidad \textbf{dB(A)} para considerar la sensibilidad auditiva humana a diferentes frecuencias.
+\subsection{Nivel sonoro}
+El \textbf{nivel sonoro} se refiere a la medida de la intensidad o amplitud de un sonido. Se utiliza para cuantificar qué tan fuerte o débil es un sonido en relación con un nivel de referencia establecido. El nivel sonoro se expresa en \textbf{decibelios} (dB).\\
+El nivel sonoro se basa en una \textbf{escala logarítmica}, lo que significa que los cambios en el nivel sonoro se representan proporcionalmente en incrementos o decrementos en decibelios (dB). Cada aumento de 10 dB representa un aumento de aproximadamente 10 veces en la intensidad del sonido percibido.\\
+Es importante tener en cuenta que el \textbf{nivel sonoro} es subjetivo y depende de la sensibilidad auditiva de cada persona. Además, el nivel sonoro puede variar en función de la distancia a la fuente de sonido y de las condiciones del entorno.\\
+La \textbf{medición del nivel sonoro} se realiza utilizando instrumentos como el \textbf{sonómetro}, que captura y registra los niveles de presión sonora. Estos niveles se comparan con un nivel de referencia establecido, que suele ser el umbral de audición humana.\\
+El \textbf{nivel de presión sonora} (SPL) se expresa en \textbf{decibelios} (dB) y se calcula utilizando una escala logarítmica. Esta escala permite representar una amplia gama de niveles de presión sonora, ya que los cambios en el SPL se perciben de manera subjetiva por el oído humano. Cada incremento de \textbf{10 dB en el SPL} representa un aumento de aproximadamente \textbf{10 veces en la intensidad del sonido}.\\
+El SPL se utiliza para medir y comparar niveles de ruido en diversos entornos, como la industria, la música, la medicina, entre otros. Por ejemplo, se utiliza en la evaluación de la exposición al ruido en el lugar de trabajo, en la calibración de equipos de audio y en la medición de ruido ambiental.\\
+Es importante tener en cuenta que el SPL también puede estar sujeto a ponderaciones, como la \textbf{ponderación A} (dBA), que tiene en cuenta la sensibilidad del oído humano a diferentes frecuencias. Esto se debe a que la audición humana no tiene una respuesta lineal a todas las frecuencias de sonido.
+\subsection{Sonómetros}
+Los \textbf{sonómetros} son dispositivos utilizados para medir y registrar niveles de \textbf{presión sonora}. Estos instrumentos son especialmente diseñados para capturar y cuantificar el nivel de sonido en decibelios (dB).\\
+Cuando se realizan mediciones de sonido, a menudo se utiliza la ponderación A, indicada como \textbf{dB(A)}, para tener en cuenta la respuesta del oído humano a diferentes frecuencias. La ponderación A se basa en una curva de respuesta que refleja la sensibilidad auditiva promedio en el rango de frecuencia de 500 Hz a 10 kHz, que es la gama de frecuencias en la que el oído humano es más sensible.\\
+La ponderación A se utiliza principalmente en aplicaciones relacionadas con la exposición al ruido ambiental, la salud ocupacional y la protección auditiva. Al aplicar la ponderación A, se da mayor importancia a las frecuencias que son más relevantes para la percepción humana del sonido.\\
+Al utilizar un sonómetro con ponderación A, se obtiene una medida del nivel de presión sonora ajustada para reflejar mejor la forma en que el oído humano percibe diferentes frecuencias. Esto proporciona una evaluación más precisa de la exposición al ruido y ayuda a determinar si se cumplen los límites de seguridad y los estándares de ruido establecidos.\\
+Se considera que la exposición continua a niveles de dBA superiores a 85 dB puede ser perjudicial y puede causar daño auditivo a largo plazo. La exposición a niveles de dBA superiores a 100 dB durante períodos cortos también puede representar un riesgo inmediato para la audición.
+\subsection{Potencia acústica}
+La \textbf{potencia acústica} es una medida de la cantidad total de energía que un objeto o fuente de sonido emite en forma de ondas sonoras. Se refiere a la tasa de transferencia de energía acústica y se expresa en \textbf{vatios} (W).\\
+El \textbf{nivel de potencia acústica} (LWA, por sus siglas en inglés) es una medida logarítmica que se utiliza para expresar la potencia acústica de una fuente de sonido en relación con un nivel de referencia estándar. Se utiliza para cuantificar la intensidad sonora relativa o la cantidad de energía acústica emitida por una fuente de sonido en comparación con otras fuentes.
+\begin{definition}[Potencia acústica]
+El nivel de potencia acústica se expresa en \textbf{decibelios} (dB) y se calcula utilizando la fórmula:
+
+\begin{equation}
+LWA = 10 \log_{10}\left(\frac{P}{P_0}\right)
+\end{equation}
+Donde:
+\begin{itemize}
+    \item $LWA$ es el nivel de potencia acústica (dB).
+    \item $P$ es la potencia acústica de la fuente de sonido (W).
+    \item $P_0$ es el nivel de referencia estándar, generalmente establecido en $10^{-12}$ vatios (W).
+\end{itemize}
+\end{definition}
+El nivel de potencia acústica se utiliza en diversas aplicaciones, como la medición y clasificación de equipos y dispositivos según su capacidad para generar sonido, la evaluación de la exposición al ruido en el lugar de trabajo y el cumplimiento de las regulaciones y normativas sobre niveles de ruido en diferentes entornos.\\
+Es importante tener en cuenta que el nivel de potencia acústica no describe directamente la intensidad sonora percibida por el oído humano. Para tener una idea más precisa del nivel de sonido percibido, se deben tener en cuenta otros factores, como la distancia a la fuente de sonido y las características de propagación del sonido en el entorno en particular.
+\begin{tabular}{ll}
+\toprule
+\textbf{Medio} & \textbf{Velocidad del Sonido} \\
+\midrule
+Aire & 343 metros por segundo (m/s) \\
+Agua (a 20°C) & 1482 m/s \\
+Hierro & 5130 m/s \\
+Aluminio & 6420 m/s \\
+Madera (dependiendo de la especie) & 300-500 m/s \\
+\bottomrule
+\end{tabular}
+\subsection{Tiempo de reverberación}
+El \textbf{tiempo de reverberación} es una medida que describe la persistencia del sonido en un espacio después de que la fuente de sonido se ha detenido o hasta que se atenuase hasta los 60dB. Se refiere al tiempo que tarda el sonido en decaer en intensidad en un espacio cerrado, generalmente expresado en segundos (s). \\
+El tiempo de reverberación está determinado por varias características del espacio, como el tamaño, la forma, los materiales de construcción y los objetos presentes. Un espacio con una mayor cantidad de superficies reflectantes tiende a tener un tiempo de reverberación más largo, mientras que un espacio con superficies absorbentes puede tener un tiempo de reverberación más corto.\\
+El cálculo del tiempo de reverberación implica medir la caída de la intensidad sonora a lo largo del tiempo después de que se ha detenido la fuente de sonido. Se utilizan técnicas y equipos especializados, como los analizadores de espectro y los micrófonos de medición, para realizar estas mediciones de manera precisa. El Tiempo de Reverberación se mide de forma \textbf{frecuencial}, esto es, un local no tiene el mismo RT en 200 Hz que en 4 kHz. Ello es debido a que el RT tiene determinado por el \textbf{Volumen} de la sala, y por los coeficientes de \textbf{absorción} de sus superficies, o si se prefiere por las superficies con un coefiencte de absorción determinado.
+\subsection{Coeficiente de absorción}
+El coeficiente de absorción de un material es una medida que indica la capacidad del material para absorber o atenuar la energía acústica incidente. Se refiere a la fracción de energía sonora que es absorbida por el material en comparación con la energía sonora incidente. Este coeficiente se representa con el símbolo $\alpha$ y generalmente se expresa como un valor entre 0 y 1, o como un porcentaje.\\
+El coeficiente de absorción depende de varias propiedades del material, como su densidad, espesor, textura y composición. Los materiales porosos, como las fibras minerales o los paneles acústicos, tienden a tener coeficientes de absorción más altos debido a su capacidad para atrapar y disipar la energía sonora a través de interacciones con el aire. Por otro lado, los materiales más densos y duros, como el vidrio o el metal, tienden a tener coeficientes de absorción más bajos, ya que reflejan más energía sonora en lugar de absorberla.\\
+Es importante tener en cuenta que el coeficiente de absorción varía con la frecuencia del sonido. Por lo tanto, se suelen proporcionar valores de coeficiente de absorción en función de bandas de frecuencia específicas para tener en cuenta esta variación. Esto permite tener una descripción más detallada de cómo un material interactúa con diferentes componentes de sonido en el espectro audible.\\
+\subsection{Tiempo de reverberación}
+La \textbf{reverberación} se refiere al fenómeno de persistencia del sonido en un espacio después de que la fuente de sonido se ha detenido. Se produce debido a las múltiples reflexiones del sonido en las superficies del entorno. La reverberación es importante tanto en el campo de la acústica arquitectónica como en la producción musical y la grabación de sonido.\\
+La duración de la reverberación se mide mediante el \textbf{tiempo de reverberación}. Este tiempo representa el intervalo que tarda el nivel de sonido en decaer en 60 dB (aproximadamente 1 millón de veces más bajo que el nivel inicial) desde que se detiene la fuente de sonido. El tiempo de reverberación se expresa en segundos (s).\\
+El \textbf{tiempo de reverberación de 1/10s} es un parámetro comúnmente utilizado en el diseño acústico de espacios. Representa el tiempo que tarda el nivel de sonido en decaer en 10 dB desde que se detiene la fuente de sonido. Se considera que un tiempo de reverberación de 1/10s proporciona una buena claridad de habla y una calidad de sonido adecuada en muchos entornos, como salas de conferencias, teatros y estudios de grabación.
+\begin{remark}
+Un tiempo inferior a 1/10 de segundo, nuestro sistema de audición no es capaz de separar ambas señales y las toma como una misma pero con una duración superior de esta
+\end{remark}
+\subsection{Resonancia}
+La \textbf{resonancia} es un fenómeno físico que ocurre cuando un objeto o sistema vibratorio es excitado por una fuerza externa en su frecuencia natural de vibración. Cuando un objeto o sistema se encuentra en resonancia, experimenta una \textbf{amplificación} de la amplitud de sus vibraciones, lo que puede resultar en un \textbf{aumento} significativo de la energía transferida.\\
+Un ejemplo común de resonancia es el sonido producido por un diapasón. Cuando se golpea un diapasón, este vibra a su frecuencia natural de resonancia, generando un tono puro y distintivo. Otro ejemplo es el de un columpio. Si alguien empuja un columpio en el momento adecuado y con la frecuencia correcta, el columpio alcanzará una gran amplitud de oscilación debido a la resonancia.\\
+La resonancia puede tener efectos beneficiosos o perjudiciales, dependiendo del contexto. En aplicaciones \textbf{positivas}, la resonancia se utiliza en tecnologías como la resonancia magnética, los altavoces, las cuerdas de instrumentos musicales y los sistemas de amplificación. Por otro lado, en situaciones no deseadas, la resonancia puede causar daños estructurales, como el colapso de un puente debido a la resonancia inducida por el viento.
+\subsection{Tono}
+El \textbf{tono} es una cualidad del sonido que está relacionada con la frecuencia de la onda sonora. Es la característica que nos permite distinguir si un sonido es agudo o grave. El tono se percibe como la altura del sonido, y está determinado por la cantidad de ciclos completos de vibración que ocurren en un segundo.\\
+Un ejemplo de tono es la diferencia entre el sonido de un silbato agudo y el sonido de un bombo grave. El silbato produce un tono agudo debido a su alta frecuencia de vibración, mientras que el bombo produce un tono grave debido a su baja frecuencia de vibración. Otra forma de ejemplificar el tono es a través de las teclas de un piano. Las teclas más a la derecha producen tonos agudos con frecuencias más altas, mientras que las teclas más a la izquierda producen tonos graves con frecuencias más bajas.\\
+Para frecuencias inferiores a 1.000 Hz (incluida esta), si se aumenta la intensidad el tono disminuye, entre 1.000 Hz y 5.000 Hz el tono es prácticamente independiente de la intensidad que tenga, por encima de 5.000 Hz el tono aumenta si aumenta la intensidad.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV4.png}
+\caption{Tono}
+\end{figure}
+\subsection{Timbre}
+El \textbf{timbre} es una cualidad del sonido que nos permite distinguir entre diferentes fuentes sonoras, incluso cuando dos sonidos tienen la misma intensidad y tono. Es lo que hace que una voz humana suene diferente de un instrumento musical, o que dos instrumentos musicales distintos tocando la misma nota tengan un sonido característico único.\\
+El timbre está determinado por las características espectrales del sonido, es decir, la combinación de armónicos y sobretonos presentes en la señal acústica. Cada fuente sonora produce una combinación específica de armónicos y sobretonos, lo que genera su calidad sonora distintiva.\\
+Un ejemplo de timbre es la diferencia entre el sonido de una guitarra y el sonido de una flauta. Aunque ambos instrumentos pueden tocar la misma nota, el timbre resultante es completamente diferente debido a la forma en que se generan los armónicos y sobretonos en cada instrumento. Otro ejemplo sería distinguir la voz de una persona de otra, incluso si ambas personas están cantando la misma melodía. El timbre único de cada voz hace que podamos diferenciarlas.
+\begin{figure}[H]
+\centering
+\subfloat[Timbre y armónicos]{\includegraphics[width=0.4\linewidth]{ISV/ISV5.png}}
+\subfloat[Diferentes timbres.]{\includegraphics[width=0.4\linewidth]{ISV/ISV6.png}}
+\caption{Timbre}
+\end{figure}
+\subsection{Efecto Doppler}
+El \textbf{efecto Doppler} es un fenómeno observado en ondas, incluyendo las ondas sonoras y electromagnéticas, que ocurre cuando hay un movimiento relativo entre la fuente de las ondas y el observador. Se basa en la idea de que la frecuencia percibida de una onda se ve afectada por el movimiento relativo de la fuente y el observador.\\
+\begin{definition}[Efecto Doppler]
+\begin{equation}
+f' = \frac{{v + v_o}}{{v - v_s}} \cdot f
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{f'}: Frecuencia percibida (unidad: Hertz, Hz).
+\item \textbf{v}: Velocidad del sonido o la luz en el medio de propagación (unidad: metros por segundo, m/s).
+\item $v_0$: Velocidad del observador (unidad: metros por segundo, m/s).
+\item $v_s$: Velocidad de la fuente (unidad: metros por segundo, m/s).
+\item \textbf{f}: Frecuencia emitida por la fuente (unidad: Hertz, Hz).
+\end{itemize}
+\end{definition}
+Cuando la fuente y el observador se acercan entre sí, se produce un \textbf{desplazamiento al azul} o \textbf{desplazamiento hacia tonos más altos}. Esto significa que la frecuencia percibida es mayor que la frecuencia emitida. Por otro lado, cuando la fuente y el observador se alejan entre sí, se produce un \textbf{desplazamiento al rojo} o \textbf{desplazamiento hacia tonos más bajos}. En este caso, la frecuencia percibida es menor que la frecuencia emitida.\\
+Un ejemplo común del efecto Doppler es el cambio de tono que se experimenta al escuchar una sirena de un vehículo de emergencia que se acerca o se aleja. Cuando la sirena se acerca, el sonido percibido se vuelve más agudo, mientras que cuando la sirena se aleja, el sonido se vuelve más grave. Esto se debe al efecto Doppler que afecta la frecuencia percibida del sonido.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV7.png}
+\caption{Efecto Doppler}
+\end{figure}
+\subsection{Octava, media octava y tercio octava}
+Una \textbf{octava} es un intervalo musical que abarca ocho notas consecutivas en una escala. En términos de frecuencia, una octava representa una duplicación o división por dos de la frecuencia de una nota. Por ejemplo, si una nota tiene una frecuencia de 100 Hz, la nota una octava más alta tendrá una frecuencia de 200 Hz, mientras que la nota una octava más baja tendrá una frecuencia de 50 Hz.\\
+Una \textbf{media octava} es un intervalo musical que abarca cuatro notas consecutivas en una escala. En términos de frecuencia, una media octava representa una multiplicación o división por la raíz cuadrada de dos (aproximadamente 1,414) de la frecuencia de una nota. Por ejemplo, si una nota tiene una frecuencia de 100 Hz, la nota media octava más alta tendrá una frecuencia de aproximadamente 141,4 Hz, mientras que la nota media octava más baja tendrá una frecuencia de aproximadamente 70,7 Hz.\\
+Un \textbf{tercio de octava} es un intervalo aún más estrecho que divide una octava en tres partes iguales. En términos de frecuencia, un tercio de octava representa una multiplicación o división por la raíz cúbica de dos (aproximadamente 1,260) de la frecuencia de una nota. El tercio de octava se utiliza con frecuencia en el ámbito de la medición y análisis acústico para una mejor representación de la distribución de frecuencias en un espectro sonoro.
+\section{Oído Humano}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{ISV/ISV8.png}
+\caption{Espectro audible por el oído humano.}
+\end{figure}
+Si bien ese espectro es de manera general, este margen varía según cada persona y se reduce con la edad (llamamos \textbf{presbiacusia} a la pérdida de audición con la edad). \\
+Las frecuencias \textbf{más graves}, incluso hasta 4 ciclos por segundo (4 Hz), pueden ser perceptibles a través del \textbf{tacto} cuando la amplitud del sonido genera una presión suficiente. Aunque nuestro sentido de la audición generalmente está asociado con la percepción del sonido, también podemos percibir \textbf{vibraciones} o \textbf{sensaciones} táctiles causadas por ondas sonoras de baja frecuencia y alta amplitud.\\
+Cuando las ondas sonoras de baja frecuencia y alta amplitud alcanzan nuestro cuerpo, especialmente en áreas sensibles como la piel, podemos sentir una \textbf{vibración} o una \textbf{sensación de presión}. Por ejemplo, al estar cerca de un potente sistema de sonido en un concierto o al sentir las vibraciones producidas por un subwoofer de graves en un sistema de sonido envolvente, podemos experimentar sensaciones táctiles que complementan la experiencia auditiva.\\
+Es importante destacar que, en general, nuestro sentido del tacto no es tan sensible ni preciso como nuestro sentido de la audición para percibir las características detalladas del sonido, como la melodía, el tono o el timbre. Sin embargo, las bajas frecuencias con amplitudes significativas pueden generar sensaciones táctiles que agregan una dimensión adicional a nuestra experiencia sensorial del sonido.
+\begin{table}[h]
+\centering
+\caption{Tipos de tonos y sus frecuencias}
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Tipo de tono} & \textbf{Frecuencia (Hz)} \\
+\hline
+Tono bajo & 20 - 250 \\
+\hline
+Tono medio & 250 - 2000 \\
+\hline
+Tono alto & 2000 - 20000 \\
+\hline
+\end{tabular}
+\caption{Tipos de tono}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV9.png}
+\caption{Esquema de funcionamiento del oído.}
+\end{figure}
+El oído humano es un órgano complejo que nos permite percibir y procesar los sonidos del entorno. Su funcionamiento puede dividirse en tres partes principales:
+
+\subsection{Procedimiento de audición}
+\subsubsection*{Oído Externo}
+\begin{enumerate}
+  \item El \textbf{pabellón auricular} o \textbf{oreja} capta las ondas sonoras del ambiente y las dirige hacia el canal auditivo.
+  \item El \textbf{canal auditivo} es un conducto que amplifica y canaliza las ondas sonoras hacia el oído medio.
+\end{enumerate}
+
+\subsubsection*{Oído Medio}
+\begin{enumerate}
+  \item El \textbf{tímpano} es una membrana delgada y flexible que vibra cuando las ondas sonoras impactan en él.
+  \item Los \textbf{huesecillos del oído} (martillo, yunque y estribo) transmiten las vibraciones del tímpano al oído interno.
+  \item La \textbf{ventana oval} conecta el oído medio con el oído interno y amplifica las vibraciones.
+\end{enumerate}
+
+\subsubsection*{Oído Interno}
+\begin{enumerate}
+  \item La \textbf{cóclea} es una estructura en forma de caracol que contiene miles de células ciliadas.
+  \item Cuando las vibraciones llegan a la cóclea, las células ciliadas convierten las señales sonoras en señales eléctricas.
+  \item Estas señales eléctricas son transmitidas al \textbf{nervio auditivo}, que lleva la información al cerebro para su procesamiento y percepción.
+\end{enumerate}
+
+En resumen, el oído humano capta las ondas sonoras a través del oído externo, las transmite al oído medio para amplificarlas y luego las convierte en señales eléctricas en el oído interno. Estas señales son enviadas al cerebro a través del nervio auditivo, donde son interpretadas y percibidas como sonidos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV10.png}
+\caption{Funciones del oído.}
+\end{figure}
+
+\subsection{Enfermedades Comunes del Oído}
+El oído humano está compuesto por tres partes principales: el oído externo, el oído medio y el oído interno. A continuación se presentan algunas de las enfermedades más comunes asociadas a cada parte:
+\subsubsection{Oído Externo}
+\begin{itemize}
+  \item \textbf{Otitis Externa:} Infección del conducto auditivo externo, generalmente causada por bacterias o hongos. Puede causar dolor, picazón, enrojecimiento e inflamación del oído externo.
+  \item \textbf{Cerumen Impactado:} Acumulación excesiva de cerumen en el canal auditivo externo, lo que puede provocar pérdida de audición temporal, sensación de taponamiento y malestar.
+\end{itemize}
+\subsubsection{Oído Medio}
+\begin{itemize}
+  \item \textbf{Otitis Media:} Infección del oído medio, generalmente causada por bacterias. Puede provocar dolor de oído, fiebre, pérdida de audición temporal y sensación de presión en el oído.
+  \item \textbf{Eustaquitis:} Inflamación de la trompa de Eustaquio, que conecta el oído medio con la garganta. Puede causar sensación de bloqueo en el oído, pérdida de audición temporal y mareos.
+  \item \textbf{Otosclerosis:} Un crecimiento anormal del tejido óseo en el oído medio, que puede interferir con la transmisión adecuada del sonido y provocar pérdida de audición progresiva.
+\end{itemize}
+\subsubsection{Oído Interno}
+\begin{itemize}
+  \item \textbf{Vértigo:} Sensación de mareo o pérdida de equilibrio debido a un problema en el oído interno, como la enfermedad de Menière o la neuritis vestibular.
+  \item \textbf{Pérdida de Audición Sensorial:} Pérdida de audición causada por daño en las células ciliadas del oído interno, generalmente debido al envejecimiento, exposición prolongada a ruidos fuertes o ciertas enfermedades.
+\end{itemize}
+\subsection{Filtro 3 vías}
+Un filtro de 3 vías es un tipo de filtro utilizado en sistemas de audio para \textbf{separar} y \textbf{direccionar} diferentes frecuencias a distintos componentes de altavoces. Este tipo de filtro divide la señal de audio en tres bandas de frecuencia: graves, medios y agudos.\\
+El filtro de 3 vías consta de tres secciones separadas, cada una diseñada para filtrar una banda de frecuencia específica. Estas secciones son:
+\begin{itemize}
+\item \textbf{Filtro de graves:} Esta sección del filtro permite pasar las frecuencias bajas, atenuando las frecuencias medias y altas. Está diseñada para enviar las señales de baja frecuencia a los altavoces de graves o subwoofers.
+\item \textbf{Filtro de medios:} Esta sección del filtro permite pasar las frecuencias medias, atenuando las frecuencias bajas y altas. Está diseñada para enviar las señales de frecuencia media a los altavoces de medios.
+\item \textbf{Filtro de agudos:} Esta sección del filtro permite pasar las frecuencias altas, atenuando las frecuencias medias y bajas. Está diseñada para enviar las señales de alta frecuencia a los altavoces de agudos, como los tweeters.
+\end{itemize}
+El uso de un filtro de 3 vías en un sistema de altavoces permite una reproducción más precisa y eficiente del sonido al direccionar las frecuencias adecuadas a los componentes de altavoces especializados. Esto ayuda a mejorar la calidad y la claridad del sonido en diferentes rangos de frecuencia.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV11.png}
+\caption{Filtro 3 vías.}
+\end{figure}
+\textbf{Filtro de graves (Low-Pass Filter):}
+\begin{align*}
+f_c &= \frac{1}{2\pi R_1C_1}
+\end{align*}
+
+\textbf{Filtro de medios (Band-Pass Filter):}
+\begin{align*}
+f_{ci} &= \frac{1}{2\pi R_2C_2} \\
+f_{cs} &= \frac{1}{2\pi R_3C_3}
+\end{align*}
+
+\textbf{Filtro de agudos (High-Pass Filter):}
+\begin{align*}
+f_c &= \frac{1}{2\pi R_4C_4}
+\end{align*}
+\section{Transductor Acústico}
+Un \textbf{transductor acústico} es un dispositivo utilizado para convertir la energía acústica, es decir, las ondas sonoras, en otro tipo de energía. También puede realizar la conversión \textbf{inversa}, convirtiendo energía en forma de señales eléctricas en energía acústica.\\
+El transductor acústico actúa como un intermediario entre el medio en el que se propaga el sonido y el sistema de registro o reproducción. Es capaz de captar las ondas sonoras y convertirlas en señales eléctricas, que luego pueden ser amplificadas, procesadas y utilizadas para diversos fines.\\
+Existen diferentes tipos de transductores acústicos, cada uno diseñado para cumplir una función específica. Algunos ejemplos comunes incluyen:
+\begin{itemize}
+  \item \textbf{Micrófonos:} Son transductores que convierten las ondas sonoras en señales eléctricas. Se utilizan en grabaciones de audio, sistemas de sonido y comunicaciones.
+  \item \textbf{Altavoces:} Son transductores que convierten las señales eléctricas en ondas sonoras audibles. Se utilizan en sistemas de sonido, radios, televisores y otros dispositivos de reproducción de audio.
+  \item \textbf{Transductores piezoeléctricos:} Utilizan el efecto piezoeléctrico para convertir las ondas sonoras en señales eléctricas. Se utilizan en aplicaciones como la medición de nivel de sonido, dispositivos de ultrasonido y sensores acústicos.
+  \item \textbf{Hidrófonos:} Son transductores utilizados para captar y convertir las ondas sonoras en agua, como las utilizadas en estudios acústicos submarinos y en la industria marina.
+\end{itemize}
+\subsection{Micrófono}
+Un \textbf{micrófono} es un transductor acústico que convierte las ondas sonoras en señales eléctricas. Es un dispositivo utilizado para captar y convertir el sonido en una señal eléctrica, que luego puede ser amplificada, procesada y registrada. El micrófono es ampliamente utilizado en diversas aplicaciones, como grabaciones de audio, sistemas de sonido, comunicaciones, transmisiones en vivo y aplicaciones de sonido en general.
+\subsubsection*{Partes de un Micrófono}
+Un micrófono consta de varias partes importantes que desempeñan un papel fundamental en su funcionamiento. A continuación se describen las partes clave de un micrófono:
+\begin{itemize}
+\item \textbf{Membrana o Diafragma:} La membrana o diafragma es una parte del micrófono que responde a las ondas sonoras al vibrar o moverse. Por lo general, está hecho de un material delgado y flexible, como una lámina de metal o plástico. La vibración del diafragma es causada por las fluctuaciones de presión del sonido y es crucial para convertir la energía acústica en señales eléctricas.
+
+\item \textbf{Bobina:} La bobina es una parte del micrófono que se encuentra cerca del diafragma. Es un alambre enrollado en forma de espiral alrededor de un núcleo. Cuando el diafragma vibra, la bobina también se mueve en respuesta a esas vibraciones. La bobina está diseñada para ser conductora y, al moverse en el campo magnético, genera una corriente eléctrica proporcional a las vibraciones del diafragma.
+
+\item \textbf{Imán:} El imán es otro componente esencial en algunos tipos de micrófonos, como los micrófonos dinámicos. El imán crea un campo magnético estable y constante en la proximidad de la bobina. Cuando el diafragma y la bobina se mueven en respuesta al sonido, generan una corriente eléctrica al interactuar con el campo magnético del imán. Esto permite la conversión de las vibraciones sonoras en señales eléctricas.
+
+\item \textbf{Señal Eléctrica:} La señal eléctrica es el resultado final del proceso de transducción en el micrófono. Es la representación eléctrica de las vibraciones del sonido captadas por el diafragma y la bobina. La señal eléctrica generada por el micrófono puede ser débil y de bajo voltaje, por lo que a menudo se requiere un amplificador para aumentar su nivel y hacerla utilizable en sistemas de audio o grabaciones.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{ISV/ISV12.png}
+\caption{Partes de un micrófono.}
+\end{figure}
+\subsubsection*{Tipos}
+Existen varios tipos de micrófonos, cada uno con sus características y usos específicos. Algunos ejemplos comunes incluyen:
+\begin{itemize}
+\item \textbf{Micrófonos de condensador:} Utilizan un diafragma delgado y una placa de carga electrostática para captar las variaciones de presión del sonido. Son sensibles y precisos, adecuados para estudios de grabación y aplicaciones profesionales.
+\item \textbf{Micrófonos dinámicos:} Utilizan un diafragma y una bobina móvil para generar la señal eléctrica. Son más robustos y versátiles, adecuados para presentaciones en vivo, aplicaciones de sonido en vivo y uso general.
+\item \textbf{Micrófonos de cinta:} Utilizan una cinta magnética como elemento sensor. Son conocidos por su sonido suave y cálido, y son populares en aplicaciones de grabación y estudio.
+\item \textbf{Micrófonos de contacto:} Captan el sonido mediante el contacto directo con la fuente sonora. Se utilizan en aplicaciones como la grabación de instrumentos musicales acústicos y la captura de sonidos de superficies sólidas.
+\end{itemize}
+
+\subsubsection*{Diagramas Polares de un Micrófono}
+Los diagramas polares de un micrófono describen la forma en que el micrófono captura el sonido en relación con la dirección de origen. Estos diagramas proporcionan información sobre la sensibilidad del micrófono en diferentes direcciones y son útiles para determinar el patrón de captación del micrófono. A continuación, se presentan algunos de los diagramas polares más comunes:
+\begin{itemize}
+\item \textbf{Unidireccional:} El diagrama polar unidireccional muestra que el micrófono tiene una respuesta direccional principalmente en una dirección específica. Es más sensible en la parte frontal y menos sensible en las otras direcciones. Este patrón es ideal para situaciones en las que se desea captar el sonido proveniente de una única fuente frontal, mientras se reduce la captación de sonidos laterales y traseros no deseados. Lo son: \textbf{cardiode}, \textbf{supercardiode} e \textbf{hipercardiode}.
+
+\item \textbf{Omnidireccional:} El diagrama polar omnidireccional muestra que el micrófono tiene una respuesta direccional uniforme en todas las direcciones. Es igualmente sensible en todas las direcciones y capta el sonido de manera equitativa desde todas las fuentes. Este patrón es adecuado cuando se necesita capturar el sonido ambiental o en situaciones donde no se requiere una selección direccional precisa.
+
+\item \textbf{Bidireccional:} El diagrama polar bidireccional muestra que el micrófono tiene una respuesta direccional en dos direcciones opuestas. Es más sensible en la parte frontal y trasera, pero menos sensible en las direcciones laterales. Este patrón es útil para situaciones en las que se desea captar el sonido proveniente de fuentes frontales y traseras, mientras se reduce la captación de sonidos laterales.
+
+\item \textbf{Cardioide:} El diagrama polar cardioide muestra que el micrófono tiene una respuesta direccional en forma de corazón. Es más sensible en la parte frontal, menos sensible en las direcciones laterales y aún menos sensible en la parte posterior. Este patrón es común en muchos micrófonos y proporciona una buena selectividad hacia la fuente frontal mientras rechaza los sonidos laterales y traseros no deseados.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{ISV/ISV13.png}
+\caption{Diagramas polares de micrófonos.}
+\end{figure}
+El diagrama polar de un micrófono es una representación gráfica que muestra cómo el micrófono responde a diferentes direcciones de sonido. Muestra la sensibilidad relativa del micrófono en cada ángulo o dirección de entrada. El diagrama polar es una herramienta útil para comprender el patrón de captación del micrófono y cómo se comporta en relación con la dirección de origen del sonido.\\
+La cámara anecoica se utiliza principalmente para realizar mediciones y pruebas acústicas precisas, ya que proporciona un entorno controlado con una respuesta acústica muy baja y sin la interferencia de reflexiones o reverberaciones. Esto permite obtener mediciones precisas de la respuesta de un micrófono, altavoz u otro dispositivo acústico sin que las reflexiones indeseadas afecten los resultados. La cámara anecoica es una herramienta invaluable en el campo de la acústica y es ampliamente utilizada en la investigación, desarrollo y calibración de equipos de audio, estudios de grabación, pruebas de productos y otros fines relacionados con el sonido y el ruido.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV14.png}
+\caption{Cámara anecoica}
+\end{figure}
+\subsubsection*{Usos}
+\begin{itemize}
+\item \textbf{Micrófono cardioide}: Este tipo de micrófono tiene un patrón polar en forma de corazón, captando principalmente el sonido desde el frente y reduciendo la captación de sonidos laterales y traseros. Son ideales para situaciones donde se necesita enfocar la atención en una fuente de sonido principal y minimizar la captación de ruido ambiente o retroalimentación. Son ampliamente utilizados en presentaciones en vivo, estudios de grabación y aplicaciones vocales.
+
+\item \textbf{Micrófono omnidireccional}: Estos micrófonos tienen un patrón polar circular, captando el sonido de manera uniforme desde todas las direcciones. Son ideales cuando se requiere una captación equilibrada del sonido ambiente, como en la grabación de coros, grupos de instrumentos o para captar el ambiente en grabaciones de campo.
+
+\item \textbf{Micrófono bidireccional (figura de ocho)}: Estos micrófonos captan el sonido de manera igual desde el frente y la parte trasera, pero atenúan los sonidos laterales. Son adecuados para situaciones en las que se desea capturar dos fuentes de sonido opuestas, como entrevistas cara a cara, duetos vocales o grabaciones de instrumentos en los que se desea captar el sonido de ambos lados.
+
+\item \textbf{Micrófono supercardioide o hipercardioide}: Estos micrófonos tienen un patrón polar más estrecho y rechazan aún más los sonidos laterales y traseros en comparación con los cardioides. Son adecuados para situaciones en las que se necesita una captación más enfocada y un mayor rechazo del ruido ambiental, como en aplicaciones de captación de sonido en el escenario, presentaciones en vivo o en entornos con alta presencia de ruido.
+
+\item \textbf{Micrófono de cañón (shotgun)}: Estos micrófonos tienen un patrón polar muy estrecho y largo, lo que les permite captar el sonido de manera altamente direccional desde una distancia considerable. Son ideales para situaciones en las que se necesita captar el sonido de una fuente distante, como en la grabación de diálogos en producciones cinematográficas, documentales o captación de sonido en exteriores.
+
+\end{itemize}
+\subsubsection*{Obtención del Diagrama Polar de un Micrófono}
+El diagrama polar de un micrófono se obtiene mediante técnicas de medición y registro de la respuesta del micrófono en diferentes ángulos de incidencia del sonido. A continuación, se describe el proceso para obtener el diagrama polar de un micrófono:
+\begin{enumerate}
+  \item Preparación del micrófono: Se coloca el micrófono en una posición estable y se asegura de que esté correctamente conectado a los equipos de medición.
+
+  \item Configuración del equipo de medición: Se configuran los equipos de medición, como analizadores de espectro, registradores de sonido u otros dispositivos adecuados, según el método de medición seleccionado.
+
+  \item Generación de la señal de prueba: Se genera una señal de prueba de amplitud y frecuencia conocidas, que se utilizará como estímulo para medir la respuesta del micrófono.
+
+  \item Posicionamiento del micrófono: Se posiciona el micrófono en el centro del área de medición, con el eje de referencia apuntando hacia adelante.
+
+  \item Rotación del micrófono: Se rota el micrófono en incrementos de ángulos predefinidos alrededor de su eje de referencia. Por cada ángulo de rotación, se mide y registra la respuesta del micrófono. Teniendo el micrófono en el eje de 0 grados sobre la fuente sonora, se mide la tensión de salida del mismo. 
+A esta tensión se le llama ''tensión de referencia a 0 dBs´´ y se toma como tensión de referencia.
+
+  \item Registro de la respuesta del micrófono: Durante la rotación del micrófono, se registran los niveles de respuesta en cada ángulo utilizando el equipo de medición seleccionado. Estos datos se utilizan posteriormente para generar el diagrama polar.
+
+  \item Procesamiento de datos: Utilizando los datos registrados, se realiza el procesamiento de datos para generar el diagrama polar del micrófono. Esto implica trazar los puntos de respuesta en un gráfico polar, donde cada punto representa la sensibilidad del micrófono en un ángulo de incidencia determinado.
+
+  \item Interpretación del diagrama polar: El diagrama polar resultante muestra la directividad y la sensibilidad relativa del micrófono en diferentes ángulos. Se pueden identificar patrones y características específicas, como la presencia de lóbulos principales, lóbulos secundarios, nulos o patrones omnidireccionales.
+
+\end{enumerate}
+
+\subsubsection{Impedancia}
+Los micrófonos se clasifican en dos categorías principales según su impedancia: baja impedancia y alta impedancia. Estas categorías se refieren a la resistencia eléctrica total que presenta el micrófono al flujo de corriente alterna.
+
+\begin{itemize}
+\item \textbf{Micrófonos de Baja Impedancia}: Estos micrófonos tienen una impedancia de salida baja, generalmente entre 50 y 600 ohmios. Son los más comunes en aplicaciones profesionales y se consideran estándar en la industria. Los micrófonos de baja impedancia ofrecen una mejor calidad de señal y una mayor inmunidad al ruido y las interferencias. Son compatibles con la mayoría de los dispositivos de audio, como preamplificadores, mezcladoras y interfaces de audio, que suelen tener entradas de baja impedancia. Se utilizan en estudios de grabación, escenarios en vivo, difusión y otras aplicaciones profesionales.
+\item \textbf{Micrófonos de Alta Impedancia}: Estos micrófonos tienen una impedancia de salida alta, generalmente entre 10,000 y 50,000 ohmios. También se les conoce como micrófonos de "alta Z" o "Hi-Z". Estos micrófonos se utilizan comúnmente en aplicaciones de consumo, como karaoke, sistemas de sonido domésticos y equipos de grabación caseros. Suelen ser más económicos y menos sofisticados que los micrófonos de baja impedancia. Los micrófonos de alta impedancia están diseñados para ser utilizados con entradas de alta impedancia, como las de amplificadores de guitarra y equipos de audio domésticos. No son adecuados para su uso directo con la mayoría de los dispositivos profesionales, ya que pueden presentar problemas de atenuación de señal y pérdida de frecuencia.
+\end{itemize}
+
+\subsubsection{Clasificación de los Micrófonos según su Transductor}
+
+Los micrófonos se pueden clasificar en diferentes tipos según el transductor utilizado para convertir las ondas sonoras en señales eléctricas. El transductor es el elemento que captura las variaciones de presión sonora y las convierte en una señal eléctrica correspondiente. A continuación, se presentan los tipos más comunes de micrófonos según su transductor:
+
+\begin{itemize}
+  \item \textbf{Micrófonos de Cinta (Ribbon)}: Estos micrófonos utilizan una fina cinta de metal suspendida entre dos imanes. Cuando la cinta se mueve en respuesta a las ondas sonoras, genera una corriente eléctrica proporcional. Son conocidos por su suave respuesta de frecuencia y su característico sonido cálido. Sin embargo, son más sensibles a golpes y vibraciones y requieren un manejo delicado.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV15.png}
+\caption{Micrófono de cinta.}
+\end{figure}
+  \item \textbf{Micrófonos de Condensador}: Estos micrófonos utilizan un diafragma metálico delgado y una placa trasera cargada eléctricamente para formar un condensador. Cuando el diafragma se mueve debido a las ondas sonoras, cambia la capacitancia del condensador, lo que resulta en una variación de voltaje. Los micrófonos de condensador ofrecen una respuesta de frecuencia amplia y una alta sensibilidad, lo que los hace ideales para grabaciones de estudio y aplicaciones vocales. Requieren alimentación phantom o baterías.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV16.png}
+\caption{Micrófono de cinta.}
+\end{figure}
+  \item \textbf{Micrófonos Dinámicos}: Estos micrófonos utilizan un diafragma y una bobina móviles dentro de un campo magnético. Cuando las ondas sonoras hacen vibrar el diafragma, la bobina genera una corriente eléctrica inducida proporcional. Los micrófonos dinámicos son duraderos y versátiles, y son ampliamente utilizados en aplicaciones en vivo y grabaciones de campo. Son menos sensibles que los micrófonos de condensador, pero pueden manejar altos niveles de presión sonora sin distorsión.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV17.png}
+\caption{Micrófono dinámicos.}
+\end{figure}
+  \item \textbf{Micrófonos de Carbono}: Estos micrófonos utilizan una cápsula de carbono que modifica la resistencia eléctrica cuando se comprime debido a las ondas sonoras. La variación de resistencia produce una señal eléctrica correspondiente. Los micrófonos de carbono fueron ampliamente utilizados en los primeros sistemas telefónicos, pero en la actualidad su uso es limitado debido a su baja calidad de audio.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV18.png}
+\caption{Micrófono de carbono.}
+\end{figure}
+  \item \textbf{Micrófonos de Contacto (Contacto-Direccional)}: Estos micrófonos capturan el sonido a través de la vibración directa de una superficie sólida. Se colocan en contacto directo con el objeto que produce el sonido, como una guitarra o un tambor. Son ideales para capturar instrumentos acústicos y obtener un sonido natural y resonante.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV19.png}
+\caption{Micrófono de contacto.}
+\end{figure}
+\end{itemize}
+\subsection{Parlante}
+Un parlante, también conocido como altavoz, es un dispositivo \textbf{electroacústico} diseñado para convertir una señal eléctrica en sonido audible. Es uno de los componentes fundamentales en sistemas de audio, como sistemas de sonido en casa, equipos de música, sistemas de cine en casa, entre otros.\\
+El parlante consta de varias partes principales que trabajan en conjunto para producir sonido:
+
+\begin{itemize}
+  \item \textbf{Cono o diafragma}: Es una superficie flexible y vibrante que se mueve hacia adelante y hacia atrás para generar ondas de presión en el aire. El cono suele estar fabricado con materiales como papel, plástico o fibra de carbono.
+
+  \item \textbf{Bobina móvil}: Es una bobina de alambre que está conectada al cono y se encuentra ubicada en el espacio del campo magnético de un imán permanente. Cuando la corriente eléctrica pasa por la bobina, esta interactúa con el campo magnético, generando fuerzas que hacen que el cono se mueva.
+
+  \item \textbf{Imán permanente}: Proporciona el campo magnético necesario para interactuar con la bobina móvil. Usualmente, se utiliza un imán de ferrita o un imán de neodimio, que son materiales con propiedades magnéticas adecuadas.
+
+  \item \textbf{Suspensión}: Es el sistema que mantiene el cono y la bobina en su posición central y les permite moverse libremente. Puede estar compuesto por una suspensión de goma, tela u otro material flexible.
+
+  \item \textbf{Caja o recinto}: Es la estructura que alberga los componentes del parlante. Puede tener diferentes diseños y tamaños, y su función es controlar el flujo de aire y mejorar la calidad del sonido emitido por el parlante.
+
+\end{itemize}
+
+Cuando se aplica una señal eléctrica a la bobina móvil del parlante, esta genera un campo magnético que interactúa con el campo magnético del imán permanente. Como resultado, la bobina se mueve hacia adelante y hacia atrás, haciendo que el cono vibre y genere ondas de presión en el aire. Estas ondas de presión son percibidas por el oído humano como sonido.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV20.png}
+\caption{Parlante: partes.}
+\end{figure}
+
+\subsubsection{Caja acústica o bafles}
+Una caja acústica, también conocida como recinto acústico o bafle, es una estructura diseñada para mejorar y controlar la reproducción del sonido emitido por un parlante. Su principal función es brindar un entorno adecuado para el funcionamiento del parlante, optimizando la respuesta en frecuencia y la eficiencia (control de graves).\\
+La caja acústica está compuesta por materiales rígidos y resistentes que evitan vibraciones indeseadas y pérdidas de energía. Además, suele contar con diferentes compartimentos internos, como cámaras de aire y refuerzos, que ayudan a controlar el flujo de sonido y reducir resonancias no deseadas.\\
+Existen diferentes tipos de cajas acústicas, cada una con características particulares:
+
+\begin{itemize}
+  \item \textbf{Caja sellada}: Es un recinto completamente cerrado sin aberturas. Proporciona una respuesta en frecuencia precisa y controlada, con una buena extensión en graves. Sin embargo, requiere más potencia para alcanzar altos niveles de volumen.
+
+  \item \textbf{Caja ventilada o bass-reflex}: Incorpora un puerto o tubo sintonizado en el recinto para mejorar la respuesta en graves. Permite una mayor eficiencia y una mejor respuesta en bajas frecuencias, a costa de una respuesta menos controlada en comparación con una caja sellada.
+
+  \item \textbf{Caja de radiación dipolar}: Emplea dos parlantes en configuración opuesta para lograr una dispersión más amplia del sonido. Es comúnmente utilizada en sistemas de altavoces para crear una experiencia auditiva más inmersiva.
+
+  \item \textbf{Caja de carga de trompeta o corneta}: Utiliza una estructura en forma de trompeta para mejorar la eficiencia y extender la respuesta en frecuencia del parlante. Es comúnmente utilizada en aplicaciones de refuerzo de sonido y sistemas de megafonía.
+
+\end{itemize}
+
+La elección de la caja acústica adecuada depende de diversos factores, como el tipo de parlante, el entorno de reproducción y las preferencias del oyente. Una correcta combinación entre el parlante y la caja acústica puede mejorar significativamente la calidad y el rendimiento del sonido.
+
+\subsubsection{Impedancia}
+
+La impedancia en una caja acústica se refiere a la resistencia que presenta el parlante al paso de la corriente eléctrica proveniente del amplificador. Se mide en ohmios ($\Omega$) y varía según la frecuencia.\\
+La impedancia de una caja acústica puede afectar la forma en que el amplificador interactúa con el parlante. Es importante que el amplificador y la caja acústica estén adecuadamente emparejados en términos de impedancia para garantizar una correcta transferencia de potencia y evitar daños tanto al amplificador como al parlante.
+En algunos casos, las cajas acústicas pueden tener múltiples vías o parlantes, lo que implica que cada vía tenga su propia impedancia. En estos casos, es necesario considerar la impedancia total resultante de la combinación de todas las vías para asegurar la compatibilidad con el amplificador.\\
+Es común encontrar cajas acústicas con impedancias de 4 ohmios, 8 ohmios o 16 ohmios, aunque pueden existir otras variaciones dependiendo del diseño y la configuración de la caja.\\
+Es importante consultar las especificaciones del amplificador y la caja acústica para asegurarse de que sean compatibles (coincidan) en términos de impedancia y evitar problemas de rendimiento o daños en el sistema de audio. Si conectamos un amplificador que  trabaje a \textbf{8 ohmnios} con unas cajas de \textbf{4 ohmnios}, \textbf{aumentaremos} la potencia de salida pero también la distorsión. 
+En cambio si conectamos un amplificador que trabaje a \textbf{4 ohmnios} con unas cajas de \textbf{8 ohmnios} la caja sonará con menos volumen y estaremos desaprovechando la potencia que nos da el amplificador
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV21.png}
+\caption{Caja acústica.}
+\end{figure}
+\begin{notation}
+Si una caja acústica tiene una \textbf{respuesta de frecuencia} de 30Hz-22.000Hz, nos indica que reproducirá los graves con más contundencia que una caja cuya respuesta sea, por ejemplo, de 45Hz-22.000Hz.
+\end{notation}
+\begin{definition}[Sensibilidad]
+La sensibilidad en una caja acústica se refiere a la \textbf{eficiencia} con la que el parlante convierte la energía eléctrica en sonido audible. Se mide en decibelios (dB) y representa la \textbf{presión sonora} generada por el parlante cuando se le aplica una potencia determinada. Es importante tener en cuenta que la sensibilidad se especifica generalmente para una potencia de entrada determinada, como 1 vatio a 1 metro de distancia. También es importante considerar que la sensibilidad \textbf{no} indica la calidad del sonido, sino la \textbf{eficiencia} con la que se convierte la energía eléctrica en sonido.
+\end{definition}
+\begin{notation}
+La sensibilidad se  mide en decibelios, y los baffles para aplicaciones de alta fidelidad suelen estar comprendidos entre los 86 y 93 dB. 
+\end{notation}
+\subsubsection{Potencia}
+La potencia dada de un altavoz viene dada en vatios. Los únicos vatios a tener en cuenta son los \textbf{RMS} (\textit{Root Mean Square}) o continuos, puesto que son los que un altavoz puede soportar de manera continuada sin llegar a deteriorarse. Es recomendable que la potencia de un altavoz sea un 30\% o 40\% superior a la del amplificador. 
+\subsubsection{Partes de una caja acústica}
+\begin{enumerate}
+\item \textbf{Altavoz de agudos o tweeter:} El tweeter es uno de los componentes principales de una caja acústica y se encarga de reproducir las frecuencias altas del espectro de sonido. Es un tipo de transductor diseñado específicamente para manejar y emitir sonidos de alta frecuencia, generalmente por encima de los 2 kHz\\
+El tweeter está compuesto por un diafragma ligero y pequeño que responde rápidamente a las señales de audio de alta frecuencia. Este diafragma puede estar hecho de diversos materiales, como seda, polímeros, aluminio o cerámica, cada uno con sus propias características y sonoridades. La principal función del tweeter es reproducir con precisión las frecuencias \textbf{agudas}, como los sonidos de instrumentos de cuerda, los platillos de una batería o las voces de soprano. Al ser capaz de reproducir estas frecuencias con claridad y detalle, el tweeter contribuye a la calidad general del sonido producido por la caja acústica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV22.png}
+\caption{Tweeter.}
+\end{figure}
+\item \textbf{Altavoz de medios}: El altavoz de medios, también conocido como midrange o midwoofer, es un componente fundamental en una caja acústica. Se encarga de reproducir las frecuencias medias del espectro de sonido, generalmente en un rango que va desde aproximadamente 200 Hz hasta 2000 Hz.\\
+El altavoz de medios se diferencia de otros componentes como el tweeter (encargado de las frecuencias altas) y el woofer (encargado de las frecuencias bajas) en su capacidad para reproducir con precisión las frecuencias medias, que son cruciales para la definición y la claridad del sonido. El altavoz de medios está diseñado con un diafragma y una bobina móvil que responde eficientemente a las señales de audio en el rango de frecuencias medias. El tamaño del diafragma puede variar dependiendo del diseño y la aplicación, pero generalmente es más pequeño que el woofer y más grande que el tweeter. La principal función del altavoz de medios es proporcionar una reproducción precisa y detallada de las frecuencias vocales, instrumentales y de efectos especiales que se encuentran en el rango medio. Al enfocarse en estas frecuencias, contribuye a la naturalidad y la coherencia del sonido producido por la caja acústica. En una configuración de altavoces de múltiples vías, el altavoz de medios suele estar ubicado entre el tweeter y el woofer, creando un sistema tridireccional. Esta disposición permite una distribución eficiente de las frecuencias y una reproducción más fiel de todo el espectro de sonido. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV23.png}
+\caption{Altavoz de medios.}
+\end{figure}
+\item \textbf{Altavoz de graves}: También conocido como woofer, es uno de los componentes clave en una caja acústica. Se encarga de reproducir las frecuencias bajas del espectro de sonido, generalmente por debajo de los 200 Hz. El altavoz de graves está diseñado para manejar y emitir sonidos de baja frecuencia con una alta eficiencia. Está compuesto por un diafragma grande y rígido, así como una bobina móvil que se mueve en respuesta a las señales de audio. Estas características permiten al woofer generar presiones sonoras más altas y reproducir con precisión las frecuencias bajas. La principal función del altavoz de graves es proporcionar una respuesta profunda y potente en las frecuencias graves, como los sonidos de los bajos de una canción o los efectos de sonido de películas. Su capacidad para mover una gran cantidad de aire y generar presiones sonoras más altas en el rango de frecuencias bajas le permite crear una experiencia auditiva inmersiva.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV24.png}
+\caption{Altavoz de graves.}
+\end{figure}
+\end{enumerate}
+\subsubsection{Tipos de cajas acústicas}
+\begin{itemize}
+\item \textbf{Caja sellada}: También conocida como caja acústica de carga cerrada, es un diseño en el que el altavoz se encuentra montado en una caja herméticamente sellada. Esta configuración proporciona una respuesta de frecuencia precisa y controlada, con una atenuación gradual en los graves. La caja sellada es apreciada por su reproducción de sonido precisa, aunque suele tener una menor eficiencia en la reproducción de bajos profundos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV25.png}
+\caption{Caja acústica sellada.}
+\end{figure}
+\item \textbf{Caja bass-reflex}: Esta caja acústica incluye un puerto sintonizado o un tubo ventilado que permite el flujo de aire dentro y fuera de la caja. El puerto está sintonizado para resonar a una frecuencia específica, lo que mejora la respuesta de bajos y permite una mayor eficiencia en la reproducción de graves. La caja bass-reflex ofrece una respuesta de frecuencia extendida y una mayor salida de graves en comparación con una caja sellada.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV26.png}
+\caption{Caja acústica bass-reflex.}
+\end{figure}
+\item \textbf{Caja con radiador pasivo}: Esta configuración incluye un altavoz pasivo, también conocido como radiador pasivo, que se encuentra montado junto al altavoz activo principal. El radiador pasivo responde al movimiento del altavoz principal y contribuye a la reproducción de bajos. Esta configuración proporciona una mayor respuesta de graves sin la necesidad de un puerto o conducto adicional.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV27.png}
+\caption{Caja acústica con radiador pasivo.}
+\end{figure}
+\item \textbf{Caja ELF (Extended Low Frequency)}: Este tipo de caja está diseñada específicamente para una reproducción de bajos muy profundos y potentes. Utiliza tecnologías especiales como radiadores pasivos, controladores de alta excursión y ajustes de ecualización para alcanzar una respuesta de graves excepcionalmente baja.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV28.png}
+\caption{Caja acústica elf.}
+\end{figure}
+\item \textbf{Caja paso banda}: Es un tipo de caja que se caracteriza por tener una respuesta de frecuencia limitada a un rango específico. Se utiliza para enfatizar o atenuar ciertas frecuencias y se compone de un sistema de filtros que permiten el paso selectivo de determinadas bandas de frecuencia.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV29.png}
+\caption{Caja acústica paso banda.}
+\end{figure}
+\item \textbf{Caja paso banda de 4to orden}: Este diseño de caja acústica es similar a una caja paso banda convencional, pero con un filtro de orden superior que proporciona una respuesta más pronunciada en la frecuencia central deseada. Esto resulta en una mayor selectividad y control sobre la respuesta de frecuencia.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV30.png}
+\caption{Caja acústica paso banda de 4to orden.}
+\end{figure}
+\item \textbf{Baffle abierto}: Es una configuración en la que el altavoz se monta directamente en una superficie plana, sin ninguna caja o estructura posterior. Esta configuración permite un sonido más directo y sin coloración, pero limita la reproducción de bajos debido a la falta de carga acústica adicional.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\linewidth]{ISV/ISV31.png}
+\caption{Caja acústica baffle abierto.}
+\end{figure}
+\item \textbf{Laberinto acústico}: Se trata de una caja con un diseño laberíntico interno que utiliza conductos o pasajes para controlar y modular la propagación del sonido. Los conductos internos están diseñados para enfatizar o atenuar ciertas frecuencias, mejorando la respuesta de graves y minimizando las resonancias no deseadas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.2\linewidth]{ISV/ISV32.png}
+\caption{Caja acústica laberinto acústico.}
+\end{figure}
+\item \textbf{Línea de transmisión}: Es un tipo de caja acústica en la que el altavoz está ubicado en un conducto largo y estrecho. El conducto actúa como una guía de ondas, controlando la propagación del sonido y permitiendo una respuesta de graves profundos y controlados. Las cajas de línea de transmisión son conocidas por su capacidad de reproducción de bajos de alta calidad y baja distorsión.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.2\linewidth]{ISV/ISV33.png}
+\caption{Caja acústica línea de transmisión.}
+\end{figure}
+\end{itemize}
 %\part{Instrumentación 2}
 %\chapterimage{chapter_head_I2.pdf} % Chapter heading image
 %\section{Transformada de Laplace}
