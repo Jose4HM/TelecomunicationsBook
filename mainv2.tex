@@ -2880,6 +2880,7 @@ Realizando una asociación de admitancias en paralelo para hallar la función de
 H=\frac{1}{1+\iu\left(\omega\cdot C-\frac{1}{\omega\cdot L}\right)R}
 \label{eq:funcion transferencia paralelo}
 \end{equation}
+\end{definition}
 \begin{definition}[Frecuencia de resonancia]
 \begin{equation}
 f_r=\frac{1}{2\pi\sqrt{L\cdot C}}
@@ -2891,7 +2892,6 @@ Donde:
 \item \textbf{L}: Inductancia. (H)
 \item \textbf{C}: Capacitancia. (F)
 \end{itemize}
-\end{definition}
 \end{definition}
 \begin{definition}[Factor de calidad-paralelo]
 En esencia \textit{Q} es una medida de la capacidad de almacenamiento de energía de un circuito en relación con su capacidad de disipación de energía.
@@ -4411,10 +4411,144 @@ Si la derivada de la función de transferencia en un polo repetido es diferente 
 \part{Sistemas de radio digital y M.O.}
 \chapterimage{chapter_head_SRD.pdf} % Chapter heading image
 \chapter{Ondas electromagnéticas e introducción}
+\section*{Distancia entre dos puntos geográficos}
+\subsection*{Conversión de unidades: grados, minutos y segundos a decimales}
+\begin{enumerate}
+\item Toma la parte entera de los grados decimales como los grados en la nueva representación.
+\item Multiplica la parte decimal restante por 60 para obtener los minutos.
+\item Toma la parte entera de los minutos como los minutos en la nueva representación.
+\item Multiplica la parte decimal restante por 60 para obtener los segundos.
+\item Toma la parte entera de los segundos como los segundos en la nueva representación.
+\end{enumerate}
+
+Aquí tienes un ejemplo de cómo aplicar estos pasos:
+
+Supongamos que tienes las siguientes coordenadas geográficas en grados decimales:
+
+Latitud: 40.7128°
+Longitud: -74.0060°
+
+Para convertir la latitud a grados, minutos y segundos:
+
+\begin{enumerate}
+\item Los grados serán 40 (parte entera de 40.7128).
+\item La parte decimal restante es 0.7128.
+\item Multiplicando 0.7128 por 60, obtienes 42.768.
+\item Los minutos serán 42 (parte entera de 42.768).
+\item La parte decimal restante es 0.768.
+\item Multiplicando 0.768 por 60, obtienes 46.08.
+\item Los segundos serán 46 (parte entera de 46.08).
+\end{enumerate}
+\subsection*{Conversión de unidades: grados decimales a grados, minutos y segundos}
+\begin{enumerate}
+\item Coordenada geográfica en grados decimales: -33.8675 (latitud) y 151.2070 (longitud).
+
+\item Convertir la latitud a grados, minutos y segundos:
+\begin{enumerate}
+\item Los grados serán -33 (parte entera de -33.8675).
+\item La parte decimal restante es 0.8675.
+\item Multiplicando 0.8675 por 60, obtienes 52.05.
+\item Los minutos serán 52 (parte entera de 52.05).
+\item La parte decimal restante es 0.05.
+\item Multiplicando 0.05 por 60, obtienes 3.
+\item Los segundos serán 3 (parte entera de 3).
+\end{enumerate}
+
+\item Convertir la longitud a grados, minutos y segundos:
+\begin{enumerate}
+\item Los grados serán 151 (parte entera de 151.2070).
+\item La parte decimal restante es 0.2070.
+\item Multiplicando 0.2070 por 60, obtienes 12.42.
+\item Los minutos serán 12 (parte entera de 12.42).
+\item La parte decimal restante es 0.42.
+\item Multiplicando 0.42 por 60, obtienes 25.2.
+\item Los segundos serán 25 (parte entera de 25.2).
+\end{enumerate}
+
+\item Coordenada geográfica en grados, minutos y segundos:
+\begin{itemize}
+\item Latitud: -33° 52' 3" S
+\item Longitud: 151° 12' 25" E
+\end{itemize}
+\end{enumerate}
+\subsection*{Signos}
+\begin{enumerate}
+\item Latitud:
+\begin{itemize}
+\item Si la letra es "N", las coordenadas son positivas (hemisferio norte).
+\item Si la letra es "S", las coordenadas son negativas (hemisferio sur).
+\end{itemize}
+
+\item Longitud:
+\begin{itemize}
+\item Si la letra es "E", las coordenadas son positivas (este).
+\item Si la letra es "W", las coordenadas son negativas (oeste).
+\end{itemize}
+\end{enumerate}
+
+Por ejemplo:
+\begin{enumerate}
+\item Coordenada: 40.7128° N, 74.0060° W
+\begin{itemize}
+\item La latitud es positiva porque tiene la letra "N" (hemisferio norte).
+\item La longitud es negativa porque tiene la letra "W" (oeste).
+\end{itemize}
+
+\item Coordenada: 33.8688° S, 151.2093° E
+\begin{itemize}
+\item La latitud es negativa porque tiene la letra "S" (hemisferio sur).
+\item La longitud es positiva porque tiene la letra "E" (este).
+\end{itemize}
+\end{enumerate}
+\subsection*{Distancia entre puntos geográficos}
+\begin{enumerate}
+\item Obtén las coordenadas geográficas de los dos puntos, es decir, las latitudes y longitudes en grados decimales.
+\item Convierte las latitudes y longitudes de grados decimales a radianes.
+\item Utiliza la fórmula del coseno para calcular la distancia. La fórmula es la siguiente:
+\begin{equation}
+d=R\cdot\cos^{-1}\parentesis{\sin\phi_1\cdot\sin\phi_2+\cos\phi_1\cdot\cos\phi_2\cdot\cos\Delta\lambda}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $d$ es la distancia entre los dos puntos (en la misma unidad que el radio de la Tierra).
+\item $R$ es el radio medio de la Tierra. Puedes utilizar un valor aproximado de 6371 kilómetros para obtener la distancia en kilómetros.
+\item $\phi_1$ y $\phi_2$ son las latitudes de los dos puntos (en radianes).
+\item $\Delta\lambda$ es la diferencia de longitudes entre los dos puntos (en radianes).
+\end{itemize}
+\end{enumerate}
+
+A continuación, aquí tienes un ejemplo de cómo calcular la distancia entre dos puntos utilizando la fórmula del coseno:
+
+\begin{enumerate}
+\item Punto A: Latitud 40.7128° N, Longitud 74.0060° W (correspondiente a la ciudad de Nueva York).
+\item Punto B: Latitud 34.0522° N, Longitud 118.2437° W (correspondiente a la ciudad de Los Ángeles).
+\item Conversión a radianes:
+\begin{itemize}
+\item Punto A: Latitud 0.7101 rad, Longitud -1.2915 rad.
+\item Punto B: Latitud 0.5947 rad, Longitud -2.0645 rad.
+\end{itemize}
+\item Cálculo de la distancia:
+\begin{displaymath}
+d=6371\cdot\cos^{-1}\parentesis{\sin(0.7101)\cdot\sin(0.5947)+\cos(0.7101)\cdot\cos(0.5947)\cdot\cos(-2.0645-(-1.2915))}
+\end{displaymath}
+\item Realizando los cálculos, la distancia entre Nueva York y Los Ángeles es de aproximadamente 3939 kilómetros.
+\end{enumerate}
 \section{Radiaciones electromagnéticas}
 Los campos electromagnéticos de baja frecuencia incluyen aquellos generados por corrientes eléctricas de frecuencia industrial, como las producidas por líneas eléctricas, electrodomésticos o equipos electrónicos. Estos campos generalmente tienen frecuencias inferiores a los 300 kilohertz (kHz) y se asocian con la transmisión de energía eléctrica.\\
 Por otro lado, los campos electromagnéticos de alta frecuencia se refieren a aquellos generados por dispositivos inalámbricos, como redes Wi-Fi, telefonía móvil, transmisiones de radio y televisión, así como por equipos de radar y microondas. Estos campos tienen frecuencias más altas, que van desde los megahertz (MHz) hasta los gigahertz (GHz).
 Se debe de recordar la ecuación \ref{eq:longitud de onda}, con esa ecuación se puede encontrar:
+\begin{definition}[Velocidad de onda]
+\begin{equation}
+v=\lambda\cdot f
+\label{eq:vel onda}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{v}: Velocidad de onda. (m)
+\item $\lambda$: Longitud de onda. (m)
+\item \textbf{f}: Frecuencia. (Hz)
+\end{itemize}
+\end{definition}
 \begin{definition}[Energía de una onda]
 Se refiere a la cantidad de energía transportada por una onda. En el contexto de las ondas, como las ondas electromagnéticas o las ondas sonoras, la energía de onda representa la energía total asociada con la propagación de la onda a través del medio en el que se está propagando.
 \begin{equation}
@@ -4461,7 +4595,8 @@ En resumen, los radioenlaces permiten la comunicación a través de ondas electr
 Los radioenlaces fijos terrestres son aquellos que se establecen entre \textbf{dos} puntos de tierra para la transmisión de señales a través de ondas electromagnéticas. Estos enlaces se utilizan para la comunicación de datos, voz y video. Los radioenlaces fijos terrestres se caracterizan por su alta \textbf{confiabilidad} y \textbf{estabilidad}, lo que los hace ideales para la transmisión de datos a larga distancia. Estos enlaces pueden cubrir distancias considerables, desde unos pocos kilómetros hasta cientos de kilómetros, dependiendo de los equipos utilizados y las \textbf{condiciones} del terreno. La \textbf{infraestructura} de un radioenlace fijo terrestre consta de antenas de transmisión y recepción, equipos de radiofrecuencia, sistemas de modulación y demodulación, así como de torres o soportes para ubicar las antenas a una altura adecuada. La alineación precisa de las antenas es esencial para garantizar una transmisión óptima y minimizar la atenuación de la señal.\\
 Los radio enlaces, establecen un concepto de comunicación del tipo
 dúplex. En cuanto al radiocanal se debe considerar una pareja de portadoras ida y retorno. Se asocia a la idea de circuito de telecomunicación dúplex a 4 hilos. El radio enlace debe ser básicamente entre \textbf{puntos visibles}, es decir puntos altos de topografía; es necesario los recorridos entre enlaces tengan una altura libre
-adecuada para la propagación (una altura de 3 metros mínimo). Los radio enlaces de microondas se realizan \textbf{sólo} si existe una \textbf{línea de vista del receptor} (LOS, \textit{Line Of Sight}).
+adecuada para la propagación (una altura de 3 metros mínimo). Los radio enlaces de microondas se realizan \textbf{sólo} si existe una \textbf{línea de vista del receptor} (LOS, \textit{Line Of Sight}) electrómagnetica, sin embargo puede existir \textbf{NLOS} significa "\textit{Non-Line-of-Sight}" en inglés, que se traduce como "fuera de línea de visión" en español. En una situación NLOS por rebote, la señal emitida desde el transmisor puede \textbf{rebotar} en una o varias superficies, como paredes, techos o edificios, antes de alcanzar el receptor. Estos rebotes permiten que la señal llegue al receptor incluso cuando la línea de visión directa está \textbf{bloqueada}.\\
+Para lograr una comunicación efectiva en NLOS por rebote, es importante tener en cuenta la geometría y las características del entorno. La dirección, la calidad y la cantidad de rebotes pueden variar según el entorno y la ubicación de los transmisores y receptores. Además, es necesario considerar los efectos de la atenuación, la dispersión y otros fenómenos que pueden afectar la señal reflejada..
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{sdr/sdr4.png}
@@ -4527,9 +4662,851 @@ En un enlace de comunicación inalámbrica, existen tres zonas de Fresnel que se
 \item \textbf{Zona de Fresnel 2}: La segunda zona de Fresnel es la siguiente más cercana al enlace, y también tiene forma de elipse. Aunque su importancia es menor que la zona de Fresnel 1, sigue siendo relevante para mantener la calidad de la señal, ya que una obstrucción en esta zona puede causar atenuación y pérdida de potencia de la señal.
 \item \textbf{Zona de Fresnel 3}: La tercera zona de Fresnel es la zona más alejada del enlace y también tiene forma de elipse. Aunque tiene menos impacto en la calidad de la señal en comparación con las zonas de Fresnel más cercanas, aún puede tener influencia en la propagación de la señal, especialmente en enlaces de larga distancia.
 \end{enumerate}
+\begin{remark}
+Es recomendable que al menos el 60\% (0.6) de la primera zona de Fresnel esté libre de obstrucciones para asegurar buenas condiciones de propagación en un enlace. Este porcentaje proporciona un margen de seguridad para minimizar la interferencia y la degradación de la señal.
+\begin{equation}
+F_1=17.3\cdot\sqrt{\frac{d_1\cdot d_2}{f}}
+\end{equation}
+Si el radio de la zona 1 calculada con la ecuación \ref{eq:zonas fresnel} es mayor o igual al 60\% de $F_1 (R \geq 0.6 \cdot F_1)$, se considera que el enlace tiene buenas condiciones de propagación. Esto significa que al menos el 60\% del área de la primera zona de Fresnel está libre de obstrucciones.
+\end{remark}
 Estas tres zonas de Fresnel son consideradas significativas debido a su impacto en la propagación de la señal inalámbrica. La presencia de obstrucciones físicas dentro de estas zonas puede causar interferencia, reflexiones y dispersión, lo que afecta la calidad y la intensidad de la señal transmitida. Por lo tanto, es importante tener en cuenta y garantizar un despeje adecuado de estas zonas al planificar y diseñar enlaces de comunicación inalámbrica.
+\begin{definition}[Curvatura de la Tierra]
+Existe una expresión utilizada para calcular la curvatura de la Tierra en un enlace de comunicación. Esta fórmula está relacionada con el cálculo de la altura necesaria de una torre de antena para superar la curvatura de la Tierra y mantener la línea de visión entre el transmisor y el receptor.
+\begin{equation}
+h_c=0.05953\cdot d_1\cdot d_2
+\label{eq:curvatura tierra}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $h_c$: Altura estimada de la torre de antena para superar la curvatura de la Tierra.
+\item $d_1$: Distancia desde el punto de origen hasta uno de los extremos del enlace de comunicación.
+\item $d_2$: Distancia desde el punto de origen hasta el otro extremo del enlace de comunicación.
+\end{itemize}
+\end{definition}
+\begin{example}[Línea de vista]
+\begin{center}
+\includegraphics[width=0.8\linewidth]{SDR/SDR11.jpg}
+\end{center}
+Considerar línea de vista electromagnética (paso hasta la 3ra zona de Fresnell), hacer el cálculo de reflexión y modificar el resultado (si es que se dan las condiciones). Calcular la altura de las torres en donde 	se colocarán las antenas.\\
+Condiciones iniciales:
+\begin{itemize}
+\item $P_{tx}$: -6.5 dBw
+\item $G_{tx}$: 25.2 dB
+\item $G_{rx}$: 25.5 dB
+\item Frecuencia: 2255.630 MHz
+\item Sensibilidad del receptor: -109 dBm
+\item Margen por desvanecimiento: 7.9 dB
+\item Margen de ruido hecho por el hombre: 2.7 dB
+\item Pérdida por par de conectores: 0.5 dB
+\item Línea de transmisión RG-SBAU: 0.08 dB/m
+\item $h_3$=80m, $h_4$=30m, $h_5$=50m, $h_6$=70m
+\item El obstáculo en el punto D mide 25m
+\end{itemize}
+Hallar la altura de la torre 1 y 2 ($h_1$ y $h_2$ respectivamente)\\
+Las bases de la antena transmisora emisora y receptora son 1230 y 1160 m.s.n.m respectivamente.
+\textbf{Solución}\\
+Primero, obtenemos las medidas de cada punto y obstáculo en un gráfico como el siguiente:
+\begin{center}
+\includegraphics[width=\linewidth]{SDR/SDR8.png}
+\end{center}
+Nota que nos han puesto arbitrariamente 1055 m.s.n.m para no trabajar sobre los cero metros.
+Los puntos superiores indican la altura maxima alcanzada por cada elemento. Luego tenemos $r_{3x}$ indica el radio número 3 de la zona de Fresnell en el punto \textit{x}, $h_{cx}$ indica la curvatura de la tierra en el punto \textit{x}.
+Ahora, lo que haremos es hallar la altura de todos puntos máximos. Viendo las alturas de la imagen anterior, la altura total se obtendrá sumando 1055 m.s.n.m, altura sobre cual se encuentra el obstáculo, curvatura de la tierra y la longitud del radio tres de fresnel, de otra forma:
+\begin{equation}
+H_x=1055m+h_x+h_{cx}+r_{3x}
+\end{equation}
+Si vemos la ecuación \ref{eq:zonas fresnel}, debemos tener también la longitud de onda: se calcula usando la ecuación \ref{eq:vel onda}:
+\begin{equation}
+\lambda=\frac{c}{f}=\frac{3\basedec{8}}{2255.630\basedec{6}}=0.133m
+\end{equation}
+Usando la ecuación mencionada antes y teniendo los puntos desde B hasta F, este proceso se realizará para todos los puntos, nota que $r_{3x}$ esta siendo reemplazada con la ecuación de radio de Fresnel. Es importante aclarar que tanto $d_1$ y $d_2$ suman 35 (es la distancia total entre transmisor y receptor) serán las distancias desde el punto \textit{x} hacia A y G, por ejemplo para el punto B, $d_1$ será 10 Km y $d_2$ será 25; para el punto C $d_1$ será 18 Km y $d_2$ será 17 Km y así con todos:
+\begin{align}
+H_B&=1055m+80m+0.05953(10)(25)+\sqrt{\frac{3\cdot 10\basedec{3}\cdot 25\basedec{3}\cdot 0.133}{10\basedec{3}+25 \basedec{3}}}\\
+H_C&=1055m+50m+0.05953(18)(17)+\sqrt{\frac{3\cdot 18\basedec{3}\cdot 17\basedec{3}\cdot 0.133}{18\basedec{3}+17 \basedec{3}}}\\
+H_D&=1055m+30m+\textcolor{red}{25}+0.05953(19)(16)+\sqrt{\frac{3\cdot 19\basedec{3}\cdot 16\basedec{3}\cdot 0.133}{19\basedec{3}+16 \basedec{3}}}\\
+H_E&=1055m+50m+0.05953(24)(11)+\sqrt{\frac{3\cdot 24\basedec{3}\cdot 11\basedec{3}\cdot 0.133}{24\basedec{3}+11 \basedec{3}}}\\
+H_F&=1055m+70m+0.05953(26)(6)+\sqrt{\frac{3\cdot 29\basedec{3}\cdot 6\basedec{3}\cdot 0.133}{29\basedec{3}+6 \basedec{3}}}\\
+\end{align}
+Resolviendo las ecuaciones obtendremos los puntos máximos:
+\begin{align}
+H_B&=1203.27m\\
+H_C&=1182.28 m\\
+H_D&=1186.97 m\\
+H_E&=1175.58 m\\
+H_F&=1179.9 m\\
+\end{align}
+En $H_D$, nota que le estamos sumando la altura del edificio mencionado en el planteamiento. Ahora calculamos A, lo hacemos porque la altura es mayor al transmisor, además por las alturas de los obstáculos notamos que el terreno esta en declive:
+\begin{equation}
+H_A=1230 m + h_1
+\end{equation}
+Ahora, que sabemos las alturas de todos los obstáculos, podemos gratificarlas a escala para darnos una mejor percepción:
+\begin{center}
+\includegraphics[width=0.8\linewidth]{SDR/SDR9.png}
+\end{center}
+Nota que hemos añadido las alturas $h_1$ y $h_2$ para poder tener la idea. En otras palabras, lo único que podemos modificar son las lineas azules, recordando que la altura mínima de una antena es de 3 metros, podemos ir probando distintos valores, ojo que estos valores serán modificador en el punto A, esto debido a que si lanzamos un rayo desde el transmisor en A hacia el receptor en G, un ligero cambio en A puede ser aceptable en G, sin embargo un ligero cambio en G resultará en un gran cambio en A, debido a los puntos que tenemos. Es por esta razón que es conveniente mover A en vez de G, trazando los posibles rayos asumiendo como mínimo que $h_1=3$:
+\begin{center}
+\includegraphics[width=.8\linewidth]{SDR/SDR10.png}
+\end{center}
+Solo estamos tocando el punto F en el radio 3 de Fresnell, podría una solución sin embargo hay que ver la altura de $h_2$:
+\begin{align}
+\tan\theta=\frac{1230+\textcolor{red}{3}-1179.9}{29 000}&=\frac{1230+\textcolor{red}{3}-(1160+h_2)}{35 000}\\
+35\cancel{000}(53.1)&=29\cancel{000}(73-h_2)\\
+1858.5&=2117-29h_2\\
+h_2&=\frac{258.5}{29}\\
+h_2&=8.91 m
+\end{align}
+Con una altura mínima del transmisor y con un solo obstáculo se puede llegar a crear una LOS, siendo la altura de la antena receptora de 8.91 m, pueden haber más opciones, sin embargo este es la condición mínima.
+\end{example}
+\begin{remark}
+La altura de 3 metros es lo mínimo que podemos usar en un radio enlace, esto depende de LOS y demás factores, pero de esa distancia no puede bajar.
+\end{remark}
+\begin{notation}
+La diferencia entre las zonas de Fresnel pares e impares radica en la cantidad de interferencia que pueden experimentar.
+\begin{itemize}
+\item \textbf{Zonas de Fresnel pares}: Estas zonas se encuentran simétricamente alrededor de la línea de visión directa y son las más importantes para garantizar una buena calidad de la señal. La zona de Fresnel central (primera zona) es la más crítica y debe estar libre de obstáculos para evitar una degradación significativa de la señal. Cuantas más zonas pares estén despejadas de obstáculos, mejor será la calidad de la señal.
+\item \textbf{Zonas de Fresnel impares}: Estas zonas se encuentran entre las zonas de Fresnel pares y generalmente no son tan críticas como las pares para la calidad de la señal. Sin embargo, si las zonas de Fresnel impares están obstruidas, pueden provocar un aumento en la atenuación y la interferencia de la señal.
+\end{itemize}
+\end{notation}
+\section{Modelos de propagación}
+Un modelo de propagación se refiere a una representación \textbf{matemática} o empírica que describe cómo se propaga una señal de radiofrecuencia (RF) o una onda electromagnética en un entorno determinado. Estos modelos se utilizan en telecomunicaciones y en el diseño de sistemas inalámbricos para predecir y analizar la propagación de señales en diferentes escenarios. Los modelos de propagación se basan en observaciones empíricas y teorías de propagación de ondas para estimar los efectos de la atenuación, la dispersión, el desvanecimiento y otros fenómenos que pueden afectar la propagación de señales RF. Estos modelos pueden tener en cuenta características del entorno como la distancia entre transmisores y receptores, la topografía del terreno, la presencia de obstáculos como edificios y árboles, y las características de las antenas utilizadas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{SDR/sdr13.png}
+\caption{Modelos de propagación.}
+\end{figure}
+Según precisión del modelo, se pueden diferenciar los siguientes tipos:
+\begin{enumerate}
+\item Modelos empíricos
+\begin{itemize}
+\item Hata
+\item Okumura
+\item Leyes de potencia
+\end{itemize}
+\item Modelos teóricos o semi-empíricos
+\begin{itemize}
+\item Walfisch
+\item Ikegami
+\item Longley Rice
+\end{itemize}
+\item Modelos deterministas
+\begin{itemize}
+\item Friis
+\item Difracción por objetos delgados
+\item Dos rayos
+\end{itemize}
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{SDR/sdr14.png}
+\caption{Modelos de propagación 2.}
+\end{figure}
+\subsection{Modelo de Okumura}
+Modelo utilizado para la predicción de la pérdida de propagación en áreas urbanas. Algunas caracteristicas son:
+\begin{itemize}
+\item Presenta la atenuación adicional a espacio libre, para terreno suave y entorno urbano
+\item No se basa en ningun modelo fisico.
+\item Curvas para frecuencias de 150 a 900 MHz (VHF y UHF).
+\item Curvas para terreno rugoso y suave.
+\item Altura de antena de RB aproximadamente 30 a 200 metros.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{SDR/sdr15.png}
+\caption{Curvas de Okumura para atenuación mediana relativa al espacio libre. $A_{mu}(f,d)$}
+\end{figure}
+La ecuación de pérdida por trayecto en el modelo de Okumura-Hata nos proporciona una estimación de la atenuación o pérdida de potencia que ocurre en la propagación de una señal de radiofrecuencia (RF) desde una antena transmisora hasta una antena receptora.
+\begin{equation}
+L_{50} = L_{\text{fs}} + A_{MU}(f,d) - G_{hte} - G_{hre} - G_{area}
+\label{eq:okumura perdida}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L_{50}$: Pérdida por propagación al 50\% de recepción de la señal. (dB)
+\item $L_{\text{fs}}$: Pérdida por espacio libre, representa la atenuación teórica debida a la propagación en espacio libre sin obstáculos. Se calcula utilizando la fórmula de pérdida de espacio libre. (dB).
+\item $A_{mu}$: Atenuación media relativa a las pérdidas en el espacion libre. (dB)
+\item $G_{hte}$:Factor de ganancia de la antena transmisora. (dB)
+\item $G_{hre}$: Factor de ganancia de la antena receptora. (dB)
+\item $G_{area}$: Factor de correción que depende del entorno.
+\end{itemize}
+Alternativamente, tambien se puede considerar:
+\begin{equation}
+L = L_{\text{fs}} + L_{\text{a}} + L_{\text{b}} + L_{\text{m}} - 9 \log_{10}(d)
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L$: Pérdida por trayecto total en decibelios (dB).
+\item $L_{\text{fs}}$: Pérdida por espacio libre, representa la atenuación teórica debida a la propagación en espacio libre sin obstáculos. Se calcula utilizando la fórmula de pérdida de espacio libre. Su unidad es el decibelio (dB).
+\item $L_{\text{a}}$: Pérdida adicional debido a la atenuación por terreno. Toma en cuenta la influencia del terreno, como la vegetación, la altura del terreno, etc. Su unidad es el decibelio (dB).
+\item $L_{\text{b}}$: Pérdida adicional debido a la atenuación por edificios. Toma en cuenta la presencia de edificios y estructuras en el entorno. Su unidad es el decibelio (dB).
+\item $L_{\text{m}}$: Pérdida adicional debido a la atenuación por otros obstáculos y condiciones específicas del entorno. Puede incluir efectos como difracción, desvanecimiento y otros. Su unidad es el decibelio (dB).
+\item $d$: Distancia entre la antena transmisora y la antena receptora en metros (m).
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{SDR/sdr16.png}
+\caption{Factor de ganancia de altura. $H_{te}$}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{SDR/sdr17.png}
+\caption{Factor de ganancia de altura de la antena $H_{ru}$.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{SDR/sdr18.png}
+\caption{Factor de corrección. $G_{area}$}
+\end{figure}
+\begin{notation}
+Okumura desarrolló un conjunto de curvas que dan la atenuación mediana relativa al espacio libre para una zona urbana sobre un terreno casi plano, con una altura de la antena de la estación base ($h_te$) de 200 m y una altura de antena móvil ($h_{re}$) de 3m.
+\end{notation}
+\subsection{Modelo Hata}
+Es aplicable en el rango de frecuencias de 150 MHz a 1500 MHz, cubriendo las bandas de VHF y UHF, así como algunas bandas de frecuencia utilizadas en sistemas móviles. El modelo Hata tiene en cuenta varios factores, como la distancia entre la estación base y el receptor móvil, la altura de las antenas, la frecuencia de operación y la altura del entorno urbano o suburban, para estimar la pérdida de trayecto. El modelo considera tres entornos principales: entorno \textbf{urbano}, entorno \textbf{suburbano} y entorno \textbf{rural}, cada uno con sus propias características y ajustes.
+\subsubsection{Área urbana}
+Grandes ciudades con altas edificaciones y casas con 2 o más pisos, o donde existen una gran concentración de casas.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Parámetros                                            & Rango de valides \\ \hline
+Frecuencia {[}MHz{]}                                  & 150-1500         \\ \hline
+Altura efectiva de la estación base (h\_b) en {[}m{]} & 30-200           \\ \hline
+Altura de la antena del móvil (h\_m) {[}m{]}          & 1-10             \\ \hline
+Distancia (R) en {[}Km{]}                             & 1-20             \\ \hline
+\end{tabular}
+\caption{Restricción del modelo Hata.}
+\label{tab:modeloHata}
+\end{table}
+\begin{equation}
+L_{50} (urbano)=69.55+26.16\log(f_c)-13.82\log(h_{te})-\textcolor{red}{a(h_{re}})+(44.9-6.55\log(h_{te}))\log(d)
+\label{eq: area urbana}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L_{50}$: Pérdida por propagación al 50\% de recepción de la señal. (dB)
+\item $f_c$: Frecuencia portadora. (MHz)
+\item $h_{te}$: Altura de la antena transmisora. (m)
+\item $h_{re}$: Altura de la antena receptora. (m)
+\item $a(h_{re}$: Factor de corrección para la altura efectiva de la antena móvil que es función del tipo de área de servicio.
+\item $d$: Distancia entre el transmisor y receptor. (Km)
+\end{itemize}
+Ten en cuenta que los valores que usaras deben estar dentro de los rangos especificados en la tabla \ref{tab:modeloHata}
+El valor de $\textcolor{red}{a(h_{re}})$ se define según el tamaño de la ciudad:
+\begin{enumerate}
+\item \textbf{Ciudades pequeñas-medianas}
+\begin{equation}
+a(h_{re})=(1.1\log(f_c)-0.7)h_{re}-(1.56\log(f_c)-0.8) dB
+\end{equation}
+\item \textbf{Ciudades grandes}
+\begin{align}
+a(h_{re})&=8.29(\log(1.54\cdot h_{re}))^2-1.1 dB \forall f_c <300 MHz\\
+a(h_{re})&=3.2(\log(11.75h_{re}))^2-4.97 dB \forall f_c >300 MHz
+\end{align}
+\end{enumerate}
+\subsubsection{Área suburbana}
+Ciudades o carreteras en donde hay árboles y casas de forma dispersa, existen obstaculos cerca del usuario pero no provocan congestión.
+\begin{equation}
+L_{su}=L_{50} (urbano) -2\corchetes{\log\parentesis{\frac{f_c}{28
+}}}^2-5.4
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L_{su}$: Pérdida en área suburbana. (dB)
+\item $L_{50} (urbano)$: Pérdida por propagación al 50\% de recepción de la señal. (dB)
+\item $f_c$: Frecuencia de la portadora. (MHz)
+\end{itemize}
+\subsubsection{Área rural}
+Son los espacios abiertos sin grandes árboles o edificaciones en el camino de la señal.
+\begin{equation}
+L_{ru}=L_{50} (urbano)-4.78 (\log (f_c))^2+18.33\log(f_c)-40.94
+\end{equation}
+Donde:
+\begin{itemize}
+\item  $L_{ru}$: Pérdida en área rural. (dB)
+\item $L_{50} (urbano)$: Pérdida por propagación al 50\% de recepción de la señal. (dB)
+\item $f_c$: Frecuencia de la portadora. (MHz)
+\end{itemize}
+\subsection{Modelo Egli}
+Suele ser adecuada para los escenarios de la comunicación celular en el que se fija una antena y el otro es móvil. Sin embargo, no toma en cuenta los viajes a través de alguna obstrucción vegetativa, tales como árboles o arbustos. Normalmente se usa al aire libre para la línea de transmisión de la vista, este modelo proporciona la pérdida en el camino como una sola cantidad. Frecuencias entre 90 y 1000 MHz en las que experimentó, determinó y aplicó un factor de corrección $\beta$, dicho factor es incluido para registrar el exceso de pérdidas, está en función de la irregularidad del terreno sin obstrucciones vegetativas de por medio, no tiene en cuenta las pérdidas por difracción y es hallado por medio de métodos empíricos, es decir, está basado en la experimentación.\\
+Permite tener una aproximación rápidamente:
+\begin{equation}
+L=G_t\cdot G_r\parentesis{\frac{h_th_r}{d^2}}^2\beta
+\end{equation}
+Donde:
+\begin{itemize}
+\item $G_b$: Ganancia de la estación base. (dB)
+\item $G_m$: Ganancia de la estación móvil. (dB)
+\item $h_b$: Altura de la estación base. (m)
+\item $h_m$: Altura de la estación móvil. (m)
+\item $d$: Distancia. (m)
+\item $\beta$: Factor de corrección expresado por:
+\begin{equation}
+\parentesis{\frac{40}{f}}^2
+\end{equation}
+La frecuencia $f$ debe estar en MHz.
+\end{itemize}
+\subsection{Walfisch-Bertoni}
+Este modelo tiene en cuenta varios factores importantes, como la altura de las antenas de la estación base y el receptor móvil, el perfil del terreno, la densidad de edificios y la frecuencia de operación. Está diseñado para frecuencias de microondas, típicamente en el rango de 800 MHz a 2000 MHz. \\
+El modelo de Walfisch-Bertoni utiliza una combinación de cálculos geométricos y empíricos para estimar la pérdida de trayecto. Toma en consideración nLOS, la difracción sobre edificios, la reflexión en el suelo y las ondas múltiples generadas por la interacción de las señales con los obstáculos presentes en el entorno. Una característica destacada del modelo Walfisch-Bertoni es que tiene en cuenta la interacción de la señal con múltiples obstáculos cercanos, lo que lo hace especialmente adecuado para entornos urbanos densos. También tiene en cuenta los efectos de difracción y reflexión sobre los edificios\footnote{Se consideran edificios de una altura y anchura uniforme} (se modelan como un conjunto de pantallas de difracción y absorción) y el suelo. Es importante que la antena transmisora este por encima del techo más alto.
+\begin{equation}
+L_{msd}=89.55+21\log(f)+38\log(d)-18\log(H)+A-18\log\parentesis{1-\frac{d^2}{17H}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L_{msd}$ Pérdida por trayectoria. (dB)
+\item $d$: Distancia entre el transmisor y el receptor. (Km)
+\item $H$: Altura promedio de la antena con respecto de la altura de los edificios. (m)
+\item $A$: Variable que expresa la influencia de los edificios en la señal. Esta definida por:
+\begin{equation}
+A=5\log\corchetes{\parentesis{\frac{b}{2}^2+\parentesis{h_b-h_r}^2}}-9\log b+20\log\llaves{\tan^{-1}\corchetes{\frac{2(h_b-h_r)}{b}}}
+\end{equation}
+\item $h_b$: Altura del edificio. (m)
+\item $h_r$: Altura del receptor. (m)
+\item $b$: Espacio entre edificios. (m)
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{SDR/sdr19.png}
+\caption{Modelo de rayod de Walfisch.}
+\end{figure}
+\subsection{Modelo Ikegami}
+Modelo empírico basado en la teoría geométrica de rayos (GDT). Este modelo solo toman en cuenta las dos contribuciones del primero rayo difractado y el segundo rayo. Supone una estructura ideal de la ciudad:
+\begin{itemize}
+\item Alturas uniformes de edificios.
+\item Bloques rectangulares.
+\item El tejado de los edificios tiene visibilidad directa con la antena transmisora.
+\item Se desprecia la posible reflexión en el suelo.
+\end{itemize}
+Aprovecha el hecho que los rayo que tienen una sola difracción y reflexión son mucho más importantes que los que tienen múltiple difracciones y reflexiones (sucede cuando la altura de la antena transmisora es grande).
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{SDR/sdr12.png}
+\caption{Modelo de Ikegami.}
+\end{figure}
+\begin{equation}
+L_b=26.65+30\log(f)+20\log(d)-10\log\parentesis{1+\frac{3}{n_r^2}}-10\log(W)+20\log(H-h_r)+10\log(\sin\phi)
+\end{equation}
+Donde:
+\begin{itemize}
+\item $d$: Distancia entre $T_x$ y $R_x$ (Km)
+\item $n_r$: Coeficiente de flexión en las fachadas de los edificios. (aproximadamente 3.20)
+\item $f$: Frecuencia. (MHz)
+\item $H$: Altura del edificio donde la onda se difracta. (m)
+\item $h_r$: Altura del receptor. (m)
+\item $W$: Distancia entre la cual se encuentra $T_x$. (m)
+\item $\phi$: Ángulo de difracción visto desde arriba. (Séxagesimal)
+\end{itemize}
+\subsection{Modelo cost 231}
+El modelo COST 231 es un modelo semi-empírico de predicción de las pérdidas en un trayecto, resultado de la combinación de los modelos Walfisch-Bertoni e Ikegami. Es recomendado para macro-células en escenarios urbanos y suburbanos, con buenos resultados de las pérdidas en el trayecto para antenas transmisoras situadas por encima de la altura media de los tejados. Sin embargo, el error en las predicciones aumenta considerablemente a medida que la altura del transmisor se acerca a la altura de los tejados, llegando a tener un rendimiento muy pobre para transmisores situados por debajo de ese nivel. El modelo realiza un cálculo más detallado de la atenuación, basándose en cuatro parámetros adicionales:
+\begin{enumerate}
+\item Altura de los edificios.
+\item Ancho de las calles.
+\item Separación entre edificios.
+\item Orientación de la calle respecto a la dirección de propagación.
+\end{enumerate}
+Las restricciones son:
+\begin{enumerate}
+\item f = 800 – 2000 MHz
+\item $h_b$ = 4 – 50 m (altura de transmisor)
+\item $h_m$ = 1 – 3 m (altura de receptor)
+\item d = 0.02 – 50 km (distancia entre transmisor y receptor)
+\item $\delta h_B$ > 0 m (altura relativa del transmisor respecto a los edificios)
+\end{enumerate}
+Para escenarios LOS, la pérdida de propagación considera únicamente la pérdida en espacio libre, $L_b$ = $L_{0(LOS)}$:
+\begin{equation}
+L_{0(LOS)}=42.6+26\log(d)+20\log(f)
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L_{0(LOS)}$: Pérdida por espacio libre con línea de vista. (dB)
+\item $d$: Distancia entre transmisor y receptor. (Km)
+\item $f$: Frecuencia. (MHz)
+\end{itemize}
+\begin{figure}[H]
+\centering
+\subfloat[Escenario típico de propagación NLOS usado en el modelo COST 231. Vista perfil.]{\includegraphics[width=0.9\linewidth]{SDR/sdr20.png}}\\
+\subfloat[Escenario típico de propagación NLOS usado en el modelo COST 231. Vista superior.]{\includegraphics[width=0.5\linewidth]{SDR/sdr21.png}}
+\end{figure}
+Los parámetros definidos en el modelo COST 231 son los siguientes:
+\begin{itemize}
+\item $h_r$: Altura media de los edificios (m)
+\item $w$: Anchura de la calle (m)
+\item $b$: Separación media entre edificios (m)
+\item $\phi$: Ángulo formado por la dirección de propagación y el eje la calle (grados)
+\item $h_b$: Altura de la antena de la estación base (m)
+\item $h_m$: Altura de la antena del dispositivo móvil (m)
+\item $\delta h_m$ = $h_r – h_m$ (m)
+\item $\delta h_b = h_b – h_r$ (m)
+\item $l$: Distancia total entre el primer y el último edificio del trayecto (m)
+\item $d$: Distancia entre estación base y dispositivo móvil (km)
+\item $f$: Frecuencia (MHz)
+\end{itemize}
+\begin{equation}
+L_{cost} =L_{0(LOS)}+ \left\lbrace
+\begin{array}{ll}
+L_{rts}+L_{msd}&, \textup{si }L_{rts}+L_{msd} > 0\\
+0 & , \textup{si }L_{rts}+L_{msd} < 0
+\end{array}
+\right.
+\end{equation}
+Donde:
+\begin{itemize}
+\item $L_{0(LOS)}$: La pérdida de propagación en condiciones de espacio libre. (dB)
+\item $L_{rts}$: Pérdidas del modelo de Ikegami (\textit{Roof to Street}). (dB)
+\item $L_{msd}$: Pérdidas del modelo de Walfisch (\textit{multiple screen diffraction}). (dB)
+\end{itemize}
+\subsection{Modelo Longley-rice}
+Predice la posibilidad de propagación a larga-media distancia sobre terreno irregular. Fue diseñada para frecuencias entre \textbf{20 MHz-20 GHz} y longitudes de trayecto entre \textbf{1-2000 Km}. El modelo Longley-Rice tiene en cuenta varios factores importantes para calcular la propagación de la señal en entornos terrestres irregulares. Estos factores incluyen:
+\begin{itemize}
+\item \textbf{Altura media del terreno (ondulación)}: Se refiere a la variación promedio de la altura del terreno a lo largo de la trayectoria de propagación. Este factor tiene en cuenta la presencia de colinas, montañas, valles u otros obstáculos que pueden afectar la propagación de la señal.
 
+\item \textbf{Refracción de la troposfera}: Este factor tiene en cuenta los efectos de refracción atmosférica en la propagación de la señal. Toma en consideración la variación de la densidad del aire y la temperatura en la troposfera para calcular la refractividad atmosférica.
 
+\item \textbf{Perfiles del terreno}: El modelo utiliza perfiles detallados del terreno a lo largo de la trayectoria de propagación. Estos perfiles se generan a partir de datos topográficos y se utilizan para determinar la atenuación y el tiempo de propagación de la señal.
+
+\item \textbf{Conductividad y permisividad del suelo}: Estos parámetros se refieren a la conductividad eléctrica y la permisividad dieléctrica del suelo en el área de propagación. Son considerados debido a que influyen en la atenuación y dispersión de la señal a medida que atraviesa el suelo.
+
+\item \textbf{Clima}: Aunque el modelo Longley-Rice no tiene en cuenta directamente los efectos climáticos, se pueden utilizar datos meteorológicos locales para ajustar los parámetros del modelo, como la refractividad de la troposfera, y tener en cuenta las condiciones climáticas específicas en el cálculo de la propagación de la señal.
+
+\item \textbf{Polarización de la antena}: El modelo considera la polarización de la antena para calcular la atenuación debido a la polarización cruzada. Esto es importante cuando las antenas de transmisión y recepción tienen polarizaciones diferentes.
+
+\item \textbf{Refractividad}: La refractividad se refiere a la variación de la densidad del aire y la temperatura en la troposfera, determina la cantidad de "bending" o curvatura que sufrirán las ondas de radio. Este factor influye en la propagación de la señal, especialmente en entornos con cambios bruscos de temperatura o altitud.
+\end{itemize}
+El valor comúnmente utilizado para este factor de curvatura efectiva de la Tierra es de 4/3 (1.333), que es una aproximación para el índice de refracción promedio de la atmósfera (corresponde a una refractividad de superficie de valor aproximado a 301 unidades de n). Este valor se basa en la suposición de que la refractividad atmosférica sigue un gradiente constante y que la variación de la refractividad con respecto a la altitud es insignificante en comparación con la curvatura de la Tierra.\\
+Al incorporar la curvatura efectiva de la Tierra en los cálculos de propagación de señales, se tiene en cuenta la desviación de la señal respecto a una propagación en línea recta. Esto es especialmente útil en situaciones donde no se dispone de información detallada sobre perfiles de refractividad o condiciones atmosféricas locales.\\
+A diferencia de la aproximación simplificada de la curvatura efectiva de 4/3, el modelo Longley-Rice utiliza perfiles atmosféricos reales y datos de refractividad específicos para cada ubicación geográfica.\\
+En el modelo Longley-Rice, se emplean mediciones de perfiles atmosféricos, como perfiles de temperatura, humedad y presión, para calcular la refractividad en diferentes altitudes. Estos datos se utilizan junto con modelos de propagación para determinar la pérdida de trayectoria y otros parámetros de propagación de señales. Longley-Rice se pueden usar valores promedios k=4/3, este valor es estándar y experimental.
+El factor \textit{k} multiplicado por el radio terrestre da el radio ficticio de la tierra, la relación entre \textit{k} y \textit{n} viene dada por:
+\begin{equation}
+N_S=179.3\ln\corchetes{\frac{1}{0.046665}\parentesis{1-\frac{1}{K}}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $N_S$: Número de onda espacial.
+\item $k$: Factor de forma de la trayectoria de propagación
+\end{itemize}
+\subsection{Modelo de Friis}\label{sec:modelo friis}
+El modelo de propagación en espacio libre se utiliza para predecir el nivel de potencia recibido en cierta ubicación, cuando \textbf{existe obligatoriamente} línea-vista (line-of-sight, LOS) entre el transmisor ($T_x$) y receptor ($R_x$). Por ejemplo, este modelo es utilizado en el diseño de los enlaces satelitales. Este modelo predice que la potencia disminuye en función de la separación $d$ entre el $T_x$ y $R_x$, de acuerdo a la ecuación de Friis:
+\begin{equation}
+P_r(d)=\frac{P_tG_tG_r}{L}\parentesis{\frac{\lambda}{4\pi d}}^2
+\label{eq:Friis}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $P_r$: Potencia recibida en el receptor. (W)
+\item $P_t$: Potencia transmitida por la antena. (W)
+\item $G_t$: Ganancia de la antena transmisora. (adimensional)
+\item $G_r$: Ganancia de la antena receptora. (adimensional)
+\item $\lambda$: Longitud de onda de la señal transmitida. (m)
+\item $d$: Distancia entre las antenas. (m)
+\item $L$: Pérdidas del sistema no relacionadas a la propagación ($L\geq 1$).
+\end{itemize}
+Las pérdidas de trayecto (\textit{path loss}) representan la atenuación de la señal como una magnitud positiva, expresada en dB, y están definidas como la diferencia entre la potencia transmitida y recibida de acuerdo a la ecuación:
+\begin{equation}
+L{FSL}=A_0=-20\log\parentesis{\frac{\lambda}{4\pi d}}
+\label{eq:pathloss friis}
+\end{equation}
+\begin{itemize}
+\item $L_{FSL}$: Pérdidas por espacio libre. (dB)
+\item $\lambda$: Longitud de onda de la señal transmitida (m).
+\item $d$: Distancia entre las antenas transmisora y receptora. (m).
+\end{itemize}
+\begin{notation}
+Vale la pena destacar el hecho que las ecuaciones \ref{eq:Friis} y \ref{eq:pathloss friis} sólo son válidas en la región de campo lejano (o región de Fraunhofer), es decir, para aquellas distancias que superen
+\begin{displaymath}
+d_f=\frac{2D^2}{\lambda},d_f>>\lambda
+\end{displaymath}
+donde $D$ es la mayot dimensión lineal de la antena de transmisión (se refiere al tamaño físico de la antena en su dimensión más larga.).
+\end{notation}
+\subsection{Modelo de difracción por objetos delgados}
+\begin{itemize}
+\item \textbf{Primer caso}: Donde el obstáculo está por encima de la línea de vista o rayo directo, lo cual nos da parámetros positivos, es decir, despejamiento $h > 0$ y ángulo de difracción $q > 0$, y el coeficiente Fresnel-Kirchoff \textit{u} sea del mismo signo del despeje por lo que es positivo y mayor a 0, haciendo que las pérdidas generadas por difracción sean superiores a 6dB.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Sdr/sdr22.png}
+\caption{Obstáculo agudo superior.}
+\end{figure}
+\item \textbf{Segundo caso}: El segundo caso, se indica cuando el obstáculo esta justo a la altura del rayo directo, con lo cual se obtiene una $h=0$ y un $q = 0$, además de $v =0$, obteniendo una pérdidas de 6dB.
+
+\item \textbf{Tercer caso}: Donde el obstáculo está por debajo de la línea de vista o rayo directo, lo cual nos dá parámetros negativos, es decir despejamiento $h < 0$ y ángulo de difracción $q < 0$, y el coeficiente fresnel-kirchhoff $v < 0$ , tomando en cuenta que si $v < -0,7$ , las pérdidas se reducen a 0dB.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Sdr/sdr23.png}
+\caption{Obstáculo agudo inferior.}
+\end{figure}
+\end{itemize}
+La diferencia de caminos se expresa con la diferencia de fase entre la señal emitida y recibida:
+\begin{equation}
+\Delta\simeq\frac{h^2}{d}\parentesis{\frac{d_1+d_2}{d_1\cdot d_2}}
+\end{equation}
+La diferencia de fase se expresa como:
+\begin{equation}
+\phi=\frac{2\pi \Delta}{\lambda}=\frac{2\pi h^2}{\lambda\cdot d}\parentesis{\frac{d_1+d_2}{d_1\cdot d_2}}
+\end{equation}
+con $v$ el parámetro de difracción de Fresnel-Kirchhoff:
+\begin{equation}
+v=h\sqrt{\frac{2(d_1+d_2)}{\lambda\cdot d_1\cdot d_2}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $v$ es la frecuencia de la señal de portadora (m).
+\item $h$ es la altura efectiva de la antena (m).
+\item $d_1$ es la distancia desde la antena transmisora hasta el punto de reflexión (m).
+\item $d_2$ es la distancia desde el punto de reflexión hasta la antena receptora (m).
+\item $\lambda$ es la longitud de onda de la señal (m).
+\end{itemize}
+Perdidas en función de:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Sdr/sdr25.png}
+\caption{Curva de pérdida en función de $v$.}
+\end{figure}
+Una aproximación lineal de esta curva:
+\begin{equation}
+L(v) = \left\lbrace
+\begin{array}{ll}
+-20\log(0.5-0.62v) & \textup{si } -0.8<v<0\\
+-20\log(0.5\cdot e^{-0.95v}) & \textup{si } 0<v<1\\
+-20\log\parentesis{0.4-\sqrt{0.1184-\parentesis{0.38-0.1v}^2}} & \textup{si } 1<v<2.4\\
+-20\log\parentesis{\frac{0.225}{v}} & \textup{si } v>2.4\
+\end{array}
+\right.
+\end{equation}
+\subsection{Modelo de dos rayos}
+El modelo de Dos Rayos de reflexión terrestre es un modelo muy útil que se basa en óptica geométrica, y considera tanto la transmisión directa como una componente de propagación reflejada en la tierra entre el transmisor y el receptor. Se puede considerar que este modelo de gran escala es uno de los más adecuados para predecir la potencia de la señal en distancias de varios kilómetros tomando en cuenta que la antena del sistema celular debe tener una altura mínima de 50 metros.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Sdr/sdr26.png}
+\caption{Modelo de dos rayos.}
+\end{figure}
+El segmento de separación entre transmisor y receptor puede considerarse plano, ya que en la mayoría de los sistemas celulares la distancia real entre el transmisor y receptor es de unas cuantas decenas de kilómetros.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Sdr/sdr27.png}
+\caption{Modelo de dos rayos reflejado.}
+\end{figure}
+La potencia recibida a una distancia $d$ que proviene del transmisor puede ser expresada como:
+\begin{equation}
+P_r=\frac{P_t\cdot G_t\cdot G_r\cdot h_t^2\cdot h_r^2}{d^4}
+\label{eq:pot recib trans 2 lineas}
+\end{equation}
+\begin{itemize}
+\item $P_r$: Potencia recibida en la antena receptora (W).
+\item $P_t$: Potencia transmitida por la antena transmisora (W).
+\item $G_t$: Ganancia de la antena transmisora (adimensional).
+\item $G_r$: Ganancia de la antena receptora (adimensional).
+\item $h_t$: Altura efectiva de la antena transmisora (m).
+\item $h_r$: Altura efectiva de la antena receptora (m).
+\item $d$: Distancia entre la antena transmisora y la antena receptora (m).
+\end{itemize}
+La ecuación \ref{eq:pot recib trans 2 lineas} expresada en decibeles:
+\begin{equation}
+P_L (dB)=40\log (d)-(10\log G_t+10\log G_r+20\log h_t+20\log h_r)
+\end{equation}
+\chapter{Enlaces digitales}
+\section{Cálculo de enlaces digitales}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Sdr/sdr28.png}
+\caption{Bandas satelitales.}
+\end{figure}
+El transmisor amplifica la señal para ser radiada por la antena, en el canal se tendrá un declive de la potencia y el receptor debe amplificarla sin introducir ruido. Las variables que limitan un enlace digital, son la potencia y el ruido, descrito por el teorema de la capacidad de canal de Shannon-Hartley, que es la máxima tasa de información que podemos transmitir en determinado ancho de banda:
+\begin{definition}[Relación señal a ruido-SNR]
+Es la relación en decibelios entre la potencia de la señal (S) y la potencia del ruido (N), ambos en Watts:
+\begin{equation}
+\label{eq:snr}
+SNR(dB)=10\log_{10}\left(\frac{S}{N}\right)
+\end{equation}
+\end{definition}
+\begin{definition}[SNR y tasa de datos máxima]
+El principal resultado de Shannon es que la \textbf{tasa de datos máxima} (o capacidad) de un canal \textbf{ruidoso}, cuyo ancho de banda es \textit{B} Hz y cuya relación señal a ruido es S/N (SNR), está dada por:
+\begin{equation}
+R\leq C=B\log_2(1+S/R)
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{R}: Tasa de transmisión. (bits/s)
+\item \textbf{C}: Capacidad de canal. (bits/s)
+\item \textbf{B}: Ancho de banda. (Hz)
+\item $S/R$: Relación señal a ruido o SNR. (dB)
+\end{itemize}
+\end{definition}
+La desigualdad de Shannon es un resultado fundamental en la teoría de la información, propuesto por Claude Shannon en 1948. Esta desigualdad establece un límite teórico máximo para la tasa de transmisión de información a través de un canal de comunicación, teniendo en cuenta la relación señal-ruido.\\
+En el contexto de la comunicación inalámbrica, la desigualdad de Shannon se aplica para determinar la capacidad máxima de un canal, es decir, la máxima cantidad de información que se puede transmitir de manera confiable a través de dicho canal. Esta capacidad se mide en términos de bits por segundo por hertzio (bps/Hz), que indica la tasa de transmisión de bits por cada unidad de ancho de banda.\\
+La desigualdad de Shannon establece que la capacidad máxima de un canal está determinada por la relación señal-ruido (SNR) del sistema. A medida que la SNR aumenta, la capacidad del canal también aumenta. Sin embargo, existe un límite superior definido por la capacidad del canal, más allá del cual no se puede transmitir más información de manera confiable.\\
+En términos prácticos, esto significa que para aumentar la tasa de transmisión de información, se tienen dos opciones. Primero, se puede aumentar la potencia de transmisión, lo que mejora la relación señal-ruido y permite transmitir más información por unidad de ancho de banda. Segundo, se puede reducir el ruido en el sistema, por ejemplo, disminuyendo la temperatura del sistema o utilizando técnicas de codificación y modulación más eficientes.\\
+Para comunicaciones digitales se tiene:
+\begin{equation}
+\frac{E_b}{N_0}=\frac{S}{N}\cdot\frac{W}{R}
+\end{equation}
+\begin{equation}
+\frac{E_b}{N_0}=\frac{2^{\frac{R}{W}}-1}{\frac{R}{W}}=\frac{SNR}{\frac{R}{W}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $E_b=S\cdot\parentesis{\frac{1}{R}}$: Energía por bit. (J)
+\item $N_0=\frac{N}{W}$:Densidad espectral de la potencia del ruido. (W/Hz)
+\item $R/W$: Eficiencia espectral. (bps/Hz)
+\item $S$: Potencia de la señal. (W)
+\item $N$: Potencia del ruido. (W)
+\item \textbf{SNR}: Relación señal a ruido\footnote{Ten en cuenta que estamos usando SNR en unidades lineales y no en dB.}. (Adimensional)
+\end{itemize}
+\subsection{Relación señal portadora a ruido}
+La relación portadora a ruido (C/N, por sus siglas en inglés) es otra medida importante en los enlaces de comunicaciones, especialmente en sistemas de comunicaciones por satélite. La relación C/N indica la relación entre la potencia de la portadora de la señal transmitida y la densidad espectral de potencia del ruido presente en el canal de comunicación.
+\begin{definition}[Señal portadora a ruido]
+La relación C/N se utiliza para evaluar la calidad y el rendimiento de la señal recibida en relación con el nivel de ruido presente en el canal:
+\begin{equation}
+\frac{C}{N}=10\log\parentesis{\frac{P_{pr}}{P_n}}=10\log\parentesis{\frac{P_{pr}}{N_0\cdot B}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item C/N: Relación señal portadora a ruido. (dB)
+\item $P_{pr}$: Potencia de la portadora recibida. (W)
+\item $P_n$: Potencia del ruido. (W)
+\item $N_0$: Densidad espectral de potencia del ruido en el canal. (W/Hz)
+\item $B$: Ancho de banda. (Hz)
+\end{itemize}
+\end{definition}
+\textbf{¿Cuál es la diferencia?}
+\begin{itemize}
+\item \textbf{S/N (relación señal a ruido)}: Se refiere a la relación entre la potencia de la señal útil (señal transmitida) y la potencia del ruido en un sistema de comunicaciones. Representa la relación entre la señal de interés y el nivel de ruido presente en el sistema. Esta relación puede expresarse tanto en unidades lineales como en decibelios. Por lo general, se utiliza para describir la calidad de la señal recibida en un enlace de comunicación.
+\item \textbf{C/N (relación portadora a ruido)}: Se refiere a la relación entre la potencia de la señal portadora y la densidad de potencia del ruido en el canal de comunicación. La relación C/N se utiliza específicamente en sistemas de comunicaciones que emplean modulación por desplazamiento de frecuencia (FSK) y modulación por desplazamiento de fase (PSK). Esta relación se expresa en decibelios y está relacionada con el rendimiento del sistema de comunicaciones en términos de la calidad y confiabilidad de la transmisión de la señal.
+\end{itemize}
+Es necesario tener en cuenta lo visto en la sección \ref{sec:modelo friis}.
+\subsection{Atenuación por lluvia}
+\begin{equation}
+\gamma_r = a \cdot R^b \cdot f^c=k\cdot R^\alpha
+\end{equation}
+
+Donde:
+\begin{itemize}
+\item $\gamma_r$: Es la atenuación específica por lluvia. (dB/km).
+\item $R$: Tasa de lluvia. (mm/h)
+\item $f$: Frecuencia de operación. (GHz)
+\item $a$: Coeficiente que depende del tipo de lluvia y frecuencia.
+\item $b$: Exponente que depende del tipo de lluvia.
+\item $c$: Exponente que depende de la frecuencia.
+\item $k$: Coeficiente que depende del tipo de lluvia y la frecuencia de operación.
+\item $\alpha$: Exponente que también depende del tipo de lluvia.
+\end{itemize}
+Es importante tener en cuenta que los valores de $a$, $b$, y $c$ varían dependiendo del tipo de lluvia y la frecuencia de operación.\\
+Para $k$ y $\alpha$, los valores puedes ser obtenidos de \textit{ITU-R P.838-3}, esta forma de ecuación es una simplificación donde se asume una relación lineal entre la tasa de lluvia y la atenuación por lluvia. Sin embargo, es importante tener en cuenta que esta forma simplificada puede no ser suficientemente precisa para todos los casos, ya que no tiene en cuenta otros factores como la frecuencia de operación y las características específicas del tipo de lluvia.\\
+Para obtener valores más precisos de la atenuación por lluvia, se recomienda utilizar las ecuaciones y coeficientes proporcionados en las recomendaciones técnicas de la ITU-R, como mencioné anteriormente (por ejemplo, las Recomendaciones ITU-R P.837 y P.838). Estas recomendaciones tienen en cuenta una gama más amplia de factores y consideraciones para calcular la atenuación por lluvia de manera más precisa en diferentes escenarios de enlaces de comunicación.\\
+Es necesario considerar que esta ecuación modela la atenuación específica por lluvia en dB/km. Para calcular la atenuación total por lluvia ($L_r$) en un enlace de comunicación, se debe multiplicar la atenuación específica por la distancia en kilómetros (L) entre los puntos de transmisión y recepción.
+\begin{equation}
+L_r=\gamma_r\cdot L
+\end{equation}
+\subsection{Retardo y latencia}
+El tiempo que tarda en llegar una señal de la estación transmisora a la receptora o viceversa, se le conoce como retardo. Las ondas viajan a la velocidad de la luz, $c=3\basedec{8} m/s$, por lo que el retardo se calcula como:
+\begin{equation}
+t_l=\frac{d}{c}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $t_l$: Tiempo de latencia. (s)
+\item $d$: Distancia. (m)
+\item $c$: Velocidad de la luz. (m/s)
+\end{itemize}
+\begin{remark}
+Es importante tener en cuenta que esta ecuación proporciona la latencia teórica mínima, asumiendo que la señal viaja a la velocidad de la luz en el vacío. En la práctica, la latencia real puede ser mayor debido a varios factores, como el enrutamiento de la señal a través de cables, dispositivos de red y otros elementos que pueden agregar cierto retraso adicional.
+\end{remark}
+\subsection{Relación $C/N_0$}
+En las comunicaciones por satélite, la relación portadora/densidad de ruido (C/N0) es la relación entre la potencia de la portadora \textit{C} y la densidad de potencia del ruido $N_0$, expresada en dB-Hz. Cuando se considera solo al receptor como fuente de ruido, se denomina relación de densidad de ruido portadora-receptor.\\
+Determina si un receptor puede engancharse a la portadora y si la información codificada en la señal puede recuperarse, dada la cantidad de ruido presente en la señal recibida. La relación de densidad de ruido portadora-receptor se suele expresar en dB-Hz.\\
+La densidad de potencia de ruido, $N_0=kT$, es la potencia de ruido del receptor por hercio, que se puede escribir en términos de la constante de Boltzmann k (en julios por kelvin) y la temperatura de ruido T (en kelvin).
+\begin{equation}
+\frac{E_b}{N_0}=\frac{P\cdot G_t\cdot G_r}{L_{lt}\cdot L_{FSL}\cdot L_a\cdot K\cdot T_{sn}\cdot R}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $E_b/N_0$: Relación de energía recibida por bit a densidad de ruido $N_0$.
+\item $P$: Potencia de transmisión. (W)
+\item $L_{lt}$: Pérdidas por líneas de transmisión del transmisor.
+\item $G_t$: Ganancia de la antena transmisora.
+\item $L_{LSF}$ Pérdida por espacio libre o $A_0$.
+\item $L_a$: Pérdidas de trayecto.
+\item $G_r$: Ganancia de la antena receptora.
+\item $k$: Constante de Boltzmann, $1.380\basedec{-23}$. (J/K)
+\item $T_{sn}$: Temperatura de ruido del sistema. (K)
+\item $R$: Tasa de datos. (bps)
+\end{itemize}
+En decibeles:
+\begin{equation}
+\frac{E_b}{N_0}=P+G_t+G_r-L_{lt}-L_{fsl}-L_a+228.6-10\log T_{sn}-10\log R
+\end{equation}
+La relación portadora a densidad de ruido en dBHz:
+\begin{equation}
+\frac{C}{N_0}=\frac{E_b}{N_0}+10\log R
+\end{equation}
+Y la relación portadora a ruido en dB:
+\begin{align}
+\frac{C}{m}&=\frac{C}{N_0}-10\log B
+\frac{C}{m}&=\frac{E_b}{N_0}+10\log R-10\log W
+\end{align}
+Donde $B$ es el ancho de banda del ruido en el receptor (Hz).\\
+Se definen dos parametros importantes:
+\subsubsection{PIRE}
+PIRE (Potencia Isotrópica Radiada Equivalente, por sus siglas en inglés) se refiere a la potencia radiada en todas las direcciones por una antena. Representa la potencia total que una antena transmite o recibe.\\
+La PIRE se mide en watts y se calcula teniendo en cuenta la potencia transmitida por el transmisor y la ganancia de la antena. La fórmula básica para calcular la PIRE es la siguiente:
+\begin{equation}
+PIRE=P_T-L_{lt}+G_t
+\end{equation}
+Donde:
+\begin{itemize}
+\item $PIRE$: Potencia isotrópica radiada equivalente. (dBm)
+\item $P_T$: Potencia del transmisor. (dBm)
+\item $L_{lt}$: Pérdidas por líneas de transmisión. (dB)
+\item $G_t$: Ganancia de la antena transmisora. (dbi)
+\end{itemize}
+o
+\begin{equation}
+PIRE=P_A\times G_A
+\end{equation}
+Donde:
+\begin{itemize}
+\item $P_A$: Potencia entregada a la antena. (W)
+\item $G_A$: Ganancia lineal de la antena.
+\end{itemize}
+\subsection{Figura de mérito}
+Es la sensibilidad de la estación receptora, donde $G_r$ y $T_s$ están calculados en el mismo punto es:
+\begin{equation}
+\frac{G_r}{T_s}=G_r-10\log T_{sn}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $G_r/T_s$: Figura de mérito. (dB/K)
+\item $G_r$: Ganancia de la antena receptora.
+\item $T_{sn}$: Temperatura de ruido del sistema. (K)
+\end{itemize}
+Tener en cuenta la ecuación \ref{eq:eq:ruido termico}
+Entonces a partir de la ecuación de Shannon, la ecuación de la relación
+portadora a densidad de ruido para un canal de comunicaciones, tomando en cuenta el PIRE de la estación transmisora, la figura de mérito y las pérdidas es:
+\begin{equation}
+\parentesis{\frac{C}{N_0}}=PIRE\cdot\parentesis{\frac{1}{L_{FSL}\cdot L_a}}\cdot \frac{G_r}{T_s}\cdot k
+\label{eq:rela porta densi ruido}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $C/N_0$: Representa la relación portadora-densidad de ruido ($C/N_0$), que es la relación entre la potencia de la portadora de la señal y la densidad espectral de potencia del ruido en el canal de transmisión.
+\item PIRE: Es el Potencia Isotrópica Radiada Equivalente, que es la potencia total radiada por la antena en todas las direcciones. (W)
+\item $L_{FSL} y L_a$ Son términos que representan pérdidas, donde 
+$L_{FSL}$ es la pérdida de espacio libre y $L_a$ es la pérdida adicional causada por factores ambientales o interferencia.
+\item $G_r$: Es la ganancia de recepción del sistema, que representa la capacidad de la antena receptora para captar señales.
+\item $T_s$: Es la duración de un símbolo, que es el tiempo requerido para transmitir un bit.
+\item $k$: Es una constante que representa la relación entre la información útil transmitida y la información redundante, generalmente utilizado para codificación de corrección de errores.
+\end{itemize}
+La ecuación \ref{eq:rela porta densi ruido} expresada en dBHz:
+\begin{equation}
+\frac{C}{N_0}=PIRE-L_{FSL}-L_a+\frac{G_r}{T_s}+228.6
+\end{equation}
+\section{Enlace}
+\subsection{Primer enlace}
+La señal de información debe pasar por los procesos de digitalización,
+codificación (compresión y cifrado), modulación (FSK, PSK o QAM) y
+amplificación de potencia de RF. Cuando es radiada por el medio tiene pérdidas
+en la amplitud y se añade ruido, por lo tanto, la sensibilidad del receptor del
+primer enlace debe ser capaz de recibir la señal.
+Los parámetros que intervienen en el primer enlace son el PIRE de la estación
+transmisora origen, las pérdidas de propagación, y la figura de mérito de la
+antena receptora del primer enlace:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.9\linewidth]{Sdr/sdr29.png}
+\caption{Primer enlace}
+\end{figure}
+Se describe el proceso del enlace directo como:
+\begin{enumerate}
+\item Se genera una señal de alta potencia y se radia hacia el receptor.
+\item La señal es atenuada durante el trayecto y se introduce ruido de distintas fuentes.
+\item El receptor tiene una sensibilidad para recibir señales pequeñas, sin embargo, el nivel de la señal contiene ruido agregado, contrarrestando la calidad de la señal.
+\end{enumerate}
+Numéricamente se obtiene linealmente:
+\begin{equation}
+\frac{C}{N_0}_1=P_t\cdot G_A\cdot\frac{1}{L_p1}\cdot\frac{G}{T}_{1}\cdot\frac{1}{K}
+\label{eq:1}
+\end{equation}
+$L_p$: Pérdidas por propagación.\\
+Expresando la ecuación \ref{eq:1} en decibelios:
+\begin{equation}
+\frac{C}{N_0}_1=PIRE_1-L_{p1}+\frac{G}{T}_1-10\log k
+\label{eq:2}
+\end{equation}
+La ecuación \ref{eq:2} indica que la Relación portadora densidad de ruido es igual a PIRE del primer enlace en dBHz, menos las pérdidas por propagación en dB más la figura de mérito del primer receptor en dB (\textit{G} es la ganancia de la antena receptora del primer receptor, \textit{T} es la temperatura del ruido y \textit{k} la constante de Boltzamann)\\
+Las perdidas por propagación ($L_p$) considera todas las perdidas que suceden en el enlace, sin embargo las más importantes son: pérdida por lluvia y espacio libre:
+\begin{equation}
+L_p=L_{FSL}+L_{polarización}+L_{desacople}+\cdots
+\end{equation}
+Fenómenos meteorológicos, como la lluvia, no son eventos constantes, entonces conviene usar un margen, para que cuando ocurran estos, no afecte de forma irremediable el enlace. Por esto, se añade un parámetro, ma, que esel margen para el primer enlace:
+\begin{equation}
+\frac{C}{N_0}=F_s-20\log f+\frac{G}{T}_rx1-20.1-m_a [dBHz]
+\end{equation}
+Esta expresión implica sólo introducir la frecuencia ($f$) del primer enlace y el dato de densidad de flujo de saturación ($F_s$), la figura de mérito ($G/T$).
+\subsection{Intermodulación}
+Una vez que la señal es recibida por primer receptor, esta debe ser amplificada, en algunos casos la señal es procesada y cambiar de portadora. En esta etapa se introduce ruido térmico y ruido de los dispositivos no lineales. A este último ruido se le conoce como ruido de intermodulación, debido al uso de múltiples portadoras moduladas, $f_1$ y $f_2$, y sus respectivas componentes armónicas en la frecuencia o términos de alto grado, que están alrededor de la portadora.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Sdr/sdr30.png}
+\caption{Intermodulación}
+\end{figure}
+Las armónicas en intermodulación se refieren a los componentes de frecuencia no deseados que se generan en un sistema de comunicación debido a la interacción no lineal de las señales transmitidas. La intermodulación ocurre cuando dos o más señales de frecuencias diferentes se combinan en un dispositivo no lineal, como un amplificador o mezclador, y generan componentes adicionales en frecuencias que no estaban presentes originalmente.\\
+Cuando se producen armónicas en intermodulación, los productos resultantes se encuentran en múltiplos enteros de las frecuencias de las señales originales, lo que puede causar interferencias y distorsiones no deseadas en el sistema de comunicación. Las armónicas de la portadora en $f_2$ son ruido para la portadora en $f_1$ y viceversa. Mientras más \textbf{grande} sea el orden de las armónicas, menor es su \textbf{amplitud}. Con más \textbf{portadoras} en la repetidora existe \textbf{más ruido} de intermodulación.
+El valor de la relación portadora a ruido en la etapa de salida de una repetidora se define como:
+\begin{equation}
+\frac{C}{N}=\frac{p_s}{n_i}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $p_s$: Potencia del transmisor de la repetidora.
+\item $n_i$: Ruido de intermodulación generado por la repetidora.
+\end{itemize}
+\begin{remark}
+Es importante tener en cuenta que la potencia de la señal y la potencia del ruido deben estar en las mismas unidades para que la ecuación sea coherente y se obtenga un resultado significativo. Además, la relación C/N puede expresarse en unidades lineales (W) o en forma logarítmica, como decibelios (dB).
+\end{remark}
+\begin{notation}
+El uso de anchos de banda estrechos ayuda a evitar problemas de intermodulación debido a que reduce la posibilidad de que múltiples señales se superpongan y generen componentes de intermodulación no deseados. La intermodulación ocurre cuando dos o más señales de frecuencias diferentes se mezclan en un dispositivo no lineal, generando componentes adicionales en frecuencias que no estaban presentes originalmente. Estos componentes adicionales pueden causar interferencias y distorsiones indeseadas en el sistema de comunicación. Cuando se utiliza un ancho de banda estrecho, las señales transmitidas se limitan a un rango de frecuencias más pequeño. Esto significa que hay menos posibilidades de que las señales se superpongan y generen intermodulación. Al reducir la cantidad de señales presentes en el sistema y limitar su rango de frecuencias, se minimiza la probabilidad de que se produzcan productos de intermodulación. Además, al utilizar anchos de banda estrechos, se puede implementar un filtrado adecuado para eliminar las frecuencias no deseadas o los componentes de intermodulación generados. Esto ayuda a mantener una mayor calidad de la señal y a reducir las interferencias en el sistema de comunicación.
+\end{notation}
+\subsection{Back-off}
+Es la introducción de un parámetro que implica una atenuación de la señal en el nivel de punto de operación del amplificador en la entrada del sistema ($BO_e$), y una disminución de la señal de salida en el caso de ($BO_s$).\\
+El objetivo de incluir este parámetro en los cálculos es reducir el efecto del ruido de intermodulación en el enlace de comunicación. El ruido de intermodulación se genera cuando dos o más señales de frecuencias diferentes se mezclan en un dispositivo no lineal, produciendo componentes adicionales en frecuencias que no estaban presentes originalmente. Este ruido puede degradar la calidad de la señal y afectar el rendimiento del sistema.\\
+Al introducir el parámetro de back-off, se busca asegurar que el punto de operación de los amplificadores se encuentre en la zona lineal de su característica de transferencia. En la zona lineal, los amplificadores proporcionan una amplificación de la señal sin distorsiones significativas y con un menor impacto del ruido. Al atenuar la señal en la entrada o disminuir la señal de salida, se controla el nivel de la señal amplificada para mantenerla dentro de la zona lineal de los amplificadores.\\
+Esto ayuda a reducir el efecto del ruido de intermodulación en el enlace de comunicación, ya que se evita la saturación o distorsión no lineal de los amplificadores. Al mantener los amplificadores en su zona lineal de funcionamiento, se mejora la calidad de la señal transmitida y se disminuye la interferencia causada por el ruido de intermodulación.
+\subsection{Segundo enlace}
+La señal después de ser convertida a una portadora con frecuencia diferente de la portadora del primer enlace, es transmitida a la estación receptora final, la cual puede variar en dimensiones con respecto a la transmisora origen, además, las condiciones del clima y geográficas serán distintas. Se puede utilizar amplificadores de bajo ruido.
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{Sdr/sdr31.png}
+\caption{Segundo enlace.}
+\end{figure}
+La ecuación general del segundo enlace es similar a la del primero enlace en dBHz:
+\begin{equation}
+\frac{C}{N_0}_2=PIRE_2-L_{p2}+\frac{G}{T}_2-10\log k
+\label{eq:3}
+\end{equation}
+La ecuación \ref{eq:3} puede ser mejorada para que el sistema funciones en las peores condiciones climaticas ($m_2$) y tomando el valor $BO_S$ de la salida de la repetidora:
+\begin{equation}
+\frac{C}{N_0}_2=PIRE_2-L_{p2}+\frac{G}{T}_2-10\log k-BO_S-m_2
+\end{equation}
+\subsection{Presupuesto del enlace total}
+Ya se han descrito las principales etapas del enlace, primer enlace y segundo enlace y el efecto de la intermodulación en la repetidora. Para tener un parámetro que tiene implícita información de todo el trayecto de la señal se tiene la relación portadora a densidad de ruido total. Significa que tan grande es la potencia de la señal de información con respecto a la densidad de ruido. Se calcula de la siguiente forma:
+\begin{equation}
+\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{antilog\parentesis{\frac{C}{N_0}}_1}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_i}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_2}}^{-1} dBHz
+\label{eq:portadora ruido total}
+\end{equation}
+Esta es una forma aceptada debido a que se hacen estimaciones en los márgenes respecto a cada enlace, sin embargo, estrictamente se deben tomar en cuenta más relaciones e interferencias de diferente índole como se puede apreciar en la siguiente ecuación:
+\begin{equation}
+\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{antilog\parentesis{\frac{C}{N_0}}_1}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_intermodulación}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_2}+\frac{1}{antilog\parentesis{\frac{C}{X}}_interferencias}}^{-1} dBHz
+\end{equation}
+\subsection{Disponibilidad}
+La disponibilidad se refiere a la relación entre el tiempo en el que el sistema se encuentra funcionando correctamente y el tiempo total en un intervalo determinado. En un sistema de comunicación pueden presentarse diferentes interferencias, como la interferencia entre estaciones terrenas o la interferencia entre una repetidora y una estación terrena. Además, la intermodulación puede ocurrir en las estaciones terrenas finales, lo que genera componentes no deseados en el espectro de frecuencia. En algunos casos, se menciona que es posible modificar el patrón de radiación de las antenas o controlar la potencia del transmisor a través de telemetría. Estas acciones permiten ajustar y optimizar la transmisión de señales en el sistema de comunicación, adaptándolo a las condiciones específicas y garantizando un mejor desempeño.
+\begin{equation}
+\frac{C}{N_0}_{requerido}=\frac{E_b}{N_0}+10\log R+MI
+\end{equation}
+Donde:
+\begin{itemize}
+  \item $\frac{C}{N_0}_{requerido}$: Relación portadora a ruido requerida. (dBHz)
+  \item $\frac{E_b}{N_0}$: Relación energía por bit a densidad de ruido. (dB)
+  \item $R$: Tasa de transmisión de datos. (bps)
+  \item $MI$: Mejora de interferencia. (dB)
+\end{itemize}
 \part{Ingeniería de sonido y vídeo}
 \chapterimage{chapter_head_IS.pdf} % Chapter heading image
 \chapter{Sonido}

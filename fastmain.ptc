@@ -6,14 +6,15 @@
 \ttl@stoptoc {part@2}
 \ttl@starttoc {part@3}
 \contentsline {part}{\numberline {III}Dispositivos de fibra óptica}{3}{part.3}%
-\contentsline {section}{\numberline {0.1}Transductor Acústico}{4}{section.0.1}%
-\contentsline {subsection}{\numberline {0.1.1}Micrófono}{4}{subsection.0.1.1}%
-\contentsline {subsubsection}{\numberline {0.1.1.1}Impedancia}{8}{subsubsection.0.1.1.1}%
-\contentsline {subsubsection}{\numberline {0.1.1.2}Clasificación de los Micrófonos según su Transductor}{9}{subsubsection.0.1.1.2}%
-\contentsline {subsection}{\numberline {0.1.2}Parlante}{11}{subsection.0.1.2}%
-\contentsline {subsubsection}{\numberline {0.1.2.1}Caja acústica o bafles}{12}{subsubsection.0.1.2.1}%
-\contentsline {subsubsection}{\numberline {0.1.2.2}Impedancia}{13}{subsubsection.0.1.2.2}%
-\contentsline {subsubsection}{\numberline {0.1.2.3}Potencia}{14}{subsubsection.0.1.2.3}%
-\contentsline {subsubsection}{\numberline {0.1.2.4}Partes de una caja acústica}{14}{subsubsection.0.1.2.4}%
-\contentsline {subsubsection}{\numberline {0.1.2.5}Tipos de cajas acústicas}{17}{subsubsection.0.1.2.5}%
+\contentsline {chapter}{\numberline {1}Transmisores ópticos}{4}{chapter.1}%
+\contentsline {section}{\numberline {1.1}LED}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Tipos de estructuras de los diodos LED}{8}{subsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}LEDs de superficie-SLED}{8}{subsubsection.1.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.2}Diodo led de borde-ELED}{9}{subsubsection.1.1.1.2}%
+\contentsline {section}{\numberline {1.2}Láser}{11}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Láser guiado por ganancia}{12}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Láser Monomodo}{14}{subsection.1.2.2}%
+\contentsline {subsubsection}{\numberline {1.2.2.1}Láser DFB y DBR}{15}{subsubsection.1.2.2.1}%
+\contentsline {subsection}{\numberline {1.2.3}VCSEL}{17}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Diagrama de ojo}{18}{subsection.1.2.4}%
 \contentsfinish 
