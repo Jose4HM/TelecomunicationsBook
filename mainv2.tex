@@ -5421,13 +5421,13 @@ Se describe el proceso del enlace directo como:
 \end{enumerate}
 Numéricamente se obtiene linealmente:
 \begin{equation}
-\frac{C}{N_0}_1=P_t\cdot G_A\cdot\frac{1}{L_p1}\cdot\frac{G}{T}_{1}\cdot\frac{1}{K}
+\parentesis{\frac{C}{N_0}}_1=P_t\cdot G_A\cdot\frac{1}{L_p1}\cdot\frac{G}{T}_{1}\cdot\frac{1}{K}
 \label{eq:1}
 \end{equation}
 $L_p$: Pérdidas por propagación.\\
 Expresando la ecuación \ref{eq:1} en decibelios:
 \begin{equation}
-\frac{C}{N_0}_1=PIRE_1-L_{p1}+\frac{G}{T}_1-10\log k
+\parentesis{\frac{C}{N_0}}_1=PIRE_1-L_{p1}+\frac{G}{T}_1-10\log k
 \label{eq:2}
 \end{equation}
 La ecuación \ref{eq:2} indica que la Relación portadora densidad de ruido es igual a PIRE del primer enlace en dBHz, menos las pérdidas por propagación en dB más la figura de mérito del primer receptor en dB (\textit{G} es la ganancia de la antena receptora del primer receptor, \textit{T} es la temperatura del ruido y \textit{k} la constante de Boltzamann)\\
@@ -5493,7 +5493,7 @@ Ya se han descrito las principales etapas del enlace, primer enlace y segundo en
 \end{equation}
 Esta es una forma aceptada debido a que se hacen estimaciones en los márgenes respecto a cada enlace, sin embargo, estrictamente se deben tomar en cuenta más relaciones e interferencias de diferente índole como se puede apreciar en la siguiente ecuación:
 \begin{equation}
-\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{antilog\parentesis{\frac{C}{N_0}}_1}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_intermodulación}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_2}+\frac{1}{antilog\parentesis{\frac{C}{X}}_interferencias}}^{-1} dBHz
+\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{antilog\parentesis{\frac{C}{N_0}}_1}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_{intermod}}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_2}+\frac{1}{antilog\parentesis{\frac{C}{X}}_{intf}}}^{-1} dBHz
 \end{equation}
 \subsection{Disponibilidad}
 La disponibilidad se refiere a la relación entre el tiempo en el que el sistema se encuentra funcionando correctamente y el tiempo total en un intervalo determinado. En un sistema de comunicación pueden presentarse diferentes interferencias, como la interferencia entre estaciones terrenas o la interferencia entre una repetidora y una estación terrena. Además, la intermodulación puede ocurrir en las estaciones terrenas finales, lo que genera componentes no deseados en el espectro de frecuencia. En algunos casos, se menciona que es posible modificar el patrón de radiación de las antenas o controlar la potencia del transmisor a través de telemetría. Estas acciones permiten ajustar y optimizar la transmisión de señales en el sistema de comunicación, adaptándolo a las condiciones específicas y garantizando un mejor desempeño.

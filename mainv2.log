@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  2 JUL 2023 21:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  3 JUL 2023 23:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6447,12 +6447,7 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
 [236]
-
-LaTeX Warning: Command \' invalid in math mode on input line 5496.
-
-Missing character: There is no ó in font zptmcm7t!
-
-Overfull \hbox (142.87816pt too wide) detected at line 5497
+Overfull \hbox (44.30305pt too wide) detected at line 5497
  $[][] \OT1/ztmcm/m/n/12 = 10 [] [][] \OML/ztmcm/m/it/12 dBHz$  
  []
 
@@ -7114,7 +7109,7 @@ Package logreq Info: Writing requests to 'mainv2.run.xml'.
 Here is how much of TeX's memory you used:
  60798 strings out of 476337
  1327846 string characters out of 5793542
- 2251875 words of memory out of 5000000
+ 2250875 words of memory out of 5000000
  77487 multiletter control sequences out of 15000+600000
  726524 words of font info for 824 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -7143,7 +7138,7 @@ b><D:/Archivos de programas/Miktex/fonts/type1/public/urw-base35/utmb8a.pfb><D:
 /Archivos de programas/Miktex/fonts/type1/public/urw-base35/utmbi8a.pfb><D:/Arc
 hivos de programas/Miktex/fonts/type1/public/urw-base35/utmr8a.pfb><D:/Archivos
  de programas/Miktex/fonts/type1/public/urw-base35/utmri8a.pfb>
-Output written on mainv2.pdf (283 pages, 38834659 bytes).
+Output written on mainv2.pdf (283 pages, 38834720 bytes).
 PDF statistics:
  4621 PDF objects out of 5155 (max. 8388607)
  1505 named destinations out of 1728 (max. 500000)
