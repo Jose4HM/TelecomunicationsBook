@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  4 JUL 2023 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.2.2)  6 JUL 2023 21:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2375,6 +2375,151 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 [21 <./Images//Dfo/dfo26.png> <./Images//Dfo/dfo27.png> <./Images//Dfo/dfo28.pn
 g>]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 400.
+
+
+LaTeX Warning: Reference `eq:espacio libre los' on page 22 undefined on input l
+ine 439.
+
+
+LaTeX Warning: Reference `eq:densidad portadora ruido dBHz' on page 22 undefine
+d on input line 444.
+
+
+LaTeX Warning: Reference `eq:pire' on page 22 undefined on input line 445.
+
+
+LaTeX Warning: Reference `eq:perdidas total por prop' on page 22 undefined on i
+nput line 449.
+
+
+LaTeX Warning: Reference `eq:temp total sistema' on page 22 undefined on input 
+line 453.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 455.
+
+Missing character: There is no ° in font zptmcm7t!
+Missing character: There is no ° in font zptmcm7t!
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Reference `eq:figura merito' on page 22 undefined on input line 
+457.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 459.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 459.
+
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Reference `densidad portadora ruido dBHz' on page 22 undefined o
+n input line 461.
+
+
+LaTeX Warning: Reference `eq:temp total sistema' on page 22 undefined on input 
+line 489.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 491.
+
+Missing character: There is no ° in font zptmcm7t!
+Missing character: There is no ° in font zptmcm7t!
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Reference `eq:figura merito' on page 22 undefined on input line 
+493.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 495.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 495.
+
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Reference `eq:figura merito' on page 22 undefined on input line 
+497.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 499.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 499.
+
+Missing character: There is no ° in font zptmcm7t!
+
+LaTeX Warning: Reference `eq:portadora ruido total' on page 22 undefined on inp
+ut line 505.
+
+
+LaTeX Warning: Reference `eq:ebno y tasa de datos' on page 22 undefined on inpu
+t line 514.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[22]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 523.
+
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[23]
+
+Package fancyhdr Warning: \headheight is too small (14.22636pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
+
+[24]
 \tf@ptc=\write6
 \openout6 = `fastmain.ptc'.
 
@@ -2387,35 +2532,39 @@ Package fancyhdr Warning: \headheight is too small (14.22636pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-0.27362pt}.
 
-[22] (fastmain.aux)
+[25] (fastmain.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'fastmain.run.xml'.
 \openout1 = `fastmain.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55080 strings out of 476337
- 1223893 string characters out of 5793542
- 2197456 words of memory out of 5000000
- 74011 multiletter control sequences out of 15000+600000
- 635959 words of font info for 438 fonts, out of 8000000 for 9000
+ 55119 strings out of 476337
+ 1224384 string characters out of 5793542
+ 2233456 words of memory out of 5000000
+ 74026 multiletter control sequences out of 15000+600000
+ 642642 words of font info for 455 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,12n,108p,1549b,1133s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {D:/Archivos de programas/Miktex/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{D
 :/Archivos de programas/Miktex/fonts/enc/dvips/base/8r.enc}<D:/Archivos de prog
-ramas/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Archivos de programa
-s/Miktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Archivos de programas/Mik
-tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de programas/Miktex/
-fonts/type1/public/amsfonts/symbols/msam10.pfb><D:/Archivos de programas/Miktex
-/fonts/type1/public/cm-super/sfrm1200.pfb><D:/Archivos de programas/Miktex/font
-s/type1/public/urw-base35/uagd8a.pfb><D:/Archivos de programas/Miktex/fonts/typ
-e1/public/urw-base35/uagk8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/pu
-blic/urw-base35/usyr.pfb><D:/Archivos de programas/Miktex/fonts/type1/public/ur
-w-base35/utmb8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/public/urw-bas
-e35/utmr8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/public/urw-base35/u
-tmri8a.pfb>
-Output written on fastmain.pdf (22 pages, 2932682 bytes).
+ramas/Miktex/fonts/type1/public/amsfonts/cm/cmex10.pfb><D:/Archivos de programa
+s/Miktex/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Archivos de programas/Mi
+ktex/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Archivos de programas/Miktex/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Archivos de programas/Miktex/font
+s/type1/public/amsfonts/symbols/msam10.pfb><D:/Archivos de programas/Miktex/fon
+ts/type1/public/cm-super/sfrm1200.pfb><D:/Archivos de programas/Miktex/fonts/ty
+pe1/public/urw-base35/uagd8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/p
+ublic/urw-base35/uagk8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/public
+/urw-base35/usyr.pfb><D:/Archivos de programas/Miktex/fonts/type1/public/urw-ba
+se35/utmb8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/public/urw-base35/
+utmr8a.pfb><D:/Archivos de programas/Miktex/fonts/type1/public/urw-base35/utmri
+8a.pfb>
+Output written on fastmain.pdf (25 pages, 2956464 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 97 named destinations out of 1000 (max. 500000)
- 137414 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 362 PDF objects out of 1000 (max. 8388607)
+ 101 named destinations out of 1000 (max. 500000)
+ 141510 words of extra memory for PDF output out of 154059 (max. 10000000)
 

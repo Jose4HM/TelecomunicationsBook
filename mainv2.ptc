@@ -219,72 +219,73 @@
 \contentsline {subsection}{\numberline {14.1.1}Relación señal portadora a ruido}{229}{subsection.14.1.1}%
 \contentsline {subsection}{\numberline {14.1.2}Atenuación por lluvia}{230}{subsection.14.1.2}%
 \contentsline {subsection}{\numberline {14.1.3}Retardo y latencia}{231}{subsection.14.1.3}%
-\contentsline {subsection}{\numberline {14.1.4}Relación $C/N_0$}{231}{subsection.14.1.4}%
-\contentsline {subsubsection}{\numberline {14.1.4.1}PIRE}{232}{subsubsection.14.1.4.1}%
-\contentsline {subsection}{\numberline {14.1.5}Figura de mérito}{233}{subsection.14.1.5}%
+\contentsline {subsection}{\numberline {14.1.4}Temperatura}{231}{subsection.14.1.4}%
+\contentsline {subsection}{\numberline {14.1.5}Relación $C/N_0$}{231}{subsection.14.1.5}%
+\contentsline {subsubsection}{\numberline {14.1.5.1}PIRE}{232}{subsubsection.14.1.5.1}%
+\contentsline {subsection}{\numberline {14.1.6}Figura de mérito}{233}{subsection.14.1.6}%
 \contentsline {section}{\numberline {14.2}Enlace}{233}{section.14.2}%
 \contentsline {subsection}{\numberline {14.2.1}Primer enlace}{233}{subsection.14.2.1}%
-\contentsline {subsection}{\numberline {14.2.2}Intermodulación}{234}{subsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.2.2}Intermodulación}{235}{subsection.14.2.2}%
 \contentsline {subsection}{\numberline {14.2.3}Back-off}{236}{subsection.14.2.3}%
 \contentsline {subsection}{\numberline {14.2.4}Segundo enlace}{236}{subsection.14.2.4}%
 \contentsline {subsection}{\numberline {14.2.5}Presupuesto del enlace total}{237}{subsection.14.2.5}%
-\contentsline {subsection}{\numberline {14.2.6}Disponibilidad}{237}{subsection.14.2.6}%
+\contentsline {subsection}{\numberline {14.2.6}Disponibilidad}{238}{subsection.14.2.6}%
 \ttl@stoptoc {part@7}
 \ttl@starttoc {part@8}
-\contentsline {part}{\numberline {VIII}Ingeniería de sonido y vídeo}{239}{part.8}%
-\contentsline {chapter}{\numberline {15}Sonido}{240}{chapter.15}%
-\contentsline {section}{\numberline {15.1}Acústica}{240}{section.15.1}%
-\contentsline {subsubsection}{\numberline {15.1.0.1}Clasificaciones del sonido}{242}{subsubsection.15.1.0.1}%
-\contentsline {subsection}{\numberline {15.1.1}Características del sonido}{243}{subsection.15.1.1}%
-\contentsline {section}{\numberline {15.2}Partes del sonido}{243}{section.15.2}%
-\contentsline {subsection}{\numberline {15.2.1}Frecuencia y sonido}{243}{subsection.15.2.1}%
-\contentsline {subsection}{\numberline {15.2.2}Amplitud}{244}{subsection.15.2.2}%
-\contentsline {subsection}{\numberline {15.2.3}Dinámica}{245}{subsection.15.2.3}%
-\contentsline {subsection}{\numberline {15.2.4}Ancho de banda}{246}{subsection.15.2.4}%
-\contentsline {subsection}{\numberline {15.2.5}Ruido}{247}{subsection.15.2.5}%
-\contentsline {subsection}{\numberline {15.2.6}Nivel sonoro}{247}{subsection.15.2.6}%
-\contentsline {subsection}{\numberline {15.2.7}Sonómetros}{248}{subsection.15.2.7}%
-\contentsline {subsection}{\numberline {15.2.8}Potencia acústica}{248}{subsection.15.2.8}%
-\contentsline {subsection}{\numberline {15.2.9}Tiempo de reverberación}{249}{subsection.15.2.9}%
-\contentsline {subsection}{\numberline {15.2.10}Coeficiente de absorción}{249}{subsection.15.2.10}%
-\contentsline {subsection}{\numberline {15.2.11}Tiempo de reverberación}{250}{subsection.15.2.11}%
-\contentsline {subsection}{\numberline {15.2.12}Resonancia}{250}{subsection.15.2.12}%
-\contentsline {subsection}{\numberline {15.2.13}Tono}{250}{subsection.15.2.13}%
-\contentsline {subsection}{\numberline {15.2.14}Timbre}{251}{subsection.15.2.14}%
-\contentsline {subsection}{\numberline {15.2.15}Efecto Doppler}{252}{subsection.15.2.15}%
-\contentsline {subsection}{\numberline {15.2.16}Octava, media octava y tercio octava}{253}{subsection.15.2.16}%
-\contentsline {section}{\numberline {15.3}Oído Humano}{254}{section.15.3}%
-\contentsline {subsection}{\numberline {15.3.1}Procedimiento de audición}{255}{subsection.15.3.1}%
-\contentsline {subsection}{\numberline {15.3.2}Enfermedades Comunes del Oído}{256}{subsection.15.3.2}%
-\contentsline {subsubsection}{\numberline {15.3.2.1}Oído Externo}{256}{subsubsection.15.3.2.1}%
-\contentsline {subsubsection}{\numberline {15.3.2.2}Oído Medio}{256}{subsubsection.15.3.2.2}%
-\contentsline {subsubsection}{\numberline {15.3.2.3}Oído Interno}{256}{subsubsection.15.3.2.3}%
-\contentsline {subsection}{\numberline {15.3.3}Filtro 3 vías}{256}{subsection.15.3.3}%
-\contentsline {section}{\numberline {15.4}Transductor Acústico}{258}{section.15.4}%
-\contentsline {subsection}{\numberline {15.4.1}Micrófono}{258}{subsection.15.4.1}%
-\contentsline {subsubsection}{\numberline {15.4.1.1}Impedancia}{263}{subsubsection.15.4.1.1}%
-\contentsline {subsubsection}{\numberline {15.4.1.2}Clasificación de los Micrófonos según su Transductor}{264}{subsubsection.15.4.1.2}%
-\contentsline {subsection}{\numberline {15.4.2}Parlante}{266}{subsection.15.4.2}%
-\contentsline {subsubsection}{\numberline {15.4.2.1}Caja acústica o bafles}{267}{subsubsection.15.4.2.1}%
-\contentsline {subsubsection}{\numberline {15.4.2.2}Impedancia}{268}{subsubsection.15.4.2.2}%
-\contentsline {subsubsection}{\numberline {15.4.2.3}Potencia}{269}{subsubsection.15.4.2.3}%
-\contentsline {subsubsection}{\numberline {15.4.2.4}Partes de una caja acústica}{269}{subsubsection.15.4.2.4}%
-\contentsline {subsubsection}{\numberline {15.4.2.5}Tipos de cajas acústicas}{272}{subsubsection.15.4.2.5}%
+\contentsline {part}{\numberline {VIII}Ingeniería de sonido y vídeo}{242}{part.8}%
+\contentsline {chapter}{\numberline {15}Sonido}{243}{chapter.15}%
+\contentsline {section}{\numberline {15.1}Acústica}{243}{section.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.0.1}Clasificaciones del sonido}{245}{subsubsection.15.1.0.1}%
+\contentsline {subsection}{\numberline {15.1.1}Características del sonido}{246}{subsection.15.1.1}%
+\contentsline {section}{\numberline {15.2}Partes del sonido}{246}{section.15.2}%
+\contentsline {subsection}{\numberline {15.2.1}Frecuencia y sonido}{246}{subsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.2.2}Amplitud}{247}{subsection.15.2.2}%
+\contentsline {subsection}{\numberline {15.2.3}Dinámica}{248}{subsection.15.2.3}%
+\contentsline {subsection}{\numberline {15.2.4}Ancho de banda}{249}{subsection.15.2.4}%
+\contentsline {subsection}{\numberline {15.2.5}Ruido}{250}{subsection.15.2.5}%
+\contentsline {subsection}{\numberline {15.2.6}Nivel sonoro}{250}{subsection.15.2.6}%
+\contentsline {subsection}{\numberline {15.2.7}Sonómetros}{251}{subsection.15.2.7}%
+\contentsline {subsection}{\numberline {15.2.8}Potencia acústica}{251}{subsection.15.2.8}%
+\contentsline {subsection}{\numberline {15.2.9}Tiempo de reverberación}{252}{subsection.15.2.9}%
+\contentsline {subsection}{\numberline {15.2.10}Coeficiente de absorción}{252}{subsection.15.2.10}%
+\contentsline {subsection}{\numberline {15.2.11}Tiempo de reverberación}{253}{subsection.15.2.11}%
+\contentsline {subsection}{\numberline {15.2.12}Resonancia}{253}{subsection.15.2.12}%
+\contentsline {subsection}{\numberline {15.2.13}Tono}{253}{subsection.15.2.13}%
+\contentsline {subsection}{\numberline {15.2.14}Timbre}{254}{subsection.15.2.14}%
+\contentsline {subsection}{\numberline {15.2.15}Efecto Doppler}{255}{subsection.15.2.15}%
+\contentsline {subsection}{\numberline {15.2.16}Octava, media octava y tercio octava}{256}{subsection.15.2.16}%
+\contentsline {section}{\numberline {15.3}Oído Humano}{257}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}Procedimiento de audición}{258}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}Enfermedades Comunes del Oído}{259}{subsection.15.3.2}%
+\contentsline {subsubsection}{\numberline {15.3.2.1}Oído Externo}{259}{subsubsection.15.3.2.1}%
+\contentsline {subsubsection}{\numberline {15.3.2.2}Oído Medio}{259}{subsubsection.15.3.2.2}%
+\contentsline {subsubsection}{\numberline {15.3.2.3}Oído Interno}{259}{subsubsection.15.3.2.3}%
+\contentsline {subsection}{\numberline {15.3.3}Filtro 3 vías}{259}{subsection.15.3.3}%
+\contentsline {section}{\numberline {15.4}Transductor Acústico}{261}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}Micrófono}{261}{subsection.15.4.1}%
+\contentsline {subsubsection}{\numberline {15.4.1.1}Impedancia}{266}{subsubsection.15.4.1.1}%
+\contentsline {subsubsection}{\numberline {15.4.1.2}Clasificación de los Micrófonos según su Transductor}{267}{subsubsection.15.4.1.2}%
+\contentsline {subsection}{\numberline {15.4.2}Parlante}{269}{subsection.15.4.2}%
+\contentsline {subsubsection}{\numberline {15.4.2.1}Caja acústica o bafles}{270}{subsubsection.15.4.2.1}%
+\contentsline {subsubsection}{\numberline {15.4.2.2}Impedancia}{271}{subsubsection.15.4.2.2}%
+\contentsline {subsubsection}{\numberline {15.4.2.3}Potencia}{272}{subsubsection.15.4.2.3}%
+\contentsline {subsubsection}{\numberline {15.4.2.4}Partes de una caja acústica}{272}{subsubsection.15.4.2.4}%
+\contentsline {subsubsection}{\numberline {15.4.2.5}Tipos de cajas acústicas}{275}{subsubsection.15.4.2.5}%
 \ttl@stoptoc {part@8}
 \ttl@starttoc {part@9}
-\contentsline {part}{\numberline {IX}Anexos}{277}{part.9}%
-\contentsline {section}{\numberline {15.5}Constantes universales}{278}{section.15.5}%
-\contentsline {section}{\numberline {15.6}Voltajes}{278}{section.15.6}%
-\contentsline {section}{\numberline {15.7}Identidades trigonométricas}{278}{section.15.7}%
-\contentsline {subsection}{\numberline {15.7.1}Básicas-Suma/Resta}{278}{subsection.15.7.1}%
-\contentsline {subsection}{\numberline {15.7.2}Ángulo doble y medio}{279}{subsection.15.7.2}%
-\contentsline {subsection}{\numberline {15.7.3}Par, impar}{280}{subsection.15.7.3}%
-\contentsline {subsection}{\numberline {15.7.4}Suma a producto; producto a suma}{280}{subsection.15.7.4}%
-\contentsline {subsection}{\numberline {15.7.5}Suplemento, complemento}{280}{subsection.15.7.5}%
-\contentsline {subsection}{\numberline {15.7.6}Seno/coseno complejo}{280}{subsection.15.7.6}%
+\contentsline {part}{\numberline {IX}Anexos}{280}{part.9}%
+\contentsline {section}{\numberline {15.5}Constantes universales}{281}{section.15.5}%
+\contentsline {section}{\numberline {15.6}Voltajes}{281}{section.15.6}%
+\contentsline {section}{\numberline {15.7}Identidades trigonométricas}{281}{section.15.7}%
+\contentsline {subsection}{\numberline {15.7.1}Básicas-Suma/Resta}{281}{subsection.15.7.1}%
+\contentsline {subsection}{\numberline {15.7.2}Ángulo doble y medio}{282}{subsection.15.7.2}%
+\contentsline {subsection}{\numberline {15.7.3}Par, impar}{283}{subsection.15.7.3}%
+\contentsline {subsection}{\numberline {15.7.4}Suma a producto; producto a suma}{283}{subsection.15.7.4}%
+\contentsline {subsection}{\numberline {15.7.5}Suplemento, complemento}{283}{subsection.15.7.5}%
+\contentsline {subsection}{\numberline {15.7.6}Seno/coseno complejo}{283}{subsection.15.7.6}%
 \ttl@stoptoc {part@9}
-\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{282}{chapter*.213}%
-\contentsline {section}{Articles}{282}{chapter*.213}%
-\contentsline {section}{Books}{282}{chapter*.213}%
-\contentsline {chapter}{\textcolor {ocre}{Index}}{283}{section*.214}%
+\contentsline {chapter}{\textcolor {ocre}{Bibliography}}{285}{chapter*.213}%
+\contentsline {section}{Articles}{285}{chapter*.213}%
+\contentsline {section}{Books}{285}{chapter*.213}%
+\contentsline {chapter}{\textcolor {ocre}{Index}}{286}{section*.214}%
 \contentsfinish 

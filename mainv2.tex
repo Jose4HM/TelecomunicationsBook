@@ -5013,13 +5013,15 @@ Las restricciones son:
 \end{enumerate}
 Para escenarios LOS, la pérdida de propagación considera únicamente la pérdida en espacio libre, $L_b$ = $L_{0(LOS)}$:
 \begin{equation}
-L_{0(LOS)}=42.6+26\log(d)+20\log(f)
+L_{0(LOS)}=c+20\log(d)+20\log(f)
+\label{eq:espacio libre los}
 \end{equation}
 Donde:
 \begin{itemize}
 \item $L_{0(LOS)}$: Pérdida por espacio libre con línea de vista. (dB)
 \item $d$: Distancia entre transmisor y receptor. (Km)
 \item $f$: Frecuencia. (MHz)
+\item $c$: Constante de unidades, si la frecuencia se coloca en MHz, $c=32.44$; si se coloca en GHz, $c=92.44$.
 \end{itemize}
 \begin{figure}[H]
 \centering
@@ -5309,6 +5311,18 @@ Donde:
 \begin{remark}
 Es importante tener en cuenta que esta ecuación proporciona la latencia teórica mínima, asumiendo que la señal viaja a la velocidad de la luz en el vacío. En la práctica, la latencia real puede ser mayor debido a varios factores, como el enrutamiento de la señal a través de cables, dispositivos de red y otros elementos que pueden agregar cierto retraso adicional.
 \end{remark}
+\subsection{Temperatura}
+\begin{equation}
+T_{sn}=T_{ant}+T_m\parentesis{\textcolor{red}{10^{\frac{N}{10}}}-1}
+\label{eq:temp total sistema}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $T_{sn}$: Temperatura total. (K°)
+\item $T_{ant}$: Temperatura de la antena. (K°)
+\item $T_m$: Temperatura media del trayecto. (K°)
+\item $N$: Figura de ruido. (dB)\footnote{Se hará esta \textcolor{red}{conversión} solo si se tiene la figura de ruido en dB, pero si se tiene la figura en unidades adimensionales, no es necesario.}
+\end{itemize}
 \subsection{Relación $C/N_0$}
 En las comunicaciones por satélite, la relación portadora/densidad de ruido (C/N0) es la relación entre la potencia de la portadora \textit{C} y la densidad de potencia del ruido $N_0$, expresada en dB-Hz. Cuando se considera solo al receptor como fuente de ruido, se denomina relación de densidad de ruido portadora-receptor.\\
 Determina si un receptor puede engancharse a la portadora y si la información codificada en la señal puede recuperarse, dada la cantidad de ruido presente en la señal recibida. La relación de densidad de ruido portadora-receptor se suele expresar en dB-Hz.\\
@@ -5336,6 +5350,7 @@ En decibeles:
 La relación portadora a densidad de ruido en dBHz:
 \begin{equation}
 \frac{C}{N_0}=\frac{E_b}{N_0}+10\log R
+\label{eq:ebno y tasa de datos}
 \end{equation}
 Y la relación portadora a ruido en dB:
 \begin{align}
@@ -5370,6 +5385,7 @@ Donde:
 Es la sensibilidad de la estación receptora, donde $G_r$ y $T_s$ están calculados en el mismo punto es:
 \begin{equation}
 \frac{G_r}{T_s}=G_r-10\log T_{sn}
+\label{eq:figura merito}
 \end{equation}
 Donde:
 \begin{itemize}
@@ -5377,7 +5393,7 @@ Donde:
 \item $G_r$: Ganancia de la antena receptora.
 \item $T_{sn}$: Temperatura de ruido del sistema. (K)
 \end{itemize}
-Tener en cuenta la ecuación \ref{eq:eq:ruido termico}
+Tener en cuenta la ecuación \ref{eq:ruido termico}
 Entonces a partir de la ecuación de Shannon, la ecuación de la relación
 portadora a densidad de ruido para un canal de comunicaciones, tomando en cuenta el PIRE de la estación transmisora, la figura de mérito y las pérdidas es:
 \begin{equation}
@@ -5388,15 +5404,16 @@ Donde:
 \begin{itemize}
 \item $C/N_0$: Representa la relación portadora-densidad de ruido ($C/N_0$), que es la relación entre la potencia de la portadora de la señal y la densidad espectral de potencia del ruido en el canal de transmisión.
 \item PIRE: Es el Potencia Isotrópica Radiada Equivalente, que es la potencia total radiada por la antena en todas las direcciones. (W)
-\item $L_{FSL} y L_a$ Son términos que representan pérdidas, donde 
+\item $L_{FSL}$ y $L_a$ Son términos que representan pérdidas, donde 
 $L_{FSL}$ es la pérdida de espacio libre y $L_a$ es la pérdida adicional causada por factores ambientales o interferencia.
 \item $G_r$: Es la ganancia de recepción del sistema, que representa la capacidad de la antena receptora para captar señales.
 \item $T_s$: Es la duración de un símbolo, que es el tiempo requerido para transmitir un bit.
-\item $k$: Es una constante que representa la relación entre la información útil transmitida y la información redundante, generalmente utilizado para codificación de corrección de errores.
+\item $k$: Constante de Boltzmanm ($1.38\times\basedec{-23} J/°K$). (J/°K)
 \end{itemize}
 La ecuación \ref{eq:rela porta densi ruido} expresada en dBHz:
 \begin{equation}
 \frac{C}{N_0}=PIRE-L_{FSL}-L_a+\frac{G_r}{T_s}+228.6
+\label{eq:densidad portadora ruido dBHz}
 \end{equation}
 \section{Enlace}
 \subsection{Primer enlace}
@@ -5431,9 +5448,10 @@ Expresando la ecuación \ref{eq:1} en decibelios:
 \label{eq:2}
 \end{equation}
 La ecuación \ref{eq:2} indica que la Relación portadora densidad de ruido es igual a PIRE del primer enlace en dBHz, menos las pérdidas por propagación en dB más la figura de mérito del primer receptor en dB (\textit{G} es la ganancia de la antena receptora del primer receptor, \textit{T} es la temperatura del ruido y \textit{k} la constante de Boltzamann)\\
-Las perdidas por propagación ($L_p$) considera todas las perdidas que suceden en el enlace, sin embargo las más importantes son: pérdida por lluvia y espacio libre:
+Las pérdidas por propagación ($L_p$) considera todas las perdidas que suceden en el enlace, sin embargo las más importantes son: pérdida por lluvia y espacio libre:
 \begin{equation}
 L_p=L_{FSL}+L_{polarización}+L_{desacople}+\cdots
+\label{eq:perdidas total por prop}
 \end{equation}
 Fenómenos meteorológicos, como la lluvia, no son eventos constantes, entonces conviene usar un margen, para que cuando ocurran estos, no afecte de forma irremediable el enlace. Por esto, se añade un parámetro, ma, que esel margen para el primer enlace:
 \begin{equation}
@@ -5488,12 +5506,12 @@ La ecuación \ref{eq:3} puede ser mejorada para que el sistema funciones en las 
 \subsection{Presupuesto del enlace total}
 Ya se han descrito las principales etapas del enlace, primer enlace y segundo enlace y el efecto de la intermodulación en la repetidora. Para tener un parámetro que tiene implícita información de todo el trayecto de la señal se tiene la relación portadora a densidad de ruido total. Significa que tan grande es la potencia de la señal de información con respecto a la densidad de ruido. Se calcula de la siguiente forma:
 \begin{equation}
-\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{antilog\parentesis{\frac{C}{N_0}}_1}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_i}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_2}}^{-1} dBHz
+\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{10^{\frac{\parentesis{\frac{C}{N_0}}_1}{10}}}+\frac{1}{10^{\frac{\parentesis{\frac{C}{N_0}}_i}{10}}}+\frac{1}{10^{\frac{\parentesis{\frac{C}{N_0}}_2}{10}}}}^{-1} dBHz
 \label{eq:portadora ruido total}
 \end{equation}
 Esta es una forma aceptada debido a que se hacen estimaciones en los márgenes respecto a cada enlace, sin embargo, estrictamente se deben tomar en cuenta más relaciones e interferencias de diferente índole como se puede apreciar en la siguiente ecuación:
 \begin{equation}
-\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{antilog\parentesis{\frac{C}{N_0}}_1}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_{intermod}}+\frac{1}{antilog\parentesis{\frac{C}{N_0}}_2}+\frac{1}{antilog\parentesis{\frac{C}{X}}_{intf}}}^{-1} dBHz
+\frac{C}{N_0}_t=10\log\corchetes{\frac{1}{10^{\frac{\parentesis{\frac{C}{N_0}}_1}{10}}}+\frac{1}{10^{\frac{\parentesis{\frac{C}{N_0}}_{intermod}}{10}}}+\frac{1}{10^{\frac{\parentesis{\frac{C}{N_0}}_2}{10}}}+\frac{1}{10^{\frac{\parentesis{\frac{C}{X}}_{interfe}}{10}}}}^{-1} dBHz
 \end{equation}
 \subsection{Disponibilidad}
 La disponibilidad se refiere a la relación entre el tiempo en el que el sistema se encuentra funcionando correctamente y el tiempo total en un intervalo determinado. En un sistema de comunicación pueden presentarse diferentes interferencias, como la interferencia entre estaciones terrenas o la interferencia entre una repetidora y una estación terrena. Además, la intermodulación puede ocurrir en las estaciones terrenas finales, lo que genera componentes no deseados en el espectro de frecuencia. En algunos casos, se menciona que es posible modificar el patrón de radiación de las antenas o controlar la potencia del transmisor a través de telemetría. Estas acciones permiten ajustar y optimizar la transmisión de señales en el sistema de comunicación, adaptándolo a las condiciones específicas y garantizando un mejor desempeño.
@@ -5507,6 +5525,133 @@ Donde:
   \item $R$: Tasa de transmisión de datos. (bps)
   \item $MI$: Mejora de interferencia. (dB)
 \end{itemize}
+\begin{example}[Radio enlace]
+Se ha establecido un radio enlace Digital simplex con repetidora y con las siguientes características:\\
+Distancia $T_x$ a $R_x$ = 45.5 Km del primer tramo y distancia $T_x$ a $R_x $= 45.5 Km del segundo tramo con líneas de vista total independientes
+Colocadas todas las antenas sobre unas torres de altura de 25 m. Utilizando una L.T. RG-59 de 50 ohm (att. 0.06 db/m) genera un ROE = 2.5 en el primer transmisor y 2.5 en el segundo transmisor.
+El requerimiento inicial es para transmisión mixta de datos con una tasa de datos R=55 Mbps, PSK y una relación energía de bit a densidad de ruido Eb/No = 3.54 dB y un margen de 1.5 dB.
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\rowcolor[HTML]{CBCEFB} 
+Parámetros                              & Primer tramo & Segundo Tramo \\ \hline
+Frecuencia (GHz)                        & 5.5          & 6.5           \\ \hline
+Ancho de banda (MHz)                    & 25           & 25            \\ \hline
+Potencia del transmisor (W)             & 25           & 15            \\ \hline
+Ganancia de la antena transmisora (dBi) & 25           & 22            \\ \hline
+Pérdida por espacio libre (dB)          & calcular     & calcular      \\ \hline
+Pérdida totales (dB)                    & 3            & 5             \\ \hline
+Temperatura media del trayecto (K)      & 250          & 250           \\ \hline
+Ganancia de la antena receptora (dBi)   & 25           & 25.5          \\ \hline
+Temperatura de la antena receptora (K)  & 55           & 75            \\ \hline
+Figura de ruido en el receptor, N       & 2.5          & 3.5           \\ \hline
+\end{tabular}
+\end{center}
+Verificamos si necesitamos un LNA y cual es el margen:\\
+\textbf{Analizamos el ROE}:
+\begin{align*}
+ROE=2.5&=\frac{\sqrt{P_D\cdot Z}+\sqrt{P_R\cdot Z}}{\sqrt{P_D\cdot Z}-\sqrt{P_R\cdot Z}}\\
+\sqrt{P_D}+\sqrt{P_R}&=2.5\parentesis{\sqrt{P_D}-\sqrt{P_R}}\\
+\sqrt{P_D}-2.5\sqrt{P_D}&=-2.5\sqrt{P_R}-\sqrt{P_R}\\
+\parentesis{-1.5\sqrt{P_D}}^2&=\parentesis{-3.5\sqrt{P_R}}^2\\
+2.25P_D&=12.25P_R\\
+P_R&=0.1837P_D
+\end{align*}
+Con la relación encontrada, podemos expresar el primer tramo y la potencia del transmisor como la suma de potencia dada ($P_D$) más la potencia reflejada ($P_R$):
+\begin{align*}
+P_D+P_R&=P_{TX}=25W\\
+P_D+\textcolor{red}{0.1837P_D}&=25W\\
+1.1837P_D&=25W\\
+\therefore P_D=21.12W\simeq 13.247 dBm
+\end{align*}
+Calculamos las pérdidas de espacio libre de ambos tramos con la ecuación \ref{eq:espacio libre los}
+\begin{align*}
+L_{0(LOS)_1}&=20\log(5.5GHz)+20\log(45.5Km)+92.44(dB)=140.4075 dB\\
+L_{0(LOS)_2}&=20\log(6.5GHz)+20\log(45.5Km)+92.44(dB)=141.8585 dB\\
+\end{align*}
+Usando la ecuación \ref{eq:densidad portadora ruido dBHz} calculamos la relación portadora densidad de ruido en función de la figura mérito, para seguir con el desarrollo de necesitamos calcular primero:\\
+\textbf{PIRE} con la ecuación \ref{eq:pire}:
+\begin{displaymath}
+PIRE_1=10\log(21.12)dB-25m(0.06dB/m)+25dBi=36.7469 dBW
+\end{displaymath}
+Hallando las pérdidas por propagación con la ecuación \ref{eq:perdidas total por prop}
+\begin{displaymath}
+L_{p_1}=140.4075 dB+3 dB=143.4075 dB
+\end{displaymath}
+Hallando la temperatura total del enlace con la ecuación \ref{eq:temp total sistema}:
+\begin{displaymath}
+T_{sn_1}=55K°+250K°(2.5-1)=430 K°
+\end{displaymath}
+Hallamos la figura de mérito con la ecuación \ref{eq:figura merito}
+\begin{displaymath}
+\parentesis{\frac{G_r}{T_s}}_{RX_1}=25dBi-10\log 430K°=-1.3346 dB/K
+\end{displaymath}
+Finalmente con los datos obtenidos y la ecuación \ref{eq:densidad portadora ruido dBHz} podemos calcular la relación portadora-densidad de ruido:
+\begin{displaymath}
+\parentesis{\frac{C}{N_0}}_1=36.7469 dBW - 143.4075 dB-1.3346 dB/K+228.6 dB=120.2722 dBHz
+\end{displaymath}
+Realizamos los mismo pasos para el segundo tramo:
+\begin{align*}
+ROE=2.5&=\frac{\sqrt{P_D\cdot Z}+\sqrt{P_R\cdot Z}}{\sqrt{P_D\cdot Z}-\sqrt{P_R\cdot Z}}\\
+\sqrt{P_D}+\sqrt{P_R}&=2.5\parentesis{\sqrt{P_D}-\sqrt{P_R}}\\
+\sqrt{P_D}-2.5\sqrt{P_D}&=-2.5\sqrt{P_R}-\sqrt{P_R}\\
+\parentesis{-1.5\sqrt{P_D}}^2&=\parentesis{-3.5\sqrt{P_R}}^2\\
+2.25P_D&=12.25P_R\\
+P_R&=0.1837P_D
+\end{align*}
+En términos de potencia dada y reflejada:
+\begin{align*}
+P_D+P_R&=P_{TX}=15W\\
+P_D+\textcolor{red}{0.1837P_D}&=15W\\
+1.1837P_D&=15W\\
+\therefore P_D=12.6721W\simeq 11.0285 dBm
+\end{align*}
+Calculo de PIRE:
+\begin{displaymath}
+PIRE_2=10\log(12.6721)dB-25m(0.06dB/m)+22dBi=31.528 dB o dBW
+\end{displaymath}
+Calculo pérdidas por propagación:
+\begin{displaymath}
+L_{p_2}=141.8585 dB+5 dB=146.8585 dB
+\end{displaymath}
+Hallando la temperatura total del enlace con la ecuación \ref{eq:temp total sistema}:
+\begin{displaymath}
+T_{sn_2}=55K°+250K°(3.5-1)=700 K°
+\end{displaymath}
+Hallamos la figura de mérito con la ecuación \ref{eq:figura merito}
+\begin{displaymath}
+\parentesis{\frac{G_r}{T_s}}_{RX_2}=25.5dBi-10\log 700K°=-2.95 dB/K
+\end{displaymath}
+Hallamos la figura de mérito con la ecuación \ref{eq:figura merito}
+\begin{displaymath}
+\parentesis{\frac{G_r}{T_s}}_{RX_2}=25.5dBi-10\log 700K°=-2.95 dB/K
+\end{displaymath}
+Hallando la relación portadora-densidad de ruido:
+\begin{displaymath}
+\parentesis{\frac{C}{N_0}}_2=31.528 dBW - 146.8585 dB+(-2.95) dB/K+228.6 dB=110.32 dBHz
+\end{displaymath}
+Asumiremos una relación portadora-densidad de ruido de interferencia de 90dBHz, calculando el presupuesto de enlace con la ecuación \ref{eq:portadora ruido total}
+\begin{displaymath}
+\parentesis{\frac{C}{N_0}}_t=10\log\corchetes{\frac{1}{10^{\frac{120.2722}{10}}}+\frac{1}{10^{\frac{90}{10}}}+\frac{1}{10^{\frac{110.32}{10}}}
+}^{-1}=89.955 dBHz
+\end{displaymath}
+Con una tasa de datos ($R$) de 55 Mbps y $\phase PSK cod 3/4$:
+\begin{displaymath}
+\frac{E_b}{N_0}=3.54\simeq 5.49 dB
+\end{displaymath}
+Con un margen de 1.5 dB añadimos a la ecuación \ref{eq:ebno y tasa de datos}:
+\begin{displaymath}
+\parentesis{\frac{C}{N_0}}_{requerido}=5.49+10\log(55 Mbps)+1.5=94.3936 dBHz
+\end{displaymath}
+Comparando la relación portadora-densidad de ruido obtenida y requerida
+\begin{displaymath}
+84.39<89.955
+\end{displaymath}
+Se tiene un margen de 5.5659 dB positivo, si fuera negativa podemos un LNA, mejorar potencia de los transmisores o aumentar ganancias de las antenas.
+\end{example}
+\begin{remark}
+Si la relación práctica cumple o supera la relación requerida, se considera que el sistema de comunicaciones está funcionando correctamente. Sin embargo, si la relación práctica es inferior a la relación requerida, es posible que se produzcan errores de transmisión, una calidad de señal deficiente o una capacidad de comunicación limitada.
+\end{remark}
 \part{Ingeniería de sonido y vídeo}
 \chapterimage{chapter_head_IS.pdf} % Chapter heading image
 \chapter{Sonido}

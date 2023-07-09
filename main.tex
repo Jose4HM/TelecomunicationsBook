@@ -8003,7 +8003,7 @@ Donde:
 \end{definition}
 \begin{definition}[Coeficiente de reflexión]
 \begin{equation}
-\lvert\rho\rvert=\frac{Z_L-Z_0}{Z_L+Z_0}=\frac{V_r}{V_{in}}
+\lvert\rho\rvert=\frac{Z_L-Z_0}{Z_L+Z_0}=\frac{V_r}{V_{inc}}
 \label{eq:coef reflex}
 \end{equation}
 Donde:
@@ -8012,7 +8012,7 @@ Donde:
 \item $Z_L$: Impedancia de carga. ($\Omega$)
 \item $Z_0$: Impedancia característica. ($\Omega$)
 \item $V_r$: Voltaje reflejado. (V)
-\item $V_{in}$: Voltaje entrada. (V)
+\item $V_{inc}$: Voltaje incidente. (V)
 \end{itemize}
 \end{definition}
 \begin{definition}[Impedancia de entrada]
@@ -8247,15 +8247,23 @@ Al igual que la ecuación \ref{eq:magnitud de voltaje} se puede demostrar que:
 \label{eq:magnitud de corriente}
 \end{equation}
 \begin{definition}[Relación de onda estacionaria (ROE o vSWR\footnote{De \textit{voltage standing-wave ratio}})]
+Expresa la relación entre la amplitud de la onda incidente y la amplitud de la onda reflejada en un sistema de transmisión de señales:
 \begin{equation}
-ROE=VSWR=\frac{V_{max}}{V_{min}}=\frac{1+|\rho_v|}{1-|\rho_v|}
+ROE=VSWR=\frac{V_{max}}{V_{min}}=\frac{1+|\rho_v|}{1-|\rho_v|}=\frac{V_{inc}+V_r}{V_{inc}-V_r}=\frac{\sqrt{P_{inc}\cdot Z}+\sqrt{P_{r}\cdot Z}}{\sqrt{P_{inc}\cdot Z}-\sqrt{P_{r}\cdot Z}}
 \label{eq:swr}
 \end{equation}
 Donde:
 \begin{itemize}
 \item $\rho_v$: Coeficiente de reflexión en la carga, dada por la ecuación \ref{eq:coef reflex}.
+\item $V_{inc}$: Voltaje incidente. (V)
+\item $V_r$: Voltaje reflejado. (V)
+\item $P_{inc}$: Potencia incidente. (W)
+\item $P_r$: Potencia reflejada. (W)
 \end{itemize}
 \end{definition}
+\begin{remark}
+El valor ideal del ROE es de 1, lo que significa que no hay reflexiones de señal y toda la energía se está transmitiendo de manera eficiente entre la fuente y la carga. Obtener este valor es difícil por lo que usualmente se busca un valor de ROE menor o igual a 2.
+\end{remark}
 Asimismo con el cociente del voltaje mínimo sobre la corriente mínima (ambos en el mismo punto obviamente), se obtiene la \textbf{impedancia vita} en ese punto \textbf{hacia la carga} (fig. \ref{fig:onda estacionaria}):
 \begin{equation}
 Z|_{V_{max}}=\frac{|V(z)_{max}|}{|I(z)_{min}|}=\frac{A(1+|\rho_v|)}{\frac{A}{Z_0}(1-|\rho_v|)}=Z_0\cdot\frac{1+|\rho_v|}{1-|\rho_v|}=Z_0\cdot VSWR
