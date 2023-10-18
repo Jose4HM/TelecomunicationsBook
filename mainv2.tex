@@ -326,7 +326,7 @@ n_1\sin\theta_1&=n_2\sin\theta_2\\
 \end{align}
 Donde:
 \begin{itemize}
-\item $n$: Indice de refracción.
+\item $n$: Indice ión.
 \item $\theta$ Ángulo de refracción.
 \item $\epsilon$: Permitividad relativa del material.
 \end{itemize}
@@ -757,7 +757,7 @@ Con el transformador podemos acoplar una carga compleja o desacoplada a nuestra 
 \end{example}
 \chapterimage{chapter_head_ANT.pdf} % Chapter heading image
 \chapter{Antenas para HF, VHF, UHF}
-\section{Isotrópica}
+\section{Isotrópica}\index{Isótrópica}
 La antena isotrópica es una antena hipotética sin pérdida (se refiere a que el área física es cero y por lo tanto no hay pérdidas por disipación de calor) que tiene intensidad de radiación igual en todas direcciones. (IEEE Standard Dictionary of Electrical and Electronic Terms, 1979). \\
 Sirve de base de referencia para evaluar la \textbf{directividad}. La antena isotrópica no es una antena, sino un concepto de referencia para evaluar a las antenas en su función de concentración de energía y a las pérdidas por propagación en el espacio libre en los enlaces de radiofrecuencia. Su patrón de radiación es una esfera.\\
 Cada aplicación y cada banda de frecuencia presentan características peculiares que dan origen a
@@ -823,13 +823,25 @@ Con esto ya calculado, llevamos la antena al ANSYS:\\
          \includegraphics[width=\linewidth]{ant/ant17.png} & \textbf{Creación de puerto} \newline 
         Creamos un rectángulo en el espacio libre que dejamos entre ambas brazos. Le cambiamos el nombre a ``Puerto'' y cambiamos el color.\\
         \includegraphics[width=\linewidth]{ant/ant18.png} & \textbf{Fronteras} \newline 
-        Click derecho en ``aire''>Assign boundary>Radiation\\
+        Click derecho en el cilindro creado:``aire''>Assign boundary>Radiation\\
         \includegraphics[width=\linewidth]{ant/ant19.png} & \textbf{Excitación} \newline 
-        Click derecho en ``puerto''>Assign excitation>Port>Lumped port. Aceptamos la impedancia de 50 ohms. En la siguiente pantalla, en la columna \textit{integration line} seleccionamos \textit{new line}. Seleccionamos la mitad de nuestro puerto, asegurándonos que se muestre un triangulo como en la figura. Damos aceptar y finalizar.\\
+        Click derecho en ``\textit{puerto}''>\textit{Assign excitation}>\textit{Port}>\textit{Lumped port}. Aceptamos la impedancia de 50 ohms. En la siguiente pantalla, en la columna \textit{integration line} por defecto estará con ``None'', lo cambiamos a \textit{new line}. Nos pedirá que tracemos una línea, trazaremos una línea por la mitad de nuestro gap desde un brazo del dipolo al otro. Ayúdate con los triángulos que aparecen cuando te encuentras a la mitad. Damos aceptar y finalizar.\\
 \end{tabular}
 \begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
         \includegraphics[width=\linewidth]{Ant/ant20.png} & \textbf{Análisis} \newline 
-        En la ventana de \textit{project manager}>Analysis (click derecho) > Add solution setup>Advanced. Colocamos nuestra frecuencia de trabajo y aceptar. En la siguiente ventana damos aceptar. Validamos el proyecto\footnote{En la pestaña \textit{Simulation}} y \textit{Analyze all}. Esperamos que termine.
+        En la ventana de \textit{project manager}>\textit{Analysis} (click derecho) >\textit{ Add solution setup}>\textit{Advanced}. Hemos dejado la configuración como ``Setup 1''. Colocamos nuestra frecuencia de trabajo y aceptar. En la siguiente ventana damos aceptar. Validamos el proyecto\footnote{En la pestaña \textit{Simulation}}.
+\end{tabular}
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=\linewidth]{Ant/ant55.png} & \textbf{Barrido de frecuencia} \newline 
+        En la ventana de \textit{project manager}>\textit{Analysis} (click derecho) > \textit{Add solution setup}. Añadimos un barrido de frecuencia, dependerá de ti los limites, trata que tu frecuencia este en el centro. Aceptar y ahora debes darle en ``Analyze all''. Esperar a que simule.
+\end{tabular}
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=\linewidth]{Ant/ant56.png} & \textbf{Análisis} \newline 
+        En la ventana de \textit{project manager}>\textit{Result} (click derecho) > \textit{Create Modal Solution Data Report}. Usualmente se necesita ``\textit{rectangular plot}'' para los parámetros S (coeficiente de reflexión) y la carta de Smith. 
+\end{tabular}
+\begin{tabular}{k{0.5\linewidth}  j{0.5\linewidth}}
+        \includegraphics[width=\linewidth]{Ant/ant57.png} & \textbf{Análisis} \newline 
+        Los patrones de radiación aparecerán solo si añadiste un campo lejano. Se añade en \textit{project manager}>\textit{Radiation}
 \end{tabular}
 \begin{definition}[Antena armónica]
 Si se dispone de un número entero de semiondas, el dipolo recibe el nombre de \textbf{antena armónica}. La longitud de la antena armónica es:
@@ -873,7 +885,7 @@ La ecuación \ref{eq:func theta} es función del ángulo $\theta$, es decir, la 
 \end{corollary}
 
 
-\section{Antena Marconi}
+\section{Antena Marconi}\index{Marconi}
 Conceptualmente, se trata de un conductor vertical de poco espesor, perpendicular a la Tierra. Puede imaginarse como un brazo de un dipolo, al cual la Tierra le sirve de espejo para "fabricar" la imagen del otro brazo del dipolo.
 \begin{wrapfigure}{r}{0.45\linewidth}
   \begin{center}
@@ -901,7 +913,7 @@ El patrón de radiación de la Antena Marconi es una dona a la mitad. No existe 
 \item Servicios de radio terrestre
 \item Telecomunicaciones a bajas frecuencias
 \end{itemize}
-\section{Yagi-Uda}
+\section{Yagi-Uda}\index{Yagi-Uda}
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.6\linewidth]{ant/ant25.png}
@@ -945,7 +957,7 @@ D=\frac{P_{max}}{\frac{W_t}{4\pi r2}}=\frac{4\pi r^2\cdot E_{max}^2}{I_1^2\cdot 
 \item Empleado en el dominio astronómico.
 \item También se utiliza en radioastronomía.
 \end{itemize}
-\section{Antenas helicoidales}
+\section{Antenas helicoidales}\index{Helicoidal}
 Antena con forma de helice a lo largo de un eje, trabaja con polarización circular y opera especialmente en el rango de 2 a 5 GHz (VHF y UHF), su diseño es muy fácil y práctico.\\
 La antena helicoidal posee dos modos: \textbf{Normal} en el cual la antena de comporta similar a una antena dipolo con una radiación omnidireccional respecto al eje de la hélice; las dimensiones de la hélice son pequeñas en comparación con la longitud de onda. Luego esta la \textbf{axial}, en el cual la radiación se produce en el mismo sentido del eje de la hélice, es cuando las dimensiones de la hélice son comparables a una longitud de onda:
 \begin{figure}[H]
@@ -1124,6 +1136,7 @@ G[dB]=10\log(3.37)=5.88 dB
 \end{displaymath}
 \end{example}
 \begin{corollary}[Características del diagrama de radiación de un dipolo horizontal próximo a un plano de tierra.]
+Son:
 \begin{itemize}
 \item Un dipolo horizontal colocado sobre una pantalla irradia, igual que un dipolo aislado, ondas esféricas progresivas con centro de fases en el punto medio entre el dipolo y su imagen eléctrica.
 \item Un dipolo horizontal colocado a cualquier altura \textit{h}, no irradia a lo largo de la superficie de la pantalla.
@@ -1135,7 +1148,7 @@ Es una antena conformada por barios dipolos que resuenan a distintas frecuencias
 \end{corollary}
 \chapterimage{chapter_head_ANT.pdf} % Chapter heading image
 \chapter{Radioenlace de microondas}
-\section{Guías de onda}
+\section{Guías de onda}\index{Guías de onda}
 \begin{wrapfigure}{r}{0.4\linewidth}
   \begin{center}
     \includegraphics[width=.9\linewidth]{Ant/ant30.png}
@@ -1237,7 +1250,7 @@ El comportamiento de las ondas electromagnéticas en las guías de onda circular
 \label{eq:onda de corte circular}
 \end{equation}
 Donde \textit{d} esta en metros y es el diámetro de la guía de onda. La longitud de corte de la ecuación \ref{eq:onda de corte circular} es medida en metros.
-\section{Antenas de bocina}
+\section{Antenas de bocina}\index{Bocina}
 Las antenas de bocina son unas antenas que realizan la transición desde el medio guiado (guías de onda) al espacio libre. Las bocinas se utilizan en los satélites principalmente como alimentadores de los reflectores y en algunas ocasiones se utilizan como antenas simples cuando se requieren grandes anchos de haz. Las antenas de bocina se utilizan frecuentemente para conformar haces que den una cobertura terrestre. 
 El ancho de haz necesario par dar cobertura a la tierra desde la órbita geoestacionaria es de 18 grados, que es fácilmente realizable con antenas de bocina.\\
 Si una dimensión del tubo es mayor que media longitud de onda, entonces la onda puede propagar a través de la guía de onda con la perdida sumamente baja, y si al ser colocada el final de una guía de onda simplemente es dejado abierto, la onda irradiara al espacio.
@@ -1268,7 +1281,7 @@ Otra variante de las bocinas son las bocinas de \textbf{modos híbridos}. Corrug
 Bocinas de \textbf{modo dominante} (o de modo único): Se sintoniza al modo predominante de la guía de onda circular. Este es el más básico de los tres tipos.
 Bocinas de modo dual (o multimodo): Se sintoniza al modo  de propagación de la onda que se propaga por la guía de onda.\\
 Estas bocinas se utilizan extensamente en satélites comerciales. Pero la utilización más común de las bocinas es como un \textbf{elemento de radiación} para reflectores de antenas. La bocina se sitúa en el \textbf{foco} o en un lugar próximo a él de un reflector \textbf{parabólico} para iluminar su superficie tanto en la aplicación de transmisión como en recepción. La radiación electromagnética en la superficie del reflector produce corrientes eléctricas en la superficie. Y de estas corrientes se producen otros campos electromagnéticos que finalmente se convierten en un diagrama de radiación de campo lejano del sistema de antena total.
-\section{Antenas de ranura}
+\section{Antenas de ranura}\index{Ranura}
 Se llaman antenas de ranura aquellas en que la radiación y la recepción de las ondas electromagnéticas se realizan mediante unas o varias ranuras practicadas en una guía de ondas o un resonador volumétrico.
 %Antenas de ranura
 \section{Antenas reflector parabólico}
@@ -1379,7 +1392,7 @@ El subreflector debe ser lo suficientemente grande como para interceptar la porc
 \includegraphics[width=0.4\linewidth]{ant/ant54.png}
 \caption{Geometría antena Cassegrain.}
 \end{figure}
-\section{Antenas Parche}
+\section{Antenas Parche}\index{Parche}
 Microstrip o antenas de parches son cada vez más útiles porque se pueden imprimir directamente sobre una placa de circuito. Ellos son cada vez más generalizada en el mercado de la telefonía móvil. Son de bajo coste, tienen un perfil bajo y se fabrican fácilmente. La tendencia a la miniaturización al lograr dispositivos cada vez mas pequeños, de fácil producción en masa (costos reducidos), fáciles de adaptar con circuitos integrados de microondas, versátiles en términos de impedancia, patrón, polarización y frecuencia de resonancia. Dentro de las desventajas podemos encontrar la baja potencia de radiación (por su estructura no se puede soportar grandes potencias en su estructura), baja eficiencia, ancho de banda angosto para ciertos diseños, considerables perdidas y son fácilmente afectadas por el factor térmico (sobre todo si se trabaja en sustratos flexibles).
 \subsection{Características}
 \begin{figure}[H]
@@ -4408,6 +4421,1713 @@ Si la derivada de la función de transferencia en un polo repetido es diferente 
 \item La estabilidad de un sistema con polos en el límite de estabilidad depende de la ubicación de los otros polos y ceros en el sistema, así como de la respuesta transitoria y de estado estable deseada.
 \item En general, se requiere un análisis más detallado para determinar la estabilidad en estos casos, utilizando herramientas como el lugar de las raíces, el mapeo de polos y ceros, o el análisis de estabilidad mediante condiciones específicas.
 \end{enumerate}
+
+
+\part{Dispositivos de fibra óptica}
+\chapterimage{chapter_head_FO.pdf} % Chapter heading image
+\chapter{Introducción}
+\section{Fiber to the home-FTTH}
+FTTH, FTTB y FTTN son términos relacionados con tecnologías de acceso de banda ancha que se utilizan para proporcionar conexiones de Internet de alta velocidad. Cada uno de estos acrónimos se refiere a un enfoque diferente para llevar la conectividad de fibra óptica a los hogares o empresas. Aquí está la explicación de cada uno:
+\begin{itemize}
+\item FTTH (Fiber to the Home): FTTH significa "Fibra hasta el Hogar". En esta tecnología, una conexión de fibra óptica se extiende directamente desde el proveedor de servicios hasta el hogar del usuario final. Esto proporciona la mayor velocidad y ancho de banda posible, ya que la conexión es 100\% de fibra óptica. FTTH es la forma más avanzada y rápida de brindar acceso a Internet.
+
+\item FTTB (Fiber to the Building): FTTB significa "Fibra hasta el Edificio". En esta tecnología, la fibra óptica se conecta a un edificio, como un complejo de apartamentos o una oficina, pero no llega directamente al hogar o la unidad individual. En lugar de eso, la conexión de fibra termina en el edificio y luego se utiliza una infraestructura de cobre o coaxial existente dentro del edificio para llevar la conexión a las unidades individuales. Aunque no es tan rápido como FTTH, FTTB sigue ofreciendo velocidades de banda ancha significativamente más rápidas que las conexiones basadas únicamente en cobre.
+
+\item FTTN (Fiber to the Node): FTTN significa "Fibra hasta el Nodo". En esta tecnología, la fibra óptica se extiende hasta un nodo, que suele estar ubicado en un gabinete de telecomunicaciones cerca de una zona residencial. Desde ese nodo, se utiliza una red de cobre existente para llegar a las casas individuales. Esto significa que la parte final de la conexión es de cobre, lo que limita la velocidad y el rendimiento en comparación con FTTH y FTTB. FTTN se utiliza a menudo en despliegues de redes DSL o xDSL.
+\end{itemize}
+La fibra óptica debe durar 25 años, sin embargo los componentes optoeléctricos no lo son (duran 5-7 años), por lo que la fibra óptica (F.O.) requerirá de 2-4 actualizaciones.
+\section{Topologías de red de fibra óptica}
+Son configuraciones o topologías de redes de fibra óptica que utilizan cables de fibra óptica para conectar diferentes ubicaciones en una región o en todo el país:
+\begin{enumerate}
+\item Anillo Regional: Un anillo regional es una topología de red en la que las conexiones de fibra óptica se organizan en forma de anillo alrededor de una región geográfica específica. Esto permite la redundancia en la red, lo que significa que si una parte del anillo se daña, la comunicación aún puede fluir en la dirección opuesta. Los anillos regionales son comunes en la infraestructura de telecomunicaciones para garantizar una mayor confiabilidad y disponibilidad de las conexiones de fibra óptica en una área geográfica determinada. (50-250 Km)
+
+\item Larga Distancia: La fibra óptica de larga distancia se refiere a cables de fibra óptica que se utilizan para comunicaciones a largas distancias, como la interconexión de ciudades o incluso países. Estos cables de fibra óptica a menudo se entierran o se colocan en conductos subterráneos o submarinos para conectar regiones geográficamente distantes. (100-500 Km)
+
+\item Entre Nodos: ``Entre nodos'' se refiere a la interconexión de puntos de conmutación o nodos en una red de telecomunicaciones. Los nodos pueden ser centrales telefónicas, centros de datos, estaciones base de telefonía móvil, entre otros. La fibra óptica se utiliza para conectar estos nodos y permitir la transmisión de datos y comunicaciones entre ellos. (5-20 Km)
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo29.png}
+\caption{Topología de fibra óptica en una región.}
+\end{figure}
+
+\section{Parámetros de fibra óptica}
+Los parámetros más importantes en la fibra óptica se refieren a sus características físicas y ópticas, así como a su capacidad para transmitir señales de luz. Algunos de los parámetros clave de la fibra óptica incluyen:
+\begin{enumerate}
+\item \textbf{Diámetro del núcleo} (\textit{Core Diameter}): El diámetro del núcleo es el tamaño del núcleo de vidrio o plástico a través del cual viaja la luz. Las fibras ópticas pueden tener núcleos de diferentes tamaños, como 9/125 $\mu m$ para fibras monomodo y 50/125 $\mu m$ o 62.5/125 $\mu m$ para fibras multimodo.
+
+\item \textbf{Índice de refracción} (\textit{Refractive Index}): El índice de refracción es una medida de la velocidad de la luz en el núcleo de la fibra en comparación con la velocidad de la luz en el aire. Esto afecta la propagación de la luz a través de la fibra.
+
+\item \textbf{Atenuación} (\textit{Attenuation}): La atenuación se refiere a la pérdida de señal a medida que la luz viaja a lo largo de la fibra. Cuanto menor sea la atenuación, mejor será la calidad de la fibra.
+
+\item \textbf{Dispersión} (\textit{Dispersion}): La dispersión es la propagación de las señales a lo largo de la fibra. Puede ser de dos tipos: dispersión cromática (relacionada con la diferencia de velocidad de la luz en el núcleo) y dispersión modal (relacionada con la propagación de modos de luz en fibras multimodo). La dispersión puede afectar la calidad de la transmisión de datos.
+
+\item \textbf{Ancho de banda} (\textit{Bandwidth}): El ancho de banda de la fibra óptica es la cantidad de información que puede transportar a través de la luz. Las fibras multimodo suelen tener un ancho de banda más limitado en comparación con las fibras monomodo.
+
+\item \textbf{Longitud de onda de operación} (\textit{Operating Wavelength}): La longitud de onda de operación es la longitud de onda de la luz utilizada para transmitir datos a través de la fibra óptica. Comúnmente, se utilizan longitudes de onda de 850 nm, 1310 nm y 1550 nm en aplicaciones de fibra óptica.
+
+\item \textbf{Pérdida de inserción} (\textit{Insertion Loss}): La pérdida de inserción es la pérdida de potencia que ocurre cuando se conecta una fibra óptica a un dispositivo, como un conector o un empalme. Se mide en decibelios (dB).
+
+\item \textbf{Empalmes y conectores} (\textit{Splices and Connectors}): Los empalmes y conectores se utilizan para unir secciones de fibra óptica. La calidad de los empalmes y conectores es crítica para minimizar la pérdida de señal.
+\end{enumerate}
+
+\begin{vocabulary}[OADM]
+OADM significa ``Optical Add-Drop Multiplexer'' en inglés, y se traduce al español como ``Multiplexor Óptico de Inserción y Extracción''. Es un dispositivo utilizado en redes de fibra óptica para agregar (insertar) y eliminar (extraer) señales de luz en múltiples longitudes de onda en una red de comunicaciones ópticas. Los OADM son componentes clave en sistemas de multiplexación por división en longitud de onda (Wavelength Division Multiplexing, WDM) y sistemas de multiplexación por división en longitud de onda densa (Dense Wavelength Division Multiplexing, DWDM).
+\end{vocabulary}
+\section{Bandas}
+La fibra óptica se utiliza en una amplia variedad de aplicaciones de comunicaciones y tecnologías, y diferentes bandas de longitud de onda se utilizan en función de las necesidades específicas de cada aplicación. Algunas de las bandas más comunes en fibra óptica son:
+\begin{enumerate}
+    \item \textbf{Banda O (Original)}
+    \begin{itemize}
+        \item Longitudes de Onda: 1260 nm a 1360 nm
+        \item Descripción: Utilizada en las primeras implementaciones de fibra óptica, pero con alta atenuación, menos adecuada para larga distancia.
+    \end{itemize}
+    
+    \item \textbf{Banda E (Extended)}
+    \begin{itemize}
+        \item Longitudes de Onda: 1360 nm a 1460 nm
+        \item Descripción: Adecuada para la transmisión de datos de larga distancia, con menor atenuación que la Banda O.
+    \end{itemize}
+    
+    \item \textbf{Banda S (Shortwave)}
+    \begin{itemize}
+        \item Longitudes de Onda: 1460 nm a 1530 nm
+        \item Descripción: Comúnmente utilizada, ofrece un equilibrio entre atenuación y capacidad de transmisión de datos.
+    \end{itemize}
+    
+    \item \textbf{Banda C (Conventional)}
+    \begin{itemize}
+        \item Longitudes de Onda: 1530 nm a 1565 nm
+        \item Descripción: Ampliamente utilizada en la región de 1.55 micrómetros, con buena combinación de capacidad de datos y atenuación.
+    \end{itemize}
+    
+    \item \textbf{Banda L (Long)}
+    \begin{itemize}
+        \item Longitudes de Onda: 1565 nm a 1625 nm
+        \item Descripción: Utilizada en aplicaciones de fibra óptica de larga distancia y sistemas de amplio alcance.
+    \end{itemize}
+    
+    \item \textbf{Banda U (Ultralong)}
+    \begin{itemize}
+        \item Longitudes de Onda: 1625 nm a 1675 nm
+        \item Descripción: Utilizada en aplicaciones de fibra óptica de ultralarga distancia y sistemas submarinos de alta capacidad.
+    \end{itemize}
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo30.png}
+\caption{Banda prohibida o pico de agua: 1400 nm.}
+\end{figure}
+\subsection{Pico de agua}
+El ``pico de agua'' (en inglés, ``water peak'') en fibra óptica se refiere a una región del espectro de longitud de onda en la que la atenuación (pérdida de señal) de la luz transmitida a través de la fibra óptica es significativamente mayor debido a la presencia de agua. La atenuación en el pico de agua es causada por la absorción de la luz por las moléculas de agua en la fibra.\\
+El pico de agua se encuentra en la región de longitud de onda alrededor de aproximadamente 1383 nm. Esta es la longitud de onda específica en la que la atenuación debida a la absorción de agua es más pronunciada. Debido a esta característica, la fibra óptica utilizada en aplicaciones de comunicaciones y redes debe ser diseñada para minimizar la atenuación en el pico de agua.\\
+Para evitar el problema del pico de agua, se han desarrollado fibras ópticas de dispersión nula (Zero Dispersion-Shifted Fiber, ZDW) y fibras de dispersión desplazada hacia la longitudes de onda largas (Large Area Fiber, LAF) que permiten operar en longitudes de onda cercanas al pico de agua con menor atenuación. Estas fibras son especialmente importantes en sistemas de comunicación de larga distancia que utilizan longitudes de onda en la región del pico de agua.
+
+\section{¿Por que escoger fibra óptica?}
+La fibra óptica (FO) es ampliamente utilizada en aplicaciones de comunicaciones y tecnología debido a sus muchas ventajas, pero también tiene algunas desventajas:
+\subsection{Ventajas}
+\begin{enumerate}
+\item \textbf{Alta velocidad y ancho de banda}: La fibra óptica proporciona velocidades de transmisión extremadamente rápidas y un ancho de banda muy amplio, lo que permite la transmisión de grandes cantidades de datos a velocidades elevadas.
+
+\item \textbf{Baja atenuación}: La atenuación (pérdida de señal) en las fibras ópticas es considerablemente menor que en los cables de cobre, lo que permite la transmisión de señales a distancias más largas sin amplificación de señal constante.
+
+\item \textbf{Inmunidad a interferencias electromagnéticas (EMI)}: La fibra óptica no es sensible a las interferencias electromagnéticas, lo que la hace ideal en entornos con fuertes campos electromagnéticos, como fábricas y centrales eléctricas.
+
+\item \textbf{Seguridad y privacidad}: La transmisión de datos a través de fibras ópticas es altamente segura, ya que no emite radiación electromagnética que pueda ser interceptada o interferida con facilidad.
+
+\item \textbf{Ligereza y delgadez}: Los cables de fibra óptica son más ligeros y delgados en comparación con los cables de cobre, lo que facilita su instalación y reduce la carga en las infraestructuras.
+
+\item \textbf{Durabilidad y resistencia}: La fibra óptica es altamente resistente a la corrosión y a las condiciones climáticas adversas, lo que la hace adecuada para aplicaciones en exteriores.
+\end{enumerate}
+\subsection{Desventajas}
+\begin{enumerate}
+\item \textbf{Costo inicial elevado}: La instalación de infraestructura de fibra óptica es costosa en comparación con el cableado de cobre. Los componentes ópticos, como transmisores y receptores, también tienden a ser más costosos.
+
+\item \textbf{Fragilidad}: Las fibras ópticas son frágiles y pueden dañarse si se doblan o estiran demasiado, lo que requiere cuidado especial durante la instalación y mantenimiento.
+
+\item \textbf{Requiere habilidades y equipos especializados}: La instalación y el mantenimiento de sistemas de fibra óptica requieren personal con habilidades y herramientas específicas, lo que puede aumentar los costos.
+
+\item \textbf{Compatibilidad}: Los dispositivos que se conectan a la fibra óptica pueden requerir adaptadores o convertidores para ser compatibles con las interfaces de fibra óptica.
+
+\item \textbf{Disponibilidad limitada en áreas rurales}: La fibra óptica a menudo se encuentra principalmente en áreas urbanas y metropolitanas, y puede no estar ampliamente disponible en zonas rurales.
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo31.png}
+\caption{Sistema de transmisión por cable de fibra óptica.}
+\end{figure}
+
+\section{Espectro óptico}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Dfo/Dfo32.png}
+\caption{Espectro óptico.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Dfo/Dfo33.png}
+\caption{Espectro óptico actual.}
+\label{fig:espectro optico actual}
+\end{figure}
+En la figura \ref{fig:espectro optico actual}, notamos que con cada banda tenemos 16 canales para usar CDWM
+
+\subsection{CDWM y DWDM}
+CWDM es el acrónimo de ``Coarse Wavelength Division Multiplexing'', que en español se traduce como ``Multiplexación por División de Longitud de Onda Gruesa''. Es una tecnología de multiplexación que se utiliza en redes de fibra óptica para combinar múltiples señales de datos en una única fibra óptica, cada una transmitida a una longitud de onda óptica diferente. La principal diferencia entre CWDM y DWDM (Dense Wavelength Division Multiplexing) es la separación de las longitudes de onda y la densidad de canales.\\
+El espaciado de canales CWDM y DWDM sigue los estándares de la Unión Internacional de Telecomunicaciones (UIT), y CWDM utiliza un espaciado más amplio entre canales de 20 nm, en comparación con el espaciado más estrecho de DWDM de 0,8 nm o 0,4 nm.\\
+Esto significa que CWDM puede admitir hasta 18 canales y con DWDM es posible colocar 40, 80 o hasta 96 canales en el mismo par de fibras.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dfo/Dfo34.png}
+\caption{DWDM vs CWDM: espectro.}
+\end{figure}
+Los canales en CWDM están ubicados en frecuencias entre 1271 nm y 1611 nm, mientras que para DWDM el rango de frecuencia de ``banda C'' de 1530 nm a 1565 nm se usa más comúnmente ya que la luz tiene una atenuación más baja en la fibra óptica a esta frecuencia y puede viajar más lejos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dfo/Dfo35.png}
+\caption{DWDM vs CWDM: espectro de uso}
+\end{figure}
+\section{Leyes ópticas}
+\subsection{Índice de refracción}
+\begin{definition}[Índice de refracción]
+Es la relación entre la velocidad de la luz en el vacío y en el medio:
+\begin{equation}
+n=\frac{c}{v}
+\end{equation}
+Si la velocidad en el medio (\textit{v}) es aproximadamente la velocidad de la luz (\textit{c}):
+\begin{equation}
+v\approx c \therefore \lambda=\frac{c}{f}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{\textit{n}}: Índice de refracción. (Adimensional)
+\item \textbf{\textit{c}}: Velocidad de la luz. (m/s)
+\item \textbf{\textit{v}}: Velocidad en el medio. (m/s)
+\item $\lambda$: Longitud de onda. (m)
+\item \textbf{\textit{f}}: Frecuencia. (Hz)
+\end{itemize}
+\end{definition}
+La velocidad en el medio no es constante para diferentes longitudes de onda en un mismo medio, por lo que:
+\begin{displaymath}
+n=f(\lambda)
+\end{displaymath}
+El \textbf{índice de refracción del grupo} es un factor de variación experimentada en la velocidad de propagación a través del medio por el grupo de pulsos lumínicos:
+\begin{equation}
+n'=n-\lambda\frac{dn}{x}
+\end{equation}
+Se refiere a la variación en el índice de refracción \textit{n} con respecto a la posición en un medio óptico.
+\subsection{Ley de Snell}
+Re-ordenando la ecuación \ref{eq:snell}:
+\begin{equation}
+\frac{\sin\theta_1}{\sin\theta_2}=\frac{n_2}{n_1}
+\end{equation}
+Asimismo se introduce \textbf{Diferencia relativa de índices}
+\begin{definition}[Diferencia relativa de índices]
+La diferencia relativa de los índices de refracción es el cociente entre la diferencia de los mismos y el más grande de los dos índices de refracción.
+\begin{equation}
+\Delta=\frac{n_1-n_2}{n1}\leftrightarrow n_1>n_2
+\label{eq:dif rela ind}
+\end{equation}
+\end{definition}
+\chapter{Estructura de fibra óptica}
+\section{Estructura de fibra óptica}
+Se tiene en consideración que
+\begin{itemize}
+\item \textbf{núcleo} o \textit{core} ($n_1$) debe estar formado por sustancia \textbf{isótropicas} ($\vec{E}$ y $\vec{B}$ deben estar alineados al polarizarse, es decir, que las direcciones de los vectores de campo eléctrico ($\vec{E}$) y campo magnético ($\vec{B}$) deben estar alineadas cuando la luz se polariza en la fibra. Esto es esencial para una transmisión eficiente de la luz a través de la fibra.) y opticamente \textbf{transparente}.Puede medir desde 8 $\mu m$ a 62.5 $\mu m$
+
+\item El \textbf{revestimiento} o \textit{cladding} ($n_2$) debe ser propicia para la \textbf{reflexión total}. Puede medir 125 $\mu m$
+\item El \textbf{recubrimiento primario} o \textit{buffer} ($n^*$) debe ser de una o más capas de diferente módulo de Young (resistencia mecánica del cable). Puede medir desde 250 $\mu m$ a 900 $\mu m$
+\end{itemize}
+\begin{displaymath}
+n^*>n_1>n_2
+\end{displaymath}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo36.png}
+\caption{Corte vertical de fibra óptica.}
+\end{figure}
+\section{Apertura numérica}
+Representa la capacidad de una fibra óptica para recolectar o emitir luz y determina la cantidad de luz que puede ser recogida por el núcleo de la fibra o la cantidad de luz que puede acoplarse en ella.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo37.png}
+\caption{Banda prohibida o pico de agua: 1400 nm.}
+\end{figure}
+\begin{equation}
+AN=\sqrt{n_1^2-n_2^2}=n_1\sqrt{2\Delta}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{AN}: Apertura númerica. (Adimensional)
+\item $n_1$ y $n_2$: Indices de refracción. (Adimensional)
+\item $Delta$: Diferencia relativa de indices. (\ref{eq:dif rela ind}) (Adimencional)
+\end{itemize}
+\section{Tipos de fibra óptica}
+Por el tipo de perfil:
+\begin{itemize}
+\item \textbf{Multimodo}
+\begin{enumerate}
+\item Step: En este tipo de fibra, el núcleo tiene un índice de refracción \textbf{constante} en su sección transversal, y esta transición es abrupta o escalonada entre el núcleo y el revestimiento. Las fibras multimodo step permiten \textbf{múltiples} modos de propagación, pero debido al cambio brusco de índice en el núcleo, pueden experimentar dispersión modal. Esto significa que los modos viajan diferentes distancias y llegan en momentos ligeramente diferentes, lo que puede \textbf{limitar} la distancia de transmisión.
+\item Graded: En este tipo de fibra, el índice de refracción en el núcleo \textbf{disminuye gradualmente} a medida que se aleja del centro hacia el revestimiento. Las fibras multimodo graduales \textbf{reducen} la dispersión modal al permitir que los modos viajen distancias más similares antes de llegar al extremo de la fibra. Debido a la reducción de la dispersión modal, estas fibras tienden a tener un ancho de banda mayor, lo que les permite transmitir señales a distancias más largas.
+\begin{center}
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo38.png}
+\end{center}
+\end{enumerate}
+\item \textbf{Monomodo}: Solo se permite la propagación de un modo de luz. Esto significa que los rayos de luz que viajan a través de la fibra siguen un camino único y directo, lo que minimiza la dispersión de la señal. La fibra monomodo generalmente tiene un núcleo con un índice de \textbf{refracción gradual} o descendente. Esto permite una transición suave de la luz desde el núcleo hacia el revestimiento, lo que reduce la dispersión modal y permite una transmisión a distancias mucho mayores en comparación con las fibras multimodo. La fibra monomodo se utiliza comúnmente en aplicaciones de telecomunicaciones a \textbf{larga distancia}, como transmisión de datos a través de redes de fibra óptica de larga distancia y conexiones intercontinentales.
+\begin{center}
+\includegraphics[width=0.7\linewidth]{Dfo/Dfo39.png}
+\end{center}
+\end{itemize}
+En fibra multimodo, el número de modos puede ser calculada:
+\begin{equation}
+N\approx \Delta_n\parentesis{2\pi n_1\frac{a}{\lambda}^2}
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{N}: Número de modos. (Adimensional)
+\item $\Delta$: Diferencia normalizada de indices. $Delta\times 100\%$ (Adimensional)
+\item $n_1$: Índice de refracción del núcleo. (Adimensional)
+\item \textbf{a}: Radio del núcleo. (m)
+\item $\lambda$: Longitud de onda. (m)
+\end{itemize}
+El indice graduado puede ser aproximado con:
+\begin{equation}
+n(r) = \left\lbrace
+\begin{array}{ll}
+n_1\corchetes{1-\Delta(r/a)^{\alpha}} & \textup{si } r<a\\
+ n_1(1-\Delta)=n_2 & \textup{si } r\geq a
+\end{array}
+\right.
+\end{equation}
+Donde:
+\begin{itemize}
+\item \textbf{r}: Posición radial. (m)
+\item \textbf{a}: Radio del núcleo. (m)
+\item $\alpha$: Parámetro de perfil. 
+\item $\Delta$: Diferencia relativa de índices.
+\end{itemize}
+\begin{table}[H]
+\begin{tabular}{|c|c|c|}
+\hline
+\begin{tabular}[c]{@{}c@{}}Core/Clad\\ Diametro ($\mu m$)\end{tabular} & A.N.      & Applicación                                 \\ \hline
+50/125                                                                 & 0.20-0.22 & LAN, campus en Japan y Germany              \\ \hline
+62.5/125                                                               & 0.275     & Fibra predominante global para LAN y campus \\ \hline
+100/140                                                                & 0.29      & Enlace de datos, militar.                   \\ \hline
+\end{tabular}
+\end{table}
+\section{Parámetros de F.O.}
+\subsection{Parámetro estructural}
+\begin{equation}
+V = \frac{2\pi a}{\lambda} \cdot NA
+\end{equation}
+Donde:
+\begin{itemize}
+\item $V$: Número V (Adimensional).
+\item $a$: Radio del núcleo de la fibra multimodo (m).
+\item $\lambda$: Longitud de onda de la luz que se propaga a través de la fibra (m).
+\item $NA$: Apertura numérica de la fibra multimodo (Adimensional).
+\end{itemize}
+\begin{itemize}
+\item Si \textit{V} es mucho menor que 2.405, la fibra tendrá aproximadamente 2 modos.
+\item Si \textit{V} está entre 2.405 y 3.83, la fibra tendrá varios modos, y la cantidad exacta dependerá de otros factores como el perfil del índice de refracción.
+\item Si \textit{V} es mucho mayor que 3.83, la fibra tendrá una gran cantidad de modos, lo que se considera una fibra multimodo.
+\end{itemize}
+\subsection{Longitud de onda de corte}
+Es el valor de la mínima longitud de onda que determina un comportamiento monomodal de una fibra óptica. Si bajamos de $\lambda_c$ de aparece otro modo, esto afecta la potencia (la reduce) y la atenuación. 
+\begin{equation}
+\lambda_c=\frac{2\pi a}{AN}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\lambda_c$: Longitud de onda de corte. (m)
+\item \textbf{a}: Radio del núcleo de fibra. (m)
+\item \textbf{AN}: Apertura numérica. ((Adimensional))
+\end{itemize}
+\subsection{Diámetro de campo modal}
+Valor del diámetro para el cual la intensidad lumínica del modo fundamental se reduce al 37\% del máximo valor alcanzado en el núcleo.  Este valor particular, conocido como ``diámetro de campo modal'', se elige porque coincide con el punto en el que la intensidad de la luz se reduce a aproximadamente $e^-2$ (aproximadamente 0.37 veces) de su valor máximo. Esta elección se basa en consideraciones matemáticas y prácticas.\\
+Cuando la intensidad de la luz cae por debajo de este umbral del 37\%, los efectos de dispersión y atenuación comienzan a tener un impacto significativo en la transmisión de la señal, lo que hace que la fibra óptica sea menos eficiente para la transmisión de datos. Por lo tanto, el diámetro de campo modal se utiliza para describir el ancho de la región donde se mantiene una alta intensidad lumínica y, por lo tanto, una transmisión efectiva.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo40.png}
+\caption{Diámetro de campo modal.}
+\end{figure}
+A manera de resumen:
+\begin{itemize}
+\item Parámetros geométricos
+\begin{enumerate}
+\item Diámetro de núcleo.
+\item No circularidad del núcleo.
+\item Error de concentricidad núcleo-revestimiento.
+\item Diámetro del revestimiento
+\end{enumerate}
+\item Parámetros ópticos
+\begin{itemize}
+\item Monomodo
+\begin{enumerate}
+\item Apertura numérica.
+\item Perfil de la fibra óptica.
+\item Longitud de onda límite.
+\item Diámetro del campo modal.
+\item Error de concentricidad del campo modal.
+\end{enumerate}
+\item Multimodo
+\begin{enumerate}
+\item Apertura numérica.
+\item Perfil de fibra óptica.
+\item Diferencia relativa de índices.
+\end{enumerate}
+\end{itemize}
+\item Parámetros de transmisión
+\begin{enumerate}
+\item Coeficiente de atenuación.
+\item Ancho de banda. (MM)
+\item Dispersión. (SM)
+\end{enumerate}
+\end{itemize}
+\chapter{Efectos sobre la fibra óptica}
+\section{Atenuación}
+También conocida como pérdida de señal, es la reducción de la intensidad de la luz a medida que se propaga a través de una fibra óptica. Esta atenuación puede ser causada por diversos factores y puede afectar la calidad y la distancia de la transmisión de datos en una red de fibra óptica. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dfo/dfo41.png}
+\caption{Atenuación de la fibra óptica}
+\label{fig:atenuacion fibra}
+\end{figure}
+De la figura \ref{fig:atenuacion fibra} se obtiene:\\
+\begin{center}
+\begin{tabular}{|
+>{\columncolor[HTML]{ECF4FF}}c 
+>{\columncolor[HTML]{ECF4FF}}c |}
+\hline
+\multicolumn{2}{|c|}{\cellcolor[HTML]{CBCEFB}Monomodo}     \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}nm}   & dB/Km \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}850}  & 1.81  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1300} & 0.35  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1310} & 0.35  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1380} & 0.55  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1550} & 0.19  \\ \hline
+\end{tabular}
+\begin{tabular}{|
+>{\columncolor[HTML]{ECF4FF}}c 
+>{\columncolor[HTML]{ECF4FF}}c |}
+\hline
+\multicolumn{2}{|c|}{\cellcolor[HTML]{CBCEFB}Multimodo}    \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}nm}   & dB/Km \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}850}  & 2.72  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1300} & 0.52  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1380} & 0.92  \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}1550} & 0.29  \\ \hline
+\end{tabular}
+\end{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dfo/dfo42.png}
+\caption{Distancia máxima de la fibra óptica}
+\label{fig:dist max fibra}
+\end{figure}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{CBCEFB} 
+Ventana (nm) & Longitud operadora (nm) \\ \hline
+800-90       & 850                     \\ \hline
+1250-1350    & 1310                    \\ \hline
+1500-1600    & 1550                    \\ \hline
+\end{tabular}
+\caption{Longitud de operación en cada ventana.}
+\end{table}
+Esta fórmula calcula la atenuación debida a la absorción de la luz en la fibra:
+\begin{equation}
+\alpha = -10\log\parentesis{\frac{P_{out}}{P_{in}}}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $\alpha$: atenuación debida a la absorción. (dB/km)
+\item $P_{out}$: Potencia de salida de la señal. (W)
+\item $P_{in}$ : Potencia de entrada	 de la señal.  (W)
+\end{itemize}
+Es también de ayuda saber la atenuación de la potencia óptica a lo largo de una distancia (Z) en una fibra óptica debido a la atenuación intrínseca de la fibra.
+\begin{equation}
+P_Z=P_{out}e^{-\alpha\cdot Z}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $P_Z$ : Potencia óptica en un punto específico a lo largo de la fibra (W).
+\item $P_{out}$ : Potencia óptica en el punto de entrada de la fibra (W).
+\item $\alpha$: Coeficiente de atenuación de la fibra óptica (en unidades de atenuación por unidad de longitud. (dB/km)
+\item \textbf{Z}: Distancia a lo largo de la fibra desde el punto de entrada (m).
+\end{itemize}
+La atenuación de una fibra es medida en dB y se incrementa linealmente con la longitud. Para obtener el coeficiente de atenuación (dB/Km), se divide el segmento entre su longitud. La atenuación de \textbf{varias fibras} unidas es igual a la \textbf{suma} de las atenuaciones (dB) parciales más la originada por los empalmes o conectorizaciones.
+\section{Dispersión y ancho de banda}
+El \textbf{ancho de banda} es un parámetro fundamental de transmisión de la fibra óptica. Es el valor de la frecuencia a la cual la magnitud de la función de transferencia \textbf{decrece 3dB}. Se expresa en MHz.Km.\\
+La \textbf{dispersión} es una parámetro que determina el \textbf{volumen} o la capacidad \textbf{máxima} de información transportada por unidad de longitud. Puede medirse en términos de retardo relativo. La dispersión tienen un efecto acumulativo con la longitud de la fibra.\\
+Los tipos de dispersión:
+\begin{itemize}
+\item Multimodo
+\begin{enumerate}
+\item Modal
+\item Cromática
+\end{enumerate}
+\item Monomodo
+\begin{enumerate}
+\item Cromática
+\item PMD-Dispersión de modo de polarización
+\item Efectos no lineales
+\end{enumerate}
+\end{itemize}
+La dispersión cromática afecta tanto a MM como SM, limitando la distancia por señal individual.
+\subsection{Dispersión del material}
+El \textbf{ensanchamiento} que sufre el pulso a consecuencia de este fenómeno es :
+\begin{equation}
+T=M(\lambda)\cdot L\Delta(\lambda)
+\end{equation}
+\begin{itemize}
+\item $M(\lambda)$: Coeficiente de dispersión del material.
+\item $\Delta(\lambda)$: Anchura espectral de la fuente óptica.
+\item \textbf{L}: Longitud del camino óptico.
+\end{itemize}
+\subsection{Dispersión de guías de onda}
+\begin{equation}
+T=G(\lambda)\cdot L\Delta(\lambda)
+\end{equation}
+\begin{itemize}
+\item $G(\lambda)$: Coeficiente de dispersión por anomalías de parámetros ópticos y geométricos. Para un radio \textit{a}, un índice de refracción del núcleo $n_1$:
+\begin{displaymath}
+G(\lambda)=\frac{\lambda}{4\parentesis{\pi a^2}n_1\cdot c}ns/km\cdot nm
+\end{displaymath}
+\item $\Delta(\lambda)$: Anchura espectral de la fuente óptica.
+\item \textbf{L}: Longitud del camino óptico.
+\end{itemize}
+Coeficiente de dispersión total es:
+\begin{equation}
+D_T=M(\lambda)-G(\lambda)
+\end{equation}
+Podemos relacionar la dispersión total y el ancho de banda con:
+\begin{equation}
+BW=\frac{0.44}{\underbrace{\corchetes{M(\lambda)-G(\lambda)}}_{D_T}\cdot\Delta(\lambda)\cdot L}
+\end{equation}
+\section{Efectos no lineales}
+Los efectos no lineales en fibra óptica son fenómenos que ocurren cuando la \textbf{intensidad} de la luz en una fibra óptica es lo suficientemente \textbf{alta} como para afectar la propagación de la luz en la fibra de manera no lineal y largas distancias obtenidas con EDFA (del inglés, Erbium Doped Fiber Amplifier). Estos efectos son importantes en aplicaciones de alta potencia o de alta \textbf{velocidad} de datos y pueden tener impactos significativos en la transmisión de señales a través de fibras ópticas.
+\subsection{Mezcla de 4 longitudes}
+Dos longitudes de onda se mezclan Para producir nuevas longitudes de onda que pueden interferir con los originales en los sistemas eléctricos se presenta una distorsión de intermodulación.
+\begin{equation}
+N_w=\frac{N^2(N-1)}{2}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $N_w$: Número de nuevas longitudes de ondas.
+\item \textbf{N}: Número de longitudes de ondas originales.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo44.png}
+\caption{Productos de intermodulación.}
+\end{figure}
+Limita el número y espaciado de canales en DWDM pero con la cantidad apropiada de dispersión cromática puede mitigarlo.
+\begin{vocabulary}[DWDM]
+``Dense Wavelength Division Multiplexing'' (Multiplexación por División de Longitud de Onda Densa, en español). Se trata de una tecnología de transmisión utilizada en redes de fibra óptica para transmitir múltiples señales de datos en diferentes longitudes de onda de luz a través de una única fibra óptica.
+\end{vocabulary}
+\section{Distribución del pulso de fibra óptica}
+La función de transferencia \textbf{espectral} de una fibra óptica representa el comportamiento de la fibra o respuesta de la misma, en función de la amplitud y frecuencia del pulso lumínico inyectado. Se considera una función de transferencia gaussiana cuando se trabaja con fibra ópticas óptimas. El pulso lumínico recibido es el resultado del pulso lumínico inyectado tras someterse a la función transferencia espectral gaussiana de la fibra óptica.\\
+La respuesta en el tiempo y en la frecuencia adoptan una distribución de Gauss, cuya \textbf{desviación típica} se conoce como \textbf{dispersión}. El aumento de la dispersión disminuye el \textbf{ancho de banda}. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo45.png}
+\caption{Respuesta al impulso de una fibra óptica.}
+\end{figure}
+\begin{notation}
+Valores típicos de la dispersión modal en fibras de índice escalón en ese tipo de fibra están comprendidos entre 20 y 50 ns/Km.
+\end{notation}
+\begin{notation}
+El parámetro G representa un acusada dependencia de la longitud de onda los años de banda comerciales están comprendidos entre 1 a 1.8 GHz.
+\end{notation}
+\chapter{FTTH}
+FTTH es un concepto que se refiere a la infraestructura de redes de fibra óptica que se extiende directamente desde la central de telecomunicaciones o el proveedor de servicios hasta el hogar o el lugar de usuario final.\\
+PON (Passive Optical Network) es una tecnología de red \textbf{óptica pasiva} que se utiliza comúnmente en implementaciones de FTTH. PON es un enfoque de red de fibra óptica que utiliza una topología en \textbf{estrella} y componentes pasivos para distribuir la señal óptica desde una única fuente central (la OLT o Optical Line Terminal) hacia múltiples destinos (los ONUs o Optical Network Units) que pueden ser las unidades de los usuarios finales en un FTTH.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo46.png}
+\caption{Red óptica pasiva.}
+\end{figure}
+Para \textbf{downstream} en un red PON , la longitud de onda descendente se utiliza para transmitir datos desde la central (OLT) hacia el usuario final (ONT/ONU). En Gigabit-PON, la longitud de onda descendente suele estar en el rango de 1480 a 1500 nm, mientras que en Ethernet-PON se usa una longitud de onda de 1490 nm. (1400 nm-4ta ventana)
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo47.png}
+\caption{Red PON: downstream}
+\end{figure}
+Si el transmisor tiene una velocidad de 25 Gbps (por ejemplo), está será dividido cada cada usuario: 25/Número de usuarios.\\
+Para \textbf{upstream}, la longitud de onda ascendente se refiere a la señal transmitida desde el usuario final (ONT/ONU) hacia la central (OLT). En las redes PON, la longitud de onda ascendente suele estar en el rango de 1260 a 1360 nanómetros (nm) en sistemas como GPON y 1310 nm en sistemas EPON. Usando TDMA.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo48.png}
+\caption{Red PON: upstream.}
+\end{figure}
+
+\begin{remark}
+\textbf{ONU vs ONT}: Las ONUs son dispositivos de red utilizados en redes PON para la distribución de servicios de fibra óptica a los usuarios finales, y las ONTs son un tipo específico de ONU diseñado para entregar servicios de usuario final y ofrecen interfaces para dispositivos de usuario final, como computadoras, teléfonos y televisores. A menudo, los términos se utilizan indistintamente, pero la ONT es una subcategoría de ONU con un enfoque más específico en la terminación de servicios para el usuario final.
+\end{remark}
+\subsubsection{Elementos de PON}
+\begin{itemize}
+\item \textbf{Splitter}: Los divisores ópticos se utilizan para dividir la señal óptica proveniente del OLT en múltiples direcciones hacia las ONUs/ONTs. Esto permite que una única fibra óptica sirva a varios usuarios finales. \textbf{Relación de División (Split Ratio)} es la relación de división se refiere a la proporción en la que una señal óptica se divide en las salidas. Por ejemplo, un splitter 1:4 divide la señal en cuatro partes iguales, enviando una cuarta parte de la señal a cada ONU/ONT. Los splitters se fabrican en una variedad de relaciones de división, como 1:2, 1:4, 1:8, 1:16, etc.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Dfo/dfo50.png}
+\end{center}
+\item \textbf{Caja de empalme}: Conocido como \textbf{splitter de 1er nivel}. Una caja de empalme proporciona un entorno protegido para las fibras ópticas y sus conexiones. Esto es importante para evitar daños, como la flexión excesiva de las fibras, la exposición a elementos ambientales y la contaminación que podría degradar la calidad de la señal óptica. Generalmente es de 1x8.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Dfo/dfo49.png}
+\end{center}
+\item \textbf{Caja de terminación óptica-CTO}: 
+Una caja de terminación óptica, también conocida como ``Optical Termination Box'' o ``Fiber Termination Box'' es un componente clave en las redes de fibra óptica que se utiliza en la terminación y distribución de fibras ópticas en la ubicación del usuario final o en un punto de acceso específico de la red. La caja de terminación óptica se utiliza para terminar las fibras ópticas que llegan a una ubicación específica, como una vivienda o una oficina. Esto implica la conexión de las fibras ópticas que provienen de la red principal a la caja de terminación.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Dfo/dfo51.png}
+\end{center}
+\item \textbf{Cable drop}: Es el segmento de fibra óptica que conecta la caja de terminación óptica (ONT, Optical Network Terminal) o la caja de empalme en la ubicación del usuario final con la red de fibra óptica que llega desde la central o el nodo de acceso.
+\item \textbf{Conectores}: Los conectores ópticos se utilizan para unir dos extremos de fibras ópticas y permitir la transmisión de luz a través de ellas. Existen varios tipos de conectores ópticos, como los conectores SC, LC, ST, y muchos otros, cada uno con sus propias características y aplicaciones específicas. Los conectores permiten la conexión y desconexión rápida de las fibras, lo que facilita la instalación y el mantenimiento.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Dfo/dfo52.png}
+\end{center}
+\item \textbf{Roseta}: Dispositivos o cajas de terminación que se utilizan para conectar y distribuir cables de fibra óptica en la ubicación del usuario final o en un punto de acceso específico de la red. Estas rosetas facilitan la conexión de dispositivos de usuario final, como ONTs (Optical Network Terminals), routers, teléfonos y otros equipos, a la red de fibra óptica. La roseta de fibra óptica actúa como un punto de \textbf{transición} donde las señales \textbf{ópticas} se convierten en señales \textbf{eléctricas} que pueden ser utilizadas por los dispositivos electrónicos. 
+\begin{center}
+\includegraphics[width=0.6\linewidth]{Dfo/dfo54.png}
+\end{center}
+\item \textbf{ONT}: La ONT es el punto de terminación de la fibra óptica en la ubicación del usuario final. Convierte las señales ópticas en señales eléctricas que pueden ser utilizadas por dispositivos de usuario final, como computadoras, teléfonos, televisores y routers.
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Dfo/dfo53.png}
+\end{center}
+\end{itemize}
+\begin{vocabulary}[Sangrado]
+El ``sangrado'' en la fibra óptica se refiere a la fuga de luz de una fibra a otra, lo que puede causar problemas en la transmisión de datos y comunicaciones. La prevención del sangrado es esencial para garantizar un funcionamiento eficaz de la red de fibra óptica.\\
+El Sangrado de Fibra es una técnica que permite la extracción de los hilos de un cable de Fibra Óptica o un tubo holgado sin necesidad de hacer un corte transversal y truncar su continuidad.
+\end{vocabulary}
+%Ejemplo
+\chapter{Transmisores ópticos}
+Para los dos tipos de transmisores ópticos tenemos:
+\begin{itemize}
+\item \textbf{LED}: Usado para fines multimodo.
+\begin{enumerate}
+\item Superficial (SLED)
+\item Borde o lateral (ELED)
+\item Superluminiscente o superradiante (SLD)
+\end{enumerate}
+
+\item \textbf{Láser}: Usado para fines monomodo.
+\begin{enumerate}
+\item Multimodo
+\begin{itemize}
+\item Fabri-Perot
+\end{itemize}
+\item Monomodo
+\begin{itemize}
+\item DBR
+\item DFB
+\item VC-SEL\footnote{Principalmente en aplicaciones multimodo, aunque también puede ser adaptarse a aplicaciones monomodo bajo ciertas condiciones y requisitos específicos.}
+\end{itemize}
+\end{enumerate}
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo1.png}
+\caption{Diámetro de núcleo de fibra óptica.}
+\end{figure}
+Algunas \textbf{generalidades} antes de continuar:
+\begin{itemize}
+\item Diodos semiconductores elaborados con materiales de los grupos III, IV, V y VI de la tabla periódica:
+\begin{itemize}
+\item III: Galio (Ga), Boro (B), Aluminio (Al) y Indio (In)
+\item IV: Plomo (Pb) y Estaño (Sn).
+\item V: Arsénico (), Fósforo (P), Antimonio (Sb) y Bismuto (Bi).
+\item VI: Azufre (S), Selenio (Se) y Telurio (Te).
+\end{itemize}
+\item Tipos de emisión de luz:
+\begin{itemize}
+\item Emisión Espontánea: En la emisión espontánea, los electrones en un material emisor de luz se relajan de un estado de energía más alto a uno más bajo, liberando energía en forma de fotones. Esta emisión ocurre de manera aleatoria y no está sincronizada. Por ejemplo, la emisión espontánea ocurre en la mayoría de los materiales luminiscentes convencionales, como los materiales fluorescentes.
+\item Emisión Estimulada: En la emisión estimulada, los electrones son estimulados para liberar fotones adicionales al interactuar con fotones incidentes. Este proceso es el principio fundamental detrás de los láseres y los amplificadores ópticos. La emisión estimulada se caracteriza por ser coherente y tener una fase y dirección bien definidas.
+\end{itemize}
+\end{itemize}
+\section{LED}
+También tenemos que recordar las características generales de los diodos LED:
+\begin{enumerate}
+\item Reducido tamaño y peso: Los diodos LED son dispositivos compactos y livianos, lo que facilita su integración en diversos diseños y aplicaciones.
+\item Superficies radiantes compatibles en tamaño: Los diodos LED tienen una superficie radiante que emite luz, y esta superficie se adapta a diferentes tamaños según el tipo y el modelo del LED.
+\item Fácil modulación: Los diodos LED pueden ser modulados fácilmente para variar su brillo o encendido y apagado rápidamente, lo que permite su uso en aplicaciones de señalización y comunicación.
+\item Bajo consumo de corriente: Los diodos LED requieren un consumo de corriente eléctrica relativamente bajo para emitir luz, lo que los hace eficientes en términos de consumo de energía.
+\item Alta velocidad de respuesta: Los diodos LED tienen una alta velocidad de respuesta, lo que significa que pueden encenderse y apagarse rápidamente en cuestión de nanosegundos.
+\item Espectro de emisión coincidente con la ventana de $T_x$: Esta característica se refiere a que los diodos LED emiten luz en un rango de longitud de onda que es compatible con la ventana de transmisión de un sistema de comunicación óptica.
+\item Reducido anchura espectral: Los diodos LED emiten luz en un rango de anchura espectral relativamente estrecho, lo que significa que la luz emitida se concentra en una estrecha banda de longitud de onda.
+\item Estrecho lóbulo de emisión: Los diodos LED tienen un lóbulo de emisión direccional estrecho, lo que significa que la luz se emite en una dirección específica, lo que facilita el direccionamiento y la concentración de la luz en una región deseada.
+\item Alta potencia óptica de salida: Los diodos LED pueden proporcionar una potencia óptica de salida significativa, lo que significa que pueden emitir una cantidad considerable de luz en comparación con su tamaño y consumo de energía.
+\item Características estables (usar climatizador): Para garantizar un rendimiento óptimo, algunos diodos LED pueden requerir un control preciso de la temperatura, lo cual se puede lograr utilizando un climatizador o dispositivos de enfriamiento adecuados.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Dfo/dfo2.png}
+\caption{Conversión eléctrica.}
+\end{figure}
+\begin{enumerate}
+\item \textbf{Absorción}: La absorción es el proceso mediante el cual un material absorbe energía lumínica. Cuando un fotón interactúa con un átomo, molécula o material semiconductor, puede transferir su energía al sistema, lo que resulta en la excitación de los electrones del material a niveles de energía más altos. Como resultado, el fotón es absorbido y su energía se convierte en energía interna del material. La absorción se produce cuando la energía del fotón coincide con la diferencia de energía entre los niveles de energía permitidos en el material.
+\begin{itemize}
+\item En ingeniería fotovoltaica, los paneles solares absorben la energía de la luz solar y la convierten en electricidad.
+\item En fibra óptica, los cables de fibra óptica utilizados para transmitir señales de datos absorben la luz y la guían a lo largo de la fibra.
+\end{itemize}
+\item \textbf{Emisión espontánea}: La emisión espontánea ocurre cuando los electrones excitados en un material emisor de luz se relajan de un estado de energía más alto a uno más bajo sin ninguna influencia externa. Durante este proceso, el electrón emite un fotón y regresa a su estado de energía original. La emisión espontánea es aleatoria y no está sincronizada, lo que significa que los fotones emitidos tienen diferentes direcciones de propagación y fases. Este fenómeno es común en muchos materiales luminiscentes, como los materiales fluorescentes, donde los electrones excitados se desexcitan espontáneamente y emiten fotones de luz.
+\begin{itemize}
+\item En la iluminación LED, los diodos emisores de luz emiten fotones cuando los electrones se relajan de niveles de energía más altos a niveles de energía más bajos de manera espontánea.
+\item En los dispositivos de visualización, como las pantallas OLED, la emisión espontánea se utiliza para generar luz y mostrar imágenes.
+\end{itemize}
+\item \textbf{Emisión estimulada}: La emisión estimulada es un proceso en el cual un electrón excitado en un material emisor de luz es inducido a decaer a un nivel de energía más bajo mediante la interacción con un fotón incidente. En este caso, el fotón incidente tiene una energía y una dirección específicas que coinciden con las características del electrón excitado. Cuando el fotón interactúa con el electrón excitado, el electrón se desexcita y emite un segundo fotón con la misma energía, fase y dirección que el fotón incidente. A diferencia de la emisión espontánea, la emisión estimulada es un proceso determinista y está sincronizada con la presencia del fotón incidente. Este proceso es la base del funcionamiento de los láseres y amplificadores ópticos, donde se utiliza un medio activo para lograr la emisión estimulada y generar luz coherente y direccional.
+\begin{itemize}
+\item En los láseres, se utiliza la emisión estimulada para generar luz coherente y direccional. Un fotón incidente estimula la emisión de más fotones idénticos, lo que amplifica la luz y la hace coherente.
+\item En la amplificación óptica de señales, como en los amplificadores ópticos de fibra, se utiliza la emisión estimulada para amplificar una señal óptica débil mediante la interacción con fotones de una fuente de bombeo.
+\end{itemize}
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo3.png}
+\caption{Bandas de energía.}
+\end{figure}
+\begin{definition}[Energía Gap]
+La energía de la banda prohibida o energía gap ($E_g$) de un material semiconductor se puede calcular utilizando la ecuación de la relación entre la energía de un fotón y su longitud de onda. La ecuación es la siguiente:
+\begin{equation}
+E_g=\frac{h\cdot c}{\lambda}
+\label{eq:energiaGap}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $E_g$: Es la energía de la banda prohibida o energía gap del material. (eV)
+\item $h$ La constante de Planck (aproximadamente $6.626\basedec{-34} J\cdot s $  o $4.136\basedec{-15} eV\cdot s$).
+\item \textbf{c}: Es la velocidad de la luz en el vacío (aproximadamente $3\basedec{8}m/s$). (m/s)
+\item $\lambda$: Longitud de onda de la luz incidente en el material. (m)
+\end{itemize}
+\end{definition}
+\begin{notation}
+Para apreciar los colores de manera más precisa y natural, se recomienda utilizar una fuente de luz que tenga un espectro continuo y equilibrado. Tanto la luz solar como algunas fuentes de luz incandescentes, como las lámparas halógenas, proporcionan un espectro completo y pueden permitir una buena representación de los colores.
+\end{notation}
+\subsection{Tipos de estructuras de los diodos LED}
+%Imagen de diodo  led
+\subsubsection{LEDs de superficie-SLED}
+Para lograr el acoplamiento eficiente entre un LED de superficie y una fibra óptica, se aprovecha la radiación que emerge desde un plano paralelo al de la unión semiconductora. Esta radiación se emite en forma de un cono de luz divergente. El LED de superficie está diseñado de tal manera que la región emisora de luz se encuentra en un plano paralelo al plano de unión semiconductora. Esto permite que la luz emitida se propague en un amplio ángulo con respecto al eje óptico del LED. Esta configuración es diferente de los LED convencionales, donde la emisión se produce principalmente en un ángulo estrecho y perpendicular al plano de la unión. Cuando se coloca una fibra óptica cerca del LED de superficie, el cono de luz emitido por el LED se acopla en la abertura de entrada de la fibra óptica. La geometría de la fibra óptica está diseñada para captar la mayor cantidad posible de luz emitida por el LED y guiarla a lo largo de la fibra. El acoplamiento eficiente se logra al optimizar el ángulo de inclinación y la posición relativa entre el LED de superficie y la fibra óptica. Además, se utilizan técnicas de alineación precisa y lentes ópticas para enfocar y mejorar la captación de la luz emitida por el LED.
+\subsubsection*{LED de emisión superficial: tipo burrus}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Dfo/dfo5.png}
+\caption{Led superficial: Burrus .}
+\end{figure}
+A diferencia de los diodos de unión PN convencionales, que tienen una unión PN en el interior del semiconductor, los diodos de superficie tipo Burrus tienen una \textbf{estructura de barrera} de superficie en la interfaz entre el metal y el semiconductor. Para evitar la absorción de la radiación óptica en la capa \textit{n}, se usan estructuras de capas muy estrechas, tallandose una abertura cóncava en la capa \textit{n}, que permite alojar el extremo de la fibra, aproximadamente a la capa \textit{p}, que es donde se produce la emisión luminosa consiguiendo una \textbf{alta radiancia}.\\
+Esta estructura de barrera de superficie proporciona varias ventajas en comparación con los diodos de unión PN convencionales. Algunas de estas ventajas incluyen:
+\begin{enumerate}
+\item \textbf{Velocidad de conmutación rápida}: Los diodos de superficie tipo Burrus tienen una estructura de barrera de superficie que permite una respuesta más rápida y una mayor velocidad de conmutación. Esto los hace adecuados para aplicaciones de alta frecuencia y alta velocidad, como en circuitos de radiofrecuencia y comunicaciones.
+\item \textbf{Baja capacitancia}: La estructura de barrera de superficie reduce la capacitancia del diodo, lo que resulta en una menor carga y descarga de la corriente en aplicaciones de alta frecuencia.
+\item \textbf{Baja distorsión armónica}: Debido a su diseño especial, los diodos de superficie tipo Burrus tienen una baja distorsión armónica, lo que los hace adecuados para aplicaciones en las que se requiere una alta calidad de señal y una baja distorsión, como en equipos de audio y comunicaciones de alta fidelidad.
+\end{enumerate}
+\subsubsection*{Diodo Burrus con Heterounión}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Dfo/dfo4.png}
+\caption{Led superficial: Burrus y heterounión.}
+\end{figure}
+La radiancia de un LED de superficie es del orden de $2W/sr.cm^2$\footnote{La radiancia ser mide en "Vatio por metro cuadrado por esteroradián".} para una corriente de unos 200mA, pero estos valores pueden mejorarse hasta $50W/sr.cm^2$. La caracteristica de radiación de un LED de superficie es de tipo \textbf{Lambertiano} (coseno), es decir, la potencia emitida según un determinado ángulo $\theta$ respecto a al normal de la superficie emisora es:
+\begin{equation}
+P(\theta)=P_0\cdot\cos\theta
+\end{equation}
+Donde:
+\begin{itemize}
+\item $P(\theta)$: Potencia emitida por el LED en un ángulo $\theta$. (W).
+\item $P_0$: Potencia total emitida por el LED sin considerar el ángulo sólido. (W).
+\item $I(\theta)$: Función de distribución angular, que representa la intensidad luminosa en función del ángulo $\theta$.  (W/sr).
+\item $\theta$: Ángulo sólido formado con el eje x. (sr)\footnote{Esteroradián.}.
+\end{itemize}
+\subsubsection{Diodo led de borde-ELED}
+Los LEDs de emission lateral o de borde (edge-emitting LEDs o ELED) surgieron como desarrollo posterior ante la demanda de fuentes que pudiesen alcanzar mayor distancia, a mayor longitud de onda y con mayor tasa binaria. En los ELED, la región activa es una tira estrecha que se crea bajo la superficie del sustrato. Éste se corta o se pule de manera que la tira alcanza los dos extremos del dispositivo. Se emplea una doble heteroestructura con los mismos fines que en los SLED, y además como
+guiaonda, haciendo el índice de la zona activa superior al de las dos zonas inmediatas. También se confina lateralmente. La faceta trasera se suele tallar o recubrir para hacerla reflectante, mientras que la delantera, por donde se produce la salida del haz de luz, se recubre de un material antirreflexivo. De este modo se optimiza la salida a un solo borde.
+Los ELED son capaces de acoplar mayor porcentaje de potencia que los SLED a fibras con baja apertura numérica. En algunas aplicaciones se utilizan asociados a fibras monomodo. El rango espectral de la emisión es asimismo más estrecho en los ELED. Como contrapartida, los ELED son más sensibles a los cambios de temperatura que los SLED.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo6.png}
+\caption{LED de emisión lateral.}
+\end{figure}
+En este caso la distribución enérgetica no es del tipo Lambertiano, como ocurre en los LED de superficie, sino aparece como un lóbulo de radiación de sección transversal en cierto modo elíptica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo7.png}
+\caption{Estrucura de un LED de emisión lateral.}
+\end{figure}
+\section{Láser}
+\begin{itemize}
+\item \textbf{Luz coherente}: La luz coherente se refiere a una luz que tiene una fase constante en el tiempo y en el espacio. Las ondas de luz coherentes tienen una relación fija entre las crestas y los valles de las ondas, lo que resulta en un patrón de interferencia bien definido. En la fibra óptica, la luz coherente se utiliza en aplicaciones como la transmisión de señales de comunicación de larga distancia y la interferometría, donde se requiere la interferencia precisa de las ondas de luz para mediciones precisas.
+\item \textbf{Luz incoherente}: La luz incoherente es una luz en la que la fase de las ondas varía de manera aleatoria en el tiempo y el espacio. No hay una relación fija entre las crestas y los valles de las ondas de luz incoherentes, lo que resulta en una interferencia destructiva promediada a lo largo del tiempo. En la fibra óptica, la luz incoherente se utiliza en aplicaciones como la iluminación general, donde la uniformidad de la iluminación es más importante que la interferencia de las ondas de luz.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo8.png}
+\caption{Luz coherente e incoherente.}
+\end{figure}
+Siguiendo con los \textbf{diodos láser}, estos son fuentes de luz amplificada coherente. Basa en una estructura de uniones de material semiconductor del tipo p-n, formando una cavidad óptica resonante  (del tipo Fabry-Perot) para proporcionar la realimentación de fotos y aumentar la emisión estimulada.
+\begin{definition}[Cavidad óptica resonante]
+Una cavidad óptica resonante es una estructura diseñada para mantener y amplificar la luz que se propaga en su interior. Consiste en dos o más superficies reflectantes, como espejos, que forman una configuración en la que la luz se refleja repetidamente entre ellos.\\
+Cuando la luz ingresa a la cavidad óptica resonante, parte de ella se refleja en las superficies reflectantes y parte se transmite a través de ellas. La luz reflejada se superpone y se refuerza a medida que atraviesa la cavidad una y otra vez, generando una onda estacionaria de luz dentro de la cavidad. Esto crea modos de resonancia, que son longitudes de onda específicas en las cuales la luz se amplifica y se mantiene confinada en la cavidad durante un tiempo más largo.\\
+La característica principal de una cavidad óptica resonante es su capacidad para aumentar la intensidad de la luz en ciertas longitudes de onda. La amplificación se logra al reflejar repetidamente la luz en las superficies reflectantes, lo que permite que la luz pase múltiples veces a través del medio activo de la cavidad, como un material láser.
+\end{definition}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo9.png}
+\includegraphics[width=0.6\linewidth]{Dfo/dfo10.png}
+\caption{Cavidad óptica resonante.}
+\end{figure}
+\subsection{Láser guiado por ganancia}
+Estructura de geometría de franjas donde la distribución de modos ópticos a lo  largo del plano de la unión es determinado por la ganancia óptica de la cavidad, por lo general proporcional a una emisión múltimodo.\\
+En un láser convencional, la retroalimentación necesaria para la amplificación de la luz proviene de un par de espejos colocados en los extremos de la cavidad láser. Sin embargo, en un láser guiado por ganancia, la \textbf{retroalimentación} se logra a través de una guía de ondas óptica que contiene el \textbf{medio activo} de ganancia.\\
+El medio activo de ganancia puede ser un material semiconductor \textbf{dopado}, como un láser de semiconductor, o un material amplificador de fibra óptica. Este medio activo proporciona la ganancia necesaria para amplificar la luz a medida que se propaga a través de él. La guía de ondas óptica, por otro lado, se utiliza para confinar y direccionar el haz láser. Puede ser una guía de ondas de semiconductor, una fibra óptica, una guía de ondas plana o cualquier otra estructura que sea capaz de guiar la luz en la dirección deseada. La combinación de la ganancia del medio activo y la guía de ondas óptica permite que el láser guiado por ganancia genere un haz láser altamente \textbf{direccional} y \textbf{coherente}. La retroalimentación se logra mediante múltiples reflexiones internas dentro de la guía de ondas, lo que amplifica la luz en el medio activo y produce una emisión láser.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo11.png}
+\includegraphics[width=0.6\linewidth]{Dfo/dfo12.png}
+\caption{Espectro de un láser de ganancia guiada.}
+\end{figure}
+\begin{definition}[Distancia entre los modos longitudinales adyacentes]
+Esta distancia se conoce como longitud de onda de modo libre (Free Spectral Range, FSR) y se calcula utilizando la siguiente fórmula:
+\begin{equation}
+\delta v_{ms}=\frac{c}{2nL}
+\end{equation}
+Donde:
+\begin{itemize}
+\item c: Velocidad de la luz ($3\basedec{10} m/s$). (m/s)
+\item L: Longitud efectiva de la cavidad láser. (m)
+\item n: Indice de refacción de el medio.
+\end{itemize}
+\end{definition}
+\begin{definition}[Anchura total a la mitad de la máxima amplitud]
+Es la distancia entre los dos puntos en los cuales el valor de la función es igual a la mitad de su valor máximo. Es decir, es la distancia entre los dos puntos donde la función alcanza la mitad de su amplitud máxima. El FWHM se utiliza para \textbf{cuantificar} la anchura de una función y proporciona información sobre la resolución, la dispersión o la característica de ancho de una distribución. En general, cuanto más estrecho sea el FWHM, más concentrada estará la distribución alrededor de su valor máximo, y cuanto más amplio sea el FWHM, más extendida estará la distribución.
+\begin{center}
+\includegraphics[width=0.6\linewidth]{Dfo/dfo13.png}
+\end{center}
+Si se asume una distribución Gaussiana, donde $\sigma$ es la varianza de la distribución Gaussiana, FWHM puede ser calculado como:
+\begin{equation}
+FWHM=2\sigma\sqrt{2\ln 2}=2.35\sigma
+\end{equation}
+\begin{center}
+\includegraphics[width=0.6\linewidth]{Dfo/dfo14.png}
+\end{center}
+\end{definition}
+\subsection{Láser Monomodo}
+Son utilizadas para comunicaciones de largo alcance, con un espectro muy angosto con la emisión de un único modo longitudinal y transversal. Se busca eliminar o suprimir los modos adyacentes para lograr una operación de un solo modo. Algunos tipos son:
+\begin{itemize}
+\item Láser de cavidad vertical (VCSEL): Son láseres monomodo que emiten la luz perpendicularmente a la superficie del dispositivo. Son ampliamente utilizados en aplicaciones de comunicaciones ópticas de corta distancia, como redes de área local (LAN) y enlaces de fibra óptica de corto alcance.
+\item Láser de diodo monomodo: Los láseres de diodo monomodo son dispositivos láser que utilizan un diodo semiconductor como medio activo y se diseñan para operar en un único modo longitudinal. Son ampliamente utilizados en aplicaciones de comunicaciones ópticas, medicina, investigación y otros campos.
+\item Láser de fibra monomodo: Los láseres de fibra monomodo utilizan una fibra óptica como medio de ganancia para generar un haz láser monomodo. La fibra óptica guía la luz de manera efectiva en un único modo, lo que permite una alta calidad de haz y una estrecha anchura espectral. Estos láseres son ampliamente utilizados en aplicaciones de telecomunicaciones, medicina, sensores ópticos y láseres de alta potencia.
+\item Láser de cavidad externa: Los láseres de cavidad externa utilizan una configuración en la que se acopla un láser de diodo o de fibra a una cavidad externa, como una resonador de Fabry-Perot o una cavidad de anillo. Esto permite controlar y seleccionar un único modo longitudinal para la emisión láser. Estos láseres se utilizan en aplicaciones que requieren una alta precisión espectral, como la espectroscopia y la metrología.
+\end{itemize}
+Estructura que proporciona una re-alimentación selectiva de frecuencia de manera que la pérdida de la cavidad es diferente para variar modos longitudinales. La emisión de la luz contiene un solo modo longitudinal.
+\subsubsection{Láser DFB y DBR}
+\begin{enumerate}
+\item \textbf{Láser de retroalimentación distribuida} (\textit{DFB, por sus siglas en inglés - Distributed Feedback Laser}): Un láser DFB es un tipo de láser de diodo que utiliza una rejilla de retroalimentación incorporada en la estructura del dispositivo. Esta rejilla de retroalimentación tiene una periodicidad precisa y se utiliza para proporcionar una retroalimentación óptica que favorece la emisión de luz en un único modo longitudinal y en una estrecha banda espectral. El láser DFB se caracteriza por su estabilidad en frecuencia y alta calidad de haz. Se utiliza en aplicaciones de comunicaciones ópticas de larga distancia, como en sistemas de transmisión de fibra óptica de alta velocidad.
+\item \textbf{Láser de reflector de banda distribuida} (\textit{DBR, por sus siglas en inglés - Distributed Bragg Reflector Laser}): Un láser DBR es otro tipo de láser de diodo que utiliza reflectores de banda distribuida para proporcionar retroalimentación óptica. Los reflectores de banda distribuida son estructuras formadas por capas alternas de materiales con diferentes índices de refracción. Estos reflectores actúan como espejos ópticos selectivos en un rango de longitudes de onda específico. Al ajustar la corriente de inyección del láser DBR, se puede sintonizar la longitud de onda de emisión. El láser DBR se utiliza en aplicaciones de comunicaciones ópticas, espectroscopia, sensores ópticos y otras áreas donde se requiere una sintonización precisa de la longitud de onda.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dfo/dfo15.png}
+\caption{Láseres DFB y DBR.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{Dfo/dfo16.png}
+\caption{Características de los diodos láser.}
+\end{figure}
+En un láser, la corriente de inyección es el factor determinante para controlar la emisión de luz. A medida que se aumenta la corriente de inyección, se incrementa la población de portadores de carga en el material activo del láser, lo que conduce a una mayor emisión estimulada de fotones y, por lo tanto, a un aumento en la potencia de salida. \\
+La gráfica de potencia de salida vs corriente generalmente muestra un comportamiento característico. Inicialmente, a bajas corrientes, la potencia de salida aumenta gradualmente a medida que se inyecta más corriente en el láser. Luego, a medida que se alcanza un cierto punto, la potencia de salida comienza a aumentar más rápidamente, alcanzando un máximo en un punto óptimo de operación conocido como "punto de máxima potencia". Más allá de este punto, la potencia de salida puede estabilizarse o incluso disminuir debido a fenómenos como la saturación del medio activo o el aumento de la disipación de calor. \\
+La gráfica de potencia de salida vs corriente es esencial para determinar el rango de corrientes de funcionamiento óptimo del láser. Permite identificar el punto de máxima potencia, donde el láser opera de manera más eficiente y se obtiene la máxima potencia de salida. También ayuda a determinar los límites de operación del láser, como corrientes mínimas y máximas, y proporciona información sobre la estabilidad y el comportamiento del láser en diferentes condiciones.
+\subsection{VCSEL}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo17.png}
+\caption{Vertical-Cavity Surface-Emitting Laser}
+\end{figure}
+Un VCSEL (Vertical-Cavity Surface-Emitting Laser, por sus siglas en inglés) es un tipo de láser semiconductor que emite luz perpendicularmente a la superficie del dispositivo. A diferencia de los láseres de borde, que emiten luz a lo largo de un borde de la unión p-n, los VCSEL emiten luz a través de la parte superior e inferior de la estructura semiconductor. El funcionamiento básico de un VCSEL se basa en la creación de una cavidad óptica resonante vertical dentro del dispositivo. La estructura del VCSEL consta de múltiples capas de materiales semiconductores, como arseniuro de galio (GaAs) y arseniuro de aluminio (AlAs), que forman una estructura de espejo de banda distribuida. Estos espejos se utilizan para proporcionar retroalimentación óptica y formar la cavidad resonante. En el centro de la estructura del VCSEL se encuentra una capa activa, que generalmente consiste en una capa de material semiconductor dopada con impurezas para crear una unión p-n. Cuando se aplica una corriente eléctrica a través de la unión p-n, se inyectan portadores de carga (electrones y huecos) en la capa activa. Estos portadores se recombinan en la región activa y generan emisión de luz. La geometría vertical del VCSEL permite que la luz emitida se acople eficientemente en el modo transversal fundamental de la cavidad resonante. La longitud de onda de la luz emitida está determinada por la separación entre los espejos de banda distribuida y las propiedades de los materiales utilizados.\\
+Una ventaja clave de los VCSEL es su facilidad para fabricar matrices bidimensionales de dispositivos, lo que permite la construcción de módulos de emisión de alta densidad. Además, los VCSEL tienen una alta eficiencia de acoplamiento óptico, una alta velocidad de modulación y una emisión de luz con una distribución de haz circular y simétrica.
+\subsection{Diagrama de ojo}
+%Diagrama de ojo
+Los dispositivos LED y LASER deben cumplir ciertos parámetros generales para su uso en los sistemas ópticos, que deben orientarse a:
+\begin{itemize}
+\item Definir el comportamiento respecto a la conversión electro-óptica
+\item Adecuar las características radiométricas de los dispositivos de acuerdo con el portador físico (fibra óptica).
+\item Diseñar circuitos de excitación idóneos con respecto a la naturaleza del tipo emisor.
+\end{itemize}
+
+\section{Parámetros ópticos de los dispositivos emisores}
+Los dispositivos láser y led deben cumplir ciertos parámetros generales para el uso en los sistemas ópticos, que deben orientarse a:
+\begin{itemize}
+\item Definir el comportamiento respecto a la conversión electro-óptica.
+\item Adecuar las características radiométricas de los dispositivos de acuerdo con el portador físico.
+\item Diseñar circuitos de excitación idóneos con respecto a la naturaleza del tipo de emisor.
+\end{itemize}
+\begin{vocabulary}[FWHM]
+\textit{Full width at half maximum} es la anchura a media altura que presenta un determinado pico de emisión. Sirve para calcular la resolución.
+\end{vocabulary}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo19.png}
+\caption{FWHM: LED vs Diodo Láser}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo18.png}
+\caption{Anchura espectral de potencia se calcula a la mitad de la potencia máxima.}
+\end{figure}
+Los ``parámetros emisores ópticos'' se refieren a una serie de características y especificaciones relacionadas con dispositivos emisores de luz en el contexto de la tecnología de fibra óptica. Estos parámetros son esenciales para comprender y evaluar el rendimiento de los componentes emisores de luz utilizados en sistemas de comunicación por fibra óptica.
+\begin{itemize}
+\item \textbf{Anchura espectral} en emisores ópticos se refiere a la \textbf{gama} de longitudes de onda presentes en la emisión de luz del dispositivo. Representa la distribución de energía óptica en el dominio de las longitudes de onda y se expresa típicamente en unidades de longitud, como nanómetros (nm).
+\begin{enumerate}
+\item Para LED: $\Delta\lambda=20-40 nm$
+\item Para Láser: $\Delta\lambda=0.1-2 nm$
+\end{enumerate}
+\item \textbf{Longitud de onda} de emisión de un láser está determinada por las propiedades del material utilizado en el medio activo y la estructura del dispositivo.
+\begin{itemize}
+\item Láser de semiconductor (diodo láser): Los diodos láser de semiconductor pueden emitir luz en una variedad de longitudes de onda, que van desde el infrarrojo cercano hasta el rojo y el verde. Algunas longitudes de onda comunes incluyen 780 nm, 850 nm, 980 nm, 1060 nm y 1550 nm.
+
+\item Láser de estado sólido: Los láseres de estado sólido pueden operar en diferentes longitudes de onda dependiendo del material activo utilizado. Por ejemplo, los láseres de Nd:YAG (neodimio-yag) pueden emitir en longitudes de onda de 1064 nm, mientras que los láseres de Nd:YVO4 (neodimio-yvo4) pueden emitir en longitudes de onda de 1064 nm y 1342 nm.
+
+\item Láser de CO2: Los láseres de CO2 son láseres de gas que emiten en el infrarrojo lejano, específicamente en una longitud de onda de alrededor de 10.6 micrómetros.
+
+\item Láser de fibra: Los láseres de fibra óptica pueden operar en una variedad de longitudes de onda, dependiendo de la configuración y el dopaje de la fibra. Algunas longitudes de onda comunes incluyen 1310 nm y 1550 nm.
+\end{itemize}
+%imagen de longitud de onda en base a los materiales
+\item \textbf{Lóbulo de emisión} o \textit{Beam Divergence} se refiere a la dirección preferencial en la cual la luz es emitida desde el dispositivo. Representa la distribución espacial de la energía óptica en relación con el ángulo de emisión.\
+En los emisores ópticos, como los diodos láser o los LED, el lóbulo de emisión está determinado por la estructura y diseño del dispositivo, así como por las propiedades del material utilizado.\\
+En el caso de un diodo láser, por ejemplo, el lóbulo de emisión puede ser bastante estrecho y concentrado en un ángulo específico. Esto se debe a la presencia de espejos reflectantes en los extremos del diodo láser, que permiten la retroalimentación de la luz emitida y la formación de un haz coherente y direccional. En este caso, la mayor parte de la energía óptica se emite en un ángulo estrecho en relación con el eje longitudinal del diodo láser.\\
+Por otro lado, en un LED (diodo emisor de luz), el lóbulo de emisión puede ser más amplio y disperso. Esto se debe a la falta de espejos reflectantes y la dispersión inherente de la luz dentro del dispositivo. En este caso, la energía óptica se emite en un ángulo más amplio, lo que resulta en una distribución espacial más difusa.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo21.png}
+\caption{Lóbulo de emisión}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo20.png}
+\caption{Lóbulo de emisión: ángulos}
+\end{figure}
+\item \textbf{Potencia óptica de emisión}  se refiere a la cantidad de energía óptica \textbf{emitida} por un dispositivo emisor, como un diodo láser o un LED. Se mide en unidades de potencia, como vatios (W) o milivatios (mW). La potencia óptica de emisión depende de varios factores, incluyendo la eficiencia del dispositivo emisor, la corriente o la potencia de excitación aplicada, y las características del medio activo utilizado en el dispositivo. En el caso de un \textbf{diodo láser}, la potencia óptica de emisión se puede controlar ajustando la \textbf{corriente} de excitación aplicada al dispositivo. A medida que aumenta la corriente, la emisión de luz aumenta y, por lo tanto, también lo hace la potencia óptica de emisión. En un \textbf{LED}, la potencia óptica de emisión está relacionada con la potencia eléctrica suministrada y la eficiencia del dispositivo. Los LEDs generalmente tienen una eficiencia más baja que los diodos láser, por lo que la potencia óptica de emisión puede ser menor en comparación.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo22.png}
+\caption{Potencia óptica de emisión.}
+\end{figure}
+
+\item \textbf{Emitancia radiante} es una medida de la cantidad de radiación electromagnética emitida por una \textbf{superficie} en una determinada \textbf{dirección} y en un rango de longitudes de onda. Es una propiedad importante en el estudio de la radiación térmica y la transferencia de calor. La emitancia radiante se denota comúnmente como ''M´´ y se expresa en unidades de \textbf{potencia por unidad de área} y por \textbf{unidad de ángulo sólido}, como vatios por metro cuadrado por estereorradián ($W/m^2/sr$). Indica la cantidad de energía radiante emitida por unidad de área y por unidad de ángulo sólido. La emitancia radiante depende de las propiedades de la superficie emisora, como su temperatura, textura, reflectividad y propiedades espectrales. Superficies con una mayor temperatura o mayor emisividad tienen una mayor emitancia radiante.\\
+Es importante destacar que la emitancia radiante se refiere específicamente a la radiación emitida por una superficie y no tiene en cuenta la radiación incidente o reflejada. Además, la emitancia radiante puede variar con la longitud de onda, lo que se conoce como espectro de emisión.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo23.png}
+\caption{Emitancia radiante.}
+\end{figure}
+
+\item \textbf{Intensidad radiante} se refiere a la cantidad de energía radiante que se propaga en una \textbf{dirección específica} desde una fuente de radiación en un área dada. Se mide en unidades de potencia por unidad de ángulo sólido y por unidad de área, como vatios por estereorradián por metro cuadrado ($W/sr/m^2$).\\
+La intensidad radiante se calcula dividiendo la\textbf{ potencia radiante} en la dirección considerada por el \textbf{ángulo sólido} que abarca esa dirección y el área a través de la cual se propaga la radiación.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo24.png}
+\caption{Intensidad radiante.}
+\end{figure}
+
+\item \textbf{Radiancia} una medida de la potencia radiante por unidad de área proyectada en una dirección específica y por unidad de ángulo sólido. Se utiliza para describir la densidad de flujo radiante en un punto particular de una superficie emisora o reflejante.\\
+La radiancia se denota comúnmente como ''LL´´ y se mide en unidades de potencia por unidad de área proyectada y por unidad de ángulo sólido, como vatios por metro cuadrado por estereorradián ($W/m^2/sr$). Indica la cantidad de energía radiante emitida o reflejada por unidad de área y por unidad de ángulo sólido en una dirección específica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo25.png}
+\caption{Radiancia.}
+\end{figure}
+
+\item \textbf{Área radiante} se refiere al tamaño o la superficie desde la cual se emite o se recibe radiación electromagnética. Es una medida importante para determinar la cantidad de energía radiante que se emite o se recibe en un determinado punto.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo26.png}
+\caption{Área radiante}
+\end{figure}
+
+\item \textbf{Corriente umbral de emisión} se refiere al valor mínimo de corriente eléctrica que debe aplicarse a un dispositivo emisor, como un diodo láser o un LED, para que comience a emitir luz de manera significativa.\\
+Cuando se aplica una corriente por debajo del umbral de emisión, la emisión de luz es muy débil o casi inexistente. Sin embargo, una vez que se supera la corriente umbral, la emisión de luz se vuelve más intensa y proporcionalmente mayor a medida que se aumenta la corriente.
+\begin{figure}[H]
+\centering
+\subfloat[AlGaAs]{\includegraphics[width=0.4\linewidth]{Dfo/dfo27.png}}
+\subfloat[InGaAsP]{\includegraphics[width=0.4\linewidth]{Dfo/dfo28.png}}
+\caption{Variación de corriente umbral de un láser}
+\end{figure}
+
+\item \textbf{Variación de respuesta} se refiere a la forma en que la salida del dispositivo varía en relación con los cambios en la intensidad, longitud de onda u otras propiedades de la luz incidente.\\
+Por ejemplo, un sensor óptico puede tener una variación de respuesta en términos de su sensibilidad, lo que significa que la respuesta del sensor puede ser diferente para diferentes niveles de intensidad de la luz incidente. Esto puede resultar en mediciones no lineales o en una falta de precisión en la detección de diferentes niveles de luz.\\
+Además, la variación de respuesta puede estar relacionada con la estabilidad a largo plazo de la salida del dispositivo. Por ejemplo, un transmisor óptico puede experimentar una variación de respuesta en términos de la potencia óptica emitida a lo largo del tiempo debido a factores como la temperatura ambiente, el envejecimiento de los componentes o la degradación del láser.
+
+\item \textbf{Linealidad}: implica que la salida óptica del dispositivo varía de manera lineal con respecto a la variación de la entrada óptica. 
+La linealidad se refiere a la capacidad de un dispositivo o sistema para producir una respuesta proporcional a la entrada aplicada. En el contexto de los dispositivos ópticos, la linealidad implica que la salida óptica del dispositivo varía de manera lineal con respecto a la variación de la entrada óptica.\\
+Un dispositivo óptico se considera lineal cuando su respuesta es directamente proporcional a la entrada óptica en un rango determinado. Esto significa que si se aplica una variación de la intensidad, longitud de onda u otra propiedad de la luz incidente, la salida del dispositivo óptico también variará de manera proporcional.\\
+Por ejemplo, en un sensor óptico lineal, la señal de salida será proporcional a la intensidad de la luz incidente. Si la intensidad se duplica, la señal de salida también se duplicará, y si la intensidad se reduce a la mitad, la señal de salida se reducirá a la mitad.
+
+\item \textbf{Tiempo de subida} se refiere al tiempo que tarda la señal en aumentar desde un nivel bajo hasta un nivel alto específico, generalmente desde el 10\% hasta el 90\% de su amplitud máxima. Representa la rapidez con la que la señal puede cambiar de un estado lógico bajo a uno alto.
+
+\item \textbf{Tiempo de bajada} es el tiempo que tarda la señal en disminuir desde un nivel alto hasta un nivel bajo específico, generalmente desde el 90\% hasta el 10\% de su amplitud máxima. Representa la rapidez con la que la señal puede cambiar de un estado lógico alto a uno bajo.
+\end{itemize}
+\begin{remark}
+Estos tiempos de transición son importantes porque afectan la capacidad del dispositivo o sistema para cambiar de un estado a otro de manera rápida y eficiente. En aplicaciones donde se requiere una conmutación rápida de la señal, como en sistemas de comunicaciones de alta velocidad o en aplicaciones de control, es deseable tener tiempos de subida y bajada mínimos.
+\end{remark}
+
+\section{Receptores ópticos}
+Un \textbf{fotodiodo} (diodo compuesto de una capa semiconductora P, intrínseca I y otra N-PIN) es un componente semiconductor que \textbf{convierte} la luz incidente en una c\textbf{orriente eléctrica}. Cuando la luz incide en un fotodiodo, genera pares electrón-hueco en el material semiconductor, lo que produce una corriente eléctrica proporcional a la intensidad de la luz incidente. Los fotodiodos se utilizan comúnmente en la detección de señales ópticas en sistemas de comunicación por fibra óptica y en aplicaciones de detección de luz en general.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo55.png}
+\caption{Fotodiodo PIN.}
+\end{figure}
+Se tiene también el \textbf{fotodiodo de avalancha-APD}, trabaja  con  tensiones inversas cercanas al umbral de daño del fotodiodo. De esta forma se aumenta la intensidad del campo eléctrico  en  la  zona  de  depleción,  promoviendo que  los  pares  huecos‐electrón  generados  en  la zona  adquieran  energías  necesarias  para  generar nuevos portadores por efecto avalancha. Típicamente  los  factores  de  multiplicación  M  van 
+de 10 para \textit{InGaAs} hasta 500 para los fotodiodos de 
+silicio
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo56.png}
+\caption{Fotodiodo de avanlancha.}
+\end{figure}
+\begin{remark}
+Se usan tipicamente \textit{Si} para 0.8-0.9 (Figura \ref{fig:res espec fd silicio}) $\mu m$ y \textit{Ge, InP, InGaAsP} para 1.1-1.6 $\mu m$.
+\end{remark}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo57.png}
+\caption{Fotodiodo de avanlancha.}
+\label{fig:res espec fd silicio}
+\end{figure}
+\subsection{Requerimientos de los receptores ópticos}
+\begin{enumerate}
+\item \textbf{Alta sensibilidad en las longitudes de onda de operación.} Un receptor óptico eficaz debe ser capaz de detectar señales de luz en una amplia gama de longitudes de onda que se ajusten a las necesidades de la aplicación.
+
+  \item \textbf{Alta fidelidad.} La fidelidad se refiere a la capacidad del receptor para reproducir fielmente la señal óptica recibida en una señal eléctrica sin distorsiones significativas.
+
+  \item \textbf{Alta respuesta eléctrica a la señal óptica recibida.} El receptor debe producir una respuesta eléctrica proporcional a la intensidad de la señal óptica incidente.
+
+  \item \textbf{Reducido tiempo de respuesta (amplio ancho de banda).} El tiempo de respuesta del receptor, es decir, la rapidez con la que puede seguir cambios en la señal óptica, debe ser lo más corto posible. Además, el receptor debe tener un ancho de banda amplio para acomodar señales de alta frecuencia.
+
+  \item \textbf{Mínimo ruido.} El ruido eléctrico y óptico en el receptor debe mantenerse al mínimo para garantizar la integridad de la señal y una buena relación señal-ruido.
+
+  \item \textbf{Estabilidad en las características de funcionamiento.} Las características de funcionamiento del receptor, como la ganancia y la sensibilidad, deben mantenerse estables en el tiempo y en diferentes condiciones de operación.
+
+  \item \textbf{Pequeñas mediciones.} El receptor debe ser compacto y ocupar poco espacio físico, lo que es especialmente importante en aplicaciones con limitaciones de espacio.
+
+  \item \textbf{Bajo voltaje de polarización.} El receptor debe funcionar con un voltaje de polarización bajo para minimizar el consumo de energía y facilitar su integración en sistemas de bajo consumo.
+
+  \item \textbf{Alta confiabilidad (tiempo de vida útil).} El receptor debe ser confiable y tener una larga vida útil para reducir la necesidad de mantenimiento y reemplazo frecuente.
+
+  \item \textbf{Bajo costo.} Idealmente, el receptor debe ser asequible para hacer que las aplicaciones y sistemas que lo utilizan sean económicamente viables.
+\end{enumerate}
+\subsection{Parámetros características de los receptores ópticos}
+\begin{enumerate}
+\item \textbf{Sensibilidad espectral} ($S_{\lambda}$): Mínima magnitud que detecta el sector óptico para una determinada relación señal ruido,  para señales analógicas o un determinado BER para comunicaciones digitales. Es dependiente de la longitud de onda y la velocidad binaria de transmisión (depende de la ventana).
+\item \textbf{Responsibidad} (Re): El comportamiento de un fotodiodo es frecuentemente caracterizado por la responsabilidad. Este parámetro es muy útil cuando se especifica la corriente generada por unidad de potencia óptica recibida:
+\begin{equation}
+Re=\frac{I_p}{P_o}
+\end{equation}
+Donde:
+\begin{itemize}
+\item $R_e$: Responsividad del fotodetector. (A/W)
+\item $I_p$ : Corriente generada por el fotodetector o fotocorriente de salida. (A)
+\item $P_o$: Potencia óptica incidente en el fotodetector. (W)
+\end{itemize}
+\item \textbf{Velocidad de respuesta} o \textbf{Ancho de banda eléctrico}: Está definido por los tiempos de su vida y calle del impulso eléctrico obtenido como respuesta a un impulso óptico incidente idealmente estrecho. 
+\begin{equation}
+\Delta BW_{min}=\frac{1}{2\pi t_{t}}=\frac{V_d}{2\pi w}
+\end{equation}
+\begin{itemize}
+\item $\Delta BW_{min}$: Ancho de banda mínimo.
+\item $t_{t}$: Tiempo de tránsito. (s)
+\item $V_d$: Velocidad de deriva. (s)
+\item \textbf{w}: Ancho de la zona de difusión.
+\end{itemize}
+\item \textbf{Corriente de oscuridad} ($I_d$): Se refiere a la corriente eléctrica que fluye a través de un fotodetector (como un fotodiodo o un fototransistor) en ausencia de luz incidente. Esta corriente se produce debido a la generación intrínseca de pares electrón-hueco en el material semiconductor del fotodetector, incluso en la ausencia de luz. La corriente de oscuridad es una componente no deseada que puede limitar la sensibilidad de un fotodetector.
+\begin{equation}
+I_d = I_{d0} \cdot e^{\frac{qV}{kT}}
+\end{equation}
+Donde:
+\begin{itemize}
+   \item \(I_d\) es la corriente de oscuridad en el fotodetector. Representa la corriente eléctrica que fluye en ausencia de luz incidente. (A)
+  \item \(I_{d0}\) es la corriente de oscuridad de referencia. Indica la corriente de oscuridad en condiciones de referencia, como una temperatura y tensión de referencia. (A)
+  \item \(q\) es la carga del electrón, con unidades de carga elemental, que es aproximadamente \(1.60219 \times 10^{-19}\) (C).
+  \item \(V\) es la tensión aplicada al fotodetector. Esta tensión puede influir en la corriente de oscuridad. (V)
+  \item \(k\) es la constante de Boltzmann, con unidades de julios por kelvin (J/K). La constante de Boltzmann es aproximadamente \(1.38065 \times 10^{-23}\) J/K.
+  \item \(T\) es la temperatura absoluta a la que se encuentra el fotodetector. La temperatura puede afectar significativamente la corriente de oscuridad, y esta ecuación tiene en cuenta la dependencia térmica. (K)
+\end{itemize}
+\item \textbf{Ruido adicional}: Los tipos de ruido a distinguir en un dispositivo tipo PIN son:
+\begin{enumerate}
+\item \textbf{Ruido tipo shot}: Derivado de la caracterisica estadistica de la interacción luz-materia. En este sentido se consideran
+\begin{itemize}
+\item \textbf{Ruido cuántico}: Se da en el proceso de conversión de luz a corriente eléctrica.
+\item \textbf{Ruido espúreo}: Generado como el caso anterior y se debe a componentes luminosas que acompañan a la señal pero no corresponden a la información a transmitir.
+\item \textbf{Ruido de oscuridad}: No depende de la señal óptica alguna pero que está presente debido al efecto de generación-recombinación y a la cantidad de portadores que son transportados por tensión inversa ($V_B$). Aunque sus causas son térmicas, su distribución no corresponde a un ruido de este tipo. En general, aumentar la tensión inversa puede disminuir la corriente de oscuridad, lo que puede ser beneficioso para aplicaciones sensibles a la luz, ya que reduce el ruido de oscuridad y mejora la relación señal-ruido.
+\end{itemize}
+\item \textbf{Ruidos propiamente térmicos}: Se deben a que los electrones de un conductor poseen niveles de energía cuyos valores instantáneos dependen de la temperatura del material.
+\end{enumerate}
+\end{enumerate}
+\begin{remark}
+Un BER aceptable para fibra óptica es de $10\basedec{-9}$
+\end{remark}
+\chapter{Cableado}
+\section{Loose tube o tubo holgado}
+Un ``loose tube'' (tubo suelto) es un componente utilizado en sistemas de cableado de fibra óptica para proteger y alojar fibras ópticas individuales o haces de fibras ópticas. El nombre ``tubo suelto'' proviene de su diseño, que implica que las fibras ópticas están alojadas en tubos flexibles que no están adheridos o fijos al núcleo del cable óptico en sí.
+\begin{remark}
+Es importante leer la temperatura de almacenamiento y operación indicado en cada \textit{data sheet}.
+\end{remark}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Dfo/dfo58.png}
+\caption{Loose tube}
+\end{figure}
+\section{Tight buffered}
+El ``tight-buffered'' (en español, ``con revestimiento ajustado'') es otro método de construcción de cables de fibra óptica en el que las fibras ópticas individuales están recubiertas con un revestimiento ajustado directamente sobre cada una de las fibras. A diferencia de los ``loose tubes'' (tubos sueltos), en los que las fibras ópticas están alojadas en tubos separados, los cables de fibra óptica ``tight-buffered'' tienen las fibras ópticas directamente revestidas, lo que reduce el espacio entre las fibras y proporciona una mayor protección y flexibilidad.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo59.png}
+\caption{Tight buffered distribution cable.}
+\end{figure}
+Las generaciones de cables secos son:
+\begin{enumerate}
+\item \textbf{1ra generación - Cable óptico relleno (G)}: Utiliza gel en toda su construcción, llenando los espacios y eliminando los lugares por doned el agua puede propagarse.
+\item \textbf{2da generación - Cable óptico seco (S)}: Tiene gel solamente en el interior del tubo loose, mientras que el gel del núcleo óptico es reemplazado por hilos super absorbentes (\textit{water blocking}).
+\item \textbf{3ra generación - Cable óptico totalmente seco (TS)}: Elimina por completo, la presencia de los compuestos del gel derivado de petróleo, que es reemplazado por los hilos water blocking.
+\end{enumerate}
+\section{Tight buffered breakout}
+Los cables "tight-buffered breakout" son una variante de los cables de fibra óptica diseñados para aplicaciones en las que se requiere una mayor protección de las fibras ópticas individuales y la capacidad de separarlas para su conexión a dispositivos o equipos específicos. Estos cables se utilizan comúnmente en entornos de data centers, redes de área local (LAN), instalaciones industriales y otras aplicaciones que requieren una alta densidad de fibras y una gestión precisa. A lo largo del cable, se incorporan áreas de rompimiento que permiten separar las fibras individuales del cable principal. Esto facilita la terminación y la conexión de las fibras a dispositivos o paneles de conexión específicos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo60.png}
+\caption{Tight buffered breakout distribution cable.}
+\end{figure}
+\subsection{Cables aéreos OPGW}
+Los cables OPGW (Optical Ground Wire) son una solución híbrida que combina cables de fibra óptica con un conductor eléctrico de tierra en una estructura única. Estos cables se utilizan comúnmente en el sector de las redes de transmisión eléctrica y proporcionan tanto una función eléctrica como de comunicación en una sola infraestructura.\\
+Los cables OPGW incorporan uno o más conductores eléctricos, generalmente en forma de alambres de acero recubiertos, que se utilizan para llevar la corriente eléctrica a través de las torres de transmisión. Estos conductores proporcionan la función eléctrica y estructural del cable, además de servir como tierra para la torre.\\
+En el interior del cable OPGW, se instalan fibras ópticas que se utilizan para transmitir datos a través de la infraestructura de transmisión eléctrica. Estas fibras ópticas permiten la comunicación de datos, como la supervisión, el control y la telemetría, a lo largo de la red eléctrica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Dfo/dfo61.png}
+\caption{OPGW.}
+\end{figure}
+\begin{itemize}
+\item \textbf{OPGW (Optical Ground Wire)}: Un cable OPGW es un tipo de cable de fibra óptica diseñado para su uso en líneas de transmisión eléctrica de alta tensión. Combina fibras ópticas para la comunicación de datos y conductores eléctricos para la transmisión de energía eléctrica. El OPGW se monta en las torres de transmisión eléctrica y actúa como un conductor de tierra mientras proporciona capacidades de comunicación en tiempo real.
+\item \textbf{OPPC (Optical Phase Conductor)}: El cable OPPC es similar al OPGW en el sentido de que combina conductores eléctricos y fibras ópticas, pero se utiliza en una disposición ligeramente diferente. En un OPPC, las fibras ópticas se colocan en la capa de aislamiento exterior de los conductores eléctricos. Esto permite la transmisión de datos a lo largo de la línea eléctrica, pero no se utiliza como conductor de tierra. Por este cable pasa 10KV, 35KV y 66KV.
+\item \textbf{ADSS (All-Dielectric Self-Supporting)}: Los cables ADSS son cables de fibra óptica que no contienen conductores eléctricos metálicos y se utilizan en aplicaciones de distribución y transmisión de telecomunicaciones. Estos cables son autosoportados, lo que significa que no requieren una estructura de soporte adicional, como torres o postes. Son adecuados para ser suspendidos en cables eléctricos existentes o instalados en áreas donde no se requiere un conductor eléctrico.
+\item \textbf{MASS (Militarized Access Support System)}: MASS es un sistema de soporte de acceso militarizado utilizado en aplicaciones de comunicaciones militares. Proporciona un marco de soporte para la instalación de cables de fibra óptica y otros equipos de comunicación en el campo de batalla. Los sistemas MASS están diseñados para ser resistentes a condiciones extremas y proporcionar conectividad de datos en entornos militares hostiles.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Dfo/dfo62.png}
+\caption{OPGW.}
+\end{figure}
+\subsection{Patch cord}
+Es un tipo de cable corto que se utiliza para conectar dos dispositivos electrónicos o de red, como computadoras, switches, enrutadores, servidores, paneles de parcheo, y otros componentes de infraestructuras de redes. Estos cables son comúnmente utilizados en entornos de tecnología de la información (TI) y redes de comunicación para establecer conexiones temporales y rápidas entre dispositivos cercanos.
+\begin{figure}[]
+\centering
+\subfloat[Monomodo]{\includegraphics[width=0.3\linewidth]{Dfo/dfo63.png}}
+\subfloat[Multimodo 50 um]{\includegraphics[width=0.3\linewidth]{Dfo/dfo64.png}}
+\subfloat[Multimodo 10 Gbps]{\includegraphics[width=0.3\linewidth]{Dfo/dfo65.png}}
+\caption{Tipos de Patch cord}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\linewidth]{Dfo/dfo66.png}
+\caption{Patch panel.}
+\end{figure}
+\chapter{Conectores}
+\section{Acopladores ópticos}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo67.png}
+\caption{Acoplador óptico adelgazado 2x2.}
+\label{fig:acoplador optico}
+\end{figure}
+Un acoplador óptico, en el contexto de la tecnología de fibra óptica, es un dispositivo que se utiliza para combinar o dividir señales de luz en una o varias fibras ópticas.
+\begin{enumerate}
+
+\item \textbf{Divisores}:
+\begin{enumerate}
+\item Divisores de Potencia (Power Splitter): Dividen la luz incidente en una o varias fibras de salida con una relación específica de potencia.
+\item Divisores de Longitud de Onda (Wavelength Splitter): Dividen la luz según su longitud de onda.
+\end{enumerate}
+
+\item \textbf{Aisladores}: Aisladores Ópticos (Optical Isolator): Permiten que la luz fluya en una dirección mientras bloquean su retroceso en la dirección opuesta, lo que protege las fuentes de luz de retroalimentación no deseada.
+
+
+\item \textbf{Distribuciones de Fibra Óptica}:
+\begin{enumerate}
+\item Distribuidor de Fibra Óptica (Fiber Distribution Panel): Proporciona un punto central para la distribución y conexión de fibras ópticas en una red o sistema.
+\item Caja de Empalme de Fibra Óptica (Fiber Optic Splice Box): Utilizada para empalmar y proteger las fibras ópticas donde se realiza una conexión permanente.
+\end{enumerate}
+\item \textbf{Acopladores}:
+\begin{enumerate}
+\item Acopladores de Potencia (Power Coupler): Combina o divide señales de potencia de luz.
+\item Acopladores de Modo (Mode Coupler): Permite la transferencia de señales entre diferentes modos de propagación en fibras ópticas.
+\item Acopladores Híbridos (Hybrid Coupler): Dividen la potencia de entrada en dos salidas con diferentes fases, lo que permite la combinación de señales con propiedades de polarización o fase controladas.
+\item Acopladores de Polarización (Polarization Coupler): Dividen la luz según su polarización.
+\end{enumerate}
+\item Conmutadores: Conmutador Óptico (Optical Switch): Permite dirigir una señal de luz óptica a diferentes rutas o destinos según las necesidades.
+\item \textbf{Atenuadores}: Atenuador Óptico (Optical Attenuator): Se utiliza para reducir la potencia de una señal de luz, lo que es útil para ajustar la intensidad de la señal en una red óptica.
+\end{enumerate}
+\subsection{Parámetros característicos}
+De la figura  \ref{fig:acoplador optico}:
+\begin{itemize}
+\item \textbf{Atenuación característica}: Llamada también perdida por inserción. Es el principal parámetro para el dimensionamiento de una red óptica.
+\begin{equation}
+P_3(\lambda)=10\log_{10}\frac{P_{in}(\lambda)}{P_3(\lambda)} dB
+\end{equation}
+\item \textbf{Directividad, diafonía o direccionalidad}: Es el grado de envío de potencia óptica al puerto no deseado.
+\begin{equation}
+D=10\log_{10}\frac{P_2(\lambda)}{P_{in}(\lambda)} dB
+\end{equation}
+Para la medición es necesario eliminar las reflexiones espúreas.
+La \textbf{direccionalidad} es -D, y mide cuan bien el acoplador óptico envía la potencia luminosa al puerto deseado de salida.
+\item \textbf{Reflectancia}: Es la medida de la señal de retorno que se obtiene en el puerto por el que se inyecta la señal. Requiere neutralidad de los puertos no utilizados:
+\begin{equation}
+R=-10\log_{10}\frac{P_r(\lambda)}{P_{in}(\lambda)} dB
+\end{equation}
+\item \textbf{Pérdida por división}: Son las que se producen por el reparto de la potencia entre \textit{n} puertos a la salida de un acoplador.
+\item \textbf{Relación de acoplamiento}: Representa el reparto de potencias que se produce en cada puerto de salida del acoplador con respecto a la potencia insertada. Es función de la longitud de onda.
+\begin{equation}
+RA P_3 (\%)=\frac{P_3(\lambda)\times 100}{P_3(\lambda)+P_4(\lambda)}
+\end{equation}
+Se requiere la neutralidad de reflexiones de las otras puertas.
+\item \textbf{Uniformidad}: Diferencias expresadas en dB entre las potencias reales y teóricas presentes en las salidas.
+\item \textbf{Exceso de pérdidas}: Es la pérdida total en el acoplador
+\begin{equation}
+P_e=10\log_{10}\frac{P_{in}(\lambda)}{P_2(\lambda)+P_3(\lambda)+P_4(\lambda)}
+\end{equation}
+Debe ser <0.5 dB.
+\end{itemize}
+\chapter{Adaptadores y conectores}
+Los conectores de fibra óptica son componentes diseñados para conectar y acoplar fibras ópticas. Estos conectores permiten una conexión rápida y segura entre cables de fibra óptica o entre cables y dispositivos ópticos, como transceptores, switches y equipos de red. \\
+Los adaptadores de fibra óptica, también conocidos como acopladores, se utilizan para conectar dos conectores de fibra óptica, permitiendo la unión y el paso de la señal entre ellos. Estos adaptadores están diseñados para garantizar una alineación precisa de las fibras, lo que es esencial para minimizar las pérdidas de señal y garantizar una conexión óptima.
+\section{Terminaciones de fibra óptica}
+UPC, APC y PC son términos que se utilizan en el contexto de conectores y adaptadores de fibra óptica para describir la forma en que se terminan y pulen los extremos de las fibras ópticas en los conectores. Estas siglas se refieren a los tipos de superficies de contacto que se utilizan en los conectores de fibra óptica:
+\begin{enumerate}
+\item \textbf{PC (Physical Contact)}: Los conectores PC utilizan una superficie de contacto plana, similar a los conectores UPC. Aunque proporcionan una buena calidad de conexión, no reducen la reflexión de la luz tan eficazmente como los conectores APC. Los conectores PC se utilizan en una variedad de aplicaciones de redes de fibra óptica y son adecuados para situaciones donde la reflexión de la luz no es un problema crítico. PC es compatible con UPC, tiene pérdidas de hasta 0.5 dB. \textcolor{blue}{verde}.
+\item \textbf{UPC (Ultra Physical Contact)}:  En los conectores UPC, los extremos de las fibras ópticas se pulen de manera que las caras de contacto tengan una superficie extremadamente plana y uniforme. Esto permite un alto nivel de contacto físico entre las fibras, lo que reduce la pérdida de señal debido a la reflexión de la luz en la interfaz. Los conectores UPC son adecuados para aplicaciones donde se necesita una buena conexión, pero no es necesario minimizar la reflexión al nivel de los conectores APC. En equipos como OTDR generalmente se usa UPC. Generalmente es de color \textcolor{blue}{verde}.
+\item \textbf{APC (Angled Physical Contact)}: Los conectores APC tienen una superficie de contacto angular. Esto significa que el extremo de la fibra óptica se pule con un ángulo pequeño (generalmente 8 grados) en lugar de ser completamente plano. Esta superficie de contacto angular reduce la reflexión de la luz en la interfaz, lo que es crucial en aplicaciones donde la reflexión puede degradar la señal, como en sistemas de comunicación de fibra óptica de alta velocidad. Los conectores APC son comunes en aplicaciones como redes de cableado FTTH (Fiber to the Home) y sistemas de telecomunicaciones. Tienen de 5 a 15 grados de inclinación para minimizar el retorno de luz y disminuir la perdida por inserción. No es compatible con UPC/PC (puede generar perdidas de 4 dB) donde su pérdida típica es de 0.3 dB. Generalmente es de color \textcolor{green}{verde}.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo68.png}
+\caption{Terminaciones de fibra óptica.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{Dfo/dfo69.png}
+\caption{Conectores UPC y APC.}
+\end{figure}
+\section{Conectores ópticos}
+\begin{enumerate}
+\item \textbf{Conector SC (Suscriptor Común)}: Es uno de los conectores más utilizados en redes de fibra óptica. Tiene un diseño push-pull y es fácil de conectar y desconectar.
+
+\item \textbf{Conector LC (Conector Lucent)}: Es un conector pequeño y de alta densidad que se utiliza en aplicaciones de alta velocidad y alta densidad, como en data centers.
+
+\item \textbf{Conector ST (Straight Tip)}: Tiene un diseño de bayoneta y es ampliamente utilizado en redes de área local (LAN) y aplicaciones de fibra multimodo.
+
+\item \textbf{Conector MTP/MPO (Multi-Fiber Push-On/Pull-Off)}: Estos conectores permiten la conexión de múltiples fibras en un solo conector, lo que los hace ideales para aplicaciones de alta densidad y alta velocidad.
+
+\item \textbf{Conector SC/APC y LC/APC (Angled Physical Contact)}: Estos conectores tienen un ángulo en la superficie de contacto para reducir la reflexión de la luz. Se utilizan en aplicaciones que requieren una baja reflexión, como redes de fibra óptica pasiva.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\subfloat[Conectores ópticos]{\includegraphics[width=\linewidth]{Dfo/dfo70.png}}\\
+\subfloat[Adaptadores ópticos]{\includegraphics[width=\linewidth]{Dfo/dfo70.png}}
+\caption{Conectores y adaptadores ópticos}
+\end{figure}
+Algunas especificaciones comerciales de los cordones por su nomenclatura es un código del tipo:
+\begin{displaymath}
+JP-A-B-CD-E
+\end{displaymath}
+Si es jumper (JP), o si es pigtail (PT):
+\begin{displaymath}
+PT-A-S-C-X-E
+\end{displaymath}
+Donde:
+\begin{itemize}
+\item A: Colocamos M (multimodo) o S (singlemode).
+\item B: D si es doble o S si es sencilla.
+\item CD: Conectores: S=ST, C=SC, F=FC, M=SMA.
+\item E: Longitud en metros.
+\end{itemize}
+\begin{remark}
+Jumper tiene ambos extremos terminados y Pigtail tiene un sólo extremo terminado.
+\end{remark}
+\begin{notation}
+Se dice que una red es transversal si la red física es compatible entre varias marcas/empresa. Es longitudinal si una red solo admite partes de la misma marca/empresa.
+\end{notation}
+\section{Evaluación entre repetidoras}
+Se puede calcular obteniendo la
+\begin{itemize}
+\item Distribución de potencia óptica - bugdet link.
+\item Límite de ancho de banda (dispersión).
+\end{itemize}
+Necesitamos:
+\begin{enumerate}
+\item Característica del sistema
+\begin{itemize}
+\item Velocidad de transmisión.
+\item Código de línea (NZR-ZR)
+\item BER ($\basedec{-9}$) 
+\end{itemize}
+\item Característica de fibra
+\begin{itemize}
+\item Atenuación
+\item Ancho de banda o dispersión temporal.
+\end{itemize}
+\item Característica de transmisor óptico
+\begin{itemize}
+\item Potencia óptica promedio inyectada.
+\item Ancho espectral de emisión
+\end{itemize}
+\item Característica receptor
+\begin{itemize}
+\item Sensibilidad
+\end{itemize}
+\item Márgenes de seguridad
+\begin{itemize}
+\item Margen de dable.
+\item Margen del equipo.
+\item Margen de equialización.
+\end{itemize}
+\item Atenuaciones
+\begin{itemize}
+\item Pérdida por empalme.
+\item Atenuación por conectores.
+\end{itemize}
+\end{enumerate}
+\chapter{Amplificadores ópticos}
+Un amplificador óptico es un dispositivo que amplifica directamente la señal óptica, sin necesidad de convertirla primero a una \textbf{señal eléctrica}. La amplificación se realiza mediante el proceso de \textbf{emisión estimulada}.\\
+Es capaz de amplificar un conjunto de longitudes de onda y generalmente es más transparente al número de canales, tasa de transmisión binaria, protocolo y formato de modulación.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo72.png}
+\caption{Amplificador óptico.}
+\end{figure}
+\begin{enumerate}
+\item \textbf{Bombeo}: Se inyecta una señal óptica intensa, llamada ``bomba'', en una sección de fibra óptica o dispositivo que contiene iones dopados, como erbio o tulio. Esta señal de bombeo tiene una longitud de onda \textbf{diferente} de la señal que se desea amplificar.
+
+\item \textbf{Transferencia de Energía}: Los iones dopados en la fibra absorben la energía de la señal de bombeo y se excitan a un estado de energía superior.
+
+\item \textbf{Amplificación}: Cuando la señal que se desea amplificar (la señal débil) pasa a través de la fibra dopada, los iones dopados transfieren parte de su energía a la señal débil, lo que provoca una amplificación de la señal.
+
+\item \textbf{Efecto Estímulo}: Además de la transferencia de energía, se produce un efecto de estimulación en el que los fotones generados por la señal débil estimulan la emisión de fotones coherentes en la misma longitud de onda. Esto aumenta aún más la intensidad de la señal.
+\end{enumerate}
+En el contexto de amplificadores ópticos se deben tener en cuenta 2 emisiones importante:
+\begin{itemize}
+\item \textbf{Emisión Estimulada}: Cuando un fotón incidente estimula la emisión de otros fotones coherentes en términos de fase, dirección y polarización, se produce la emisión estimulada. Esto amplifica la señal en la misma longitud de onda y dirección que la señal incidente, lo que es fundamental en el proceso de amplificación.
+
+\item \textbf{Emisión Espontánea}: Además de la emisión estimulada, también se produce una emisión espontánea. La emisión espontánea ocurre cuando los iones dopados emiten fotones de manera aleatoria sin ser estimulados por la presencia de un fotón incidente. Estos fotones tienen diferentes fases y direcciones, lo que los hace incoherentes con la señal incidente. Puede ser tratado como ruido a la salida del amplificador.
+\end{itemize}
+\section{Características de desempeño}
+\begin{itemize}
+\item \textbf{Ganancia} (G): Proporción entre la potencia de salida ($P_s$) y la potencia de entrada ($P_e$) del amplificador.
+\begin{equation}
+G=10\log\parentesis{\frac{P_o}{P_i}} dB
+\end{equation}
+\item \textbf{Ancho de banda de ganancia}: Rango de longitudes de onda en el cual el amplificador es efecto.
+\item \textbf{Potencia de salida de saturación}: Potencia de salida en la cual la ganancia pico se reduce a la mitad (3dB).
+\item \textbf{Factor de ruido} o \textit{Noise Figure-NF}. Proporción entre la relación señal a ruido en la entrada y salida del amplificador.
+\begin{equation}
+NF=\frac{SNR_i}{SNR_o}
+\end{equation}
+\end{itemize}
+\section{Tipos de amplificadores}
+\subsection{Basados en láseres de semiconductor-SLA}
+Los amplificadores ópticos basados en láseres de semiconductor, a menudo conocidos como amplificadores de semiconductor, son dispositivos que utilizan materiales semiconductores para amplificar señales ópticas utilizando la generación estimulada por la luz que deseamos amplificar.
+\begin{enumerate}
+\item \textbf{Amplificador Óptico Fabry-Perot (FPA)}:
+\begin{itemize}
+\item \textbf{Principio de Funcionamiento}: El amplificador óptico Fabry-Perot utiliza un resonador Fabry-Perot, que es un dispositivo óptico formado por dos espejos paralelos y reflectantes colocados a una distancia específica. La luz se refleja de ida y vuelta entre estos espejos, lo que crea una cavidad resonante. Cuando la señal óptica entra en la cavidad resonante, experimenta múltiples reflexiones y se amplifica por efecto de la ganancia en el medio amplificador colocado entre los espejos.
+\item \textbf{Características}: Los FPA son conocidos por su alta ganancia y su capacidad de amplificar señales en un rango de longitudes de onda específico. Son útiles en aplicaciones de amplificación de señales ópticas en fibra óptica y en sistemas de láser.
+\item \textbf{Ventajas y Desventajas}: Los FPA ofrecen una alta ganancia pero pueden tener un ancho de banda limitado. Son útiles cuando se necesita amplificación en una longitud de onda específica.
+\end{itemize}
+
+\item \textbf{Amplificador de Onda Viajera (TWA - Traveling Wave Amplifier)}
+\begin{itemize}
+\item \textbf{Principio de Funcionamiento}: El amplificador de onda viajera es un tipo de amplificador que se basa en la interacción de una señal óptica y una onda continua que viaja a lo largo de un dispositivo activo, como una guía de onda. La señal óptica se desplaza en la misma dirección que la onda continua, lo que permite la amplificación a medida que ambas viajan en paralelo.
+\item \textbf{Características}: Los TWA son adecuados para aplicaciones de alta velocidad y amplificación en sistemas de comunicación óptica de alta velocidad. Proporcionan una amplificación eficiente y pueden utilizarse en sistemas de amplificación lineal.
+\item \textbf{Ventajas y Desventajas}: Los TWA son efectivos para aplicaciones de alta velocidad, pero pueden ser más complejos de diseñar y fabricar en comparación con otros tipos de amplificadores.
+\end{itemize}
+
+\item \textbf{Amplificador de Onda Cercana a la Onda Viajera (NTWA - Near Travelling Wave Amplifier)}
+\begin{itemize}
+\item \textbf{Principio de Funcionamiento}: Los NTWA son una variante de los TWA que operan en las proximidades de una onda viajera en lugar de viajar en paralelo con ella. Esto permite una amplificación eficiente de la señal óptica sin interferir con la onda viajera principal.
+\item \textbf{Características}: Los NTWA son adecuados para aplicaciones de amplificación en sistemas de comunicación de alta velocidad, y pueden lograr una alta eficiencia de amplificación mientras minimizan la interferencia en la onda principal.
+\item \textbf{Ventajas y Desventajas}: Los NTWA son ideales para aplicaciones en las que se necesita una amplificación eficiente sin interferir significativamente con otras señales.
+\end{itemize}
+\end{enumerate}
+\subsection{Basados en fibra-Láseres de bombeo}
+Utilizan la ganancia suministrada por la dispersión Raman o Brillouin.
+\begin{enumerate}
+\item \textbf{EDFA}: En los cuales el núcleo de la fibra óptica es dopada con iones de tierras raras como Erbio (\textit{Er}), Praseodimio (\textit{Pr}), Yterbio (\textit{Yb}) o Neodimio (\textit{Nd}). El más utilizado es el Amplificador de Fibra Dopada con Erbio-EDFA.
+
+\item \textbf{Raman}: Su funcionamiento esta basado en el efecto de dispersión estimulada de Raman. Convierte la fibra óptica activa en un amplificador.
+
+\item \textbf{Brillouin}: Cuando una señal óptica se propaga a través de la fibra, parte de la energía de la señal es dispersada elásticamente por los fonones de la fibra. Esto genera una onda de Stokes con una longitud de onda diferente que puede ser utilizada para amplificar la señal original.
+
+\item \textbf{Amplificadores ópticos a semiconductor-SOA}: La zona activa esta compuesta de aleaciones de elementos semiconductores como el Fósforo, Indio, Galio y Arsénico.
+\end{enumerate}
+
+
+\subsection{EDFA}
+\begin{enumerate}
+\item \textbf{Dopado con Erbio}: La fibra óptica utilizada en un EDFA contiene iones de erbio ($Er^{3+}$) que han sido incorporados intencionalmente en la estructura de la fibra. Estos iones de erbio actúan como el medio amplificador activo en el amplificador.
+
+\item \textbf{Estímulo de Bombeo}: Para excitar los iones de erbio a estados de energía superiores, se utiliza una fuente de bombeo de alta energía que proporciona una longitud de onda de bombeo específica. Esta longitud de onda es diferente de la longitud de onda de la señal que se desea amplificar.
+
+\item \textbf{Excitación de Iones de Erbio}: Los fotones de la fuente de bombeo interactúan con los iones de erbio en la fibra óptica. Cuando un fotón de la longitud de onda de bombeo colisiona con un ion de erbio, este ion absorbe la energía del fotón y se excita a un estado de energía superior.
+
+\item \textbf{Efecto de Emisión Espontánea y Estimulada}: A medida que los iones de erbio excitados regresan a sus estados de energía fundamentales, emiten fotones. Esto puede ocurrir en dos formas:
+
+\item \textbf{Emisión Espontánea}: Algunos iones de erbio emiten fotones de manera espontánea sin ser estimulados por la presencia de otros fotones.
+Emisión Estimulada: Cuando un fotón incidente (procedente de la señal que se desea amplificar) estimula un ion de erbio excitado, este ion emite un fotón coherente con el fotón incidente, lo que resulta en una amplificación de la señal.
+
+\item \textbf{Amplificación de la Señal}: La señal óptica que se desea amplificar se introduce en la fibra dopada con erbio. A medida que esta señal se propaga a lo largo de la fibra, interactúa con los iones de erbio excitados. Algunos de estos iones emiten fotones estimulados que coinciden con la señal, amplificando así la señal óptica a medida que avanza.
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo73.png}
+\caption{Espectro de tipos de amplificadores.}
+\end{figure}
+\subsubsection{Características de desempeño}
+\begin{itemize}
+\item Alta ganancia (>30dB).
+\item Alta potencia de saturación de salida: 10-25 dBm.
+\item Alta eficiencia en la transferencia de la potencia de bombeo de la señal (>50\%).
+\item Elevado ancho de banda (30-40 nm), con ganancia relativamente plana (conveniente para aplicaciones WDM).
+\item Opera en la región 1530-1565 nm.
+\item Longitud de onda de bombeo: 980. y 1480 nm.
+\item Factor de ruido reducido (4dB).
+\item No introduce diafonía cuando se amplifican señales WDM.
+\item Independiente de polarización.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo75.png}
+\caption{Ecualización en EDFA.}
+\end{figure}
+\begin{notation}
+La ecualización con un Amplificador de Fibra Dopada con Erbio (EDFA, por sus siglas en inglés) se refiere al proceso de ajustar y equilibrar la intensidad de la señal óptica en diferentes longitudes de onda o canales en un sistema de comunicación por fibra óptica. Este proceso es importante para garantizar que todas las señales en un sistema de comunicación óptica tengan niveles de potencia uniformes y adecuados a lo largo de la longitud de la fibra óptica.
+\end{notation}
+\subsection{Amplificador Raman}
+Características:
+\begin{itemize}
+\item Alta ganancia (>20 dB).
+\item Alta potencia de saturación de salida: 30 dBm.
+\item Alta potencia de bombeo.
+\item Elevado ancho de banda (48nm).
+\item Puede operar en la región 1280 a 1650 nm. Usualmente sigue una distribución normal.
+\item Factor de ruido reducido (3dB).
+\item Diafonía relativamente elevada.
+\item Independiente de la polarización, es decir que es capaz de amplificar señales ópticas sin importar si la luz incidente tiene una polarización vertical, horizontal o cualquier otra orientación.
+\end{itemize}
+\begin{vocabulary}[Diafonía]
+La diafonía en fibra óptica se refiere a la interferencia o acoplamiento no deseado de señales entre dos o más fibras ópticas adyacentes o cercanas en una red de comunicación óptica. Esta interferencia puede tener un impacto negativo en el rendimiento de la red al causar degradación de la señal y pérdida de calidad de la transmisión. La diafonía se produce cuando la energía de una señal transmitida en una fibra óptica se acopla o se ``fuga'' a una fibra vecina, lo que puede causar interferencias no deseadas.
+\end{vocabulary}
+\subsection{Amplificadores ópticos a semiconductores-SOA}
+Similar a una cavidad láser, pero en donde se ha eliminado el resonador. Se inyectan portadores y se potencia la emisión estimulada esperando a que cuando llegue la señal por la fibra de entrada se generan nuevos fotos y por tanto se amplifique.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo74.png}
+\caption{SOA.}
+\end{figure}
+Características:
+\begin{itemize}
+\item Relativamente alta ganancia (20dB).
+\item Potencia de saturación de salida reducida 5-10 dBm.
+\item Ancho de banda elevado.
+\item Pueden operar en las regiones 850, 1300 y 1550 nm.
+\item Factor de ruido y diafonía relativamente elevados.
+\item Dependiente de la polarización.
+\item Compactos y fácilmente integrados con otros dispositivos.
+\end{itemize}
+\begin{table}[H]
+\begin{tabular}{|c|c|c|c|}
+\hline
+\rowcolor[HTML]{CBCEFB} 
+Parámetro                            & EDFA      & ROA                                                                                             & SOA              \\ \hline
+Longitud de onda (nm)                & 1530-1565 & 1280-1650                                                                                       & 1280-1650        \\ \hline
+Ancho de banda (nm)                  & 30-40     & 30-35                                                                                           & 30-40            \\ \hline
+Ganancia (dB)                        & 30-50     & \textgreater{}20                                                                                & 20-30            \\ \hline
+Potencia de bomber (mW)              & 20-100    & \textgreater{}30                                                                                & \textless{}400mA \\ \hline
+Longitud de onda de bombeo (nm)      & 980, 1480 & \begin{tabular}[c]{@{}c@{}}100nm por debajo\\ de la longitud de onda\\ de la señal\end{tabular} & NA               \\ \hline
+Potencia de saturación (a 3dB) (dBm) & 10-25     & 0.75xPotencia de bombeo                                                                         & 5-10             \\ \hline
+Figura de ruido (dB)                 & 4-6       & 3-5                                                                                             & 7-12             \\ \hline
+Sensibilidad a la polarización       & NO        & NO                                                                                              & SI               \\ \hline
+Diafonía WDM                         & NO        & SI                                                                                              & SI               \\ \hline
+\end{tabular}
+\caption{Comparación EDFA-ROA-SOA.}
+\end{table}
+\chapter{DWDM}
+\begin{remark}
+Las ``longitudes grises'' en el contexto de la tecnología DWDM (Multiplexación por División de Longitud de Onda Denso) se refieren a longitudes de onda ópticas que no están ocupadas por señales activas en una red DWDM. Las ``longitudes coloreadas'' son longitudes de onda ópticas que están actualmente ocupadas por señales de datos activas en la red DWDM. Cada longitud de onda coloreada transporta datos en su propia longitud de onda específica.
+\end{remark}
+DWDM  o Multiplexación por División de Longitud de Onda Denso se basa en la idea de dividir la luz en múltiples longitudes de onda ópticas. Cada longitud de onda, también conocida como canal óptico, se utiliza para transportar datos de forma independiente. Esto permite que varios canales ópticos compartan la misma fibra óptica sin interferir entre sí.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo76.png}
+\caption{Diagrama de bloques:DWDM.}
+\end{figure}
+\begin{notation}
+El amplificador de Erbio funciona para 1500 nm, las señales se deben transponder, es decir pasar de longitudes grises a coloreadas (256 canales o colores).
+\end{notation}
+\subsection{Tipos de multiplexación por longitud de onda}
+Según Rec. ITU 671:
+\begin{enumerate}
+\item \textbf{WWDM}: Multiplexación por división amplia de longitud de onda. La separación entre longitudes de onda centrales es igual o superior a 50 nanómetros.
+\item \textbf{CWDM}: Multiplexación por división aproximada de longitud de onda. La separación entre longitudes de ondas centrales es menor a 50 nm pero mayor a 100 GHz (aproximadamente 8 nanómetros en tercera ventana y 5.7 nm  en segunda ventana).
+\begin{itemize}
+\item La separación entre las longitudes de centrales es de 20 nm (UIT G.694.2). 
+\item Se aplica en redes metropolitanas con alcance entre 50 a 80 km.  
+\item No utilizan amplificadores ópticos.
+\item Tolerancia en longitud de onda para lásers del orden de $\pm 3$ nm.
+\item Los láseres usados para CWDM No requiere un dispositivo refrigeración. 
+\end{itemize}
+\item \textbf{DWDM}: Múltiplexación por división de longitud de onda densa. La separación entre frecuencias centrales es igual o menor a 100 GHz. 
+\begin{itemize}
+\item El plan de frecuencia soporta diversos espaciamientos de canal que abarcan desde los 12.5 GHz hasta 100 GHz y espaciamientos mayores (múltiples enteros de 100 GHz). Asimismo se pueden utilizar espaciamientos no uniformes entre canales.  
+\item Tolerancia en longitud de onda para los láseres del orden de $\pm 0.1 nm$.
+\item Los láseres usados para DWDM requieren dispositivos de refrigeración.
+\item En general, los transmisores utilizados en DWDM requieren un mecanismo de control que les permita cumplir con los requisitos de estabilidad de frecuencia. (CWDM no lo necesita).
+\item El espaciamiento de frecuencia actual entre canales resulta de la evolución histórica del plan inicial de 100 GHz que sea subdividido sucesivamente por factores de dos. Actualmente es muy utilizada la separación de 50 GHz.  
+\end{itemize}
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo77.png}
+\caption{DWDM y CWDM: espectro.}
+\end{figure}
+\subsection{Línea de Krypton}
+Las frecuencias en TeraHerzios permitidas se definen de la siguiente manera:
+\begin{itemize}
+\item Para espaciamientos de canales de 12,5 GHz en una fibra:
+\begin{displaymath}
+193,1+n\times 0,0125
+\end{displaymath}
+\item Para espaciamientos de canales de 25 GHz en una fibra:
+\begin{displaymath}
+193,1+n\times 0,025
+\end{displaymath}
+\item Para espaciamientos de canales de 50 GHz en una fibra:
+\begin{displaymath}
+193,1+n\times 0,05
+\end{displaymath}
+\item Para espaciamientos de canales de 100 GHz en una fibra:
+\begin{displaymath}
+193,1+n\times 0,1
+\end{displaymath}
+Donde \textit{n} es un entero positivo o negativo incluido el 0.
+\end{itemize}
+El espectro utilizado para DWDM es la banda C:1530-1565 nm, pudiendo extenderse también hacia las bandas S y L. Se contempla un canal extra para supervisión aproximadamente a 198.5 THz. Este canal lleva el nombre de \textbf{OSC} (Optical Supervision Channel). También se le denomina canal fuera de banda.
+\begin{table}[H]
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|ccc|ccc|}
+\hline
+\rowcolor[HTML]{DAE8FC} 
+\multicolumn{3}{|c|}{\cellcolor[HTML]{DAE8FC}Canales}                                                                                                 & \multicolumn{3}{c|}{\cellcolor[HTML]{DAE8FC}Canales}                                                                                                 \\ \hline
+\rowcolor[HTML]{ECF4FF} 
+\multicolumn{1}{|c|}{\cellcolor[HTML]{ECF4FF}Frecuencia (THz)} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Wavelength (nm)} & Sub-banda             & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Frecuencia (THz)} & \multicolumn{1}{c|}{\cellcolor[HTML]{ECF4FF}Wavelength (nm)} & Sub-banda             \\ \hline
+\multicolumn{1}{|c|}{196.00}                                   & \multicolumn{1}{c|}{1529.55}                                 &                       & \multicolumn{1}{c|}{194.00}                                   & \multicolumn{1}{c|}{1545.32}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.90}                                   & \multicolumn{1}{c|}{1530.33}                                 &                       & \multicolumn{1}{c|}{193.90}                                   & \multicolumn{1}{c|}{1546.11}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.80}                                   & \multicolumn{1}{c|}{1531.12}                                 &                       & \multicolumn{1}{c|}{193.80}                                   & \multicolumn{1}{c|}{1546.91}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.70}                                   & \multicolumn{1}{c|}{1531.12}                                 & \multirow{-4}{*}{C01} & \multicolumn{1}{c|}{193.70}                                   & \multicolumn{1}{c|}{1547.71}                                 & \multirow{-4}{*}{C06} \\ \hline
+\multicolumn{1}{|c|}{195.60}                                   & \multicolumn{1}{c|}{1532.68}                                 &                       & \multicolumn{1}{c|}{193.60}                                   & \multicolumn{1}{c|}{1548.51}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.50}                                   & \multicolumn{1}{c|}{1533.47}                                 &                       & \multicolumn{1}{c|}{193.50}                                   & \multicolumn{1}{c|}{1549.31}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.40}                                   & \multicolumn{1}{c|}{1534.25}                                 &                       & \multicolumn{1}{c|}{193.40}                                   & \multicolumn{1}{c|}{1550.12}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.30}                                   & \multicolumn{1}{c|}{1535.04}                                 & \multirow{-4}{*}{C02} & \multicolumn{1}{c|}{193.30}                                   & \multicolumn{1}{c|}{1550.92}                                 & \multirow{-4}{*}{C07} \\ \hline
+\multicolumn{1}{|c|}{195.20}                                   & \multicolumn{1}{c|}{1535.82}                                 &                       & \multicolumn{1}{c|}{193.20}                                   & \multicolumn{1}{c|}{1551.72}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.10}                                   & \multicolumn{1}{c|}{1535.61}                                 &                       & \multicolumn{1}{c|}{193.10}                                   & \multicolumn{1}{c|}{1552.52}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{195.00}                                   & \multicolumn{1}{c|}{1537.40}                                 &                       & \multicolumn{1}{c|}{193.00}                                   & \multicolumn{1}{c|}{1553.33}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.90}                                   & \multicolumn{1}{c|}{1538.19}                                 & \multirow{-4}{*}{C03} & \multicolumn{1}{c|}{192.90}                                   & \multicolumn{1}{c|}{1554.13}                                 & \multirow{-4}{*}{C08} \\ \hline
+\multicolumn{1}{|c|}{194.80}                                   & \multicolumn{1}{c|}{1538.98}                                 &                       & \multicolumn{1}{c|}{192.80}                                   & \multicolumn{1}{c|}{1554.94}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.70}                                   & \multicolumn{1}{c|}{1539.77}                                 &                       & \multicolumn{1}{c|}{192.70}                                   & \multicolumn{1}{c|}{1555.75}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.60}                                   & \multicolumn{1}{c|}{1540.56}                                 &                       & \multicolumn{1}{c|}{192.60}                                   & \multicolumn{1}{c|}{1556.55}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.50}                                   & \multicolumn{1}{c|}{1541.35}                                 & \multirow{-4}{*}{C04} & \multicolumn{1}{c|}{192.50}                                   & \multicolumn{1}{c|}{1557.37}                                 & \multirow{-4}{*}{C09} \\ \hline
+\multicolumn{1}{|c|}{194.40}                                   & \multicolumn{1}{c|}{1542.14}                                 &                       & \multicolumn{1}{c|}{192.40}                                   & \multicolumn{1}{c|}{1558.17}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.30}                                   & \multicolumn{1}{c|}{1542.94}                                 &                       & \multicolumn{1}{c|}{192.30}                                   & \multicolumn{1}{c|}{1558.98}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.20}                                   & \multicolumn{1}{c|}{1543.73}                                 &                       & \multicolumn{1}{c|}{192.20}                                   & \multicolumn{1}{c|}{1559.79}                                 &                       \\ \cline{1-2} \cline{4-5}
+\multicolumn{1}{|c|}{194.10}                                   & \multicolumn{1}{c|}{1544.52}                                 & \multirow{-4}{*}{C05} & \multicolumn{1}{c|}{192.10}                                   & \multicolumn{1}{c|}{1560.60}                                 & \multirow{-4}{*}{C10} \\ \hline
+\end{tabular}}
+\caption{Frecuencias y ondas de sub-banda C}
+\end{table}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{Dfo/dfo95.png}
+\caption{Sub bandas C.}
+\end{figure}
+\subsection{Aclaraciones}
+\subsubsection{DWDM-CWDM}
+\begin{itemize}
+\item CWDM no está preparado para utilizar amplificadores EDFA.
+\item CWDM utiliza canales mucho más separados (20 nm frente a 0.4-0.8 nm)
+\item CWDM posee un rango de canales más amplio, donde se puede utilizar todas las bandas.
+\item DWDM posee un número de canales mucho mayor el poseer menor separación entre canales. 
+\item El uso de canales más amplios en CWDM barata en 4 o 5 veces el costo de los emisores láser respeto a DWDM.  
+\item DWDM ofrece la mayor capacidad posible al tener mayor cantidad de canales en la fibra.
+\item DWDM ofrece el mayor alcance posible (en distancia) porque aprovecha la amplificación EDFA (la cual puede ser combinada con Raman).
+\end{itemize}
+\subsubsection{Capacidades}
+\begin{itemize}
+\item Históricamente las capacidades utilizadas para la longitudes de onda DWDM son múltiplo de 2.5 Gbps. 
+\item Es así como se utilizan lambdas de 2.5 Gbps, 10 Gbps, 40 Gbps y 100 Gbps. 
+\item Es posible utilizar capacidades con otras velocidades (20 y 50 Gbps) de acuerdo al tipo de modulación utilizado.  
+\item En la actualidad se está realizando un despliegue masivo de lambdas de 100 Gbps. Al mismo tiempo se están realizando pruebas de campo y los primeros despliegues de lambdas con capacidades de 200 Gbps.  
+\item Los sistemas comerciales pueden llegar a tener a 100 lambdas de 100 Gbps cada una, dando una capacidad instalada de hasta 10 Tbps por cada par de fibra (y esta capacidad se va incrementando constantemente).  
+\end{itemize}
+\begin{vocabulary}[Transponder]
+Un dispositivo que se utiliza para la conversión de señales electrónicas en señales ópticas y viceversa.
+\begin{center}
+\includegraphics[width=0.7\linewidth]{Dfo/dfo79.png}
+\end{center}
+\end{vocabulary}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo78.png}
+\caption{DWDM con regeneración: La señal se demultiplexa-amplifica-multiplexa.}
+\end{figure}
+\section{OADM}
+OADM son las siglas de ``Optical Add-Drop Multiplexer'' en inglés, lo que se traduce al español como ``Multiplexor Óptico de Inserción-Extracción''. Un OADM es un dispositivo utilizado en redes de fibra óptica para añadir (insertar) y eliminar (extraer) señales en una red de comunicaciones ópticas sin interrumpir el flujo de datos de otros canales en la misma fibra o realizar la conversión óptico-eléctrica-óptica.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo80.png}
+\caption{OADM esquema.}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo81.png}
+\caption{OADM esquema de longitudes de onda.}
+\end{figure}
+La inserción/extracción puede realizarse mediante diferentes técnicas, como conexiones físicas o el uso de dispositivos ópticos. Toda reconfiguración es manual.\\
+Se puede hablar de \textbf{ROADM}, Es básicamente un OADM reconfigurable. La configuración se puede realizar remotamente, dotando de dinamismo a la red óptica. Toda la reconfiguración se puede realizar desde un centro de operaciones de red o NOC, minimizando la necesidad de personal en sitio para tareas físicas.
+\subsection{Arrayed Waveguide Grating-AWG}
+Un AWG es un componente óptico utilizado en sistemas de multiplexación por longitud de onda (WDM) y multiplexación por división de longitud de onda densa (DWDM) para el enrutamiento y el filtrado de señales ópticas en diferentes longitudes de onda.\\
+Un AWG permite la \textbf{multiplexación} de múltiples canales de longitud de onda óptica en una sola fibra o la \textbf{demultiplexación} de canales de longitud de onda en distintas direcciones. Esto es fundamental para combinar señales de diferentes longitudes de onda en una sola fibra o para dividir señales de longitud de onda en rutas separadas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo82.png}
+\caption{Red de Guías de Onda Ensambladas}
+\end{figure}
+La luz entrante (1) atraviesa un espacio libre (2) y entra en un haz de fibras ópticas o guías de ondas de canal (3) . Las fibras tienen diferente longitud y por lo tanto aplican un cambio de fase diferente en la salida de las fibras. A continuación, la luz atraviesa otro espacio libre (4) e interfiere en las entradas de las guías de ondas de salida (5) de tal manera que cada canal de salida recibe sólo luz de una determinada longitud de onda. Las líneas naranjas sólo ilustran el camino de la luz. El camino de la luz de (1) a (5) es un demultiplexor, de (5) a (1) un multiplexor.
+\subsection{Circulador óptico}
+Son dispositivos de 3 puertos que permiten direccionar las señales de los que reciben. Su comportamiento fue escribir a partir de la siguiente imagen que también constituye su símbolo se usa un conjunto con la rejilla de Bragg.
+\begin{figure}[H]
+\centering
+\subfloat[Flujo de un circulador.]{\includegraphics[width=0.5\linewidth]{Dfo/dfo84.png}}
+\subfloat[Símbolo de un circulador.]{\includegraphics[width=0.5\linewidth]{Dfo/dfo83.png}}
+\caption{Circulador.}
+\end{figure}
+\subsection{Fiber Bragg Grating}
+Rejilla de fibra de Bragg es un segmento de fibra óptica construido de manera que refleje unas longitudes de onda determinadas y transmitan las demás. En la figura a continuación se muestra este comportamiento:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo85.png}
+\caption{Rejilla de fibra de Bragg: funcionamiento.}
+\end{figure}
+Este efecto físico se obtiene variando periódicamente el índice de refracción del núcleo de la fibra generando así un comportamiento de espejo para determinadas longitudes de onda.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo86.png}
+\caption{OADM con circulador y FBG.}
+\end{figure}
+\subsection{Transponder}
+Son elementos que realizan una comercial óptica-eléctrico-óptica (OEO) preparando la señal para su ingreso al sistema DWDM.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo87.png}
+\caption{Transponder: de grises a coloreadas.}
+\end{figure}
+\begin{itemize}
+\item Toma la señal óptica de entrada en segundo tercera ventana con espectro ancho (gris).
+\item Lleva la señal al dominio eléctrico donde se sur introducir un código de corrección de errores (FEC).
+\item De nuevo paso el dominio óptico en tercera ventana con un espectro de salida estrecho estable y en una determinada longitud de onda (UIT-G.692). 
+\end{itemize}
+\subsection{Multiplexores/Demultiplexores}
+Los multiplexores y demultiplexores son dispositivos que se utilizan para combinar múltiples señales ópticas en una sola fibra óptica o para dividir las señales de una fibra óptica en múltiples canales de longitud de onda, respectivamente. Tomando como base los AWG vistos.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo88.png}
+\caption{Multiplexores y demultiplexores.}
+\end{figure}
+\subsection{Atenuadores ópticos-VOA}
+O \textit{Variable Optical Attenuators}-VOA es un dispositivo utilizado para ajustar y controlar la intensidad de una señal óptica en una red DWDM, utilizan estos atenuadores para ecualizar las diferentes longitudes de onda. Esto se hace para compensar la no linealidad de la amplificación, pues algunas lambdas reciben más amplificación que otras. Los VOA pueden aplicarse a una lambda en particular o a un grupo de lambdas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo89.png}
+\caption{Comportamiento de un VOA.}
+\end{figure}
+\subsection{Parámetros de transmisión DWDM}
+\begin{enumerate}
+\item \textbf{Espaciamiento de canal}: La recomendación G.692 realiza una asignación de frecuencias, conocida generalmente como rejilla UIT (ITU Grid). Gran parte de las redes desplegadas siguió tradicionalmente esta asignación aunque en la actualidad la creciente demanda de tráfico está impulsando desarrollos alterativos. Esto se debe a que las lambdas pueden necesitar distintos espaciamientos en el espectro dependiendo de su velocidad y la modulación empleada. Actualmente ya se usan separaciones tareas como 33 o 66 GHz. Últimamente se han empezado a desplegar también sistemas de DWDM con separación de 40 GHz. Por otra parte, la tecnología \textit{flex grid} (rejilla flexible) propone realizar una asignación más eficiente del espectro para conseguir un mayor ancho de banda total. Desde este enfoque la separación entre lambdas se flexibiliza, a diferencia de la rigidez de la asignación actual.
+\item \textbf{DWDM unidireccional y bireccional}: En un sistema DWDM unidireccional, la transmisión de datos se realiza en una sola dirección a lo largo de una fibra óptica. Esto significa que las señales de longitud de onda viajan desde un extremo de la red al otro, pero no se transmiten en sentido contrario en la misma fibra. En un sistema DWDM bidireccional, se permite la transmisión de datos en ambas direcciones a lo largo de una misma fibra óptica. Esto significa que las señales de longitud de onda pueden viajar desde un extremo de la red al otro y también en sentido contrario.
+\begin{figure}[H]
+\centering
+\subfloat[Unidireccional]{\includegraphics[width=0.7\linewidth]{Dfo/dfo90.png}}\\
+\subfloat[Bidireccional]{\includegraphics[width=0.7\linewidth]{Dfo/dfo91.png}}
+\caption{DWDM}
+\end{figure}
+Para realizar una asignación ordenada de las lambdas que serán utilizar en uno u otro sentido, se suelen dividir el espectros en dos mitades. La mitad con mayor longitud de onda (y por lo tanto, menor frecuencia) se denomina \textbf{banda roja}. La mitad con menor longitud de onda (y mayor frecuencia) se denomina \textbf{banda azul}. El punto de referencia entre banda roja y azul es la frecuencia 193.1 THz (1552.52 nm).
+\item \textbf{Tecnologías de modulación: Directa y Coherente}. Hasta los 10 Gbps la tecnologia de transmisión en un sistemas DWDM estaba basada en OOK (On Ofg Keying). Esto implica una secuencia de bits en los cuales los estados On-Off representan al 1 y 0. Las lambdas que utilizan OOK son conocidas como lambdas de \textbf{detección directa}. Se continúan utilizando ampliamente, sobre todo en redes cuya distancia impide alcanzar velocidades superiores.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo92.png}
+\caption{Técnicas de codificación de líneas.}
+\end{figure}
+OOK-NRZ es más tolerante a los efectos de la dispersión. Por su parte, OOK-RZ reduce los efectos de las pérdidas de potencia, pues un pulso más pequeño disminuye el efecto conocido como ruido de disparo (\textit{shot noise}) en los fotodetectores.\\
+\textbf{Modulación coherente}. La transmisión a 40G es más sensible que la de 10G a los siguiente efectos:
+\begin{itemize}
+\item 4 veces más sensibles al ruido óptico.
+\item 16 veces más sensible a la dispersión PMD.
+\item 16 veces más sensible a la dispersión cromática.
+\item Más sensible a los otros efectos no lineales.
+\end{itemize}
+Por estas razones se desarrollaron modulación alternativas, como un medio de superar estas dificultades técnicas: PSK y QAM. Estas modulaciones permiten incrementar la cantidad de bitst transmitidos sin aumentar la cantidad de símbolos transmitidos (baudios).
+\item \textbf{Optical Signal to Noise Ratio-OSNR}: El OSNR, que significa Relación Señal-Ruido Óptica, es una métrica importante en las redes de fibra óptica y se utiliza para evaluar la calidad de la señal óptica en relación con el ruido de fondo. Se expresa como una relación entre la potencia de la señal óptica y la potencia del ruido ASE (Amplified Spontaneous Emission) en la misma banda de longitud de onda. El OSNR se mide en decibelios (dB) y es un indicador crítico para determinar si una señal óptica es lo suficientemente fuerte y clara para su detección y procesamiento. Cuanto mayor sea el valor del OSNR, mejor será la calidad de la señal. Se mide con un Analizador de Espectro Óptico (OSA).\\
+Un OSNR alto es deseable, ya que indica una señal fuerte y clara en relación con el ruido de fondo, lo que permite una comunicación óptica más confiable y una menor probabilidad de errores de transmisión. La medición y el control del OSNR son fundamentales en la ingeniería y el mantenimiento de redes de fibra óptica para garantizar un rendimiento óptimo.
+
+\item \textbf{Ruido ASE}: Ruido ASE (Amplified Spontaneous Emission) es el ruido óptico que se produce en los amplificadores ópticos, como los amplificadores de fibra dopada con erbio (EDFA) y amplificadores Raman. Este ruido se genera como resultado de la amplificación de la luz láser en estos dispositivos y se manifiesta como una emisión espontánea de fotones en una amplia gama de longitudes de onda. El ruido ASE es una forma de ruido de fondo en una red de fibra óptica y puede degradar la calidad de la señal si es demasiado fuerte en comparación con la señal transmitida. El ruido generado por la ASE se va incrementando en las sucesivas etapas de amplificación. El gráfico previo muestra que si la cadena de amplificadores mantiene una potencia total relativamente constante, el ruido se incrementa en detrimento de la señal. A mayor distancia disminuirá la potencia de la señal y disminuirá también la OSNR.\\Si la potencia de los amplificadores se mantiene constante, compensando la pérdida de la sección precia, se puede indicar que el ruido total acumulado es aproximadamente igual al ruido de un amplificador multiplicando por el número de amplificadores.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo93.png}
+\caption{OSNR.}
+\end{figure}
+\item \textbf{BER}: Como en dos sistema de telecomunicaciones en DWDM el BER es un parámetro que nos permite determinar la calidad de la señal cuando llegue al receptor. Es habitual tomarlo en el equipo receptor en dos posiciones: Antes de pasar por el FEC (PreFEC) y después de pasar por el FEC (PostFEC). Un FEC robusto permitirá que una señal que en principio resulta debíl se vuelva adecuada para un comunicación de buena calidad. Se suele utilizar el parámetro llamado \textbf{factor Q}, que permite expresar el BER en decibelios. Se trata ampliamente utilizado en la industria:
+\begin{equation}
+Q=10\log\parentesis{-2\ln\parentesis{PreFEC\cdot\sqrt{-4\cdot \pi\cdot \ln\parentesis{PreFEC+0.92}}}}
+\end{equation}
+Para indicar que estamos hablando del factor Q se suele expresar la unidad logarítmica como dBQ. Así se puede diferenciar de la potencia que se expresa en dBm. De este modo, a un BER de $1.00E-10$ se corresponde un Q de 16.07 dBQ.
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline
+\rowcolor[HTML]{ECF4FF} 
+BER      & Q     \\ \hline
+1.00E-10 & 16.07 \\ \hline
+1.00E-9  & 15.55 \\ \hline
+1.00E-8  & 14.98 \\ \hline
+1.00E-7  & 14.31 \\ \hline
+1.00E-6  & 13.53 \\ \hline
+1.00E-5  & 12.59 \\ \hline
+1.00E-4  & 11.39 \\ \hline
+1.00E-3  & 9.78  \\ \hline
+1.00E-2  & 7.30  \\ \hline
+1.00E-1  & 2.43  \\ \hline
+\end{tabular}
+\end{center}
+\item \textbf{Forward Error Correct-FEC}: El FEC funciona al agregar información adicional (bits de corrección de error) a los datos transmitidos. Esta información adicional se calcula a partir de los datos originales utilizando algoritmos matemáticos. Cuando los datos llegan al receptor, se utilizan estos bits de corrección de error para verificar y, si es necesario, corregir los datos recibidos. Esta corrección de errores permite mitigar los efectos de la atenuación de la señal, el ruido y otros problemas que pueden afectar la calidad de la transmisión. En la recepción, la señal se procesa con algoritmos complementarios que permiten detectar y corregir errores. Existen dos:
+\begin{itemize}
+\item FEC Duro (Hard FEC): Opera con bits de corrección de error que son binarios, es decir, representan solo dos valores posibles (0 y 1).
+Se utiliza para corregir errores en función de decisiones discretas. Esto significa que se toman decisiones claras sobre si un bit es 0 o 1.
+Es eficiente en cuanto a recursos de hardware y procesamiento, lo que lo hace adecuado para aplicaciones en tiempo real con recursos limitados.
+\item EC Suave (Soft FEC): El FEC suave trabaja con información más detallada en lugar de decisiones binarias. Proporciona información sobre la probabilidad de que un bit sea 0 o 1, en lugar de una decisión binaria.
+Utiliza métricas de suavidad que reflejan la confianza en las decisiones tomadas sobre los bits.
+Ofrece un rendimiento superior en la corrección de errores, especialmente en situaciones donde la señal es débil o el ruido es alto.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\linewidth]{Dfo/dfo94.png}
+\caption{FEC.}
+\end{figure}
+\end{enumerate}
 \part{Sistemas de radio digital y M.O.}
 \chapterimage{chapter_head_SRD.pdf} % Chapter heading image
 \chapter{Ondas electromagnéticas e introducción}
@@ -4578,11 +6298,17 @@ Las ondas electromagnéticas se pueden medir utilizando instrumentos específico
 Existen varios tipos de medidores de campo electromagnético disponibles en el mercado, cada uno con sus propias características y capacidades de medición. Algunos de los dispositivos comunes utilizados para medir las ondas electromagnéticas son:
 \begin{enumerate}
 \item \textbf{Medidores de campos eléctricos y magnéticos}: Estos medidores pueden medir tanto los campos eléctricos como los campos magnéticos en diversas frecuencias. Utilizan antenas o sondas especiales para capturar y medir la intensidad de los campos en unidades específicas, como voltios por metro (V/m) para campos eléctricos y teslas (T) para campos magnéticos.
+\begin{center}
 \includegraphics[width=0.6\linewidth]{sdr/sdr1.png}
+\end{center}
 \item \textbf{Espectrofotómetros o analizadores de espectro}: Estos dispositivos permiten analizar y visualizar la distribución de energía en diferentes frecuencias dentro de un rango específico. Proporcionan una representación gráfica del espectro electromagnético, mostrando la intensidad de las ondas en función de la frecuencia.
+\begin{center}
 \includegraphics[width=0.6\linewidth]{sdr/sdr2.png}
+\end{center}
 \item \textbf{Dosímetros personales}: Estos dispositivos portátiles se utilizan para medir la exposición personal a la radiación electromagnética durante un período de tiempo determinado. Registran y almacenan los niveles de exposición acumulados, lo que permite evaluar la exposición a largo plazo.
+\begin{center}
 \includegraphics[width=0.6\linewidth]{sdr/sdr3.png}
+\end{center}
 \end{enumerate}
 Es importante seguir las instrucciones del fabricante y utilizar los equipos de medición adecuados según el tipo de ondas electromagnéticas que se desee medir (como frecuencias de radio, microondas, campos electromagnéticos de baja frecuencia, etc.). Además, es recomendable mantenerse actualizado con las regulaciones y límites de exposición establecidos por las autoridades competentes en relación con la radiación electromagnética.
 \section{Radio enlaces terrenos microondas}
@@ -4767,7 +6493,16 @@ La diferencia entre las zonas de Fresnel pares e impares radica en la cantidad d
 \item \textbf{Zonas de Fresnel impares}: Estas zonas se encuentran entre las zonas de Fresnel pares y generalmente no son tan críticas como las pares para la calidad de la señal. Sin embargo, si las zonas de Fresnel impares están obstruidas, pueden provocar un aumento en la atenuación y la interferencia de la señal.
 \end{itemize}
 \end{notation}
-\section{Modelos de propagación}
+\section{Modelos de propagación}\index{Modelos de propagación}
+De manera general:
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{SDR/sdr32.png}
+\caption{Potencia total.}
+\end{figure}
+\begin{equation}
+P_T=P_{tx}-L_{LT}+G_(tx)-L_{fp}+G_{rx}-L_{LT}
+\end{equation}
 Un modelo de propagación se refiere a una representación \textbf{matemática} o empírica que describe cómo se propaga una señal de radiofrecuencia (RF) o una onda electromagnética en un entorno determinado. Estos modelos se utilizan en telecomunicaciones y en el diseño de sistemas inalámbricos para predecir y analizar la propagación de señales en diferentes escenarios. Los modelos de propagación se basan en observaciones empíricas y teorías de propagación de ondas para estimar los efectos de la atenuación, la dispersión, el desvanecimiento y otros fenómenos que pueden afectar la propagación de señales RF. Estos modelos pueden tener en cuenta características del entorno como la distancia entre transmisores y receptores, la topografía del terreno, la presencia de obstáculos como edificios y árboles, y las características de las antenas utilizadas.
 \begin{figure}[H]
 \centering
@@ -5205,7 +6940,7 @@ La ecuación \ref{eq:pot recib trans 2 lineas} expresada en decibeles:
 P_L (dB)=40\log (d)-(10\log G_t+10\log G_r+20\log h_t+20\log h_r)
 \end{equation}
 \chapter{Enlaces digitales}
-\section{Cálculo de enlaces digitales}
+\section{Cálculo de enlaces digitales}\index{Cálculo de enlaces digitales}
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth]{Sdr/sdr28.png}
@@ -6262,6 +7997,165 @@ El altavoz de medios se diferencia de otros componentes como el tweeter (encarga
 \caption{Caja acústica línea de transmisión.}
 \end{figure}
 \end{itemize}
+\chapterimage{chapter_head_IS.pdf} % Chapter heading image
+\chapter{Televisión}
+\section{Fundamentos de televisión}
+El vídeo se refiere a la representación visual de imágenes en movimiento que se capturan y reproducen utilizando diferentes tecnologías y sistemas. \\
+El punto de partida de la imagen que llega a su televisor es la cámara de TV, pues ella ''capta´´ la escena, la imagen en movimiento, la energía lumínica  y la transforma en señales eléctricas (de video frecuencia) que pueden ser transmitidas por un equipo convencional.\\
+El proceso de captura y transmisión de imágenes, la imagen se divide en líneas para que cada línea pueda ser transmitida de manera secuencial. Este proceso se conoce como "barrido". Veamos una explicación más detallada:
+\textbf{División en líneas}: Cuando una imagen es capturada o transmitida, se divide en líneas horizontales que van de arriba a abajo. Cada línea representa una serie de puntos o píxeles dispuestos uno al lado del otro.
+\textbf{Sucesión de claros y oscuros}: Cada línea de la imagen contiene información sobre los tonos y colores presentes en esa línea específica de la imagen. Los tonos más claros se representan mediante píxeles más brillantes, mientras que los tonos más oscuros se representan mediante píxeles más oscuros.
+\textbf{Transmisión secuencial}: Una vez que la imagen ha sido dividida en líneas, estas se transmiten de manera secuencial, una después de otra, para formar la imagen completa. Esto se realiza rápidamente y en un orden específico para que el ojo humano perciba la imagen como una sola y continua.
+\textbf{Barrido progresivo y entrelazado}: En el proceso de transmisión, se pueden utilizar dos enfoques diferentes: el barrido progresivo y el barrido entrelazado. En el barrido progresivo, se transmiten todas las líneas de la imagen de manera continua y secuencial, lo que resulta en una imagen más nítida y sin distorsiones. En el barrido entrelazado, se transmiten las líneas pares e impares de manera alternada, creando una secuencia de campos entrelazados. Aunque este último enfoque fue ampliamente utilizado en el pasado, el barrido progresivo se ha vuelto más común debido a su mayor calidad de imagen.
+\subsection{Tubo Vidicon}
+
+El Vidicón es un tipo de tubo de imagen utilizado como el elemento básico en algunas cámaras de televisión antiguas. Fue inventado en 1951 por los ingenieros estadounidenses Albert Rose y Albert W. Hull de la empresa Radio Corporation of America (RCA). Este tubo fue ampliamente utilizado en los primeros años de la televisión antes de que las tecnologías de imágenes electrónicas avanzaran hacia los dispositivos de estado sólido y los sensores de imagen modernos.
+
+A continuación, se explica cómo funciona el Vidicón y su papel en una cámara de TV:
+\begin{itemize}
+\item \textbf{Funcionamiento del Vidicón}: El Vidicón es un tubo de rayos catódicos, similar en principio al CRT (Tubo de Rayos Catódicos) que se utiliza en los televisores antiguos. En el Vidicón, la parte frontal del tubo tiene una superficie fotosensible recubierta con un material fotosensible como selenio o antimonio. Esta capa es sensible a la luz y puede generar una carga eléctrica cuando se expone a la luz.
+
+\item \textbf{Captura de imagen}: Cuando la luz de la escena que se desea capturar entra a través de la lente de la cámara, alcanza la superficie fotosensible del Vidicón. La luz incide en la capa fotosensible y provoca la liberación de electrones, creando una variación de carga eléctrica en la superficie del Vidicón.
+
+\item \textbf{Convertidor de carga}: Una rejilla de control se encuentra muy cerca de la superficie fotosensible del Vidicón. Esta rejilla se encarga de convertir las variaciones de carga eléctrica en señales de video. La carga eléctrica generada por la luz se modula por la rejilla, creando una señal eléctrica proporcional a la intensidad de luz en cada punto de la imagen.
+
+\item \textbf{Escaneo y transmisión}: Una vez que la señal de video se ha generado en el Vidicón, se realiza el escaneo y la transmisión de la imagen capturada. En cámaras de televisión, la señal de video se escanea línea por línea (barrido) y se transmite para su visualización en un receptor de TV.
+\end{itemize}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{ISV/ISV34.png}
+\caption{Tubo Vidicon}
+\end{figure}
+\subsection{Tubo de rayos catódicos-CRT}
+El CRT es un dispositivo electrónico que utiliza un cañón electrónico para generar un haz de electrones que excita una pantalla recubierta de fósforo y crea una imagen visible. A continuación, se explica el proceso en detalle:
+\begin{itemize}
+\item \textbf{Bobinas de desviación}: El cañón electrónico del CRT está rodeado por bobinas de desviación que permiten modificar la dirección del haz de electrones. Al aplicar una señal eléctrica específica a estas bobinas, se puede controlar el desplazamiento del haz de electrones horizontalmente y verticalmente.
+
+\item \textbf{Exploración de la imagen proyectada}: La imagen proyectada por la lente del CRT se muestra en la pantalla recubierta de fósforo. Al desplazar el haz de electrones a lo largo de la pantalla, el CRT "barre" la placa fotosensible, explorando toda la superficie de la pantalla.
+
+\item \textbf{Barrido del haz de electrones}: Cuando el haz de electrones pasa por un punto claro de la imagen proyectada, la liberación de cargas (electrones) hace que la resistencia de la capa fotosensible en ese punto disminuya. Esto resulta en una mayor intensidad de la señal eléctrica generada en la salida.
+
+\item \textbf{Generación de la señal de video}: La intensidad de la señal eléctrica generada en cada punto del barrido se convierte en una señal de video. Esta señal se envía a través de un circuito electrónico para que pueda ser amplificada y luego utilizada para excitar el fósforo en la pantalla, creando la imagen que vemos en el monitor o la televisión.
+\end{itemize}
+
+Este proceso de ''barrido´´ del haz de electrones a lo largo de la pantalla, y la conversión de las variaciones de intensidad en la señal de video, permite que el CRT cree imágenes en tiempo real en la pantalla. Sin embargo, es importante destacar que los CRT han sido ampliamente reemplazados por tecnologías más avanzadas, como pantallas LCD, LED y OLED, debido a su mayor eficiencia energética, menor tamaño y mayor calidad de imagen.
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ISV/ISV39.png}
+\caption{Diagrama de un tubo de rayos catódicos.}
+\end{figure}
+\subsection{Pulso de sincronismo}
+El pulso de sincronismo es una señal crucial en la captura y transmisión de video. Es una señal de \textbf{referencia} que se utiliza para \textbf{sincronizar} el inicio de cada línea y cuadro de video, asegurando que la imagen se forme correctamente y sin distorsiones. Su importancia radica en que \textbf{garantiza} que todas las líneas y cuadros se muestren en el orden adecuado y en el tiempo preciso.\\
+Cuando una cámara de video captura una imagen, el pulso de sincronismo indica el \textbf{inicio} de cada línea horizontal en la imagen y también marca el \textbf{comienzo} de cada cuadro completo. Sin esta señal de sincronización, las imágenes resultarían deformadas y con problemas de desplazamiento, conocidos como "efectos de desgarre" o "rolling shutter".
+\begin{center}
+\qrcode[height=2in]{https://www.youtube.com/watch?time_continue=7&v=17PSgsRlO9Q&source_ve_path=Mjg2NjY&feature=emb_logo}
+\end{center}
+El pulso de sincronismo es especialmente importante en sistemas de transmisión de video, como las transmisiones de televisión o las señales de video en línea. Cuando la señal de video se envía a través de cables o redes, el pulso de sincronismo permite que los receptores reconstruyan la imagen con precisión, ya que pueden interpretar el inicio de cada línea y cuadro y mostrar la secuencia de manera coherente en el monitor.\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{ISV/ISV35.png}
+\caption{Pulso de barrido inferior. También existe barrido superior}
+\end{figure}
+En resumen, el pulso de sincronismo es una señal esencial en la captura y transmisión de video, ya que garantiza que la imagen se forme correctamente, manteniendo la estructura adecuada y permitiendo una reproducción coherente y sin distorsiones en los dispositivos de visualización. Sin esta referencia temporal, las imágenes se verían afectadas por problemas de desplazamiento y deformación, lo que comprometería la calidad y experiencia visual.
+\section{NTSC}
+NTSC (National Television System Committee) es un sistema de transmisión y codificación de señales de televisión analógicas que fue desarrollado en los Estados Unidos en la década de 1950. Fue el sistema utilizado en América del Norte, algunos países de América Central y del Sur, así como en algunos países de Asia y Oceanía, para la transmisión de televisión analógica.\\
+El sistema NTSC establece ciertas especificaciones técnicas para la transmisión y recepción de señales de televisión, incluyendo la resolución de la imagen, el número de líneas por cuadro, la tasa de refresco, entre otros parámetros. Aunque el sistema NTSC fue revolucionario en su época y permitió la expansión de la televisión a nivel mundial, presentaba algunas limitaciones técnicas que afectaban la calidad de imagen, como el efecto de "parpadeo" o flicker, y el problema conocido como "efecto de desgarre" o "rolling shutter".
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ISV/ISV36.png}
+\caption{Distribución en el espectro de un canal de televisión en el sistema M, con color norma NTSC.}
+\end{figure}
+Un canal de televisión NTSC ocupa un ancho de banda total de 6 MHz. La señal de vídeo, la cual es modulada en amplitud, se transmite entre 500 kHz y 5,45 MHz por encima del límite inferior del canal. La portadora de video está a 1,25 MHz por encima del límite inferior del canal. Al igual que en la mayoría de las señales de AM, la portadora de video genera dos bandas laterales, una encima de la portadora y otra por debajo. Cada una de las bandas laterales tiene un ancho de 4,2 MHz. Toda la banda lateral superior se transmite, pero se transmite solo 1,25 MHz de la banda lateral inferior, conocida como banda lateral vestigial. La subportadora de color está 3,579545 MHz por encima de la portadora de video, y es modulada por amplitud en cuadratura por las señales de crominancia o diferencia de color, con portadora suprimida. La señal de audio es modulada en frecuencia, pero con una desviación máxima de frecuencia de  $\pm$ 25 kHz. La portadora de audio está a 4,5 MHz por encima de la portadora de video, por lo que está a 250 kHz por debajo de la parte superior del canal. A veces, un canal puede contener una señal de sonido televisivo multicanal, que ofrece más de una señal de audio mediante la adición de una o dos subportadoras de la señal de audio, cada una sincronizadas a un múltiplo de la frecuencia de línea. Este suele ser el caso cuando se utilizan señales de audio estéreo o un segundo programa de audio. Extensiones parecidas se utilizan en la norma estadounidense de televisión digital ATSC, en la cual la portadora digital se transmite a 1,31 MHz por encima del límite inferior del canal.
+\begin{itemize}
+\item \textbf{NTSC (National Television System Committee)}: Como se mencionó anteriormente, el NTSC fue el sistema utilizado en América del Norte, algunos países de América Central y del Sur, así como en algunos países de Asia y Oceanía. Tenía una resolución de 525 líneas por cuadro y una tasa de refresco de 30 cuadros por segundo (29.97 fps).
+
+\item \textbf{PAL (Phase Alternating Line)}: El sistema PAL se utilizó en gran parte de Europa, así como en algunos países de África, Asia y Oceanía. Tenía una resolución de 625 líneas por cuadro y una tasa de refresco de 25 cuadros por segundo.
+
+\item \textbf{SECAM (Sequential Color with Memory)}: El sistema SECAM fue utilizado principalmente en Francia y algunos países del este de Europa. Al igual que el sistema PAL, tenía una resolución de 625 líneas por cuadro y una tasa de refresco de 25 cuadros por segundo.
+\end{itemize}
+\begin{remark}
+En el Perú se usa el sistema NTSC.
+\end{remark}
+\subsection{Crominancia y luminancia}
+La crominancia y la luminancia son dos componentes clave en la representación y transmisión de imágenes y videos en sistemas de televisión y otros medios visuales. Ambos términos están relacionados con la forma en que se separa y codifica la información del color y el brillo en una imagen. A continuación, se explica cada uno de ellos:
+\begin{itemize}
+\item \textbf{Luminancia}: La luminancia se refiere al componente de brillo o intensidad en una imagen. Representa la información de escala de grises o blanco y negro de la imagen y es responsable de mostrar los detalles y contrastes en la imagen. La luminancia se mide en niveles de intensidad y se representa en una escala de grises, donde el negro es el nivel más bajo y el blanco es el nivel más alto.
+En una señal de video, la luminancia se codifica utilizando una señal de amplitud modulada (AM) o una señal de componente verde, que se combina con la información de crominancia para formar una señal de video completa.
+
+\item \textbf{Crominancia}: La crominancia se refiere al componente de color en una imagen. Representa la información de los colores y matices presentes en la imagen. A diferencia de la luminancia, la crominancia no contiene información de brillo, sino solo información de color.
+En una señal de video, la crominancia se codifica utilizando una modulación de fase (PM) o una señal de componente de color (como las señales U y V en el sistema de televisión NTSC) que se combina con la información de luminancia para formar la señal de video completa.
+\end{itemize}
+\begin{notation}
+Las señales U y V se refieren a las componentes en el espacio de color conocido como el espacio de color de diferencia de color (YUV). En este espacio de color, la señal Y representa la luminancia, mientras que las señales U y V representan las diferencias de color entre la luminancia y los componentes azul y rojo, respectivamente.
+\end{notation}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{ISV/ISV38.png}
+\caption{Ejemplo de plano de color U-V para Y' = 0.5, representado dentro de la gama de color RGB}
+\end{figure}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{ISV/ISV37.png}
+\caption{Crominancia y Luminancia}
+\end{figure}
+La separación de luminancia y crominancia es una técnica eficiente para transmitir y almacenar imágenes de manera más compacta, ya que la información de color se codifica de manera independiente de la información de brillo. Esta técnica se utiliza en sistemas de televisión, como NTSC, PAL y SECAM, así como en otros formatos de video digital. Al combinar la información de luminancia y crominancia, se obtiene una imagen en color completa y realista que es más fácil de transmitir y almacenar.
+\begin{remark}
+La TV B/N significa transmitir y recepcionar dos señales fundamentales: Imagen por AM y Audio por FM. También los pulsos de sincronismo que vienen acompañado a la señal del vídeo.
+\end{remark}
+%Diapo 45
+\subsection{Yugo de deflexión}
+El yugo de deflexión, también conocido como bobina de deflexión, es un componente esencial en los tubos de rayos catódicos (TRC) utilizados en monitores de tubo y televisores de tubo, que son tecnologías antiguas y ya en desuso. Su función principal es generar campos magnéticos que \textbf{desvían} el haz de electrones del TRC, permitiendo así la formación de la imagen en la pantalla.\\
+Cuando un TRC está en funcionamiento, un cañón electrónico dentro del tubo emite un haz de electrones que se dirige hacia la parte frontal del tubo, que está recubierta por una pantalla recubierta de fósforo. El yugo de deflexión, ubicado en la parte trasera del tubo, está formado por una o más bobinas que \textbf{crean} campos magnéticos alrededor del tubo. Estos campos magnéticos \textbf{desvían} el haz de electrones horizontal y verticalmente mientras recorre la pantalla, permitiendo que el haz barra toda la superficie de la pantalla.
+\begin{figure}[H]
+\centering
+\subfloat[Yugo de deflexión: estructura.]{\includegraphics[width=0.4\linewidth]{ISV/ISV41.png}}
+\subfloat[Fotografía de yugo.]{\includegraphics[width=0.4\linewidth]{ISV/ISV42.png}}
+\caption{Ygo de deflexión.}
+\end{figure}
+Mediante el control de la intensidad y polaridad de las corrientes que circulan por las bobinas del yugo de deflexión, se puede ajustar la posición y el tamaño del haz de electrones en la pantalla. De esta manera, se crea una secuencia de barrido que va dibujando los puntos luminosos en la pantalla, generando así la imagen completa que vemos en el monitor o televisor.
+\begin{itemize}
+\item \textbf{Bobina Horizontal}: La bobina horizontal es responsable de la deflexión horizontal del haz de electrones, lo que significa que controla el desplazamiento del haz de izquierda a derecha en la pantalla. Para lograr esto, se aplica una corriente diente de sierra a la bobina a una frecuencia de 15,750 hertz (Hz), lo que equivale a 15,750 ciclos por segundo. La corriente diente de sierra produce un campo magnético que causa que el haz de electrones se mueva horizontalmente a lo largo de la pantalla en un patrón repetitivo de izquierda a derecha.
+
+\item \textbf{Bobina Vertical}: La bobina vertical es responsable de la deflexión vertical del haz de electrones, controlando el desplazamiento del haz de arriba a abajo en la pantalla. Se aplica una corriente diente de sierra a la bobina vertical a una frecuencia de 60 Hz, lo que equivale a 60 ciclos por segundo. Esta corriente diente de sierra genera un campo magnético que provoca que el haz de electrones se mueva verticalmente a lo largo de la pantalla en un patrón repetitivo de arriba a abajo.
+\end{itemize}
+La combinación de las corrientes diente de sierra aplicadas a las bobinas de deflexión horizontal y vertical permite que el haz de electrones barra toda la superficie de la pantalla, línea por línea, en una secuencia rápida y continua. Al hacerlo, se crea una imagen completa en la pantalla compuesta por puntos luminosos que forman la imagen final.
+\subsection{Sincronismos}
+Los sistemas de sincronismo en televisión funcionan mediante la generación y transmisión de señales de sincronización que coordinan el proceso de escaneo de la imagen en la pantalla. Estas señales aseguran que las líneas y los campos de la imagen se muestren correctamente y en el orden adecuado, evitando problemas de distorsión y parpadeo.
+\begin{itemize}
+\item Al acabar de analizar una línea y mientras se está preparando para analizar la siguiente, se genera una señal un tanto especial, denominada pulso de sincronismo horizontal (PSH), de características totalmente diferentes a la señal de video, para que sea fácilmente distinguible por el receptor. Como esta señal se genera justo al acabar de analizar una línea, si el receptor la recibe y él todavía no ha acabado de dibujarla, ya sabe que debe darse más prisa en la siguiente línea y tomará las medidas oportunas para ello.  Si al recibirla, él ya había tomado la decisión de saltar a la siguiente, en el futuro deberá ir más despacio, para adaptarse al ritmo de exploración. Con esto se asegura una total coincidencia entre la exploración en la cámara y el dibujado sobre el monitor, en cuanto al barrido horizontal.
+\item Al acabar la última línea de la imagen, debe avisarse al receptor que esa es precisamente la última línea, por si el receptor estuviese dibujando otra cualquiera.
+Esta señal, también fácilmente distinguible, se denomina pulso de sincronismo vertical  (PSV). Su misión será forzar al monitor para que a partir de ese momento sea la primer línea de la imagen, la que comience a dibujar.
+\end{itemize}
+\section{Relación de aspecto}
+La relación de aspecto en pantallas es la proporción entre el ancho y la altura de la pantalla. Es una medida que se utiliza para describir el tamaño y la forma de la imagen que se muestra en la pantalla. Se expresa como una relación entre dos números, donde el primer número representa el ancho y el segundo número representa la altura.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\linewidth]{ISV/ISV43.png}
+\caption{Relación de aspecto.}
+\end{figure}
+\begin{itemize}
+    \item \textbf{Compatibilidad con películas y televisión}: La relación de aspecto 4:3 se consideró un compromiso adecuado para mostrar tanto películas como programas de televisión en pantallas de televisión. Muchas películas se filmaron originalmente en el formato de 4:3, y con esta relación de aspecto, podían mostrarse en televisores sin cortar partes importantes de la imagen.
+    
+    \item \textbf{Estándar técnico}: Durante el desarrollo de la televisión analógica, se adoptó el formato 4:3 como un estándar técnico para la transmisión de señales de televisión. Esto permitió la uniformidad en la producción y transmisión de programas de televisión en todo el mundo.
+    
+    \item \textbf{Compatibilidad con contenido existente}: En los primeros años de la televisión, había una gran cantidad de contenido que ya se había producido en formato 4:3. Cambiar a una relación de aspecto diferente habría requerido ajustes en la producción y postproducción de nuevos programas y películas.
+    
+    \item \textbf{Limitaciones tecnológicas}: En las primeras etapas de la televisión analógica, había limitaciones técnicas en términos de resolución y calidad de imagen. La relación de aspecto 4:3 permitía un equilibrio entre el tamaño de la pantalla y la resolución disponible en ese momento.
+\end{itemize}
+\section{Frame rate}
+El frame rate, también conocido como frecuencia de cuadros o tasa de imágenes, se refiere a la cantidad de cuadros o imágenes que se muestran por segundo en una transmisión de televisión. Es una medida importante que afecta la calidad y fluidez de la imagen que se muestra en la pantalla.\\
+Para sistemas de televisión analógica y algunos sistemas de televisión digital, los frame rates más comunes son:
+\begin{itemize}
+\item \textbf{NTSC}: En el sistema de televisión NTSC utilizado principalmente en América del Norte y algunos otros países, el frame rate es de aproximadamente 29.97 cuadros por segundo (fps). Aunque comúnmente se denomina "30 fps", la tasa real es 29.97 fps debido a razones históricas y técnicas.
+\item \textbf{PAL}: En el sistema de televisión PAL utilizado en la mayoría de los países de Europa, Asia y Oceanía, el frame rate es de 25 cuadros por segundo (fps).
+\end{itemize}
+En el sistema NTSC, la frecuencia de cuadros se estableció originalmente en 30 fps para que coincidiera con la frecuencia de la corriente eléctrica de la red de energía en los Estados Unidos, que es de 60 Hz. Cada cuadro se compone de dos campos, uno con las líneas pares y otro con las líneas impares, y se muestra alternativamente en cada ciclo de la corriente eléctrica (a 60 Hz).\\
+Para simular la ilusión de 60 fps en televisores con un límite de 30 fps, se utiliza una técnica conocida como "interpolación de cuadros" o "motion interpolation". Esta técnica se basa en el procesamiento de la imagen para crear cuadros adicionales entre los cuadros originales. Por ejemplo, si un programa de televisión se grabó o transmitió a 30 fps, la interpolación de cuadros puede generar cuadros adicionales que se intercalan entre los cuadros originales para aumentar la fluidez del movimiento.\\
+La solución  a este problema consiste  en no explorar la imagen de forma continua, una línea detrás de otra, sino en explorarla de forma que en una "primera pasada´´ se exploran las líneas 1,3,5,7,9,11......y en la "segunda pasada´´ se exploran las   líneas   que   antes   habían   quedado   sin   explorar,   es   decir,   las   líneas 2,4,6,8,10,12.....\\
+La interpolación de cuadros se realiza mediante algoritmos que analizan el contenido de los cuadros existentes y generan nuevos cuadros que se ajustan a los movimientos y transiciones de la imagen. Esto puede mejorar la suavidad del movimiento, especialmente en escenas con movimientos rápidos, como deportes o escenas de acción.
+\chapterimage{chapter_head_IS.pdf} % Chapter heading image
+\chapter{TDT}
+
 %\part{Instrumentación 2}
 %\chapterimage{chapter_head_I2.pdf} % Chapter heading image
 %\section{Transformada de Laplace}

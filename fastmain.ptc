@@ -1,15 +1,86 @@
 \ttl@starttoc {part@1}
 \contentsline {part}{\numberline {I}Dispositivos de fibra óptica}{1}{part.1}%
-\contentsline {chapter}{\numberline {1}Transmisores ópticos}{2}{chapter.1}%
-\contentsline {section}{\numberline {1.1}LED}{3}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Tipos de estructuras de los diodos LED}{6}{subsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1.1}LEDs de superficie-SLED}{6}{subsubsection.1.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1.2}Diodo led de borde-ELED}{7}{subsubsection.1.1.1.2}%
-\contentsline {section}{\numberline {1.2}Láser}{9}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Láser guiado por ganancia}{10}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Láser Monomodo}{12}{subsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.2.1}Láser DFB y DBR}{13}{subsubsection.1.2.2.1}%
-\contentsline {subsection}{\numberline {1.2.3}VCSEL}{15}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}Diagrama de ojo}{16}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Parámetros ópticos de los dispositivos emisores}{16}{section.1.3}%
+\contentsline {chapter}{\numberline {1}Introducción}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Fiber to the home-FTTH}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Topologías de red de fibra óptica}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Parámetros de fibra óptica}{3}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Bandas}{4}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Pico de agua}{5}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.5}¿Por que escoger fibra óptica?}{6}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Ventajas}{6}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}Desventajas}{6}{subsection.1.5.2}%
+\contentsline {section}{\numberline {1.6}Espectro óptico}{7}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}CDWM y DWDM}{8}{subsection.1.6.1}%
+\contentsline {section}{\numberline {1.7}Leyes ópticas}{10}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Índice de refracción}{10}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Ley de Snell}{10}{subsection.1.7.2}%
+\contentsline {chapter}{\numberline {2}Estructura de fibra óptica}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Estructura de fibra óptica}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Apertura numérica}{12}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Tipos de fibra óptica}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Parámetros de F.O.}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Parámetro estructural}{14}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Longitud de onda de corte}{14}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Diámetro de campo modal}{14}{subsection.2.4.3}%
+\contentsline {chapter}{\numberline {3}Efectos sobre la fibra óptica}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Atenuación}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Dispersión y ancho de banda}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Dispersión del material}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Dispersión de guías de onda}{18}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Efectos no lineales}{19}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Mezcla de 4 longitudes}{19}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Distribución del pulso de fibra óptica}{20}{section.3.4}%
+\contentsline {chapter}{\numberline {4}FTTH}{21}{chapter.4}%
+\contentsline {subsubsection}{\numberline {4.0.0.1}Elementos de PON}{22}{subsubsection.4.0.0.1}%
+\contentsline {chapter}{\numberline {5}Transmisores ópticos}{26}{chapter.5}%
+\contentsline {section}{\numberline {5.1}LED}{27}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Tipos de estructuras de los diodos LED}{30}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}LEDs de superficie-SLED}{30}{subsubsection.5.1.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.2}Diodo led de borde-ELED}{31}{subsubsection.5.1.1.2}%
+\contentsline {section}{\numberline {5.2}Láser}{33}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Láser guiado por ganancia}{34}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Láser Monomodo}{36}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Láser DFB y DBR}{37}{subsubsection.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.2.3}VCSEL}{39}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Diagrama de ojo}{40}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Parámetros ópticos de los dispositivos emisores}{40}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Receptores ópticos}{46}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Requerimientos de los receptores ópticos}{48}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Parámetros características de los receptores ópticos}{48}{subsection.5.4.2}%
+\contentsline {chapter}{\numberline {6}Cableado}{51}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Loose tube o tubo holgado}{51}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Tight buffered}{52}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Tight buffered breakout}{52}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Cables aéreos OPGW}{53}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Patch cord}{54}{subsection.6.3.2}%
+\contentsline {chapter}{\numberline {7}Conectores}{56}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Acopladores ópticos}{56}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Parámetros característicos}{57}{subsection.7.1.1}%
+\contentsline {chapter}{\numberline {8}Adaptadores y conectores}{58}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Terminaciones de fibra óptica}{58}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Conectores ópticos}{59}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Evaluación entre repetidoras}{60}{section.8.3}%
+\contentsline {chapter}{\numberline {9}Amplificadores ópticos}{62}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Características de desempeño}{63}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Tipos de amplificadores}{63}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Basados en láseres de semiconductor-SLA}{63}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}Basados en fibra-Láseres de bombeo}{64}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}EDFA}{64}{subsection.9.2.3}%
+\contentsline {subsubsection}{\numberline {9.2.3.1}Características de desempeño}{65}{subsubsection.9.2.3.1}%
+\contentsline {subsection}{\numberline {9.2.4}Amplificador Raman}{66}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}Amplificadores ópticos a semiconductores-SOA}{67}{subsection.9.2.5}%
+\contentsline {chapter}{\numberline {10}DWDM}{68}{chapter.10}%
+\contentsline {subsection}{\numberline {10.0.1}Tipos de multiplexación por longitud de onda}{68}{subsection.10.0.1}%
+\contentsline {subsection}{\numberline {10.0.2}Línea de Krypton}{69}{subsection.10.0.2}%
+\contentsline {subsection}{\numberline {10.0.3}Aclaraciones}{70}{subsection.10.0.3}%
+\contentsline {subsubsection}{\numberline {10.0.3.1}DWDM-CWDM}{70}{subsubsection.10.0.3.1}%
+\contentsline {subsubsection}{\numberline {10.0.3.2}Capacidades}{71}{subsubsection.10.0.3.2}%
+\contentsline {section}{\numberline {10.1}OADM}{72}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Arrayed Waveguide Grating-AWG}{72}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Circulador óptico}{73}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Fiber Bragg Grating}{73}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.4}Transponder}{74}{subsection.10.1.4}%
+\contentsline {subsection}{\numberline {10.1.5}Multiplexores/Demultiplexores}{74}{subsection.10.1.5}%
+\contentsline {subsection}{\numberline {10.1.6}Atenuadores ópticos-VOA}{75}{subsection.10.1.6}%
+\contentsline {subsection}{\numberline {10.1.7}Parámetros de transmisión DWDM}{75}{subsection.10.1.7}%
 \contentsfinish 

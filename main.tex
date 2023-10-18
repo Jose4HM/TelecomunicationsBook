@@ -8003,7 +8003,7 @@ Donde:
 \end{definition}
 \begin{definition}[Coeficiente de reflexión]
 \begin{equation}
-\lvert\rho\rvert=\frac{Z_L-Z_0}{Z_L+Z_0}=\frac{V_r}{V_{inc}}
+\lvert\rho\rvert=\frac{Z_L-Z_0}{Z_L+Z_0}=\frac{V_R}{V_I}=\frac{VSWR-1}{VSWR+1}
 \label{eq:coef reflex}
 \end{equation}
 Donde:
@@ -8011,8 +8011,17 @@ Donde:
 \item $\rho$: Coeficiente de reflexión.\footnote{También es representado por la letra griega $\Gamma$.}
 \item $Z_L$: Impedancia de carga. ($\Omega$)
 \item $Z_0$: Impedancia característica. ($\Omega$)
-\item $V_r$: Voltaje reflejado. (V)
-\item $V_{inc}$: Voltaje incidente. (V)
+\item $V_R$: Voltaje reflejado. (V)
+\item $V_I$: Voltaje incidente. (V)
+\item VSWR: Relación de onda estacionaria.
+\end{itemize}
+Idealmente el coeficiente de reflexión ($S_{1,1}$) esta lo más cerca posible de $-\infty$, sin embargo en la vida real un valor de -20 dB es muy bueno, -10 dB es un ``estándar aceptado'' y cualquier valor por encima de -10 dB es una discordancia.\\
+Para pasarlo a dB, solo una $20\log_{10}(\lvert\rho\rvert)$. Alternativamente puede ser: $10\log_{10}(\lvert\rho\rvert)$ si $\rho$ compara potencia.
+La pérdida por retorno es calculada con la ecuación \ref{eq:rtl loss}.
+\begin{itemize}
+\item $\rho=0$, significa que no hay reflexión, y toda la energía se transmite sin cambios.
+\item $\rho=\pm 1$, significa que toda la energía se refleja, y nada se transmite.
+\item Si $\rho$ tiene un valor intermedio, parte de la energía se refleja, y parte se transmite.
 \end{itemize}
 \end{definition}
 \begin{definition}[Impedancia de entrada]
@@ -8260,9 +8269,16 @@ Donde:
 \item $P_{inc}$: Potencia incidente. (W)
 \item $P_r$: Potencia reflejada. (W)
 \end{itemize}
+En caso del voltaje máximo y mínimo mencionado, estos valores se hallan de la onda estacionaría, no de la onda incidente o reflejada. Un valor aceptable es VSWR=2.\\
+Para usarlo 
 \end{definition}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\linewidth]{LT/LT18.png}
+\caption{Onda estacionaria.}
+\end{figure}
 \begin{remark}
-El valor ideal del ROE es de 1, lo que significa que no hay reflexiones de señal y toda la energía se está transmitiendo de manera eficiente entre la fuente y la carga. Obtener este valor es difícil por lo que usualmente se busca un valor de ROE menor o igual a 2.
+El valor ideal del ROE o VSWR es de 1, lo que significa que no hay reflexiones de señal y toda la energía se está transmitiendo de manera eficiente entre la fuente y la carga. Obtener este valor es difícil por lo que usualmente se busca un valor de ROE menor o igual a 2 (11\% de energía reflejada). Algunos valores comunes son 3 (25\% de energía reflejada), 5 (44\% de energía reflejada) y  10 (67\% de energía reflejada).
 \end{remark}
 Asimismo con el cociente del voltaje mínimo sobre la corriente mínima (ambos en el mismo punto obviamente), se obtiene la \textbf{impedancia vita} en ese punto \textbf{hacia la carga} (fig. \ref{fig:onda estacionaria}):
 \begin{equation}
@@ -8359,6 +8375,7 @@ Luego notamos reglas en la parte inferior de la carta, tu tomas el módulo del c
 la cantidad de onda reflejada expresada en dB. Así, en el centro de la carta, nada es reflejado y la pérdida de retorno es infinita. En el límite tenemos reflexión completa, por lo tanto la pérdida por retorno es 0 dB.
 \begin{equation}
 R_L=-20\log\rho
+\label{eq:rtl loss}
 \end{equation}
 \item \textbf{RFL.COEFF. P}: Coeficiente de reflexión en términos de potencia, proporcional a $|\rho|^2$. Sin potencia reflejada para el caso emparejado = centro de la carta, potencia reflejada (normalizada) = 1 en el límite.
 \item \textbf{RFL.COEFF. F or I}: Nos da el módulo (= valor absoluto) del coeficiente de reflexión ($\rho$) en escala lineal. Tenga en cuenta que, dado que tenemos el módulo, podemos refiérase tanto a voltaje como a corriente ya que hemos omitido el signo, solo usamos el módulo. Obviamente en el centro el coeficiente de reflexión es cero, en el límite es uno. El coeficiente de reflexión, si no se cuenta con las reglas inferiores, se calcula con una regla de 3 simple:
